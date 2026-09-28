@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "app": "apostrophe",
+  "name": "Apostrophe",
+  "identifiers": [
+    "org.gnome.gitlab.somas.Apostrophe.desktop",
+    "org.gnome.gitlab.somas.Apostrophe",
+    "apostrophe",
+    "Apostrophe"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "New", "shortcut": "<Ctrl>N"},
+        {"label": "Open", "shortcut": "<Ctrl>O"},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As", "shortcut": "<Ctrl><Shift>S"},
+        {"separator": true},
+        {"label": "Close Document", "shortcut": "<Ctrl>W"},
+        {"label": "Quit Application", "shortcut": "<Ctrl>Q"},
+        {"separator": true},
+        {"label": "Show Preferences", "shortcut": "<Ctrl>comma"},
+        {"label": "Keyboard Shortcuts", "shortcut": "<Ctrl>question"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo Previous Command", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo Previous Command", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"separator": true},
+        {"label": "Select All Text", "shortcut": "<Ctrl>A"}
+      ]
+    },
+    {
+      "label": "Markdown",
+      "items": [
+        {"label": "Separator", "shortcut": "<Ctrl>R"},
+        {"label": "Header 1", "shortcut": "<Ctrl>1"},
+        {"label": "Header 2", "shortcut": "<Ctrl>2"},
+        {"label": "Header 3", "shortcut": "<Ctrl>3"},
+        {"label": "Header 4", "shortcut": "<Ctrl>4"},
+        {"separator": true},
+        {"label": "List Item", "shortcut": "<Ctrl>U"},
+        {"label": "Italic", "shortcut": "<Ctrl>I"},
+        {"label": "Bold", "shortcut": "<Ctrl>B"},
+        {"label": "Strikeout", "shortcut": "<Ctrl><Shift>D"}
+      ]
+    },
+    {
+      "label": "Find",
+      "items": [
+        {"label": "Find", "shortcut": "<Ctrl>F"},
+        {"label": "Find and Replace", "shortcut": "<Ctrl>H"}
+      ]
+    },
+    {
+      "label": "Modes",
+      "items": [
+        {"label": "Focus Mode", "shortcut": "<Ctrl>D"},
+        {"label": "Hemingway Mode", "shortcut": "<Ctrl>T"},
+        {"label": "Preview", "shortcut": "<Ctrl>P"},
+        {"label": "Fullscreen", "shortcut": "F11"}
+      ]
+    }
+  ]
+}

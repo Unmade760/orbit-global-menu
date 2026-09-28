@@ -1,6 +1,7 @@
 {
   "format": 1,
   "apps": [
+    "apostrophe.json",
     "nautilus.json",
     "decibels.json",
     "showtime.json",
