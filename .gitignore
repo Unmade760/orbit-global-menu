@@ -41,3 +41,4 @@ debian/DEBIAN/md5sums
 tools/node_modules/
 # The Python packaging rule "lib/" above would otherwise hide the harness helpers.
 !tools/lib/
+!tests/js/lib/
