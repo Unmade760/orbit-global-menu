@@ -1,0 +1,25 @@
+# ruff config for the global-menu daemon (globalmenu/). Run through
+# `tools/check.sh lint`.
+#
+# Scoped to real problems, not style: pyflakes (undefined names, unused
+# imports and variables, redefinitions), syntax errors, bare except, and
+# pylint's error class. Formatting and naming are left alone.
+
+# Debian 13 ships Python 3.13, the oldest interpreter in the supported range.
+target-version = "py313"
+extend-exclude = ["build", "debian/usr", "tools/node_modules"]
+
+[lint]
+select = [
+    "F",     # pyflakes
+    "E9",    # syntax and IO errors
+    "E722",  # bare except
+    "PLE",   # pylint errors
+]
+
+[lint.per-file-ignores]
+# Package __init__ files re-export names on purpose.
+"**/__init__.py" = ["F401"]
+# treelib is a vendored copy of the upstream treelib package; its star import
+# of its own exception module is how upstream wrote it and resolves at runtime.
+"globalmenu/treelib/**" = ["F403", "F405"]

@@ -36,3 +36,8 @@ debian/DEBIAN/md5sums
 
 # Compiled GSettings schemas
 *.compiled
+
+# Lint tooling installed by tools/check.sh lint (npm ci --prefix tools)
+tools/node_modules/
+# The Python packaging rule "lib/" above would otherwise hide the harness helpers.
+!tools/lib/
