@@ -170,6 +170,7 @@
     "terminator.json",
     "ardour.json",
     "iotas.json",
-    "drawio.json"
+    "drawio.json",
+    "bitwig-studio.json"
   ]
 }

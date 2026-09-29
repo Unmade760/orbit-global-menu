@@ -8,6 +8,7 @@
 - Audacity
 - Baobab (Disk Usage Analyzer)
 - Bitwarden
+- Bitwig Studio
 - BleachBit
 - Blender
 - Bottles
