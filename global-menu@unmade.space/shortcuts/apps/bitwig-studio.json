@@ -3,7 +3,7 @@
   "app": "bitwig-studio",
   "name": "Bitwig Studio",
   "identifiers": [
-    "bitiwg-sudio.desktop",
+    "bitwig-studio.desktop",
     "com.bitwig.BitwigStudio.desktop"
   ],
   "menus": [
