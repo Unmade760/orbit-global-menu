@@ -8,6 +8,7 @@
 - Audacity
 - Baobab (Disk Usage Analyzer)
 - Bitwarden
+- Bitwig Studio
 - BleachBit
 - Blender
 - Bottles
@@ -33,6 +34,7 @@
 - Discord
 - Disks
 - Dolphin
+- draw.io
 - Drawing
 - Dropbox
 - EasyEffects
