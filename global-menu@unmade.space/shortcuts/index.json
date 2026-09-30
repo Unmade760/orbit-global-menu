@@ -169,6 +169,7 @@
     "qutebrowser.json",
     "terminator.json",
     "ardour.json",
-    "iotas.json"
+    "iotas.json",
+    "drawio.json"
   ]
 }

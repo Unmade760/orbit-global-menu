@@ -33,6 +33,7 @@
 - Discord
 - Disks
 - Dolphin
+- draw.io
 - Drawing
 - Dropbox
 - EasyEffects

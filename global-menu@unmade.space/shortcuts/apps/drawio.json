@@ -1,0 +1,176 @@
+{
+  "format": 1,
+  "app": "drawio",
+  "name": "draw.io",
+  "identifiers": [
+    "drawio.desktop",
+    "com.jgraph.drawio.desktop",
+    "drawio",
+    "draw.io"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "New Diagram", "shortcut": "<Ctrl>N"},
+        {"label": "Open From", "shortcut": "<Ctrl>O"},
+        {"label": "Recent Files"},
+        {"label": "Sync"},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As", "shortcut": "<Ctrl><Shift>S"},
+        {"label": "Import From"},
+        {"label": "Export As"},
+        {"label": "Embed"},
+        {"label": "Presentation Mode"},
+        {"label": "New Library"},
+        {"label": "Open Library"},
+        {"separator": true},
+        {"label": "Properties"},
+        {"label": "Page Settings"},
+        {"label": "Print", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Previous Page", "shortcut": "<Ctrl><Shift>Page_Up"},
+        {"label": "Next Page", "shortcut": "<Ctrl><Shift>Page_Down"},
+        {"label": "Close"},
+        {"label": "Quit"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo", "shortcut": "<Ctrl>Y"},
+        {"label": "Redo (Linux / macOS)", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Copy as Image", "shortcut": "<Ctrl><Alt>X"},
+        {"label": "Copy as SVG", "shortcut": "<Ctrl><Alt><Shift>X"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"label": "Paste Unformatted Text", "shortcut": "<Ctrl><Shift>V"},
+        {"label": "Duplicate", "shortcut": "<Ctrl>D"},
+        {"label": "Duplicate (Alternate)", "shortcut": "<Ctrl>Return"},
+        {"label": "Edit Label", "shortcut": "F2"},
+        {"label": "Delete", "shortcut": "Delete"},
+        {"label": "Delete with Connections", "shortcut": "<Ctrl>Delete"},
+        {"label": "Delete Labels Only", "shortcut": "<Shift>Delete"},
+        {"separator": true},
+        {"label": "Find / Replace", "shortcut": "<Ctrl>F"},
+        {"label": "Edit Metadata", "shortcut": "<Ctrl>M"},
+        {"label": "Edit Style", "shortcut": "<Ctrl>E"},
+        {"label": "Edit Vertex Geometry", "shortcut": "<Ctrl><Shift>M"},
+        {"label": "Edit Tooltip", "shortcut": "<Alt><Shift>T"},
+        {"label": "Edit Note", "shortcut": "<Alt><Shift>N"}
+      ]
+    },
+    {
+      "label": "Select",
+      "items": [
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"label": "Select None", "shortcut": "<Ctrl><Shift>A"},
+        {"separator": true},
+        {"label": "Select Vertices", "shortcut": "<Ctrl><Shift>I"},
+        {"label": "Select Edges", "shortcut": "<Ctrl><Shift>E"},
+        {"separator": true},
+        {"label": "Select Parent", "shortcut": "<Alt><Shift>P"},
+        {"label": "Select Children", "shortcut": "<Alt><Shift>C"},
+        {"label": "Select Descendants", "shortcut": "<Alt><Shift>X"},
+        {"label": "Select Siblings", "shortcut": "<Alt><Shift>S"},
+        {"separator": true},
+        {"label": "Select Next", "shortcut": "Tab"},
+        {"label": "Select Previous", "shortcut": "<Shift>Tab"}
+      ]
+    },
+    {
+      "label": "Insert",
+      "items": [
+        {"label": "Text", "shortcut": "A"},
+        {"label": "Note", "shortcut": "S"},
+        {"label": "Rectangle", "shortcut": "D"},
+        {"label": "Ellipse", "shortcut": "F"},
+        {"label": "Rhombus", "shortcut": "R"},
+        {"label": "Edge / Line", "shortcut": "C"},
+        {"label": "Link", "shortcut": "L"},
+        {"label": "Freehand", "shortcut": "X"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+        {"label": "Custom Zoom", "shortcut": "<Ctrl>0"},
+        {"label": "Fit Window", "shortcut": "<Ctrl><Shift>H"},
+        {"label": "Fit Page", "shortcut": "<Ctrl>J"},
+        {"label": "Fit Two Pages", "shortcut": "<Ctrl><Shift>J"},
+        {"label": "Reset View", "shortcut": "Home"},
+        {"label": "Go to First Cell", "shortcut": "<Shift>Home"},
+        {"label": "Refresh", "shortcut": "End"},
+        {"label": "Fullscreen"},
+        {"separator": true},
+        {"label": "Toggle Grid", "shortcut": "<Ctrl><Shift>G"},
+        {"label": "Toggle Connection Arrows", "shortcut": "<Alt><Shift>A"},
+        {"label": "Toggle Connection Points", "shortcut": "<Alt><Shift>O"},
+        {"separator": true},
+        {"label": "Toggle Format Panel", "shortcut": "<Ctrl><Shift>P"},
+        {"label": "Toggle Shapes Panel", "shortcut": "<Ctrl><Shift>K"},
+        {"label": "Toggle Layers Panel", "shortcut": "<Ctrl><Shift>L"},
+        {"label": "Toggle Outline Panel", "shortcut": "<Ctrl><Shift>O"},
+        {"label": "Toggle Tags Panel", "shortcut": "<Ctrl>K"},
+        {"separator": true},
+        {"label": "Search Diagram", "shortcut": "slash"},
+        {"label": "Adaptive Colors", "shortcut": "<Ctrl><Shift>6"}
+      ]
+    },
+    {
+      "label": "Arrange",
+      "items": [
+        {"label": "Group", "shortcut": "<Ctrl>G"},
+        {"label": "Ungroup", "shortcut": "<Ctrl><Shift>U"},
+        {"label": "Enter Group", "shortcut": "<Ctrl><Shift>End"},
+        {"label": "Exit Group", "shortcut": "<Ctrl><Shift>Home"},
+        {"separator": true},
+        {"label": "Bring to Front", "shortcut": "<Ctrl><Shift>F"},
+        {"label": "Bring Forward", "shortcut": "<Ctrl><Alt><Shift>F"},
+        {"label": "Send Backward", "shortcut": "<Ctrl><Alt><Shift>B"},
+        {"label": "Send to Back", "shortcut": "<Ctrl><Shift>B"},
+        {"separator": true},
+        {"label": "Rotate 90° Clockwise", "shortcut": "<Ctrl>R"},
+        {"label": "Autosize", "shortcut": "<Ctrl><Shift>Y"},
+        {"label": "Lock / Unlock", "shortcut": "<Ctrl>L"},
+        {"label": "Edit Link", "shortcut": "<Alt><Shift>L"},
+        {"label": "Clear Waypoints", "shortcut": "<Alt><Shift>R"},
+        {"separator": true},
+        {"label": "Collapse Container", "shortcut": "<Ctrl>Home"},
+        {"label": "Expand Container", "shortcut": "<Ctrl>End"},
+        {"label": "Run Last Layout", "shortcut": "<Ctrl><Alt>T"}
+      ]
+    },
+    {
+      "label": "Format",
+      "items": [
+        {"label": "Bold", "shortcut": "<Ctrl>B"},
+        {"label": "Italic", "shortcut": "<Ctrl>I"},
+        {"label": "Underline", "shortcut": "<Ctrl>U"},
+        {"label": "Superscript", "shortcut": "<Ctrl>period"},
+        {"label": "Subscript", "shortcut": "<Ctrl>comma"},
+        {"label": "Increase Font Size", "shortcut": "<Ctrl><Shift>plus"},
+        {"label": "Decrease Font Size", "shortcut": "<Ctrl><Shift>minus"},
+        {"separator": true},
+        {"label": "Copy Style", "shortcut": "<Alt>C"},
+        {"label": "Paste Style", "shortcut": "<Alt>V"},
+        {"label": "Copy Style (Any Selection)", "shortcut": "<Alt><Shift>Q"},
+        {"label": "Paste Style (Any Selection)", "shortcut": "<Alt><Shift>W"},
+        {"label": "Copy Text Style"},
+        {"separator": true},
+        {"label": "Set as Default Style", "shortcut": "<Ctrl><Shift>D"},
+        {"label": "Clear Default Style", "shortcut": "<Ctrl><Shift>R"},
+        {"separator": true},
+        {"label": "Copy Size", "shortcut": "<Alt><Shift>F"},
+        {"label": "Paste Size", "shortcut": "<Alt><Shift>V"},
+        {"label": "Copy Data", "shortcut": "<Alt><Shift>B"},
+        {"label": "Paste Data", "shortcut": "<Alt><Shift>E"}
+      ]
+    }
+  ]
+}
