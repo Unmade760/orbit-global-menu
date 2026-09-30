@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "app": "bitwig-studio",
+  "name": "Bitwig Studio",
+  "identifiers": [
+    "bitwig-studio.desktop",
+    "com.bitwig.BitwigStudio.desktop"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "New Project", "shortcut": "<Ctrl>N"},
+        {"label": "Open...", "shortcut": "<Ctrl>O"},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save as...", "shortcut": "<Ctrl><Shift>S"},
+        {"label": "Close", "shortcut": "<Ctrl>W"},
+        {"separator": true},
+        {"label": "Export Audio...", "shortcut": "<Ctrl><Shift>B"},
+        {"separator": true},
+        {"label": "Settings", "shortcut": "<Ctrl>,"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"label": "Duplicate", "shortcut": "<Ctrl>D"},
+        {"separator": true},
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"label": "Deselect All", "shortcut": "<Ctrl><Shift>A"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Focus/Toggle Arranger Timeline Panel", "shortcut": "<Alt>O"},
+        {"label": "Focus/Toggle Clip Launcher Panel", "shortcut": "<Alt>L"},
+        {"separator": true},
+        {"label": "Focus/Toggle Clip Editor Panel", "shortcut": "<Alt>E"},
+        {"label": "Focus/Toggle Device Panel", "shortcut": "<Alt>D"},
+        {"label": "Focus/Toggle Mixer Panel", "shortcut": "<Alt>M"}
+      ]
+    },
+    {
+      "label": "Tracks",
+      "items": [
+        {"label": "Toggle Solo", "shortcut": "<Shift>S"},
+        {"label": "Toggle Mute", "shortcut": "<Shift>M"},
+        {"separator": true},
+        {"label": "Add Audio Track", "shortcut": "<Ctrl><Shift>T"},
+        {"label": "Add FX Track", "shortcut": "<Ctrl><Alt>T"},
+        {"label": "Add Group Track", "shortcut": "<Ctrl><Alt>G"},
+        {"label": "Add Instrument Track", "shortcut": "<Ctrl>T"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Show Item Help", "shortcut": "F1"}
+      ]
+    }
+  ]
+}
