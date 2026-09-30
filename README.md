@@ -9,7 +9,7 @@ extension falls back twice before giving up:
 1. Applications that publish a menu over D-Bus get their real one, with
    working checkmarks and greyed-out items. A companion daemon called
    `global-menu` reads it and sends it to the extension as JSON.
-2. For 170 applications that publish nothing, the extension ships a menu built
+2. For 171 applications that publish nothing, the extension ships a menu built
    from the app's documented keyboard shortcuts. Clicking an item sends that
    key combination to the window. This is how an Electron app gets a menu bar
    on Wayland.
