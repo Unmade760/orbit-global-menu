@@ -4,6 +4,8 @@
   "name": "LibreOffice Writer",
   "identifiers": [
     "libreoffice-writer.desktop",
+    "org.libreoffice.LibreOffice.writer.desktop",
+    "org.libreoffice.LibreOffice.writer",
     "libreoffice writer",
     "libreoffice-writer",
     "LibreOffice Writer"
@@ -13,13 +15,23 @@
       "label": "File",
       "items": [
         {"label": "New Document", "shortcut": "<Ctrl>N"},
-        {"label": "Open Document", "shortcut": "<Ctrl>O"},
-        {"label": "Save Document", "shortcut": "<Ctrl>S"},
-        {"label": "Save As", "shortcut": "<Ctrl><Shift>S"},
-        {"label": "Print Document", "shortcut": "<Ctrl>P"},
+        {"label": "Open…", "shortcut": "<Ctrl>O"},
+        {"label": "Close", "shortcut": "<Ctrl>F4"},
+        {"separator": true},
+        {
+          "label": "Templates",
+          "items": [
+          {"label": "Templates", "shortcut": "<Ctrl><Shift>N"}
+          ]
+        },
+        {"separator": true},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As…", "shortcut": "<Ctrl><Shift>S"},
+        {"separator": true},
         {"label": "Print Preview", "shortcut": "<Ctrl><Shift>O"},
-        {"label": "Close Document", "shortcut": "<Ctrl>W"},
-        {"label": "Exit LibreOffice", "shortcut": "<Ctrl>Q"}
+        {"label": "Print…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Exit", "shortcut": "<Ctrl>Q"}
       ]
     },
     {
@@ -27,67 +39,191 @@
       "items": [
         {"label": "Undo", "shortcut": "<Ctrl>Z"},
         {"label": "Redo", "shortcut": "<Ctrl>Y"},
+        {"label": "Repeat", "shortcut": "<Ctrl><Shift>Y"},
+        {"separator": true},
         {"label": "Cut", "shortcut": "<Ctrl>X"},
         {"label": "Copy", "shortcut": "<Ctrl>C"},
         {"label": "Paste", "shortcut": "<Ctrl>V"},
-        {"label": "Paste Special", "shortcut": "<Ctrl><Shift>V"},
-        {"label": "Paste Unformatted Text", "shortcut": "<Ctrl><Alt><Shift>V"},
+        {
+          "label": "Paste Special",
+          "items": [
+          {"label": "Paste Unformatted Text", "shortcut": "<Ctrl><Shift><Alt>V"},
+          {"label": "Paste Special…", "shortcut": "<Ctrl><Shift>V"}
+          ]
+        },
+        {"separator": true},
         {"label": "Select All", "shortcut": "<Ctrl>A"},
-        {"label": "Find", "shortcut": "<Ctrl>F"},
-        {"label": "Find and Replace", "shortcut": "<Ctrl>H"}
+        {
+          "label": "Selection Mode",
+          "items": [
+          {"label": "Block Area", "shortcut": "<Shift><Alt>F8"}
+          ]
+        },
+        {"label": "Select Text", "shortcut": "<Ctrl><Shift>I"},
+        {"separator": true},
+        {"label": "Find…", "shortcut": "<Ctrl>F"},
+        {"label": "Find and Replace…", "shortcut": "<Ctrl>H"},
+        {"label": "Go to Page…", "shortcut": "<Ctrl>G"},
+        {"separator": true},
+        {"label": "Edit Mode", "shortcut": "<Ctrl><Shift>M"}
       ]
     },
     {
       "label": "View",
       "items": [
-        {"label": "Toggle Sidebar", "shortcut": "<Ctrl>F5"},
-        {"label": "Toggle Navigator", "shortcut": "F5"},
-        {"label": "Toggle Fullscreen", "shortcut": "<Ctrl><Shift>J"}
+        {"label": "Formatting Marks", "shortcut": "<Ctrl>F10"},
+        {"separator": true},
+        {"label": "Field Shadings", "shortcut": "<Ctrl>F8"},
+        {"label": "Field Names", "shortcut": "<Ctrl>F9"},
+        {"separator": true},
+        {"label": "Sidebar", "shortcut": "<Ctrl>F5"},
+        {"label": "Navigator", "shortcut": "F5"},
+        {"label": "Data Sources", "shortcut": "<Ctrl><Shift>F4"},
+        {"separator": true},
+        {"label": "Full Screen", "shortcut": "<Ctrl><Shift>J"}
       ]
     },
     {
       "label": "Insert",
       "items": [
-        {"label": "Insert Page Break", "shortcut": "<Ctrl>Return"},
-        {"label": "Insert Line Break", "shortcut": "<Shift>Return"},
-        {"label": "Insert Comment", "shortcut": "<Ctrl><Alt>C"},
-        {"label": "Insert Table", "shortcut": "<Ctrl>F12"}
+        {"label": "Page Break", "shortcut": "<Ctrl>Return"},
+        {
+          "label": "More Breaks",
+          "items": [
+          {"label": "Insert Manual Row Break", "shortcut": "<Shift>Return"},
+          {"label": "Insert Column Break", "shortcut": "<Ctrl><Shift>Return"}
+          ]
+        },
+        {"separator": true},
+        {
+          "label": "OLE Object",
+          "items": [
+          {"label": "Formula Object…", "shortcut": "<Shift><Alt>E"}
+          ]
+        },
+        {"separator": true},
+        {"label": "Comment", "shortcut": "<Ctrl><Alt>C"},
+        {"separator": true},
+        {"label": "Hyperlink…", "shortcut": "<Ctrl>K"},
+        {"label": "Cross-reference…", "shortcut": "<Ctrl><Shift>R"},
+        {"separator": true},
+        {
+          "label": "Formatting Mark",
+          "items": [
+          {"label": "Insert No-break Space", "shortcut": "<Ctrl><Shift>space"},
+          {"label": "Insert Non-breaking Hyphen", "shortcut": "<Ctrl><Shift>KP_Subtract"},
+          {"label": "Insert Soft Hyphen", "shortcut": "<Ctrl>KP_Subtract"},
+          {"label": "Insert Narrow No-break Space", "shortcut": "<Shift><Alt>space"},
+          {"label": "Insert Zero-width Space", "shortcut": "<Ctrl>KP_Divide"}
+          ]
+        }
       ]
     },
     {
       "label": "Format",
       "items": [
-        {"label": "Bold", "shortcut": "<Ctrl>B"},
-        {"label": "Italic", "shortcut": "<Ctrl>I"},
-        {"label": "Underline", "shortcut": "<Ctrl>U"},
-        {"label": "Double Underline", "shortcut": "<Ctrl>D"},
-        {"label": "Superscript", "shortcut": "<Ctrl><Shift>P"},
-        {"label": "Subscript", "shortcut": "<Ctrl><Shift>B"},
-        {"label": "Align Left", "shortcut": "<Ctrl>L"},
-        {"label": "Align Right", "shortcut": "<Ctrl>R"},
-        {"label": "Align Center", "shortcut": "<Ctrl>E"},
-        {"label": "Justify", "shortcut": "<Ctrl>J"},
-        {"label": "Default Paragraph Style", "shortcut": "<Ctrl>0"},
+        {
+          "label": "Text",
+          "items": [
+          {"label": "Bold", "shortcut": "<Ctrl>B"},
+          {"label": "Italic", "shortcut": "<Ctrl>I"},
+          {"label": "Double Underline", "shortcut": "<Ctrl>D"},
+          {"separator": true},
+          {"label": "Superscript", "shortcut": "<Ctrl><Shift>P"},
+          {"label": "Subscript", "shortcut": "<Ctrl><Shift>B"},
+          {"separator": true},
+          {"label": "Increase", "shortcut": "<Ctrl>bracketright"},
+          {"label": "Decrease", "shortcut": "<Ctrl>bracketleft"},
+          {"separator": true},
+          {"label": "Cycle Case", "shortcut": "<Shift>F3"},
+          {"separator": true},
+          {"label": "Small capitals", "shortcut": "<Ctrl><Shift>K"}
+          ]
+        },
         {"separator": true},
-        {"label": "Apply Heading 1", "shortcut": "<Ctrl>1"},
-        {"label": "Apply Heading 2", "shortcut": "<Ctrl>2"},
-        {"label": "Apply Heading 3", "shortcut": "<Ctrl>3"},
+        {"label": "Clear", "shortcut": "<Ctrl>M"},
         {"separator": true},
-        {"label": "Manage Styles", "shortcut": "F11"}
+        {"label": "Character…", "shortcut": "<Alt>C"},
+        {
+          "label": "Lists",
+          "items": [
+          {"label": "No List", "shortcut": "<Ctrl><Shift>F12"},
+          {"label": "Unordered List", "shortcut": "<Shift>F12"},
+          {"label": "Ordered List", "shortcut": "F12"},
+          {"separator": true},
+          {"label": "Move Item Down", "shortcut": "<Shift><Alt>Down"},
+          {"label": "Move Item Up", "shortcut": "<Shift><Alt>Up"}
+          ]
+        },
+        {"separator": true},
+        {"label": "Page Style…", "shortcut": "<Shift><Alt>P"},
+        {"separator": true},
+        {
+          "label": "Image",
+          "items": [
+          {"label": "Image Properties", "shortcut": "F4"}
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Styles",
+      "items": [
+        {"label": "No List", "shortcut": "<Ctrl><Shift>F12"},
+        {"separator": true},
+        {"label": "Edit", "shortcut": "<Alt>P"},
+        {"label": "Update", "shortcut": "<Ctrl><Shift>F11"},
+        {"label": "New Style from Selection", "shortcut": "<Shift>F11"},
+        {"separator": true},
+        {"label": "Styles", "shortcut": "F11"}
+      ]
+    },
+    {
+      "label": "Table",
+      "items": [
+        {"label": "Table", "shortcut": "<Ctrl>T"},
+        {"separator": true},
+        {"label": "Edit Formula", "shortcut": "F2"}
       ]
     },
     {
       "label": "Tools",
       "items": [
-        {"label": "Go to Page", "shortcut": "<Ctrl>G"},
-        {"label": "Spelling / Grammar Check", "shortcut": "F7"},
-        {"label": "Thesaurus", "shortcut": "<Ctrl>F7"}
+        {"label": "Spelling", "shortcut": "F7"},
+        {"label": "Auto Spellcheck", "shortcut": "<Shift>F7"},
+        {"label": "Thesaurus…", "shortcut": "<Ctrl>F7"},
+        {
+          "label": "Language",
+          "items": [
+          {"label": "Hangul/Hanja Conversion…", "shortcut": "<Ctrl><Shift>F7"}
+          ]
+        },
+        {"separator": true},
+        {"label": "AutoText…", "shortcut": "<Ctrl>F3"},
+        {"separator": true},
+        {
+          "label": "Update",
+          "items": [
+          {"label": "Convert Field To Text", "shortcut": "<Ctrl><Shift>F2"},
+          {"label": "Update Fields", "shortcut": "F9"}
+          ]
+        },
+        {"label": "Calculate", "shortcut": "<Ctrl>KP_Add"},
+        {"separator": true},
+        {"label": "Extensions…", "shortcut": "<Ctrl><Alt>E"},
+        {"label": "Options…", "shortcut": "<Alt>F12"}
+      ]
+    },
+    {
+      "label": "Window",
+      "items": [
+        {"label": "Close Window", "shortcut": "<Ctrl>W"}
       ]
     },
     {
       "label": "Help",
       "items": [
-        {"label": "Help", "shortcut": "F1"}
+        {"label": "Search Commands", "shortcut": "<Shift>Escape"}
       ]
     }
   ]
