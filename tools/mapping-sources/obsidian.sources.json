@@ -1,0 +1,585 @@
+{
+  "format": 1,
+  "app": "obsidian",
+  "repos": {
+    "obsidian": {
+      "url": "https://obsidian.md/download",
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76",
+      "path": "/home/ravi/fildem-work/sources/obsidian"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Note"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 22,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "File",
+        "New Note to the Right"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 23,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "File",
+        "Open Quick Switcher"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 15,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "File",
+        "Open Command Palette"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 14,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "File",
+        "Rename File"
+      ],
+      "shortcut": "F2",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 9,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "File",
+        "Save Current File"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 4,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 11,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "File",
+        "Reopen Closed Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 44,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "File",
+        "Close Current Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 12,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 13,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "obsidian",
+      "file": "main.js",
+      "line": 31,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "obsidian",
+      "file": "main.js",
+      "line": 31,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "obsidian",
+      "file": "main.js",
+      "line": 31,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste and Match Style"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "obsidian",
+      "file": "main.js",
+      "line": 53,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "obsidian",
+      "file": "main.js",
+      "line": 42,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Toggle Bold"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 26,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Toggle Italics"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 27,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Insert Markdown Link"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 25,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Toggle Comment"
+      ],
+      "shortcut": "<Ctrl>slash",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 28,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Toggle Checklist Status"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 29,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Add Metadata Property"
+      ],
+      "shortcut": "<Ctrl>;",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 20,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Paragraph"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 30,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search Current File"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 24,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search and Replace"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 31,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search in All Files"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 2,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Edit",
+        "Open Settings"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 18,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Reading View"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 19,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "View",
+        "Open Graph View"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 3,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "View",
+        "Actual Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "obsidian",
+      "file": "main.js",
+      "line": 53,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "obsidian",
+      "file": "main.js",
+      "line": 53,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "obsidian",
+      "file": "main.js",
+      "line": 53,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "obsidian",
+      "file": "main.js",
+      "line": 53,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Go",
+        "Navigate Back"
+      ],
+      "shortcut": "<Ctrl><Alt>Left",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 16,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Go",
+        "Navigate Forward"
+      ],
+      "shortcut": "<Ctrl><Alt>Right",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 17,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Go",
+        "Follow Link Under Cursor"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 5,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Go",
+        "Open Link in New Tab"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 6,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Go",
+        "Open Link in New Split"
+      ],
+      "shortcut": "<Ctrl><Alt>Return",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 8,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Go",
+        "Open Link in New Window"
+      ],
+      "shortcut": "<Ctrl><Alt><Shift>Return",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 7,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 32,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 34,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab (Alternative)"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 33,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab (Alternative)"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 35,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Tab 1"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 36,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Tab 2"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 37,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Tab 3"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 38,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Tab 4"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 39,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Tab 5"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 40,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Tab 6"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 41,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Tab 7"
+      ],
+      "shortcut": "<Ctrl>7",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 42,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Tab 8"
+      ],
+      "shortcut": "<Ctrl>8",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 43,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Last Tab"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 10,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    },
+    {
+      "path": [
+        "Help",
+        "Open Help"
+      ],
+      "shortcut": "F1",
+      "repo": "obsidian",
+      "file": "app-hotkeys.txt",
+      "line": 21,
+      "commit": "660abb71f8ddb1df6e7b7ae991dbd781b4b94a76"
+    }
+  ]
+}

@@ -13,6 +13,8 @@
     {
       "label": "File",
       "items": [
+        {"label": "Open Vault…"},
+        {"separator": true},
         {"label": "New Note", "shortcut": "<Ctrl>N"},
         {"label": "New Note to the Right", "shortcut": "<Ctrl><Shift>N"},
         {"separator": true},
@@ -31,6 +33,12 @@
     {
       "label": "Edit",
       "items": [
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"label": "Paste and Match Style", "shortcut": "<Ctrl><Shift>V"},
+        {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
         {"label": "Toggle Bold", "shortcut": "<Ctrl>B"},
         {"label": "Toggle Italics", "shortcut": "<Ctrl>I"},
         {"label": "Insert Markdown Link", "shortcut": "<Ctrl>K"},
@@ -51,7 +59,13 @@
       "label": "View",
       "items": [
         {"label": "Toggle Reading View", "shortcut": "<Ctrl>E"},
-        {"label": "Open Graph View", "shortcut": "<Ctrl>G"}
+        {"label": "Open Graph View", "shortcut": "<Ctrl>G"},
+        {"separator": true},
+        {"label": "Actual Size", "shortcut": "<Ctrl>0"},
+        {"label": "Zoom In", "shortcut": "<Ctrl>equal"},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+        {"separator": true},
+        {"label": "Toggle Developer Tools", "shortcut": "<Ctrl><Shift>I"}
       ]
     },
     {
@@ -86,9 +100,19 @@
       ]
     },
     {
+      "label": "Window",
+      "items": [
+        {"label": "Always on Top"}
+      ]
+    },
+    {
       "label": "Help",
       "items": [
-        {"label": "Open Help", "shortcut": "F1"}
+        {"label": "Open Help", "shortcut": "F1"},
+        {"separator": true},
+        {"label": "Homepage"},
+        {"label": "Community"},
+        {"label": "Help Center"}
       ]
     }
   ]
