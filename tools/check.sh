@@ -34,7 +34,7 @@ export GM_TOOLS GM_REPO GM_EXT_DIR GM_LOG_DIR
 # Checks that "all" leaves out because they are long.
 EXCLUDED_FROM_ALL=(apps)
 # Order for "all"; any other check found runs after these, sorted by name.
-PREFERRED_ORDER=(lint schema imports mappings unit daemon compat distros)
+PREFERRED_ORDER=(lint schema imports mappings unit attribution pack daemon compat distros)
 
 available_checks() {
 	local f
