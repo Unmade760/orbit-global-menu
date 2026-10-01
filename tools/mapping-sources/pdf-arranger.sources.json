@@ -1,0 +1,347 @@
+{
+  "format": 1,
+  "app": "pdf-arranger",
+  "repos": {
+    "pdfarranger": {
+      "url": "https://github.com/pdfarranger/pdfarranger.git",
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 47,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "Import"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 48,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 46,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 39,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 40,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "Export",
+        "Export Selection to a Single File…"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 41,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "Export",
+        "Export All Pages to Individual Files…"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 42,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 43,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "Edit Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 65,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 44,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 45,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 54,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 55,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 33,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 56,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 57,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste After"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 58,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Special",
+        "Paste Before"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 59,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Special",
+        "Paste As Overlay…"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 60,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Special",
+        "Paste As Underlay…"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 61,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rotate Left"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 38,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rotate Right"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 37,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Select",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 62,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Select",
+        "Deselect All"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 63,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 49,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 50,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 53,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Find",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 67,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Find",
+        "Find Previous"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 68,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    },
+    {
+      "path": [
+        "Find",
+        "Find Next"
+      ],
+      "shortcut": "F3",
+      "repo": "pdfarranger",
+      "file": "pdfarranger/config.py",
+      "line": 69,
+      "commit": "b7aa2a874ca955403eb75bd07eb82ddc69498fa5"
+    }
+  ]
+}

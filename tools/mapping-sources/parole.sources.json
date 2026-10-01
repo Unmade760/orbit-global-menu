@@ -1,0 +1,276 @@
+{
+  "format": 1,
+  "app": "parole",
+  "repos": {
+    "parole": {
+      "url": "https://gitlab.xfce.org/apps/parole.git",
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Media",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 76,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Media",
+        "Open Location…"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 86,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Media",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 138,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause"
+      ],
+      "shortcut": "space",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 138,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Previous Track"
+      ],
+      "shortcut": "b",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 145,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next Track"
+      ],
+      "shortcut": "n",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 152,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go Back 10 Seconds"
+      ],
+      "shortcut": "Left",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 159,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go Forward 10 Seconds"
+      ],
+      "shortcut": "Right",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 166,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go Back 1 Minute"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 173,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go Forward 1 Minute"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 180,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go Back 10 Minutes"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 187,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go Forward 10 Minutes"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 194,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Show Playlist"
+      ],
+      "shortcut": "F9",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 182,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go to Position"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 190,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Audio",
+        "Volume Up"
+      ],
+      "shortcut": "plus",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 337,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Audio",
+        "Volume Down"
+      ],
+      "shortcut": "minus",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 347,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Audio",
+        "Mute"
+      ],
+      "shortcut": "0",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 357,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Video",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 380,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Video",
+        "Exit Fullscreen"
+      ],
+      "shortcut": "Escape",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 54,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Video",
+        "Toggle Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 61,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Select Previous Item"
+      ],
+      "shortcut": "Up",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 110,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Select Next Item"
+      ],
+      "shortcut": "Down",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 117,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Remove Selected Item"
+      ],
+      "shortcut": "Delete",
+      "repo": "parole",
+      "file": "data/interfaces/shortcuts.ui",
+      "line": 124,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "parole",
+      "file": "data/interfaces/parole.ui",
+      "line": 588,
+      "commit": "417c04cca025c1dc09728b97e4dd0e5d47e322ef"
+    }
+  ]
+}

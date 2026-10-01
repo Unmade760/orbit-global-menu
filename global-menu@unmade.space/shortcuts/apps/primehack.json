@@ -1,0 +1,43 @@
+{
+  "format": 1,
+  "app": "primehack",
+  "name": "PrimeHack",
+  "identifiers": [
+    "io.github.shiiion.primehack.desktop",
+    "io.github.shiiion.primehack",
+    "PrimeHack"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Open...", "shortcut": "<Ctrl>O"},
+        {"separator": true},
+        {"label": "Exit", "shortcut": "<Ctrl>Q"},
+        {"label": "Exit (Alternate)", "shortcut": "<Alt>F4"}
+      ]
+    },
+    {
+      "label": "Emulation",
+      "items": [
+        {"label": "Toggle Pause", "shortcut": "F10"},
+        {"label": "Stop", "shortcut": "Escape"},
+        {"label": "Take Screenshot", "shortcut": "F9"},
+        {"separator": true},
+        {"label": "Undo Load State", "shortcut": "F12"},
+        {"separator": true},
+        {"label": "Step Into", "shortcut": "F11"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Search", "shortcut": "<Ctrl>F"},
+        {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+        {"label": "Zoom In (Alternate)", "shortcut": "<Ctrl>equal"},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+        {"label": "Zoom Out (Alternate)", "shortcut": "<Ctrl>underscore"}
+      ]
+    }
+  ]
+}

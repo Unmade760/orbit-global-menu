@@ -1,0 +1,408 @@
+{
+  "format": 1,
+  "app": "rnote",
+  "repos": {
+    "rnote": {
+      "url": "https://github.com/flxzt/rnote.git",
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Show Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 15,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "General",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 21,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "General",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 27,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "General",
+        "Close the Active Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 33,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "General",
+        "Quit the Application"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 39,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Tabs Overview"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 45,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "General",
+        "Open the Canvas-Menu"
+      ],
+      "shortcut": "F9",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 51,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "General",
+        "Open the App-Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 57,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 63,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch to the 'Brush'"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 74,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch to the 'Shaper'"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 80,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch to the 'Typewriter'"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 86,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch to the 'Eraser'"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 92,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch to the 'Selector'"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 98,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch to the 'Tools'"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 104,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom in"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 133,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 151,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/src/appwindow/actions.rs",
+      "line": 1202,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Open Document"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 174,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Save Document"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 180,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Save Document As"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 186,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Snap Positions"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 192,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Clear Document"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 198,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Add Page (When in Fixed-Size Layout)"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 204,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Remove Last Page (When in Fixed-Size Layout)"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 210,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Print Document"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 216,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Import File"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 222,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Bold"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 228,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Italic"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 234,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Document",
+        "Underline"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 240,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Drawing",
+        "Copy to Clipboard"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 249,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Drawing",
+        "Cut to Clipboard"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 255,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Drawing",
+        "Paste Clipboard"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 261,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Drawing",
+        "Duplicate Selection"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 267,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Drawing",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 273,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    },
+    {
+      "path": [
+        "Drawing",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "rnote",
+      "file": "crates/rnote-ui/data/ui/shortcuts.ui",
+      "line": 279,
+      "commit": "29ea24a1edcf7c9413b0896daf6663ea0f852254"
+    }
+  ]
+}

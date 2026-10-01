@@ -1,0 +1,353 @@
+{
+  "format": 1,
+  "app": "planify",
+  "repos": {
+    "planify": {
+      "url": "https://github.com/alainm23/planify.git",
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Used Anywhere",
+        "Create a New Task"
+      ],
+      "shortcut": "A",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 15,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Used Anywhere",
+        "Paste Plain Text to Create New Task"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 22,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Used Anywhere",
+        "Create a New Project"
+      ],
+      "shortcut": "P",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 29,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Used Anywhere",
+        "Create a New Section in a Project"
+      ],
+      "shortcut": "S",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 36,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Used Anywhere",
+        "Sync Now"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "planify",
+      "file": "src/Services/ActionManager.vala",
+      "line": 95,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Search",
+        "Open Quick Find"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 48,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Control Windows",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 60,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Control Windows",
+        "Quit (Alternate)"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "planify",
+      "file": "src/Services/ActionManager.vala",
+      "line": 91,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Control Windows",
+        "Open Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 67,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Control Windows",
+        "Toggle Sidebar"
+      ],
+      "shortcut": "M",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 74,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Control Windows",
+        "Open Keyboard Shortcuts"
+      ],
+      "shortcut": "F1",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 81,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Homepage"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 93,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Inbox"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 100,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Today"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 107,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Scheduled"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 114,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Labels"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 121,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Pinboard"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 128,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Project 1"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 135,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Project 2"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 135,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Project 3"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 135,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Project 4"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 135,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Project 5"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 135,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Project 6"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 135,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Project 7"
+      ],
+      "shortcut": "<Ctrl>7",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 135,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Project 8"
+      ],
+      "shortcut": "<Ctrl>8",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 135,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Last Project"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 135,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Next Project"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 142,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Previous Project"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "planify",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 149,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Quick Add",
+        "Set Date"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "planify",
+      "file": "core/QuickAddCore.vala",
+      "line": 749,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Quick Add",
+        "Add Reminders"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "planify",
+      "file": "core/QuickAddCore.vala",
+      "line": 739,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    },
+    {
+      "path": [
+        "Quick Add",
+        "Keep Adding"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "planify",
+      "file": "core/QuickAddCore.vala",
+      "line": 744,
+      "commit": "71beb8cb78dfeb4a433d8b93914b743500708b86"
+    }
+  ]
+}

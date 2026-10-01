@@ -1,0 +1,985 @@
+{
+  "format": 1,
+  "app": "smplayer",
+  "repos": {
+    "smplayer": {
+      "url": "https://github.com/smplayer-dev/smplayer.git",
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Open",
+        "File..."
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 400,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Open",
+        "URL..."
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 443,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Open",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 447,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Open",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "smplayer",
+      "file": "src/baseguiplus.cpp",
+      "line": 107,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Pause"
+      ],
+      "shortcut": "space",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 512,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Frame Step"
+      ],
+      "shortcut": "period",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 525,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Frame Back Step"
+      ],
+      "shortcut": "comma",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 529,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "-5 Seconds"
+      ],
+      "shortcut": "Left",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 533,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "+5 Seconds"
+      ],
+      "shortcut": "Right",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 546,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "-1 Minute"
+      ],
+      "shortcut": "Down",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 538,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "+1 Minute"
+      ],
+      "shortcut": "Up",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 551,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "-10 Minutes"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 542,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "+10 Minutes"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 555,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Speed",
+        "Normal Speed"
+      ],
+      "shortcut": "BackSpace",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 581,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Speed",
+        "Half Speed"
+      ],
+      "shortcut": "braceleft",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 585,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Speed",
+        "Double Speed"
+      ],
+      "shortcut": "braceright",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 589,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Speed",
+        "Speed -10%"
+      ],
+      "shortcut": "bracketleft",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 593,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Speed",
+        "Speed +10%"
+      ],
+      "shortcut": "bracketright",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 597,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Jump To..."
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 576,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Previous"
+      ],
+      "shortcut": "less",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1002,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Play",
+        "Next"
+      ],
+      "shortcut": "greater",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 998,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Fullscreen"
+      ],
+      "shortcut": "F",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 628,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Exit Fullscreen"
+      ],
+      "shortcut": "Escape",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1049,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Compact Mode"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 634,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Size",
+        "100%"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1178,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Size",
+        "200%"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1179,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Size",
+        "Toggle Double Size"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1109,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Reset"
+      ],
+      "shortcut": "<Shift>E",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1026,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Auto Zoom"
+      ],
+      "shortcut": "<Shift>W",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1029,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Zoom for 16:9"
+      ],
+      "shortcut": "<Shift>A",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1032,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Zoom for 2.35:1"
+      ],
+      "shortcut": "<Shift>S",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1035,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Zoom -"
+      ],
+      "shortcut": "W",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1023,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Zoom +"
+      ],
+      "shortcut": "E",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1020,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Move Left"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1014,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Move Right"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1017,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Move Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1008,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Move Down"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1011,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Next Aspect Ratio"
+      ],
+      "shortcut": "A",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1122,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Toggle Deinterlacing"
+      ],
+      "shortcut": "D",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1139,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Equalizer"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 639,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Dec Contrast"
+      ],
+      "shortcut": "1",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1055,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Inc Contrast"
+      ],
+      "shortcut": "2",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1058,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Dec Brightness"
+      ],
+      "shortcut": "3",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1061,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Inc Brightness"
+      ],
+      "shortcut": "4",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1064,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Dec Hue"
+      ],
+      "shortcut": "5",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1067,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Inc Hue"
+      ],
+      "shortcut": "6",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1070,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Dec Saturation"
+      ],
+      "shortcut": "7",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1073,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Inc Saturation"
+      ],
+      "shortcut": "8",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1076,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Screenshot"
+      ],
+      "shortcut": "S",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 645,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Screenshot with Subtitles"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 649,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Screenshot without Subtitles"
+      ],
+      "shortcut": "<Ctrl><Alt>S",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 653,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Video",
+        "Start/Stop Taking Screenshots"
+      ],
+      "shortcut": "<Shift>D",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 658,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Audio",
+        "Mute"
+      ],
+      "shortcut": "M",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 737,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Audio",
+        "Volume -"
+      ],
+      "shortcut": "9",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 745,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Audio",
+        "Volume +"
+      ],
+      "shortcut": "0",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 755,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Audio",
+        "Delay -"
+      ],
+      "shortcut": "minus",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 763,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Audio",
+        "Delay +"
+      ],
+      "shortcut": "plus",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 767,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Audio",
+        "Previous Audio"
+      ],
+      "shortcut": "<Shift>K",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1091,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Audio",
+        "Next Audio"
+      ],
+      "shortcut": "K",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1094,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Previous Subtitle"
+      ],
+      "shortcut": "<Shift>J",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1097,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Next Subtitle"
+      ],
+      "shortcut": "J",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1100,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Delay -"
+      ],
+      "shortcut": "Z",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 816,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Delay +"
+      ],
+      "shortcut": "X",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 820,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Up"
+      ],
+      "shortcut": "R",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 828,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Down"
+      ],
+      "shortcut": "T",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 831,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Size -"
+      ],
+      "shortcut": "<Shift>R",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 835,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Size +"
+      ],
+      "shortcut": "<Shift>T",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 839,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Previous Line in Subtitles"
+      ],
+      "shortcut": "G",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 843,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Next Line in Subtitles"
+      ],
+      "shortcut": "Y",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 847,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Seek to Previous Subtitle"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 856,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Seek to Next Subtitle"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 852,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Browse",
+        "Previous Chapter"
+      ],
+      "shortcut": "exclam",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1106,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Browse",
+        "Next Chapter"
+      ],
+      "shortcut": "at",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1103,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Browse",
+        "Bookmarks",
+        "Add New Bookmark"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1358,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Browse",
+        "Bookmarks",
+        "Previous Bookmark"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1364,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Browse",
+        "Bookmarks",
+        "Next Bookmark"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1367,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "View",
+        "Information and Properties..."
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 896,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "View",
+        "Playlist"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 890,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "View",
+        "OSD",
+        "OSD - Next Level"
+      ],
+      "shortcut": "O",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1052,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "View",
+        "OSD",
+        "Show Filename on OSD"
+      ],
+      "shortcut": "<Shift>O",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1130,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "View",
+        "OSD",
+        "Show Info on OSD"
+      ],
+      "shortcut": "<Shift>I",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1133,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "View",
+        "OSD",
+        "Show Playback Time on OSD"
+      ],
+      "shortcut": "I",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 1136,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "View",
+        "OSD",
+        "Size -"
+      ],
+      "shortcut": "<Shift>Y",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 988,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "View",
+        "OSD",
+        "Size +"
+      ],
+      "shortcut": "<Shift>U",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 985,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "View",
+        "SMPlayer Log"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 919,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    },
+    {
+      "path": [
+        "Options",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "smplayer",
+      "file": "src/basegui.cpp",
+      "line": 900,
+      "commit": "dde7042c6a1c3d8c2e342c4a5dfaf1ba1651b6f6"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "format": 1,
+  "app": "pluma",
+  "repos": {
+    "pluma": {
+      "url": "https://github.com/mate-desktop/pluma",
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 57,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 59,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "File",
+        "Quick Open"
+      ],
+      "shortcut": "<Ctrl><Alt>O",
+      "repo": "pluma",
+      "file": "plugins/quickopen/quickopen/windowhelper.py",
+      "line": 71,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 81,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 83,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "File",
+        "Print Preview"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 87,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 89,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 152,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 159,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 93,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 95,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 97,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 99,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 101,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 105,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Change Case",
+        "All Upper Case"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "pluma",
+      "file": "help/C/index.docbook",
+      "line": 1273,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Change Case",
+        "All Lower Case"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "pluma",
+      "file": "help/C/index.docbook",
+      "line": 1281,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Change Case",
+        "Invert Case"
+      ],
+      "shortcut": "<Alt>U",
+      "repo": "pluma",
+      "file": "help/C/index.docbook",
+      "line": 1289,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Change Case",
+        "Title Case"
+      ],
+      "shortcut": "<Alt>L",
+      "repo": "pluma",
+      "file": "help/C/index.docbook",
+      "line": 1297,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Current Line"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "pluma",
+      "file": "help/C/index.docbook",
+      "line": 1265,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move Selected Line Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "pluma",
+      "file": "help/C/index.docbook",
+      "line": 1305,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move Selected Line Down"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "pluma",
+      "file": "help/C/index.docbook",
+      "line": 1313,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Edit",
+        "Decrease Indent"
+      ],
+      "shortcut": "<Shift>Tab",
+      "repo": "pluma",
+      "file": "help/C/index.docbook",
+      "line": 1329,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "View",
+        "Side Pane"
+      ],
+      "shortcut": "F9",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 179,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "View",
+        "Bottom Pane"
+      ],
+      "shortcut": "<Ctrl>F9",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 182,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "View",
+        "Right Pane"
+      ],
+      "shortcut": "<Shift>F9",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 185,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 171,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "View",
+        "Show Line Numbers"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "pluma",
+      "file": "help/C/index.docbook",
+      "line": 1359,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Search",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 121,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 123,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 125,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Search",
+        "Incremental Search…"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 133,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Search",
+        "Replace…"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 127,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Search",
+        "Clear Highlight"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 129,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Search",
+        "Go to Line…"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 131,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Tools",
+        "Check Spelling…"
+      ],
+      "shortcut": "<Shift>F7",
+      "repo": "pluma",
+      "file": "plugins/spell/pluma-spell-plugin.c",
+      "line": 98,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Tools",
+        "Autocheck Spelling"
+      ],
+      "shortcut": "<Ctrl>F7",
+      "repo": "pluma",
+      "file": "plugins/spell/pluma-spell-plugin.c",
+      "line": 117,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Tools",
+        "External Tools",
+        "Build"
+      ],
+      "shortcut": "<Ctrl>F8",
+      "repo": "pluma",
+      "file": "plugins/externaltools/data/build.desktop.in",
+      "line": 6,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Tools",
+        "External Tools",
+        "Remove Trailing Spaces"
+      ],
+      "shortcut": "<Alt>F12",
+      "repo": "pluma",
+      "file": "plugins/externaltools/data/remove-trailing-spaces.desktop.in",
+      "line": 6,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Tools",
+        "External Tools",
+        "Search"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "pluma",
+      "file": "plugins/externaltools/data/search-recursive.desktop.in",
+      "line": 3,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Tools",
+        "External Tools",
+        "Switch onto a File .c and .h"
+      ],
+      "shortcut": "<Shift><Alt>S",
+      "repo": "pluma",
+      "file": "plugins/externaltools/data/switch-c.desktop.in",
+      "line": 3,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Documents",
+        "Save All"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 137,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Documents",
+        "Close All"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 139,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Documents",
+        "Previous Document"
+      ],
+      "shortcut": "<Ctrl><Alt>Page_Up",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 141,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Documents",
+        "Next Document"
+      ],
+      "shortcut": "<Ctrl><Alt>Page_Down",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 143,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "pluma",
+      "file": "pluma/pluma-ui.h",
+      "line": 67,
+      "commit": "a4c2470f8f39bbc435ea058f85071f8369880345"
+    }
+  ]
+}

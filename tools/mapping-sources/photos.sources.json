@@ -1,0 +1,320 @@
+{
+  "format": 1,
+  "app": "photos",
+  "repos": {
+    "photos": {
+      "url": "https://invent.kde.org/graphics/koko.git",
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Save As"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "photos",
+      "file": "src/editor/EditorView.qml",
+      "line": 987,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "photos",
+      "file": "src/editor/EditorView.qml",
+      "line": 979,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Favorite"
+      ],
+      "shortcut": "<Shift>F",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 107,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "photos",
+      "file": "src/filemenumanager.cpp",
+      "line": 367,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "photos",
+      "file": "src/filemenumanager.cpp",
+      "line": 379,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "photos",
+      "file": "src/filemenumanager.cpp",
+      "line": 426,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Rename"
+      ],
+      "shortcut": "F2",
+      "repo": "photos",
+      "file": "src/filemenumanager.cpp",
+      "line": 446,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Move to Trash"
+      ],
+      "shortcut": "Delete",
+      "repo": "photos",
+      "file": "src/filemenumanager.cpp",
+      "line": 479,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Delete"
+      ],
+      "shortcut": "<Shift>Delete",
+      "repo": "photos",
+      "file": "src/filemenumanager.cpp",
+      "line": 503,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Print"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "photos",
+      "file": "src/filemenumanager.cpp",
+      "line": 519,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "File",
+        "Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 152,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Gallery",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 25,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Media View",
+        "Previous Image"
+      ],
+      "shortcut": "Left",
+      "repo": "photos",
+      "file": "src/qml/mediaview/MediaViewPage.qml",
+      "line": 1384,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Media View",
+        "Next Image"
+      ],
+      "shortcut": "Right",
+      "repo": "photos",
+      "file": "src/qml/mediaview/MediaViewPage.qml",
+      "line": 1390,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Media View",
+        "Edit"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 48,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Media View",
+        "Info"
+      ],
+      "shortcut": "I",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 60,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Media View",
+        "Show Thumbnail Toolbar"
+      ],
+      "shortcut": "T",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 79,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Media View",
+        "Full Screen"
+      ],
+      "shortcut": "F",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 88,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Media View",
+        "Play/Pause Video"
+      ],
+      "shortcut": "space",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 94,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Media View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "photos",
+      "file": "src/qml/mediaview/MediaViewPage.qml",
+      "line": 1377,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Media View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "photos",
+      "file": "src/qml/mediaview/MediaViewPage.qml",
+      "line": 1370,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Edit Mode",
+        "Crop"
+      ],
+      "shortcut": "C",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 164,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Edit Mode",
+        "Rotate Left"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 170,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Edit Mode",
+        "Rotate Right"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 176,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Edit Mode",
+        "Flip Horizontally"
+      ],
+      "shortcut": "<Shift>H",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 182,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Edit Mode",
+        "Flip Vertically"
+      ],
+      "shortcut": "<Shift>V",
+      "repo": "photos",
+      "file": "src/qml/ActionCollection.qml",
+      "line": 188,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Edit Mode",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "photos",
+      "file": "src/editor/AnnotationEditor.qml",
+      "line": 43,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    },
+    {
+      "path": [
+        "Edit Mode",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "photos",
+      "file": "src/editor/AnnotationEditor.qml",
+      "line": 48,
+      "commit": "f255f63be69819427bb639debc65c1edd4d927ee"
+    }
+  ]
+}

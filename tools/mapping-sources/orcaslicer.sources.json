@@ -1,0 +1,365 @@
+{
+  "format": 1,
+  "app": "orcaslicer",
+  "repos": {
+    "orcaslicer": {
+      "url": "https://github.com/OrcaSlicer/OrcaSlicer.git",
+      "commit": "46fb5126903578e2b32f1a3caa6cb848370a496a"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Project"
+      ],
+      "shortcut": "<Ctrl>N",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + N New Project"
+    },
+    {
+      "path": [
+        "File",
+        "Open Project…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + O Open Project"
+    },
+    {
+      "path": [
+        "File",
+        "Save Project"
+      ],
+      "shortcut": "<Ctrl>S",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + S Save Project"
+    },
+    {
+      "path": [
+        "File",
+        "Save Project as…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + Shift + S Save Project as"
+    },
+    {
+      "path": [
+        "File",
+        "Import",
+        "Import 3MF/STL/STEP/SVG/OBJ/AMF…"
+      ],
+      "shortcut": "<Ctrl>I",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + I Import geometry data from STL/STEP/3MF/OBJ/AMF files"
+    },
+    {
+      "path": [
+        "File",
+        "Export",
+        "Export Plate Sliced File…"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + G Export plate sliced file"
+    },
+    {
+      "path": [
+        "File",
+        "Slice Plate"
+      ],
+      "shortcut": "<Ctrl>R",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + R Slice plate"
+    },
+    {
+      "path": [
+        "File",
+        "Print Plate"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + Shift + G Print plate"
+    },
+    {
+      "path": [
+        "File",
+        "Switch to the Next Main Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + Tab Switch to the next main tab"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + Z Undo"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + Y Redo"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + X Cut"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + C Copy to clipboard"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + V Paste from clipboard"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Selected"
+      ],
+      "shortcut": "Delete",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Del (Windows/Linux) Backspace (macOS) Delete Selected"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete All"
+      ],
+      "shortcut": "<Ctrl>D",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + D Delete All"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clone Selected"
+      ],
+      "shortcut": "<Ctrl>K",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + K Clone Selected"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + A Select all objects"
+    },
+    {
+      "path": [
+        "Edit",
+        "Deselect All"
+      ],
+      "shortcut": "Escape",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Esc Deselect all"
+    },
+    {
+      "path": [
+        "Edit",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + P (Windows/Linux) Cmd + , (macOS) Preferences"
+    },
+    {
+      "path": [
+        "View",
+        "Default View"
+      ],
+      "shortcut": "<Ctrl>0",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + 0 Camera view - Default"
+    },
+    {
+      "path": [
+        "View",
+        "Top"
+      ],
+      "shortcut": "<Ctrl>1",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + 1 Camera view - Top"
+    },
+    {
+      "path": [
+        "View",
+        "Bottom"
+      ],
+      "shortcut": "<Ctrl>2",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + 2 Camera view - Bottom"
+    },
+    {
+      "path": [
+        "View",
+        "Front"
+      ],
+      "shortcut": "<Ctrl>3",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + 3 Camera view - Front"
+    },
+    {
+      "path": [
+        "View",
+        "Rear"
+      ],
+      "shortcut": "<Ctrl>4",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + 4 Camera view - Behind"
+    },
+    {
+      "path": [
+        "View",
+        "Left"
+      ],
+      "shortcut": "<Ctrl>5",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + 5 Camera Angle - Left side"
+    },
+    {
+      "path": [
+        "View",
+        "Right"
+      ],
+      "shortcut": "<Ctrl>6",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + 6 Camera Angle - Right side"
+    },
+    {
+      "path": [
+        "View",
+        "Show Labels"
+      ],
+      "shortcut": "<Ctrl>E",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + E Show object labels in 3D scene"
+    },
+    {
+      "path": [
+        "View",
+        "Show Wireframe"
+      ],
+      "shortcut": "<Ctrl><Shift>Return",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + Shift + Enter Show/Hide wireframe"
+    },
+    {
+      "path": [
+        "Plater",
+        "Arrange Objects on Selected Plates"
+      ],
+      "shortcut": "<Shift>A",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Shift + A Arrange objects on selected plates"
+    },
+    {
+      "path": [
+        "Plater",
+        "Auto Orient All Objects on Current Plate"
+      ],
+      "shortcut": "<Shift>Q",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Shift + Q Auto orient all objects on current plate"
+    },
+    {
+      "path": [
+        "Plater",
+        "Collapse/Expand the Sidebar"
+      ],
+      "shortcut": "<Shift>Tab",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Shift + Tab Collapse/Expand the sidebar"
+    },
+    {
+      "path": [
+        "Plater",
+        "Show/Hide 3Dconnexion Devices Settings Dialog"
+      ],
+      "shortcut": "<Ctrl>M",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Ctrl + M (Windows/Linux) Cmd + Shift + M (macOS) Show/Hide 3Dconnexion devices settings dialog"
+    },
+    {
+      "path": [
+        "Preview",
+        "Vertical Slider - Move Active Thumb Up"
+      ],
+      "shortcut": "Up",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Arrow Up Vertical slider - Move active thumb Up"
+    },
+    {
+      "path": [
+        "Preview",
+        "Vertical Slider - Move Active Thumb Down"
+      ],
+      "shortcut": "Down",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Arrow Down Vertical slider - Move active thumb Down"
+    },
+    {
+      "path": [
+        "Preview",
+        "Horizontal Slider - Move Active Thumb Left"
+      ],
+      "shortcut": "Left",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Arrow Left Horizontal slider - Move active thumb Left"
+    },
+    {
+      "path": [
+        "Preview",
+        "Horizontal Slider - Move Active Thumb Right"
+      ],
+      "shortcut": "Right",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Arrow Right Horizontal slider - Move active thumb Right"
+    },
+    {
+      "path": [
+        "Preview",
+        "Horizontal Slider - Move to Start Position"
+      ],
+      "shortcut": "Home",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "Home Horizontal slider - Move to start position"
+    },
+    {
+      "path": [
+        "Preview",
+        "Horizontal Slider - Move to Last Position"
+      ],
+      "shortcut": "End",
+      "url": "https://www.orcaslicer.com/wiki/general_settings/keyboard_shortcuts",
+      "quote": "End Horizontal slider - Move to last position"
+    }
+  ]
+}

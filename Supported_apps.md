@@ -124,6 +124,7 @@
 - Kitty
 - KMag
 - KMouth
+- Koko
 - KolourPaint
 - Komikku
 - Konqueror
@@ -167,25 +168,44 @@
 - Newsflash
 - Nextcloud
 - Nicotine+
+- Notepad Next
 - OBS Studio
 - Obsidian
 - Okular
 - ONLYOFFICE
 - Opera
+- OrcaSlicer
 - Papers (Document Viewer)
+- Parabolic
+- Parole Media Player
 - PCManFM
+- PCSX2
+- PDF Arranger
 - PeaZip
+- Pika Backup
 - Pinta
+- Planify
+- Pluma
 - Postman
+- PPSSPP
+- PrimeHack
 - Ptyxis
 - PyCharm
 - QGIS
 - qBittorrent
+- Qt Designer
 - qutebrowser
 - RawTherapee
+- Readest
 - Remmina
+- Remote Viewer
+- Resources
+- RetroArch
 - Rhythmbox
+- Ristretto
+- Rnote
 - Rocket.Chat
+- Rufin
 - Scrcpy
 - Scrivener
 - Seahorse (Passwords & Keys)
@@ -197,6 +217,7 @@
 - Simple Scan (Document Scanner)
 - Skype
 - Slack
+- SMPlayer
 - Sober
 - Software (GNOME Software)
 - Spotify

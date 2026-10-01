@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "pcsx2",
+  "repos": {
+    "pcsx2": {
+      "url": "https://github.com/PCSX2/pcsx2.git",
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "System",
+        "Open Pause Menu"
+      ],
+      "shortcut": "Escape",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 264,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "System",
+        "Toggle Frame Limit"
+      ],
+      "shortcut": "F4",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 265,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "System",
+        "Toggle Turbo / Fast Forward"
+      ],
+      "shortcut": "Tab",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 268,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "Save States",
+        "Save State To Selected Slot"
+      ],
+      "shortcut": "F1",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 254,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "Save States",
+        "Select Next Save Slot"
+      ],
+      "shortcut": "F2",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 255,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "Save States",
+        "Load State From Selected Slot"
+      ],
+      "shortcut": "F3",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 253,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "Graphics",
+        "Cycle Deinterlace Mode"
+      ],
+      "shortcut": "F5",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 227,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "Graphics",
+        "Cycle Aspect Ratio"
+      ],
+      "shortcut": "F6",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 226,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "Graphics",
+        "Save Screenshot"
+      ],
+      "shortcut": "F8",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 235,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "Graphics",
+        "Toggle Software Rendering"
+      ],
+      "shortcut": "F9",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 239,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "Graphics",
+        "Toggle Hardware Mipmapping"
+      ],
+      "shortcut": "Insert",
+      "repo": "pcsx2",
+      "file": "pcsx2/SIO/Pad/Pad.cpp",
+      "line": 230,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In (Grid View)"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "pcsx2",
+      "file": "pcsx2-qt/MainWindow.ui",
+      "line": 841,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out (Grid View)"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "pcsx2",
+      "file": "pcsx2-qt/MainWindow.ui",
+      "line": 852,
+      "commit": "646df006a4688063e56c0826e7ea4b8bb0c112c4"
+    }
+  ]
+}

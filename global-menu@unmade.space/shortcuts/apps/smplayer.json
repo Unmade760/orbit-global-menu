@@ -1,0 +1,483 @@
+{
+  "format": 1,
+  "app": "smplayer",
+  "name": "SMPlayer",
+  "identifiers": [
+    "info.smplayer.SMPlayer.desktop",
+    "info.smplayer.SMPlayer",
+    "SMPlayer",
+    "smplayer.desktop",
+    "smplayer"
+  ],
+  "menus": [
+    {
+      "label": "Open",
+      "items": [
+        {
+          "label": "File...",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "URL...",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Play",
+      "items": [
+        {
+          "label": "Pause",
+          "shortcut": "space"
+        },
+        {
+          "label": "Frame Step",
+          "shortcut": "period"
+        },
+        {
+          "label": "Frame Back Step",
+          "shortcut": "comma"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "-5 Seconds",
+          "shortcut": "Left"
+        },
+        {
+          "label": "+5 Seconds",
+          "shortcut": "Right"
+        },
+        {
+          "label": "-1 Minute",
+          "shortcut": "Down"
+        },
+        {
+          "label": "+1 Minute",
+          "shortcut": "Up"
+        },
+        {
+          "label": "-10 Minutes",
+          "shortcut": "Page_Down"
+        },
+        {
+          "label": "+10 Minutes",
+          "shortcut": "Page_Up"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Speed",
+          "items": [
+            {
+              "label": "Normal Speed",
+              "shortcut": "BackSpace"
+            },
+            {
+              "label": "Half Speed",
+              "shortcut": "braceleft"
+            },
+            {
+              "label": "Double Speed",
+              "shortcut": "braceright"
+            },
+            {
+              "label": "Speed -10%",
+              "shortcut": "bracketleft"
+            },
+            {
+              "label": "Speed +10%",
+              "shortcut": "bracketright"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Jump To...",
+          "shortcut": "<Ctrl>J"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Previous",
+          "shortcut": "less"
+        },
+        {
+          "label": "Next",
+          "shortcut": "greater"
+        }
+      ]
+    },
+    {
+      "label": "Video",
+      "items": [
+        {
+          "label": "Fullscreen",
+          "shortcut": "F"
+        },
+        {
+          "label": "Exit Fullscreen",
+          "shortcut": "Escape"
+        },
+        {
+          "label": "Compact Mode",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Size",
+          "items": [
+            {
+              "label": "100%",
+              "shortcut": "<Ctrl>1"
+            },
+            {
+              "label": "200%",
+              "shortcut": "<Ctrl>2"
+            },
+            {
+              "label": "Toggle Double Size",
+              "shortcut": "<Ctrl>D"
+            }
+          ]
+        },
+        {
+          "label": "Zoom",
+          "items": [
+            {
+              "label": "Reset",
+              "shortcut": "<Shift>E"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Auto Zoom",
+              "shortcut": "<Shift>W"
+            },
+            {
+              "label": "Zoom for 16:9",
+              "shortcut": "<Shift>A"
+            },
+            {
+              "label": "Zoom for 2.35:1",
+              "shortcut": "<Shift>S"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Zoom -",
+              "shortcut": "W"
+            },
+            {
+              "label": "Zoom +",
+              "shortcut": "E"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Move Left",
+              "shortcut": "<Alt>Left"
+            },
+            {
+              "label": "Move Right",
+              "shortcut": "<Alt>Right"
+            },
+            {
+              "label": "Move Up",
+              "shortcut": "<Alt>Up"
+            },
+            {
+              "label": "Move Down",
+              "shortcut": "<Alt>Down"
+            }
+          ]
+        },
+        {
+          "label": "Next Aspect Ratio",
+          "shortcut": "A"
+        },
+        {
+          "label": "Toggle Deinterlacing",
+          "shortcut": "D"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Equalizer",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "label": "Dec Contrast",
+          "shortcut": "1"
+        },
+        {
+          "label": "Inc Contrast",
+          "shortcut": "2"
+        },
+        {
+          "label": "Dec Brightness",
+          "shortcut": "3"
+        },
+        {
+          "label": "Inc Brightness",
+          "shortcut": "4"
+        },
+        {
+          "label": "Dec Hue",
+          "shortcut": "5"
+        },
+        {
+          "label": "Inc Hue",
+          "shortcut": "6"
+        },
+        {
+          "label": "Dec Saturation",
+          "shortcut": "7"
+        },
+        {
+          "label": "Inc Saturation",
+          "shortcut": "8"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Screenshot",
+          "shortcut": "S"
+        },
+        {
+          "label": "Screenshot with Subtitles",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Screenshot without Subtitles",
+          "shortcut": "<Ctrl><Alt>S"
+        },
+        {
+          "label": "Start/Stop Taking Screenshots",
+          "shortcut": "<Shift>D"
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "items": [
+        {
+          "label": "Mute",
+          "shortcut": "M"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Volume -",
+          "shortcut": "9"
+        },
+        {
+          "label": "Volume +",
+          "shortcut": "0"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Delay -",
+          "shortcut": "minus"
+        },
+        {
+          "label": "Delay +",
+          "shortcut": "plus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Previous Audio",
+          "shortcut": "<Shift>K"
+        },
+        {
+          "label": "Next Audio",
+          "shortcut": "K"
+        }
+      ]
+    },
+    {
+      "label": "Subtitles",
+      "items": [
+        {
+          "label": "Previous Subtitle",
+          "shortcut": "<Shift>J"
+        },
+        {
+          "label": "Next Subtitle",
+          "shortcut": "J"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Delay -",
+          "shortcut": "Z"
+        },
+        {
+          "label": "Delay +",
+          "shortcut": "X"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Up",
+          "shortcut": "R"
+        },
+        {
+          "label": "Down",
+          "shortcut": "T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Size -",
+          "shortcut": "<Shift>R"
+        },
+        {
+          "label": "Size +",
+          "shortcut": "<Shift>T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Previous Line in Subtitles",
+          "shortcut": "G"
+        },
+        {
+          "label": "Next Line in Subtitles",
+          "shortcut": "Y"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Seek to Previous Subtitle",
+          "shortcut": "<Ctrl>Left"
+        },
+        {
+          "label": "Seek to Next Subtitle",
+          "shortcut": "<Ctrl>Right"
+        }
+      ]
+    },
+    {
+      "label": "Browse",
+      "items": [
+        {
+          "label": "Previous Chapter",
+          "shortcut": "exclam"
+        },
+        {
+          "label": "Next Chapter",
+          "shortcut": "at"
+        },
+        {
+          "label": "Bookmarks",
+          "items": [
+            {
+              "label": "Add New Bookmark",
+              "shortcut": "<Ctrl>A"
+            },
+            {
+              "label": "Previous Bookmark",
+              "shortcut": "<Ctrl>B"
+            },
+            {
+              "label": "Next Bookmark",
+              "shortcut": "<Ctrl>N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Information and Properties...",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Playlist",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "label": "OSD",
+          "items": [
+            {
+              "label": "OSD - Next Level",
+              "shortcut": "O"
+            },
+            {
+              "label": "Show Filename on OSD",
+              "shortcut": "<Shift>O"
+            },
+            {
+              "label": "Show Info on OSD",
+              "shortcut": "<Shift>I"
+            },
+            {
+              "label": "Show Playback Time on OSD",
+              "shortcut": "I"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Size -",
+              "shortcut": "<Shift>Y"
+            },
+            {
+              "label": "Size +",
+              "shortcut": "<Shift>U"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "SMPlayer Log",
+          "shortcut": "<Ctrl>S"
+        }
+      ]
+    },
+    {
+      "label": "Options",
+      "items": [
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>P"
+        }
+      ]
+    }
+  ]
+}

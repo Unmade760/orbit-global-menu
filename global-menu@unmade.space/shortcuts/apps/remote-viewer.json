@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "app": "remote-viewer",
+  "name": "Remote Viewer",
+  "identifiers": [
+    "org.virt-manager.virt-viewer.desktop",
+    "org.virt-manager.virt-viewer",
+    "org.virt_manager.virt-viewer",
+    "remote-viewer.desktop",
+    "remote-viewer",
+    "virt-viewer",
+    "Remote Viewer"
+  ],
+  "menus": [
+    {
+      "label": "Viewer",
+      "items": [
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Normal Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Fullscreen",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Devices",
+      "items": [
+        {
+          "label": "USB Device Reset",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "label": "Smartcard Insert",
+          "shortcut": "<Shift>F8"
+        },
+        {
+          "label": "Smartcard Remove",
+          "shortcut": "<Shift>F9"
+        }
+      ]
+    },
+    {
+      "label": "Guest Input Devices",
+      "items": [
+        {
+          "label": "Send Secure Attention (Ctrl-Alt-Del)",
+          "shortcut": "<Ctrl><Alt>End"
+        },
+        {
+          "label": "Release Cursor",
+          "shortcut": "<Shift>F12"
+        }
+      ]
+    }
+  ]
+}

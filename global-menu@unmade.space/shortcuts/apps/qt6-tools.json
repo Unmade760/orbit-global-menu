@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "app": "qt6-tools",
+  "name": "Qt Designer",
+  "identifiers": [
+    "designer.desktop",
+    "designer",
+    "designer6",
+    "io.qt.Designer",
+    "Qt Widgets Designer",
+    "Qt Designer",
+    "qt6-designer.desktop",
+    "qt6-designer"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "New...", "shortcut": "<Ctrl>N"},
+        {"label": "Open...", "shortcut": "<Ctrl>O"},
+        {"separator": true},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save All", "shortcut": "<Ctrl><Shift>S"},
+        {"separator": true},
+        {"label": "Print...", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Close", "shortcut": "<Ctrl>W"},
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"separator": true},
+        {"label": "Bring to Front", "shortcut": "<Ctrl>L"},
+        {"label": "Send to Back", "shortcut": "<Ctrl>K"},
+        {"separator": true},
+        {"label": "Edit Widgets", "shortcut": "F3"},
+        {"label": "Edit Signals/Slots", "shortcut": "F4"},
+        {"label": "Edit Contents", "shortcut": "F2"}
+      ]
+    },
+    {
+      "label": "Form",
+      "items": [
+        {"label": "Lay Out Horizontally", "shortcut": "<Ctrl>1"},
+        {"label": "Lay Out Vertically", "shortcut": "<Ctrl>2"},
+        {"label": "Lay Out Horizontally in Splitter", "shortcut": "<Ctrl>3"},
+        {"label": "Lay Out Vertically in Splitter", "shortcut": "<Ctrl>4"},
+        {"label": "Lay Out in a Grid", "shortcut": "<Ctrl>5"},
+        {"label": "Lay Out in a Form Layout", "shortcut": "<Ctrl>6"},
+        {"label": "Break Layout", "shortcut": "<Ctrl>0"},
+        {"label": "Adjust Size", "shortcut": "<Ctrl>J"},
+        {"separator": true},
+        {"label": "Preview...", "shortcut": "<Ctrl>R"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Property Editor", "shortcut": "<Ctrl>I"}
+      ]
+    },
+    {
+      "label": "Window",
+      "items": [
+        {"label": "Minimize", "shortcut": "<Ctrl>M"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Qt Widgets Designer Help", "shortcut": "<Ctrl>question"},
+        {"label": "Current Widget Help", "shortcut": "F1"}
+      ]
+    }
+  ]
+}

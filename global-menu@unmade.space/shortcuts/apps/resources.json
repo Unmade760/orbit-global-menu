@@ -1,0 +1,36 @@
+{
+  "format": 1,
+  "app": "resources",
+  "name": "Resources",
+  "identifiers": [
+    "net.nokyan.Resources.desktop",
+    "net.nokyan.Resources",
+    "resources",
+    "Resources"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {"label": "Preferences", "shortcut": "<Ctrl>comma"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"},
+        {"label": "Quit (Alternate)", "shortcut": "<Ctrl>W"}
+      ]
+    },
+    {
+      "label": "Apps/Processes",
+      "items": [
+        {"label": "Toggle Search Field", "shortcut": "<Ctrl>F"},
+        {"label": "Toggle Search Field (Alternate)", "shortcut": "F3"},
+        {"label": "End App/Process", "shortcut": "<Ctrl>E"},
+        {"label": "End App/Process (Alternate)", "shortcut": "Delete"},
+        {"label": "Kill App/Process", "shortcut": "<Ctrl>K"},
+        {"label": "Kill App/Process (Alternate)", "shortcut": "<Shift>Delete"},
+        {"label": "Halt App/Process", "shortcut": "<Ctrl>H"},
+        {"label": "Continue App/Process", "shortcut": "<Ctrl>N"},
+        {"label": "Show Information for App/Process", "shortcut": "<Ctrl>I"},
+        {"label": "Show Process Options", "shortcut": "<Ctrl>O"}
+      ]
+    }
+  ]
+}

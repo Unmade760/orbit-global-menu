@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "app": "retroarch",
+  "name": "RetroArch",
+  "identifiers": [
+    "org.libretro.RetroArch.desktop",
+    "com.libretro.RetroArch.desktop",
+    "org.libretro.RetroArch",
+    "com.libretro.RetroArch",
+    "retroarch",
+    "RetroArch"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Load Core...",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "label": "Unload Core",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Exit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Search",
+          "shortcut": "<Ctrl>F"
+        }
+      ]
+    },
+    {
+      "label": "Game",
+      "items": [
+        {
+          "label": "Menu Toggle",
+          "shortcut": "F1"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save State",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Load State",
+          "shortcut": "F4"
+        },
+        {
+          "label": "Previous Save State Slot",
+          "shortcut": "F6"
+        },
+        {
+          "label": "Next Save State Slot",
+          "shortcut": "F7"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Take Screenshot",
+          "shortcut": "F8"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "Escape"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Show FPS (Toggle)",
+          "shortcut": "F3"
+        },
+        {
+          "label": "Desktop Menu (Toggle)",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Grab Mouse (Toggle)",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "items": [
+        {
+          "label": "Audio Mute",
+          "shortcut": "F9"
+        }
+      ]
+    }
+  ]
+}

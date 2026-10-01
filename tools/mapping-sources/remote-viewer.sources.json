@@ -1,0 +1,111 @@
+{
+  "format": 1,
+  "app": "remote-viewer",
+  "repos": {
+    "remote-viewer": {
+      "url": "https://gitlab.com/virt-viewer/virt-viewer",
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Viewer",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "remote-viewer",
+      "file": "src/virt-viewer-app.c",
+      "line": 2473,
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    },
+    {
+      "path": [
+        "Viewer",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "remote-viewer",
+      "file": "src/virt-viewer-app.c",
+      "line": 2474,
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    },
+    {
+      "path": [
+        "Viewer",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "remote-viewer",
+      "file": "src/virt-viewer-app.c",
+      "line": 2475,
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    },
+    {
+      "path": [
+        "Viewer",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "remote-viewer",
+      "file": "src/virt-viewer-app.c",
+      "line": 2472,
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    },
+    {
+      "path": [
+        "Devices",
+        "USB Device Reset"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "remote-viewer",
+      "file": "src/virt-viewer-app.c",
+      "line": 2480,
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    },
+    {
+      "path": [
+        "Devices",
+        "Smartcard Insert"
+      ],
+      "shortcut": "<Shift>F8",
+      "repo": "remote-viewer",
+      "file": "src/virt-viewer-app.c",
+      "line": 2477,
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    },
+    {
+      "path": [
+        "Devices",
+        "Smartcard Remove"
+      ],
+      "shortcut": "<Shift>F9",
+      "repo": "remote-viewer",
+      "file": "src/virt-viewer-app.c",
+      "line": 2478,
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    },
+    {
+      "path": [
+        "Guest Input Devices",
+        "Send Secure Attention (Ctrl-Alt-Del)"
+      ],
+      "shortcut": "<Ctrl><Alt>End",
+      "repo": "remote-viewer",
+      "file": "src/virt-viewer-app.c",
+      "line": 2479,
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    },
+    {
+      "path": [
+        "Guest Input Devices",
+        "Release Cursor"
+      ],
+      "shortcut": "<Shift>F12",
+      "repo": "remote-viewer",
+      "file": "src/virt-viewer-app.c",
+      "line": 2476,
+      "commit": "a634fa8d9fbc59b093f2f07110b2c867f622599d"
+    }
+  ]
+}

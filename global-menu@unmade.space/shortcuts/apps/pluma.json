@@ -1,0 +1,286 @@
+{
+  "format": 1,
+  "app": "pluma",
+  "name": "Pluma",
+  "identifiers": [
+    "pluma.desktop",
+    "pluma",
+    "Pluma"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Quick Open",
+          "shortcut": "<Ctrl><Alt>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Print Preview",
+          "shortcut": "<Ctrl><Shift>P"
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Change Case",
+          "items": [
+            {
+              "label": "All Upper Case",
+              "shortcut": "<Ctrl>U"
+            },
+            {
+              "label": "All Lower Case",
+              "shortcut": "<Ctrl>L"
+            },
+            {
+              "label": "Invert Case",
+              "shortcut": "<Alt>U"
+            },
+            {
+              "label": "Title Case",
+              "shortcut": "<Alt>L"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Delete Current Line",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Move Selected Line Up",
+          "shortcut": "<Alt>Up"
+        },
+        {
+          "label": "Move Selected Line Down",
+          "shortcut": "<Alt>Down"
+        },
+        {
+          "label": "Decrease Indent",
+          "shortcut": "<Shift>Tab"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Side Pane",
+          "shortcut": "F9"
+        },
+        {
+          "label": "Bottom Pane",
+          "shortcut": "<Ctrl>F9"
+        },
+        {
+          "label": "Right Pane",
+          "shortcut": "<Shift>F9"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Fullscreen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Line Numbers",
+          "shortcut": "<Ctrl>Y"
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {
+          "label": "Find…",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Incremental Search…",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Replace…",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Clear Highlight",
+          "shortcut": "<Ctrl><Shift>K"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Line…",
+          "shortcut": "<Ctrl>I"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Check Spelling…",
+          "shortcut": "<Shift>F7"
+        },
+        {
+          "label": "Autocheck Spelling",
+          "shortcut": "<Ctrl>F7"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "External Tools",
+          "items": [
+            {
+              "label": "Build",
+              "shortcut": "<Ctrl>F8"
+            },
+            {
+              "label": "Remove Trailing Spaces",
+              "shortcut": "<Alt>F12"
+            },
+            {
+              "label": "Search",
+              "shortcut": "<Ctrl><Shift>F"
+            },
+            {
+              "label": "Switch onto a File .c and .h",
+              "shortcut": "<Shift><Alt>S"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documents",
+      "items": [
+        {
+          "label": "Save All",
+          "shortcut": "<Ctrl><Shift>L"
+        },
+        {
+          "label": "Close All",
+          "shortcut": "<Ctrl><Shift>W"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Previous Document",
+          "shortcut": "<Ctrl><Alt>Page_Up"
+        },
+        {
+          "label": "Next Document",
+          "shortcut": "<Ctrl><Alt>Page_Down"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Move to New Window"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Contents",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

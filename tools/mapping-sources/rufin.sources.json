@@ -1,0 +1,562 @@
+{
+  "format": 1,
+  "app": "rufin",
+  "repos": {
+    "rufin": {
+      "url": "https://github.com/screwys/Rufin.git",
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 397,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "General",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 487,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 491,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "General",
+        "Listening Overview"
+      ],
+      "shortcut": "<Ctrl><Alt>O",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 34,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "General",
+        "Troubleshooting"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 68,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "General",
+        "Version History"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 405,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "General",
+        "Private Mode"
+      ],
+      "shortcut": "<Ctrl><Alt>P",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 86,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "General",
+        "Collapse/Expand Sidebar"
+      ],
+      "shortcut": "<Ctrl><Alt>S",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 77,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "General",
+        "Close App Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/application.rs",
+      "line": 205,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "General",
+        "Quit Rufin"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/application.rs",
+      "line": 204,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Library",
+        "Resync Library"
+      ],
+      "shortcut": "F5",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 373,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause"
+      ],
+      "shortcut": "<Ctrl>space",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 129,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Playback",
+        "Previous"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 164,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 172,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek Backward"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 180,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek Forward"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 188,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Playback",
+        "Favorite"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 240,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Queue",
+        "Play Random"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 264,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Queue",
+        "Play Random (Play Next)"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 272,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Queue",
+        "Play Random (Play Later)"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 280,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Queue",
+        "Shuffle"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 196,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Queue",
+        "Repeat"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 204,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Queue",
+        "Auto DJ"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 248,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Queue",
+        "Clear Queue"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 256,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Selection",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 797,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Selection",
+        "Play"
+      ],
+      "shortcut": "Return",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/resources/shell/shortcuts.ui",
+      "line": 208,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Selection",
+        "Play Next"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 798,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Selection",
+        "Play Later"
+      ],
+      "shortcut": "<Ctrl><Shift>Return",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 799,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add to Playlist"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 800,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Selection",
+        "Download"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 801,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Selection",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/resources/shell/shortcuts.ui",
+      "line": 199,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Audio",
+        "Gapless Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 288,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Audio",
+        "Crossfade Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 296,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Audio",
+        "Mute"
+      ],
+      "shortcut": "M",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/resources/shell/shortcuts.ui",
+      "line": 244,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Audio",
+        "Volume Up"
+      ],
+      "shortcut": "<Ctrl>Up",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 308,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Audio",
+        "Volume Down"
+      ],
+      "shortcut": "<Ctrl>Down",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 316,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Audio",
+        "Previous Audio Device"
+      ],
+      "shortcut": "<Ctrl><Shift>Up",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 802,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Audio",
+        "Next Audio Device"
+      ],
+      "shortcut": "<Ctrl><Shift>Down",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 803,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide Right Sidebar"
+      ],
+      "shortcut": "F9",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 332,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "View",
+        "Show Visualizer in the Right Panel"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 340,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "View",
+        "Show Lyrics in the Right Panel"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 348,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "View",
+        "Show Visualizer and Lyrics in the Right Panel"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 356,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 439,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "View",
+        "Open Fullscreen Player"
+      ],
+      "shortcut": "<Shift>F11",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 381,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Search in Page"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 212,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Navigate to Search"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 220,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch Between Layouts"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 228,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch Search/Favorites Tabs"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 233,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 431,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "rufin",
+      "file": "crates/gtk-shell/src/shell/actions.rs",
+      "line": 435,
+      "commit": "a4f2e0bff1dcf189f1c1dc4a2bed6c0af5b49217"
+    }
+  ]
+}

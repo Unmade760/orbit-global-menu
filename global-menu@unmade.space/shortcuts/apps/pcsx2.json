@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "app": "pcsx2",
+  "name": "PCSX2",
+  "identifiers": [
+    "net.pcsx2.PCSX2.desktop",
+    "net.pcsx2.PCSX2",
+    "pcsx2-qt",
+    "PCSX2"
+  ],
+  "menus": [
+    {
+      "label": "System",
+      "items": [
+        {
+          "label": "Open Pause Menu",
+          "shortcut": "Escape"
+        },
+        {
+          "label": "Toggle Frame Limit",
+          "shortcut": "F4"
+        },
+        {
+          "label": "Toggle Turbo / Fast Forward",
+          "shortcut": "Tab"
+        }
+      ]
+    },
+    {
+      "label": "Save States",
+      "items": [
+        {
+          "label": "Save State To Selected Slot",
+          "shortcut": "F1"
+        },
+        {
+          "label": "Select Next Save Slot",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Load State From Selected Slot",
+          "shortcut": "F3"
+        }
+      ]
+    },
+    {
+      "label": "Graphics",
+      "items": [
+        {
+          "label": "Cycle Deinterlace Mode",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Cycle Aspect Ratio",
+          "shortcut": "F6"
+        },
+        {
+          "label": "Save Screenshot",
+          "shortcut": "F8"
+        },
+        {
+          "label": "Toggle Software Rendering",
+          "shortcut": "F9"
+        },
+        {
+          "label": "Toggle Hardware Mipmapping",
+          "shortcut": "Insert"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Zoom In (Grid View)",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out (Grid View)",
+          "shortcut": "<Ctrl>minus"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format": 1,
+  "app": "ppsspp",
+  "name": "PPSSPP",
+  "identifiers": [
+    "org.ppsspp.PPSSPP.desktop",
+    "org.ppsspp.PPSSPP",
+    "ppsspp.desktop",
+    "ppsspp",
+    "PPSSPPSDL"
+  ],
+  "menus": [
+    {
+      "label": "Emulation",
+      "items": [
+        {"label": "Pause", "shortcut": "Escape"},
+        {"label": "Rewind", "shortcut": "BackSpace"}
+      ]
+    },
+    {
+      "label": "Debugger",
+      "items": [
+        {"label": "Step Into", "shortcut": "F11"},
+        {"label": "Step Over", "shortcut": "F10"},
+        {"label": "Toggle Breakpoint", "shortcut": "F9"}
+      ]
+    }
+  ]
+}

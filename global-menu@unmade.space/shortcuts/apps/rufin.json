@@ -1,0 +1,271 @@
+{
+  "format": 1,
+  "app": "rufin",
+  "name": "Rufin",
+  "identifiers": [
+    "io.github.screwys.Rufin.desktop",
+    "io.github.screwys.Rufin",
+    "rufin",
+    "Rufin"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Menu",
+          "shortcut": "F10"
+        },
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Listening Overview",
+          "shortcut": "<Ctrl><Alt>O"
+        },
+        {
+          "label": "Troubleshooting",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "label": "Version History",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "label": "Private Mode",
+          "shortcut": "<Ctrl><Alt>P"
+        },
+        {
+          "label": "Collapse/Expand Sidebar",
+          "shortcut": "<Ctrl><Alt>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close App Window",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit Rufin",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Library",
+      "items": [
+        {
+          "label": "Resync Library",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Next Source"
+        }
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {
+          "label": "Play/Pause",
+          "shortcut": "<Ctrl>space"
+        },
+        {
+          "label": "Previous",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Next",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Seek Backward",
+          "shortcut": "<Ctrl>Left"
+        },
+        {
+          "label": "Seek Forward",
+          "shortcut": "<Ctrl>Right"
+        },
+        {
+          "label": "Favorite",
+          "shortcut": "<Ctrl>L"
+        }
+      ]
+    },
+    {
+      "label": "Queue",
+      "items": [
+        {
+          "label": "Play Random",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "label": "Play Random (Play Next)",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "label": "Play Random (Play Later)",
+          "shortcut": "<Ctrl><Shift>T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Shuffle",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Repeat",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Auto DJ",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Clear Queue",
+          "shortcut": "<Ctrl>period"
+        }
+      ]
+    },
+    {
+      "label": "Selection",
+      "items": [
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Play",
+          "shortcut": "Return"
+        },
+        {
+          "label": "Play Next",
+          "shortcut": "<Ctrl>Return"
+        },
+        {
+          "label": "Play Later",
+          "shortcut": "<Ctrl><Shift>Return"
+        },
+        {
+          "label": "Add to Playlist",
+          "shortcut": "<Ctrl><Shift>P"
+        },
+        {
+          "label": "Download",
+          "shortcut": "<Ctrl><Shift>D"
+        },
+        {
+          "label": "Delete",
+          "shortcut": "Delete"
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "items": [
+        {
+          "label": "Gapless Mode",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Crossfade Mode",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Mute",
+          "shortcut": "M"
+        },
+        {
+          "label": "Volume Up",
+          "shortcut": "<Ctrl>Up"
+        },
+        {
+          "label": "Volume Down",
+          "shortcut": "<Ctrl>Down"
+        },
+        {
+          "label": "Previous Audio Device",
+          "shortcut": "<Ctrl><Shift>Up"
+        },
+        {
+          "label": "Next Audio Device",
+          "shortcut": "<Ctrl><Shift>Down"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Show/Hide Right Sidebar",
+          "shortcut": "F9"
+        },
+        {
+          "label": "Show Visualizer in the Right Panel",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "label": "Show Lyrics in the Right Panel",
+          "shortcut": "<Ctrl><Shift>L"
+        },
+        {
+          "label": "Show Visualizer and Lyrics in the Right Panel",
+          "shortcut": "<Ctrl><Shift>B"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Fullscreen",
+          "shortcut": "F11"
+        },
+        {
+          "label": "Open Fullscreen Player",
+          "shortcut": "<Shift>F11"
+        }
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {
+          "label": "Search in Page",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Navigate to Search",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "label": "Switch Between Layouts",
+          "shortcut": "<Ctrl>J"
+        },
+        {
+          "label": "Switch Search/Favorites Tabs",
+          "shortcut": "<Ctrl>Tab"
+        },
+        {
+          "label": "Back",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Forward",
+          "shortcut": "<Alt>Right"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "format": 1,
+  "app": "notepad-next",
+  "name": "Notepad Next",
+  "identifiers": [
+    "NotepadNext.desktop",
+    "com.github.dail8859.NotepadNext.desktop",
+    "com.github.dail8859.NotepadNext",
+    "NotepadNext",
+    "Notepad Next"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "New", "shortcut": "<Ctrl>N"},
+        {"label": "Open…", "shortcut": "<Ctrl>O"},
+        {"label": "Open Folder as Workspace…"},
+        {"label": "Reload"},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As…", "shortcut": "<Ctrl><Alt>S"},
+        {"label": "Save a Copy As…"},
+        {"label": "Save All", "shortcut": "<Ctrl><Shift>S"},
+        {"label": "Export As", "items": [
+          {"label": "Export as HTML…"},
+          {"label": "Export as RTF…"}
+        ]},
+        {"label": "Rename…"},
+        {"label": "Close", "shortcut": "<Ctrl>W"},
+        {"label": "Close All", "shortcut": "<Ctrl><Shift>W"},
+        {"label": "Close More", "items": [
+          {"label": "Close All Except Active Document"},
+          {"label": "Close All to the Left"},
+          {"label": "Close All to the Right"}
+        ]},
+        {"label": "Move to Trash…"},
+        {"separator": true},
+        {"label": "Print…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Recent Files", "items": [
+          {"label": "Restore Recently Closed File", "shortcut": "<Ctrl><Shift>T"},
+          {"label": "Open All Recent Files"},
+          {"label": "Clear Recent Files List"}
+        ]},
+        {"separator": true},
+        {"label": "Exit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo", "shortcut": "<Ctrl>Y"},
+        {"separator": true},
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"label": "Delete", "shortcut": "Delete"},
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"label": "Select Next Instance", "shortcut": "<Ctrl>D"},
+        {"separator": true},
+        {"label": "Copy More", "items": [
+          {"label": "Copy Full Path"},
+          {"label": "Copy File Name"},
+          {"label": "Copy File Directory"}
+        ]},
+        {"label": "Copy As", "items": [
+          {"label": "Copy as HTML"},
+          {"label": "Copy as RTF"}
+        ]},
+        {"label": "Indent", "items": [
+          {"label": "Increase Indent"},
+          {"label": "Decrease Indent"}
+        ]},
+        {"label": "Convert Case", "items": [
+          {"label": "UPPER CASE"},
+          {"label": "lower case"}
+        ]},
+        {"label": "EOL Conversion", "items": [
+          {"label": "Windows (CR LF)"},
+          {"label": "Unix (LF)"},
+          {"label": "Macintosh (CR)"}
+        ]},
+        {"label": "Line Operations", "items": [
+          {"label": "Duplicate Current Line", "shortcut": "<Alt>Down"},
+          {"label": "Split Lines"},
+          {"label": "Join Lines", "shortcut": "<Ctrl>J"},
+          {"label": "Move Selected Lines Up", "shortcut": "<Ctrl><Shift>Up"},
+          {"label": "Move Selected Lines Down", "shortcut": "<Ctrl><Shift>Down"},
+          {"separator": true},
+          {"label": "Remove Empty Lines"},
+          {"label": "Remove Duplicate Lines"},
+          {"label": "Remove Consecutive Duplicate Lines"},
+          {"label": "Reverse Line Order"},
+          {"separator": true},
+          {"label": "Sort Lines Ascending"},
+          {"label": "Sort Lines Ascending (Case-Insensitive)"},
+          {"label": "Sort Lines by Length Ascending"},
+          {"separator": true},
+          {"label": "Sort Lines Descending"},
+          {"label": "Sort Lines Descending (Case-Insensitive)"},
+          {"label": "Sort Lines by Length Descending"}
+        ]},
+        {"label": "Comment/Uncomment", "items": [
+          {"label": "Toggle Single Line Comment", "shortcut": "<Ctrl>slash"},
+          {"label": "Single Line Comment", "shortcut": "<Ctrl>K"},
+          {"label": "Single Line Uncomment", "shortcut": "<Ctrl><Shift>K"}
+        ]},
+        {"label": "Encoding/Decoding", "items": [
+          {"label": "Base 64 Encode"},
+          {"label": "URL Encode"},
+          {"separator": true},
+          {"label": "Base 64 Decode"},
+          {"label": "URL Decode"}
+        ]},
+        {"separator": true},
+        {"label": "Column Mode…"}
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {"label": "Find…", "shortcut": "<Ctrl>F"},
+        {"label": "Find in Files…"},
+        {"label": "Find Next", "shortcut": "F3"},
+        {"label": "Find Previous", "shortcut": "<Shift>F3"},
+        {"label": "Select and Find Next", "shortcut": "<Ctrl>F3"},
+        {"label": "Select and Find Previous", "shortcut": "<Ctrl><Shift>F3"},
+        {"label": "Replace…", "shortcut": "<Ctrl>H"},
+        {"separator": true},
+        {"label": "Quick Find", "shortcut": "<Ctrl><Alt>I"},
+        {"label": "Go to Line…", "shortcut": "<Ctrl>G"},
+        {"separator": true},
+        {"label": "Mark All Occurrences", "items": [
+          {"label": "Mark Style 1"},
+          {"label": "Mark Style 2"},
+          {"label": "Mark Style 3"}
+        ]},
+        {"label": "Clear Marks", "items": [
+          {"label": "Clear Style 1"},
+          {"label": "Clear Style 2"},
+          {"label": "Clear Style 3"},
+          {"label": "Clear All Styles"}
+        ]},
+        {"separator": true},
+        {"label": "Bookmarks", "items": [
+          {"label": "Toggle Bookmark", "shortcut": "<Ctrl>F2"},
+          {"label": "Search and Bookmark Lines…", "shortcut": "<Ctrl>M"},
+          {"separator": true},
+          {"label": "Next Bookmark", "shortcut": "F2"},
+          {"label": "Previous Bookmark", "shortcut": "<Shift>F2"},
+          {"separator": true},
+          {"label": "Clear Bookmarks"},
+          {"label": "Invert Bookmarks"},
+          {"separator": true},
+          {"label": "Cut Bookmarked Lines"},
+          {"label": "Copy Bookmarked Lines"},
+          {"label": "Delete Bookmarked Lines"}
+        ]}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Full Screen", "shortcut": "F11"},
+        {"separator": true},
+        {"label": "Show Symbol", "items": [
+          {"label": "Show All Characters"},
+          {"label": "Show Whitespace"},
+          {"label": "Show End of Line"},
+          {"separator": true},
+          {"label": "Show Indent Guide"},
+          {"label": "Show Wrap Symbol"}
+        ]},
+        {"label": "Zoom", "items": [
+          {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+          {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+          {"separator": true},
+          {"label": "Reset Zoom", "shortcut": "<Ctrl>0"}
+        ]},
+        {"label": "Word Wrap"},
+        {"separator": true},
+        {"label": "Fold All", "shortcut": "<Alt>0"},
+        {"label": "Unfold All", "shortcut": "<Shift><Alt>0"},
+        {"label": "Fold Level", "items": [
+          {"label": "Fold Level 1", "shortcut": "<Alt>1"},
+          {"label": "Fold Level 2", "shortcut": "<Alt>2"},
+          {"label": "Fold Level 3", "shortcut": "<Alt>3"},
+          {"label": "Fold Level 4", "shortcut": "<Alt>4"},
+          {"label": "Fold Level 5", "shortcut": "<Alt>5"},
+          {"label": "Fold Level 6", "shortcut": "<Alt>6"},
+          {"label": "Fold Level 7", "shortcut": "<Alt>7"},
+          {"label": "Fold Level 8", "shortcut": "<Alt>8"},
+          {"label": "Fold Level 9", "shortcut": "<Alt>9"}
+        ]},
+        {"label": "Unfold Level", "items": [
+          {"label": "Unfold Level 1", "shortcut": "<Shift><Alt>1"},
+          {"label": "Unfold Level 2", "shortcut": "<Shift><Alt>2"},
+          {"label": "Unfold Level 3", "shortcut": "<Shift><Alt>3"},
+          {"label": "Unfold Level 4", "shortcut": "<Shift><Alt>4"},
+          {"label": "Unfold Level 5", "shortcut": "<Shift><Alt>5"},
+          {"label": "Unfold Level 6", "shortcut": "<Shift><Alt>6"},
+          {"label": "Unfold Level 7", "shortcut": "<Shift><Alt>7"},
+          {"label": "Unfold Level 8", "shortcut": "<Shift><Alt>8"},
+          {"label": "Unfold Level 9", "shortcut": "<Shift><Alt>9"}
+        ]},
+        {"separator": true},
+        {"label": "Split Horizontal", "shortcut": "<Ctrl><Alt>Right"},
+        {"label": "Split Vertical", "shortcut": "<Ctrl><Alt>Down"},
+        {"separator": true},
+        {"label": "Next Tab", "shortcut": "<Ctrl>Tab"},
+        {"label": "Previous Tab", "shortcut": "<Ctrl><Shift>Tab"}
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {"label": "Preferences…"}
+      ]
+    },
+    {
+      "label": "Macro",
+      "items": [
+        {"label": "Start Recording"},
+        {"label": "Playback", "shortcut": "<Ctrl><Shift>P"},
+        {"label": "Run a Macro Multiple Times…"},
+        {"label": "Save Current Recorded Macro…"},
+        {"label": "Edit Macros…"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Check for Updates…"},
+        {"separator": true},
+        {"label": "About Qt"},
+        {"label": "About Notepad Next", "shortcut": "F1"},
+        {"label": "Debug Info…"}
+      ]
+    }
+  ]
+}

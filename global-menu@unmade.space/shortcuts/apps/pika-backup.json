@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "app": "pika-backup",
+  "name": "Pika Backup",
+  "identifiers": [
+    "org.gnome.World.PikaBackup.desktop",
+    "org.gnome.World.PikaBackup",
+    "Pika Backup",
+    "pika-backup"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Set Up New Backup",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Back",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Open Menu",
+          "shortcut": "F10"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Backup Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "label": "Help",
+          "shortcut": "F1"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    }
+  ]
+}

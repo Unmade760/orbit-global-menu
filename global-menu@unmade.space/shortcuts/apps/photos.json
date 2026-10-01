@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "app": "photos",
+  "name": "Koko",
+  "identifiers": [
+    "org.kde.koko.desktop",
+    "org.kde.koko",
+    "koko"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Save As",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Favorite",
+          "shortcut": "<Shift>F"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Rename",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Move to Trash",
+          "shortcut": "Delete"
+        },
+        {
+          "label": "Delete",
+          "shortcut": "<Shift>Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Print",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Properties",
+          "shortcut": "<Alt>Return"
+        }
+      ]
+    },
+    {
+      "label": "Gallery",
+      "items": [
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        }
+      ]
+    },
+    {
+      "label": "Media View",
+      "items": [
+        {
+          "label": "Previous Image",
+          "shortcut": "Left"
+        },
+        {
+          "label": "Next Image",
+          "shortcut": "Right"
+        },
+        {
+          "label": "Edit",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "label": "Share"
+        },
+        {
+          "label": "Info",
+          "shortcut": "I"
+        },
+        {
+          "label": "Show Thumbnail Toolbar",
+          "shortcut": "T"
+        },
+        {
+          "label": "Full Screen",
+          "shortcut": "F"
+        },
+        {
+          "label": "Play/Pause Video",
+          "shortcut": "space"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        }
+      ]
+    },
+    {
+      "label": "Edit Mode",
+      "items": [
+        {
+          "label": "Crop",
+          "shortcut": "C"
+        },
+        {
+          "label": "Rotate Left",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "label": "Rotate Right",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Flip Horizontally",
+          "shortcut": "<Shift>H"
+        },
+        {
+          "label": "Flip Vertically",
+          "shortcut": "<Shift>V"
+        },
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        }
+      ]
+    }
+  ]
+}

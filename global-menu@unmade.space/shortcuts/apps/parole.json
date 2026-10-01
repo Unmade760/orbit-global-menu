@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "app": "parole",
+  "name": "Parole Media Player",
+  "identifiers": [
+    "org.xfce.Parole.desktop",
+    "org.xfce.Parole",
+    "parole",
+    "Parole Media Player"
+  ],
+  "menus": [
+    {
+      "label": "Media",
+      "items": [
+        {"label": "Open…", "shortcut": "<Ctrl>O"},
+        {"label": "Open Location…", "shortcut": "<Ctrl>L"},
+        {"label": "Open Recent"},
+        {"separator": true},
+        {"label": "Save Playlist…"},
+        {"separator": true},
+        {"label": "Insert Disc"},
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {"label": "Play/Pause", "shortcut": "space"},
+        {"label": "Previous Track", "shortcut": "b"},
+        {"label": "Next Track", "shortcut": "n"},
+        {"separator": true},
+        {"label": "Go Back 10 Seconds", "shortcut": "Left"},
+        {"label": "Go Forward 10 Seconds", "shortcut": "Right"},
+        {"label": "Go Back 1 Minute", "shortcut": "<Ctrl>Left"},
+        {"label": "Go Forward 1 Minute", "shortcut": "<Ctrl>Right"},
+        {"label": "Go Back 10 Minutes", "shortcut": "Page_Down"},
+        {"label": "Go Forward 10 Minutes", "shortcut": "Page_Up"},
+        {"separator": true},
+        {"label": "Repeat"},
+        {"label": "Shuffle"},
+        {"separator": true},
+        {"label": "Show Playlist", "shortcut": "F9"},
+        {"label": "Go to Position", "shortcut": "<Ctrl>G"}
+      ]
+    },
+    {
+      "label": "DVD",
+      "items": [
+        {"label": "DVD Menu"},
+        {"label": "Title Menu"},
+        {"label": "Subpicture Menu"},
+        {"label": "Audio Menu"},
+        {"label": "Angle Menu"},
+        {"label": "Chapters", "items": [
+          {"label": "Chapter Menu"}
+        ]}
+      ]
+    },
+    {
+      "label": "Audio",
+      "items": [
+        {"label": "Audio Track"},
+        {"separator": true},
+        {"label": "Volume Up", "shortcut": "plus"},
+        {"label": "Volume Down", "shortcut": "minus"},
+        {"label": "Mute", "shortcut": "0"}
+      ]
+    },
+    {
+      "label": "Video",
+      "items": [
+        {"label": "Fullscreen", "shortcut": "F11"},
+        {"label": "Exit Fullscreen", "shortcut": "Escape"},
+        {"label": "Toggle Menubar", "shortcut": "<Ctrl>M"},
+        {"separator": true},
+        {"label": "Aspect Ratio", "items": [
+          {"label": "None"},
+          {"label": "Auto"},
+          {"label": "Square"},
+          {"label": "4:3 (TV)"},
+          {"label": "16:9 (Widescreen)"},
+          {"label": "20:9 (DVB)"}
+        ]},
+        {"label": "Subtitles", "items": [
+          {"label": "None"},
+          {"label": "Select Text Subtitles…"}
+        ]}
+      ]
+    },
+    {
+      "label": "Playlist",
+      "items": [
+        {"label": "Select Previous Item", "shortcut": "Up"},
+        {"label": "Select Next Item", "shortcut": "Down"},
+        {"label": "Remove Selected Item", "shortcut": "Delete"}
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {"label": "Plugins"},
+        {"label": "Preferences"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Report a Bug…"},
+        {"label": "Keyboard Shortcuts"},
+        {"label": "Contents", "shortcut": "F1"},
+        {"label": "About"}
+      ]
+    }
+  ]
+}

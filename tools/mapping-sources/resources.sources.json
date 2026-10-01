@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "resources",
+  "repos": {
+    "resources": {
+      "url": "https://github.com/nokyan/resources.git",
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 223,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 222,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "General",
+        "Quit (Alternate)"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 222,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "Toggle Search Field"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 224,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "Toggle Search Field (Alternate)"
+      ],
+      "shortcut": "F3",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 224,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "End App/Process"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 225,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "End App/Process (Alternate)"
+      ],
+      "shortcut": "Delete",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 225,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "Kill App/Process"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 226,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "Kill App/Process (Alternate)"
+      ],
+      "shortcut": "<Shift>Delete",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 226,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "Halt App/Process"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 227,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "Continue App/Process"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 228,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "Show Information for App/Process"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 229,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    },
+    {
+      "path": [
+        "Apps/Processes",
+        "Show Process Options"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "resources",
+      "file": "src/application.rs",
+      "line": 230,
+      "commit": "45b4c122d5acd29788934469fd123ae62296bea2"
+    }
+  ]
+}

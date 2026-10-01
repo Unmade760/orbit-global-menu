@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "app": "parabolic",
+  "name": "Parabolic",
+  "identifiers": [
+    "org.nickvision.tubeconverter.desktop",
+    "org.nickvision.tubeconverter",
+    "Parabolic"
+  ],
+  "menus": [
+    {
+      "label": "Downloads",
+      "items": [
+        {
+          "label": "Add Download",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Keyring",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Stop All Remaining",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Retry All Failed",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Clear All Queued"
+        },
+        {
+          "label": "Clear All Completed"
+        }
+      ]
+    },
+    {
+      "label": "Parabolic",
+      "items": [
+        {
+          "label": "History",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>period"
+        },
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "label": "About Parabolic",
+          "shortcut": "F1"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    }
+  ]
+}

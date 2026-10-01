@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "app": "ppsspp",
+  "repos": {
+    "ppsspp": {
+      "url": "https://github.com/hrydgard/ppsspp.git",
+      "commit": "b04d03615b118ac9cfcf2f9c967b8d518811352d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Emulation",
+        "Pause"
+      ],
+      "shortcut": "Escape",
+      "repo": "ppsspp",
+      "commit": "b04d03615b118ac9cfcf2f9c967b8d518811352d",
+      "file": "assets/lang/es_ES.ini",
+      "line": 1294
+    },
+    {
+      "path": [
+        "Emulation",
+        "Rewind"
+      ],
+      "shortcut": "BackSpace",
+      "url": "https://www.ppsspp.org/docs/settings/system",
+      "quote": "You can go back to the last savestate by pressing Backspace."
+    },
+    {
+      "path": [
+        "Debugger",
+        "Step Into"
+      ],
+      "shortcut": "F11",
+      "repo": "ppsspp",
+      "commit": "b04d03615b118ac9cfcf2f9c967b8d518811352d",
+      "file": "UI/ImDebugger/ImDisasmView.cpp",
+      "line": 1226
+    },
+    {
+      "path": [
+        "Debugger",
+        "Step Over"
+      ],
+      "shortcut": "F10",
+      "repo": "ppsspp",
+      "commit": "b04d03615b118ac9cfcf2f9c967b8d518811352d",
+      "file": "UI/ImDebugger/ImDisasmView.cpp",
+      "line": 1234
+    },
+    {
+      "path": [
+        "Debugger",
+        "Toggle Breakpoint"
+      ],
+      "shortcut": "F9",
+      "repo": "ppsspp",
+      "commit": "b04d03615b118ac9cfcf2f9c967b8d518811352d",
+      "file": "UI/ImDebugger/ImDisasmView.cpp",
+      "line": 792
+    }
+  ]
+}

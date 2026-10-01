@@ -1,0 +1,323 @@
+{
+  "format": 1,
+  "app": "ristretto",
+  "repos": {
+    "ristretto": {
+      "url": "https://gitlab.xfce.org/apps/ristretto.git",
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 350,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "File",
+        "Save Copy…"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 356,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 368,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 380,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 386,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy Image to Clipboard"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 399,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 429,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clear Private Data…"
+      ],
+      "shortcut": "<Ctrl><Shift>Delete",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 435,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Show Thumbnail Bar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 651,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 479,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 485,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Fit"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 491,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 497,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Default Zoom",
+        "Smart Zoom"
+      ],
+      "shortcut": "<Alt>asterisk",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 793,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Default Zoom",
+        "Zoom Fit"
+      ],
+      "shortcut": "<Alt>equal",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 799,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Default Zoom",
+        "Normal Size"
+      ],
+      "shortcut": "<Alt>0",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 805,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Rotation",
+        "Rotate Right"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 517,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Rotation",
+        "Rotate Left"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 523,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Flip",
+        "Flip Horizontally"
+      ],
+      "shortcut": "<Ctrl>braceright",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 536,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Flip",
+        "Flip Vertically"
+      ],
+      "shortcut": "<Ctrl>braceleft",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 542,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 454,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "Go",
+        "Back"
+      ],
+      "shortcut": "BackSpace",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 561,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "Go",
+        "Forward"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "ristretto",
+      "file": "src/settings.c",
+      "line": 145,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "Go",
+        "First"
+      ],
+      "shortcut": "Home",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 567,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "Go",
+        "Last"
+      ],
+      "shortcut": "End",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 573,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "Go",
+        "Play"
+      ],
+      "shortcut": "F5",
+      "repo": "ristretto",
+      "file": "src/settings.c",
+      "line": 149,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "ristretto",
+      "file": "src/main_window.c",
+      "line": 586,
+      "commit": "3713b02647692c62947bfcaf51ae4fdf01a2ff40"
+    }
+  ]
+}

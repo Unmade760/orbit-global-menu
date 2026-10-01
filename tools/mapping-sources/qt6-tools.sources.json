@@ -1,0 +1,353 @@
+{
+  "format": 1,
+  "app": "qt6-tools",
+  "repos": {
+    "qt6-tools": {
+      "url": "https://github.com/qt/qttools.git",
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New..."
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 230,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "File",
+        "Open..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 234,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 241,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "File",
+        "Save All"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 253,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "File",
+        "Print..."
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 263,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 273,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 280,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 290,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 295,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 350,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 359,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 368,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 385,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Bring to Front"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 394,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Send to Back"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 403,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Edit Widgets"
+      ],
+      "shortcut": "F3",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 323,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Edit Signals/Slots"
+      ],
+      "shortcut": "F4",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/signalsloteditor/signalsloteditor_plugin.cpp",
+      "line": 36,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Edit",
+        "Edit Contents"
+      ],
+      "shortcut": "F2",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindow.cpp",
+      "line": 421,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Form",
+        "Lay Out Horizontally"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 422,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Form",
+        "Lay Out Vertically"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 432,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Form",
+        "Lay Out Horizontally in Splitter"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 462,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Form",
+        "Lay Out Vertically in Splitter"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 472,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Form",
+        "Lay Out in a Grid"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 452,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Form",
+        "Lay Out in a Form Layout"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 442,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Form",
+        "Break Layout"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 483,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Form",
+        "Adjust Size"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/components/formeditor/formwindowmanager.cpp",
+      "line": 412,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Form",
+        "Preview..."
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 378,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "View",
+        "Property Editor"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_toolwindow.cpp",
+      "line": 137,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Window",
+        "Minimize"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 404,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Help",
+        "Qt Widgets Designer Help"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 446,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    },
+    {
+      "path": [
+        "Help",
+        "Current Widget Help"
+      ],
+      "shortcut": "F1",
+      "repo": "qt6-tools",
+      "file": "src/designer/src/designer/qdesigner_actions.cpp",
+      "line": 452,
+      "commit": "4c3368ffcd8510276b6ca41166bc04c243eef6ef"
+    }
+  ]
+}

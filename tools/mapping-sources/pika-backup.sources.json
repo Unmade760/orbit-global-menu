@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "app": "pika-backup",
+  "repos": {
+    "pika-backup": {
+      "url": "https://gitlab.gnome.org/World/pika-backup.git",
+      "commit": "95bfcb9671555fcf607ccb56d551f0a940df2007"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Set Up New Backup"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "pika-backup",
+      "file": "data/resources/shortcuts-dialog.ui",
+      "line": 9,
+      "commit": "95bfcb9671555fcf607ccb56d551f0a940df2007"
+    },
+    {
+      "path": [
+        "General",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "pika-backup",
+      "file": "data/resources/shortcuts-dialog.ui",
+      "line": 27,
+      "commit": "95bfcb9671555fcf607ccb56d551f0a940df2007"
+    },
+    {
+      "path": [
+        "General",
+        "Open Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "pika-backup",
+      "file": "data/resources/shortcuts-dialog.ui",
+      "line": 33,
+      "commit": "95bfcb9671555fcf607ccb56d551f0a940df2007"
+    },
+    {
+      "path": [
+        "General",
+        "Backup Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "pika-backup",
+      "file": "pika-backup/src/widget/app_window.ui",
+      "line": 42,
+      "commit": "95bfcb9671555fcf607ccb56d551f0a940df2007"
+    },
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "pika-backup",
+      "file": "pika-backup/src/widget/app_window.ui",
+      "line": 36,
+      "commit": "95bfcb9671555fcf607ccb56d551f0a940df2007"
+    },
+    {
+      "path": [
+        "General",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "pika-backup",
+      "file": "pika-backup/src/app.rs",
+      "line": 223,
+      "commit": "95bfcb9671555fcf607ccb56d551f0a940df2007"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "pika-backup",
+      "file": "pika-backup/src/app.rs",
+      "line": 224,
+      "commit": "95bfcb9671555fcf607ccb56d551f0a940df2007"
+    }
+  ]
+}

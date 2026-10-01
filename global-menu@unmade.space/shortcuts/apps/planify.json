@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "app": "planify",
+  "name": "Planify",
+  "identifiers": [
+    "io.github.alainm23.planify.desktop",
+    "io.github.alainm23.planify",
+    "Planify"
+  ],
+  "menus": [
+    {
+      "label": "Used Anywhere",
+      "items": [
+        {"label": "Create a New Task", "shortcut": "A"},
+        {"label": "Paste Plain Text to Create New Task", "shortcut": "<Ctrl>V"},
+        {"label": "Create a New Project", "shortcut": "P"},
+        {"label": "Create a New Section in a Project", "shortcut": "S"},
+        {"label": "Sync Now", "shortcut": "<Ctrl>S"}
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {"label": "Open Quick Find", "shortcut": "<Ctrl>F"}
+      ]
+    },
+    {
+      "label": "Control Windows",
+      "items": [
+        {"label": "Quit", "shortcut": "<Ctrl>Q"},
+        {"label": "Quit (Alternate)", "shortcut": "<Ctrl>W"},
+        {"label": "Open Preferences", "shortcut": "<Ctrl>comma"},
+        {"label": "Toggle Sidebar", "shortcut": "M"},
+        {"label": "Open Keyboard Shortcuts", "shortcut": "F1"}
+      ]
+    },
+    {
+      "label": "Navigate",
+      "items": [
+        {"label": "Open Homepage", "shortcut": "<Ctrl>H"},
+        {"label": "Open Inbox", "shortcut": "<Ctrl>I"},
+        {"label": "Open Today", "shortcut": "<Ctrl>T"},
+        {"label": "Open Scheduled", "shortcut": "<Ctrl>U"},
+        {"label": "Open Labels", "shortcut": "<Ctrl>L"},
+        {"label": "Open Pinboard", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Open Project 1", "shortcut": "<Ctrl>1"},
+        {"label": "Open Project 2", "shortcut": "<Ctrl>2"},
+        {"label": "Open Project 3", "shortcut": "<Ctrl>3"},
+        {"label": "Open Project 4", "shortcut": "<Ctrl>4"},
+        {"label": "Open Project 5", "shortcut": "<Ctrl>5"},
+        {"label": "Open Project 6", "shortcut": "<Ctrl>6"},
+        {"label": "Open Project 7", "shortcut": "<Ctrl>7"},
+        {"label": "Open Project 8", "shortcut": "<Ctrl>8"},
+        {"label": "Open Last Project", "shortcut": "<Ctrl>9"},
+        {"separator": true},
+        {"label": "Open Next Project", "shortcut": "<Ctrl>Page_Down"},
+        {"label": "Open Previous Project", "shortcut": "<Ctrl>Page_Up"}
+      ]
+    },
+    {
+      "label": "Quick Add",
+      "items": [
+        {"label": "Set Date", "shortcut": "<Ctrl>D"},
+        {"label": "Add Reminders", "shortcut": "<Ctrl>R"},
+        {"label": "Keep Adding", "shortcut": "<Ctrl>K"}
+      ]
+    }
+  ]
+}

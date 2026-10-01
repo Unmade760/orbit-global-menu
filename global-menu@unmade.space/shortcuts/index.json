@@ -238,6 +238,27 @@
     "mission-center.json",
     "mousepad.json",
     "music.json",
-    "newsflash.json"
+    "newsflash.json",
+    "notepad-next.json",
+    "orcaslicer.json",
+    "parabolic.json",
+    "parole.json",
+    "pcsx2.json",
+    "pdf-arranger.json",
+    "photos.json",
+    "pika-backup.json",
+    "planify.json",
+    "pluma.json",
+    "ppsspp.json",
+    "primehack.json",
+    "qt6-tools.json",
+    "readest.json",
+    "remote-viewer.json",
+    "resources.json",
+    "retroarch.json",
+    "ristretto.json",
+    "rnote.json",
+    "rufin.json",
+    "smplayer.json"
   ]
 }

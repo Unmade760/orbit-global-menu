@@ -1,0 +1,595 @@
+{
+  "format": 1,
+  "app": "readest",
+  "repos": {
+    "readest": {
+      "url": "https://github.com/readest/readest.git",
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Switch Sidebar Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 12,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Sidebar"
+      ],
+      "shortcut": "s",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 17,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Notebook"
+      ],
+      "shortcut": "n",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 27,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Search in Book"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 32,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Scroll Mode"
+      ],
+      "shortcut": "<Shift>J",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 37,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Select Mode"
+      ],
+      "shortcut": "<Shift>S",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 42,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Bookmark"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 47,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Paragraph Mode"
+      ],
+      "shortcut": "<Shift>P",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 87,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Auto Scroll"
+      ],
+      "shortcut": "<Shift>A",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 92,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Speed Reading Mode"
+      ],
+      "shortcut": "<Shift>V",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 97,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Toolbar"
+      ],
+      "shortcut": "Return",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 102,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Open Settings"
+      ],
+      "shortcut": "<Shift>F",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 169,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Open Command Palette"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 174,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Show Keyboard Shortcuts"
+      ],
+      "shortcut": "<Shift>question",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 179,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Open Books"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 184,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Reload Page"
+      ],
+      "shortcut": "<Shift>R",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 189,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "General",
+        "Close"
+      ],
+      "shortcut": "Escape",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 316,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Text to Speech",
+        "Toggle Text to Speech"
+      ],
+      "shortcut": "t",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 52,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Text to Speech",
+        "Next Sentence"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 62,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Text to Speech",
+        "Previous Sentence"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 67,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Text to Speech",
+        "Next Paragraph"
+      ],
+      "shortcut": "<Ctrl><Shift>braceright",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 72,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Text to Speech",
+        "Previous Paragraph"
+      ],
+      "shortcut": "<Ctrl><Shift>braceleft",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 77,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Text to Speech",
+        "Highlight Current Sentence"
+      ],
+      "shortcut": "<Shift>M",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 82,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Selection",
+        "Highlight Selection"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 107,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Selection",
+        "Underline Selection"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 112,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Selection",
+        "Annotate Selection"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 117,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Selection",
+        "Copy Selection"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 127,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Selection",
+        "Translate Selection"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 132,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Selection",
+        "Dictionary Lookup"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 137,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Selection",
+        "Read Aloud Selection"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 142,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Selection",
+        "Proofread Selection"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 149,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Selection",
+        "Adjust Text Selection"
+      ],
+      "shortcut": "<Shift>Left",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 158,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Left / Previous Page"
+      ],
+      "shortcut": "Left",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 209,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Right / Next Page"
+      ],
+      "shortcut": "Right",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 214,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Up"
+      ],
+      "shortcut": "Up",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 219,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Down"
+      ],
+      "shortcut": "Down",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 224,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Next Page"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 230,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Previous Page"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 235,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Previous Chapter"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 240,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Next Chapter"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 245,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Scroll Half Page Down"
+      ],
+      "shortcut": "d",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 261,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Scroll Half Page Up"
+      ],
+      "shortcut": "u",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 267,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Start of Book"
+      ],
+      "shortcut": "Home",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 272,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "End of Book"
+      ],
+      "shortcut": "End",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 277,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Back"
+      ],
+      "shortcut": "<Shift>H",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 284,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Forward"
+      ],
+      "shortcut": "<Shift>L",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 291,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Window",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 194,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Window",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 199,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Window",
+        "Quit App"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 204,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Zoom",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 296,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Zoom",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 301,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Zoom",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 306,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    },
+    {
+      "path": [
+        "Notes",
+        "Save Note"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "readest",
+      "file": "apps/readest-app/src/helpers/shortcuts.ts",
+      "line": 311,
+      "commit": "c06b94e9b1fa936c40f7cb7f3b37fc3bd6550f59"
+    }
+  ]
+}

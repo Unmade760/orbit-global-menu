@@ -1,0 +1,217 @@
+{
+  "format": 1,
+  "app": "ristretto",
+  "name": "Ristretto",
+  "identifiers": [
+    "org.xfce.ristretto.desktop",
+    "org.xfce.ristretto",
+    "Ristretto",
+    "Ristretto Image Viewer"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Save Copy…",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Properties…"
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Copy Image to Clipboard",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Show Containing Folder"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Delete",
+          "shortcut": "Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Clear Private Data…",
+          "shortcut": "<Ctrl><Shift>Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences…"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Show Toolbar"
+        },
+        {
+          "label": "Show Status Bar"
+        },
+        {
+          "label": "Show Thumbnail Bar",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom",
+          "items": [
+            {
+              "label": "Zoom In",
+              "shortcut": "<Ctrl>plus"
+            },
+            {
+              "label": "Zoom Out",
+              "shortcut": "<Ctrl>minus"
+            },
+            {
+              "label": "Zoom Fit",
+              "shortcut": "<Ctrl>equal"
+            },
+            {
+              "label": "Normal Size",
+              "shortcut": "<Ctrl>0"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Default Zoom",
+              "items": [
+                {
+                  "label": "Smart Zoom",
+                  "shortcut": "<Alt>asterisk"
+                },
+                {
+                  "label": "Zoom Fit",
+                  "shortcut": "<Alt>equal"
+                },
+                {
+                  "label": "Normal Size",
+                  "shortcut": "<Alt>0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Rotation",
+          "items": [
+            {
+              "label": "Rotate Right",
+              "shortcut": "<Ctrl>bracketright"
+            },
+            {
+              "label": "Rotate Left",
+              "shortcut": "<Ctrl>bracketleft"
+            }
+          ]
+        },
+        {
+          "label": "Flip",
+          "items": [
+            {
+              "label": "Flip Horizontally",
+              "shortcut": "<Ctrl>braceright"
+            },
+            {
+              "label": "Flip Vertically",
+              "shortcut": "<Ctrl>braceleft"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Fullscreen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Set as Wallpaper…"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Back",
+          "shortcut": "BackSpace"
+        },
+        {
+          "label": "Forward",
+          "shortcut": "Page_Down"
+        },
+        {
+          "label": "First",
+          "shortcut": "Home"
+        },
+        {
+          "label": "Last",
+          "shortcut": "End"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Play",
+          "shortcut": "F5"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Contents",
+          "shortcut": "F1"
+        },
+        {
+          "label": "About"
+        }
+      ]
+    }
+  ]
+}

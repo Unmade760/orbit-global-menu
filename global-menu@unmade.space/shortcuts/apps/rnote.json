@@ -1,0 +1,182 @@
+{
+  "format": 1,
+  "app": "rnote",
+  "name": "Rnote",
+  "identifiers": [
+    "com.github.flxzt.rnote.desktop",
+    "com.github.flxzt.rnote",
+    "rnote",
+    "Rnote"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Show Keyboard Shortcuts",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "New Tab",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "Close the Active Tab",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit the Application",
+          "shortcut": "<Ctrl>Q"
+        },
+        {
+          "label": "Toggle Tabs Overview",
+          "shortcut": "<Ctrl><Shift>O"
+        },
+        {
+          "label": "Open the Canvas-Menu",
+          "shortcut": "F9"
+        },
+        {
+          "label": "Open the App-Menu",
+          "shortcut": "F10"
+        },
+        {
+          "label": "Toggle Fullscreen",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {
+          "label": "Switch to the 'Brush'",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Switch to the 'Shaper'",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Switch to the 'Typewriter'",
+          "shortcut": "<Ctrl>3"
+        },
+        {
+          "label": "Switch to the 'Eraser'",
+          "shortcut": "<Ctrl>4"
+        },
+        {
+          "label": "Switch to the 'Selector'",
+          "shortcut": "<Ctrl>5"
+        },
+        {
+          "label": "Switch to the 'Tools'",
+          "shortcut": "<Ctrl>6"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Zoom in",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Reset Zoom",
+          "shortcut": "<Ctrl>0"
+        }
+      ]
+    },
+    {
+      "label": "Document",
+      "items": [
+        {
+          "label": "Open Document",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Save Document",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save Document As",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Snap Positions",
+          "shortcut": "<Ctrl><Shift>P"
+        },
+        {
+          "label": "Clear Document",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "label": "Add Page (When in Fixed-Size Layout)",
+          "shortcut": "<Ctrl><Shift>A"
+        },
+        {
+          "label": "Remove Last Page (When in Fixed-Size Layout)",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "label": "Print Document",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Import File",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "label": "Bold",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Italic",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Underline",
+          "shortcut": "<Ctrl>U"
+        }
+      ]
+    },
+    {
+      "label": "Drawing",
+      "items": [
+        {
+          "label": "Copy to Clipboard",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Cut to Clipboard",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Paste Clipboard",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Duplicate Selection",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        }
+      ]
+    }
+  ]
+}

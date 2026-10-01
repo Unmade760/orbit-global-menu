@@ -1,0 +1,111 @@
+{
+  "format": 1,
+  "app": "parabolic",
+  "repos": {
+    "parabolic": {
+      "url": "https://github.com/NickvisionApps/Parabolic.git",
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Downloads",
+        "Add Download"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "parabolic",
+      "file": "Nickvision.Parabolic.GNOME/Views/MainWindow.cs",
+      "line": 150,
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    },
+    {
+      "path": [
+        "Downloads",
+        "Keyring"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "parabolic",
+      "file": "Nickvision.Parabolic.GNOME/Views/MainWindow.cs",
+      "line": 155,
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    },
+    {
+      "path": [
+        "Downloads",
+        "Stop All Remaining"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "parabolic",
+      "file": "Nickvision.Parabolic.GNOME/Views/MainWindow.cs",
+      "line": 165,
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    },
+    {
+      "path": [
+        "Downloads",
+        "Retry All Failed"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "parabolic",
+      "file": "Nickvision.Parabolic.GNOME/Views/MainWindow.cs",
+      "line": 170,
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    },
+    {
+      "path": [
+        "Parabolic",
+        "History"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "parabolic",
+      "file": "Nickvision.Parabolic.GNOME/Views/MainWindow.cs",
+      "line": 160,
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    },
+    {
+      "path": [
+        "Parabolic",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "parabolic",
+      "file": "Nickvision.Parabolic.GNOME/Views/MainWindow.cs",
+      "line": 135,
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    },
+    {
+      "path": [
+        "Parabolic",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "parabolic",
+      "file": "Nickvision.Parabolic.GNOME/Views/MainWindow.cs",
+      "line": 140,
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    },
+    {
+      "path": [
+        "Parabolic",
+        "About Parabolic"
+      ],
+      "shortcut": "F1",
+      "repo": "parabolic",
+      "file": "Nickvision.Parabolic.GNOME/Views/MainWindow.cs",
+      "line": 145,
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    },
+    {
+      "path": [
+        "Parabolic",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "parabolic",
+      "file": "Nickvision.Parabolic.GNOME/Views/MainWindow.cs",
+      "line": 130,
+      "commit": "1118e6a3abbf5ffc1f764c4c9781f98d4c0482d4"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "primehack",
+  "repos": {
+    "primehack": {
+      "url": "https://github.com/shiiion/dolphin.git",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "file": "Source/Core/DolphinQt/MenuBar.cpp",
+      "line": 247,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "file": "Source/Core/DolphinQt/MenuBar.cpp",
+      "line": 277,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "File",
+        "Exit (Alternate)"
+      ],
+      "shortcut": "<Alt>F4",
+      "file": "Source/Core/DolphinQt/MenuBar.cpp",
+      "line": 277,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Toggle Pause"
+      ],
+      "shortcut": "F10",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 419,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Stop"
+      ],
+      "shortcut": "Escape",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 424,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Take Screenshot"
+      ],
+      "shortcut": "F9",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 434,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Undo Load State"
+      ],
+      "shortcut": "F12",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 448,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Step Into"
+      ],
+      "shortcut": "F11",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 430,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "View",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "file": "Source/Core/DolphinQt/MenuBar.cpp",
+      "line": 612,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "file": "Source/Core/DolphinQt/GameList/GameList.cpp",
+      "line": 165,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In (Alternate)"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "file": "Source/Core/DolphinQt/GameList/GameList.cpp",
+      "line": 178,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "file": "Source/Core/DolphinQt/GameList/GameList.cpp",
+      "line": 166,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out (Alternate)"
+      ],
+      "shortcut": "<Ctrl>underscore",
+      "file": "Source/Core/DolphinQt/GameList/GameList.cpp",
+      "line": 185,
+      "repo": "primehack",
+      "commit": "53f53e0f5bad27ad62a807cb93b136d84f68777f"
+    }
+  ]
+}

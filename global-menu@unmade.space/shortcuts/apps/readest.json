@@ -1,0 +1,260 @@
+{
+  "format": 1,
+  "app": "readest",
+  "name": "Readest",
+  "identifiers": [
+    "com.bilingify.readest.desktop",
+    "com.bilingify.readest",
+    "readest",
+    "Readest"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Switch Sidebar Tab",
+          "shortcut": "<Ctrl>Tab"
+        },
+        {
+          "label": "Toggle Sidebar",
+          "shortcut": "s"
+        },
+        {
+          "label": "Toggle Notebook",
+          "shortcut": "n"
+        },
+        {
+          "label": "Search in Book",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Toggle Scroll Mode",
+          "shortcut": "<Shift>J"
+        },
+        {
+          "label": "Toggle Select Mode",
+          "shortcut": "<Shift>S"
+        },
+        {
+          "label": "Toggle Bookmark",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Toggle Paragraph Mode",
+          "shortcut": "<Shift>P"
+        },
+        {
+          "label": "Toggle Auto Scroll",
+          "shortcut": "<Shift>A"
+        },
+        {
+          "label": "Speed Reading Mode",
+          "shortcut": "<Shift>V"
+        },
+        {
+          "label": "Toggle Toolbar",
+          "shortcut": "Return"
+        },
+        {
+          "label": "Open Settings",
+          "shortcut": "<Shift>F"
+        },
+        {
+          "label": "Open Command Palette",
+          "shortcut": "<Ctrl><Shift>P"
+        },
+        {
+          "label": "Show Keyboard Shortcuts",
+          "shortcut": "<Shift>question"
+        },
+        {
+          "label": "Open Books",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Reload Page",
+          "shortcut": "<Shift>R"
+        },
+        {
+          "label": "Close",
+          "shortcut": "Escape"
+        }
+      ]
+    },
+    {
+      "label": "Text to Speech",
+      "items": [
+        {
+          "label": "Toggle Text to Speech",
+          "shortcut": "t"
+        },
+        {
+          "label": "Next Sentence",
+          "shortcut": "<Ctrl>bracketright"
+        },
+        {
+          "label": "Previous Sentence",
+          "shortcut": "<Ctrl>bracketleft"
+        },
+        {
+          "label": "Next Paragraph",
+          "shortcut": "<Ctrl><Shift>braceright"
+        },
+        {
+          "label": "Previous Paragraph",
+          "shortcut": "<Ctrl><Shift>braceleft"
+        },
+        {
+          "label": "Highlight Current Sentence",
+          "shortcut": "<Shift>M"
+        }
+      ]
+    },
+    {
+      "label": "Selection",
+      "items": [
+        {
+          "label": "Highlight Selection",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "label": "Underline Selection",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "label": "Annotate Selection",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Copy Selection",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Translate Selection",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "Dictionary Lookup",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Read Aloud Selection",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Proofread Selection",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Adjust Text Selection",
+          "shortcut": "<Shift>Left"
+        }
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {
+          "label": "Go Left / Previous Page",
+          "shortcut": "Left"
+        },
+        {
+          "label": "Go Right / Next Page",
+          "shortcut": "Right"
+        },
+        {
+          "label": "Go Up",
+          "shortcut": "Up"
+        },
+        {
+          "label": "Go Down",
+          "shortcut": "Down"
+        },
+        {
+          "label": "Next Page",
+          "shortcut": "Page_Down"
+        },
+        {
+          "label": "Previous Page",
+          "shortcut": "Page_Up"
+        },
+        {
+          "label": "Previous Chapter",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Next Chapter",
+          "shortcut": "<Alt>Right"
+        },
+        {
+          "label": "Scroll Half Page Down",
+          "shortcut": "d"
+        },
+        {
+          "label": "Scroll Half Page Up",
+          "shortcut": "u"
+        },
+        {
+          "label": "Start of Book",
+          "shortcut": "Home"
+        },
+        {
+          "label": "End of Book",
+          "shortcut": "End"
+        },
+        {
+          "label": "Go Back",
+          "shortcut": "<Shift>H"
+        },
+        {
+          "label": "Go Forward",
+          "shortcut": "<Shift>L"
+        }
+      ]
+    },
+    {
+      "label": "Window",
+      "items": [
+        {
+          "label": "Toggle Fullscreen",
+          "shortcut": "F11"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit App",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Zoom",
+      "items": [
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>equal"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Reset Zoom",
+          "shortcut": "<Ctrl>0"
+        }
+      ]
+    },
+    {
+      "label": "Notes",
+      "items": [
+        {
+          "label": "Save Note",
+          "shortcut": "<Ctrl>Return"
+        }
+      ]
+    }
+  ]
+}

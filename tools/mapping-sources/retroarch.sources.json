@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "retroarch",
+  "repos": {
+    "retroarch": {
+      "url": "https://github.com/libretro/RetroArch.git",
+      "commit": "990b29474031f27600cbb9a8d7ed3683de74cf6b"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Load Core..."
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "retroarch",
+      "file": "ui/drivers/ui_qt.cpp",
+      "line": 4806,
+      "commit": "990b29474031f27600cbb9a8d7ed3683de74cf6b"
+    },
+    {
+      "path": [
+        "File",
+        "Unload Core"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "retroarch",
+      "file": "ui/drivers/ui_qt.cpp",
+      "line": 4813,
+      "commit": "990b29474031f27600cbb9a8d7ed3683de74cf6b"
+    },
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "retroarch",
+      "file": "ui/drivers/ui_qt.cpp",
+      "line": 4825,
+      "commit": "990b29474031f27600cbb9a8d7ed3683de74cf6b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "retroarch",
+      "file": "ui/drivers/ui_qt.cpp",
+      "line": 4835,
+      "commit": "990b29474031f27600cbb9a8d7ed3683de74cf6b"
+    },
+    {
+      "path": [
+        "Game",
+        "Menu Toggle"
+      ],
+      "shortcut": "F1",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F1](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F1.png) | Menu toggle"
+    },
+    {
+      "path": [
+        "Game",
+        "Save State"
+      ],
+      "shortcut": "F2",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F2](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F2.png) | Save state"
+    },
+    {
+      "path": [
+        "Game",
+        "Load State"
+      ],
+      "shortcut": "F4",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F4](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F4.png) | Load state"
+    },
+    {
+      "path": [
+        "Game",
+        "Previous Save State Slot"
+      ],
+      "shortcut": "F6",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F6](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F6.png) | Decrease current state slot"
+    },
+    {
+      "path": [
+        "Game",
+        "Next Save State Slot"
+      ],
+      "shortcut": "F7",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F7](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F7.png) | Increase current state slot"
+    },
+    {
+      "path": [
+        "Game",
+        "Take Screenshot"
+      ],
+      "shortcut": "F8",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F8](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F8.png) | Take screenshot"
+    },
+    {
+      "path": [
+        "Game",
+        "Quit"
+      ],
+      "shortcut": "Escape",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![Esc](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_Esc.png) | Exit RetroArch"
+    },
+    {
+      "path": [
+        "View",
+        "Show FPS (Toggle)"
+      ],
+      "shortcut": "F3",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F3](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F3.png) | Show FPS"
+    },
+    {
+      "path": [
+        "View",
+        "Desktop Menu (Toggle)"
+      ],
+      "shortcut": "F5",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F5](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F5.png) | Desktop menu"
+    },
+    {
+      "path": [
+        "View",
+        "Grab Mouse (Toggle)"
+      ],
+      "shortcut": "F11",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F11](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F11.png) | Grab mouse"
+    },
+    {
+      "path": [
+        "Audio",
+        "Audio Mute"
+      ],
+      "shortcut": "F9",
+      "url": "https://raw.githubusercontent.com/libretro/docs/master/docs/guides/input-and-controls.md",
+      "quote": "![F9](../image/Button_Pack/Keyboard_Mouse/Dark/Keyboard_Black_F9.png) | Mute"
+    }
+  ]
+}
