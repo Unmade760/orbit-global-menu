@@ -9,10 +9,11 @@ extension falls back twice before giving up:
 1. Applications that publish a menu over D-Bus get their real one, with
    working checkmarks and greyed-out items. A companion daemon called
    `global-menu` reads it and sends it to the extension as JSON.
-2. For 280 applications that publish nothing, the extension ships a menu built
+2. For 285 applications that publish nothing, the extension ships a menu built
    from the app's documented keyboard shortcuts. Clicking an item sends that
    key combination to the window. This is how an Electron app gets a menu bar
-   on Wayland.
+   on Wayland unless you switch on its own export (see
+   [docs/enabling-menus.md](docs/enabling-menus.md)).
 3. Everything else gets window, workspace and session actions, so the bar is
    never empty.
 
@@ -98,18 +99,24 @@ Packaging for Arch and Debian is in
 
 ## Which applications export a menu
 
-Not many, and it depends on the toolkit and the session:
+Few do by default, and what an app needs depends on its toolkit. Applications
+that publish nothing get the shortcut menu below, so the bar is never empty.
 
-| Toolkit | Exports a menu |
-| --- | --- |
-| GTK 3 and 4 using `gtk_application_set_menubar` | Yes, on Wayland and X11 |
-| Qt 5 and 6 | Yes, under X11 or XWayland |
-| Electron | Only under real X11 |
-| GtkMenuBar with appmenu-gtk-module | No, broken on Wayland |
+| Toolkit | Exports a menu | Switch |
+| --- | --- | --- |
+| GTK 3 and 4 using `gtk_application_set_menubar` | Yes, on Wayland and Xorg | none |
+| GTK 3 with an in-window `GtkMenuBar` | Through `appmenu-gtk3-module`, not tested end to end | load the module for that app; Debian, Ubuntu and Arch only |
+| Qt 5 and 6 | Under XWayland or Xorg, not on native Wayland | `QT_QPA_PLATFORM=xcb` |
+| Electron | Under XWayland or Xorg | `--ozone-platform=x11`; VS Code also `window.titleBarStyle` native |
+| Chrome and Chromium | Under XWayland or Xorg | `--ozone-platform=x11` |
+| Firefox | Under XWayland or Xorg, not in the Flathub build | `widget.gtk.global-menu.enabled` and `MOZ_ENABLE_WAYLAND=0` |
+| LibreOffice | Yes, with its GTK 3 plugin | none |
+| JetBrains IDEs and Java Swing | No | none, shortcut menu only |
 
-The registrar that Qt and Electron use is keyed on an X11 window id, so it
-cannot work on Wayland at all. Anything in the last three rows running on
-Wayland falls through to a shortcut menu.
+Qt, Electron, Chrome, Chromium and Firefox register their menu with a
+registrar on the session bus, which the daemon provides. Start those apps after
+the extension is enabled. The exact steps, per-app launcher overrides and the
+Flatpak permissions are in [docs/enabling-menus.md](docs/enabling-menus.md).
 
 ## Shortcut menus
 
