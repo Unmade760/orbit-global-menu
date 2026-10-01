@@ -1,0 +1,1143 @@
+{
+  "format": 1,
+  "app": "chromium",
+  "repos": {
+    "chromium": {
+      "url": "https://github.com/chromium/chromium.git",
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl>t",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 76,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>n",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 228,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "New Incognito Window"
+      ],
+      "shortcut": "<Ctrl><Shift>n",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 226,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Reopen Closed Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>t",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 229,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Open File"
+      ],
+      "shortcut": "<Ctrl>o",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 77,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Open Location"
+      ],
+      "shortcut": "<Ctrl>l",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 75,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Open Location (Alt+D)"
+      ],
+      "shortcut": "<Alt>d",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 244,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Save Page As"
+      ],
+      "shortcut": "<Ctrl>s",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 82,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Print Page"
+      ],
+      "shortcut": "<Ctrl>p",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 78,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Print With System Dialog"
+      ],
+      "shortcut": "<Ctrl><Shift>p",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 239,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl>w",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 66,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab (Ctrl+F4)"
+      ],
+      "shortcut": "<Ctrl>F4",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 148,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>w",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 67,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window (Alt+F4)"
+      ],
+      "shortcut": "<Alt>F4",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 149,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>z",
+      "repo": "chromium",
+      "file": "third_party/blink/renderer/core/editing/editing_behavior.cc",
+      "line": 179,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>y",
+      "repo": "chromium",
+      "file": "third_party/blink/renderer/core/editing/editing_behavior.cc",
+      "line": 181,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo (Ctrl+Shift+Z)"
+      ],
+      "shortcut": "<Ctrl><Shift>z",
+      "repo": "chromium",
+      "file": "third_party/blink/renderer/core/editing/editing_behavior.cc",
+      "line": 180,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>x",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 380,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>c",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 380,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>v",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 380,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Plain Text"
+      ],
+      "shortcut": "<Ctrl><Shift>v",
+      "repo": "chromium",
+      "file": "third_party/blink/renderer/core/editing/editing_behavior.cc",
+      "line": 176,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>a",
+      "repo": "chromium",
+      "file": "third_party/blink/renderer/core/editing/editing_behavior.cc",
+      "line": 178,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find in Page"
+      ],
+      "shortcut": "<Ctrl>f",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 69,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>g",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 72,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Next (F3)"
+      ],
+      "shortcut": "F3",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 146,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>g",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 73,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous (Shift+F3)"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 147,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search the Web"
+      ],
+      "shortcut": "<Ctrl>k",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 246,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search the Web (Ctrl+E)"
+      ],
+      "shortcut": "<Ctrl>e",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 245,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clear Browsing Data"
+      ],
+      "shortcut": "<Ctrl><Shift>Delete",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 199,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Reload Page"
+      ],
+      "shortcut": "<Ctrl>r",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 79,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Reload Page (F5)"
+      ],
+      "shortcut": "F5",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 150,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Reload Ignoring Cache"
+      ],
+      "shortcut": "<Ctrl><Shift>r",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 80,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Reload Ignoring Cache (Ctrl+F5)"
+      ],
+      "shortcut": "<Ctrl>F5",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 151,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Reload Ignoring Cache (Shift+F5)"
+      ],
+      "shortcut": "<Shift>F5",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 152,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Stop Loading"
+      ],
+      "shortcut": "Escape",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 60,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 142,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In (Ctrl+Shift+Plus)"
+      ],
+      "shortcut": "<Ctrl><Shift>plus",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 263,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 138,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out (Ctrl+Shift+Minus)"
+      ],
+      "shortcut": "<Ctrl><Shift>minus",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 261,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom Level"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 140,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 164,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Caret Browsing"
+      ],
+      "shortcut": "F7",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 58,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Reading Mode"
+      ],
+      "shortcut": "<Alt><Shift>r",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 247,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "View Page Source"
+      ],
+      "shortcut": "<Ctrl>u",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 287,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>i",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 282,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Developer Tools (F12)"
+      ],
+      "shortcut": "F12",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 280,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "JavaScript Console"
+      ],
+      "shortcut": "<Ctrl><Shift>j",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 283,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "View",
+        "Inspect Element"
+      ],
+      "shortcut": "<Ctrl><Shift>c",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 285,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Go Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 236,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Go Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 250,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Go Home"
+      ],
+      "shortcut": "<Alt>Home",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 252,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open History"
+      ],
+      "shortcut": "<Ctrl>h",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 258,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Navigate",
+        "Open Downloads"
+      ],
+      "shortcut": "<Ctrl>j",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 257,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Bookmark This Tab"
+      ],
+      "shortcut": "<Ctrl>d",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 63,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Bookmark All Tabs"
+      ],
+      "shortcut": "<Ctrl><Shift>d",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 64,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Toggle Bookmarks Bar"
+      ],
+      "shortcut": "<Ctrl><Shift>b",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 136,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Open Bookmark Manager"
+      ],
+      "shortcut": "<Ctrl><Shift>o",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 255,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Focus Bookmarks Bar"
+      ],
+      "shortcut": "<Alt><Shift>b",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 241,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Next Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 96,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Next Tab (Ctrl+Page Down)"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 97,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Previous Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 98,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Previous Tab (Ctrl+Page Up)"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 100,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Search Tabs"
+      ],
+      "shortcut": "<Ctrl><Shift>a",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 70,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "New Split View"
+      ],
+      "shortcut": "<Alt><Shift>n",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 330,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 90,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 91,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Collapse or Expand Vertical Tabs"
+      ],
+      "shortcut": "<Ctrl><Shift>l",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 167,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab 1"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 101,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab 2"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 103,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab 3"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 105,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab 4"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 107,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab 5"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 109,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab 6"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 111,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab 7"
+      ],
+      "shortcut": "<Ctrl>7",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 113,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab 8"
+      ],
+      "shortcut": "<Ctrl>8",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 115,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Last Tab"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 83,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab With Alt",
+        "Select Tab 1"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 118,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab With Alt",
+        "Select Tab 2"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 120,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab With Alt",
+        "Select Tab 3"
+      ],
+      "shortcut": "<Alt>3",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 122,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab With Alt",
+        "Select Tab 4"
+      ],
+      "shortcut": "<Alt>4",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 124,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab With Alt",
+        "Select Tab 5"
+      ],
+      "shortcut": "<Alt>5",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 126,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab With Alt",
+        "Select Tab 6"
+      ],
+      "shortcut": "<Alt>6",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 128,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab With Alt",
+        "Select Tab 7"
+      ],
+      "shortcut": "<Alt>7",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 130,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab With Alt",
+        "Select Tab 8"
+      ],
+      "shortcut": "<Alt>8",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 132,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Tab With Alt",
+        "Select Last Tab"
+      ],
+      "shortcut": "<Alt>9",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 86,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tab Groups",
+        "Create New Tab Group"
+      ],
+      "shortcut": "<Alt><Shift>p",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 272,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tab Groups",
+        "Add New Tab to Group"
+      ],
+      "shortcut": "<Alt><Shift>c",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 271,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tab Groups",
+        "Close Tab Group"
+      ],
+      "shortcut": "<Alt><Shift>w",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 275,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tab Groups",
+        "Focus Next Tab Group"
+      ],
+      "shortcut": "<Alt><Shift>x",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 273,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Tab Groups",
+        "Focus Previous Tab Group"
+      ],
+      "shortcut": "<Alt><Shift>z",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 274,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Open Chromium Menu"
+      ],
+      "shortcut": "<Alt>e",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 253,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Open Chromium Menu (Alt+F)"
+      ],
+      "shortcut": "<Alt>f",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 254,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Switch Profile"
+      ],
+      "shortcut": "<Ctrl><Shift>m",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 165,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Task Manager"
+      ],
+      "shortcut": "<Shift>Escape",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 214,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Next Pane"
+      ],
+      "shortcut": "F6",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 153,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Previous Pane"
+      ],
+      "shortcut": "<Shift>F6",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 154,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Web Contents"
+      ],
+      "shortcut": "<Ctrl>F6",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 155,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Toolbar"
+      ],
+      "shortcut": "<Alt><Shift>t",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 249,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Rightmost Toolbar Item"
+      ],
+      "shortcut": "F10",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 163,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Inactive Dialog"
+      ],
+      "shortcut": "<Alt><Shift>a",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 242,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    },
+    {
+      "path": [
+        "Help",
+        "Help Center"
+      ],
+      "shortcut": "F1",
+      "repo": "chromium",
+      "file": "chrome/browser/ui/accelerator_table.cc",
+      "line": 145,
+      "commit": "102c6a1ee41a85431b1a3f7939b37f8426390c38"
+    }
+  ]
+}

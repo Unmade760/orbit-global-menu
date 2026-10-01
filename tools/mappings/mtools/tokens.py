@@ -58,6 +58,18 @@ CODE_KEY_SYMS = {"Space": "space", "Enter": "Return", "Backspace": "BackSpace", 
 # {QStringLiteral("split"), QStringLiteral("S")}. Only the lines around a cited line are read,
 # so this proves that the key is written there and nothing about what it does.
 QUOTED_KEY = re.compile(r"(?<![\w\"'])([\"'])([A-Za-z0-9])\1(?![\w\"'])")
+# Chromium accelerator tables: {ui::VKEY_F5, ui::EF_CONTROL_DOWN | ui::EF_SHIFT_DOWN, IDC_...}.
+# EF_PLATFORM_ACCELERATOR is Control off macOS. AltGr and Command modifiers have no chord in the
+# mapping grammar, and VKEY_BROWSER_* media keys have no keysym name here, so those entries give nothing.
+VKEY_ENTRY = re.compile(r"\bui::VKEY_(\w+)\s*,\s*((?:ui::EF_\w+\s*\|?\s*)+)")
+VKEY_MODS = {"CONTROL_DOWN": "Control", "PLATFORM_ACCELERATOR": "Control", "SHIFT_DOWN": "Shift", "ALT_DOWN": "Alt"}
+VKEY_KEYS = {"NEXT": "Page_Down", "PRIOR": "Page_Up", "OEM_MINUS": "minus", "OEM_PLUS": "plus",
+             "SUBTRACT": "KP_Subtract", "ADD": "KP_Add", "OEM_2": "slash", "ESCAPE": "Escape", "TAB": "Tab",
+             "LEFT": "Left", "RIGHT": "Right", "UP": "Up", "DOWN": "Down", "HOME": "Home", "END": "End",
+             "DELETE": "Delete", "BACK": "BackSpace", "RETURN": "Return", "SPACE": "space", "INSERT": "Insert"}
+# Blink editing key table: {'Z', kCtrlKey | kShiftKey, "Redo"}. Meta is the Mac Command key.
+BLINK_ENTRY = re.compile(r"\{\s*'([A-Z0-9])'\s*,\s*((?:k(?:Ctrl|Shift|Alt|Meta)Key\s*\|?\s*)+)")
+BLINK_MODS = {"Ctrl": "Control", "Shift": "Shift", "Alt": "Alt"}
 SEQUENCE_GAP = re.compile(r"^\s*(?:,|then)?\s*$", re.I)
 
 ENTITY_KEYS = {"ctrl": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": "Super", "super": "Super",
@@ -83,6 +95,33 @@ def _lo_key_seqs(name):
     else:
         return []
     return _seqs("".join(f"<{LO_MODS[m]}>" for m in mods) + base, "gtk")
+
+
+def _vkey_seqs(key, mods):
+    flags = re.findall(r"EF_(\w+)", mods)
+    if any(f not in VKEY_MODS and f != "NONE" for f in flags):
+        return []
+    if re.fullmatch(r"[A-Z]|[0-9]", key):
+        base = key.lower() if key.isalpha() else key
+    elif re.fullmatch(r"F(?:1[0-2]|[1-9])", key):
+        base = key
+    elif re.fullmatch(r"NUMPAD[0-9]", key):
+        base = "KP_" + key[-1]
+    elif key in VKEY_KEYS:
+        base = VKEY_KEYS[key]
+    else:
+        return []
+    names = [VKEY_MODS[f] for f in flags if f in VKEY_MODS]
+    gtk = "".join(f"<{m}>" for m in dict.fromkeys(names))
+    return _seqs(gtk + base, "gtk")
+
+
+def _blink_seqs(key, mods):
+    names = re.findall(r"k(Ctrl|Shift|Alt|Meta)Key", mods)
+    if "Meta" in names:
+        return []
+    gtk = "".join(f"<{BLINK_MODS[n]}>" for n in names)
+    return _seqs(gtk + (key.lower() if key.isalpha() else key), "gtk")
 
 
 def _table_seqs(entries):
@@ -185,6 +224,12 @@ def find_chords(text):
         add(m.start(), m.end(), m.group(0), _seqs("".join(f"<{x}>" for x in mods) + base, "gtk"))
     for m in NAMED_KEY.finditer(text):
         add(m.start(), m.end(), m.group(0), _seqs(m.group(1).replace("_", ""), "text"))
+
+    for m in VKEY_ENTRY.finditer(text):
+        add(m.start(), m.end(), m.group(0), _vkey_seqs(m.group(1), m.group(2)))
+
+    for m in BLINK_ENTRY.finditer(text):
+        add(m.start(), m.end(), m.group(0), _blink_seqs(m.group(1), m.group(2)))
 
     for m in LO_KEY_NODE.finditer(text):
         add(m.start(), m.end(), m.group(0), _lo_key_seqs(m.group(1)))
