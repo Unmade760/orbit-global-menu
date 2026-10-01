@@ -59,24 +59,25 @@ class MenuTreeCache {
 
 /** Decides which of the three menu sources is on screen. */
 class MenuBar {
-	constructor(proxy, fallbackMenu, uuid, store, settings) {
+	constructor(fallbackMenu, uuid, store, settings) {
 		this._winTracker = Shell.WindowTracker.get_default();
-		this._proxy = proxy;
 		this._fallback = fallbackMenu ?? null;
-		this._native = new NativeMenu(proxy, uuid);
-		this._shortcuts = new ShortcutMenu(uuid);
 		this._store = store;
 		this._settings = settings;
 		this._shortcutMapping = null;
 		this._cache = new MenuTreeCache();
 
+		this._proxy = new DaemonProxy({
+			onMenuTree: items => {
+				this._cache.storeForLastQuery(items);
+				this.setMenuTree(items);
+			},
+		});
+		this._native = new NativeMenu(this._proxy, uuid);
+		this._shortcuts = new ShortcutMenu(uuid);
+
 		this._notifyFocusWinId = global.display.connect('notify::focus-window',
 			() => this.refresh());
-		this._onTreeReceived = items => {
-			this._cache.storeForLastQuery(items);
-			this.setMenuTree(items);
-		};
-		this._proxy.listeners['SendMenuTree'].push(this._onTreeReceived);
 		this._overviewHandler = Main.overview.connect('showing', () => this._closeAllMenus());
 	}
 
@@ -144,14 +145,12 @@ class MenuBar {
 	destroy() {
 		global.display.disconnect(this._notifyFocusWinId);
 		Main.overview.disconnect(this._overviewHandler);
-		const treeListeners = this._proxy.listeners['SendMenuTree'];
-		const idx = treeListeners.indexOf(this._onTreeReceived);
-		if (idx !== -1)
-			treeListeners.splice(idx, 1);
 		this._native.destroy();
 		this._native = null;
 		this._shortcuts.destroy();
 		this._shortcuts = null;
+		this._proxy.destroy();
+		this._proxy = null;
 		this._shortcutMapping = null;
 		this._store = null;
 		this._settings = null;
@@ -244,19 +243,17 @@ const ifaceXml = `
 const MenuProxy = Gio.DBusProxy.makeProxyWrapper(ifaceXml);
 
 class DaemonProxy {
-	constructor() {
-		this._handlerIds = [];
-		this._destroyed = false;
+	/**
+	 * @param {object} callbacks
+	 * @param {Function} callbacks.onMenuTree - receives every tree the daemon sends
+	 */
+	constructor({onMenuTree}) {
+		this._onMenuTree = onMenuTree;
+		this._signalIds = [];
 		this._currentWindow = null;
-		this.listeners = {
-			'SendMenuTree': [],
-		};
-		this._proxy = new MenuProxy(
-			Gio.DBus.session,
-			BUS_NAME,
-			BUS_PATH,
-			this._onProxyReady.bind(this)
-		);
+		this._cancellable = new Gio.Cancellable();
+		this._proxy = new MenuProxy(Gio.DBus.session, BUS_NAME, BUS_PATH,
+			(proxy, error) => this._onProxyReady(error), this._cancellable);
 	}
 
 	WindowSwitched(windowData) {
@@ -272,25 +269,26 @@ class DaemonProxy {
 	}
 
 	destroy() {
-		this._destroyed = true;
-		for (const id of this._handlerIds)
+		this._cancellable.cancel();
+		for (const id of this._signalIds)
 			this._proxy.disconnectSignal(id);
-		this._handlerIds = [];
+		this._signalIds = [];
+		this._proxy = null;
 		this._currentWindow = null;
 	}
 
-	_onProxyReady(result, error) {
-		// The wrapper constructor is async. If the extension was disabled
-		// before the proxy came up, connecting now would leave signals that
-		// nobody disconnects.
-		if (this._destroyed)
+	_onProxyReady(error) {
+		// The wrapper constructor is async, and destroy() cancels it. A proxy
+		// that comes up afterwards would leave signals nobody disconnects.
+		if (this._cancellable.is_cancelled())
 			return;
-		// An error here usually just means the daemon is not installed;
-		// daemon.js is the one that reports that.
-		if (error)
+		// Not a missing daemon: the proxy comes up without a name owner
+		if (error) {
+			console.warn(`[global-menu] no proxy for ${BUS_NAME}: ${error.message}`);
 			return;
+		}
 
-		this._handlerIds.push(
+		this._signalIds.push(
 			this._proxy.connectSignal('SendMenuTree', this._onSendMenuTree.bind(this)),
 			this._proxy.connectSignal('RequestWindowActionsSignal', this._onRequestWindowActions.bind(this)),
 			this._proxy.connectSignal('ActivateWindowActionSignal', this._onActivateWindowAction.bind(this))
@@ -304,8 +302,7 @@ class DaemonProxy {
 		} catch (e) {
 			console.warn(`[global-menu] daemon sent an unreadable menu tree: ${e.message}`);
 		}
-		for (const callback of this.listeners['SendMenuTree'])
-			callback(items);
+		this._onMenuTree(items);
 	}
 
 	_onRequestWindowActions() {
@@ -323,11 +320,10 @@ export default class GlobalMenuExtension extends Extension {
 		this._settings = this.getSettings();
 		this._settingsHandlerIds = [];
 
-		// Started before the proxy, so the name is being claimed by the time
-		// the proxy binds to it
+		// Started before the menu bar's proxy, so the name is being claimed
+		// by the time the proxy binds to it
 		this._daemon = new DaemonManager();
 		this._daemon.start();
-		this._proxy = new DaemonProxy();
 
 		KeySynth.setDebug(this._settings.get_boolean('debug-shortcut-menus'));
 		this._store = new ShortcutStore(
@@ -341,7 +337,7 @@ export default class GlobalMenuExtension extends Extension {
 		this._appearance = createAppearanceManager(this._settings);
 		this._fallback = this._settings.get_boolean('enable-fallback-menu')
 			? new FallbackMenu(this.uuid) : null;
-		this._menubar = new MenuBar(this._proxy, this._fallback, this.uuid, this._store, this._settings);
+		this._menubar = new MenuBar(this._fallback, this.uuid, this._store, this._settings);
 
 		this._watch('enable-fallback-menu', () => this._toggleFallback());
 		// The preferences bump the revision after writing a mapping file
@@ -370,8 +366,6 @@ export default class GlobalMenuExtension extends Extension {
 		this._menubar = null;
 		this._fallback?.destroy();
 		this._fallback = null;
-		this._proxy?.destroy();
-		this._proxy = null;
 		this._daemon?.destroy();
 		this._daemon = null;
 		this._store = null;
