@@ -1,0 +1,777 @@
+{
+  "format": 1,
+  "app": "thunderbird",
+  "repos": {
+    "thunderbird": {
+      "url": "https://github.com/mozilla/releases-comm-central.git",
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New",
+        "Message"
+      ],
+      "shortcut": "<Ctrl>N",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "New message Ctrl + N"
+    },
+    {
+      "path": [
+        "File",
+        "New",
+        "Event…"
+      ],
+      "shortcut": "<Ctrl>I",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "New Event Ctrl + I"
+    },
+    {
+      "path": [
+        "File",
+        "New",
+        "Task…"
+      ],
+      "shortcut": "<Ctrl>D",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "New Task Ctrl + D"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Close window or tab Ctrl + W"
+    },
+    {
+      "path": [
+        "File",
+        "Save As",
+        "File…"
+      ],
+      "shortcut": "<Ctrl>S",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Save Message as File Ctrl + S"
+    },
+    {
+      "path": [
+        "File",
+        "Get New Messages for",
+        "All Accounts"
+      ],
+      "shortcut": "<Shift>F5",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Get New Messages for All Accounts Shift + F5"
+    },
+    {
+      "path": [
+        "File",
+        "Get New Messages for",
+        "Current Account"
+      ],
+      "shortcut": "F5",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Get New Messages for Current Account F5"
+    },
+    {
+      "path": [
+        "File",
+        "Rename Folder…"
+      ],
+      "shortcut": "F2",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Rename Folder F2"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Print message or selected message text Ctrl + P"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Quit Thunderbird (Exit Application) File , Exit Ctrl + Q"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Undo Ctrl + Z"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Redo Ctrl + Y Command + Y"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Message"
+      ],
+      "shortcut": "Delete",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Delete message, folder, attachment, or selected search text Del"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Message Bypassing Trash"
+      ],
+      "shortcut": "<Shift>Delete",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Delete message bypassing trash (no Undo!) Shift + Del"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Select All (messages, text, or attachments) Ctrl + A"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "Thread"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Select Thread Ctrl + Shift + A"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find",
+        "Find in This Message…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Find Text in Current Message Ctrl + F"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find",
+        "Find Again"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Find Again in Current Message Ctrl + G"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Find Previous in Current Message Ctrl + Shift + G"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find",
+        "Search Messages…"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Search Messages (advanced search in folder) Ctrl + Shift + F"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find",
+        "Global Search…"
+      ],
+      "shortcut": "<Ctrl>K",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Search All Messages (global fulltext search in all accounts) Ctrl + K"
+    },
+    {
+      "path": [
+        "View",
+        "Toolbars",
+        "Quick Filter Bar"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Quick Filter (search messages in current folder or view) Ctrl + Shift + K"
+    },
+    {
+      "path": [
+        "View",
+        "Layout",
+        "Message Pane"
+      ],
+      "shortcut": "F8",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Toggle Message Pane F8"
+    },
+    {
+      "path": [
+        "View",
+        "Layout",
+        "Message Pane"
+      ],
+      "shortcut": "F8",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 158,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Zoom In Ctrl + + Ctrl + ="
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Zoom Out Ctrl + -"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Reset"
+      ],
+      "shortcut": "<Ctrl>0",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Reset Zoom Ctrl + 0 (zero)"
+    },
+    {
+      "path": [
+        "View",
+        "Message Source"
+      ],
+      "shortcut": "<Ctrl>U",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "View Message Source Ctrl + U"
+    },
+    {
+      "path": [
+        "View",
+        "Today Pane"
+      ],
+      "shortcut": "F11",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Show or hide Today Pane F11"
+    },
+    {
+      "path": [
+        "View",
+        "Caret Browsing"
+      ],
+      "shortcut": "F7",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Toggle Caret browsing (select text with keyboard) F7"
+    },
+    {
+      "path": [
+        "View",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Next Tab Ctrl + Tab"
+    },
+    {
+      "path": [
+        "View",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Previous Tab Ctrl + Shift + Tab"
+    },
+    {
+      "path": [
+        "Go",
+        "Next",
+        "Message"
+      ],
+      "shortcut": "F",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 249,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Go",
+        "Next",
+        "Unread Message"
+      ],
+      "shortcut": "N",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 252,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Go",
+        "Next",
+        "Unread Thread"
+      ],
+      "shortcut": "T",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 257,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous",
+        "Message"
+      ],
+      "shortcut": "B",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 262,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous",
+        "Unread Message"
+      ],
+      "shortcut": "P",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 265,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Go",
+        "Today"
+      ],
+      "shortcut": "<Alt>End",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Go to Today Alt + End"
+    },
+    {
+      "path": [
+        "Go",
+        "Undo Close Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Undo close tab (restore and go to most recently closed tab) Ctrl + Shift + T"
+    },
+    {
+      "path": [
+        "Go",
+        "Mail Start Page"
+      ],
+      "shortcut": "<Alt>Home",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Go to Mail Start Page Alt + Home"
+    },
+    {
+      "path": [
+        "Message",
+        "New Message"
+      ],
+      "shortcut": "<Ctrl>N",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "New message Ctrl + N"
+    },
+    {
+      "path": [
+        "Message",
+        "Reply"
+      ],
+      "shortcut": "<Ctrl>R",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Reply to Message (sender only) Ctrl + R"
+    },
+    {
+      "path": [
+        "Message",
+        "Reply to All"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Reply to All in Message (sender and all recipients) Ctrl + Shift + R"
+    },
+    {
+      "path": [
+        "Message",
+        "Reply to List"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Reply to List Ctrl + Shift + L"
+    },
+    {
+      "path": [
+        "Message",
+        "Forward"
+      ],
+      "shortcut": "<Ctrl>L",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Forward Message Ctrl + L"
+    },
+    {
+      "path": [
+        "Message",
+        "Edit As New Message"
+      ],
+      "shortcut": "<Ctrl>E",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Edit Message as New Ctrl + E"
+    },
+    {
+      "path": [
+        "Message",
+        "Open Message"
+      ],
+      "shortcut": "<Ctrl>O",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Open message (in new window or tab) Ctrl + O"
+    },
+    {
+      "path": [
+        "Message",
+        "Open in Conversation"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Open message in conversation Ctrl + Shift + O"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Remove All Tags"
+      ],
+      "shortcut": "0",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 163,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Toggle Tag 1"
+      ],
+      "shortcut": "1",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 165,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Toggle Tag 2"
+      ],
+      "shortcut": "2",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 167,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Toggle Tag 3"
+      ],
+      "shortcut": "3",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 169,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Toggle Tag 4"
+      ],
+      "shortcut": "4",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 171,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Toggle Tag 5"
+      ],
+      "shortcut": "5",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 173,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Toggle Tag 6"
+      ],
+      "shortcut": "6",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 175,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Toggle Tag 7"
+      ],
+      "shortcut": "7",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 177,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Toggle Tag 8"
+      ],
+      "shortcut": "8",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 179,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Tag",
+        "Toggle Tag 9"
+      ],
+      "shortcut": "9",
+      "repo": "thunderbird",
+      "file": "mail/base/content/mainKeySet.inc.xhtml",
+      "line": 181,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Mark",
+        "As Read"
+      ],
+      "shortcut": "M",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 341,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Mark",
+        "As Unread"
+      ],
+      "shortcut": "M",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 341,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Mark",
+        "Thread As Read"
+      ],
+      "shortcut": "R",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 348,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Mark",
+        "As Read by Date…"
+      ],
+      "shortcut": "C",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 351,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Mark",
+        "All Read"
+      ],
+      "shortcut": "<Shift>C",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Mark All Read Shift + C"
+    },
+    {
+      "path": [
+        "Message",
+        "Mark",
+        "Add Star"
+      ],
+      "shortcut": "S",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 357,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Mark",
+        "As Not Spam"
+      ],
+      "shortcut": "<Shift>J",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Mark as Not Junk Shift + J"
+    },
+    {
+      "path": [
+        "Message",
+        "Archive"
+      ],
+      "shortcut": "A",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 292,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Move Again"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Move/Copy message to previous target folder Again Ctrl + Shift + M"
+    },
+    {
+      "path": [
+        "Message",
+        "Ignore Thread"
+      ],
+      "shortcut": "K",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 330,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Message",
+        "Ignore Subthread"
+      ],
+      "shortcut": "<Shift>K",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Newsgroups: Ignore or Unignore Subthread Shift + K"
+    },
+    {
+      "path": [
+        "Message",
+        "Watch Thread"
+      ],
+      "shortcut": "W",
+      "repo": "thunderbird",
+      "file": "mail/locales/en-US/chrome/messenger/messenger.dtd",
+      "line": 336,
+      "commit": "b35608ddf71a58348324c54f3b734bc2da3f00a8"
+    },
+    {
+      "path": [
+        "Tools",
+        "Address Book"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Address Book Ctrl + Shift + B"
+    },
+    {
+      "path": [
+        "Tools",
+        "Saved Files"
+      ],
+      "shortcut": "<Ctrl>J",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Saved Files Ctrl + J"
+    },
+    {
+      "path": [
+        "Tools",
+        "Developer Tools",
+        "Developer Toolbox"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Developer Tools Ctrl + Shift + I"
+    },
+    {
+      "path": [
+        "Tools",
+        "Clear Recent History…"
+      ],
+      "shortcut": "<Ctrl><Shift>Delete",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Clear History Ctrl + Shift + Del"
+    },
+    {
+      "path": [
+        "Help",
+        "Get Help"
+      ],
+      "shortcut": "F1",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts",
+      "quote": "Help F1 Command + ?"
+    }
+  ]
+}

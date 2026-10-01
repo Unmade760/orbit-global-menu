@@ -13,16 +13,27 @@
     {
       "label": "File",
       "items": [
-        {"label": "Write New Message", "shortcut": "<Ctrl>N"},
-        {"label": "Get New Messages (All Accounts)", "shortcut": "<Ctrl><Shift>T"},
-        {"label": "Get New Messages (Current Account)", "shortcut": "F5"},
-        {"label": "Open Message in New Tab", "shortcut": "Return"},
-        {"label": "Open Message in New Window", "shortcut": "<Ctrl>O"},
-        {"label": "New Tab", "shortcut": "<Ctrl>T"},
-        {"label": "Close Tab", "shortcut": "<Ctrl>W"},
-        {"label": "Print", "shortcut": "<Ctrl>P"},
-        {"label": "Save Message As File", "shortcut": "<Ctrl>S"},
-        {"label": "Quit Thunderbird", "shortcut": "<Ctrl>Q"}
+        {"label": "New", "items": [
+          {"label": "Message", "shortcut": "<Ctrl>N"},
+          {"label": "Event…", "shortcut": "<Ctrl>I"},
+          {"label": "Task…", "shortcut": "<Ctrl>D"}
+        ]},
+        {"separator": true},
+        {"label": "Close", "shortcut": "<Ctrl>W"},
+        {"label": "Save As", "items": [
+          {"label": "File…", "shortcut": "<Ctrl>S"}
+        ]},
+        {"separator": true},
+        {"label": "Get New Messages for", "items": [
+          {"label": "All Accounts", "shortcut": "<Shift>F5"},
+          {"label": "Current Account", "shortcut": "F5"}
+        ]},
+        {"separator": true},
+        {"label": "Rename Folder…", "shortcut": "F2"},
+        {"separator": true},
+        {"label": "Print…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
       ]
     },
     {
@@ -30,66 +41,147 @@
       "items": [
         {"label": "Undo", "shortcut": "<Ctrl>Z"},
         {"label": "Redo", "shortcut": "<Ctrl>Y"},
-        {"label": "Global Search (All Messages)", "shortcut": "<Ctrl>K"},
-        {"label": "Search Messages in Folder", "shortcut": "<Ctrl><Shift>F"},
-        {"label": "Find in Current Message", "shortcut": "<Ctrl>F"},
-        {"label": "Find Next", "shortcut": "F3"},
-        {"label": "Find Previous", "shortcut": "<Shift>F3"},
+        {"separator": true},
+        {"label": "Delete Message", "shortcut": "Delete"},
+        {"label": "Delete Message Bypassing Trash", "shortcut": "<Shift>Delete"},
+        {"separator": true},
+        {"label": "Select", "items": [
+          {"label": "All", "shortcut": "<Ctrl>A"},
+          {"label": "Thread", "shortcut": "<Ctrl><Shift>A"}
+        ]},
+        {"separator": true},
+        {"label": "Find", "items": [
+          {"label": "Find in This Message…", "shortcut": "<Ctrl>F"},
+          {"label": "Find Again", "shortcut": "<Ctrl>G"},
+          {"label": "Find Previous", "shortcut": "<Ctrl><Shift>G"},
+          {"separator": true},
+          {"label": "Search Messages…", "shortcut": "<Ctrl><Shift>F"},
+          {"label": "Global Search…", "shortcut": "<Ctrl>K"}
+        ]},
+        {"separator": true},
         {"label": "Settings"}
       ]
     },
     {
       "label": "View",
       "items": [
-        {"label": "Address Book", "shortcut": "<Ctrl><Shift>B"},
-        {"label": "Calendar Tab", "shortcut": "<Ctrl><Shift>C"},
-        {"label": "Tasks Tab", "shortcut": "<Ctrl><Shift>D"},
-        {"label": "Chat Tab", "shortcut": "<Ctrl><Shift>I"},
-        {"label": "Toggle Message Pane", "shortcut": "F8"},
-        {"label": "Toggle Folder Pane", "shortcut": "F9"},
-        {"label": "Toggle Fullscreen", "shortcut": "F11"},
+        {"label": "Toolbars", "items": [
+          {"label": "Quick Filter Bar", "shortcut": "<Ctrl><Shift>K"}
+        ]},
+        {"label": "Layout", "items": [
+          {"label": "Message Pane", "shortcut": "F8"},
+          {"label": "Folder Pane"}
+        ]},
+        {"label": "Zoom", "items": [
+          {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+          {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+          {"label": "Reset", "shortcut": "<Ctrl>0"}
+        ]},
+        {"label": "Threads", "items": [
+          {"label": "Expand All Threads"},
+          {"label": "Collapse All Threads"}
+        ]},
+        {"separator": true},
+        {"label": "Message Source", "shortcut": "<Ctrl>U"},
+        {"label": "Today Pane", "shortcut": "F11"},
+        {"label": "Caret Browsing", "shortcut": "F7"},
+        {"separator": true},
         {"label": "Next Tab", "shortcut": "<Ctrl>Tab"},
-        {"label": "Previous Tab", "shortcut": "<Ctrl><Shift>Tab"},
-        {"label": "Zoom In", "shortcut": "<Ctrl>+"},
-        {"label": "Zoom Out", "shortcut": "<Ctrl>-"},
-        {"label": "Reset Zoom", "shortcut": "<Ctrl>0"}
+        {"label": "Previous Tab", "shortcut": "<Ctrl><Shift>Tab"}
       ]
     },
     {
       "label": "Go",
       "items": [
-        {"label": "Next Unread Message", "shortcut": "N"},
-        {"label": "Previous Unread Message", "shortcut": "P"},
-        {"label": "Next Unread Thread", "shortcut": "T"}
+        {"label": "Next", "items": [
+          {"label": "Message", "shortcut": "F"},
+          {"label": "Unread Message", "shortcut": "N"},
+          {"label": "Unread Thread", "shortcut": "T"}
+        ]},
+        {"label": "Previous", "items": [
+          {"label": "Message", "shortcut": "B"},
+          {"label": "Unread Message", "shortcut": "P"}
+        ]},
+        {"label": "Forward"},
+        {"label": "Back"},
+        {"separator": true},
+        {"label": "Today", "shortcut": "<Alt>End"},
+        {"separator": true},
+        {"label": "Chat"},
+        {"label": "Calendar"},
+        {"label": "Tasks"},
+        {"separator": true},
+        {"label": "Undo Close Tab", "shortcut": "<Ctrl><Shift>T"},
+        {"separator": true},
+        {"label": "Mail Start Page", "shortcut": "<Alt>Home"}
       ]
     },
     {
       "label": "Message",
       "items": [
-        {"label": "Send Message", "shortcut": "<Ctrl>Return"},
-        {"label": "Send Message Later", "shortcut": "<Ctrl><Shift>Return"},
-        {"label": "Reply to Sender", "shortcut": "<Ctrl>R"},
+        {"label": "New Message", "shortcut": "<Ctrl>N"},
+        {"label": "Reply", "shortcut": "<Ctrl>R"},
         {"label": "Reply to All", "shortcut": "<Ctrl><Shift>R"},
         {"label": "Reply to List", "shortcut": "<Ctrl><Shift>L"},
-        {"label": "Forward Message", "shortcut": "<Ctrl>L"},
-        {"label": "Forward Inline", "shortcut": "<Ctrl><Shift>F"},
-        {"label": "Archive Message", "shortcut": "A"},
-        {"label": "Mark Message as Read", "shortcut": "M"},
-        {"label": "Mark Thread as Read", "shortcut": "R"},
-        {"label": "Mark All Read in Folder", "shortcut": "<Shift>C"},
-        {"label": "Mark as Starred / Flagged", "shortcut": "S"},
-        {"label": "Mark as Junk", "shortcut": "J"},
-        {"label": "Mark as Not Junk", "shortcut": "<Shift>J"},
-        {"label": "Delete Message", "shortcut": "Delete"},
-        {"label": "Delete Bypassing Trash", "shortcut": "<Shift>Delete"},
-        {"label": "Quick Filter Bar", "shortcut": "<Ctrl><Shift>K"},
-        {"label": "Message Source", "shortcut": "<Ctrl>U"}
+        {"label": "Forward", "shortcut": "<Ctrl>L"},
+        {"label": "Forward As", "items": [
+          {"label": "Inline"},
+          {"label": "Attachment"}
+        ]},
+        {"label": "Edit As New Message", "shortcut": "<Ctrl>E"},
+        {"separator": true},
+        {"label": "Open Message", "shortcut": "<Ctrl>O"},
+        {"label": "Open in Conversation", "shortcut": "<Ctrl><Shift>O"},
+        {"separator": true},
+        {"label": "Tag", "items": [
+          {"label": "Remove All Tags", "shortcut": "0"},
+          {"label": "Toggle Tag 1", "shortcut": "1"},
+          {"label": "Toggle Tag 2", "shortcut": "2"},
+          {"label": "Toggle Tag 3", "shortcut": "3"},
+          {"label": "Toggle Tag 4", "shortcut": "4"},
+          {"label": "Toggle Tag 5", "shortcut": "5"},
+          {"label": "Toggle Tag 6", "shortcut": "6"},
+          {"label": "Toggle Tag 7", "shortcut": "7"},
+          {"label": "Toggle Tag 8", "shortcut": "8"},
+          {"label": "Toggle Tag 9", "shortcut": "9"}
+        ]},
+        {"label": "Mark", "items": [
+          {"label": "As Read", "shortcut": "M"},
+          {"label": "As Unread", "shortcut": "M"},
+          {"label": "Thread As Read", "shortcut": "R"},
+          {"label": "As Read by Date…", "shortcut": "C"},
+          {"label": "All Read", "shortcut": "<Shift>C"},
+          {"separator": true},
+          {"label": "Add Star", "shortcut": "S"},
+          {"separator": true},
+          {"label": "As Spam"},
+          {"label": "As Not Spam", "shortcut": "<Shift>J"}
+        ]},
+        {"separator": true},
+        {"label": "Archive", "shortcut": "A"},
+        {"label": "Move Again", "shortcut": "<Ctrl><Shift>M"},
+        {"separator": true},
+        {"label": "Ignore Thread", "shortcut": "K"},
+        {"label": "Ignore Subthread", "shortcut": "<Shift>K"},
+        {"label": "Watch Thread", "shortcut": "W"}
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {"label": "Address Book", "shortcut": "<Ctrl><Shift>B"},
+        {"label": "Saved Files", "shortcut": "<Ctrl>J"},
+        {"separator": true},
+        {"label": "Developer Tools", "items": [
+          {"label": "Developer Toolbox", "shortcut": "<Ctrl><Shift>I"}
+        ]},
+        {"label": "Clear Recent History…", "shortcut": "<Ctrl><Shift>Delete"}
       ]
     },
     {
       "label": "Help",
       "items": [
-        {"label": "Help", "shortcut": "F1"}
+        {"label": "Get Help", "shortcut": "F1"}
       ]
     }
   ]
