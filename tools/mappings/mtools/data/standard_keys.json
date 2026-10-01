@@ -1,0 +1,3829 @@
+{
+ "format": 1,
+ "generated_by": "python3 -m mtools.gen_tables",
+ "sources": {
+  "qtbase": {
+   "url": "https://github.com/qt/qtbase.git",
+   "commit": "91d08dd41f40ce44bce7ab2e1a00c49d9b4e2d11",
+   "files": [
+    "src/gui/kernel/qplatformtheme.cpp"
+   ]
+  },
+  "kconfig": {
+   "url": "https://invent.kde.org/frameworks/kconfig.git",
+   "commit": "975405122decec19e7952a304cd7c19d60f59e62",
+   "files": [
+    "src/gui/kstandardshortcut.cpp",
+    "src/gui/kstandardactions_p.h",
+    "src/gui/kstandardactions.h"
+   ]
+  },
+  "kconfigwidgets": {
+   "url": "https://invent.kde.org/frameworks/kconfigwidgets.git",
+   "commit": "8b04deab75f34d591b5e300fbd09b61b4f218881",
+   "files": [
+    "src/kstandardaction_p.h",
+    "src/kstandardaction.cpp"
+   ]
+  },
+  "electron": {
+   "url": "https://github.com/electron/electron.git",
+   "commit": "013d90fb56b5c4e4605122110054c3a07c90d21e",
+   "files": [
+    "shell/browser/api/electron_api_menu_roles.cc"
+   ]
+  }
+ },
+ "qt_standard_keys": {
+  "HelpContents": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_F1",
+     "accel": "F1",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 190
+    },
+    {
+     "raw": "Qt::Key_Help",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 191,
+     "error": "Qt key Key_Help is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_F1",
+     "accel": "F1",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 190
+    },
+    {
+     "raw": "Qt::Key_Help",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 191,
+     "error": "Qt key Key_Help is not in the mapping grammar"
+    }
+   ]
+  },
+  "WhatsThis": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_F1",
+     "accel": "<Shift>F1",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 192
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_F1",
+     "accel": "<Shift>F1",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 192
+    }
+   ]
+  },
+  "Open": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_O",
+     "accel": "<Ctrl>O",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 193
+    },
+    {
+     "raw": "Qt::Key_Open",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 194,
+     "error": "Qt key Key_Open is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_O",
+     "accel": "<Ctrl>O",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 193
+    },
+    {
+     "raw": "Qt::Key_Open",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 194,
+     "error": "Qt key Key_Open is not in the mapping grammar"
+    }
+   ]
+  },
+  "Close": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_W",
+     "accel": "<Ctrl>W",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 198
+    },
+    {
+     "raw": "Qt::Key_Close",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 199,
+     "error": "Qt key Key_Close is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_W",
+     "accel": "<Ctrl>W",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 198
+    },
+    {
+     "raw": "Qt::Key_Close",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 199,
+     "error": "Qt key Key_Close is not in the mapping grammar"
+    }
+   ]
+  },
+  "Save": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_S",
+     "accel": "<Ctrl>S",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 200
+    },
+    {
+     "raw": "Qt::Key_Save",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 201,
+     "error": "Qt key Key_Save is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_S",
+     "accel": "<Ctrl>S",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 200
+    },
+    {
+     "raw": "Qt::Key_Save",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 201,
+     "error": "Qt key Key_Save is not in the mapping grammar"
+    }
+   ]
+  },
+  "New": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_N",
+     "accel": "<Ctrl>N",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 202
+    },
+    {
+     "raw": "Qt::Key_New",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 203,
+     "error": "Qt key Key_New is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_N",
+     "accel": "<Ctrl>N",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 202
+    },
+    {
+     "raw": "Qt::Key_New",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 203,
+     "error": "Qt key Key_New is not in the mapping grammar"
+    }
+   ]
+  },
+  "Delete": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_Delete",
+     "accel": "Delete",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 205
+    },
+    {
+     "raw": "Qt::CTRL | Qt::Key_D",
+     "accel": "<Ctrl>D",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 204
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_Delete",
+     "accel": "Delete",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 205
+    },
+    {
+     "raw": "Qt::CTRL | Qt::Key_D",
+     "accel": "<Ctrl>D",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 204
+    }
+   ]
+  },
+  "Cut": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_X",
+     "accel": "<Ctrl>X",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 207
+    },
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Delete",
+     "accel": "<Shift>Delete",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 208
+    },
+    {
+     "raw": "Qt::Key_F20",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 209,
+     "error": "Qt key Key_F20 is not in the mapping grammar"
+    },
+    {
+     "raw": "Qt::Key_Cut",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 211,
+     "error": "Qt key Key_Cut is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_X",
+     "accel": "<Ctrl>X",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 207
+    },
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Delete",
+     "accel": "<Shift>Delete",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 208
+    },
+    {
+     "raw": "Qt::Key_F20",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 209,
+     "error": "Qt key Key_F20 is not in the mapping grammar"
+    },
+    {
+     "raw": "Qt::Key_Cut",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 211,
+     "error": "Qt key Key_Cut is not in the mapping grammar"
+    }
+   ]
+  },
+  "Copy": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_C",
+     "accel": "<Ctrl>C",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 213
+    },
+    {
+     "raw": "Qt::CTRL | Qt::Key_Insert",
+     "accel": "<Ctrl>Insert",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 212
+    },
+    {
+     "raw": "Qt::Key_F16",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 214,
+     "error": "Qt key Key_F16 is not in the mapping grammar"
+    },
+    {
+     "raw": "Qt::Key_Copy",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 215,
+     "error": "Qt key Key_Copy is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_C",
+     "accel": "<Ctrl>C",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 213
+    },
+    {
+     "raw": "Qt::CTRL | Qt::Key_Insert",
+     "accel": "<Ctrl>Insert",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 212
+    },
+    {
+     "raw": "Qt::Key_F16",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 214,
+     "error": "Qt key Key_F16 is not in the mapping grammar"
+    },
+    {
+     "raw": "Qt::Key_Copy",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 215,
+     "error": "Qt key Key_Copy is not in the mapping grammar"
+    }
+   ]
+  },
+  "Paste": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_V",
+     "accel": "<Ctrl>V",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 217
+    },
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Insert",
+     "accel": "<Ctrl><Shift>Insert",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 216
+    },
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Insert",
+     "accel": "<Shift>Insert",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 218
+    },
+    {
+     "raw": "Qt::Key_F18",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 219,
+     "error": "Qt key Key_F18 is not in the mapping grammar"
+    },
+    {
+     "raw": "Qt::Key_Paste",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 221,
+     "error": "Qt key Key_Paste is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_V",
+     "accel": "<Ctrl>V",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 217
+    },
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Insert",
+     "accel": "<Ctrl><Shift>Insert",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 216
+    },
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Insert",
+     "accel": "<Shift>Insert",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 218
+    },
+    {
+     "raw": "Qt::Key_F18",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 219,
+     "error": "Qt key Key_F18 is not in the mapping grammar"
+    },
+    {
+     "raw": "Qt::Key_Paste",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 221,
+     "error": "Qt key Key_Paste is not in the mapping grammar"
+    }
+   ]
+  },
+  "Undo": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Z",
+     "accel": "<Ctrl>Z",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 223
+    },
+    {
+     "raw": "Qt::Key_F14",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 224,
+     "error": "Qt key Key_F14 is not in the mapping grammar"
+    },
+    {
+     "raw": "Qt::Key_Undo",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 225,
+     "error": "Qt key Key_Undo is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Z",
+     "accel": "<Ctrl>Z",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 223
+    },
+    {
+     "raw": "Qt::Key_F14",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 224,
+     "error": "Qt key Key_F14 is not in the mapping grammar"
+    },
+    {
+     "raw": "Qt::Key_Undo",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 225,
+     "error": "Qt key Key_Undo is not in the mapping grammar"
+    }
+   ]
+  },
+  "Redo": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Z",
+     "accel": "<Ctrl><Shift>Z",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 228
+    },
+    {
+     "raw": "Qt::Key_Redo",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 230,
+     "error": "Qt key Key_Redo is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Z",
+     "accel": "<Ctrl><Shift>Z",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 228
+    },
+    {
+     "raw": "Qt::Key_Redo",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 230,
+     "error": "Qt key Key_Redo is not in the mapping grammar"
+    }
+   ]
+  },
+  "Back": {
+   "gnome": [
+    {
+     "raw": "Qt::ALT  | Qt::Key_Left",
+     "accel": "<Alt>Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 231
+    },
+    {
+     "raw": "Qt::Key_Back",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 235,
+     "error": "Qt key Key_Back is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::ALT  | Qt::Key_Left",
+     "accel": "<Alt>Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 231
+    },
+    {
+     "raw": "Qt::Key_Back",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 235,
+     "error": "Qt key Key_Back is not in the mapping grammar"
+    }
+   ]
+  },
+  "Forward": {
+   "gnome": [
+    {
+     "raw": "Qt::ALT  | Qt::Key_Right",
+     "accel": "<Alt>Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 236
+    },
+    {
+     "raw": "Qt::Key_Forward",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 240,
+     "error": "Qt key Key_Forward is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::ALT  | Qt::Key_Right",
+     "accel": "<Alt>Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 236
+    },
+    {
+     "raw": "Qt::Key_Forward",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 240,
+     "error": "Qt key Key_Forward is not in the mapping grammar"
+    }
+   ]
+  },
+  "Refresh": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_R",
+     "accel": "<Ctrl>R",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 241
+    },
+    {
+     "raw": "Qt::Key_F5",
+     "accel": "F5",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 242
+    },
+    {
+     "raw": "Qt::Key_Refresh",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 243,
+     "error": "Qt key Key_Refresh is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_F5",
+     "accel": "F5",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 242
+    },
+    {
+     "raw": "Qt::Key_Refresh",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 243,
+     "error": "Qt key Key_Refresh is not in the mapping grammar"
+    }
+   ]
+  },
+  "ZoomIn": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Plus",
+     "accel": "<Ctrl>plus",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 244
+    },
+    {
+     "raw": "Qt::Key_ZoomIn",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 245,
+     "error": "Qt key Key_ZoomIn is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Plus",
+     "accel": "<Ctrl>plus",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 244
+    },
+    {
+     "raw": "Qt::Key_ZoomIn",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 245,
+     "error": "Qt key Key_ZoomIn is not in the mapping grammar"
+    }
+   ]
+  },
+  "ZoomOut": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Minus",
+     "accel": "<Ctrl>minus",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 246
+    },
+    {
+     "raw": "Qt::Key_ZoomOut",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 247,
+     "error": "Qt key Key_ZoomOut is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Minus",
+     "accel": "<Ctrl>minus",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 246
+    },
+    {
+     "raw": "Qt::Key_ZoomOut",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 247,
+     "error": "Qt key Key_ZoomOut is not in the mapping grammar"
+    }
+   ]
+  },
+  "Print": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_P",
+     "accel": "<Ctrl>P",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 248
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_P",
+     "accel": "<Ctrl>P",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 248
+    }
+   ]
+  },
+  "AddTab": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_T",
+     "accel": "<Ctrl>T",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 250
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_N",
+     "accel": "<Ctrl><Shift>N",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 249
+    },
+    {
+     "raw": "Qt::CTRL | Qt::Key_T",
+     "accel": "<Ctrl>T",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 250
+    }
+   ]
+  },
+  "NextChild": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Tab",
+     "accel": "<Ctrl>Tab",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 253
+    },
+    {
+     "raw": "Qt::Key_Forward",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 256,
+     "error": "Qt key Key_Forward is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Tab",
+     "accel": "<Ctrl>Tab",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 253
+    },
+    {
+     "raw": "Qt::CTRL | Qt::Key_Comma",
+     "accel": "<Ctrl>comma",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 255
+    },
+    {
+     "raw": "Qt::Key_Forward",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 256,
+     "error": "Qt key Key_Forward is not in the mapping grammar"
+    }
+   ]
+  },
+  "PreviousChild": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Backtab",
+     "accel": "<Ctrl><Shift>Tab",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 259
+    },
+    {
+     "raw": "Qt::Key_Back",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 262,
+     "error": "Qt key Key_Back is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Backtab",
+     "accel": "<Ctrl><Shift>Tab",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 259
+    },
+    {
+     "raw": "Qt::CTRL | Qt::Key_Period",
+     "accel": "<Ctrl>period",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 261
+    },
+    {
+     "raw": "Qt::Key_Back",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 262,
+     "error": "Qt key Key_Back is not in the mapping grammar"
+    }
+   ]
+  },
+  "Find": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_F",
+     "accel": "<Ctrl>F",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 263
+    },
+    {
+     "raw": "Qt::Key_Find",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 264,
+     "error": "Qt key Key_Find is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_F",
+     "accel": "<Ctrl>F",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 263
+    },
+    {
+     "raw": "Qt::Key_Find",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 264,
+     "error": "Qt key Key_Find is not in the mapping grammar"
+    }
+   ]
+  },
+  "FindNext": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_G",
+     "accel": "<Ctrl>G",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 266
+    },
+    {
+     "raw": "Qt::Key_F3",
+     "accel": "F3",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 268
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_F3",
+     "accel": "F3",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 268
+    }
+   ]
+  },
+  "FindPrevious": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_G",
+     "accel": "<Ctrl><Shift>G",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 270
+    },
+    {
+     "raw": "Qt::SHIFT | Qt::Key_F3",
+     "accel": "<Shift>F3",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 272
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_F3",
+     "accel": "<Shift>F3",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 272
+    }
+   ]
+  },
+  "Replace": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_H",
+     "accel": "<Ctrl>H",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 274
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_R",
+     "accel": "<Ctrl>R",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 273
+    }
+   ]
+  },
+  "SelectAll": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_A",
+     "accel": "<Ctrl>A",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 276
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_A",
+     "accel": "<Ctrl>A",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 276
+    }
+   ]
+  },
+  "Bold": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_B",
+     "accel": "<Ctrl>B",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 277
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_B",
+     "accel": "<Ctrl>B",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 277
+    }
+   ]
+  },
+  "Italic": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_I",
+     "accel": "<Ctrl>I",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 278
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_I",
+     "accel": "<Ctrl>I",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 278
+    }
+   ]
+  },
+  "Underline": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_U",
+     "accel": "<Ctrl>U",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 279
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_U",
+     "accel": "<Ctrl>U",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 279
+    }
+   ]
+  },
+  "MoveToNextChar": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_Right",
+     "accel": "Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 280
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_Right",
+     "accel": "Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 280
+    }
+   ]
+  },
+  "MoveToPreviousChar": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_Left",
+     "accel": "Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 282
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_Left",
+     "accel": "Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 282
+    }
+   ]
+  },
+  "MoveToNextWord": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Right",
+     "accel": "<Ctrl>Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 285
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Right",
+     "accel": "<Ctrl>Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 285
+    }
+   ]
+  },
+  "MoveToPreviousWord": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Left",
+     "accel": "<Ctrl>Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 287
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Left",
+     "accel": "<Ctrl>Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 287
+    }
+   ]
+  },
+  "MoveToNextLine": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_Down",
+     "accel": "Down",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 288
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_Down",
+     "accel": "Down",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 288
+    }
+   ]
+  },
+  "MoveToPreviousLine": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_Up",
+     "accel": "Up",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 290
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_Up",
+     "accel": "Up",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 290
+    }
+   ]
+  },
+  "MoveToNextPage": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_PageDown",
+     "accel": "Page_Down",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 296
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_PageDown",
+     "accel": "Page_Down",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 296
+    }
+   ]
+  },
+  "MoveToPreviousPage": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_PageUp",
+     "accel": "Page_Up",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 300
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_PageUp",
+     "accel": "Page_Up",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 300
+    }
+   ]
+  },
+  "MoveToStartOfLine": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_Home",
+     "accel": "Home",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 303
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_Home",
+     "accel": "Home",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 303
+    }
+   ]
+  },
+  "MoveToEndOfLine": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_End",
+     "accel": "End",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 306
+    },
+    {
+     "raw": "Qt::CTRL | Qt::Key_E",
+     "accel": "<Ctrl>E",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 307
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_End",
+     "accel": "End",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 306
+    },
+    {
+     "raw": "Qt::CTRL | Qt::Key_E",
+     "accel": "<Ctrl>E",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 307
+    }
+   ]
+  },
+  "MoveToStartOfBlock": {
+   "gnome": [],
+   "kde": []
+  },
+  "MoveToEndOfBlock": {
+   "gnome": [],
+   "kde": []
+  },
+  "MoveToStartOfDocument": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Home",
+     "accel": "<Ctrl>Home",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 313
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Home",
+     "accel": "<Ctrl>Home",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 313
+    }
+   ]
+  },
+  "MoveToEndOfDocument": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_End",
+     "accel": "<Ctrl>End",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 316
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_End",
+     "accel": "<Ctrl>End",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 316
+    }
+   ]
+  },
+  "SelectNextChar": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Right",
+     "accel": "<Shift>Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 318
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Right",
+     "accel": "<Shift>Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 318
+    }
+   ]
+  },
+  "SelectPreviousChar": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Left",
+     "accel": "<Shift>Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 319
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Left",
+     "accel": "<Shift>Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 319
+    }
+   ]
+  },
+  "SelectNextWord": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Right",
+     "accel": "<Ctrl><Shift>Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 321
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Right",
+     "accel": "<Ctrl><Shift>Right",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 321
+    }
+   ]
+  },
+  "SelectPreviousWord": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Left",
+     "accel": "<Ctrl><Shift>Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 323
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Left",
+     "accel": "<Ctrl><Shift>Left",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 323
+    }
+   ]
+  },
+  "SelectNextLine": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Down",
+     "accel": "<Shift>Down",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 324
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Down",
+     "accel": "<Shift>Down",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 324
+    }
+   ]
+  },
+  "SelectPreviousLine": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Up",
+     "accel": "<Shift>Up",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 325
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Up",
+     "accel": "<Shift>Up",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 325
+    }
+   ]
+  },
+  "SelectNextPage": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_PageDown",
+     "accel": "<Shift>Page_Down",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 326
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_PageDown",
+     "accel": "<Shift>Page_Down",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 326
+    }
+   ]
+  },
+  "SelectPreviousPage": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_PageUp",
+     "accel": "<Shift>Page_Up",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 327
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_PageUp",
+     "accel": "<Shift>Page_Up",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 327
+    }
+   ]
+  },
+  "SelectStartOfLine": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Home",
+     "accel": "<Shift>Home",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 330
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Home",
+     "accel": "<Shift>Home",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 330
+    }
+   ]
+  },
+  "SelectEndOfLine": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_End",
+     "accel": "<Shift>End",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 333
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_End",
+     "accel": "<Shift>End",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 333
+    }
+   ]
+  },
+  "SelectStartOfBlock": {
+   "gnome": [],
+   "kde": []
+  },
+  "SelectEndOfBlock": {
+   "gnome": [],
+   "kde": []
+  },
+  "SelectStartOfDocument": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Home",
+     "accel": "<Ctrl><Shift>Home",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 339
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Home",
+     "accel": "<Ctrl><Shift>Home",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 339
+    }
+   ]
+  },
+  "SelectEndOfDocument": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_End",
+     "accel": "<Ctrl><Shift>End",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 342
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_End",
+     "accel": "<Ctrl><Shift>End",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 342
+    }
+   ]
+  },
+  "DeleteStartOfWord": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Backspace",
+     "accel": "<Ctrl>BackSpace",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 345
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Backspace",
+     "accel": "<Ctrl>BackSpace",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 345
+    }
+   ]
+  },
+  "DeleteEndOfWord": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Delete",
+     "accel": "<Ctrl>Delete",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 347
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Delete",
+     "accel": "<Ctrl>Delete",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 347
+    }
+   ]
+  },
+  "DeleteEndOfLine": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_K",
+     "accel": "<Ctrl>K",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 348
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_K",
+     "accel": "<Ctrl>K",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 348
+    }
+   ]
+  },
+  "InsertParagraphSeparator": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_Enter",
+     "accel": "KP_Enter",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 349
+    },
+    {
+     "raw": "Qt::Key_Return",
+     "accel": "Return",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 350
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_Enter",
+     "accel": "KP_Enter",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 349
+    },
+    {
+     "raw": "Qt::Key_Return",
+     "accel": "Return",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 350
+    }
+   ]
+  },
+  "InsertLineSeparator": {
+   "gnome": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Enter",
+     "accel": "<Shift>KP_Enter",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 353
+    },
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Return",
+     "accel": "<Shift>Return",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 354
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Enter",
+     "accel": "<Shift>KP_Enter",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 353
+    },
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Return",
+     "accel": "<Shift>Return",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 354
+    }
+   ]
+  },
+  "SaveAs": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_S",
+     "accel": "<Ctrl><Shift>S",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 356
+    },
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Save",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 357,
+     "error": "Qt key Key_Save is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_S",
+     "accel": "<Ctrl><Shift>S",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 356
+    },
+    {
+     "raw": "Qt::SHIFT | Qt::Key_Save",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 357,
+     "error": "Qt key Key_Save is not in the mapping grammar"
+    }
+   ]
+  },
+  "Preferences": {
+   "gnome": [],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_Comma",
+     "accel": "<Ctrl><Shift>comma",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 359
+    },
+    {
+     "raw": "Qt::Key_Settings",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 360,
+     "error": "Qt key Key_Settings is not in the mapping grammar"
+    }
+   ]
+  },
+  "Quit": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Q",
+     "accel": "<Ctrl>Q",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 361
+    },
+    {
+     "raw": "Qt::Key_Exit",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 362,
+     "error": "Qt key Key_Exit is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_Q",
+     "accel": "<Ctrl>Q",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 361
+    },
+    {
+     "raw": "Qt::Key_Exit",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 362,
+     "error": "Qt key Key_Exit is not in the mapping grammar"
+    }
+   ]
+  },
+  "FullScreen": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_F11",
+     "accel": "F11",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 366
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_F11",
+     "accel": "F11",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 366
+    },
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_F",
+     "accel": "<Ctrl><Shift>F",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 365
+    }
+   ]
+  },
+  "Deselect": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_A",
+     "accel": "<Ctrl><Shift>A",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 367
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::SHIFT | Qt::Key_A",
+     "accel": "<Ctrl><Shift>A",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 367
+    }
+   ]
+  },
+  "DeleteCompleteLine": {
+   "gnome": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_U",
+     "accel": "<Ctrl>U",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 368
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::CTRL | Qt::Key_U",
+     "accel": "<Ctrl>U",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 368
+    }
+   ]
+  },
+  "Backspace": {
+   "gnome": [],
+   "kde": []
+  },
+  "Cancel": {
+   "gnome": [
+    {
+     "raw": "Qt::Key_Escape",
+     "accel": "Escape",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 371
+    },
+    {
+     "raw": "Qt::Key_Cancel",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 373,
+     "error": "Qt key Key_Cancel is not in the mapping grammar"
+    }
+   ],
+   "kde": [
+    {
+     "raw": "Qt::Key_Escape",
+     "accel": "Escape",
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 371
+    },
+    {
+     "raw": "Qt::Key_Cancel",
+     "accel": null,
+     "file": "src/gui/kernel/qplatformtheme.cpp",
+     "line": 373,
+     "error": "Qt key Key_Cancel is not in the mapping grammar"
+    }
+   ]
+  }
+ },
+ "kstandard_shortcuts": {
+  "Open": {
+   "name": "Open",
+   "label": "Open",
+   "shortcuts": [
+    {
+     "raw": "CTRL(O)",
+     "accel": "<Ctrl>O",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 75
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 72
+  },
+  "New": {
+   "name": "New",
+   "label": "New",
+   "shortcuts": [
+    {
+     "raw": "CTRL(N)",
+     "accel": "<Ctrl>N",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 79
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 79
+  },
+  "Close": {
+   "name": "Close",
+   "label": "Close",
+   "shortcuts": [
+    {
+     "raw": "CTRL(W)",
+     "accel": "<Ctrl>W",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 83
+    },
+    {
+     "raw": "CTRL(Escape)",
+     "accel": "<Ctrl>Escape",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 83
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 80
+  },
+  "Save": {
+   "name": "Save",
+   "label": "Save",
+   "shortcuts": [
+    {
+     "raw": "CTRL(S)",
+     "accel": "<Ctrl>S",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 88
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 88
+  },
+  "Print": {
+   "name": "Print",
+   "label": "Print",
+   "shortcuts": [
+    {
+     "raw": "CTRL(P)",
+     "accel": "<Ctrl>P",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 89
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 89
+  },
+  "Quit": {
+   "name": "Quit",
+   "label": "Quit",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Q)",
+     "accel": "<Ctrl>Q",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 93
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 90
+  },
+  "Undo": {
+   "name": "Undo",
+   "label": "Undo",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Z)",
+     "accel": "<Ctrl>Z",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 99
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 99
+  },
+  "Redo": {
+   "name": "Redo",
+   "label": "Redo",
+   "shortcuts": [
+    {
+     "raw": "CTRLSHIFT(Z)",
+     "accel": "<Ctrl><Shift>Z",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 100
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 100
+  },
+  "Cut": {
+   "name": "Cut",
+   "label": "Cut",
+   "shortcuts": [
+    {
+     "raw": "CTRL(X)",
+     "accel": "<Ctrl>X",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 106
+    },
+    {
+     "raw": "SHIFT(Delete)",
+     "accel": "<Shift>Delete",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 106
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 103
+  },
+  "Copy": {
+   "name": "Copy",
+   "label": "Copy",
+   "shortcuts": [
+    {
+     "raw": "CTRL(C)",
+     "accel": "<Ctrl>C",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 113
+    },
+    {
+     "raw": "CTRL(Insert)",
+     "accel": "<Ctrl>Insert",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 113
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 110
+  },
+  "Paste": {
+   "name": "Paste",
+   "label": "Paste",
+   "shortcuts": [
+    {
+     "raw": "CTRL(V)",
+     "accel": "<Ctrl>V",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 120
+    },
+    {
+     "raw": "SHIFT(Insert)",
+     "accel": "<Shift>Insert",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 120
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 117
+  },
+  "PasteSelection": {
+   "name": "Paste Selection",
+   "label": "Paste Selection",
+   "shortcuts": [
+    {
+     "raw": "CTRLSHIFT(Insert)",
+     "accel": "<Ctrl><Shift>Insert",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 127
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 124
+  },
+  "SelectAll": {
+   "name": "SelectAll",
+   "label": "Select All",
+   "shortcuts": [
+    {
+     "raw": "CTRL(A)",
+     "accel": "<Ctrl>A",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 135
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 132
+  },
+  "Deselect": {
+   "name": "Deselect",
+   "label": "Deselect",
+   "shortcuts": [
+    {
+     "raw": "CTRLSHIFT(A)",
+     "accel": "<Ctrl><Shift>A",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 142
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 139
+  },
+  "DeleteWordBack": {
+   "name": "DeleteWordBack",
+   "label": "Delete Word Backwards",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Backspace)",
+     "accel": "<Ctrl>BackSpace",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 153
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 146
+  },
+  "DeleteWordForward": {
+   "name": "DeleteWordForward",
+   "label": "Delete Word Forward",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Delete)",
+     "accel": "<Ctrl>Delete",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 165
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 158
+  },
+  "Find": {
+   "name": "Find",
+   "label": "Find",
+   "shortcuts": [
+    {
+     "raw": "CTRL(F)",
+     "accel": "<Ctrl>F",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 171
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 171
+  },
+  "FindNext": {
+   "name": "FindNext",
+   "label": "Find Next",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_F3",
+     "accel": "F3",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 179
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 172
+  },
+  "FindPrev": {
+   "name": "FindPrev",
+   "label": "Find Prev",
+   "shortcuts": [
+    {
+     "raw": "SHIFT(F3)",
+     "accel": "<Shift>F3",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 187
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 184
+  },
+  "Replace": {
+   "name": "Replace",
+   "label": "Replace",
+   "shortcuts": [
+    {
+     "raw": "CTRL(R)",
+     "accel": "<Ctrl>R",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 194
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 191
+  },
+  "Home": {
+   "name": "Home",
+   "label": "Home",
+   "shortcuts": [
+    {
+     "raw": "ALT(Home)",
+     "accel": "<Alt>Home",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 203
+    },
+    {
+     "raw": "Qt::Key_HomePage",
+     "accel": null,
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 203,
+     "error": "Qt key Key_HomePage is not in the mapping grammar"
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 200
+  },
+  "Begin": {
+   "name": "Begin",
+   "label": "Begin",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Home)",
+     "accel": "<Ctrl>Home",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 214
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 207
+  },
+  "End": {
+   "name": "End",
+   "label": "End",
+   "shortcuts": [
+    {
+     "raw": "CTRL(End)",
+     "accel": "<Ctrl>End",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 226
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 219
+  },
+  "Prior": {
+   "name": "Prior",
+   "label": "Prior",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_PageUp",
+     "accel": "Page_Up",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 234
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 231
+  },
+  "Next": {
+   "name": "Next",
+   "label": "Next",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_PageDown",
+     "accel": "Page_Down",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 241
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 238
+  },
+  "Up": {
+   "name": "Up",
+   "label": "Up",
+   "shortcuts": [
+    {
+     "raw": "ALT(Up)",
+     "accel": "<Alt>Up",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 246
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 246
+  },
+  "Back": {
+   "name": "Back",
+   "label": "Back",
+   "shortcuts": [
+    {
+     "raw": "ALT(Left)",
+     "accel": "<Alt>Left",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 253
+    },
+    {
+     "raw": "Qt::Key_Back",
+     "accel": null,
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 253,
+     "error": "Qt key Key_Back is not in the mapping grammar"
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 247
+  },
+  "Forward": {
+   "name": "Forward",
+   "label": "Forward",
+   "shortcuts": [
+    {
+     "raw": "ALT(Right)",
+     "accel": "<Alt>Right",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 264
+    },
+    {
+     "raw": "Qt::Key_Forward",
+     "accel": null,
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 264,
+     "error": "Qt key Key_Forward is not in the mapping grammar"
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 258
+  },
+  "Reload": {
+   "name": "Reload",
+   "label": "Reload",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_F5",
+     "accel": "F5",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 272
+    },
+    {
+     "raw": "Qt::Key_Refresh",
+     "accel": null,
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 272,
+     "error": "Qt key Key_Refresh is not in the mapping grammar"
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 269
+  },
+  "BeginningOfLine": {
+   "name": "BeginningOfLine",
+   "label": "Beginning of Line",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_Home",
+     "accel": "Home",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 284
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 277
+  },
+  "EndOfLine": {
+   "name": "EndOfLine",
+   "label": "End of Line",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_End",
+     "accel": "End",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 296
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 289
+  },
+  "GotoLine": {
+   "name": "GotoLine",
+   "label": "Go to Line",
+   "shortcuts": [
+    {
+     "raw": "CTRL(G)",
+     "accel": "<Ctrl>G",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 307
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 301
+  },
+  "BackwardWord": {
+   "name": "BackwardWord",
+   "label": "Backward Word",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Left)",
+     "accel": "<Ctrl>Left",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 319
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 312
+  },
+  "ForwardWord": {
+   "name": "ForwardWord",
+   "label": "Forward Word",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Right)",
+     "accel": "<Ctrl>Right",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 331
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 324
+  },
+  "AddBookmark": {
+   "name": "AddBookmark",
+   "label": "Add Bookmark",
+   "shortcuts": [
+    {
+     "raw": "CTRL(B)",
+     "accel": "<Ctrl>B",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 340
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 337
+  },
+  "ZoomIn": {
+   "name": "ZoomIn",
+   "label": "Zoom In",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Plus)",
+     "accel": "<Ctrl>plus",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 347
+    },
+    {
+     "raw": "CTRL(Equal)",
+     "accel": "<Ctrl>equal",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 347
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 344
+  },
+  "ZoomOut": {
+   "name": "ZoomOut",
+   "label": "Zoom Out",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Minus)",
+     "accel": "<Ctrl>minus",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 354
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 351
+  },
+  "FullScreen": {
+   "name": "FullScreen",
+   "label": "Full Screen Mode",
+   "shortcuts": [
+    {
+     "raw": "CTRLSHIFT(F)",
+     "accel": "<Ctrl><Shift>F",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 365
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 358
+  },
+  "ShowMenubar": {
+   "name": "ShowMenubar",
+   "label": "Show Menu Bar",
+   "shortcuts": [
+    {
+     "raw": "CTRL(M)",
+     "accel": "<Ctrl>M",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 374
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 371
+  },
+  "TabNext": {
+   "name": "Activate Next Tab",
+   "label": "Activate Next Tab",
+   "shortcuts": [
+    {
+     "raw": "CTRL(PageDown)",
+     "accel": "<Ctrl>Page_Down",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 381
+    },
+    {
+     "raw": "CTRL(BracketRight)",
+     "accel": "<Ctrl>bracketright",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 381
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 378
+  },
+  "TabPrev": {
+   "name": "Activate Previous Tab",
+   "label": "Activate Previous Tab",
+   "shortcuts": [
+    {
+     "raw": "CTRL(PageUp)",
+     "accel": "<Ctrl>Page_Up",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 388
+    },
+    {
+     "raw": "CTRL(BracketLeft)",
+     "accel": "<Ctrl>bracketleft",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 388
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 385
+  },
+  "Help": {
+   "name": "Help",
+   "label": "Help",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_F1",
+     "accel": "F1",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 394
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 394
+  },
+  "WhatsThis": {
+   "name": "WhatsThis",
+   "label": "What's This",
+   "shortcuts": [
+    {
+     "raw": "SHIFT(F1)",
+     "accel": "<Shift>F1",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 398
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 395
+  },
+  "TextCompletion": {
+   "name": "TextCompletion",
+   "label": "Text Completion",
+   "shortcuts": [
+    {
+     "raw": "CTRL(E)",
+     "accel": "<Ctrl>E",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 407
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 404
+  },
+  "PrevCompletion": {
+   "name": "PrevCompletion",
+   "label": "Previous Completion Match",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Up)",
+     "accel": "<Ctrl>Up",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 417
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 411
+  },
+  "NextCompletion": {
+   "name": "NextCompletion",
+   "label": "Next Completion Match",
+   "shortcuts": [
+    {
+     "raw": "CTRL(Down)",
+     "accel": "<Ctrl>Down",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 428
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 422
+  },
+  "SubstringCompletion": {
+   "name": "SubstringCompletion",
+   "label": "Substring Completion",
+   "shortcuts": [
+    {
+     "raw": "CTRL(T)",
+     "accel": "<Ctrl>T",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 436
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 433
+  },
+  "RotateUp": {
+   "name": "RotateUp",
+   "label": "Previous Item in List",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_Up",
+     "accel": "Up",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 444
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 441
+  },
+  "RotateDown": {
+   "name": "RotateDown",
+   "label": "Next Item in List",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_Down",
+     "accel": "Down",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 451
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 448
+  },
+  "OpenRecent": {
+   "name": "OpenRecent",
+   "label": "Open Recent",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 456
+  },
+  "SaveAs": {
+   "name": "SaveAs",
+   "label": "Save As",
+   "shortcuts": [
+    {
+     "raw": "CTRLSHIFT(S)",
+     "accel": "<Ctrl><Shift>S",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 466
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 463
+  },
+  "Revert": {
+   "name": "Revert",
+   "label": "Revert",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 470
+  },
+  "PrintPreview": {
+   "name": "PrintPreview",
+   "label": "Print Preview",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 471
+  },
+  "Mail": {
+   "name": "Mail",
+   "label": "Mail",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 478
+  },
+  "Clear": {
+   "name": "Clear",
+   "label": "Clear",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 479
+  },
+  "ActualSize": {
+   "name": "ActualSize",
+   "label": "Zoom to Actual Size",
+   "shortcuts": [
+    {
+     "raw": "CTRL(0)",
+     "accel": "<Ctrl>0",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 483
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 480
+  },
+  "FitToPage": {
+   "name": "FitToPage",
+   "label": "Fit To Page",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 487
+  },
+  "FitToWidth": {
+   "name": "FitToWidth",
+   "label": "Fit To Width",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 494
+  },
+  "FitToHeight": {
+   "name": "FitToHeight",
+   "label": "Fit To Height",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 501
+  },
+  "Zoom": {
+   "name": "Zoom",
+   "label": "Zoom",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 508
+  },
+  "Goto": {
+   "name": "Goto",
+   "label": "Goto",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 509
+  },
+  "GotoPage": {
+   "name": "GotoPage",
+   "label": "Goto Page",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 510
+  },
+  "DocumentBack": {
+   "name": "DocumentBack",
+   "label": "Document Back",
+   "shortcuts": [
+    {
+     "raw": "ALTSHIFT(Left)",
+     "accel": "<Shift><Alt>Left",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 520
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 517
+  },
+  "DocumentForward": {
+   "name": "DocumentForward",
+   "label": "Document Forward",
+   "shortcuts": [
+    {
+     "raw": "ALTSHIFT(Right)",
+     "accel": "<Shift><Alt>Right",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 527
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 524
+  },
+  "Spelling": {
+   "name": "Spelling",
+   "label": "Spelling",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 538
+  },
+  "ShowToolbar": {
+   "name": "ShowToolbar",
+   "label": "Show Toolbar",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 539
+  },
+  "ShowStatusbar": {
+   "name": "ShowStatusbar",
+   "label": "Show Statusbar",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 546
+  },
+  "KeyBindings": {
+   "name": "KeyBindings",
+   "label": "Key Bindings",
+   "shortcuts": [
+    {
+     "raw": "CTRLALT(Comma)",
+     "accel": "<Ctrl><Alt>comma",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 556
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 553
+  },
+  "Preferences": {
+   "name": "Preferences",
+   "label": "Configure Application",
+   "shortcuts": [
+    {
+     "raw": "CTRLSHIFT(Comma)",
+     "accel": "<Ctrl><Shift>comma",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 563
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 560
+  },
+  "ReportBug": {
+   "name": "ReportBug",
+   "label": "Report Bug",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 581
+  },
+  "AboutApp": {
+   "name": "AboutApp",
+   "label": "About Application",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 595
+  },
+  "AboutKDE": {
+   "name": "AboutKDE",
+   "label": "About KDE",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 602
+  },
+  "DeleteFile": {
+   "name": "DeleteFile",
+   "label": "Delete",
+   "shortcuts": [
+    {
+     "raw": "SHIFT(Delete)",
+     "accel": "<Shift>Delete",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 614
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 611
+  },
+  "RenameFile": {
+   "name": "RenameFile",
+   "label": "Rename",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_F2",
+     "accel": "F2",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 621
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 618
+  },
+  "MoveToTrash": {
+   "name": "MoveToTrash",
+   "label": "Move to Trash",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_Delete",
+     "accel": "Delete",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 628
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 625
+  },
+  "Donate": {
+   "name": "Donate",
+   "label": "Donate",
+   "shortcuts": [],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 632
+  },
+  "ShowHideHiddenFiles": {
+   "name": "ShowHideHiddenFiles",
+   "label": "Show/Hide Hidden Files",
+   "shortcuts": [
+    {
+     "raw": "CTRL(H)",
+     "accel": "<Ctrl>H",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 636
+    },
+    {
+     "raw": "ALT(Period)",
+     "accel": "<Alt>period",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 636
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 633
+  },
+  "CreateFolder": {
+   "name": "CreateFolder",
+   "label": "Create Folder",
+   "shortcuts": [
+    {
+     "raw": "CTRLSHIFT(N)",
+     "accel": "<Ctrl><Shift>N",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 643
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 640
+  },
+  "OpenMainMenu": {
+   "name": "OpenMainMenu",
+   "label": "Open Main Menu",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_F10",
+     "accel": "F10",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 650
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 647
+  },
+  "OpenContextMenu": {
+   "name": "OpenContextMenu",
+   "label": "Open Context Menu",
+   "shortcuts": [
+    {
+     "raw": "Qt::Key_Menu",
+     "accel": "Menu",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 657
+    },
+    {
+     "raw": "SHIFT(F10)",
+     "accel": "<Shift>F10",
+     "file": "src/gui/kstandardshortcut.cpp",
+     "line": 657
+    }
+   ],
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 654
+  }
+ },
+ "kstandard_shortcut_functions": {
+  "addBookmark": "AddBookmark",
+  "back": "Back",
+  "backwardWord": "BackwardWord",
+  "begin": "Begin",
+  "beginningOfLine": "BeginningOfLine",
+  "close": "Close",
+  "completion": "TextCompletion",
+  "copy": "Copy",
+  "createFolder": "CreateFolder",
+  "cut": "Cut",
+  "deleteFile": "DeleteFile",
+  "deleteWordBack": "DeleteWordBack",
+  "deleteWordForward": "DeleteWordForward",
+  "end": "End",
+  "endOfLine": "EndOfLine",
+  "find": "Find",
+  "findNext": "FindNext",
+  "findPrev": "FindPrev",
+  "forward": "Forward",
+  "forwardWord": "ForwardWord",
+  "fullScreen": "FullScreen",
+  "gotoLine": "GotoLine",
+  "help": "Help",
+  "home": "Home",
+  "moveToTrash": "MoveToTrash",
+  "next": "Next",
+  "nextCompletion": "NextCompletion",
+  "open": "Open",
+  "openContextMenu": "OpenContextMenu",
+  "openMainMenu": "OpenMainMenu",
+  "openNew": "New",
+  "paste": "Paste",
+  "pasteSelection": "PasteSelection",
+  "preferences": "Preferences",
+  "prevCompletion": "PrevCompletion",
+  "print": "Print",
+  "prior": "Prior",
+  "quit": "Quit",
+  "redo": "Redo",
+  "reload": "Reload",
+  "renameFile": "RenameFile",
+  "replace": "Replace",
+  "rotateDown": "RotateDown",
+  "rotateUp": "RotateUp",
+  "save": "Save",
+  "selectAll": "SelectAll",
+  "showHideHiddenFiles": "ShowHideHiddenFiles",
+  "showMenubar": "ShowMenubar",
+  "substringCompletion": "SubstringCompletion",
+  "tabNext": "TabNext",
+  "tabPrev": "TabPrev",
+  "undo": "Undo",
+  "up": "Up",
+  "whatsThis": "WhatsThis",
+  "zoomIn": "ZoomIn",
+  "zoomOut": "ZoomOut"
+ },
+ "kstandard_actions": {
+  "New": {
+   "shortcut": "New",
+   "action_name": "file_new",
+   "label": "New",
+   "file": "src/kstandardaction_p.h",
+   "line": 63,
+   "source": "kconfigwidgets"
+  },
+  "Open": {
+   "shortcut": "Open",
+   "action_name": "file_open",
+   "label": "Open…",
+   "file": "src/kstandardaction_p.h",
+   "line": 64,
+   "source": "kconfigwidgets"
+  },
+  "OpenRecent": {
+   "shortcut": "AccelNone",
+   "action_name": "file_open_recent",
+   "label": "Open Recent",
+   "file": "src/kstandardaction_p.h",
+   "line": 65,
+   "source": "kconfigwidgets"
+  },
+  "Save": {
+   "shortcut": "Save",
+   "action_name": "file_save",
+   "label": "Save",
+   "file": "src/kstandardaction_p.h",
+   "line": 66,
+   "source": "kconfigwidgets"
+  },
+  "SaveAs": {
+   "shortcut": "SaveAs",
+   "action_name": "file_save_as",
+   "label": "Save As…",
+   "file": "src/kstandardaction_p.h",
+   "line": 67,
+   "source": "kconfigwidgets"
+  },
+  "Revert": {
+   "shortcut": "Revert",
+   "action_name": "file_revert",
+   "label": "Revert",
+   "file": "src/kstandardaction_p.h",
+   "line": 68,
+   "source": "kconfigwidgets"
+  },
+  "Close": {
+   "shortcut": "Close",
+   "action_name": "file_close",
+   "label": "Close",
+   "file": "src/kstandardaction_p.h",
+   "line": 69,
+   "source": "kconfigwidgets"
+  },
+  "Print": {
+   "shortcut": "Print",
+   "action_name": "file_print",
+   "label": "Print…",
+   "file": "src/kstandardaction_p.h",
+   "line": 70,
+   "source": "kconfigwidgets"
+  },
+  "PrintPreview": {
+   "shortcut": "PrintPreview",
+   "action_name": "file_print_preview",
+   "label": "Print Preview",
+   "file": "src/kstandardaction_p.h",
+   "line": 71,
+   "source": "kconfigwidgets"
+  },
+  "Mail": {
+   "shortcut": "Mail",
+   "action_name": "file_mail",
+   "label": "Mail…",
+   "file": "src/kstandardaction_p.h",
+   "line": 72,
+   "source": "kconfigwidgets"
+  },
+  "Quit": {
+   "shortcut": "Quit",
+   "action_name": "file_quit",
+   "label": "Quit",
+   "file": "src/kstandardaction_p.h",
+   "line": 73,
+   "source": "kconfigwidgets"
+  },
+  "Undo": {
+   "shortcut": "Undo",
+   "action_name": "edit_undo",
+   "label": "Undo",
+   "file": "src/kstandardaction_p.h",
+   "line": 75,
+   "source": "kconfigwidgets"
+  },
+  "Redo": {
+   "shortcut": "Redo",
+   "action_name": "edit_redo",
+   "label": "Redo",
+   "file": "src/kstandardaction_p.h",
+   "line": 76,
+   "source": "kconfigwidgets"
+  },
+  "Cut": {
+   "shortcut": "Cut",
+   "action_name": "edit_cut",
+   "label": "Cut",
+   "file": "src/kstandardaction_p.h",
+   "line": 77,
+   "source": "kconfigwidgets"
+  },
+  "Copy": {
+   "shortcut": "Copy",
+   "action_name": "edit_copy",
+   "label": "Copy",
+   "file": "src/kstandardaction_p.h",
+   "line": 78,
+   "source": "kconfigwidgets"
+  },
+  "Paste": {
+   "shortcut": "Paste",
+   "action_name": "edit_paste",
+   "label": "Paste",
+   "file": "src/kstandardaction_p.h",
+   "line": 79,
+   "source": "kconfigwidgets"
+  },
+  "Clear": {
+   "shortcut": "Clear",
+   "action_name": "edit_clear",
+   "label": "Clear",
+   "file": "src/kstandardaction_p.h",
+   "line": 80,
+   "source": "kconfigwidgets"
+  },
+  "SelectAll": {
+   "shortcut": "SelectAll",
+   "action_name": "edit_select_all",
+   "label": "Select All",
+   "file": "src/kstandardaction_p.h",
+   "line": 81,
+   "source": "kconfigwidgets"
+  },
+  "Deselect": {
+   "shortcut": "Deselect",
+   "action_name": "edit_deselect",
+   "label": "Deselect",
+   "file": "src/kstandardaction_p.h",
+   "line": 82,
+   "source": "kconfigwidgets"
+  },
+  "Find": {
+   "shortcut": "Find",
+   "action_name": "edit_find",
+   "label": "Find…",
+   "file": "src/kstandardaction_p.h",
+   "line": 83,
+   "source": "kconfigwidgets"
+  },
+  "FindNext": {
+   "shortcut": "FindNext",
+   "action_name": "edit_find_next",
+   "label": "Find Next",
+   "file": "src/kstandardaction_p.h",
+   "line": 84,
+   "source": "kconfigwidgets"
+  },
+  "FindPrev": {
+   "shortcut": "FindPrev",
+   "action_name": "edit_find_prev",
+   "label": "Find Previous",
+   "file": "src/kstandardaction_p.h",
+   "line": 85,
+   "source": "kconfigwidgets"
+  },
+  "Replace": {
+   "shortcut": "Replace",
+   "action_name": "edit_replace",
+   "label": "Replace…",
+   "file": "src/kstandardaction_p.h",
+   "line": 86,
+   "source": "kconfigwidgets"
+  },
+  "ActualSize": {
+   "shortcut": "ActualSize",
+   "action_name": "view_actual_size",
+   "label": "Zoom to Actual Size",
+   "file": "src/kstandardaction_p.h",
+   "line": 88,
+   "source": "kconfigwidgets"
+  },
+  "FitToPage": {
+   "shortcut": "FitToPage",
+   "action_name": "view_fit_to_page",
+   "label": "Fit to Page",
+   "file": "src/kstandardaction_p.h",
+   "line": 89,
+   "source": "kconfigwidgets"
+  },
+  "FitToWidth": {
+   "shortcut": "FitToWidth",
+   "action_name": "view_fit_to_width",
+   "label": "Fit to Page Width",
+   "file": "src/kstandardaction_p.h",
+   "line": 90,
+   "source": "kconfigwidgets"
+  },
+  "FitToHeight": {
+   "shortcut": "FitToHeight",
+   "action_name": "view_fit_to_height",
+   "label": "Fit to Page Height",
+   "file": "src/kstandardaction_p.h",
+   "line": 91,
+   "source": "kconfigwidgets"
+  },
+  "ZoomIn": {
+   "shortcut": "ZoomIn",
+   "action_name": "view_zoom_in",
+   "label": "Zoom In",
+   "file": "src/kstandardaction_p.h",
+   "line": 92,
+   "source": "kconfigwidgets"
+  },
+  "ZoomOut": {
+   "shortcut": "ZoomOut",
+   "action_name": "view_zoom_out",
+   "label": "Zoom Out",
+   "file": "src/kstandardaction_p.h",
+   "line": 93,
+   "source": "kconfigwidgets"
+  },
+  "Zoom": {
+   "shortcut": "Zoom",
+   "action_name": "view_zoom",
+   "label": "Zoom…",
+   "file": "src/kstandardaction_p.h",
+   "line": 94,
+   "source": "kconfigwidgets"
+  },
+  "Redisplay": {
+   "shortcut": "Reload",
+   "action_name": "view_redisplay",
+   "label": "Refresh",
+   "file": "src/kstandardaction_p.h",
+   "line": 95,
+   "source": "kconfigwidgets"
+  },
+  "Up": {
+   "shortcut": "Up",
+   "action_name": "go_up",
+   "label": "Up",
+   "file": "src/kstandardaction_p.h",
+   "line": 97,
+   "source": "kconfigwidgets"
+  },
+  "Prior": {
+   "shortcut": "Prior",
+   "action_name": "go_previous",
+   "label": "Previous Page",
+   "file": "src/kstandardaction_p.h",
+   "line": 102,
+   "source": "kconfigwidgets"
+  },
+  "Next": {
+   "shortcut": "Next",
+   "action_name": "go_next",
+   "label": "Next Page",
+   "file": "src/kstandardaction_p.h",
+   "line": 103,
+   "source": "kconfigwidgets"
+  },
+  "Goto": {
+   "shortcut": "Goto",
+   "action_name": "go_goto",
+   "label": "Go To…",
+   "file": "src/kstandardaction_p.h",
+   "line": 104,
+   "source": "kconfigwidgets"
+  },
+  "GotoPage": {
+   "shortcut": "GotoPage",
+   "action_name": "go_goto_page",
+   "label": "Go to Page…",
+   "file": "src/kstandardaction_p.h",
+   "line": 105,
+   "source": "kconfigwidgets"
+  },
+  "GotoLine": {
+   "shortcut": "GotoLine",
+   "action_name": "go_goto_line",
+   "label": "Go to Line…",
+   "file": "src/kstandardaction_p.h",
+   "line": 106,
+   "source": "kconfigwidgets"
+  },
+  "FirstPage": {
+   "shortcut": "Begin",
+   "action_name": "go_first",
+   "label": "First Page",
+   "file": "src/kstandardaction_p.h",
+   "line": 107,
+   "source": "kconfigwidgets"
+  },
+  "LastPage": {
+   "shortcut": "End",
+   "action_name": "go_last",
+   "label": "Last Page",
+   "file": "src/kstandardaction_p.h",
+   "line": 108,
+   "source": "kconfigwidgets"
+  },
+  "DocumentBack": {
+   "shortcut": "DocumentBack",
+   "action_name": "go_document_back",
+   "label": "Back",
+   "file": "src/kstandardaction_p.h",
+   "line": 109,
+   "source": "kconfigwidgets"
+  },
+  "DocumentForward": {
+   "shortcut": "DocumentForward",
+   "action_name": "go_document_forward",
+   "label": "Forward",
+   "file": "src/kstandardaction_p.h",
+   "line": 110,
+   "source": "kconfigwidgets"
+  },
+  "AddBookmark": {
+   "shortcut": "AddBookmark",
+   "action_name": "bookmark_add",
+   "label": "Add Bookmark",
+   "file": "src/kstandardaction_p.h",
+   "line": 112,
+   "source": "kconfigwidgets"
+  },
+  "EditBookmarks": {
+   "shortcut": "EditBookmarks",
+   "action_name": "bookmark_edit",
+   "label": "Edit Bookmarks…",
+   "file": "src/kstandardaction_p.h",
+   "line": 113,
+   "source": "kconfigwidgets"
+  },
+  "Spelling": {
+   "shortcut": "Spelling",
+   "action_name": "tools_spelling",
+   "label": "Spelling…",
+   "file": "src/kstandardaction_p.h",
+   "line": 115,
+   "source": "kconfigwidgets"
+  },
+  "ShowMenubar": {
+   "shortcut": "ShowMenubar",
+   "action_name": "options_show_menubar",
+   "label": "Show Menubar",
+   "file": "src/kstandardaction_p.h",
+   "line": 117,
+   "source": "kconfigwidgets"
+  },
+  "ShowToolbar": {
+   "shortcut": "ShowToolbar",
+   "action_name": "options_show_toolbar",
+   "label": "Show Toolbar",
+   "file": "src/kstandardaction_p.h",
+   "line": 118,
+   "source": "kconfigwidgets"
+  },
+  "ShowStatusbar": {
+   "shortcut": "ShowStatusbar",
+   "action_name": "options_show_statusbar",
+   "label": "Show Statusbar",
+   "file": "src/kstandardaction_p.h",
+   "line": 119,
+   "source": "kconfigwidgets"
+  },
+  "FullScreen": {
+   "shortcut": "FullScreen",
+   "action_name": "fullscreen",
+   "label": "Full Screen Mode",
+   "file": "src/kstandardaction_p.h",
+   "line": 120,
+   "source": "kconfigwidgets"
+  },
+  "KeyBindings": {
+   "shortcut": "KeyBindings",
+   "action_name": "options_configure_keybinding",
+   "label": "Configure Keyboard Shortcuts…",
+   "file": "src/kstandardaction_p.h",
+   "line": 121,
+   "source": "kconfigwidgets"
+  },
+  "Preferences": {
+   "shortcut": "Preferences",
+   "action_name": "options_configure",
+   "label": "Configure %1…",
+   "file": "src/kstandardaction_p.h",
+   "line": 122,
+   "source": "kconfigwidgets"
+  },
+  "ConfigureToolbars": {
+   "shortcut": "ConfigureToolbars",
+   "action_name": "options_configure_toolbars",
+   "label": "Configure Toolbars…",
+   "file": "src/kstandardaction_p.h",
+   "line": 123,
+   "source": "kconfigwidgets"
+  },
+  "ConfigureNotifications": {
+   "shortcut": "ConfigureNotifications",
+   "action_name": "options_configure_notifications",
+   "label": "Configure Notifications…",
+   "file": "src/kstandardaction_p.h",
+   "line": 124,
+   "source": "kconfigwidgets"
+  },
+  "HelpContents": {
+   "shortcut": "Help",
+   "action_name": "help_contents",
+   "label": "%1 Handbook",
+   "file": "src/kstandardaction_p.h",
+   "line": 128,
+   "source": "kconfigwidgets"
+  },
+  "WhatsThis": {
+   "shortcut": "WhatsThis",
+   "action_name": "help_whats_this",
+   "label": "What's This?",
+   "file": "src/kstandardaction_p.h",
+   "line": 129,
+   "source": "kconfigwidgets"
+  },
+  "ReportBug": {
+   "shortcut": "ReportBug",
+   "action_name": "help_report_bug",
+   "label": "Report Bug…",
+   "file": "src/kstandardaction_p.h",
+   "line": 130,
+   "source": "kconfigwidgets"
+  },
+  "SwitchApplicationLanguage": {
+   "shortcut": "SwitchApplicationLanguage",
+   "action_name": "switch_application_language",
+   "label": "Configure Language…",
+   "file": "src/kstandardaction_p.h",
+   "line": 131,
+   "source": "kconfigwidgets"
+  },
+  "AboutApp": {
+   "shortcut": "AccelNone",
+   "action_name": "help_about_app",
+   "label": "About %1",
+   "file": "src/kstandardaction_p.h",
+   "line": 132,
+   "source": "kconfigwidgets"
+  },
+  "AboutKDE": {
+   "shortcut": "AccelNone",
+   "action_name": "help_about_kde",
+   "label": "About KDE",
+   "file": "src/kstandardaction_p.h",
+   "line": 133,
+   "source": "kconfigwidgets"
+  },
+  "DeleteFile": {
+   "shortcut": "DeleteFile",
+   "action_name": "deletefile",
+   "label": "Delete",
+   "file": "src/kstandardaction_p.h",
+   "line": 134,
+   "source": "kconfigwidgets"
+  },
+  "RenameFile": {
+   "shortcut": "RenameFile",
+   "action_name": "renamefile",
+   "label": "Rename…",
+   "file": "src/kstandardaction_p.h",
+   "line": 135,
+   "source": "kconfigwidgets"
+  },
+  "MoveToTrash": {
+   "shortcut": "MoveToTrash",
+   "action_name": "movetotrash",
+   "label": "Move to Trash",
+   "file": "src/kstandardaction_p.h",
+   "line": 136,
+   "source": "kconfigwidgets"
+  },
+  "Donate": {
+   "shortcut": "Donate",
+   "action_name": "help_donate",
+   "label": "Donate",
+   "file": "src/kstandardaction_p.h",
+   "line": 137,
+   "source": "kconfigwidgets"
+  },
+  "HamburgerMenu": {
+   "shortcut": "OpenMainMenu",
+   "action_name": "hamburger_menu",
+   "label": "Open Menu",
+   "file": "src/kstandardaction_p.h",
+   "line": 138,
+   "source": "kconfigwidgets"
+  }
+ },
+ "kstandard_action_functions": {
+  "aboutApp": "AboutApp",
+  "aboutKDE": "AboutKDE",
+  "actualSize": "ActualSize",
+  "addBookmark": "AddBookmark",
+  "clear": "Clear",
+  "close": "Close",
+  "configureNotifications": "ConfigureNotifications",
+  "configureToolbars": "ConfigureToolbars",
+  "copy": "Copy",
+  "cut": "Cut",
+  "deleteFile": "DeleteFile",
+  "deselect": "Deselect",
+  "documentBack": "DocumentBack",
+  "documentForward": "DocumentForward",
+  "donate": "Donate",
+  "editBookmarks": "EditBookmarks",
+  "find": "Find",
+  "findNext": "FindNext",
+  "findPrev": "FindPrev",
+  "firstPage": "FirstPage",
+  "fitToHeight": "FitToHeight",
+  "fitToPage": "FitToPage",
+  "fitToWidth": "FitToWidth",
+  "fullScreen": "FullScreen",
+  "goTo": "Goto",
+  "gotoLine": "GotoLine",
+  "gotoPage": "GotoPage",
+  "hamburgerMenu": "HamburgerMenu",
+  "helpContents": "HelpContents",
+  "keyBindings": "KeyBindings",
+  "lastPage": "LastPage",
+  "mail": "Mail",
+  "moveToTrash": "MoveToTrash",
+  "next": "Next",
+  "open": "Open",
+  "openNew": "New",
+  "openRecent": "OpenRecent",
+  "paste": "Paste",
+  "preferences": "Preferences",
+  "print": "Print",
+  "printPreview": "PrintPreview",
+  "prior": "Prior",
+  "quit": "Quit",
+  "redisplay": "Redisplay",
+  "redo": "Redo",
+  "renameFile": "RenameFile",
+  "replace": "Replace",
+  "reportBug": "ReportBug",
+  "revert": "Revert",
+  "save": "Save",
+  "saveAs": "SaveAs",
+  "selectAll": "SelectAll",
+  "showMenubar": "ShowMenubar",
+  "showStatusbar": "ShowStatusbar",
+  "spelling": "Spelling",
+  "switchApplicationLanguage": "SwitchApplicationLanguage",
+  "undo": "Undo",
+  "up": "Up",
+  "whatsThis": "WhatsThis",
+  "zoom": "Zoom",
+  "zoomIn": "ZoomIn",
+  "zoomOut": "ZoomOut"
+ },
+ "electron_roles": {
+  "about": {
+   "label": "About",
+   "accel_raw": null,
+   "accel": null,
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 53
+  },
+  "close": {
+   "label": "Close",
+   "accel_raw": "CommandOrControl+W",
+   "accel": "<Ctrl>W",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 55
+  },
+  "copy": {
+   "label": "Copy",
+   "accel_raw": "CommandOrControl+C",
+   "accel": "<Ctrl>C",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 57
+  },
+  "cut": {
+   "label": "Cut",
+   "accel_raw": "CommandOrControl+X",
+   "accel": "<Ctrl>X",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 58
+  },
+  "delete": {
+   "label": "Delete",
+   "accel_raw": null,
+   "accel": null,
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 59
+  },
+  "forcereload": {
+   "label": "Force Reload",
+   "accel_raw": "Shift+CmdOrCtrl+R",
+   "accel": "<Ctrl><Shift>R",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 60
+  },
+  "front": {
+   "label": "Bring All to Front",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 62
+  },
+  "help": {
+   "label": "Help",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 63
+  },
+  "hide": {
+   "label": null,
+   "accel_raw": "Command+H",
+   "accel": "<Super>H",
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 64
+  },
+  "hideothers": {
+   "label": "Hide Others",
+   "accel_raw": "Command+Alt+H",
+   "accel": "<Alt><Super>H",
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 65
+  },
+  "minimize": {
+   "label": "Minimize",
+   "accel_raw": "CommandOrControl+M",
+   "accel": "<Ctrl>M",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 66
+  },
+  "paste": {
+   "label": "Paste",
+   "accel_raw": "CommandOrControl+V",
+   "accel": "<Ctrl>V",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 67
+  },
+  "pasteandmatchstyle": {
+   "label": "Paste and Match Style",
+   "accel_raw": "Shift+CommandOrControl+V",
+   "accel": "<Ctrl><Shift>V",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 68
+  },
+  "quit": {
+   "label": "Quit",
+   "accel_raw": "CommandOrControl+Q",
+   "accel": "<Ctrl>Q",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 71
+  },
+  "redo": {
+   "label": "Redo",
+   "accel_raw": "Shift+CommandOrControl+Z",
+   "accel": "<Ctrl><Shift>Z",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 72
+  },
+  "reload": {
+   "label": "Reload",
+   "accel_raw": "CmdOrCtrl+R",
+   "accel": "<Ctrl>R",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 74
+  },
+  "resetzoom": {
+   "label": "Actual Size",
+   "accel_raw": "CommandOrControl+0",
+   "accel": "<Ctrl>0",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 75
+  },
+  "selectall": {
+   "label": "Select All",
+   "accel_raw": "CommandOrControl+A",
+   "accel": "<Ctrl>A",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 77
+  },
+  "services": {
+   "label": "Services",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 78
+  },
+  "recentdocuments": {
+   "label": "Open Recent",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 79
+  },
+  "clearrecentdocuments": {
+   "label": "Clear Menu",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 80
+  },
+  "showsubstitutions": {
+   "label": "Show Substitutions",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 81
+  },
+  "togglesmartquotes": {
+   "label": "Smart Quotes",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 82
+  },
+  "togglesmartdashes": {
+   "label": "Smart Dashes",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 83
+  },
+  "toggletextreplacement": {
+   "label": "Text Replacement",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 84
+  },
+  "startspeaking": {
+   "label": "Start Speaking",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 85
+  },
+  "stopspeaking": {
+   "label": "Stop Speaking",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 86
+  },
+  "toggledevtools": {
+   "label": "Toggle Developer Tools",
+   "accel_raw": "Ctrl+Shift+I",
+   "accel": "<Ctrl><Shift>I",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 87
+  },
+  "togglefullscreen": {
+   "label": "Toggle Full Screen",
+   "accel_raw": "F11",
+   "accel": "F11",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 90
+  },
+  "undo": {
+   "label": "Undo",
+   "accel_raw": "CommandOrControl+Z",
+   "accel": "<Ctrl>Z",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 92
+  },
+  "unhide": {
+   "label": "Show All",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 93
+  },
+  "window": {
+   "label": "Window",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 94
+  },
+  "zoom": {
+   "label": "Zoom",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 95
+  },
+  "zoomin": {
+   "label": "Zoom In",
+   "accel_raw": "CommandOrControl+Plus",
+   "accel": "<Ctrl>plus",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 96
+  },
+  "zoomout": {
+   "label": "Zoom Out",
+   "accel_raw": "CommandOrControl+-",
+   "accel": "<Ctrl>minus",
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 97
+  },
+  "togglespellchecker": {
+   "label": "Check Spelling While Typing",
+   "accel_raw": null,
+   "accel": null,
+   "linux": true,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 98
+  },
+  "appmenu": {
+   "label": null,
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 100
+  },
+  "filemenu": {
+   "label": "File",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 101
+  },
+  "editmenu": {
+   "label": "Edit",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 102
+  },
+  "viewmenu": {
+   "label": "View",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 103
+  },
+  "windowmenu": {
+   "label": "Window",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 104
+  },
+  "sharemenu": {
+   "label": "Share",
+   "accel_raw": null,
+   "accel": null,
+   "linux": false,
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 105
+  }
+ },
+ "electron_submenus": {
+  "appmenu": {
+   "roles": [
+    "about",
+    null,
+    "services",
+    null,
+    "hide",
+    "hideothers",
+    "unhide",
+    null,
+    "quit"
+   ],
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 207
+  },
+  "filemenu": {
+   "roles": [
+    "quit"
+   ],
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 220
+  },
+  "editmenu": {
+   "roles": [
+    "undo",
+    "redo",
+    null,
+    "cut",
+    "copy",
+    "paste",
+    "delete",
+    null,
+    "selectall"
+   ],
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 222
+  },
+  "viewmenu": {
+   "roles": [
+    "reload",
+    "forcereload",
+    "toggledevtools",
+    null,
+    "resetzoom",
+    "zoomin",
+    "zoomout",
+    null,
+    "togglefullscreen"
+   ],
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 245
+  },
+  "windowmenu": {
+   "roles": [
+    "minimize",
+    "zoom",
+    "close"
+   ],
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 258
+  },
+  "sharemenu": {
+   "roles": [],
+   "file": "shell/browser/api/electron_api_menu_roles.cc",
+   "line": 267
+  }
+ }
+}

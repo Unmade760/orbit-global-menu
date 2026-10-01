@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_New Window</attribute>
+        <attribute name="action">app.new-window</attribute>
+        <attribute name="accel">&lt;Primary&gt;n</attribute>
+      </item>
+      <submenu>
+        <attribute name="label" translatable="yes">_View</attribute>
+        <item>
+          <attribute name="label" translatable="yes">Zoom _In</attribute>
+          <attribute name="action">win.zoom-in</attribute>
+          <attribute name="accel">&lt;Primary&gt;plus</attribute>
+        </item>
+      </submenu>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Preferences</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+    </section>
+  </menu>
+  <object class="GtkShortcutController">
+    <child>
+      <object class="GtkShortcut">
+        <property name="trigger">&lt;Control&gt;q|&lt;Control&gt;w</property>
+        <property name="action">action(app.quit)</property>
+      </object>
+    </child>
+  </object>
+</interface>

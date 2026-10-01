@@ -1,0 +1,11 @@
+<keymap version="1" name="Default for GNOME" parent="$default">
+  <action id="SaveAll">
+    <keyboard-shortcut first-keystroke="control S" />
+  </action>
+  <action id="GotoAction">
+    <keyboard-shortcut first-keystroke="shift control A" />
+  </action>
+  <action id="Vcs.QuickListPopupAction">
+    <keyboard-shortcut first-keystroke="control K" second-keystroke="control V" />
+  </action>
+</keymap>

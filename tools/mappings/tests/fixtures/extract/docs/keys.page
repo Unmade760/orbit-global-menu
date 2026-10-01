@@ -1,0 +1,12 @@
+<page xmlns="http://projectmallard.org/1.0/" id="keyboard-shortcuts">
+<table>
+  <tr>
+    <td><p>Create a new window</p></td>
+    <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+  </tr>
+  <tr>
+    <td><p>Show help</p></td>
+    <td><p><key>F1</key></p></td>
+  </tr>
+</table>
+</page>

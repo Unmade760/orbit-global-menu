@@ -1,0 +1,5 @@
+bindings:
+  - name: Toggle Terminal
+    key: ctrl+shift+t
+  - name: Next Pane
+    key: alt+right

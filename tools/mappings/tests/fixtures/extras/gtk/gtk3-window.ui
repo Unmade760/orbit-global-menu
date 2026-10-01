@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenuItem" id="quit_item">
+    <property name="label" translatable="yes">_Quit</property>
+    <property name="action-name">app.quit</property>
+    <accelerator key="q" modifiers="GDK_CONTROL_MASK" signal="activate"/>
+  </object>
+</interface>

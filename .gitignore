@@ -42,3 +42,7 @@ tools/node_modules/
 # The Python packaging rule "lib/" above would otherwise hide the harness helpers.
 !tools/lib/
 !tests/js/lib/
+
+# Mapping tool caches
+.pytest_cache/
+.ruff_cache/

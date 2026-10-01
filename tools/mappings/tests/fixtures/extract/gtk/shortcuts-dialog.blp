@@ -1,0 +1,48 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.ShortcutsDialog shortcuts_dialog {
+  Adw.ShortcutsSection {
+    title: _("Editing");
+
+    Adw.ShortcutsItem {
+      title: _("Copy All");
+      accelerator: "<ctrl><shift>c";
+    }
+
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Undo");
+      action-name: "text.undo";
+      accelerator: "<ctrl>z";
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("_Find");
+      action: "win.find";
+      accel: "<primary>f";
+    }
+
+    item (_("_Keyboard Shortcuts"), "app.shortcuts")
+  }
+
+  submenu {
+    label: _("_Sort");
+
+    item {
+      label: _("By _Name");
+      action: "win.sort";
+      target: "name";
+    }
+  }
+}
+
+Gtk.ShortcutController {
+  Shortcut {
+    trigger: "<Control>comma";
+    action: "action(app.preferences)";
+  }
+}

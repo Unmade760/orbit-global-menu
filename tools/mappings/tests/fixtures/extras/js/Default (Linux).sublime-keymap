@@ -1,0 +1,4 @@
+[
+  { "keys": ["ctrl+shift+p"], "command": "show_overlay" },
+  { "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" }
+]

@@ -1,0 +1,6 @@
+// VS Code style keybindings
+[
+  { "key": "ctrl+shift+p", "command": "workbench.action.showCommands" },
+  { "key": "ctrl+k ctrl+s", "command": "workbench.action.openGlobalKeybindings" },
+  { "key": "cmd+b", "mac": "cmd+b", "linux": "ctrl+b", "command": "workbench.action.toggleSidebarVisibility" },
+]

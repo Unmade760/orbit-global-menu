@@ -1,0 +1,17 @@
+<sect1 id="file-menu">
+<title>The File Menu</title>
+<variablelist>
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo></shortcut>
+<guimenu>File</guimenu><guimenuitem>New</guimenuitem></menuchoice></term>
+<listitem><para>Creates a new document.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl;&Shift;<keycap>S</keycap></keycombo></shortcut>
+<guimenu>File</guimenu><guimenuitem>Save As…</guimenuitem></menuchoice></term>
+<listitem><para>Saves under a new name.</para></listitem>
+</varlistentry>
+</variablelist>
+</sect1>

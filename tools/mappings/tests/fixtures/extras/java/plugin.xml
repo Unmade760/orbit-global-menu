@@ -1,0 +1,8 @@
+<idea-plugin>
+  <actions>
+    <action id="Demo.Reformat" text="Reformat Code">
+      <keyboard-shortcut keymap="$default" first-keystroke="control alt L"/>
+      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta alt L"/>
+    </action>
+  </actions>
+</idea-plugin>

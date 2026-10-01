@@ -1,0 +1,6 @@
+{
+  "contributes": {
+    "commands": [{ "command": "ext.format", "title": "%ext.format.title%" }],
+    "keybindings": [{ "command": "ext.format", "key": "ctrl+shift+i" }]
+  }
+}

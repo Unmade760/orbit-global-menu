@@ -1,0 +1,10 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-p": "command_palette::Toggle",
+      "ctrl-k ctrl-s": ["zed::OpenKeymap", {}],
+      "cmd-q": "zed::Quit"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "demo",
+  "contributes": {
+    "commands": [
+      { "command": "demo.run", "title": "Run Demo" }
+    ],
+    "keybindings": [
+      { "command": "demo.run", "key": "ctrl+alt+r", "mac": "cmd+alt+r" }
+    ]
+  }
+}

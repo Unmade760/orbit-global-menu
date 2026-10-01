@@ -1,0 +1,19 @@
+<!DOCTYPE gui SYSTEM "kpartgui.dtd">
+<gui name="kate" version="92">
+  <MenuBar>
+    <Menu name="file">
+      <text>&amp;File</text>
+      <Action name="file_new"/>
+      <Action name="file_save_all"/>
+      <Separator/>
+      <Menu name="file_export">
+        <text>E&amp;xport</text>
+        <Action name="file_export_html"/>
+      </Menu>
+      <Action name="file_quit"/>
+    </Menu>
+  </MenuBar>
+  <ActionProperties scheme="Default">
+    <Action shortcut="Ctrl+Shift+E" name="file_export_html"/>
+  </ActionProperties>
+</gui>
