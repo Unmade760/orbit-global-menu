@@ -280,6 +280,11 @@
     "xarchiver.json",
     "xfce-terminal.json",
     "xsane.json",
-    "zapzap.json"
+    "zapzap.json",
+    "geany.json",
+    "gnumeric.json",
+    "lollypop.json",
+    "mupdf.json",
+    "yelp.json"
   ]
 }

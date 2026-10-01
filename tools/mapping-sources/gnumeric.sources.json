@@ -1,0 +1,642 @@
+{
+  "format": 1,
+  "app": "gnumeric",
+  "repos": {
+    "the-gnumeric-spreadsheet": {
+      "url": "https://gitlab.gnome.org/GNOME/gnumeric.git",
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 1988,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "File",
+        "Open"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 1996,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2004,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "File",
+        "Save As"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2012,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "File",
+        "Print"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2037,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2052,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2059,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 4097,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 4091,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2264,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2088,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2271,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Special…"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2586,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete",
+        "Cells…"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2466,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Modify",
+        "Hyperlink…"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2600,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Modify",
+        "Names…"
+      ],
+      "shortcut": "<Ctrl>F3",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2773,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2615,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search & Replace…"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2622,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "All"
+      ],
+      "shortcut": "<Ctrl><Shift>space",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2493,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "Column"
+      ],
+      "shortcut": "<Ctrl>space",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2499,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "Row"
+      ],
+      "shortcut": "<Shift>space",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2505,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "Array"
+      ],
+      "shortcut": "<Ctrl>slash",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2512,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "Depends"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2518,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "Inputs"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2524,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "Next Object"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2531,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select",
+        "Go to Cell…"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2563,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Edit",
+        "Recalculate"
+      ],
+      "shortcut": "F9",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2629,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2277,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Insert",
+        "Cells…"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2671,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Insert",
+        "Name…"
+      ],
+      "shortcut": "F3",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2120,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Insert",
+        "Hyperlink…"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2731,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Insert",
+        "Special",
+        "Current Date"
+      ],
+      "shortcut": "<Ctrl>semicolon",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2751,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Insert",
+        "Special",
+        "Current Time"
+      ],
+      "shortcut": "<Ctrl>colon",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2758,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Insert",
+        "Special",
+        "Current Date and Time"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2765,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Cells",
+        "Format…"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2794,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Bold"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3650,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Italic"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3658,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Strikethrough"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3695,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Superscript"
+      ],
+      "shortcut": "<Ctrl>asciicircum",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3703,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Subscript"
+      ],
+      "shortcut": "<Ctrl>underscore",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3711,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Underline",
+        "Underline"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3666,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Underline",
+        "Single Low Underline"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3681,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Underline",
+        "Double Underline"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3674,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Column",
+        "Hide"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2833,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Column",
+        "Unhide"
+      ],
+      "shortcut": "<Ctrl>parenright",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2840,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Row",
+        "Hide"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2867,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Format",
+        "Row",
+        "Unhide"
+      ],
+      "shortcut": "<Ctrl>parenleft",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2874,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Data",
+        "Fill",
+        "Fill Downwards"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3208,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Data",
+        "Fill",
+        "Fill to Right"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3214,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Data",
+        "Group and Outline",
+        "Group…"
+      ],
+      "shortcut": "<Shift><Alt>Right",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3236,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Data",
+        "Group and Outline",
+        "Ungroup…"
+      ],
+      "shortcut": "<Shift><Alt>Left",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3243,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Data",
+        "Group and Outline",
+        "Display Outlines"
+      ],
+      "shortcut": "<Ctrl>8",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3520,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Data",
+        "Export Data",
+        "Repeat Export"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 3170,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "the-gnumeric-spreadsheet",
+      "file": "src/wbc-gtk-actions.c",
+      "line": 2226,
+      "commit": "81a9153ef1d73eceda55eb961a94dcf3c6eac635"
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "format": 1,
+  "app": "geany",
+  "name": "Geany",
+  "identifiers": [
+    "geany.desktop",
+    "geany",
+    "org.geany.Geany.desktop",
+    "org.geany.Geany"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "New (with Template)"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Open Selected File",
+          "shortcut": "<Ctrl><Shift>O"
+        },
+        {
+          "label": "Recent Files"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…"
+        },
+        {
+          "label": "Save All",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Reload",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Properties",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Page Setup"
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Close Other Documents"
+        },
+        {
+          "label": "Close All",
+          "shortcut": "<Ctrl><Shift>W"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl>Y"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Commands",
+          "items": [
+            {
+              "label": "Cut Current Line(s)",
+              "shortcut": "<Ctrl><Shift>X"
+            },
+            {
+              "label": "Copy Current Line(s)",
+              "shortcut": "<Ctrl><Shift>C"
+            },
+            {
+              "label": "Delete Current Line(s)",
+              "shortcut": "<Ctrl>K"
+            },
+            {
+              "label": "Duplicate Line or Selection",
+              "shortcut": "<Ctrl>D"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Select Current Line(s)",
+              "shortcut": "<Shift><Alt>L"
+            },
+            {
+              "label": "Select Current Paragraph",
+              "shortcut": "<Shift><Alt>P"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Move Line(s) Up",
+              "shortcut": "<Alt>Page_Up"
+            },
+            {
+              "label": "Move Line(s) Down",
+              "shortcut": "<Alt>Page_Down"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Send Selection to Terminal"
+            }
+          ]
+        },
+        {
+          "label": "Format",
+          "items": [
+            {
+              "label": "Join Lines"
+            },
+            {
+              "label": "Reflow Lines/Block",
+              "shortcut": "<Ctrl>J"
+            },
+            {
+              "label": "Toggle Case of Selection",
+              "shortcut": "<Ctrl><Alt>U"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Comment Line(s)"
+            },
+            {
+              "label": "Uncomment Line(s)"
+            },
+            {
+              "label": "Toggle Line Commentation",
+              "shortcut": "<Ctrl>E"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Increase Indent",
+              "shortcut": "<Ctrl>I"
+            },
+            {
+              "label": "Decrease Indent",
+              "shortcut": "<Ctrl>U"
+            },
+            {
+              "label": "Smart Line Indent"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Insert Comments",
+          "items": [
+            {
+              "label": "Insert ChangeLog Entry"
+            },
+            {
+              "label": "Insert Function Description"
+            },
+            {
+              "label": "Insert Multiline Comment"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Insert File Header"
+            },
+            {
+              "label": "Insert GPL Notice"
+            },
+            {
+              "label": "Insert BSD License Notice"
+            }
+          ]
+        },
+        {
+          "label": "Insert Alternative White Space"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl><Alt>P"
+        },
+        {
+          "label": "Plugin Preferences"
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {
+          "label": "Find…",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find in Files…",
+          "shortcut": "<Ctrl><Shift>F"
+        },
+        {
+          "label": "Replace…",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Next Message"
+        },
+        {
+          "label": "Previous Message"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Next Marker",
+          "shortcut": "<Ctrl>period"
+        },
+        {
+          "label": "Go to Previous Marker",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Line…",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "label": "More",
+          "items": [
+            {
+              "label": "Find Next Selection"
+            },
+            {
+              "label": "Find Previous Selection"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Find Usage",
+              "shortcut": "<Ctrl><Shift>E"
+            },
+            {
+              "label": "Find Document Usage",
+              "shortcut": "<Ctrl><Shift>D"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Mark All",
+              "shortcut": "<Ctrl><Shift>M"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Go to Symbol Definition",
+              "shortcut": "<Ctrl>T"
+            },
+            {
+              "label": "Go to Symbol Declaration",
+              "shortcut": "<Ctrl><Shift>T"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Change Font…"
+        },
+        {
+          "label": "Change Color Scheme…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Fullscreen",
+          "shortcut": "F11"
+        },
+        {
+          "label": "Toggle All Additional Widgets"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Normal Size",
+          "shortcut": "<Ctrl>0"
+        }
+      ]
+    },
+    {
+      "label": "Document",
+      "items": [
+        {
+          "label": "Clone"
+        },
+        {
+          "label": "Strip Trailing Spaces"
+        },
+        {
+          "label": "Replace Tabs with Spaces"
+        },
+        {
+          "label": "Replace Spaces with Tabs…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Fold All"
+        },
+        {
+          "label": "Unfold All"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Remove Markers"
+        },
+        {
+          "label": "Remove Error Indicators"
+        }
+      ]
+    },
+    {
+      "label": "Project",
+      "items": [
+        {
+          "label": "New…"
+        },
+        {
+          "label": "New from Folder…"
+        },
+        {
+          "label": "Open…"
+        },
+        {
+          "label": "Recent Projects"
+        },
+        {
+          "label": "Close"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Apply Default Indentation"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Properties"
+        }
+      ]
+    },
+    {
+      "label": "Build",
+      "items": [
+        {
+          "label": "Compile",
+          "shortcut": "F8"
+        },
+        {
+          "label": "Build",
+          "shortcut": "F9"
+        },
+        {
+          "label": "Make",
+          "shortcut": "<Shift>F9"
+        },
+        {
+          "label": "Make Custom Target…",
+          "shortcut": "<Ctrl><Shift>F9"
+        },
+        {
+          "label": "Make Object",
+          "shortcut": "<Shift>F8"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Next Error"
+        },
+        {
+          "label": "Previous Error"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Execute",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Set Build Commands"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Reload Configuration"
+        },
+        {
+          "label": "Configuration Files"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Color Chooser"
+        },
+        {
+          "label": "Word Count"
+        },
+        {
+          "label": "Load Tags File…"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Help",
+          "shortcut": "F1"
+        },
+        {
+          "label": "Keyboard Shortcuts"
+        },
+        {
+          "label": "Debug Messages"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Website"
+        },
+        {
+          "label": "Wiki"
+        },
+        {
+          "label": "Report a Bug…"
+        },
+        {
+          "label": "Donate…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "About"
+        }
+      ]
+    }
+  ]
+}

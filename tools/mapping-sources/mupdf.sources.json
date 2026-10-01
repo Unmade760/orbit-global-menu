@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "app": "mupdf",
+  "repos": {
+    "mupdf": {
+      "url": "https://github.com/ArtifexSoftware/mupdf.git",
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Reload Document"
+      ],
+      "shortcut": "r",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 93,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "q",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 95,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "plus",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 109,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "minus",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 110,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "View",
+        "Shrinkwrap Window"
+      ],
+      "shortcut": "w",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 104,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "f",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 103,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Spot Color Emulation"
+      ],
+      "shortcut": "e",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 101,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "View",
+        "Show Document Information"
+      ],
+      "shortcut": "i",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 88,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "View",
+        "Show Document Outline"
+      ],
+      "shortcut": "o",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 89,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "View",
+        "Show Annotation Editor"
+      ],
+      "shortcut": "a",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 92,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "Go",
+        "Smart Move Backward"
+      ],
+      "shortcut": "b",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 114,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "Go",
+        "Save Page to History"
+      ],
+      "shortcut": "m",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 120,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "Go",
+        "Back in History"
+      ],
+      "shortcut": "t",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 121,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Forward"
+      ],
+      "shortcut": "slash",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 125,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Backward"
+      ],
+      "shortcut": "question",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 126,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Next"
+      ],
+      "shortcut": "n",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 127,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "mupdf",
+      "file": "docs/tools/mupdf-gl.md",
+      "line": 87,
+      "commit": "f030eda1e472268667805f438e38cee8f1da61f8"
+    }
+  ]
+}

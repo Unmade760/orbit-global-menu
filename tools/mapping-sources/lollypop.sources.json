@@ -1,0 +1,298 @@
+{
+  "format": 1,
+  "app": "lollypop",
+  "repos": {
+    "lollypop": {
+      "url": "https://gitlab.gnome.org/World/lollypop.git",
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Update Music"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 155,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 162,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Edit",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 156,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "lollypop",
+      "file": "data/Shortcuts.ui",
+      "line": 25,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide Filter"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 149,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "View",
+        "Show Equalizer"
+      ],
+      "shortcut": "<Shift><Alt>E",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 52,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "View",
+        "Show Lyrics"
+      ],
+      "shortcut": "<Shift><Alt>L",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 153,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "View",
+        "Lock Playback"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "lollypop",
+      "file": "data/Shortcuts.ui",
+      "line": 46,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "View",
+        "Mini Player"
+      ],
+      "shortcut": "<Shift><Alt>M",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 65,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 157,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play"
+      ],
+      "shortcut": "X",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 120,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Pause"
+      ],
+      "shortcut": "C",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 119,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Stop"
+      ],
+      "shortcut": "V",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 121,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next Track"
+      ],
+      "shortcut": "N",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 122,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Previous Track"
+      ],
+      "shortcut": "P",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 123,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Skip Current Album"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 154,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Skip Backward in Track"
+      ],
+      "shortcut": "Left",
+      "repo": "lollypop",
+      "file": "data/Shortcuts.ui",
+      "line": 150,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Skip Forward in Track"
+      ],
+      "shortcut": "Right",
+      "repo": "lollypop",
+      "file": "data/Shortcuts.ui",
+      "line": 157,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Volume Up"
+      ],
+      "shortcut": "<Shift><Alt>Up",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 166,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Volume Down"
+      ],
+      "shortcut": "<Shift><Alt>Down",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 168,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Love Current Track"
+      ],
+      "shortcut": "<Alt>L",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 163,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Party Mode"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "lollypop",
+      "file": "lollypop/toolbar_end.py",
+      "line": 79,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Playback",
+        "Enable/Disable Scrobbling"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "lollypop",
+      "file": "lollypop/toolbar_end.py",
+      "line": 89,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 161,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Help",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "F2",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 160,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    },
+    {
+      "path": [
+        "Help",
+        "About Lollypop"
+      ],
+      "shortcut": "F3",
+      "repo": "lollypop",
+      "file": "lollypop/application_actions.py",
+      "line": 159,
+      "commit": "df6eec6ce1893118508d8793f8fcc0f82638e9dc"
+    }
+  ]
+}

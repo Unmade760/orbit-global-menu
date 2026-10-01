@@ -1,0 +1,122 @@
+{
+  "format": 1,
+  "app": "mupdf",
+  "name": "MuPDF",
+  "identifiers": [
+    "mupdf-gl.desktop",
+    "mupdf-gl",
+    "mupdf.desktop",
+    "mupdf",
+    "mupdf-x11"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Reload Document",
+          "shortcut": "r"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "q"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Zoom In",
+          "shortcut": "plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "minus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Shrinkwrap Window",
+          "shortcut": "w"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Fullscreen",
+          "shortcut": "f"
+        },
+        {
+          "label": "Toggle Spot Color Emulation",
+          "shortcut": "e"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Document Information",
+          "shortcut": "i"
+        },
+        {
+          "label": "Show Document Outline",
+          "shortcut": "o"
+        },
+        {
+          "label": "Show Annotation Editor",
+          "shortcut": "a"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Smart Move Backward",
+          "shortcut": "b"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save Page to History",
+          "shortcut": "m"
+        },
+        {
+          "label": "Back in History",
+          "shortcut": "t"
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {
+          "label": "Find Forward",
+          "shortcut": "slash"
+        },
+        {
+          "label": "Find Backward",
+          "shortcut": "question"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "n"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Help",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

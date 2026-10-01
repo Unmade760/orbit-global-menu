@@ -84,6 +84,7 @@
 - FreeCAD
 - FreeTube
 - galculator
+- Geany
 - Geary
 - gedit
 - Ghostty
@@ -95,6 +96,7 @@
 - GNOME Terminal
 - GNOME Tweaks
 - Gnote
+- Gnumeric
 - Godot
 - Gradia
 - GParted
@@ -143,6 +145,7 @@
 - LibreWolf
 - Logs
 - Logseq
+- Lollypop
 - LosslessCut
 - Loupe (Image Viewer)
 - Lutris
@@ -161,6 +164,7 @@
 - Mission Center
 - Mousepad
 - MPV
+- MuPDF
 - Music (GNOME Music)
 - Nautilus (Files)
 - Nemo
@@ -272,6 +276,7 @@
 - Xfce Terminal
 - Xournal++
 - XSane
+- Yelp
 - ZapZap
 - Zathura
 - Zed

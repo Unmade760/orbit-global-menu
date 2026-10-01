@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "app": "yelp",
+  "repos": {
+    "yelp": {
+      "url": "https://gitlab.gnome.org/GNOME/yelp.git",
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 177,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 183,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 179,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find in Page…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 173,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 175,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "View",
+        "Enlarge Text"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 167,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "View",
+        "Shrink Text"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 170,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "View",
+        "Caret Browsing"
+      ],
+      "shortcut": "F7",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 164,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "Go",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 187,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "Go",
+        "Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 190,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Page"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 193,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Page"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "yelp",
+      "file": "src/yelp-application.c",
+      "line": 196,
+      "commit": "e665e36b19809c363326868ce6dc40b0bcd05fbc"
+    }
+  ]
+}

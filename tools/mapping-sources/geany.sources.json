@@ -1,0 +1,635 @@
+{
+  "format": 1,
+  "app": "geany",
+  "repos": {
+    "geany": {
+      "url": "https://github.com/geany/geany.git",
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3531,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3533,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Open Selected File"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3535,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3539,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Save All"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3543,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Reload"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3549,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3553,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3547,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Close All"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3545,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3555,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3564,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3566,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3637,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3639,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3641,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3656,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Commands",
+        "Cut Current Line(s)"
+      ],
+      "shortcut": "<Ctrl><Shift>X",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3643,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Commands",
+        "Copy Current Line(s)"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3646,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Commands",
+        "Delete Current Line(s)"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3568,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Commands",
+        "Duplicate Line or Selection"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3577,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Commands",
+        "Select Current Line(s)"
+      ],
+      "shortcut": "<Shift><Alt>L",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3664,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Commands",
+        "Select Current Paragraph"
+      ],
+      "shortcut": "<Shift><Alt>P",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3661,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Commands",
+        "Move Line(s) Up"
+      ],
+      "shortcut": "<Alt>Page_Up",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3624,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Commands",
+        "Move Line(s) Down"
+      ],
+      "shortcut": "<Alt>Page_Down",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3627,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Format",
+        "Toggle Case of Selection"
+      ],
+      "shortcut": "<Ctrl><Alt>U",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3696,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Format",
+        "Toggle Line Commentation"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3706,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Format",
+        "Increase Indent"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3709,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Format",
+        "Decrease Indent"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3713,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl><Alt>P",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3753,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3764,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3766,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3768,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "Find in Files…"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3776,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "Replace…"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3774,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "Go to Next Marker"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3833,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "Go to Previous Marker"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3835,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "Go to Line…"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3822,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "More",
+        "Find Usage"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3784,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "More",
+        "Find Document Usage"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3789,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "More",
+        "Mark All"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3794,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "More",
+        "Go to Symbol Definition"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3837,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Search",
+        "More",
+        "Go to Symbol Declaration"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3840,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3869,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3886,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3888,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "View",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 3890,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Build",
+        "Compile"
+      ],
+      "shortcut": "F8",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 4009,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Build",
+        "Build"
+      ],
+      "shortcut": "F9",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 4011,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Build",
+        "Make"
+      ],
+      "shortcut": "<Shift>F9",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 4014,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Build",
+        "Make Custom Target…"
+      ],
+      "shortcut": "<Ctrl><Shift>F9",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 4016,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Build",
+        "Make Object"
+      ],
+      "shortcut": "<Shift>F8",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 4019,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Build",
+        "Execute"
+      ],
+      "shortcut": "F5",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 4027,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "geany",
+      "file": "doc/geany.txt",
+      "line": 4047,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "File",
+        "Properties"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "geany",
+      "file": "NEWS",
+      "line": 1430,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Format",
+        "Reflow Lines/Block"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "geany",
+      "file": "NEWS",
+      "line": 1913,
+      "commit": "956e5be9060df37abf5bd9039c8758709f2a6f8d"
+    }
+  ]
+}

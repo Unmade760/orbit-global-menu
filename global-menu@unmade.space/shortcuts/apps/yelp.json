@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "app": "yelp",
+  "name": "Help",
+  "identifiers": [
+    "org.gnome.Yelp.desktop",
+    "org.gnome.Yelp",
+    "yelp",
+    "Yelp"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Find in Page…",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Search",
+          "shortcut": "<Ctrl>S"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Enlarge Text",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Shrink Text",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Caret Browsing",
+          "shortcut": "F7"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Back",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Forward",
+          "shortcut": "<Alt>Right"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Previous Page",
+          "shortcut": "<Ctrl>Page_Up"
+        },
+        {
+          "label": "Next Page",
+          "shortcut": "<Ctrl>Page_Down"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "All Help"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "About Help"
+        }
+      ]
+    }
+  ]
+}

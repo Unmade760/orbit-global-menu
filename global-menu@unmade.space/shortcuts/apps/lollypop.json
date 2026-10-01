@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "app": "lollypop",
+  "name": "Lollypop",
+  "identifiers": [
+    "org.gnome.Lollypop.desktop",
+    "org.gnome.Lollypop",
+    "lollypop"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Update Music",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Search",
+          "shortcut": "<Ctrl>F"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Show/Hide Filter",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Show Equalizer",
+          "shortcut": "<Shift><Alt>E"
+        },
+        {
+          "label": "Show Lyrics",
+          "shortcut": "<Shift><Alt>L"
+        },
+        {
+          "label": "Lock Playback",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Mini Player",
+          "shortcut": "<Shift><Alt>M"
+        },
+        {
+          "label": "Fullscreen",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {
+          "label": "Play",
+          "shortcut": "X"
+        },
+        {
+          "label": "Pause",
+          "shortcut": "C"
+        },
+        {
+          "label": "Stop",
+          "shortcut": "V"
+        },
+        {
+          "label": "Next Track",
+          "shortcut": "N"
+        },
+        {
+          "label": "Previous Track",
+          "shortcut": "P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Skip Current Album",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Skip Backward in Track",
+          "shortcut": "Left"
+        },
+        {
+          "label": "Skip Forward in Track",
+          "shortcut": "Right"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Volume Up",
+          "shortcut": "<Shift><Alt>Up"
+        },
+        {
+          "label": "Volume Down",
+          "shortcut": "<Shift><Alt>Down"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Love Current Track",
+          "shortcut": "<Alt>L"
+        },
+        {
+          "label": "Party Mode",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Enable/Disable Scrobbling",
+          "shortcut": "<Ctrl><Shift>S"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Help",
+          "shortcut": "F1"
+        },
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "F2"
+        },
+        {
+          "label": "About Lollypop",
+          "shortcut": "F3"
+        }
+      ]
+    }
+  ]
+}

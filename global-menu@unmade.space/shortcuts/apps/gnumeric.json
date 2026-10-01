@@ -1,0 +1,920 @@
+{
+  "format": 1,
+  "app": "gnumeric",
+  "name": "Gnumeric",
+  "identifiers": [
+    "org.gnumeric.gnumeric.desktop",
+    "org.gnumeric.gnumeric",
+    "gnumeric",
+    "org.gnumeric.Gnumeric.desktop",
+    "org.gnumeric.Gnumeric",
+    "Gnumeric"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Page Setup…"
+        },
+        {
+          "label": "Print Area & Breaks",
+          "items": [
+            {
+              "label": "Set Print Area"
+            },
+            {
+              "label": "Clear Print Area"
+            },
+            {
+              "label": "Show Print Area"
+            },
+            {
+              "label": "Set Column Page Break"
+            },
+            {
+              "label": "Set Row Page Break"
+            },
+            {
+              "label": "Clear All Page Breaks"
+            }
+          ]
+        },
+        {
+          "label": "Print Preview"
+        },
+        {
+          "label": "Print",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Send To…"
+        },
+        {
+          "label": "Document Properties…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Full History…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl>Y"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste Special…",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Clear",
+          "items": [
+            {
+              "label": "All"
+            },
+            {
+              "label": "Formats & Hyperlinks"
+            },
+            {
+              "label": "Comments"
+            },
+            {
+              "label": "Contents"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "All Filtered Rows"
+            },
+            {
+              "label": "Formats & Hyperlinks in Filtered Rows"
+            },
+            {
+              "label": "Comments in Filtered Rows"
+            },
+            {
+              "label": "Contents of Filtered Rows"
+            }
+          ]
+        },
+        {
+          "label": "Delete",
+          "items": [
+            {
+              "label": "Columns"
+            },
+            {
+              "label": "Rows"
+            },
+            {
+              "label": "Cells…",
+              "shortcut": "<Ctrl>minus"
+            },
+            {
+              "label": "Comments"
+            },
+            {
+              "label": "Hyperlinks"
+            }
+          ]
+        },
+        {
+          "label": "Modify",
+          "items": [
+            {
+              "label": "Comment…"
+            },
+            {
+              "label": "Hyperlink…",
+              "shortcut": "<Ctrl>K"
+            },
+            {
+              "label": "Names…",
+              "shortcut": "<Ctrl>F3"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Search…",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Search & Replace…",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Sheet",
+          "items": [
+            {
+              "label": "Manage Sheets…"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Insert"
+            },
+            {
+              "label": "Append"
+            },
+            {
+              "label": "Duplicate"
+            },
+            {
+              "label": "Remove"
+            },
+            {
+              "label": "Rename…"
+            },
+            {
+              "label": "Resize…"
+            }
+          ]
+        },
+        {
+          "label": "Select",
+          "items": [
+            {
+              "label": "All",
+              "shortcut": "<Ctrl><Shift>space"
+            },
+            {
+              "label": "Column",
+              "shortcut": "<Ctrl>space"
+            },
+            {
+              "label": "Row",
+              "shortcut": "<Shift>space"
+            },
+            {
+              "label": "Array",
+              "shortcut": "<Ctrl>slash"
+            },
+            {
+              "label": "Depends",
+              "shortcut": "<Ctrl>bracketright"
+            },
+            {
+              "label": "Inputs",
+              "shortcut": "<Ctrl>bracketleft"
+            },
+            {
+              "label": "Next Object",
+              "shortcut": "<Ctrl>Tab"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Go to Top"
+            },
+            {
+              "label": "Go to Bottom"
+            },
+            {
+              "label": "Go to First"
+            },
+            {
+              "label": "Go to Last"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Go to Cell…",
+              "shortcut": "<Ctrl>G"
+            }
+          ]
+        },
+        {
+          "label": "Recalculate",
+          "shortcut": "F9"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences…"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "New View…"
+        },
+        {
+          "label": "Freeze Panes"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "label": "View Properties…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom…"
+        }
+      ]
+    },
+    {
+      "label": "Insert",
+      "items": [
+        {
+          "label": "Cells…",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Columns"
+        },
+        {
+          "label": "Rows"
+        },
+        {
+          "label": "Sheet"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Chart…"
+        },
+        {
+          "label": "Object",
+          "items": [
+            {
+              "label": "New…"
+            },
+            {
+              "label": "From File…"
+            }
+          ]
+        },
+        {
+          "label": "Image…"
+        },
+        {
+          "label": "Function…"
+        },
+        {
+          "label": "Function Wrapper",
+          "items": [
+            {
+              "label": "Sort (Descending)"
+            },
+            {
+              "label": "Sort (Ascending)"
+            }
+          ]
+        },
+        {
+          "label": "Name…",
+          "shortcut": "F3"
+        },
+        {
+          "label": "Comment…"
+        },
+        {
+          "label": "Hyperlink…",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "label": "Special",
+          "items": [
+            {
+              "label": "Current Date",
+              "shortcut": "<Ctrl>semicolon"
+            },
+            {
+              "label": "Current Time",
+              "shortcut": "<Ctrl>colon"
+            },
+            {
+              "label": "Current Date and Time",
+              "shortcut": "<Ctrl>period"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Format",
+      "items": [
+        {
+          "label": "Cells",
+          "items": [
+            {
+              "label": "Format…",
+              "shortcut": "<Ctrl>1"
+            },
+            {
+              "label": "Conditional Formatting…"
+            },
+            {
+              "label": "Merge"
+            },
+            {
+              "label": "Unmerge"
+            },
+            {
+              "label": "Auto Fit Height"
+            },
+            {
+              "label": "Auto Fit Width"
+            }
+          ]
+        },
+        {
+          "label": "Text",
+          "items": [
+            {
+              "label": "Bold",
+              "shortcut": "<Ctrl>B"
+            },
+            {
+              "label": "Italic",
+              "shortcut": "<Ctrl>I"
+            },
+            {
+              "label": "Strikethrough",
+              "shortcut": "<Ctrl>5"
+            },
+            {
+              "label": "Superscript",
+              "shortcut": "<Ctrl>asciicircum"
+            },
+            {
+              "label": "Subscript",
+              "shortcut": "<Ctrl>underscore"
+            },
+            {
+              "label": "Underline",
+              "items": [
+                {
+                  "label": "Underline",
+                  "shortcut": "<Ctrl>U"
+                },
+                {
+                  "label": "Single Low Underline",
+                  "shortcut": "<Ctrl><Shift>L"
+                },
+                {
+                  "label": "Double Underline",
+                  "shortcut": "<Ctrl><Shift>D"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Column",
+          "items": [
+            {
+              "label": "Width…"
+            },
+            {
+              "label": "Auto Fit Width"
+            },
+            {
+              "label": "Hide",
+              "shortcut": "<Ctrl>0"
+            },
+            {
+              "label": "Unhide",
+              "shortcut": "<Ctrl>parenright"
+            },
+            {
+              "label": "Standard Width"
+            }
+          ]
+        },
+        {
+          "label": "Row",
+          "items": [
+            {
+              "label": "Height…"
+            },
+            {
+              "label": "Auto Fit Height"
+            },
+            {
+              "label": "Hide",
+              "shortcut": "<Ctrl>9"
+            },
+            {
+              "label": "Unhide",
+              "shortcut": "<Ctrl>parenleft"
+            },
+            {
+              "label": "Standard Height"
+            }
+          ]
+        },
+        {
+          "label": "Sheet",
+          "items": [
+            {
+              "label": "Manage Sheets…"
+            },
+            {
+              "label": "Rename…"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Direction"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Zoom…"
+            }
+          ]
+        },
+        {
+          "label": "Autoformat…"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Auto Correct…"
+        },
+        {
+          "label": "Auto Save…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Goal Seek…"
+        },
+        {
+          "label": "Solver…"
+        },
+        {
+          "label": "Scenarios",
+          "items": [
+            {
+              "label": "View…"
+            },
+            {
+              "label": "Add…"
+            }
+          ]
+        },
+        {
+          "label": "Simulation…"
+        },
+        {
+          "label": "Compare Sheets…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Plug-ins…"
+        }
+      ]
+    },
+    {
+      "label": "Statistics",
+      "items": [
+        {
+          "label": "Descriptive Statistics",
+          "items": [
+            {
+              "label": "Correlation…"
+            },
+            {
+              "label": "Covariance…"
+            },
+            {
+              "label": "Descriptive Statistics…"
+            },
+            {
+              "label": "Frequency Tables",
+              "items": [
+                {
+                  "label": "Frequency Tables…"
+                },
+                {
+                  "label": "Histogram…"
+                }
+              ]
+            },
+            {
+              "label": "Ranks And Percentiles…"
+            }
+          ]
+        },
+        {
+          "label": "Sampling…"
+        },
+        {
+          "label": "Dependent Observations",
+          "items": [
+            {
+              "label": "Forecast",
+              "items": [
+                {
+                  "label": "Exponential Smoothing…"
+                },
+                {
+                  "label": "Moving Average…"
+                }
+              ]
+            },
+            {
+              "label": "Fourier Analysis…"
+            },
+            {
+              "label": "Kaplan-Meier Estimates…"
+            },
+            {
+              "label": "Principal Components Analysis…"
+            },
+            {
+              "label": "Regression…"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "One Sample Tests",
+          "items": [
+            {
+              "label": "Normality Tests…"
+            },
+            {
+              "label": "Claims About a Mean…"
+            },
+            {
+              "label": "Claims About a Median",
+              "items": [
+                {
+                  "label": "Sign Test…"
+                },
+                {
+                  "label": "Wilcoxon Signed Rank Test…"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Two Sample Tests",
+          "items": [
+            {
+              "label": "Claims About Two Means",
+              "items": [
+                {
+                  "label": "Paired Samples…"
+                },
+                {
+                  "label": "Unpaired Samples, Equal Variances…"
+                },
+                {
+                  "label": "Unpaired Samples, Unequal Variances…"
+                },
+                {
+                  "label": "Unpaired Samples, Known Variances…"
+                }
+              ]
+            },
+            {
+              "label": "Claims About Two Medians",
+              "items": [
+                {
+                  "label": "Sign Test…"
+                },
+                {
+                  "label": "Wilcoxon Signed Rank Test…"
+                },
+                {
+                  "label": "Wilcoxon-Mann-Whitney Test…"
+                }
+              ]
+            },
+            {
+              "label": "Claims About Two Variances"
+            }
+          ]
+        },
+        {
+          "label": "Multiple Sample Tests",
+          "items": [
+            {
+              "label": "ANOVA",
+              "items": [
+                {
+                  "label": "One Factor…"
+                },
+                {
+                  "label": "Two Factor…"
+                }
+              ]
+            },
+            {
+              "label": "Contingency Table",
+              "items": [
+                {
+                  "label": "Test of Homogeneity…"
+                },
+                {
+                  "label": "Test of Independence…"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Data",
+      "items": [
+        {
+          "label": "Sort…"
+        },
+        {
+          "label": "Shuffle…"
+        },
+        {
+          "label": "Fill",
+          "items": [
+            {
+              "label": "Autofill"
+            },
+            {
+              "label": "Merge…"
+            },
+            {
+              "label": "Tabulate Dependency…"
+            },
+            {
+              "label": "Series…"
+            },
+            {
+              "label": "Random Generators",
+              "items": [
+                {
+                  "label": "Uncorrelated…"
+                },
+                {
+                  "label": "Correlated…"
+                }
+              ]
+            },
+            {
+              "label": "Fill Downwards",
+              "shortcut": "<Ctrl>D"
+            },
+            {
+              "label": "Fill to Right",
+              "shortcut": "<Ctrl>R"
+            }
+          ]
+        },
+        {
+          "label": "Filter",
+          "items": [
+            {
+              "label": "Add Auto Filter"
+            },
+            {
+              "label": "Clear Advanced Filter"
+            },
+            {
+              "label": "Advanced Filter…"
+            }
+          ]
+        },
+        {
+          "label": "Validate…"
+        },
+        {
+          "label": "Consolidate…"
+        },
+        {
+          "label": "Table…"
+        },
+        {
+          "label": "Group and Outline",
+          "items": [
+            {
+              "label": "Hide Detail"
+            },
+            {
+              "label": "Show Detail"
+            },
+            {
+              "label": "Group…",
+              "shortcut": "<Shift><Alt>Right"
+            },
+            {
+              "label": "Ungroup…",
+              "shortcut": "<Shift><Alt>Left"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Display Outlines",
+              "shortcut": "<Ctrl>8"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Text to Columns…"
+        },
+        {
+          "label": "Import Data",
+          "items": [
+            {
+              "label": "Import Text File…"
+            },
+            {
+              "label": "Import Other File…"
+            }
+          ]
+        },
+        {
+          "label": "Export Data",
+          "items": [
+            {
+              "label": "Export as Text File…"
+            },
+            {
+              "label": "Export as CSV File…"
+            },
+            {
+              "label": "Export into Other Format…"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Repeat Export",
+              "shortcut": "<Ctrl>E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Contents",
+          "shortcut": "F1"
+        },
+        {
+          "label": "Functions"
+        },
+        {
+          "label": "Gnumeric on the Web"
+        },
+        {
+          "label": "Live Assistance"
+        },
+        {
+          "label": "Report a Problem"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "About"
+        }
+      ]
+    }
+  ]
+}
