@@ -31,7 +31,7 @@ class DbusGtkMenu(object):
 		# nothing answers for that prefix
 		self.action_groups = {}
 		self._node_seq    = 0
-		self._update_timer = 0
+		self._rebuild_id = 0
 		self.session      = session
 		self.bus_name     = window.get_utf8_prop('_GTK_UNIQUE_BUS_NAME')
 		# with app. prefix
@@ -140,17 +140,17 @@ class DbusGtkMenu(object):
 		for group, menu, position, removed, added in changes:
 			# The signal reaches every listener; a group not started here
 			# belongs to some other client
-			if group not in self.groups[path]:
+			if group not in self.groups.get(path, ()):
 				continue
 			items = menus.setdefault((int(group), int(menu)), [])
 			items[position:position + removed] = list(added)
 			changed = True
 		# One rebuild for a burst: GTK sends one signal per changed menu
-		if changed and not self._update_timer:
-			self._update_timer = GLib.idle_add(self._rebuild)
+		if changed and not self._rebuild_id:
+			self._rebuild_id = GLib.idle_add(self._rebuild)
 
 	def _rebuild(self):
-		self._update_timer = 0
+		self._rebuild_id = 0
 		try:
 			for path in self.results:
 				self._sync_groups(path)
@@ -300,9 +300,9 @@ class DbusGtkMenu(object):
 		for s in self.signal_matcher:
 			s.remove()
 		self.signal_matcher = []
-		if self._update_timer:
-			GLib.source_remove(self._update_timer)
-			self._update_timer = 0
+		if self._rebuild_id:
+			GLib.source_remove(self._rebuild_id)
+			self._rebuild_id = 0
 		for path, groups in self.groups.items():
 			if not groups:
 				continue
