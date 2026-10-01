@@ -16,6 +16,7 @@ class DbusGtkMenu(object):
 	def __init__(self, session, window):
 		self.results      = {}
 		self.actions      = {}
+		self.targets      = {}
 		self.accels       = {}
 		self.tree         = Tree()
 		# Gtk action names are not unique node ids: submenu entries carry no
@@ -38,19 +39,23 @@ class DbusGtkMenu(object):
 
 	def activate(self, selection):
 		action = self.actions.get(selection, '')
+		target = self.targets.get(selection)
 
 		if 'app.' in action:
-			self.send_action(action, 'app.', self.app_path)
+			self.send_action(action, 'app.', self.app_path, target)
 		elif 'win.' in action:
-			self.send_action(action, 'win.', self.win_path)
+			self.send_action(action, 'win.', self.win_path, target)
 		elif 'unity.' in action:
-			self.send_action(action, 'unity.', self.menubar_path)
+			self.send_action(action, 'unity.', self.menubar_path, target)
 
-	def send_action(self, name, prefix, path):
+	def send_action(self, name, prefix, path, target=None):
 		obj       = self.session.get_object(self.bus_name, path)
 		interface = dbus.Interface(obj, dbus_interface='org.gtk.Actions')
 
-		interface.Activate(name.replace(prefix, ''), [], dict())
+		# The target keeps the D-Bus type it came with, which must match the
+		# action's parameter type
+		parameter = dbus.Array([] if target is None else [target], signature='v')
+		interface.Activate(name.replace(prefix, ''), parameter, dbus.Dictionary({}, signature='sv'))
 
 	def get_results(self):
 		paths = [self.appmenu_path, self.menubar_path]
@@ -103,6 +108,8 @@ class DbusGtkMenu(object):
 					self.collect_entries(menu[':submenu'], menu_path, node_id)
 				elif 'action' in menu:
 					self.actions[menu_item.text] = menu_item.action
+					if menu_item.target is not None:
+						self.targets[menu_item.text] = menu_item.target
 
 			elif ':section' in menu:
 				self.collect_entries(menu[':section'], labels, treelib_parent)

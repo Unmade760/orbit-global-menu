@@ -173,6 +173,21 @@ def test_activating_a_radio_item_passes_its_target(app):
 	assert sent == [('size', ['large'])]
 
 
+def test_activating_any_targeted_item_passes_its_target():
+	# A stateless action with a parameter, as Mousepad's targeted items are
+	session, model = load({
+		(0, 0): [gtk_item(label='_Go', submenu=(1, 0))],
+		(1, 0): [
+			gtk_item(label='Tab _2', action='win.go-tab', target='2'),
+			gtk_item(label='_Home', action='win.home'),
+		],
+	}, {'win.go-tab': gtk_describe(True), 'win.home': gtk_describe(True)})
+	model.activate('_Go  »  Tab _2')
+	model.activate('_Go  »  _Home')
+	sent = [(c[4][0], [str(v) for v in c[4][1]]) for c in session.calls_to('Activate')]
+	assert sent == [('go-tab', ['2']), ('home', [])]
+
+
 @pytest.mark.skip(reason='feature F2: the JSON tree does not carry the item accel yet, '
 	'so native menus cannot show shortcut labels. Expected key name is "accel"')
 def test_json_carries_the_accel(app):
