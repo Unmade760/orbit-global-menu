@@ -78,9 +78,14 @@ class MenuBar {
 		this._native = new NativeMenu(this._proxy, uuid);
 		this._shortcuts = new ShortcutMenu(uuid);
 
-		this._notifyFocusWinId = global.display.connect('notify::focus-window',
-			() => this.refresh());
-		this._overviewHandler = Main.overview.connect('showing', () => this._closeAllMenus());
+		this._shellHandlers = [
+			[global.display, global.display.connect('notify::focus-window', () => this.refresh())],
+			[Main.overview, Main.overview.connect('showing', () => this._closeAllMenus())],
+			// At shell shutdown the extension stays enabled while the shell
+			// destroys the panel, our buttons with it, and windows are still
+			// closing. This handler runs before the panel's children go.
+			[Main.panel, Main.panel.connect('destroy', () => this._disconnectInputs())],
+		];
 
 		// Enabling starts with a window already focused, and so does every
 		// unlock, since the extension is disabled on the lock screen
@@ -149,18 +154,25 @@ class MenuBar {
 	}
 
 	destroy() {
-		global.display.disconnect(this._notifyFocusWinId);
-		Main.overview.disconnect(this._overviewHandler);
-		this._native.destroy();
-		this._native = null;
+		this._disconnectInputs();
 		this._shortcuts.destroy();
 		this._shortcuts = null;
-		this._proxy.destroy();
+		this._native.destroy();
+		this._native = null;
 		this._proxy = null;
 		this._shortcutMapping = null;
 		this._store = null;
 		this._settings = null;
 		this._winTracker = null;
+	}
+
+	// Everything outside that calls into the menus. Runs from destroy() and
+	// from the panel's destroy, so a second run must do nothing.
+	_disconnectInputs() {
+		for (const [source, id] of this._shellHandlers)
+			source.disconnect(id);
+		this._shellHandlers = [];
+		this._proxy.destroy();
 	}
 
 	_closeAllMenus() {
@@ -285,6 +297,7 @@ class DaemonProxy {
 		this._call('RequestMenuTree');
 	}
 
+	// MenuBar may call this twice, see _disconnectInputs()
 	destroy() {
 		this._cancellable.cancel();
 		for (const id of this._signalIds)
@@ -374,10 +387,11 @@ export default class GlobalMenuExtension extends Extension {
 		this._store.load();
 		this._logStoreWarnings();
 
-		this._appearance = createAppearanceManager(this._settings);
 		this._fallback = this._settings.get_boolean('enable-fallback-menu')
 			? new FallbackMenu(this.uuid) : null;
 		this._menubar = new MenuBar(this._fallback, this.uuid, this._store, this._settings);
+		// Styles the buttons that exist and every one made later
+		this._appearance = createAppearanceManager(this._settings);
 
 		this._watch('enable-fallback-menu', () => this._toggleFallback());
 		// The preferences bump the revision after writing a mapping file
@@ -397,20 +411,21 @@ export default class GlobalMenuExtension extends Extension {
 			this._settings.disconnect(id);
 		this._settingsHandlerIds = [];
 		cancelPendingActions();
-		// Before the menus, while the buttons are still alive. Styling is
-		// undone per button, and a blur effect has to go back to Blur My
-		// Shell rather than vanish with the actor it was attached to.
+		// Reverse order of enable(). The appearance manager goes while the
+		// buttons are still alive: styling is undone per button, and a blur
+		// effect has to go back to Blur My Shell rather than vanish with the
+		// actor it was attached to.
 		this._appearance?.destroy();
 		this._appearance = null;
 		this._menubar?.destroy();
 		this._menubar = null;
 		this._fallback?.destroy();
 		this._fallback = null;
+		this._store = null;
+		KeySynth.setDebug(false);
 		this._daemon?.destroy();
 		this._daemon = null;
-		this._store = null;
 		this._settings = null;
-		KeySynth.setDebug(false);
 	}
 
 	_watch(key, callback) {

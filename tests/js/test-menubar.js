@@ -519,4 +519,39 @@ test('enable reports the focused window to a daemon that already runs', async ()
     });
 });
 
+// H-16: at shell shutdown the panel goes, our buttons with it, while the
+// extension stays enabled and windows are still closing
+
+test('after the panel is destroyed, focus changes and trees reach no menu', async () => {
+    reset();
+    const {app, main} = focusedMainWindow();
+    await session(async (ext, daemon) => {
+        await connected(daemon, main);
+        t.panel.emit('destroy');
+        t.events = [];
+        const sent = daemon.count('WindowSwitched');
+        focus(makeWindow(app, {title: 'Second', menubar: true}));
+        focus(null);
+        daemon.sendTree(TREE);
+        await wait(150);
+        assert.deepEqual(t.events, [], 'menus untouched');
+        assert.equal(daemon.count('WindowSwitched'), sent, 'nothing sent');
+        assert.deepEqual(logged, [], 'log');
+    });
+});
+
+test('disable disconnects every input before it destroys a menu, in reverse order', async () => {
+    reset();
+    focusedMainWindow();
+    await session(() => {});
+    const lifecycle = t.events.filter(e => /\.(new|start|destroy)$/.test(e));
+    const built = lifecycle.filter(e => !e.endsWith('.destroy')).map(e => e.replace(/\.(new|start)$/, ''));
+    const torn = lifecycle.filter(e => e.endsWith('.destroy')).map(e => e.replace(/\.destroy$/, ''));
+    assert.deepEqual(torn, built.reverse(), 'destroy order');
+    const menus = ['fallback.destroy', 'native.destroy', 'shortcuts.destroy'];
+    assert.deepEqual(t.inputsAtDestroy.filter(([name, live]) => menus.includes(name) && live > 0), [],
+        'inputs still connected');
+    assert.equal(liveInputs() + t.settings.handlerCount, 0, 'every handler disconnected');
+});
+
 await run();
