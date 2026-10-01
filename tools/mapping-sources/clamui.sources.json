@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "app": "clamui",
+  "repos": {
+    "clamui": {
+      "url": "https://github.com/linx-systems/clamui.git",
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "ClamUI",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 26,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "ClamUI",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 24,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "Scan",
+        "Start Scan"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 54,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "Scan",
+        "Update Database"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 55,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "View",
+        "Scan"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 27,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "View",
+        "Database"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 28,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "View",
+        "Logs"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 29,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "View",
+        "Components"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 33,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "View",
+        "Quarantine"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 39,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "View",
+        "Statistics"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 45,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    },
+    {
+      "path": [
+        "View",
+        "Audit"
+      ],
+      "shortcut": "<Ctrl>7",
+      "repo": "clamui",
+      "file": "src/view_coordinator.py",
+      "line": 51,
+      "commit": "4c619d08679b64c3b40802903dc4f02e394f4821"
+    }
+  ]
+}

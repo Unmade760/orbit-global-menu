@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "character-map",
+  "repos": {
+    "character-map": {
+      "url": "https://gitlab.gnome.org/GNOME/gucharmap.git",
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 99,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "character-map",
+      "file": "gucharmap/main.c",
+      "line": 273,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 131,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 136,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "View",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 141,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "Search",
+        "Find"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 151,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 156,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 161,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Character"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 171,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Character"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 176,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Script"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "character-map",
+      "file": "gucharmap/main.c",
+      "line": 265,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Script"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "character-map",
+      "file": "gucharmap/main.c",
+      "line": 268,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "character-map",
+      "file": "gucharmap/gucharmap-menus.ui",
+      "line": 187,
+      "commit": "094eedd37dfe958ca7589738a6098059ac0a43dc"
+    }
+  ]
+}

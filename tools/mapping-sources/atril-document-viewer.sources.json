@@ -1,0 +1,419 @@
+{
+  "format": 1,
+  "app": "atril-document-viewer",
+  "repos": {
+    "atril-document-viewer": {
+      "url": "https://github.com/mate-desktop/atril.git",
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6602,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "File",
+        "Open a Copy"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6605,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6608,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6614,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "File",
+        "Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6617,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6619,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6623,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6625,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6780,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6627,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6629,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rotate Left"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6633,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rotate Right"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6635,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Edit",
+        "Save Current Settings as Default"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6637,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Toolbar"
+      ],
+      "shortcut": "T",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6746,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Side Pane"
+      ],
+      "shortcut": "F9",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6749,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6761,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Presentation"
+      ],
+      "shortcut": "F5",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6764,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Continuous"
+      ],
+      "shortcut": "C",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6752,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Dual"
+      ],
+      "shortcut": "D",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6755,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Odd Pages Left"
+      ],
+      "shortcut": "O",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6758,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Inverted Colors"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6773,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Caret Navigation"
+      ],
+      "shortcut": "F7",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6776,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6641,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6644,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6647,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Fit Page"
+      ],
+      "shortcut": "F",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6767,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Fit Width"
+      ],
+      "shortcut": "W",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6770,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Expand Window to Fit"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6653,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "View",
+        "Reload"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6650,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Page"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6661,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Page"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6664,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Go",
+        "First Page"
+      ],
+      "shortcut": "<Ctrl>Home",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6667,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Go",
+        "Last Page"
+      ],
+      "shortcut": "<Ctrl>End",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6670,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Add Bookmark"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6675,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6680,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Page Number"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "atril-document-viewer",
+      "file": "shell/ev-window.c",
+      "line": 6717,
+      "commit": "a049ebfdfdeeac2ebb611c2b5db697987f02c6dd"
+    }
+  ]
+}

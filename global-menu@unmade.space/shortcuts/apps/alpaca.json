@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "app": "alpaca",
+  "name": "Alpaca",
+  "identifiers": [
+    "com.jeffser.Alpaca.desktop",
+    "com.jeffser.Alpaca",
+    "alpaca",
+    "Alpaca"
+  ],
+  "menus": [
+    {
+      "label": "Chat",
+      "items": [
+        {
+          "label": "New Chat",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "New Folder",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Import Chat"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Edit Chat",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Duplicate Chat"
+        },
+        {
+          "label": "Export Chat"
+        },
+        {
+          "label": "Delete Chat",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Searchbars",
+          "shortcut": "<Ctrl>F"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Toggle Sidebar",
+          "shortcut": "F9"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        }
+      ]
+    },
+    {
+      "label": "Models",
+      "items": [
+        {
+          "label": "Model Manager",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Instance Manager",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Quick Ask",
+          "shortcut": "<Ctrl><Alt>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reload Added Models"
+        },
+        {
+          "label": "Add Model by Name"
+        },
+        {
+          "label": "Create Model from Existing"
+        },
+        {
+          "label": "Create Model from GGUF File"
+        }
+      ]
+    },
+    {
+      "label": "Message",
+      "items": [
+        {
+          "label": "Insert New Line",
+          "shortcut": "<Shift>Return"
+        },
+        {
+          "label": "Send Message as User",
+          "shortcut": "Return"
+        }
+      ]
+    },
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    }
+  ]
+}

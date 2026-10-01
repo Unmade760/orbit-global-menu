@@ -1,0 +1,127 @@
+{
+  "format": 1,
+  "app": "engrampa-archive-manager",
+  "name": "Engrampa Archive Manager",
+  "identifiers": [
+    "engrampa.desktop",
+    "engrampa",
+    "Engrampa Archive Manager",
+    "Engrampa"
+  ],
+  "menus": [
+    {
+      "label": "Archive",
+      "items": [
+        {
+          "label": "New…",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Extract…",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Properties",
+          "shortcut": "<Alt>Return"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Rename…",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Delete",
+          "shortcut": "Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Deselect All",
+          "shortcut": "<Ctrl><Shift>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find…",
+          "shortcut": "<Ctrl>F"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Folders",
+          "shortcut": "F9"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "View All Files",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "View as a Folder",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Stop",
+          "shortcut": "Escape"
+        },
+        {
+          "label": "Refresh",
+          "shortcut": "<Ctrl>R"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Contents",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

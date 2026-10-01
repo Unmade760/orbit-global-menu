@@ -1,0 +1,331 @@
+{
+  "format": 1,
+  "app": "cine",
+  "repos": {
+    "cine": {
+      "url": "https://github.com/diegopvlk/Cine.git",
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "cine",
+      "file": "src/main.py",
+      "line": 75,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Open Files"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 307,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Open Folder"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 301,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Open URL"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 302,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Add Files to Playlist"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 308,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Add Folder to Playlist"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 305,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Add URL to Playlist"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 303,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Playlist"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 306,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Search Playlist"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "cine",
+      "file": "src/playlist.py",
+      "line": 127,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Open Subtitles Menu"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 309,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Open Audio Menu"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 310,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Open Chapters Menu"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 311,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Watch History"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 304,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Show Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 319,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "cine",
+      "file": "src/main.py",
+      "line": 79,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Save Session"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 312,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Save Session and Close"
+      ],
+      "shortcut": "<Shift>Q",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 313,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "cine",
+      "file": "src/window.py",
+      "line": 316,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "cine",
+      "file": "src/main.py",
+      "line": 76,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Next Secondary Subtitle Track"
+      ],
+      "shortcut": "<Alt>z",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 43,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Previous Secondary Subtitle Track"
+      ],
+      "shortcut": "<Ctrl>z",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 44,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Audio & Volume",
+        "Decrease Audio Delay"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 74,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Audio & Volume",
+        "Increase Audio Delay"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 75,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Back One Frame"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 77,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Advance One Frame"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 78,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Seek to the Previous Chapter"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 79,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Seek to the Next Chapter"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 80,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Display & Video",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 51,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    },
+    {
+      "path": [
+        "Playback",
+        "Set/Clear A-B Loop Points"
+      ],
+      "shortcut": "<Ctrl>l",
+      "repo": "cine",
+      "file": "src/shortcuts.py",
+      "line": 85,
+      "commit": "acb18d4760efcc12924ba9282a313d807c3c7c6a"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "app": "bazaar",
+  "name": "Bazaar",
+  "identifiers": [
+    "io.github.kolunmi.Bazaar.desktop",
+    "io.github.kolunmi.Bazaar",
+    "Bazaar"
+  ],
+  "menus": [
+    {
+      "label": "Navigation",
+      "items": [
+        {
+          "label": "Open Explore Page",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "label": "Open Library Page",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Open Search Page",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Back",
+          "shortcut": "Escape"
+        }
+      ]
+    },
+    {
+      "label": "Remotes",
+      "items": [
+        {
+          "label": "Sync Remotes",
+          "shortcut": "<Ctrl>R"
+        }
+      ]
+    },
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Open Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit Bazaar",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Screenshots",
+      "items": [
+        {
+          "label": "Previous Screenshot",
+          "shortcut": "Left"
+        },
+        {
+          "label": "Next Screenshot",
+          "shortcut": "Right"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Reset View",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Copy Image",
+          "shortcut": "<Ctrl>C"
+        }
+      ]
+    },
+    {
+      "label": "Debug",
+      "items": [
+        {
+          "label": "Open Bazaar Inspector",
+          "shortcut": "<Ctrl><Shift><Alt>I"
+        },
+        {
+          "label": "Toggle Debug Mode",
+          "shortcut": "<Ctrl><Alt>D"
+        }
+      ]
+    }
+  ]
+}

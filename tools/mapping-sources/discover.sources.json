@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "app": "discover",
+  "repos": {
+    "discover": {
+      "url": "https://invent.kde.org/plasma/discover.git",
+      "commit": "881bcd99138c2b7ec095c1ef4730c1c553e3c853"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "View",
+        "Refresh"
+      ],
+      "shortcut": "F5",
+      "repo": "discover",
+      "file": "discover/qml/DiscoverWindow.qml",
+      "line": 130,
+      "commit": "881bcd99138c2b7ec095c1ef4730c1c553e3c853"
+    },
+    {
+      "path": [
+        "View",
+        "Page Down"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "discover",
+      "file": "discover/qml/DiscoverPage.qml",
+      "line": 19,
+      "commit": "881bcd99138c2b7ec095c1ef4730c1c553e3c853"
+    },
+    {
+      "path": [
+        "View",
+        "Page Up"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "discover",
+      "file": "discover/qml/DiscoverPage.qml",
+      "line": 28,
+      "commit": "881bcd99138c2b7ec095c1ef4730c1c553e3c853"
+    },
+    {
+      "path": [
+        "Go",
+        "Back"
+      ],
+      "shortcut": "Escape",
+      "repo": "discover",
+      "file": "discover/qml/DiscoverPage.qml",
+      "line": 36,
+      "commit": "881bcd99138c2b7ec095c1ef4730c1c553e3c853"
+    },
+    {
+      "path": [
+        "Help",
+        "About"
+      ],
+      "shortcut": "F1",
+      "repo": "discover",
+      "file": "discover/qml/DiscoverWindow.qml",
+      "line": 116,
+      "commit": "881bcd99138c2b7ec095c1ef4730c1c553e3c853"
+    }
+  ]
+}

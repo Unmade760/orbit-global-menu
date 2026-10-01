@@ -1,0 +1,584 @@
+{
+  "format": 1,
+  "app": "evince",
+  "repos": {
+    "evince": {
+      "url": "https://gitlab.gnome.org/GNOME/evince.git",
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open a Document"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 763,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "File",
+        "Open a Copy"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 764,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "File",
+        "Save As\u2026"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 765,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "File",
+        "Print\u2026"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 766,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "File",
+        "Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 767,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "File",
+        "Reload"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 790,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 772,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 768,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 769,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Highlight Selected Text"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 791,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Add a Post-it Like Note"
+      ],
+      "shortcut": "s",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 269,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Show the Search Bar"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 242,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Next Search Result"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 774,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Previous Search Result"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 775,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 785,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Present as Slideshow"
+      ],
+      "shortcut": "F5",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 786,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Sidebar"
+      ],
+      "shortcut": "F9",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 784,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Caret Navigation"
+      ],
+      "shortcut": "F7",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 783,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 305,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 311,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom 1:1"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 781,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Fit Page"
+      ],
+      "shortcut": "f",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 255,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Fit Width"
+      ],
+      "shortcut": "w",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 248,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Automatic Zoom"
+      ],
+      "shortcut": "a",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 262,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Continuous"
+      ],
+      "shortcut": "c",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 275,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Dual"
+      ],
+      "shortcut": "d",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 281,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Odd Pages Left"
+      ],
+      "shortcut": "o",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 287,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Night Mode"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 789,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Rotate Left"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 787,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "View",
+        "Rotate Right"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 788,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Page"
+      ],
+      "shortcut": "p",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 299,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Page"
+      ],
+      "shortcut": "n",
+      "repo": "evince",
+      "file": "shell/evince-window.ui",
+      "line": 293,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Page Number"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 776,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Page (Fast)"
+      ],
+      "shortcut": "<Shift>Page_Up",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 777,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Page (Fast)"
+      ],
+      "shortcut": "<Shift>Page_Down",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 778,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Page Visited"
+      ],
+      "shortcut": "<Alt>P",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 779,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Page Visited"
+      ],
+      "shortcut": "<Alt>N",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 780,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Beginning of the Document"
+      ],
+      "shortcut": "<Ctrl>Home",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 266,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "End of the Document"
+      ],
+      "shortcut": "<Ctrl>End",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 273,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Beginning of the Page"
+      ],
+      "shortcut": "Home",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 259,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "End of the Page"
+      ],
+      "shortcut": "End",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 259,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Move Up"
+      ],
+      "shortcut": "Up",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 189,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Move Down"
+      ],
+      "shortcut": "Down",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 189,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Move Left"
+      ],
+      "shortcut": "Left",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 189,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Move Right"
+      ],
+      "shortcut": "Right",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 189,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Move Up Several Lines"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 203,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Go",
+        "Move Down Several Lines"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 203,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Add Bookmark"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 770,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Remove Bookmark"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 771,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Toggle Black Screen"
+      ],
+      "shortcut": "b",
+      "repo": "evince",
+      "file": "shell/help-overlay.ui",
+      "line": 416,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 792,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    },
+    {
+      "path": [
+        "Help",
+        "Toggle Primary Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "evince",
+      "file": "shell/ev-application.c",
+      "line": 782,
+      "commit": "2f1e029199338680cd8724f40a17540cd1e4c94f"
+    }
+  ]
+}

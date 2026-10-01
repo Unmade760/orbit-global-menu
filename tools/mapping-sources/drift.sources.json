@@ -1,0 +1,650 @@
+{
+  "format": 1,
+  "app": "drift",
+  "repos": {
+    "drift": {
+      "url": "https://github.com/CutWire-Studios/Drift",
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Project"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4229,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "File",
+        "Open Project"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4230,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "File",
+        "Save Project"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4231,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "File",
+        "Save Project As…"
+      ],
+      "shortcut": "<Ctrl><Alt>S",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4234,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4237,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4238,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut Selection"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4251,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy Selection"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4250,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste at Current Time"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4252,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Duplicate Selected Clip"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4241,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy Effects from Clip"
+      ],
+      "shortcut": "<Ctrl><Alt>C",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4243,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Effects Onto Clip"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4244,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Attributes…"
+      ],
+      "shortcut": "<Ctrl><Alt>V",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4245,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Selection"
+      ],
+      "shortcut": "Delete",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4236,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clear Selection"
+      ],
+      "shortcut": "Escape",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4239,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All Clips"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4240,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Split at Current Time"
+      ],
+      "shortcut": "s",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4246,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Merge Adjacent Clips"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4247,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Delete Left of the Playhead"
+      ],
+      "shortcut": "q",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4272,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Delete Right of the Playhead"
+      ],
+      "shortcut": "w",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4273,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Transform Selection Together"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4306,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Select Transform Layer"
+      ],
+      "shortcut": "<Shift>G",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4307,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Separate Audio"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4249,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Unlink Audio"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4248,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Move Selection Left a Little"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4253,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Clip",
+        "Move Selection Right a Little"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4254,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause"
+      ],
+      "shortcut": "space",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4235,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Step Back One Frame"
+      ],
+      "shortcut": "Left",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4264,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Step Forward One Frame"
+      ],
+      "shortcut": "Right",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4265,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Back 1 Second"
+      ],
+      "shortcut": "<Shift>Left",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4266,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Forward 1 Second"
+      ],
+      "shortcut": "<Shift>Right",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4267,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Back 10 Seconds"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4268,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Forward 10 Seconds"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4269,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go to Start of Timeline"
+      ],
+      "shortcut": "Home",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4270,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go to Previous Cut Point"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4259,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go to Next Cut Point"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4260,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Increase Playback Speed"
+      ],
+      "shortcut": "l",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4276,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Playback",
+        "Decrease Playback Speed"
+      ],
+      "shortcut": "j",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4277,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Work Area",
+        "Mark Work Area In"
+      ],
+      "shortcut": "i",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4288,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Work Area",
+        "Mark Work Area Out"
+      ],
+      "shortcut": "o",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4289,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Work Area",
+        "Go to Work Area In"
+      ],
+      "shortcut": "<Shift>I",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4290,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Work Area",
+        "Go to Work Area Out"
+      ],
+      "shortcut": "<Shift>O",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4291,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Work Area",
+        "Clear Work Area"
+      ],
+      "shortcut": "<Alt>X",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4292,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Work Area",
+        "Loop Work Area Playback"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4293,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Work Area",
+        "Add/Remove Bookmark at Current Time"
+      ],
+      "shortcut": "m",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4285,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Work Area",
+        "Go to Next Bookmark"
+      ],
+      "shortcut": "<Shift>M",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4286,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Work Area",
+        "Go to Previous Bookmark"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4287,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "Select Tool"
+      ],
+      "shortcut": "v",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4298,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "Cut Tool"
+      ],
+      "shortcut": "b",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4299,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4301,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4302,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "Toggle Guides"
+      ],
+      "shortcut": "g",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4278,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "3D Gizmo: Move"
+      ],
+      "shortcut": "t",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4281,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "3D Gizmo: Rotate"
+      ],
+      "shortcut": "r",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4282,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "3D Gizmo: Scale"
+      ],
+      "shortcut": "e",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4283,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "3D Gizmo: Switch Global/Local Axes"
+      ],
+      "shortcut": "<Shift>T",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4284,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Tools",
+        "Multicam Window"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "drift",
+      "file": "src/models/AppController.cpp",
+      "line": 4305,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    },
+    {
+      "path": [
+        "Help",
+        "Show Shortcuts"
+      ],
+      "shortcut": "F1",
+      "repo": "drift",
+      "file": "src/qml/Main.qml",
+      "line": 1039,
+      "commit": "a24069b643c7ebe7b8fe6d5b89f313431a7409c4"
+    }
+  ]
+}

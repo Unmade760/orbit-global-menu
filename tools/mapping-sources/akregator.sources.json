@@ -1,0 +1,576 @@
+{
+  "format": 1,
+  "app": "akregator",
+  "repos": {
+    "akregator": {
+      "url": "https://invent.kde.org/pim/akregator.git",
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 615,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "akregator",
+      "file": "src/mainwindow.cpp",
+      "line": 65,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 612,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find in Message…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 637,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Edit",
+        "Edit Feed…"
+      ],
+      "shortcut": "F2",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 275,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Feed"
+      ],
+      "shortcut": "<Alt>Delete",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 269,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "View",
+        "Normal View"
+      ],
+      "shortcut": "<Ctrl><Shift>1",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 288,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "View",
+        "Widescreen View"
+      ],
+      "shortcut": "<Ctrl><Shift>2",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 297,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "View",
+        "Combined View"
+      ],
+      "shortcut": "<Ctrl><Shift>3",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 306,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen Mode"
+      ],
+      "shortcut": "F11",
+      "repo": "akregator",
+      "file": "src/mainwindow.cpp",
+      "line": 84,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Article"
+      ],
+      "shortcut": "Left",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 506,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Unread Article"
+      ],
+      "shortcut": "minus",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 372,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Article"
+      ],
+      "shortcut": "Right",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 510,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Unread Article"
+      ],
+      "shortcut": "plus",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 379,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Feed"
+      ],
+      "shortcut": "P",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 525,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Unread Feed"
+      ],
+      "shortcut": "<Alt>minus",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 542,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Feed"
+      ],
+      "shortcut": "N",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 530,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Unread Feed"
+      ],
+      "shortcut": "<Alt>plus",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 536,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Top of Tree"
+      ],
+      "shortcut": "<Ctrl>Home",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 547,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Bottom of Tree"
+      ],
+      "shortcut": "<Ctrl>End",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 552,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Go Left in Tree"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 557,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Go Right in Tree"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 562,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Go Up in Tree"
+      ],
+      "shortcut": "<Ctrl>Up",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 567,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Go",
+        "Go Down in Tree"
+      ],
+      "shortcut": "<Ctrl>Down",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 572,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Add Feed…"
+      ],
+      "shortcut": "Insert",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 257,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "New Folder…"
+      ],
+      "shortcut": "<Shift>Insert",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 263,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Mark Feed as Read"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 332,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Mark All Feeds as Read"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 338,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Fetch Feed"
+      ],
+      "shortcut": "F5",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 313,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Fetch All Feeds"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 319,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Cancel Feed Fetches"
+      ],
+      "shortcut": "Escape",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 325,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Open Homepage"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 245,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Move Node Up"
+      ],
+      "shortcut": "<Shift><Alt>Up",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 427,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Move Node Down"
+      ],
+      "shortcut": "<Shift><Alt>Down",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 432,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Move Node Left"
+      ],
+      "shortcut": "<Shift><Alt>Left",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 437,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Feed",
+        "Move Node Right"
+      ],
+      "shortcut": "<Shift><Alt>Right",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 442,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Article",
+        "Open in Tab"
+      ],
+      "shortcut": "<Shift>Return",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 350,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Article",
+        "Open in Background Tab"
+      ],
+      "shortcut": "Return",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 356,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Article",
+        "Open in External Browser"
+      ],
+      "shortcut": "<Ctrl><Shift>Return",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 362,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Article",
+        "Mark as Important"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 419,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Article",
+        "Mark As",
+        "Read"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 396,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Article",
+        "Mark As",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 403,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Article",
+        "Mark As",
+        "Unread"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 412,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Article",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 386,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Next Tab"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 605,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Select Previous Tab"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 610,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 648,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Reload All Tabs"
+      ],
+      "shortcut": "<Shift>F5",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 251,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Settings",
+        "Set Focus to Quick Search"
+      ],
+      "shortcut": "<Alt>Q",
+      "repo": "akregator",
+      "file": "src/actions/actionmanagerimpl.cpp",
+      "line": 459,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "akregator",
+      "file": "src/mainwindow.cpp",
+      "line": 66,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "akregator",
+      "file": "src/mainwindow.cpp",
+      "line": 52,
+      "commit": "5cada02f2d6d91b52f251a5afafe695d39c27450"
+    }
+  ]
+}

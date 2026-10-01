@@ -1,0 +1,669 @@
+{
+  "format": 1,
+  "app": "dolphin-emulator",
+  "repos": {
+    "dolphin-emulator": {
+      "url": "https://github.com/dolphin-emu/dolphin.git",
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/DolphinQt/MenuBar.cpp",
+      "line": 243,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "File",
+        "Open..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 297,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/DolphinQt/MenuBar.cpp",
+      "line": 273,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Pause"
+      ],
+      "shortcut": "F10",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 411,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Stop"
+      ],
+      "shortcut": "Escape",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 416,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Stop"
+      ],
+      "shortcut": "Escape",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Stop: Esc"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "<Alt>Return",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Toggle Full Screen: Alt + Enter"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "<Alt>Return",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Toggle Full Screen: Alt + Enter"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Take Screenshot"
+      ],
+      "shortcut": "F9",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 426,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Take Screenshot"
+      ],
+      "shortcut": "F9",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Take Screenshot: F9"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Disable Emulation Speed Limit"
+      ],
+      "shortcut": "Tab",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 435,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Disable Emulation Speed Limit"
+      ],
+      "shortcut": "Tab",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Emulation Speed: Tab"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 1"
+      ],
+      "shortcut": "F1",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 441,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 1"
+      ],
+      "shortcut": "F1",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "1st Slot Load State: F1"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 2"
+      ],
+      "shortcut": "F2",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 441,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 2"
+      ],
+      "shortcut": "F2",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "2nd Slot Load State: F2"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 3"
+      ],
+      "shortcut": "F3",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 441,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 3"
+      ],
+      "shortcut": "F3",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "3rd Slot Load State: F3"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 4"
+      ],
+      "shortcut": "F4",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 441,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 4"
+      ],
+      "shortcut": "F4",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "4th Slot Load State: F4"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 5"
+      ],
+      "shortcut": "F5",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 441,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 5"
+      ],
+      "shortcut": "F5",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "5th Slot Load State: F5"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 6"
+      ],
+      "shortcut": "F6",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 441,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 6"
+      ],
+      "shortcut": "F6",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "6th Slot Load State: F6"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 7"
+      ],
+      "shortcut": "F7",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 441,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 7"
+      ],
+      "shortcut": "F7",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "7th Slot Load State: F7"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 8"
+      ],
+      "shortcut": "F8",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 441,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Load State from Slot",
+        "Slot 8"
+      ],
+      "shortcut": "F8",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "8th Slot Load State: F8"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Undo Load State"
+      ],
+      "shortcut": "F12",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 445,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Load State",
+        "Undo Load State"
+      ],
+      "shortcut": "F12",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Undo Load state: F12"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 1"
+      ],
+      "shortcut": "<Shift>F1",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 442,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 1"
+      ],
+      "shortcut": "<Shift>F1",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "1st Slot Save State: Shift + F1"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 2"
+      ],
+      "shortcut": "<Shift>F2",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 442,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 2"
+      ],
+      "shortcut": "<Shift>F2",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "2nd Slot Save State: Shift + F2"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 3"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 442,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 3"
+      ],
+      "shortcut": "<Shift>F3",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "3rd Slot Save State: Shift + F3"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 4"
+      ],
+      "shortcut": "<Shift>F4",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 442,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 4"
+      ],
+      "shortcut": "<Shift>F4",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "4th Slot Save State: Shift + F4"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 5"
+      ],
+      "shortcut": "<Shift>F5",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 442,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 5"
+      ],
+      "shortcut": "<Shift>F5",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "5th Slot Save State: Shift + F5"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 6"
+      ],
+      "shortcut": "<Shift>F6",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 442,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 6"
+      ],
+      "shortcut": "<Shift>F6",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "6th Slot Save State: Shift + F6"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 7"
+      ],
+      "shortcut": "<Shift>F7",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 442,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 7"
+      ],
+      "shortcut": "<Shift>F7",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "7th Slot Save State: Shift + F7"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 8"
+      ],
+      "shortcut": "<Shift>F8",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 442,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Save State to Slot",
+        "Slot 8"
+      ],
+      "shortcut": "<Shift>F8",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "8th Slot Save State: Shift + F8"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Undo Save State"
+      ],
+      "shortcut": "<Shift>F12",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Undo Save State: Shift + F12"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Save State",
+        "Undo Save State"
+      ],
+      "shortcut": "<Shift>F12",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Undo Save State: Shift + F12"
+    },
+    {
+      "path": [
+        "Tools",
+        "Connect Wii Remotes",
+        "Connect Balance Board"
+      ],
+      "shortcut": "<Alt>F9",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "5 Connect Wii Remote: Alt + F9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Connect Wii Remotes",
+        "Connect Balance Board"
+      ],
+      "shortcut": "<Alt>F9",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "5 Connect Wii Remote: Alt + F9"
+    },
+    {
+      "path": [
+        "View",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/DolphinQt/MenuBar.cpp",
+      "line": 615,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/DolphinQt/GameList/GameList.cpp",
+      "line": 152,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/DolphinQt/GameList/GameList.cpp",
+      "line": 153,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Debugging",
+        "Step Into"
+      ],
+      "shortcut": "F11",
+      "repo": "dolphin-emulator",
+      "file": "Source/Core/Core/HotkeyManager.cpp",
+      "line": 422,
+      "commit": "5102a0339c2177575378107b76541e47cc52122d"
+    },
+    {
+      "path": [
+        "Debugging",
+        "Step Into"
+      ],
+      "shortcut": "F11",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Step into: F11"
+    },
+    {
+      "path": [
+        "Debugging",
+        "Step Over"
+      ],
+      "shortcut": "<Shift>F10",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Step Over: Shift + F10"
+    },
+    {
+      "path": [
+        "Debugging",
+        "Step Over"
+      ],
+      "shortcut": "<Shift>F10",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Step Over: Shift + F10"
+    },
+    {
+      "path": [
+        "Debugging",
+        "Step Out"
+      ],
+      "shortcut": "<Shift>F11",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Step Out: Shift + F11"
+    },
+    {
+      "path": [
+        "Debugging",
+        "Step Out"
+      ],
+      "shortcut": "<Shift>F11",
+      "url": "https://www.mejoress.com/dolphin-emulator-controls-shortcuts/",
+      "quote": "Step Out: Shift + F11"
+    }
+  ]
+}

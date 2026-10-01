@@ -1,0 +1,177 @@
+{
+  "format": 1,
+  "app": "bruno",
+  "repos": {
+    "bruno": {
+      "url": "https://github.com/usebruno/bruno.git",
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "bruno",
+      "file": "tests/editable-table/editable-table.spec.ts",
+      "line": 36,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "bruno",
+      "file": "tests/transient-requests/transient-file-mode-save.spec.ts",
+      "line": 21,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "File",
+        "Close Bruno"
+      ],
+      "shortcut": "<Ctrl><Shift>Q",
+      "repo": "bruno",
+      "file": "packages/bruno-electron/src/app/menu-template.js",
+      "line": 93,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "bruno",
+      "file": "packages/bruno-app/src/components/AppTitleBar/AppMenu/index.js",
+      "line": 44,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "bruno",
+      "file": "packages/bruno-app/src/components/AppTitleBar/AppMenu/index.js",
+      "line": 50,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "bruno",
+      "file": "packages/bruno-app/src/components/AppTitleBar/AppMenu/index.js",
+      "line": 57,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "bruno",
+      "file": "packages/bruno-app/src/components/AppTitleBar/AppMenu/index.js",
+      "line": 63,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "bruno",
+      "file": "packages/bruno-app/src/components/AppTitleBar/AppMenu/index.js",
+      "line": 69,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "bruno",
+      "file": "packages/bruno-app/src/components/AppTitleBar/AppMenu/index.js",
+      "line": 76,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "bruno",
+      "file": "packages/bruno-app/src/components/AppTitleBar/AppMenu/index.js",
+      "line": 88,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "bruno",
+      "file": "packages/bruno-app/src/components/AppTitleBar/AppMenu/index.js",
+      "line": 95,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "bruno",
+      "file": "packages/bruno-electron/src/index.js",
+      "line": 607,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "bruno",
+      "file": "packages/bruno-electron/src/app/menu-template.js",
+      "line": 81,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "bruno",
+      "file": "packages/bruno-electron/src/app/menu-template.js",
+      "line": 88,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    },
+    {
+      "path": [
+        "Request",
+        "Send Request"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "bruno",
+      "file": "tests/request/response-pane-update-when-focused.spec.ts",
+      "line": 12,
+      "commit": "783bec195a370d1cca04fdaa8f24d538ca20db63"
+    }
+  ]
+}

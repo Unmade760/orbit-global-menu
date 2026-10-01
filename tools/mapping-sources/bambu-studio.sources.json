@@ -1,0 +1,257 @@
+{
+  "format": 1,
+  "app": "bambu-studio",
+  "repos": {
+    "bambu-studio": {
+      "url": "https://github.com/bambulab/BambuStudio.git",
+      "commit": "da8b44ee34dd349f2ae0df3f1cbae366df482354"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Project"
+      ],
+      "shortcut": "<Ctrl>N",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + N New Project"
+    },
+    {
+      "path": [
+        "File",
+        "Open Project…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + O Open Project"
+    },
+    {
+      "path": [
+        "File",
+        "Save Project"
+      ],
+      "shortcut": "<Ctrl>S",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + S Save Project"
+    },
+    {
+      "path": [
+        "File",
+        "Save Project as…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + Shift + S Save Project as"
+    },
+    {
+      "path": [
+        "File",
+        "Import",
+        "Import 3MF/STL/STEP/SVG/OBJ/AMF…"
+      ],
+      "shortcut": "<Ctrl>I",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + I Import geometry data from STL/STEP/3MF/OBJ/AMF files"
+    },
+    {
+      "path": [
+        "File",
+        "Export",
+        "Export Plate Sliced File…"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + G Export plate sliced file"
+    },
+    {
+      "path": [
+        "File",
+        "Slice Plate"
+      ],
+      "shortcut": "<Ctrl>R",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + R Slice plate"
+    },
+    {
+      "path": [
+        "File",
+        "Print Plate"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + Shift + G Print plate"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + Z Undo"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + Y Redo"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + X Cut"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + C Copy to clipboard"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + V Paste from clipboard"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Selected"
+      ],
+      "shortcut": "Delete",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Del Delete Selected"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + A Select all objects"
+    },
+    {
+      "path": [
+        "Edit",
+        "Deselect All"
+      ],
+      "shortcut": "Escape",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Esc Deselect All"
+    },
+    {
+      "path": [
+        "Edit",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + P Preferences"
+    },
+    {
+      "path": [
+        "View",
+        "Default View"
+      ],
+      "shortcut": "<Ctrl>0",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + 0 Camera view - Default"
+    },
+    {
+      "path": [
+        "View",
+        "Top"
+      ],
+      "shortcut": "<Ctrl>1",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + 1 Camera view - Top"
+    },
+    {
+      "path": [
+        "View",
+        "Bottom"
+      ],
+      "shortcut": "<Ctrl>2",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + 2 Camera view - Bottom"
+    },
+    {
+      "path": [
+        "View",
+        "Front"
+      ],
+      "shortcut": "<Ctrl>3",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + 3 Camera view - Front"
+    },
+    {
+      "path": [
+        "View",
+        "Rear"
+      ],
+      "shortcut": "<Ctrl>4",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + 4 Camera view - Behind"
+    },
+    {
+      "path": [
+        "View",
+        "Left"
+      ],
+      "shortcut": "<Ctrl>5",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + 5 Camera view - Left side"
+    },
+    {
+      "path": [
+        "View",
+        "Right"
+      ],
+      "shortcut": "<Ctrl>6",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Ctrl + 6 Camera view - Right side"
+    },
+    {
+      "path": [
+        "Plater",
+        "Arrange Objects on Selected Plates"
+      ],
+      "shortcut": "<Shift>A",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Shift + A Arrange objects on selected plates"
+    },
+    {
+      "path": [
+        "Plater",
+        "Auto Orient"
+      ],
+      "shortcut": "<Shift>R",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Shift + R The auto orients selected objects or all objects"
+    },
+    {
+      "path": [
+        "Plater",
+        "Collapse/Expand the Sidebar"
+      ],
+      "shortcut": "<Shift>Tab",
+      "url": "https://wiki.bambulab.com/en/software/bambu-studio/3d-scene-operations",
+      "quote": "Shift + Tab Collapse/Expand the sidebar"
+    }
+  ]
+}

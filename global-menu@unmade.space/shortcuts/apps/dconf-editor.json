@@ -1,0 +1,173 @@
+{
+  "format": 1,
+  "app": "dconf-editor",
+  "name": "Dconf Editor",
+  "identifiers": [
+    "ca.desrt.dconf-editor.desktop",
+    "ca.desrt.dconf-editor",
+    "dconf-editor",
+    "dconf Editor"
+  ],
+  "menus": [
+    {
+      "label": "Actions",
+      "items": [
+        {
+          "label": "Bookmarks Menu",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Bookmark This Path",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Unbookmark This Path",
+          "shortcut": "<Ctrl><Shift>D"
+        },
+        {
+          "label": "Actions Menu",
+          "shortcut": "F10"
+        },
+        {
+          "label": "Path Bar Menu",
+          "shortcut": "<Shift>F10"
+        }
+      ]
+    },
+    {
+      "label": "Path Bar Navigation",
+      "items": [
+        {
+          "label": "Open Root Folder",
+          "shortcut": "<Shift><Alt>Up"
+        },
+        {
+          "label": "Open Parent Folder",
+          "shortcut": "<Alt>Up"
+        },
+        {
+          "label": "Open Active Direct Child",
+          "shortcut": "<Alt>Down"
+        },
+        {
+          "label": "Open Active Last Child",
+          "shortcut": "<Shift><Alt>Down"
+        }
+      ]
+    },
+    {
+      "label": "Search Options",
+      "items": [
+        {
+          "label": "Toggle Search",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Search Again",
+          "shortcut": "<Ctrl><Alt>F"
+        },
+        {
+          "label": "Toggle Local Search",
+          "shortcut": "<Ctrl><Shift>F"
+        },
+        {
+          "label": "Search Again, Locally",
+          "shortcut": "<Ctrl><Shift><Alt>F"
+        },
+        {
+          "label": "Paste as Search",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste as Search (Force)",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "label": "Edit Path",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "label": "Edit Parent Path",
+          "shortcut": "<Ctrl><Shift>L"
+        }
+      ]
+    },
+    {
+      "label": "Keys List Actions",
+      "items": [
+        {
+          "label": "Previous Line",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Next Line",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Toggle Folder Properties",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Set to Default",
+          "shortcut": "<Ctrl>Delete"
+        },
+        {
+          "label": "Toggle Boolean Value",
+          "shortcut": "<Ctrl>Return"
+        }
+      ]
+    },
+    {
+      "label": "Modifications List Actions",
+      "items": [
+        {
+          "label": "Toggle Modifications List",
+          "shortcut": "<Alt>I"
+        }
+      ]
+    },
+    {
+      "label": "Clipboard",
+      "items": [
+        {
+          "label": "Copy Descriptor",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Copy Path",
+          "shortcut": "<Ctrl><Shift>C"
+        }
+      ]
+    },
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Show This Help",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "label": "About",
+          "shortcut": "<Shift>F1"
+        }
+      ]
+    },
+    {
+      "label": "Quit",
+      "items": [
+        {
+          "label": "Quit if There’s No Pending Changes",
+          "shortcut": "<Ctrl>Q"
+        },
+        {
+          "label": "Apply Pending Changes and Quit",
+          "shortcut": "<Ctrl><Shift>Q"
+        },
+        {
+          "label": "Dismiss Pending Changes and Quit",
+          "shortcut": "<Alt>F4"
+        }
+      ]
+    }
+  ]
+}

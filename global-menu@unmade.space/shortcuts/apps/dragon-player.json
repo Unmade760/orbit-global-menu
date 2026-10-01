@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "app": "dragon-player",
+  "name": "Dragon Player",
+  "identifiers": [
+    "org.kde.dragonplayer.desktop",
+    "org.kde.dragonplayer",
+    "dragonplayer",
+    "dragon",
+    "Dragon Player"
+  ],
+  "menus": [
+    {
+      "label": "Playback",
+      "items": [
+        {
+          "label": "Play/Pause",
+          "shortcut": "space"
+        },
+        {
+          "label": "Stop",
+          "shortcut": "S"
+        },
+        {
+          "label": "Mute",
+          "shortcut": "M"
+        }
+      ]
+    },
+    {
+      "label": "Seek",
+      "items": [
+        {
+          "label": "Back 5 Seconds",
+          "shortcut": "Left"
+        },
+        {
+          "label": "Forward 5 Seconds",
+          "shortcut": "Right"
+        },
+        {
+          "label": "Back 1 Minute",
+          "shortcut": "<Ctrl>Left"
+        },
+        {
+          "label": "Forward 1 Minute",
+          "shortcut": "<Ctrl>Right"
+        },
+        {
+          "label": "Back 5 Minutes",
+          "shortcut": "<Ctrl><Alt>Left"
+        },
+        {
+          "label": "Forward 5 Minutes",
+          "shortcut": "<Ctrl><Alt>Right"
+        }
+      ]
+    },
+    {
+      "label": "Volume",
+      "items": [
+        {
+          "label": "Volume Up",
+          "shortcut": "Up"
+        },
+        {
+          "label": "Volume Down",
+          "shortcut": "Down"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Enter Fullscreen",
+          "shortcut": "F"
+        },
+        {
+          "label": "Exit Fullscreen",
+          "shortcut": "Escape"
+        }
+      ]
+    }
+  ]
+}

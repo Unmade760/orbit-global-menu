@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "app": "cmake",
+  "repos": {
+    "cmake": {
+      "url": "https://gitlab.kitware.com/cmake/cmake.git",
+      "commit": "10f1daebac6019ed204e1e052e3476993b0c950e"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "cmake",
+      "file": "Source/QtDialog/CMakeSetupDialog.cxx",
+      "line": 139,
+      "commit": "10f1daebac6019ed204e1e052e3476993b0c950e"
+    },
+    {
+      "path": [
+        "Tools",
+        "Find in Output..."
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "cmake",
+      "file": "Source/QtDialog/CMakeSetupDialog.cxx",
+      "line": 167,
+      "commit": "10f1daebac6019ed204e1e052e3476993b0c950e"
+    },
+    {
+      "path": [
+        "Tools",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "cmake",
+      "file": "Source/QtDialog/CMakeSetupDialog.cxx",
+      "line": 171,
+      "commit": "10f1daebac6019ed204e1e052e3476993b0c950e"
+    },
+    {
+      "path": [
+        "Tools",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "cmake",
+      "file": "Source/QtDialog/CMakeSetupDialog.cxx",
+      "line": 175,
+      "commit": "10f1daebac6019ed204e1e052e3476993b0c950e"
+    },
+    {
+      "path": [
+        "Tools",
+        "Goto Next Error"
+      ],
+      "shortcut": "F8",
+      "repo": "cmake",
+      "file": "Source/QtDialog/CMakeSetupDialog.cxx",
+      "line": 179,
+      "commit": "10f1daebac6019ed204e1e052e3476993b0c950e"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "cmake",
+      "file": "Source/QtDialog/CMakeSetupDialog.cxx",
+      "line": 210,
+      "commit": "10f1daebac6019ed204e1e052e3476993b0c950e"
+    }
+  ]
+}

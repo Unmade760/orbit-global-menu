@@ -1,0 +1,322 @@
+{
+  "format": 1,
+  "app": "akregator",
+  "name": "Akregator",
+  "identifiers": [
+    "org.kde.akregator.desktop",
+    "org.kde.akregator",
+    "akregator",
+    "Akregator"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Find in Message…",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Edit Feed…",
+          "shortcut": "F2"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Delete Feed",
+          "shortcut": "<Alt>Delete"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Normal View",
+          "shortcut": "<Ctrl><Shift>1"
+        },
+        {
+          "label": "Widescreen View",
+          "shortcut": "<Ctrl><Shift>2"
+        },
+        {
+          "label": "Combined View",
+          "shortcut": "<Ctrl><Shift>3"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Hide Read Feeds"
+        },
+        {
+          "label": "Lock Feeds In Place"
+        },
+        {
+          "label": "Auto-expand folders with unread articles"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Full Screen Mode",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Previous Article",
+          "shortcut": "Left"
+        },
+        {
+          "label": "Previous Unread Article",
+          "shortcut": "minus"
+        },
+        {
+          "label": "Next Article",
+          "shortcut": "Right"
+        },
+        {
+          "label": "Next Unread Article",
+          "shortcut": "plus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Previous Feed",
+          "shortcut": "P"
+        },
+        {
+          "label": "Previous Unread Feed",
+          "shortcut": "<Alt>minus"
+        },
+        {
+          "label": "Next Feed",
+          "shortcut": "N"
+        },
+        {
+          "label": "Next Unread Feed",
+          "shortcut": "<Alt>plus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Top of Tree",
+          "shortcut": "<Ctrl>Home"
+        },
+        {
+          "label": "Go to Bottom of Tree",
+          "shortcut": "<Ctrl>End"
+        },
+        {
+          "label": "Go Left in Tree",
+          "shortcut": "<Ctrl>Left"
+        },
+        {
+          "label": "Go Right in Tree",
+          "shortcut": "<Ctrl>Right"
+        },
+        {
+          "label": "Go Up in Tree",
+          "shortcut": "<Ctrl>Up"
+        },
+        {
+          "label": "Go Down in Tree",
+          "shortcut": "<Ctrl>Down"
+        }
+      ]
+    },
+    {
+      "label": "Feed",
+      "items": [
+        {
+          "label": "Add Feed…",
+          "shortcut": "Insert"
+        },
+        {
+          "label": "New Folder…",
+          "shortcut": "<Shift>Insert"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Mark Feed as Read",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Mark All Feeds as Read",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Fetch Feed",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Fetch All Feeds",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "label": "Cancel Feed Fetches",
+          "shortcut": "Escape"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Open Homepage",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Move Node Up",
+          "shortcut": "<Shift><Alt>Up"
+        },
+        {
+          "label": "Move Node Down",
+          "shortcut": "<Shift><Alt>Down"
+        },
+        {
+          "label": "Move Node Left",
+          "shortcut": "<Shift><Alt>Left"
+        },
+        {
+          "label": "Move Node Right",
+          "shortcut": "<Shift><Alt>Right"
+        }
+      ]
+    },
+    {
+      "label": "Article",
+      "items": [
+        {
+          "label": "Open in Tab",
+          "shortcut": "<Shift>Return"
+        },
+        {
+          "label": "Open in Background Tab",
+          "shortcut": "Return"
+        },
+        {
+          "label": "Open in External Browser",
+          "shortcut": "<Ctrl><Shift>Return"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Mark as Important",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Mark As",
+          "items": [
+            {
+              "label": "Read",
+              "shortcut": "<Ctrl>E"
+            },
+            {
+              "label": "New",
+              "shortcut": "<Ctrl>N"
+            },
+            {
+              "label": "Unread",
+              "shortcut": "<Ctrl>U"
+            }
+          ]
+        },
+        {
+          "label": "Delete",
+          "shortcut": "Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Copy Article Link Address"
+        }
+      ]
+    },
+    {
+      "label": "Tabs",
+      "items": [
+        {
+          "label": "Select Next Tab",
+          "shortcut": "<Ctrl>period"
+        },
+        {
+          "label": "Select Previous Tab",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Close Tab",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Reload All Tabs",
+          "shortcut": "<Shift>F5"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Show Quick Filter"
+        },
+        {
+          "label": "Set Focus to Quick Search",
+          "shortcut": "<Alt>Q"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Menubar",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Configure Keyboard Shortcuts…",
+          "shortcut": "<Ctrl><Alt>comma"
+        },
+        {
+          "label": "Configure Akregator…"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "format": 1,
+  "app": "atril-document-viewer",
+  "name": "Atril Document Viewer",
+  "identifiers": ["atril.desktop", "atril", "Atril Document Viewer"],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Open…", "shortcut": "<Ctrl>O"},
+        {"label": "Open a Copy", "shortcut": "<Ctrl>N"},
+        {"label": "Save As…", "shortcut": "<Ctrl>S"},
+        {"separator": true},
+        {"label": "Print…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Properties", "shortcut": "<Alt>Return"},
+        {"separator": true},
+        {"label": "Close", "shortcut": "<Ctrl>W"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"separator": true},
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"separator": true},
+        {"label": "Find…", "shortcut": "<Ctrl>F"},
+        {"label": "Find Next", "shortcut": "<Ctrl>G"},
+        {"label": "Find Previous", "shortcut": "<Ctrl><Shift>G"},
+        {"separator": true},
+        {"label": "Rotate Left", "shortcut": "<Ctrl>Left"},
+        {"label": "Rotate Right", "shortcut": "<Ctrl>Right"},
+        {"separator": true},
+        {"label": "Save Current Settings as Default", "shortcut": "<Ctrl>T"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Toolbar", "shortcut": "T"},
+        {"label": "Side Pane", "shortcut": "F9"},
+        {"separator": true},
+        {"label": "Fullscreen", "shortcut": "F11"},
+        {"label": "Presentation", "shortcut": "F5"},
+        {"separator": true},
+        {"label": "Continuous", "shortcut": "C"},
+        {"label": "Dual", "shortcut": "D"},
+        {"label": "Odd Pages Left", "shortcut": "O"},
+        {"separator": true},
+        {"label": "Inverted Colors", "shortcut": "<Ctrl>I"},
+        {"separator": true},
+        {"label": "Caret Navigation", "shortcut": "F7"},
+        {"separator": true},
+        {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+        {"label": "Reset Zoom", "shortcut": "<Ctrl>0"},
+        {"label": "Fit Page", "shortcut": "F"},
+        {"label": "Fit Width", "shortcut": "W"},
+        {"label": "Expand Window to Fit", "shortcut": "<Ctrl>E"},
+        {"separator": true},
+        {"label": "Reload", "shortcut": "<Ctrl>R"}
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {"label": "Previous Page", "shortcut": "<Ctrl>Page_Up"},
+        {"label": "Next Page", "shortcut": "<Ctrl>Page_Down"},
+        {"separator": true},
+        {"label": "First Page", "shortcut": "<Ctrl>Home"},
+        {"label": "Last Page", "shortcut": "<Ctrl>End"},
+        {"separator": true},
+        {"label": "Go to Page Number", "shortcut": "<Ctrl>L"}
+      ]
+    },
+    {
+      "label": "Bookmarks",
+      "items": [
+        {"label": "Add Bookmark", "shortcut": "<Ctrl>D"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Contents", "shortcut": "F1"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "app": "camera",
+  "name": "Camera",
+  "identifiers": [
+    "org.gnome.Snapshot.desktop",
+    "org.gnome.Snapshot",
+    "snapshot",
+    "Camera"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {"label": "Main Menu", "shortcut": "F10"},
+        {"label": "Open Preferences", "shortcut": "<Ctrl>comma"},
+        {"label": "Close Window", "shortcut": "<Ctrl>W"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Camera",
+      "items": [
+        {"label": "Picture Mode", "shortcut": "P"},
+        {"label": "Recording Mode", "shortcut": "R"},
+        {"label": "Take Picture or Start Recording", "shortcut": "T"},
+        {"label": "Show/Hide Composition Guidelines", "shortcut": "C"}
+      ]
+    },
+    {
+      "label": "Gallery",
+      "items": [
+        {"label": "Open/Close Gallery", "shortcut": "<Ctrl>G"},
+        {"label": "Next", "shortcut": "Right"},
+        {"label": "Previous", "shortcut": "Left"}
+      ]
+    }
+  ]
+}

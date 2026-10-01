@@ -1,0 +1,313 @@
+{
+  "format": 1,
+  "app": "drift",
+  "name": "Drift",
+  "identifiers": [
+    "org.cutwire.Drift.desktop",
+    "org.cutwire.Drift",
+    "drift",
+    "CutWire Drift"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New Project",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open Project",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Save Project",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save Project As…",
+          "shortcut": "<Ctrl><Alt>S"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut Selection",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy Selection",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste at Current Time",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Duplicate Selected Clip",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Copy Effects from Clip",
+          "shortcut": "<Ctrl><Alt>C"
+        },
+        {
+          "label": "Paste Effects Onto Clip",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "label": "Paste Attributes…",
+          "shortcut": "<Ctrl><Alt>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Delete Selection",
+          "shortcut": "Delete"
+        },
+        {
+          "label": "Clear Selection",
+          "shortcut": "Escape"
+        },
+        {
+          "label": "Select All Clips",
+          "shortcut": "<Ctrl>A"
+        }
+      ]
+    },
+    {
+      "label": "Clip",
+      "items": [
+        {
+          "label": "Split at Current Time",
+          "shortcut": "s"
+        },
+        {
+          "label": "Merge Adjacent Clips",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Delete Left of the Playhead",
+          "shortcut": "q"
+        },
+        {
+          "label": "Delete Right of the Playhead",
+          "shortcut": "w"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Transform Selection Together",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Select Transform Layer",
+          "shortcut": "<Shift>G"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Separate Audio",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Unlink Audio",
+          "shortcut": "<Ctrl><Shift>U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Move Selection Left a Little",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Move Selection Right a Little",
+          "shortcut": "<Alt>Right"
+        }
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {
+          "label": "Play/Pause",
+          "shortcut": "space"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Step Back One Frame",
+          "shortcut": "Left"
+        },
+        {
+          "label": "Step Forward One Frame",
+          "shortcut": "Right"
+        },
+        {
+          "label": "Jump Back 1 Second",
+          "shortcut": "<Shift>Left"
+        },
+        {
+          "label": "Jump Forward 1 Second",
+          "shortcut": "<Shift>Right"
+        },
+        {
+          "label": "Jump Back 10 Seconds",
+          "shortcut": "<Ctrl>Left"
+        },
+        {
+          "label": "Jump Forward 10 Seconds",
+          "shortcut": "<Ctrl>Right"
+        },
+        {
+          "label": "Go to Start of Timeline",
+          "shortcut": "Home"
+        },
+        {
+          "label": "Go to Previous Cut Point",
+          "shortcut": "<Alt>Up"
+        },
+        {
+          "label": "Go to Next Cut Point",
+          "shortcut": "<Alt>Down"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Increase Playback Speed",
+          "shortcut": "l"
+        },
+        {
+          "label": "Decrease Playback Speed",
+          "shortcut": "j"
+        }
+      ]
+    },
+    {
+      "label": "Work Area",
+      "items": [
+        {
+          "label": "Mark Work Area In",
+          "shortcut": "i"
+        },
+        {
+          "label": "Mark Work Area Out",
+          "shortcut": "o"
+        },
+        {
+          "label": "Go to Work Area In",
+          "shortcut": "<Shift>I"
+        },
+        {
+          "label": "Go to Work Area Out",
+          "shortcut": "<Shift>O"
+        },
+        {
+          "label": "Clear Work Area",
+          "shortcut": "<Alt>X"
+        },
+        {
+          "label": "Loop Work Area Playback",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Add/Remove Bookmark at Current Time",
+          "shortcut": "m"
+        },
+        {
+          "label": "Go to Next Bookmark",
+          "shortcut": "<Shift>M"
+        },
+        {
+          "label": "Go to Previous Bookmark",
+          "shortcut": "<Ctrl><Shift>M"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Select Tool",
+          "shortcut": "v"
+        },
+        {
+          "label": "Cut Tool",
+          "shortcut": "b"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>equal"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Guides",
+          "shortcut": "g"
+        },
+        {
+          "label": "3D Gizmo: Move",
+          "shortcut": "t"
+        },
+        {
+          "label": "3D Gizmo: Rotate",
+          "shortcut": "r"
+        },
+        {
+          "label": "3D Gizmo: Scale",
+          "shortcut": "e"
+        },
+        {
+          "label": "3D Gizmo: Switch Global/Local Axes",
+          "shortcut": "<Shift>T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Multicam Window",
+          "shortcut": "<Ctrl><Shift>C"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Show Shortcuts",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

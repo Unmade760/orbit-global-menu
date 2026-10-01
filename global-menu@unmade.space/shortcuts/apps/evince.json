@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "app": "evince",
+  "name": "Document Viewer",
+  "identifiers": [
+    "org.gnome.Evince.desktop",
+    "org.gnome.Evince",
+    "evince"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Open a Document", "shortcut": "<Ctrl>O"},
+        {"label": "Open a Copy", "shortcut": "<Ctrl>N"},
+        {"label": "Save As…", "shortcut": "<Ctrl>S"},
+        {"label": "Print…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Properties", "shortcut": "<Alt>Return"},
+        {"label": "Reload", "shortcut": "<Ctrl>R"},
+        {"separator": true},
+        {"label": "Close Window", "shortcut": "<Ctrl>W"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"separator": true},
+        {"label": "Highlight Selected Text", "shortcut": "<Ctrl>H"},
+        {"label": "Add a Post-it Like Note", "shortcut": "s"},
+        {"separator": true},
+        {"label": "Show the Search Bar", "shortcut": "<Ctrl>F"},
+        {"label": "Next Search Result", "shortcut": "<Ctrl>G"},
+        {"label": "Previous Search Result", "shortcut": "<Ctrl><Shift>G"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Fullscreen", "shortcut": "F11"},
+        {"label": "Present as Slideshow", "shortcut": "F5"},
+        {"label": "Toggle Sidebar", "shortcut": "F9"},
+        {"label": "Toggle Caret Navigation", "shortcut": "F7"},
+        {"separator": true},
+        {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+        {"label": "Zoom 1:1", "shortcut": "<Ctrl>0"},
+        {"separator": true},
+        {"label": "Fit Page", "shortcut": "f"},
+        {"label": "Fit Width", "shortcut": "w"},
+        {"label": "Automatic Zoom", "shortcut": "a"},
+        {"separator": true},
+        {"label": "Continuous", "shortcut": "c"},
+        {"label": "Dual", "shortcut": "d"},
+        {"label": "Odd Pages Left", "shortcut": "o"},
+        {"separator": true},
+        {"label": "Night Mode", "shortcut": "<Ctrl>I"},
+        {"label": "Rotate Left", "shortcut": "<Ctrl>Left"},
+        {"label": "Rotate Right", "shortcut": "<Ctrl>Right"}
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {"label": "Previous Page", "shortcut": "p"},
+        {"label": "Next Page", "shortcut": "n"},
+        {"label": "Go to Page Number", "shortcut": "<Ctrl>L"},
+        {"label": "Previous Page (Fast)", "shortcut": "<Shift>Page_Up"},
+        {"label": "Next Page (Fast)", "shortcut": "<Shift>Page_Down"},
+        {"label": "Previous Page Visited", "shortcut": "<Alt>P"},
+        {"label": "Next Page Visited", "shortcut": "<Alt>N"},
+        {"separator": true},
+        {"label": "Beginning of the Document", "shortcut": "<Ctrl>Home"},
+        {"label": "End of the Document", "shortcut": "<Ctrl>End"},
+        {"label": "Beginning of the Page", "shortcut": "Home"},
+        {"label": "End of the Page", "shortcut": "End"},
+        {"separator": true},
+        {"label": "Move Up", "shortcut": "Up"},
+        {"label": "Move Down", "shortcut": "Down"},
+        {"label": "Move Left", "shortcut": "Left"},
+        {"label": "Move Right", "shortcut": "Right"},
+        {"label": "Move Up Several Lines", "shortcut": "Page_Up"},
+        {"label": "Move Down Several Lines", "shortcut": "Page_Down"}
+      ]
+    },
+    {
+      "label": "Bookmarks",
+      "items": [
+        {"label": "Add Bookmark", "shortcut": "<Ctrl>D"},
+        {"label": "Remove Bookmark", "shortcut": "<Ctrl><Shift>D"}
+      ]
+    },
+    {
+      "label": "Presentation",
+      "items": [
+        {"label": "Toggle Black Screen", "shortcut": "b"},
+        {"label": "Toggle White Screen"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Help", "shortcut": "F1"},
+        {"label": "Toggle Primary Menu", "shortcut": "F10"}
+      ]
+    }
+  ]
+}

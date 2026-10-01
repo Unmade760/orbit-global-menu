@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "app": "clamui",
+  "name": "ClamUI",
+  "identifiers": [
+    "io.github.linx_systems.ClamUI.desktop",
+    "io.github.linx_systems.ClamUI",
+    "clamui",
+    "ClamUI"
+  ],
+  "menus": [
+    {
+      "label": "ClamUI",
+      "items": [
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "About ClamUI"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Scan",
+      "items": [
+        {
+          "label": "Start Scan",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Scan System (Quick Scan)"
+        },
+        {
+          "label": "Scan File or Folder"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Update Database",
+          "shortcut": "<Ctrl>U"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Scan",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Database",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Logs",
+          "shortcut": "<Ctrl>3"
+        },
+        {
+          "label": "Components",
+          "shortcut": "<Ctrl>4"
+        },
+        {
+          "label": "Quarantine",
+          "shortcut": "<Ctrl>5"
+        },
+        {
+          "label": "Statistics",
+          "shortcut": "<Ctrl>6"
+        },
+        {
+          "label": "Audit",
+          "shortcut": "<Ctrl>7"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "format": 1,
+  "app": "eye-of-gnome",
+  "repos": {
+    "eye-of-gnome": {
+      "url": "https://gitlab.gnome.org/GNOME/eog.git",
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 208,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 209,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 210,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 213,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "File",
+        "Set as Wallpaper"
+      ],
+      "shortcut": "<Ctrl>F8",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 216,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "File",
+        "Image Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 214,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "File",
+        "Move to Trash"
+      ],
+      "shortcut": "Delete",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 225,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "File",
+        "Delete Image Permanently"
+      ],
+      "shortcut": "<Shift>Delete",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 226,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 211,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "File",
+        "Close All Windows"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 212,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 228,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 227,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rotate Clockwise"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 223,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rotate Counterclockwise"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 224,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Edit",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 218,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 242,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "View",
+        "Slideshow"
+      ],
+      "shortcut": "F5",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 243,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "View",
+        "Side Pane"
+      ],
+      "shortcut": "F9",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 241,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "View",
+        "Image Gallery"
+      ],
+      "shortcut": "<Ctrl>F9",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 240,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "View",
+        "Show Presenter"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 215,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 230,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 233,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "View",
+        "Actual Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 237,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Image"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 259,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Image"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 262,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Go",
+        "First Image"
+      ],
+      "shortcut": "<Alt>Home",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 220,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Go",
+        "Last Image"
+      ],
+      "shortcut": "<Alt>End",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 221,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Go",
+        "Random Image"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 222,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Help",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "eye-of-gnome",
+      "file": "data/help-overlay.ui",
+      "line": 102,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 217,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    },
+    {
+      "path": [
+        "Help",
+        "Show/Hide the Application Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "eye-of-gnome",
+      "file": "src/eog-application.c",
+      "line": 245,
+      "commit": "158790530d794cbc52afc409272991ff1ed55892"
+    }
+  ]
+}

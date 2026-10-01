@@ -1,33 +1,52 @@
+- Akregator
 - Alacritty
+- Alpaca
 - Amberol
 - Android Studio
 - Anki
+- Apostrophe
 - Ardour
 - Ark
+- Atril Document Viewer
 - Authenticator
 - Audacity
+- Bambu Studio
 - Baobab (Disk Usage Analyzer)
+- Bazaar
 - Bitwarden
 - Bitwig Studio
+- Blanket
 - BleachBit
 - Blender
 - Bottles
 - Brave
+- Bruno
 - Calculator
 - Calibre
 - Calendar
+- Camera (Snapshot)
 - Celluloid
+- Character Map
 - Characters
 - Cheese
 - Chrome (Google Chrome)
 - Chromium
 - Cider
+- Cine
+- ClamUI
 - Clocks
+- CMake
 - Connections
 - Contacts
 - Darktable
 - DBeaver
+- Dconf Editor
 - Decibels
+- Discover
+- DistroShelf
+- Dolphin Emulator
+- Dragon Player
+- Drift
 - Déjà Dup
 - Deluge
 - DigiKam
@@ -40,10 +59,14 @@
 - EasyEffects
 - Element
 - Emacs
+- Engrampa Archive Manager
 - Epiphany (GNOME Web)
+- Equibop
 - Evernote
+- Evince (Document Viewer)
 - Evolution
 - Extension Manager
+- Eye of GNOME
 - Ferdium
 - File Roller
 - FileZilla

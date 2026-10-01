@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "dragon-player",
+  "repos": {
+    "dragon-player": {
+      "url": "https://invent.kde.org/multimedia/dragon.git",
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Playback",
+        "Play/Pause"
+      ],
+      "shortcut": "space",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 409,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Stop"
+      ],
+      "shortcut": "S",
+      "repo": "dragon-player",
+      "file": "src/qml/ControlsBar.qml",
+      "line": 164,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Mute"
+      ],
+      "shortcut": "M",
+      "repo": "dragon-player",
+      "file": "src/qml/ControlsBar.qml",
+      "line": 171,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Seek",
+        "Back 5 Seconds"
+      ],
+      "shortcut": "Left",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 421,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Seek",
+        "Forward 5 Seconds"
+      ],
+      "shortcut": "Right",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 427,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Seek",
+        "Back 1 Minute"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 433,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Seek",
+        "Forward 1 Minute"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 439,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Seek",
+        "Back 5 Minutes"
+      ],
+      "shortcut": "<Ctrl><Alt>Left",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 445,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Seek",
+        "Forward 5 Minutes"
+      ],
+      "shortcut": "<Ctrl><Alt>Right",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 451,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Volume",
+        "Volume Up"
+      ],
+      "shortcut": "Up",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 457,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "Volume",
+        "Volume Down"
+      ],
+      "shortcut": "Down",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 463,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "View",
+        "Enter Fullscreen"
+      ],
+      "shortcut": "F",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 51,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    },
+    {
+      "path": [
+        "View",
+        "Exit Fullscreen"
+      ],
+      "shortcut": "Escape",
+      "repo": "dragon-player",
+      "file": "src/qml/PlayerPage.qml",
+      "line": 415,
+      "commit": "46ec059a8b0b2ae0627b86367010f0dd30c0950f"
+    }
+  ]
+}

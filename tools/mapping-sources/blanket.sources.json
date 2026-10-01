@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "app": "blanket",
+  "repos": {
+    "blanket": {
+      "url": "https://github.com/rafaelmardojai/blanket.git",
+      "commit": "9d229d2be7cb6619135d55ff9e49926e40298686"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Sounds",
+        "Play/Pause Sounds"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "blanket",
+      "file": "blanket/main.py",
+      "line": 159,
+      "commit": "9d229d2be7cb6619135d55ff9e49926e40298686"
+    },
+    {
+      "path": [
+        "Sounds",
+        "Add Sound…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "blanket",
+      "file": "blanket/main.py",
+      "line": 160,
+      "commit": "9d229d2be7cb6619135d55ff9e49926e40298686"
+    },
+    {
+      "path": [
+        "Sounds",
+        "Hide Inactive Sounds"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "blanket",
+      "file": "blanket/main.py",
+      "line": 162,
+      "commit": "9d229d2be7cb6619135d55ff9e49926e40298686"
+    },
+    {
+      "path": [
+        "Blanket",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "blanket",
+      "file": "blanket/main.py",
+      "line": 158,
+      "commit": "9d229d2be7cb6619135d55ff9e49926e40298686"
+    },
+    {
+      "path": [
+        "Blanket",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "blanket",
+      "file": "blanket/main.py",
+      "line": 161,
+      "commit": "9d229d2be7cb6619135d55ff9e49926e40298686"
+    },
+    {
+      "path": [
+        "Blanket",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "blanket",
+      "file": "blanket/main.py",
+      "line": 157,
+      "commit": "9d229d2be7cb6619135d55ff9e49926e40298686"
+    }
+  ]
+}

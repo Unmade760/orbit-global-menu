@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "app": "cine",
+  "name": "Cine",
+  "identifiers": [
+    "io.github.diegopvlk.Cine.desktop",
+    "io.github.diegopvlk.Cine",
+    "Cine"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open Files",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Open Folder",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Open URL",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "label": "Add Files to Playlist",
+          "shortcut": "<Ctrl><Shift>O"
+        },
+        {
+          "label": "Add Folder to Playlist",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "label": "Add URL to Playlist",
+          "shortcut": "<Ctrl><Shift>U"
+        },
+        {
+          "label": "Playlist",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Search Playlist",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Open Subtitles Menu",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Open Audio Menu",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Open Chapters Menu",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Watch History",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "label": "Show Shortcuts",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Save Session",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Save Session and Close",
+          "shortcut": "<Shift>Q"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Subtitles",
+      "items": [
+        {
+          "label": "Next Secondary Subtitle Track",
+          "shortcut": "<Alt>z"
+        },
+        {
+          "label": "Previous Secondary Subtitle Track",
+          "shortcut": "<Ctrl>z"
+        }
+      ]
+    },
+    {
+      "label": "Audio & Volume",
+      "items": [
+        {
+          "label": "Decrease Audio Delay",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Increase Audio Delay",
+          "shortcut": "<Ctrl>equal"
+        }
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {
+          "label": "Go Back One Frame",
+          "shortcut": "<Ctrl>bracketleft"
+        },
+        {
+          "label": "Advance One Frame",
+          "shortcut": "<Ctrl>bracketright"
+        },
+        {
+          "label": "Seek to the Previous Chapter",
+          "shortcut": "<Ctrl>Left"
+        },
+        {
+          "label": "Seek to the Next Chapter",
+          "shortcut": "<Ctrl>Right"
+        }
+      ]
+    },
+    {
+      "label": "Display & Video",
+      "items": [
+        {
+          "label": "Fullscreen",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {
+          "label": "Set/Clear A-B Loop Points",
+          "shortcut": "<Ctrl>l"
+        }
+      ]
+    }
+  ]
+}

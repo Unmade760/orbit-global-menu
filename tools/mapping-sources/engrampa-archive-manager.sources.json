@@ -1,0 +1,221 @@
+{
+  "format": 1,
+  "app": "engrampa-archive-manager",
+  "repos": {
+    "engrampa-archive-manager": {
+      "url": "https://github.com/mate-desktop/engrampa.git",
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Archive",
+        "New…"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 76,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Archive",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 77,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Archive",
+        "Extract…"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 79,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Archive",
+        "Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 80,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Archive",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 81,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 83,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 82,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 84,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rename…"
+      ],
+      "shortcut": "F2",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 85,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 86,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 87,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Edit",
+        "Deselect All"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 88,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 89,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "View",
+        "Folders"
+      ],
+      "shortcut": "F9",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 90,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "View",
+        "View All Files"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 91,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "View",
+        "View as a Folder"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 92,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "View",
+        "Stop"
+      ],
+      "shortcut": "Escape",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 93,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "View",
+        "Refresh"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 94,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "engrampa-archive-manager",
+      "file": "src/ui.h",
+      "line": 95,
+      "commit": "6975249401585f347faf4983e98cfef0516a4137"
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "format": 1,
+  "app": "dconf-editor",
+  "repos": {
+    "dconf-editor": {
+      "url": "https://gitlab.gnome.org/GNOME/dconf-editor.git",
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Actions",
+        "Bookmarks Menu"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 35,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Actions",
+        "Bookmark This Path"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 43,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Actions",
+        "Unbookmark This Path"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 51,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Actions",
+        "Actions Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 59,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Actions",
+        "Path Bar Menu"
+      ],
+      "shortcut": "<Shift>F10",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 67,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Path Bar Navigation",
+        "Open Root Folder"
+      ],
+      "shortcut": "<Shift><Alt>Up",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 82,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Path Bar Navigation",
+        "Open Parent Folder"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 90,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Path Bar Navigation",
+        "Open Active Direct Child"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 98,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Path Bar Navigation",
+        "Open Active Last Child"
+      ],
+      "shortcut": "<Shift><Alt>Down",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 106,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Search Options",
+        "Toggle Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 121,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Search Options",
+        "Search Again"
+      ],
+      "shortcut": "<Ctrl><Alt>F",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 129,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Search Options",
+        "Toggle Local Search"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 137,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Search Options",
+        "Search Again, Locally"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>F",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 145,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Search Options",
+        "Paste as Search"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 153,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Search Options",
+        "Paste as Search (Force)"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 161,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Search Options",
+        "Edit Path"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 169,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Search Options",
+        "Edit Parent Path"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 177,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Keys List Actions",
+        "Previous Line"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 216,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Keys List Actions",
+        "Next Line"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 224,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Keys List Actions",
+        "Toggle Folder Properties"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 232,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Keys List Actions",
+        "Set to Default"
+      ],
+      "shortcut": "<Ctrl>Delete",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 240,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Keys List Actions",
+        "Toggle Boolean Value"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 248,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Modifications List Actions",
+        "Toggle Modifications List"
+      ],
+      "shortcut": "<Alt>I",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 263,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Clipboard",
+        "Copy Descriptor"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 317,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Clipboard",
+        "Copy Path"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 325,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "General",
+        "Show This Help"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 294,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "General",
+        "About"
+      ],
+      "shortcut": "<Shift>F1",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 302,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Quit",
+        "Quit if There’s No Pending Changes"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 341,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Quit",
+        "Apply Pending Changes and Quit"
+      ],
+      "shortcut": "<Ctrl><Shift>Q",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 349,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    },
+    {
+      "path": [
+        "Quit",
+        "Dismiss Pending Changes and Quit"
+      ],
+      "shortcut": "<Alt>F4",
+      "repo": "dconf-editor",
+      "file": "editor/help-overlay.ui",
+      "line": 357,
+      "commit": "c32e8e622c403191123f616e3cb10832c1455808"
+    }
+  ]
+}

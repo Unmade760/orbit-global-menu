@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "app": "distroshelf",
+  "repos": {
+    "distroshelf": {
+      "url": "https://github.com/ranfdev/DistroShelf.git",
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 41,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "General",
+        "Settings"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 46,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "General",
+        "Command Log"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 51,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 40,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Containers",
+        "Refresh"
+      ],
+      "shortcut": "F5",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 42,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Containers",
+        "Upgrade Container"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 43,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Containers",
+        "Upgrade All"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 44,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Containers",
+        "Stop Container"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 50,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Containers",
+        "Delete Container"
+      ],
+      "shortcut": "<Ctrl>Delete",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 49,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Containers",
+        "Open Terminal"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 47,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Containers",
+        "Install Package"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 45,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Containers",
+        "View Exportable Apps"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "distroshelf",
+      "file": "src/models/root_store.rs",
+      "line": 48,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "distroshelf",
+      "file": "src/widgets/integrated_terminal.rs",
+      "line": 201,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "distroshelf",
+      "file": "src/widgets/integrated_terminal.rs",
+      "line": 208,
+      "commit": "1b85cb06dded02c758057b8a55fc956d4112df80"
+    }
+  ]
+}

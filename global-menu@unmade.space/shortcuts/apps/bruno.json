@@ -1,0 +1,108 @@
+{
+  "format": 1,
+  "app": "bruno",
+  "name": "Bruno",
+  "identifiers": [
+    "com.usebruno.Bruno.desktop",
+    "com.usebruno.Bruno",
+    "bruno",
+    "Bruno"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Close Tab",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Bruno",
+          "shortcut": "<Ctrl><Shift>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl>Y"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Toggle Developer Tools",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reset Zoom",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>equal"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Full Screen",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Request",
+      "items": [
+        {
+          "label": "Send Request",
+          "shortcut": "<Ctrl>Return"
+        }
+      ]
+    }
+  ]
+}

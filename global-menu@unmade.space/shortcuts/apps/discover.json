@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "app": "discover",
+  "name": "Discover",
+  "identifiers": [
+    "org.kde.discover.desktop",
+    "org.kde.discover",
+    "plasma-discover",
+    "Discover"
+  ],
+  "menus": [
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Refresh",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Page Down",
+          "shortcut": "Page_Down"
+        },
+        {
+          "label": "Page Up",
+          "shortcut": "Page_Up"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Back",
+          "shortcut": "Escape"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "About",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

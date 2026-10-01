@@ -1,0 +1,328 @@
+{
+  "format": 1,
+  "app": "equibop",
+  "repos": {
+    "equibop": {
+      "url": "https://github.com/Equicord/Equibop.git",
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Equibop",
+        "Relaunch"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 110,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "File",
+        "Create or Join a Server"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + Shift + N"
+    },
+    {
+      "path": [
+        "File",
+        "Create a Private Group"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + Shift + T"
+    },
+    {
+      "path": [
+        "File",
+        "Upload a File"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + Shift + U"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 148,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 198,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 198,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 198,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 198,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 198,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 198,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "Insert",
+        "Toggle Emoji Picker"
+      ],
+      "shortcut": "<Ctrl>E",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + E"
+    },
+    {
+      "path": [
+        "View",
+        "Reload"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 199,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 199,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "View",
+        "Actual Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 199,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 166,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 199,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "equibop",
+      "file": "src/main/mainWindow.ts",
+      "line": 199,
+      "commit": "83b88c5c378d17d3550f53591a75eefaa74b2822"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Pins Popout"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + P"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Mentions Popout"
+      ],
+      "shortcut": "<Ctrl>I",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + I"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Channel Member List"
+      ],
+      "shortcut": "<Ctrl>U",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + U"
+    },
+    {
+      "path": [
+        "Go",
+        "Find or Start a Direct Message"
+      ],
+      "shortcut": "<Ctrl>K",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + K"
+    },
+    {
+      "path": [
+        "Go",
+        "Return to Previous Text Channel"
+      ],
+      "shortcut": "<Ctrl>B",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + B"
+    },
+    {
+      "path": [
+        "Go",
+        "Mark Server Read"
+      ],
+      "shortcut": "<Shift>Escape",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Shift + Escape"
+    },
+    {
+      "path": [
+        "Go",
+        "Mark Channel as Read"
+      ],
+      "shortcut": "Escape",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Mark Channel as Read\nEscape"
+    },
+    {
+      "path": [
+        "Go",
+        "Return to Connected Audio Channel"
+      ],
+      "shortcut": "<Alt>Left",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "ALT + Left Arrow Key"
+    },
+    {
+      "path": [
+        "Voice",
+        "Toggle Mute"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + Shift + M"
+    },
+    {
+      "path": [
+        "Voice",
+        "Toggle Deafen"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + Shift + D"
+    },
+    {
+      "path": [
+        "Voice",
+        "Return to Active Audio Channel"
+      ],
+      "shortcut": "<Ctrl><Alt>A",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + ALT + A"
+    },
+    {
+      "path": [
+        "Voice",
+        "Answer Incoming Call"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + Enter"
+    },
+    {
+      "path": [
+        "Help",
+        "Toggle Hotkeys"
+      ],
+      "shortcut": "<Ctrl>slash",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + Slash"
+    },
+    {
+      "path": [
+        "Help",
+        "Get Help"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "url": "https://support.discord.com/hc/en-us/articles/225977308-Discord-Keyboard-Shortcuts",
+      "quote": "Control + Shift + H"
+    }
+  ]
+}

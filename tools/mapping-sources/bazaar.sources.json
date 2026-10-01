@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "app": "bazaar",
+  "repos": {
+    "bazaar": {
+      "url": "https://gitlab.gnome.org/World/bazaar.git",
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Navigation",
+        "Open Explore Page"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "bazaar",
+      "file": "src/shortcuts-dialog.blp",
+      "line": 10,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Open Library Page"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "bazaar",
+      "file": "src/shortcuts-dialog.blp",
+      "line": 16,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Open Search Page"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "bazaar",
+      "file": "src/bz-application.c",
+      "line": 937,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Back"
+      ],
+      "shortcut": "Escape",
+      "repo": "bazaar",
+      "file": "src/bz-window.blp",
+      "line": 15,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Remotes",
+        "Sync Remotes"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "bazaar",
+      "file": "src/bz-application.c",
+      "line": 933,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "General",
+        "Open Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "bazaar",
+      "file": "src/bz-application.c",
+      "line": 929,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "General",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "bazaar",
+      "file": "src/shortcuts-dialog.blp",
+      "line": 48,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "General",
+        "Quit Bazaar"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "bazaar",
+      "file": "src/bz-application.c",
+      "line": 925,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Screenshots",
+        "Previous Screenshot"
+      ],
+      "shortcut": "Left",
+      "repo": "bazaar",
+      "file": "src/bz-screenshot-page.blp",
+      "line": 7,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Screenshots",
+        "Next Screenshot"
+      ],
+      "shortcut": "Right",
+      "repo": "bazaar",
+      "file": "src/bz-screenshot-page.blp",
+      "line": 12,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Screenshots",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "bazaar",
+      "file": "src/bz-screenshot-page.blp",
+      "line": 17,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Screenshots",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "bazaar",
+      "file": "src/bz-screenshot-page.blp",
+      "line": 22,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Screenshots",
+        "Reset View"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "bazaar",
+      "file": "src/bz-screenshot-page.blp",
+      "line": 27,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Screenshots",
+        "Copy Image"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "bazaar",
+      "file": "src/bz-screenshot-page.blp",
+      "line": 32,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Debug",
+        "Open Bazaar Inspector"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>I",
+      "repo": "bazaar",
+      "file": "src/bz-application.c",
+      "line": 941,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    },
+    {
+      "path": [
+        "Debug",
+        "Toggle Debug Mode"
+      ],
+      "shortcut": "<Ctrl><Alt>D",
+      "repo": "bazaar",
+      "file": "src/bz-application.c",
+      "line": 945,
+      "commit": "f69440877398f9c99f2b53e978e89d109fb51031"
+    }
+  ]
+}

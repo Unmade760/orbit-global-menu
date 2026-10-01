@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "app": "distroshelf",
+  "name": "DistroShelf",
+  "identifiers": [
+    "com.ranfdev.DistroShelf.desktop",
+    "com.ranfdev.DistroShelf",
+    "distroshelf"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "label": "Settings",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Command Log",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Containers",
+      "items": [
+        {
+          "label": "Refresh",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Upgrade Container",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "label": "Upgrade All",
+          "shortcut": "<Ctrl><Shift>U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Stop Container",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Delete Container",
+          "shortcut": "<Ctrl>Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Open Terminal",
+          "shortcut": "<Ctrl>period"
+        },
+        {
+          "label": "Install Package",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "View Exportable Apps",
+          "shortcut": "<Ctrl>E"
+        }
+      ]
+    },
+    {
+      "label": "Terminal",
+      "items": [
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl><Shift>V"
+        }
+      ]
+    }
+  ]
+}

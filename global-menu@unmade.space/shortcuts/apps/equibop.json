@@ -1,0 +1,217 @@
+{
+  "format": 1,
+  "app": "equibop",
+  "name": "Equibop",
+  "identifiers": [
+    "org.equicord.equibop.desktop",
+    "org.equicord.equibop",
+    "equibop",
+    "Equibop"
+  ],
+  "menus": [
+    {
+      "label": "Equibop",
+      "items": [
+        {
+          "label": "Relaunch",
+          "shortcut": "<Ctrl><Shift>R"
+        }
+      ]
+    },
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Create or Join a Server",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "label": "Create a Private Group",
+          "shortcut": "<Ctrl><Shift>T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Upload a File",
+          "shortcut": "<Ctrl><Shift>U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        }
+      ]
+    },
+    {
+      "label": "Insert",
+      "items": [
+        {
+          "label": "Toggle Emoji Picker",
+          "shortcut": "<Ctrl>E"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Reload",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Force Reload"
+        },
+        {
+          "label": "Toggle Developer Tools",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Actual Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>equal"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Pins Popout",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Toggle Mentions Popout",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Toggle Channel Member List",
+          "shortcut": "<Ctrl>U"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Find or Start a Direct Message",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Return to Previous Text Channel",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Mark Server Read",
+          "shortcut": "<Shift>Escape"
+        },
+        {
+          "label": "Mark Channel as Read",
+          "shortcut": "Escape"
+        },
+        {
+          "label": "Return to Connected Audio Channel",
+          "shortcut": "<Alt>Left"
+        }
+      ]
+    },
+    {
+      "label": "Voice",
+      "items": [
+        {
+          "label": "Toggle Mute",
+          "shortcut": "<Ctrl><Shift>M"
+        },
+        {
+          "label": "Toggle Deafen",
+          "shortcut": "<Ctrl><Shift>D"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Return to Active Audio Channel",
+          "shortcut": "<Ctrl><Alt>A"
+        },
+        {
+          "label": "Answer Incoming Call",
+          "shortcut": "<Ctrl>Return"
+        },
+        {
+          "label": "Decline Incoming Call"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Toggle Hotkeys",
+          "shortcut": "<Ctrl>slash"
+        },
+        {
+          "label": "Get Help",
+          "shortcut": "<Ctrl><Shift>H"
+        }
+      ]
+    }
+  ]
+}

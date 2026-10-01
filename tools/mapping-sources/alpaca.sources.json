@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "app": "alpaca",
+  "repos": {
+    "alpaca": {
+      "url": "https://github.com/Jeffser/Alpaca.git",
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Chat",
+        "New Chat"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 372,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "Chat",
+        "New Folder"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 373,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "Chat",
+        "Edit Chat"
+      ],
+      "shortcut": "F2",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 381,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "Chat",
+        "Delete Chat"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 380,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "Chat",
+        "Toggle Searchbars"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 384,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Sidebar"
+      ],
+      "shortcut": "F9",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 383,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 400,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 401,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "Models",
+        "Model Manager"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 385,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "Models",
+        "Instance Manager"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 387,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "Models",
+        "Quick Ask"
+      ],
+      "shortcut": "<Ctrl><Alt>A",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 396,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "Message",
+        "Insert New Line"
+      ],
+      "shortcut": "<Shift>Return",
+      "repo": "alpaca",
+      "file": "src/ui/shortcuts.blp",
+      "line": 98,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "Message",
+        "Send Message as User"
+      ],
+      "shortcut": "Return",
+      "repo": "alpaca",
+      "file": "src/ui/shortcuts.blp",
+      "line": 109,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "General",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "alpaca",
+      "file": "src/window.py",
+      "line": 399,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "alpaca",
+      "file": "src/main.py",
+      "line": 156,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "alpaca",
+      "file": "src/main.py",
+      "line": 154,
+      "commit": "87137b09e34957917aa9cac49ceef9387e337583"
+    }
+  ]
+}

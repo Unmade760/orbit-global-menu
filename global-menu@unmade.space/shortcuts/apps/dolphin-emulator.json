@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "app": "dolphin-emulator",
+  "name": "Dolphin Emulator",
+  "identifiers": [
+    "dolphin-emu.desktop",
+    "dolphin-emu",
+    "org.DolphinEmu.dolphin-emu.desktop",
+    "org.DolphinEmu.dolphin-emu",
+    "Dolphin Emulator"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Open...", "shortcut": "<Ctrl>O"},
+        {"separator": true},
+        {"label": "Exit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Emulation",
+      "items": [
+        {"label": "Pause", "shortcut": "F10"},
+        {"label": "Stop", "shortcut": "Escape"},
+        {"label": "Toggle Fullscreen", "shortcut": "<Alt>Return"},
+        {"label": "Take Screenshot", "shortcut": "F9"},
+        {"label": "Disable Emulation Speed Limit", "shortcut": "Tab"},
+        {"separator": true},
+        {
+          "label": "Load State",
+          "items": [
+            {
+              "label": "Load State from Slot",
+              "items": [
+                {"label": "Slot 1", "shortcut": "F1"},
+                {"label": "Slot 2", "shortcut": "F2"},
+                {"label": "Slot 3", "shortcut": "F3"},
+                {"label": "Slot 4", "shortcut": "F4"},
+                {"label": "Slot 5", "shortcut": "F5"},
+                {"label": "Slot 6", "shortcut": "F6"},
+                {"label": "Slot 7", "shortcut": "F7"},
+                {"label": "Slot 8", "shortcut": "F8"}
+              ]
+            },
+            {"label": "Undo Load State", "shortcut": "F12"}
+          ]
+        },
+        {
+          "label": "Save State",
+          "items": [
+            {
+              "label": "Save State to Slot",
+              "items": [
+                {"label": "Slot 1", "shortcut": "<Shift>F1"},
+                {"label": "Slot 2", "shortcut": "<Shift>F2"},
+                {"label": "Slot 3", "shortcut": "<Shift>F3"},
+                {"label": "Slot 4", "shortcut": "<Shift>F4"},
+                {"label": "Slot 5", "shortcut": "<Shift>F5"},
+                {"label": "Slot 6", "shortcut": "<Shift>F6"},
+                {"label": "Slot 7", "shortcut": "<Shift>F7"},
+                {"label": "Slot 8", "shortcut": "<Shift>F8"}
+              ]
+            },
+            {"label": "Undo Save State", "shortcut": "<Shift>F12"}
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Connect Wii Remotes",
+          "items": [
+            {"label": "Connect Wii Remote 1"},
+            {"label": "Connect Wii Remote 2"},
+            {"label": "Connect Wii Remote 3"},
+            {"label": "Connect Wii Remote 4"},
+            {"separator": true},
+            {"label": "Connect Balance Board", "shortcut": "<Alt>F9"}
+          ]
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Search", "shortcut": "<Ctrl>F"},
+        {"separator": true},
+        {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"}
+      ]
+    },
+    {
+      "label": "Debugging",
+      "items": [
+        {"label": "Step Into", "shortcut": "F11"},
+        {"label": "Step Over", "shortcut": "<Shift>F10"},
+        {"label": "Step Out", "shortcut": "<Shift>F11"}
+      ]
+    }
+  ]
+}

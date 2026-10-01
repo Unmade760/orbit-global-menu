@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "app": "camera",
+  "repos": {
+    "snapshot": {
+      "url": "https://gitlab.gnome.org/GNOME/snapshot.git",
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Main Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "snapshot",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 16,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "General",
+        "Open Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "snapshot",
+      "file": "src/application.rs",
+      "line": 140,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "General",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "snapshot",
+      "file": "src/application.rs",
+      "line": 141,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "snapshot",
+      "file": "src/application.rs",
+      "line": 139,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "Camera",
+        "Picture Mode"
+      ],
+      "shortcut": "P",
+      "repo": "snapshot",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 45,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "Camera",
+        "Recording Mode"
+      ],
+      "shortcut": "R",
+      "repo": "snapshot",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 51,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "Camera",
+        "Take Picture or Start Recording"
+      ],
+      "shortcut": "T",
+      "repo": "snapshot",
+      "file": "src/application.rs",
+      "line": 142,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "Camera",
+        "Show/Hide Composition Guidelines"
+      ],
+      "shortcut": "C",
+      "repo": "snapshot",
+      "file": "src/application.rs",
+      "line": 144,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "Gallery",
+        "Open/Close Gallery"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "snapshot",
+      "file": "src/application.rs",
+      "line": 143,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "Gallery",
+        "Next"
+      ],
+      "shortcut": "Right",
+      "repo": "snapshot",
+      "file": "src/widgets/gallery.rs",
+      "line": 76,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    },
+    {
+      "path": [
+        "Gallery",
+        "Previous"
+      ],
+      "shortcut": "Left",
+      "repo": "snapshot",
+      "file": "src/widgets/gallery.rs",
+      "line": 86,
+      "commit": "77eb167485ef94512c1f3fc58cda1433f698e38d"
+    }
+  ]
+}

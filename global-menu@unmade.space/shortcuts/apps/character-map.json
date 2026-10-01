@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "app": "character-map",
+  "name": "Character Map",
+  "identifiers": [
+    "gucharmap.desktop",
+    "gucharmap",
+    "Character Map"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Normal Size",
+          "shortcut": "<Ctrl>0"
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {
+          "label": "Find",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Ctrl><Shift>G"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Next Character",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Previous Character",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Next Script",
+          "shortcut": "<Ctrl>Page_Down"
+        },
+        {
+          "label": "Previous Script",
+          "shortcut": "<Ctrl>Page_Up"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Contents",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

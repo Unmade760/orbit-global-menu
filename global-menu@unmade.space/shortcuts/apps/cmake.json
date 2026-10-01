@@ -1,0 +1,105 @@
+{
+  "format": 1,
+  "app": "cmake",
+  "name": "CMake",
+  "identifiers": [
+    "cmake-gui.desktop",
+    "cmake-gui",
+    "CMake",
+    "CMakeSetup"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Reload Cache"
+        },
+        {
+          "label": "Delete Cache"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Exit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Configure"
+        },
+        {
+          "label": "Generate"
+        },
+        {
+          "label": "Show My Changes"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Regular Expression Explorer..."
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find in Output...",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Goto Next Error",
+          "shortcut": "F8"
+        }
+      ]
+    },
+    {
+      "label": "Options",
+      "items": [
+        {
+          "label": "Warning Messages..."
+        },
+        {
+          "label": "Debug Output"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Expand Grouped Entries"
+        },
+        {
+          "label": "Collapse Grouped Entries"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Help",
+          "shortcut": "F1"
+        },
+        {
+          "label": "CMake Reference Manual"
+        },
+        {
+          "label": "About"
+        }
+      ]
+    }
+  ]
+}

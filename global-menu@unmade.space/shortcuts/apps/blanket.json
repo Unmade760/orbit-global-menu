@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "app": "blanket",
+  "name": "Blanket",
+  "identifiers": [
+    "com.rafaelmardojai.Blanket.desktop",
+    "com.rafaelmardojai.Blanket",
+    "Blanket"
+  ],
+  "menus": [
+    {
+      "label": "Sounds",
+      "items": [
+        {
+          "label": "Play/Pause Sounds",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Add Sound…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Hide Inactive Sounds",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "label": "Save as New Preset…"
+        }
+      ]
+    },
+    {
+      "label": "Blanket",
+      "items": [
+        {
+          "label": "Keep Playing when Closed"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Keyboard Shortcuts"
+        },
+        {
+          "label": "About Blanket"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    }
+  ]
+}

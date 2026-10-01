@@ -1,0 +1,168 @@
+{
+  "format": 1,
+  "app": "bambu-studio",
+  "name": "Bambu Studio",
+  "identifiers": [
+    "com.bambulab.BambuStudio.desktop",
+    "com.bambulab.BambuStudio",
+    "BambuStudio.desktop",
+    "BambuStudio",
+    "bambu-studio",
+    "Bambu Studio"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New Project",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open Project…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Save Project",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save Project as…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Import",
+          "items": [
+            {
+              "label": "Import 3MF/STL/STEP/SVG/OBJ/AMF…",
+              "shortcut": "<Ctrl>I"
+            }
+          ]
+        },
+        {
+          "label": "Export",
+          "items": [
+            {
+              "label": "Export Plate Sliced File…",
+              "shortcut": "<Ctrl>G"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Slice Plate",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Print Plate",
+          "shortcut": "<Ctrl><Shift>G"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl>Y"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Delete Selected",
+          "shortcut": "Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Deselect All",
+          "shortcut": "Escape"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>P"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Default View",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Top",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Bottom",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Front",
+          "shortcut": "<Ctrl>3"
+        },
+        {
+          "label": "Rear",
+          "shortcut": "<Ctrl>4"
+        },
+        {
+          "label": "Left",
+          "shortcut": "<Ctrl>5"
+        },
+        {
+          "label": "Right",
+          "shortcut": "<Ctrl>6"
+        }
+      ]
+    },
+    {
+      "label": "Plater",
+      "items": [
+        {
+          "label": "Arrange Objects on Selected Plates",
+          "shortcut": "<Shift>A"
+        },
+        {
+          "label": "Auto Orient",
+          "shortcut": "<Shift>R"
+        },
+        {
+          "label": "Collapse/Expand the Sidebar",
+          "shortcut": "<Shift>Tab"
+        }
+      ]
+    }
+  ]
+}
