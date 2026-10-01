@@ -46,9 +46,11 @@ class MenuTreeCache {
 	}
 
 	/**
-	 * Store a tree that just arrived from the daemon. It answers the most
+	 * Store a tree that arrived from the daemon. It answers the most
 	 * recent get(), since a window switch always queries the cache before it
 	 * asks the daemon.
+	 *
+	 * @param {object[]} items - the tree's top-level nodes
 	 */
 	storeForLastQuery(items) {
 		const key = this._lastQueried;
@@ -81,7 +83,8 @@ class MenuBar {
 					this._cache.storeForLastQuery(items);
 				this.setMenuTree(items);
 			},
-			// The window it should have been told about is still focused
+			// A daemon that started after enable(), or restarted after a
+			// crash, has not been told which window is focused
 			onDaemonAppeared: () => this.refresh(),
 		});
 		this._native = new NativeMenu(this._proxy, uuid);
@@ -106,7 +109,11 @@ class MenuBar {
 		this._fallback?.setNativeMenusPresent(this._native.hasMenus() || this._shortcuts.hasMenus());
 	}
 
-	/** Native tree beats shortcut mapping beats generic fallback. */
+	/**
+	 * Native tree beats shortcut mapping beats generic fallback.
+	 *
+	 * @param {object[]} items - the daemon's tree, empty when the app has none
+	 */
 	setMenuTree(items) {
 		this._native.setItems(items);
 		if (items.length > 0) {
@@ -288,8 +295,8 @@ const ifaceXml = `
 
 const MenuProxy = Gio.DBusProxy.makeProxyWrapper(ifaceXml);
 
-// What a call gets back when the daemon is not running, or exits or hangs
-// before it answers. daemon.js reports a missing or crashed daemon once.
+// What a call gets back when the daemon is not running, or exits before it
+// answers. daemon.js reports a missing or crashed daemon once.
 const DAEMON_GONE_ERRORS = [
 	Gio.DBusError.SERVICE_UNKNOWN,
 	Gio.DBusError.NAME_HAS_NO_OWNER,
@@ -354,7 +361,8 @@ class DaemonProxy {
 		// that comes up afterwards would leave signals nobody disconnects.
 		if (this._cancellable.is_cancelled())
 			return;
-		// Not a missing daemon: the proxy comes up without a name owner
+		// A missing daemon is not one of these errors: the proxy comes up
+		// without a name owner
 		if (error) {
 			console.warn(`[global-menu] no proxy for ${BUS_NAME}: ${error.message}`);
 			return;
@@ -365,8 +373,8 @@ class DaemonProxy {
 			this._proxy.connectSignal('RequestWindowActionsSignal', this._onRequestWindowActions.bind(this)),
 			this._proxy.connectSignal('ActivateWindowActionSignal', this._onActivateWindowAction.bind(this))
 		);
-		// The daemon that enable() just spawned, and every restart. One
-		// that owned the name before this point is never notified, so it is
+		// The daemon that enable() spawned, and every restart. One that
+		// owned the name before this point is never notified, so it is
 		// announced here.
 		this._ownerChangedId = this._proxy.connect('notify::g-name-owner', () => {
 			if (this._proxy.g_name_owner)
@@ -474,9 +482,9 @@ export default class GlobalMenuExtension extends Extension {
 
 	_toggleFallback() {
 		const enabled = this._settings.get_boolean('enable-fallback-menu');
-		if (enabled && !this._fallback)
+		if (enabled && !this._fallback) {
 			this._fallback = new FallbackMenu(this.uuid);
-		else if (!enabled && this._fallback) {
+		} else if (!enabled && this._fallback) {
 			this._fallback.destroy();
 			this._fallback = null;
 		}
