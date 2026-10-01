@@ -1,0 +1,793 @@
+{
+  "format": 1,
+  "app": "losslesscut",
+  "repos": {
+    "losslesscut": {
+      "url": "https://github.com/mifi/lossless-cut",
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 33,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 53,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "File",
+        "Settings"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 219,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 243,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 244,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 246,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 247,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 248,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 249,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 380,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Font Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 381,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "View",
+        "Increase Font Size"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 382,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "View",
+        "Decrease Font Size"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 383,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Tools",
+        "Toggle Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "losslesscut",
+      "file": "src/main/menu.ts",
+      "line": 442,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause"
+      ],
+      "shortcut": "space",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 18,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause (No Reset Speed)"
+      ],
+      "shortcut": "K",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 19,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Speed Up Playback"
+      ],
+      "shortcut": "L",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 22,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Slow Down Playback"
+      ],
+      "shortcut": "J",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 20,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Speed Up Playback More"
+      ],
+      "shortcut": "<Shift>L",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 23,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Slow Down Playback More"
+      ],
+      "shortcut": "<Shift>J",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 21,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Increase Audio Volume"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 93,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Decrease Audio Volume"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 94,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Mute Preview"
+      ],
+      "shortcut": "M",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 95,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Make Cursor Time Zero"
+      ],
+      "shortcut": "<Shift>Z",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 25,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Step Backward 1 Frame"
+      ],
+      "shortcut": "comma",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 26,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Step Forward 1 Frame"
+      ],
+      "shortcut": "period",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 27,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Backward Seek"
+      ],
+      "shortcut": "Left",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 43,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Forward Seek"
+      ],
+      "shortcut": "Right",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 50,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Backward Seek (Longer)"
+      ],
+      "shortcut": "<Ctrl><Shift>Left",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 44,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Forward Seek (Longer)"
+      ],
+      "shortcut": "<Ctrl><Shift>Right",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 51,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Seek Previous Keyframe"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 47,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Seek Next Keyframe"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 54,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Seek Backward 1% of Timeline at Current Zoom"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 45,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Seek Forward 1% of Timeline at Current Zoom"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 52,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Jump to Current Segment's Start Time"
+      ],
+      "shortcut": "<Shift>Left",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 48,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Jump to Current Segment's End Time"
+      ],
+      "shortcut": "<Shift>Right",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 55,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Jump to Start of Video"
+      ],
+      "shortcut": "<Ctrl>Home",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 57,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Jump to End of Video"
+      ],
+      "shortcut": "<Ctrl>End",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 58,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Seeking",
+        "Seek to Timecode"
+      ],
+      "shortcut": "G",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 39,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Add Cut Segment"
+      ],
+      "shortcut": "<Shift>equal",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 17,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Remove Current Segment Cutpoint"
+      ],
+      "shortcut": "BackSpace",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 35,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Start Current Segment at Current Time"
+      ],
+      "shortcut": "I",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 33,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "End Current Segment at Current Time"
+      ],
+      "shortcut": "O",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 34,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Label Current Segment"
+      ],
+      "shortcut": "Return",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 88,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Split Segment at Cursor"
+      ],
+      "shortcut": "B",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 37,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Jump to Previous Segment"
+      ],
+      "shortcut": "Up",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 61,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Jump & Seek to Previous Segment"
+      ],
+      "shortcut": "<Shift><Alt>Up",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 63,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Jump to Next Segment"
+      ],
+      "shortcut": "Down",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 70,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Jump & Seek to Next Segment"
+      ],
+      "shortcut": "<Shift><Alt>Down",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 72,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Jump to First Segment"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 60,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Jump & Seek to First Segment"
+      ],
+      "shortcut": "<Shift><Alt>Page_Up",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 62,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Jump to Last Segment"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 69,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Segments and Cut Points",
+        "Jump & Seek to Last Segment"
+      ],
+      "shortcut": "<Shift><Alt>Page_Down",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 71,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Timeline/Zoom Operations",
+        "Zoom in Timeline"
+      ],
+      "shortcut": "<Ctrl>Up",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 64,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Timeline/Zoom Operations",
+        "Zoom Out Timeline"
+      ],
+      "shortcut": "<Ctrl>Down",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 73,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Timeline/Zoom Operations",
+        "Toggle Zoom Between 1x and a Calculated Comfortable Zoom Level"
+      ],
+      "shortcut": "Z",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 24,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Output Actions",
+        "Export Segment(s)"
+      ],
+      "shortcut": "E",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 90,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Output Actions",
+        "Capture Snapshot"
+      ],
+      "shortcut": "C",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 28,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Output Actions",
+        "Capture Snapshot to Clipboard"
+      ],
+      "shortcut": "<Shift>C",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 31,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Output Actions",
+        "Delete Source File"
+      ],
+      "shortcut": "D",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 36,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Batch File List",
+        "Previous File"
+      ],
+      "shortcut": "<Shift>Up",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 66,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Batch File List",
+        "Open Previous File"
+      ],
+      "shortcut": "<Ctrl><Shift>Up",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 67,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Batch File List",
+        "Next File"
+      ],
+      "shortcut": "<Shift>Down",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 75,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Batch File List",
+        "Open Next File"
+      ],
+      "shortcut": "<Ctrl><Shift>Down",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 76,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Batch File List",
+        "Open Selected File"
+      ],
+      "shortcut": "<Shift>Return",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 78,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Other Operations",
+        "Keyboard & Mouse Shortcuts"
+      ],
+      "shortcut": "<Shift>slash",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 91,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Other Operations",
+        "Keep or Discard All Tracks"
+      ],
+      "shortcut": "T",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 40,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Other Operations",
+        "Toggle Tracks Using Current Filter"
+      ],
+      "shortcut": "<Shift>T",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 41,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Other Operations",
+        "Change Rotation"
+      ],
+      "shortcut": "R",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 38,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Other Operations",
+        "Copy Selected Segments Times to Clipboard"
+      ],
+      "shortcut": "<Ctrl><Alt>C",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 29,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    },
+    {
+      "path": [
+        "Other Operations",
+        "Toggle Full Screen Video"
+      ],
+      "shortcut": "F",
+      "repo": "losslesscut",
+      "file": "src/main/configStore.ts",
+      "line": 86,
+      "commit": "85cb95f6aeaed9c26dfe64fd5ac6c6ac7760c55f"
+    }
+  ]
+}

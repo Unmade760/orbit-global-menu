@@ -1,0 +1,565 @@
+{
+  "format": 1,
+  "app": "microsoft-edge",
+  "repos": {},
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl>T",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + T Open a new tab and switch to it"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + N Open a new window"
+    },
+    {
+      "path": [
+        "File",
+        "New InPrivate Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + N Open a new InPrivate window"
+    },
+    {
+      "path": [
+        "File",
+        "Reopen Closed Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + T Reopen the last closed tab, and switch to it"
+    },
+    {
+      "path": [
+        "File",
+        "Open File"
+      ],
+      "shortcut": "<Ctrl>O",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + O Open a file from your computer in Edge"
+    },
+    {
+      "path": [
+        "File",
+        "Open Location"
+      ],
+      "shortcut": "<Ctrl>L",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + L Select the URL in the address bar to edit"
+    },
+    {
+      "path": [
+        "File",
+        "Open Location (Alternate)"
+      ],
+      "shortcut": "<Alt>D",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Alt + D Select the URL in the address bar to edit"
+    },
+    {
+      "path": [
+        "File",
+        "Save Page As"
+      ],
+      "shortcut": "<Ctrl>S",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + S Save the current page"
+    },
+    {
+      "path": [
+        "File",
+        "Print"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + P Print the current page"
+    },
+    {
+      "path": [
+        "File",
+        "Print Using System Dialog"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + P Print using the system dialog"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + W Close the current tab"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab (Alternate)"
+      ],
+      "shortcut": "<Ctrl>F4",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + F4 Close the current tab"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + W Close the current window"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window (Alternate)"
+      ],
+      "shortcut": "<Alt>F4",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Alt + F4 Close the current window"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Without Formatting"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + V Paste without formatting"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find on Page"
+      ],
+      "shortcut": "<Ctrl>F",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + F Open find on page"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find on Page (Alternate)"
+      ],
+      "shortcut": "F3",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "F3 Find in the current tab"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + G Jump to the next result for find on page"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + G Jump to the previous result for find on page"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search From Address Bar"
+      ],
+      "shortcut": "<Ctrl>E",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + E Open a search query in the address bar"
+    },
+    {
+      "path": [
+        "Edit",
+        "Search From Address Bar (Alternate)"
+      ],
+      "shortcut": "<Ctrl>K",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + K Open a search query in the address bar"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste and Search"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + L Paste and search or Paste and go (if it's a URL)"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clear Browsing Data"
+      ],
+      "shortcut": "<Ctrl><Shift>Delete",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + Delete Open clear browsing data options"
+    },
+    {
+      "path": [
+        "View",
+        "Reload"
+      ],
+      "shortcut": "<Ctrl>R",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + R Reload the current page"
+    },
+    {
+      "path": [
+        "View",
+        "Reload (Alternate)"
+      ],
+      "shortcut": "F5",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "F5 Reload the current tab"
+    },
+    {
+      "path": [
+        "View",
+        "Reload Ignoring Cache"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + R Reload the current page, ignoring cached content"
+    },
+    {
+      "path": [
+        "View",
+        "Reload Ignoring Cache (Alternate)"
+      ],
+      "shortcut": "<Shift>F5",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Shift + F5 Reload the current tab, ignoring cached content"
+    },
+    {
+      "path": [
+        "View",
+        "Stop Loading"
+      ],
+      "shortcut": "Escape",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Esc Stop loading page; close dialog or pop-up"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Plus ( + ) Zoom in"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Minus ( - )"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + 0 (zero) Reset page zoom level"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen"
+      ],
+      "shortcut": "F11",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "F11 Enter full screen (toggle)"
+    },
+    {
+      "path": [
+        "View",
+        "Immersive Reader"
+      ],
+      "shortcut": "F9",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "F9 Enter or exit Immersive Reader"
+    },
+    {
+      "path": [
+        "View",
+        "Read Aloud"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + U Start or stop Read Aloud"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Caret Browsing"
+      ],
+      "shortcut": "F7",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "F7 Turn caret browsing on or off"
+    },
+    {
+      "path": [
+        "View",
+        "Open Settings and More"
+      ],
+      "shortcut": "<Alt>F",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Alt + F Open the Settings and more"
+    },
+    {
+      "path": [
+        "View",
+        "Open Settings and More (Alternate)"
+      ],
+      "shortcut": "<Alt>E",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Alt + E Open the Settings and more"
+    },
+    {
+      "path": [
+        "View",
+        "Open Sidebar Search"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + E Open search in sidebar"
+    },
+    {
+      "path": [
+        "Tools",
+        "View Source"
+      ],
+      "shortcut": "<Ctrl>U",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + U View source"
+    },
+    {
+      "path": [
+        "Tools",
+        "Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + I Open Developer Tools"
+    },
+    {
+      "path": [
+        "Tools",
+        "Developer Tools (Alternate)"
+      ],
+      "shortcut": "F12",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "F12 Open Developer Tools"
+    },
+    {
+      "path": [
+        "Tools",
+        "Send Feedback"
+      ],
+      "shortcut": "<Shift><Alt>I",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Alt + Shift + I Open the Send feedback dialog"
+    },
+    {
+      "path": [
+        "Tools",
+        "Open Help"
+      ],
+      "shortcut": "F1",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "F1 Open Help"
+    },
+    {
+      "path": [
+        "Tools",
+        "Switch Profile or Guest"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + M Sign in as a different user or browse as a Guest"
+    },
+    {
+      "path": [
+        "History",
+        "Go Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Alt + Left arrow Go back"
+    },
+    {
+      "path": [
+        "History",
+        "Go Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Alt + Right arrow Go forward"
+    },
+    {
+      "path": [
+        "History",
+        "Open Home Page"
+      ],
+      "shortcut": "<Alt>Home",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Alt + Home Open your home page in the current tab"
+    },
+    {
+      "path": [
+        "History",
+        "Open History"
+      ],
+      "shortcut": "<Ctrl>H",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + H Open History"
+    },
+    {
+      "path": [
+        "History",
+        "Open Downloads"
+      ],
+      "shortcut": "<Ctrl>J",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + J Open Downloads"
+    },
+    {
+      "path": [
+        "Favorites",
+        "Save Tab as Favorite"
+      ],
+      "shortcut": "<Ctrl>D",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + D Save the current tab as a favorite"
+    },
+    {
+      "path": [
+        "Favorites",
+        "Save All Tabs as Favorites"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + D Save all open tabs as favorites in a new folder"
+    },
+    {
+      "path": [
+        "Favorites",
+        "Show or Hide Favorites Bar"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + B Show or hide the favorites bar"
+    },
+    {
+      "path": [
+        "Favorites",
+        "Open Favorites"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + O Open Favorites"
+    },
+    {
+      "path": [
+        "Favorites",
+        "Focus Favorites Bar"
+      ],
+      "shortcut": "<Shift><Alt>B",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Alt + Shift + B Set focus on the first item in the favorites bar"
+    },
+    {
+      "path": [
+        "Favorites",
+        "Open Collections"
+      ],
+      "shortcut": "<Ctrl><Shift>Y",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + Y Open Collections"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Tab Switch to the next tab"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab (Alternate)"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + PgDn Switch to the next tab"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + Tab Switch to the previous tab"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab (Alternate)"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + PgUp Switch to the previous tab"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Last Tab"
+      ],
+      "shortcut": "<Ctrl>9",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + 9 Switch to the last tab"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Duplicate Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + Shift + K Duplicate the current tab"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Mute Tab"
+      ],
+      "shortcut": "<Ctrl>M",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+      "quote": "Ctrl + M Mute the current tab (toggle)"
+    }
+  ]
+}

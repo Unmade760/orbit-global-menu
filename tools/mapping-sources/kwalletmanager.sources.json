@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "app": "kwalletmanager",
+  "repos": {
+    "kwalletmanager": {
+      "url": "https://invent.kde.org/utilities/kwalletmanager.git",
+      "commit": "8a6dd20fe9706052c284aeccdfd217221cc0244c"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kwalletmanager",
+      "file": "src/manager/kwalletmanager.cpp",
+      "line": 177,
+      "commit": "8a6dd20fe9706052c284aeccdfd217221cc0244c"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "kwalletmanager",
+      "file": "src/manager/kwalletmanager.cpp",
+      "line": 179,
+      "commit": "8a6dd20fe9706052c284aeccdfd217221cc0244c"
+    },
+    {
+      "path": [
+        "Entry",
+        "New..."
+      ],
+      "shortcut": "Insert",
+      "repo": "kwalletmanager",
+      "file": "src/manager/kwalleteditor.cpp",
+      "line": 231,
+      "commit": "8a6dd20fe9706052c284aeccdfd217221cc0244c"
+    },
+    {
+      "path": [
+        "Entry",
+        "Rename"
+      ],
+      "shortcut": "F2",
+      "repo": "kwalletmanager",
+      "file": "src/manager/kwalleteditor.cpp",
+      "line": 236,
+      "commit": "8a6dd20fe9706052c284aeccdfd217221cc0244c"
+    },
+    {
+      "path": [
+        "Entry",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "kwalletmanager",
+      "file": "src/manager/kwalleteditor.cpp",
+      "line": 241,
+      "commit": "8a6dd20fe9706052c284aeccdfd217221cc0244c"
+    },
+    {
+      "path": [
+        "Entry",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kwalletmanager",
+      "file": "src/manager/kwmapeditor.cpp",
+      "line": 129,
+      "commit": "8a6dd20fe9706052c284aeccdfd217221cc0244c"
+    }
+  ]
+}

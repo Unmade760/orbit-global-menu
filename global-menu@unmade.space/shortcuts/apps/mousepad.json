@@ -1,0 +1,260 @@
+{
+  "format": 1,
+  "app": "mousepad",
+  "name": "Mousepad",
+  "identifiers": [
+    "org.xfce.mousepad.desktop",
+    "org.xfce.mousepad",
+    "mousepad",
+    "Mousepad"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "label": "Open...",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As...",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Reload",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Print...",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Detach Tab",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Close Tab",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl><Shift>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl>Y"
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Delete Selection",
+          "shortcut": "Delete"
+        },
+        {
+          "label": "Delete Line",
+          "shortcut": "<Ctrl><Shift>Delete"
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Convert",
+          "items": [
+            {
+              "label": "To Opposite Case",
+              "shortcut": "<Ctrl><Alt>U"
+            },
+            {
+              "label": "Transpose",
+              "shortcut": "<Ctrl>T"
+            }
+          ]
+        },
+        {
+          "label": "Move",
+          "items": [
+            {
+              "label": "One Line Up",
+              "shortcut": "<Alt>Up"
+            },
+            {
+              "label": "One Line Down",
+              "shortcut": "<Alt>Down"
+            },
+            {
+              "label": "One Word Left",
+              "shortcut": "<Alt>Left"
+            },
+            {
+              "label": "One Word Right",
+              "shortcut": "<Alt>Right"
+            }
+          ]
+        },
+        {
+          "label": "Increase Indent",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Decrease Indent",
+          "shortcut": "<Ctrl>U"
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {
+          "label": "Find",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Find and Replace...",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Go to...",
+          "shortcut": "<Ctrl>L"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Menubar",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Fullscreen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Increase Font Size",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Decrease Font Size",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Reset Font Size",
+          "shortcut": "<Ctrl>0"
+        }
+      ]
+    },
+    {
+      "label": "Document",
+      "items": [
+        {
+          "label": "Previous Tab",
+          "shortcut": "<Ctrl>Page_Up"
+        },
+        {
+          "label": "Next Tab",
+          "shortcut": "<Ctrl>Page_Down"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Tab",
+          "items": [
+            {
+              "label": "Tab 1",
+              "shortcut": "<Alt>1"
+            },
+            {
+              "label": "Tab 2",
+              "shortcut": "<Alt>2"
+            },
+            {
+              "label": "Tab 3",
+              "shortcut": "<Alt>3"
+            },
+            {
+              "label": "Tab 4",
+              "shortcut": "<Alt>4"
+            },
+            {
+              "label": "Tab 5",
+              "shortcut": "<Alt>5"
+            },
+            {
+              "label": "Tab 6",
+              "shortcut": "<Alt>6"
+            },
+            {
+              "label": "Tab 7",
+              "shortcut": "<Alt>7"
+            },
+            {
+              "label": "Tab 8",
+              "shortcut": "<Alt>8"
+            },
+            {
+              "label": "Tab 9",
+              "shortcut": "<Alt>9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Contents",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

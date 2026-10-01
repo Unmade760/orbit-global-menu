@@ -1,0 +1,207 @@
+{
+  "format": 1,
+  "app": "mission-center",
+  "name": "Mission Center",
+  "identifiers": [
+    "io.missioncenter.MissionCenter.desktop",
+    "io.missioncenter.MissionCenter",
+    "missioncenter",
+    "Mission Center"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Open Menu",
+          "shortcut": "F10"
+        },
+        {
+          "label": "Open Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Show Keyboard Shortcuts",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show System Information",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Toggle Sidebar",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "Pause Updates"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Pages",
+      "items": [
+        {
+          "label": "Show Performance Page",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Show Apps Page",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Show Services Page",
+          "shortcut": "<Ctrl>3"
+        }
+      ]
+    },
+    {
+      "label": "Performance",
+      "items": [
+        {
+          "label": "Copy Device Information",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Toggle Summary Mode",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select a Device",
+          "items": [
+            {
+              "label": "Device 1",
+              "shortcut": "F1"
+            },
+            {
+              "label": "Device 2",
+              "shortcut": "F2"
+            },
+            {
+              "label": "Device 3",
+              "shortcut": "F3"
+            },
+            {
+              "label": "Device 4",
+              "shortcut": "F4"
+            },
+            {
+              "label": "Device 5",
+              "shortcut": "F5"
+            },
+            {
+              "label": "Device 6",
+              "shortcut": "F6"
+            },
+            {
+              "label": "Device 7",
+              "shortcut": "F7"
+            },
+            {
+              "label": "Device 8",
+              "shortcut": "F8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Apps",
+      "items": [
+        {
+          "label": "Search",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Collapse All",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Stop App or Process",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "label": "Force Stop App or Process",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Show Details Dialog",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Expand Row",
+          "shortcut": "Right"
+        },
+        {
+          "label": "Collapse Row",
+          "shortcut": "Left"
+        }
+      ]
+    },
+    {
+      "label": "Services",
+      "items": [
+        {
+          "label": "Search",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Collapse All",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Start Service",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Stop Service",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "label": "Restart Service",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Show Details Dialog",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Expand Row",
+          "shortcut": "Right"
+        },
+        {
+          "label": "Collapse Row",
+          "shortcut": "Left"
+        }
+      ]
+    }
+  ]
+}

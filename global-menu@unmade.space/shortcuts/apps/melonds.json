@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "app": "melonds",
+  "name": "melonDS",
+  "identifiers": [
+    "net.kuribo64.melonDS.desktop",
+    "net.kuribo64.melonDS",
+    "melonDS"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Open ROM...",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save state",
+          "items": [
+            {
+              "label": "1",
+              "shortcut": "<Shift>F1"
+            },
+            {
+              "label": "File...",
+              "shortcut": "<Shift>F9"
+            }
+          ]
+        },
+        {
+          "label": "Load state",
+          "items": [
+            {
+              "label": "1",
+              "shortcut": "F1"
+            },
+            {
+              "label": "8",
+              "shortcut": "F8"
+            },
+            {
+              "label": "File...",
+              "shortcut": "F9"
+            }
+          ]
+        },
+        {
+          "label": "Undo state load",
+          "shortcut": "F12"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,928 @@
+{
+  "format": 1,
+  "app": "kwrite",
+  "repos": {
+    "kate": {
+      "url": "https://invent.kde.org/utilities/kate.git",
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    "ktexteditor": {
+      "url": "https://invent.kde.org/frameworks/ktexteditor.git",
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "kate",
+      "file": "apps/lib/data/kateui.rc",
+      "line": 7,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 564,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "kate",
+      "file": "apps/lib/data/kateui.rc",
+      "line": 11,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 69,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 87,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "Save All"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 452,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "Reload"
+      ],
+      "shortcut": "F5",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 126,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 142,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "kate",
+      "file": "apps/lib/data/kateui.rc",
+      "line": 24,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 551,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kate",
+      "file": "apps/lib/data/kateui.rc",
+      "line": 42,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 213,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 229,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 242,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 257,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 283,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Selection"
+      ],
+      "shortcut": "<Ctrl><Shift>Insert",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 299,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Overwrite Mode"
+      ],
+      "shortcut": "Insert",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 347,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 375,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Variants",
+        "Find Next"
+      ],
+      "shortcut": "F3",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 409,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Variants",
+        "Find Previous"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 425,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Variants",
+        "Find Selected"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 443,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Variants",
+        "Find Selected Backwards"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 457,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Replace…"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 471,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Line"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "kate",
+      "file": "doc/katepart/fundamentals.docbook",
+      "line": 155,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Word Left"
+      ],
+      "shortcut": "<Ctrl>BackSpace",
+      "repo": "kate",
+      "file": "doc/katepart/fundamentals.docbook",
+      "line": 151,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Word Right"
+      ],
+      "shortcut": "<Ctrl>Delete",
+      "repo": "kate",
+      "file": "doc/katepart/fundamentals.docbook",
+      "line": 147,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Insert a Newline Below Current Line"
+      ],
+      "shortcut": "<Ctrl><Shift>Return",
+      "repo": "kate",
+      "file": "doc/katepart/fundamentals.docbook",
+      "line": 166,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Insert a Newline Above Current Line"
+      ],
+      "shortcut": "<Ctrl><Alt>Return",
+      "repo": "kate",
+      "file": "doc/katepart/fundamentals.docbook",
+      "line": 170,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 525,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Deselect"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 539,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Block Selection Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 552,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Comment"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 598,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Uncomment"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 612,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Join Lines"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 625,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Indent"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "kate",
+      "file": "doc/katepart/fundamentals.docbook",
+      "line": 295,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Unindent"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "kate",
+      "file": "doc/katepart/fundamentals.docbook",
+      "line": 300,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Capitalize"
+      ],
+      "shortcut": "<Ctrl><Alt>U",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 638,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Uppercase"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 650,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Lowercase"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 662,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Caret above Cursor"
+      ],
+      "shortcut": "<Ctrl><Alt>Up",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 725,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Caret below Cursor"
+      ],
+      "shortcut": "<Ctrl><Alt>Down",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 737,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Cursors to Line Ends"
+      ],
+      "shortcut": "<Shift><Alt>I",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 749,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Find and Select Next Occurrence"
+      ],
+      "shortcut": "<Alt>J",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 761,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Selection",
+        "Find and Select All Occurrences"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>J",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 773,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Quick Open"
+      ],
+      "shortcut": "<Ctrl><Alt>O",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 385,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Tab"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "kate",
+      "file": "doc/kate/menus.docbook",
+      "line": 728,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Tab"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "kate",
+      "file": "doc/kate/menus.docbook",
+      "line": 741,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Previous Location"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 683,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Next Location"
+      ],
+      "shortcut": "<Ctrl><Shift>1",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 692,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Line…"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1001,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Previous Editing Location"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1021,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Next Editing Location"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1035,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Matching Bracket"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1071,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Select to Matching Bracket"
+      ],
+      "shortcut": "<Ctrl><Shift>6",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1084,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Bookmarks",
+        "Set Bookmark"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1114,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Bookmarks",
+        "Previous"
+      ],
+      "shortcut": "<Alt>Page_Up",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1143,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Go",
+        "Bookmarks",
+        "Next"
+      ],
+      "shortcut": "<Alt>Page_Down",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1158,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Previous Split View"
+      ],
+      "shortcut": "<Shift>F8",
+      "repo": "kate",
+      "file": "apps/lib/kateviewmanager.cpp",
+      "line": 222,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Next Split View"
+      ],
+      "shortcut": "F8",
+      "repo": "kate",
+      "file": "doc/kate/menus.docbook",
+      "line": 804,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Split Vertical"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "kate",
+      "file": "apps/lib/kateviewmanager.cpp",
+      "line": 151,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Split Horizontal"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "kate",
+      "file": "apps/lib/kateviewmanager.cpp",
+      "line": 159,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Close Current View"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "kate",
+      "file": "apps/lib/kateviewmanager.cpp",
+      "line": 185,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "View",
+        "Enlarge Font"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 795,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "View",
+        "Shrink Font"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 806,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 568,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Tools",
+        "Switch to Command Line"
+      ],
+      "shortcut": "F7",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1629,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Tools",
+        "Invoke Code Completion"
+      ],
+      "shortcut": "<Ctrl>space",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1647,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Tools",
+        "Reuse Word Above"
+      ],
+      "shortcut": "<Ctrl>8",
+      "repo": "kate",
+      "file": "doc/katepart/fundamentals.docbook",
+      "line": 431,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Tools",
+        "Reuse Word Below"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "kate",
+      "file": "doc/katepart/fundamentals.docbook",
+      "line": 435,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Tools",
+        "Switch to Next Input Mode"
+      ],
+      "shortcut": "<Ctrl><Alt>v",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 764,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Tools",
+        "Spelling",
+        "Automatic Spell Checking"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1675,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Tools",
+        "Scripts",
+        "Navigation",
+        "Move Cursor to Previous Matching Indent"
+      ],
+      "shortcut": "<Shift><Alt>Up",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1283,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Tools",
+        "Scripts",
+        "Navigation",
+        "Move Cursor to Next Matching Indent"
+      ],
+      "shortcut": "<Shift><Alt>Down",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1299,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Tools",
+        "Scripts",
+        "Editing",
+        "Move Lines Down"
+      ],
+      "shortcut": "<Ctrl><Shift>Down",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1344,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Tools",
+        "Scripts",
+        "Editing",
+        "Move Lines Up"
+      ],
+      "shortcut": "<Ctrl><Shift>Up",
+      "repo": "kate",
+      "file": "doc/katepart/menus.docbook",
+      "line": 1359,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 309,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 586,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure KWrite…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 592,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "kate",
+      "file": "doc/kate/fundamentals.docbook",
+      "line": 299,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    },
+    {
+      "path": [
+        "Help",
+        "What's This?"
+      ],
+      "shortcut": "<Shift>F1",
+      "repo": "kate",
+      "file": "doc/kate/fundamentals.docbook",
+      "line": 303,
+      "commit": "4c6b0de89d4367f3c608ef8a483b0b9b3edf712a"
+    }
+  ]
+}

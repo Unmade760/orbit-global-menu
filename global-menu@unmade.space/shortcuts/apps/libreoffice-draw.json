@@ -1,0 +1,464 @@
+{
+  "format": 1,
+  "app": "libreoffice-draw",
+  "name": "LibreOffice Draw",
+  "identifiers": [
+    "libreoffice-draw.desktop",
+    "libreoffice draw",
+    "libreoffice-draw",
+    "LibreOffice Draw"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open...",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Templates",
+          "items": [
+            {
+              "label": "Manage Templates",
+              "shortcut": "<Ctrl><Shift>N"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As...",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Print...",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Exit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl>Y"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste Special",
+          "items": [
+            {
+              "label": "Paste Special...",
+              "shortcut": "<Ctrl><Shift>V"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Duplicate...",
+          "shortcut": "<Shift>F3"
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find...",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find and Replace...",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Point Edit Mode",
+          "shortcut": "F8"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Edit Mode",
+          "shortcut": "<Ctrl><Shift>M"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Rulers",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Sidebar",
+          "shortcut": "<Ctrl>F5"
+        },
+        {
+          "label": "Navigator",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl><Shift>Page_Up"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl><Shift>Page_Down"
+        },
+        {
+          "label": "Data Sources",
+          "shortcut": "<Ctrl><Shift>F4"
+        },
+        {
+          "label": "Open the Properties Deck",
+          "shortcut": "<Alt>1"
+        },
+        {
+          "label": "Open the Styles Deck",
+          "shortcut": "<Alt>2"
+        },
+        {
+          "label": "Open the Gallery Deck",
+          "shortcut": "<Alt>3"
+        },
+        {
+          "label": "Open the Navigator Deck",
+          "shortcut": "<Alt>4"
+        },
+        {
+          "label": "Open the Shapes Deck",
+          "shortcut": "<Alt>5"
+        }
+      ]
+    },
+    {
+      "label": "Insert",
+      "items": [
+        {
+          "label": "OLE Object",
+          "items": [
+            {
+              "label": "Formula Object...",
+              "shortcut": "<Shift><Alt>E"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Text Box",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Comment",
+          "shortcut": "<Ctrl><Alt>C"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Hyperlink...",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "label": "Formatting Mark",
+          "items": [
+            {
+              "label": "No-break Space",
+              "shortcut": "<Ctrl><Shift>space"
+            },
+            {
+              "label": "Narrow No-break Space",
+              "shortcut": "<Shift><Alt>space"
+            },
+            {
+              "label": "Zero-width Space",
+              "shortcut": "<Ctrl>KP_Divide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Format",
+      "items": [
+        {
+          "label": "Text",
+          "items": [
+            {
+              "label": "Bold",
+              "shortcut": "<Ctrl>B"
+            },
+            {
+              "label": "Italic",
+              "shortcut": "<Ctrl>I"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Superscript",
+              "shortcut": "<Ctrl><Shift>P"
+            },
+            {
+              "label": "Subscript",
+              "shortcut": "<Ctrl><Shift>B"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Increase Size",
+              "shortcut": "<Ctrl>bracketright"
+            },
+            {
+              "label": "Decrease Size",
+              "shortcut": "<Ctrl>bracketleft"
+            }
+          ]
+        },
+        {
+          "label": "Spacing",
+          "items": [
+            {
+              "label": "Line Spacing: 1",
+              "shortcut": "<Ctrl>1"
+            },
+            {
+              "label": "Line Spacing: 1.5",
+              "shortcut": "<Ctrl>5"
+            },
+            {
+              "label": "Line Spacing: 2",
+              "shortcut": "<Ctrl>2"
+            }
+          ]
+        },
+        {
+          "label": "Align Text",
+          "items": [
+            {
+              "label": "Center",
+              "shortcut": "<Ctrl>E"
+            },
+            {
+              "label": "Justified",
+              "shortcut": "<Ctrl>J"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Left",
+              "shortcut": "<Ctrl>L"
+            },
+            {
+              "label": "Right",
+              "shortcut": "<Ctrl>R"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Clear Direct Formatting",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Styles",
+          "items": [
+            {
+              "label": "Manage Styles",
+              "shortcut": "F11"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Character...",
+          "shortcut": "<Alt>C"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Position and Size...",
+          "shortcut": "F4"
+        }
+      ]
+    },
+    {
+      "label": "Shape",
+      "items": [
+        {
+          "label": "Arrange",
+          "items": [
+            {
+              "label": "Bring to Front",
+              "shortcut": "<Ctrl><Shift>KP_Add"
+            },
+            {
+              "label": "Forward One",
+              "shortcut": "<Ctrl>KP_Add"
+            },
+            {
+              "label": "Backward One",
+              "shortcut": "<Ctrl>KP_Subtract"
+            },
+            {
+              "label": "Send to Back",
+              "shortcut": "<Ctrl><Shift>KP_Subtract"
+            }
+          ]
+        },
+        {
+          "label": "Group Shapes",
+          "items": [
+            {
+              "label": "Group",
+              "shortcut": "<Ctrl><Shift>G"
+            },
+            {
+              "label": "Ungroup",
+              "shortcut": "<Ctrl><Shift><Alt>G"
+            },
+            {
+              "label": "Enter Group",
+              "shortcut": "F3"
+            },
+            {
+              "label": "Exit Group",
+              "shortcut": "<Ctrl>F3"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Combine",
+          "shortcut": "<Ctrl><Shift>K"
+        },
+        {
+          "label": "Split",
+          "shortcut": "<Ctrl><Shift><Alt>K"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Spelling...",
+          "shortcut": "F7"
+        },
+        {
+          "label": "Automatic Spell Checking",
+          "shortcut": "<Shift>F7"
+        },
+        {
+          "label": "Thesaurus...",
+          "shortcut": "<Ctrl>F7"
+        },
+        {
+          "label": "Language",
+          "items": [
+            {
+              "label": "Hangul/Hanja Conversion...",
+              "shortcut": "<Ctrl><Shift>F7"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Extensions...",
+          "shortcut": "<Ctrl><Alt>E"
+        },
+        {
+          "label": "Options...",
+          "shortcut": "<Alt>F12"
+        }
+      ]
+    },
+    {
+      "label": "Window",
+      "items": [
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Search Commands",
+          "shortcut": "<Shift>Escape"
+        }
+      ]
+    }
+  ]
+}

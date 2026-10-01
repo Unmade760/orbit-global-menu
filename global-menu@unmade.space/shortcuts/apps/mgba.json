@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "app": "mgba",
+  "name": "mGBA",
+  "identifiers": [
+    "io.mgba.mGBA.desktop",
+    "io.mgba.mGBA",
+    "mGBA",
+    "mgba-qt.desktop",
+    "mgba-qt"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Load ROM...", "shortcut": "<Ctrl>O"},
+        {"separator": true},
+        {"label": "Load State", "shortcut": "F10"},
+        {"label": "Save State", "shortcut": "<Shift>F10"},
+        {"label": "Quick Load", "items": [{"label": "Undo Load State", "shortcut": "F11"}]},
+        {"label": "Quick Save", "items": [{"label": "Undo Save State", "shortcut": "<Shift>F11"}]},
+        {"separator": true},
+        {"label": "Exit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Emulation",
+      "items": [
+        {"label": "Reset", "shortcut": "<Ctrl>R"},
+        {"label": "Pause", "shortcut": "<Ctrl>P"},
+        {"label": "Next Frame", "shortcut": "<Ctrl>N"},
+        {"separator": true},
+        {"label": "Fast Forward (Held)", "shortcut": "Tab"},
+        {"label": "Fast Forward", "shortcut": "<Shift>Tab"},
+        {"separator": true},
+        {"label": "Rewind (Held)", "shortcut": "grave"},
+        {"label": "Rewind", "shortcut": "asciitilde"},
+        {"label": "Step Backwards", "shortcut": "<Ctrl>B"}
+      ]
+    },
+    {
+      "label": "Audio/Video",
+      "items": [
+        {"label": "Frame Size", "items": [{"label": "Toggle Fullscreen", "shortcut": "<Ctrl>F"}, {"label": "Exit Fullscreen", "shortcut": "Escape"}]},
+        {"separator": true},
+        {"label": "Hide Menu", "shortcut": "<Ctrl>M"}
+      ]
+    }
+  ]
+}

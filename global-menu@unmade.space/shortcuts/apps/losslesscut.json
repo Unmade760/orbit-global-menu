@@ -1,0 +1,355 @@
+{
+  "format": 1,
+  "app": "losslesscut",
+  "name": "LosslessCut",
+  "identifiers": [
+    "no.mifi.losslesscut.desktop",
+    "no.mifi.losslesscut",
+    "losslesscut",
+    "lossless-cut"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Open",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Settings",
+          "shortcut": "<Ctrl>comma"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Toggle Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "label": "Reset Font Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Increase Font Size",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Decrease Font Size",
+          "shortcut": "<Ctrl>minus"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Toggle Developer Tools",
+          "shortcut": "<Ctrl><Shift>I"
+        }
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {
+          "label": "Play/Pause",
+          "shortcut": "space"
+        },
+        {
+          "label": "Play/Pause (No Reset Speed)",
+          "shortcut": "K"
+        },
+        {
+          "label": "Speed Up Playback",
+          "shortcut": "L"
+        },
+        {
+          "label": "Slow Down Playback",
+          "shortcut": "J"
+        },
+        {
+          "label": "Speed Up Playback More",
+          "shortcut": "<Shift>L"
+        },
+        {
+          "label": "Slow Down Playback More",
+          "shortcut": "<Shift>J"
+        },
+        {
+          "label": "Increase Audio Volume",
+          "shortcut": "<Alt>Up"
+        },
+        {
+          "label": "Decrease Audio Volume",
+          "shortcut": "<Alt>Down"
+        },
+        {
+          "label": "Mute Preview",
+          "shortcut": "M"
+        },
+        {
+          "label": "Make Cursor Time Zero",
+          "shortcut": "<Shift>Z"
+        }
+      ]
+    },
+    {
+      "label": "Seeking",
+      "items": [
+        {
+          "label": "Step Backward 1 Frame",
+          "shortcut": "comma"
+        },
+        {
+          "label": "Step Forward 1 Frame",
+          "shortcut": "period"
+        },
+        {
+          "label": "Backward Seek",
+          "shortcut": "Left"
+        },
+        {
+          "label": "Forward Seek",
+          "shortcut": "Right"
+        },
+        {
+          "label": "Backward Seek (Longer)",
+          "shortcut": "<Ctrl><Shift>Left"
+        },
+        {
+          "label": "Forward Seek (Longer)",
+          "shortcut": "<Ctrl><Shift>Right"
+        },
+        {
+          "label": "Seek Previous Keyframe",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Seek Next Keyframe",
+          "shortcut": "<Alt>Right"
+        },
+        {
+          "label": "Seek Backward 1% of Timeline at Current Zoom",
+          "shortcut": "<Ctrl>Left"
+        },
+        {
+          "label": "Seek Forward 1% of Timeline at Current Zoom",
+          "shortcut": "<Ctrl>Right"
+        },
+        {
+          "label": "Jump to Current Segment's Start Time",
+          "shortcut": "<Shift>Left"
+        },
+        {
+          "label": "Jump to Current Segment's End Time",
+          "shortcut": "<Shift>Right"
+        },
+        {
+          "label": "Jump to Start of Video",
+          "shortcut": "<Ctrl>Home"
+        },
+        {
+          "label": "Jump to End of Video",
+          "shortcut": "<Ctrl>End"
+        },
+        {
+          "label": "Seek to Timecode",
+          "shortcut": "G"
+        }
+      ]
+    },
+    {
+      "label": "Segments and Cut Points",
+      "items": [
+        {
+          "label": "Add Cut Segment",
+          "shortcut": "<Shift>equal"
+        },
+        {
+          "label": "Remove Current Segment Cutpoint",
+          "shortcut": "BackSpace"
+        },
+        {
+          "label": "Start Current Segment at Current Time",
+          "shortcut": "I"
+        },
+        {
+          "label": "End Current Segment at Current Time",
+          "shortcut": "O"
+        },
+        {
+          "label": "Label Current Segment",
+          "shortcut": "Return"
+        },
+        {
+          "label": "Split Segment at Cursor",
+          "shortcut": "B"
+        },
+        {
+          "label": "Jump to Previous Segment",
+          "shortcut": "Up"
+        },
+        {
+          "label": "Jump & Seek to Previous Segment",
+          "shortcut": "<Shift><Alt>Up"
+        },
+        {
+          "label": "Jump to Next Segment",
+          "shortcut": "Down"
+        },
+        {
+          "label": "Jump & Seek to Next Segment",
+          "shortcut": "<Shift><Alt>Down"
+        },
+        {
+          "label": "Jump to First Segment",
+          "shortcut": "Page_Up"
+        },
+        {
+          "label": "Jump & Seek to First Segment",
+          "shortcut": "<Shift><Alt>Page_Up"
+        },
+        {
+          "label": "Jump to Last Segment",
+          "shortcut": "Page_Down"
+        },
+        {
+          "label": "Jump & Seek to Last Segment",
+          "shortcut": "<Shift><Alt>Page_Down"
+        }
+      ]
+    },
+    {
+      "label": "Timeline/Zoom Operations",
+      "items": [
+        {
+          "label": "Zoom in Timeline",
+          "shortcut": "<Ctrl>Up"
+        },
+        {
+          "label": "Zoom Out Timeline",
+          "shortcut": "<Ctrl>Down"
+        },
+        {
+          "label": "Toggle Zoom Between 1x and a Calculated Comfortable Zoom Level",
+          "shortcut": "Z"
+        }
+      ]
+    },
+    {
+      "label": "Output Actions",
+      "items": [
+        {
+          "label": "Export Segment(s)",
+          "shortcut": "E"
+        },
+        {
+          "label": "Capture Snapshot",
+          "shortcut": "C"
+        },
+        {
+          "label": "Capture Snapshot to Clipboard",
+          "shortcut": "<Shift>C"
+        },
+        {
+          "label": "Delete Source File",
+          "shortcut": "D"
+        }
+      ]
+    },
+    {
+      "label": "Batch File List",
+      "items": [
+        {
+          "label": "Previous File",
+          "shortcut": "<Shift>Up"
+        },
+        {
+          "label": "Open Previous File",
+          "shortcut": "<Ctrl><Shift>Up"
+        },
+        {
+          "label": "Next File",
+          "shortcut": "<Shift>Down"
+        },
+        {
+          "label": "Open Next File",
+          "shortcut": "<Ctrl><Shift>Down"
+        },
+        {
+          "label": "Open Selected File",
+          "shortcut": "<Shift>Return"
+        }
+      ]
+    },
+    {
+      "label": "Other Operations",
+      "items": [
+        {
+          "label": "Keyboard & Mouse Shortcuts",
+          "shortcut": "<Shift>slash"
+        },
+        {
+          "label": "Keep or Discard All Tracks",
+          "shortcut": "T"
+        },
+        {
+          "label": "Toggle Tracks Using Current Filter",
+          "shortcut": "<Shift>T"
+        },
+        {
+          "label": "Change Rotation",
+          "shortcut": "R"
+        },
+        {
+          "label": "Copy Selected Segments Times to Clipboard",
+          "shortcut": "<Ctrl><Alt>C"
+        },
+        {
+          "label": "Toggle Full Screen Video",
+          "shortcut": "F"
+        }
+      ]
+    }
+  ]
+}

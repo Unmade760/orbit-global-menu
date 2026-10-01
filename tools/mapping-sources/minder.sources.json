@@ -1,0 +1,357 @@
+{
+  "format": 1,
+  "app": "minder",
+  "repos": {
+    "minder": {
+      "url": "https://github.com/phase1geo/minder.git",
+      "commit": "fd9c8b2c4cb53e0ec60aff8474d07284850063e3"
+    },
+    "minder-wiki": {
+      "url": "https://github.com/phase1geo/Minder.wiki.git",
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "minder-wiki",
+      "file": "Header-Bar.md",
+      "line": 17,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "minder-wiki",
+      "file": "Header-Bar.md",
+      "line": 23,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "minder-wiki",
+      "file": "Header-Bar.md",
+      "line": 29,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "minder-wiki",
+      "file": "Header-Bar.md",
+      "line": 41,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "minder-wiki",
+      "file": "Header-Bar.md",
+      "line": 47,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "minder-wiki",
+      "file": "Canvas.md",
+      "line": 29,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "minder-wiki",
+      "file": "Canvas.md",
+      "line": 30,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "minder-wiki",
+      "file": "Canvas.md",
+      "line": 31,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Formula Image"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "minder",
+      "file": "README.md",
+      "line": 75,
+      "commit": "fd9c8b2c4cb53e0ec60aff8474d07284850063e3"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "minder-wiki",
+      "file": "Canvas.md",
+      "line": 32,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Edit Text…"
+      ],
+      "shortcut": "e",
+      "repo": "minder-wiki",
+      "file": "Canvas.md",
+      "line": 33,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Insert Emoji"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "minder-wiki",
+      "file": "Connection-Sidebar.md",
+      "line": 11,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Node",
+        "Add Child Node"
+      ],
+      "shortcut": "Tab",
+      "repo": "minder-wiki",
+      "file": "Creating-Nodes.md",
+      "line": 24,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Node",
+        "Add Sibling Node"
+      ],
+      "shortcut": "Return",
+      "repo": "minder-wiki",
+      "file": "Canvas.md",
+      "line": 43,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Node",
+        "Fold Children"
+      ],
+      "shortcut": "f",
+      "repo": "minder-wiki",
+      "file": "Canvas.md",
+      "line": 39,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Node",
+        "Quick Entry Insert"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "minder-wiki",
+      "file": "Adding-Nodes-With-Quick-Entry.md",
+      "line": 5,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Node",
+        "Quick Entry Replace"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "minder-wiki",
+      "file": "Adding-Nodes-With-Quick-Entry.md",
+      "line": 5,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Select",
+        "Select Root Node"
+      ],
+      "shortcut": "m",
+      "repo": "minder-wiki",
+      "file": "Creating-Nodes.md",
+      "line": 48,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Select",
+        "Select First Child"
+      ],
+      "shortcut": "c",
+      "repo": "minder-wiki",
+      "file": "Creating-Nodes.md",
+      "line": 49,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Select",
+        "Select Next Sibling"
+      ],
+      "shortcut": "n",
+      "repo": "minder-wiki",
+      "file": "Creating-Nodes.md",
+      "line": 50,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Select",
+        "Select Previous Sibling"
+      ],
+      "shortcut": "p",
+      "repo": "minder-wiki",
+      "file": "Creating-Nodes.md",
+      "line": 51,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Select",
+        "Select Parent"
+      ],
+      "shortcut": "a",
+      "repo": "minder-wiki",
+      "file": "Creating-Nodes.md",
+      "line": 52,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Select",
+        "Select Children"
+      ],
+      "shortcut": "d",
+      "repo": "minder-wiki",
+      "file": "Creating-Nodes.md",
+      "line": 57,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Select",
+        "Select Subtree"
+      ],
+      "shortcut": "<Shift>d",
+      "repo": "minder-wiki",
+      "file": "Creating-Nodes.md",
+      "line": 58,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "minder",
+      "file": "src/ZoomWidget.vala",
+      "line": 105,
+      "commit": "fd9c8b2c4cb53e0ec60aff8474d07284850063e3"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "minder",
+      "file": "src/ZoomWidget.vala",
+      "line": 93,
+      "commit": "fd9c8b2c4cb53e0ec60aff8474d07284850063e3"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Actual"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "minder",
+      "file": "src/ZoomWidget.vala",
+      "line": 99,
+      "commit": "fd9c8b2c4cb53e0ec60aff8474d07284850063e3"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom to Fit"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "minder-wiki",
+      "file": "Zoom.md",
+      "line": 11,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom to Fit Selected Node Tree"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "minder-wiki",
+      "file": "Zoom.md",
+      "line": 15,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "View",
+        "Focus Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "minder-wiki",
+      "file": "Focus-Mode.md",
+      "line": 9,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    },
+    {
+      "path": [
+        "Help",
+        "Shortcuts Cheatsheet"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "minder-wiki",
+      "file": "Keyboard-shortcuts.md",
+      "line": 3,
+      "commit": "f696fb0e97dff6f25bb5955f67ae0532ba828b5b"
+    }
+  ]
+}

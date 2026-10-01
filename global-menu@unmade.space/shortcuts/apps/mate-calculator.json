@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "app": "mate-calculator",
+  "name": "MATE Calculator",
+  "identifiers": [
+    "mate-calc.desktop",
+    "mate-calc",
+    "MATE Calculator",
+    "MATE Calc"
+  ],
+  "menus": [
+    {
+      "label": "Calculator",
+      "items": [
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "label": "Clear History",
+          "shortcut": "<Ctrl><Shift>Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "History",
+          "shortcut": "<Ctrl><Shift>H"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Contents",
+          "shortcut": "F1"
+        }
+      ]
+    },
+    {
+      "label": "Input",
+      "items": [
+        {
+          "label": "Calculate Result",
+          "shortcut": "Return"
+        },
+        {
+          "label": "Clear Display",
+          "shortcut": "Escape"
+        },
+        {
+          "label": "Square Root",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Pi",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Scientific Exponent",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "label": "Square",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Inverse",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Factorize",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Previous Entry",
+          "shortcut": "<Alt>Up"
+        },
+        {
+          "label": "Next Entry",
+          "shortcut": "<Alt>Down"
+        }
+      ]
+    },
+    {
+      "label": "Programming",
+      "items": [
+        {
+          "label": "Binary",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Octal",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Decimal",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Hexadecimal",
+          "shortcut": "<Ctrl>H"
+        }
+      ]
+    }
+  ]
+}

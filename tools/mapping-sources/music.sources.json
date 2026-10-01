@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "app": "music",
+  "repos": {
+    "gnome-music": {
+      "url": "https://gitlab.gnome.org/GNOME/gnome-music.git",
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "gnome-music",
+      "file": "data/ui/shortcuts-dialog.ui",
+      "line": 16,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "General",
+        "Close Search"
+      ],
+      "shortcut": "Escape",
+      "repo": "gnome-music",
+      "file": "gnomemusic/window.py",
+      "line": 221,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "General",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 152,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "General",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 146,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 153,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause"
+      ],
+      "shortcut": "<Ctrl>space",
+      "repo": "gnome-music",
+      "file": "data/ui/shortcuts-dialog.ui",
+      "line": 45,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next Song"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 159,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Playback",
+        "Previous Song"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 161,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Playback",
+        "Toggle Repeat"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 155,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Playback",
+        "Toggle Shuffle"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 157,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Playback",
+        "Increase Volume"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 168,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Playback",
+        "Decrease Volume"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 165,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Playback",
+        "Toggle Mute"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "gnome-music",
+      "file": "gnomemusic/application.py",
+      "line": 147,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go to Albums"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "gnome-music",
+      "file": "gnomemusic/window.py",
+      "line": 223,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go to Artists"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "gnome-music",
+      "file": "gnomemusic/window.py",
+      "line": 224,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go to Playlists"
+      ],
+      "shortcut": "<Alt>3",
+      "repo": "gnome-music",
+      "file": "gnomemusic/window.py",
+      "line": 225,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "gnome-music",
+      "file": "gnomemusic/window.py",
+      "line": 220,
+      "commit": "f227312064a21efed84818ea845f381cf9acab86"
+    }
+  ]
+}

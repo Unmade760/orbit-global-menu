@@ -1,0 +1,105 @@
+{
+  "format": 1,
+  "app": "music",
+  "name": "Music",
+  "identifiers": [
+    "org.gnome.Music.desktop",
+    "org.gnome.Music",
+    "gnome-music",
+    "Music"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Search",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Close Search",
+          "shortcut": "Escape"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Help",
+          "shortcut": "F1"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {
+          "label": "Play/Pause",
+          "shortcut": "<Ctrl>space"
+        },
+        {
+          "label": "Next Song",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Previous Song",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Repeat",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Toggle Shuffle",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Increase Volume",
+          "shortcut": "<Ctrl>equal"
+        },
+        {
+          "label": "Decrease Volume",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Toggle Mute",
+          "shortcut": "<Ctrl>M"
+        }
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {
+          "label": "Go to Albums",
+          "shortcut": "<Alt>1"
+        },
+        {
+          "label": "Go to Artists",
+          "shortcut": "<Alt>2"
+        },
+        {
+          "label": "Go to Playlists",
+          "shortcut": "<Alt>3"
+        },
+        {
+          "label": "Go Back",
+          "shortcut": "<Alt>Left"
+        }
+      ]
+    }
+  ]
+}

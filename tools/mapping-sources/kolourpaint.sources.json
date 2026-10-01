@@ -1,0 +1,595 @@
+{
+  "format": 1,
+  "app": "kolourpaint",
+  "repos": {
+    "kolourpaint": {
+      "url": "https://invent.kde.org/graphics/kolourpaint",
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_File.cpp",
+      "line": 69,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_File.cpp",
+      "line": 70,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_File.cpp",
+      "line": 79,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_File.cpp",
+      "line": 80,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "File",
+        "Reload"
+      ],
+      "shortcut": "F5",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_File.cpp",
+      "line": 115,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_File.cpp",
+      "line": 118,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_File.cpp",
+      "line": 123,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_File.cpp",
+      "line": 124,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "kolourpaint",
+      "file": "commands/kpCommandHistoryBase.cpp",
+      "line": 46,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "kolourpaint",
+      "file": "commands/kpCommandHistoryBase.cpp",
+      "line": 51,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Edit.cpp",
+      "line": 68,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Edit.cpp",
+      "line": 69,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Edit.cpp",
+      "line": 70,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste in New Window"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Edit.cpp",
+      "line": 74,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Edit.cpp",
+      "line": 81,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Edit",
+        "Deselect"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Edit.cpp",
+      "line": 82,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom to Actual Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_View_Zoom.cpp",
+      "line": 77,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_View_Zoom.cpp",
+      "line": 83,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_View_Zoom.cpp",
+      "line": 82,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "View",
+        "Show Grid"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_View.cpp",
+      "line": 42,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "View",
+        "Show Thumbnail"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_View_Thumbnail.cpp",
+      "line": 44,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Set as Image (Crop)"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 102,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Autocrop"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 107,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Resize / Scale..."
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 97,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Flip (upside down)"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 112,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Rotate Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Left",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 129,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Rotate Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Right",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 135,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Rotate..."
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 123,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Skew..."
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 140,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "More Effects..."
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 167,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Invert Colors"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 153,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Image",
+        "Clear"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Image.cpp",
+      "line": 158,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Brush"
+      ],
+      "shortcut": "b",
+      "repo": "kolourpaint",
+      "file": "tools/flow/kpToolBrush.cpp",
+      "line": 15,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Color Eraser"
+      ],
+      "shortcut": "o",
+      "repo": "kolourpaint",
+      "file": "tools/flow/kpToolColorEraser.cpp",
+      "line": 30,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Eraser"
+      ],
+      "shortcut": "a",
+      "repo": "kolourpaint",
+      "file": "tools/flow/kpToolEraser.cpp",
+      "line": 21,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Pen"
+      ],
+      "shortcut": "p",
+      "repo": "kolourpaint",
+      "file": "tools/flow/kpToolPen.cpp",
+      "line": 24,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Spraycan"
+      ],
+      "shortcut": "y",
+      "repo": "kolourpaint",
+      "file": "tools/flow/kpToolSpraycan.cpp",
+      "line": 35,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Color Picker"
+      ],
+      "shortcut": "c",
+      "repo": "kolourpaint",
+      "file": "tools/kpToolColorPicker.cpp",
+      "line": 23,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Flood Fill"
+      ],
+      "shortcut": "f",
+      "repo": "kolourpaint",
+      "file": "tools/kpToolFloodFill.cpp",
+      "line": 32,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Zoom"
+      ],
+      "shortcut": "z",
+      "repo": "kolourpaint",
+      "file": "tools/kpToolZoom.cpp",
+      "line": 51,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Curve"
+      ],
+      "shortcut": "v",
+      "repo": "kolourpaint",
+      "file": "tools/polygonal/kpToolCurve.cpp",
+      "line": 74,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Line"
+      ],
+      "shortcut": "l",
+      "repo": "kolourpaint",
+      "file": "tools/polygonal/kpToolLine.cpp",
+      "line": 18,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Polygon"
+      ],
+      "shortcut": "g",
+      "repo": "kolourpaint",
+      "file": "tools/polygonal/kpToolPolygon.cpp",
+      "line": 63,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Connected Lines"
+      ],
+      "shortcut": "n",
+      "repo": "kolourpaint",
+      "file": "tools/polygonal/kpToolPolyline.cpp",
+      "line": 23,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Ellipse"
+      ],
+      "shortcut": "e",
+      "repo": "kolourpaint",
+      "file": "tools/rectangular/kpToolEllipse.cpp",
+      "line": 24,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Rectangle"
+      ],
+      "shortcut": "r",
+      "repo": "kolourpaint",
+      "file": "tools/rectangular/kpToolRectangle.cpp",
+      "line": 25,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Rounded Rectangle"
+      ],
+      "shortcut": "u",
+      "repo": "kolourpaint",
+      "file": "tools/rectangular/kpToolRoundedRectangle.cpp",
+      "line": 25,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection (Elliptical)"
+      ],
+      "shortcut": "i",
+      "repo": "kolourpaint",
+      "file": "tools/selection/image/kpToolEllipticalSelection.cpp",
+      "line": 22,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection (Free-Form)"
+      ],
+      "shortcut": "m",
+      "repo": "kolourpaint",
+      "file": "tools/selection/image/kpToolFreeFormSelection.cpp",
+      "line": 24,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection (Rectangular)"
+      ],
+      "shortcut": "s",
+      "repo": "kolourpaint",
+      "file": "tools/selection/image/kpToolRectSelection.cpp",
+      "line": 21,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Tools",
+        "Text"
+      ],
+      "shortcut": "t",
+      "repo": "kolourpaint",
+      "file": "tools/selection/text/kpToolText.cpp",
+      "line": 34,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Settings",
+        "Full Screen Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Settings.cpp",
+      "line": 38,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "kolourpaint",
+      "file": "mainWindow/kpMainWindow_Settings.cpp",
+      "line": 50,
+      "commit": "6ae394edcc397fe6e632944e58a9f8fe79349a85"
+    }
+  ]
+}

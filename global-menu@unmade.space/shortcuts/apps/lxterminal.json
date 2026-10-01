@@ -1,0 +1,106 @@
+{
+  "format": 1,
+  "app": "lxterminal",
+  "name": "LXTerminal",
+  "identifiers": [
+    "lxterminal.desktop",
+    "lxterminal",
+    "LXTerminal"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "label": "New Tab",
+          "shortcut": "<Ctrl><Shift>T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Tab",
+          "shortcut": "<Ctrl><Shift>W"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl><Shift>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "label": "Clear Scrollback"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl><Shift>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl><Shift>underscore"
+        },
+        {
+          "label": "Zoom Reset",
+          "shortcut": "<Ctrl><Shift>parenright"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences"
+        }
+      ]
+    },
+    {
+      "label": "Tabs",
+      "items": [
+        {
+          "label": "Name Tab",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "label": "Previous Tab",
+          "shortcut": "<Ctrl>Page_Up"
+        },
+        {
+          "label": "Next Tab",
+          "shortcut": "<Ctrl>Page_Down"
+        },
+        {
+          "label": "Move Tab Left",
+          "shortcut": "<Ctrl><Shift>Page_Up"
+        },
+        {
+          "label": "Move Tab Right",
+          "shortcut": "<Ctrl><Shift>Page_Down"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "About"
+        }
+      ]
+    }
+  ]
+}

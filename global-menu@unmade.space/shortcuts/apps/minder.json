@@ -1,0 +1,181 @@
+{
+  "format": 1,
+  "app": "minder",
+  "name": "Minder",
+  "identifiers": [
+    "com.github.phase1geo.minder.desktop",
+    "com.github.phase1geo.minder",
+    "Minder"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste Formula Image",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "label": "Delete",
+          "shortcut": "Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Edit Text…",
+          "shortcut": "e"
+        },
+        {
+          "label": "Insert Emoji",
+          "shortcut": "<Ctrl>period"
+        }
+      ]
+    },
+    {
+      "label": "Node",
+      "items": [
+        {
+          "label": "Add Child Node",
+          "shortcut": "Tab"
+        },
+        {
+          "label": "Add Sibling Node",
+          "shortcut": "Return"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Fold Children",
+          "shortcut": "f"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quick Entry Insert",
+          "shortcut": "<Ctrl><Shift>E"
+        },
+        {
+          "label": "Quick Entry Replace",
+          "shortcut": "<Ctrl><Shift>R"
+        }
+      ]
+    },
+    {
+      "label": "Select",
+      "items": [
+        {
+          "label": "Select Root Node",
+          "shortcut": "m"
+        },
+        {
+          "label": "Select First Child",
+          "shortcut": "c"
+        },
+        {
+          "label": "Select Next Sibling",
+          "shortcut": "n"
+        },
+        {
+          "label": "Select Previous Sibling",
+          "shortcut": "p"
+        },
+        {
+          "label": "Select Parent",
+          "shortcut": "a"
+        },
+        {
+          "label": "Select Children",
+          "shortcut": "d"
+        },
+        {
+          "label": "Select Subtree",
+          "shortcut": "<Shift>d"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Zoom Actual",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Zoom to Fit",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Zoom to Fit Selected Node Tree",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Focus Mode",
+          "shortcut": "<Ctrl><Shift>F"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Shortcuts Cheatsheet",
+          "shortcut": "<Ctrl>question"
+        }
+      ]
+    }
+  ]
+}

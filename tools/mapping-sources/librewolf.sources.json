@@ -1,0 +1,1424 @@
+{
+  "format": 1,
+  "app": "librewolf",
+  "repos": {
+    "firefox": {
+      "url": "https://github.com/mozilla-firefox/firefox.git",
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl>T",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "New Tab Ctrl + T"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "New Window Ctrl + N"
+    },
+    {
+      "path": [
+        "File",
+        "New Private Window"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "New Private Window Ctrl + Shift + P"
+    },
+    {
+      "path": [
+        "File",
+        "Open File"
+      ],
+      "shortcut": "<Ctrl>O",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Open File Ctrl + O"
+    },
+    {
+      "path": [
+        "File",
+        "Open Location"
+      ],
+      "shortcut": "<Ctrl>L",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Focus Address Bar F6 Alt + D Ctrl + L"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Close Tab Ctrl + W Ctrl + F4"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Close Window Ctrl + Shift + W or Alt + F4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Redo Ctrl + Y Ctrl + Shift + Z"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Paste Ctrl + V"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste as Plain Text"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Paste (as plain text) Ctrl + Shift + V"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Delete Del"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Select All Ctrl + A"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find in Page"
+      ],
+      "shortcut": "<Ctrl>F",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Find in This Page Ctrl + F"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Find Previous Shift + F3 or Ctrl + Shift + G"
+    },
+    {
+      "path": [
+        "Edit",
+        "Focus Address Bar for Web Search"
+      ],
+      "shortcut": "<Ctrl>K",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Focus Address bar for Web Search with Default Search Engine Ctrl + K"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "url": "https://web.archive.org/web/20200601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Zoom Reset Ctrl + 0"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Menu Bar"
+      ],
+      "shortcut": "F10",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Toggle Menu Bar activation (showing it temporarily when hidden) Alt or F10"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Context Menu"
+      ],
+      "shortcut": "<Shift>F10",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Toggle Context Menu Shift + F10"
+    },
+    {
+      "path": [
+        "View",
+        "View Page Info"
+      ],
+      "shortcut": "<Ctrl>I",
+      "url": "https://web.archive.org/web/20241201id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Page Info Ctrl + I"
+    },
+    {
+      "path": [
+        "View",
+        "Take Screenshot"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Take a screenshot Ctrl + Shift + S"
+    },
+    {
+      "path": [
+        "History",
+        "Reload"
+      ],
+      "shortcut": "<Ctrl>R",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Reload F5 Ctrl + R"
+    },
+    {
+      "path": [
+        "History",
+        "Reload (Override Cache)"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Reload (override cache) Ctrl + F5 or Ctrl + Shift + R"
+    },
+    {
+      "path": [
+        "History",
+        "Show All History"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Library window (History) Ctrl + Shift + H"
+    },
+    {
+      "path": [
+        "History",
+        "Reopen Closed Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "url": "https://web.archive.org/web/20210601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Undo Close Tab Ctrl + Shift + T"
+    },
+    {
+      "path": [
+        "History",
+        "Reopen Closed Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Reopen last closed window Ctrl + Shift + N"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Bookmark This Page"
+      ],
+      "shortcut": "<Ctrl>D",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Bookmark This Page Ctrl + D"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Show Bookmarks Sidebar"
+      ],
+      "shortcut": "<Ctrl>B",
+      "url": "https://web.archive.org/web/20240601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Bookmarks sidebar Ctrl + B"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Show All Bookmarks"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Show All Bookmarks (Library Window) Ctrl + Shift + O"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Last Tab"
+      ],
+      "shortcut": "<Alt>9",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Go to Last Tab Ctrl + 9 command + 9 Alt + 9"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab to Start"
+      ],
+      "shortcut": "<Ctrl><Shift>Home",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Move Tab to start Ctrl + Shift + Home"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab to End"
+      ],
+      "shortcut": "<Ctrl><Shift>End",
+      "url": "https://web.archive.org/web/20200601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Move Tab to end Ctrl + Shift + End"
+    },
+    {
+      "path": [
+        "Address Bar",
+        "Open Address in New Background Tab"
+      ],
+      "shortcut": "<Alt><Shift>Return",
+      "url": "https://web.archive.org/web/20200601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Open Address or Search in New Background Tab Alt + Shift + Enter"
+    },
+    {
+      "path": [
+        "Address Bar",
+        "Open Address in New Foreground Tab"
+      ],
+      "shortcut": "<Alt>Return",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Open Address or Search in New Foreground Tab Alt + Enter"
+    },
+    {
+      "path": [
+        "Address Bar",
+        "Open Address in New Window"
+      ],
+      "shortcut": "<Shift>Return",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Open Address or Search in New Window Shift + Enter"
+    },
+    {
+      "path": [
+        "Address Bar",
+        "Complete .com Address"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Complete .com Address Ctrl + Enter"
+    },
+    {
+      "path": [
+        "Address Bar",
+        "Delete Selected Autocomplete Entry"
+      ],
+      "shortcut": "<Shift>Delete",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Delete Selected Autocomplete Entry Shift + Del"
+    },
+    {
+      "path": [
+        "Address Bar",
+        "Move URL Left or Right"
+      ],
+      "shortcut": "<Ctrl><Shift>X",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Moves the URL left or right (if cursor is in the address bar) Ctrl + Shift + X"
+    },
+    {
+      "path": [
+        "Tools",
+        "Task Manager"
+      ],
+      "shortcut": "<Shift>Escape",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Task Manager Shift + Esc"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toggle Toolbox"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 36,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toggle Toolbox (Alternate)"
+      ],
+      "shortcut": "F12",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 41,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Web Console"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 51,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toggle Pick an Element from the Page"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 56,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 96,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor"
+      ],
+      "shortcut": "<Shift>F7",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 61,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Profiler"
+      ],
+      "shortcut": "<Shift>F5",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 66,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Network Monitor"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 71,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Storage Inspector"
+      ],
+      "shortcut": "<Shift>F9",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 91,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toggle Responsive Design Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 76,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Browser Console"
+      ],
+      "shortcut": "<Ctrl><Shift>J",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 81,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Browser Toolbox"
+      ],
+      "shortcut": "<Ctrl><Alt><Shift>I",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 86,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Cycle Tools Left to Right"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 123,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Cycle Tools Right to Left"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 128,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Toggle Toolbox Settings"
+      ],
+      "shortcut": "F1",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 133,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Toggle Docking Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 138,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Toggle Split Console"
+      ],
+      "shortcut": "Escape",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 143,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Search in All Files"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 612,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Search for Scripts by Name"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 622,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Resume Execution"
+      ],
+      "shortcut": "F8",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 627,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Step Over"
+      ],
+      "shortcut": "F10",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 632,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Step Into"
+      ],
+      "shortcut": "F11",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 637,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Step Out"
+      ],
+      "shortcut": "<Shift>F11",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 642,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Toggle Breakpoint"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 647,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Toggle Conditional Breakpoint"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 652,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Close Current File"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 602,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Find in Current File"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 607,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Find Next in Current File"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 617,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Web Console Panel",
+        "Clear Output"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 706,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Inspector Panel",
+        "Edit as HTML"
+      ],
+      "shortcut": "F2",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 410,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 872,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 877,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Replace"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 882,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Focus the Filter Input"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 887,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Save File to Disk"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "firefox",
+      "file": "devtools/docs/user/keyboard_shortcuts/index.md",
+      "line": 892,
+      "commit": "ab8d6c5ccc0df56b48c3416e2e6f6e596fd2e6f2"
+    },
+    {
+      "path": [
+        "PDF Viewer",
+        "Go to Page Number"
+      ],
+      "shortcut": "<Ctrl><Alt>G",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Focus the Page Number input box Ctrl + Alt + G"
+    },
+    {
+      "path": [
+        "PDF Viewer",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Zoom out Ctrl + -"
+    },
+    {
+      "path": [
+        "PDF Viewer",
+        "Automatic Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Automatic Zoom Ctrl + 0"
+    },
+    {
+      "path": [
+        "PDF Viewer",
+        "Rotate Counterclockwise"
+      ],
+      "shortcut": "<Shift>R",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Rotate counterclockwise Shift + R"
+    },
+    {
+      "path": [
+        "Media",
+        "Mute Audio"
+      ],
+      "shortcut": "<Ctrl>Down",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Mute audio Ctrl + ↓"
+    },
+    {
+      "path": [
+        "Media",
+        "Seek Back 10 Percent"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Seek back 10 % Ctrl + ←"
+    },
+    {
+      "path": [
+        "Media",
+        "Seek Forward 10 Percent"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "url": "https://web.archive.org/web/20200601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Seek forward 10 % Ctrl + →"
+    },
+    {
+      "path": [
+        "Media",
+        "Seek to Beginning"
+      ],
+      "shortcut": "Home",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Seek to the beginning Home"
+    },
+    {
+      "path": [
+        "Media",
+        "Seek to End"
+      ],
+      "shortcut": "End",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Seek to the end End"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toggle Toolbox"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + I"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toggle Toolbox (Alternate)"
+      ],
+      "shortcut": "F12",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "F12"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Web Console"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + K"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toggle Pick an Element from the Page"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + C"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + Z"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor"
+      ],
+      "shortcut": "<Shift>F7",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Shift + F7"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Profiler"
+      ],
+      "shortcut": "<Shift>F5",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Shift + F5"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Network Monitor"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + E"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Storage Inspector"
+      ],
+      "shortcut": "<Shift>F9",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Shift + F9"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toggle Responsive Design Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + M"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Browser Console"
+      ],
+      "shortcut": "<Ctrl><Shift>J",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + J"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Browser Toolbox"
+      ],
+      "shortcut": "<Ctrl><Alt><Shift>I",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Alt + Shift + I"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Cycle Tools Left to Right"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + ]"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Cycle Tools Right to Left"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + ["
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Toggle Toolbox Settings"
+      ],
+      "shortcut": "F1",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "F1"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Toggle Docking Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + D"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Toolbox",
+        "Toggle Split Console"
+      ],
+      "shortcut": "Escape",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Esc"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Search in All Files"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + F"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Search for Scripts by Name"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + P"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Resume Execution"
+      ],
+      "shortcut": "F8",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "F8"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Step Over"
+      ],
+      "shortcut": "F10",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "F10"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Step Into"
+      ],
+      "shortcut": "F11",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "F11"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Step Out"
+      ],
+      "shortcut": "<Shift>F11",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Shift + F11"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Toggle Breakpoint"
+      ],
+      "shortcut": "<Ctrl>B",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + B"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Toggle Conditional Breakpoint"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + B"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Close Current File"
+      ],
+      "shortcut": "<Ctrl>W",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + W"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Find in Current File"
+      ],
+      "shortcut": "<Ctrl>F",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + F"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Debugger Panel",
+        "Find Next in Current File"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + G"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Web Console Panel",
+        "Clear Output"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + L"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Inspector Panel",
+        "Edit as HTML"
+      ],
+      "shortcut": "F2",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "F2"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + G"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + G"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Replace"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + Shift + F"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Focus the Filter Input"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + P"
+    },
+    {
+      "path": [
+        "Developer Tools",
+        "Style Editor Panel",
+        "Save File to Disk"
+      ],
+      "shortcut": "<Ctrl>S",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html",
+      "quote": "Ctrl + S"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Show Bookmarks Toolbar"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Show/hide the Bookmarks toolbar Ctrl + Shift + B"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Copy Ctrl + C"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "url": "https://web.archive.org/web/20200601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Cut Ctrl + X"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Again"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://web.archive.org/web/20200601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Find Again F3 or Ctrl + G"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "url": "https://web.archive.org/web/20230601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Undo Ctrl + Z"
+    },
+    {
+      "path": [
+        "File",
+        "Print"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://web.archive.org/web/20230601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Print Ctrl + P"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Quit Ctrl + Q"
+    },
+    {
+      "path": [
+        "File",
+        "Save Page As"
+      ],
+      "shortcut": "<Ctrl>S",
+      "url": "https://web.archive.org/web/20200601id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Save Page As Ctrl + S"
+    },
+    {
+      "path": [
+        "History",
+        "Open History Sidebar"
+      ],
+      "shortcut": "<Ctrl>H",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "History sidebar Ctrl + H"
+    },
+    {
+      "path": [
+        "Media",
+        "Increase Volume"
+      ],
+      "shortcut": "Up",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Increase volume Up"
+    },
+    {
+      "path": [
+        "Media",
+        "Unmute Audio"
+      ],
+      "shortcut": "<Ctrl>Up",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Unmute audio Ctrl + Up"
+    },
+    {
+      "path": [
+        "PDF Viewer",
+        "Presentation Mode"
+      ],
+      "shortcut": "<Ctrl><Alt>P",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Switch to Presentation Mode Ctrl + Alt + P"
+    },
+    {
+      "path": [
+        "Tools",
+        "Add-ons and Themes"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Add-ons Ctrl + Shift + A"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Caret Browsing"
+      ],
+      "shortcut": "F7",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Caret Browsing F7"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full Screen"
+      ],
+      "shortcut": "F11",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Toggle Full Screen F11"
+    },
+    {
+      "path": [
+        "View",
+        "View Page Source"
+      ],
+      "shortcut": "<Ctrl>U",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Page Source Ctrl + U"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "url": "https://web.archive.org/web/20220101id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Zoom Out Ctrl + -"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Go one Tab to the Right Ctrl + Page Down control + page down command + option + → Ctrl + Tab"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Go one Tab to the Left Ctrl + Page Up control + page up command + option + ← Ctrl + Shift + Tab"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Zoom In Ctrl + + command"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Reader Mode"
+      ],
+      "shortcut": "<Ctrl><Alt>R",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Toggle Reader Mode Ctrl + Alt + R"
+    },
+    {
+      "path": [
+        "View",
+        "Stop"
+      ],
+      "shortcut": "Escape",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Stop Esc"
+    },
+    {
+      "path": [
+        "History",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Back Alt + ←"
+    },
+    {
+      "path": [
+        "History",
+        "Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Forward Alt + →"
+    },
+    {
+      "path": [
+        "History",
+        "Home"
+      ],
+      "shortcut": "<Alt>Home",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Home Alt + Home"
+    },
+    {
+      "path": [
+        "History",
+        "Clear Recent History"
+      ],
+      "shortcut": "<Ctrl><Shift>Delete",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Clear Recent History Ctrl + Shift + Del"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Bookmark All Tabs"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "url": "https://web.archive.org/web/2024id_/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "quote": "Bookmark All Tabs Ctrl + Shift + D"
+    }
+  ]
+}

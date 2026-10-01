@@ -1,0 +1,36 @@
+{
+  "format": 1,
+  "app": "kooha",
+  "name": "Kooha",
+  "identifiers": [
+    "io.github.seadve.Kooha.desktop",
+    "io.github.seadve.Kooha",
+    "Kooha"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {"label": "Open Menu", "shortcut": "F10"},
+        {"label": "Show Preferences", "shortcut": "<Ctrl>comma"},
+        {"label": "Close Window", "shortcut": "<Ctrl>W"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Recording",
+      "items": [
+        {"label": "Toggle Record", "shortcut": "<Ctrl>R"},
+        {"label": "Cancel Record", "shortcut": "<Ctrl>C"}
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {"label": "Toggle Desktop Audio", "shortcut": "<Ctrl>A"},
+        {"label": "Toggle Microphone", "shortcut": "<Ctrl>M"},
+        {"label": "Toggle Pointer", "shortcut": "<Ctrl>P"}
+      ]
+    }
+  ]
+}

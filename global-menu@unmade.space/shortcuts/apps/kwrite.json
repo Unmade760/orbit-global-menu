@@ -1,0 +1,484 @@
+{
+  "format": 1,
+  "app": "kwrite",
+  "name": "KWrite",
+  "identifiers": [
+    "org.kde.kwrite.desktop",
+    "org.kde.kwrite",
+    "kwrite",
+    "KWrite"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Save All",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reload",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl><Shift>W"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste Selection",
+          "shortcut": "<Ctrl><Shift>Insert"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Overwrite Mode",
+          "shortcut": "Insert"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find…",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find Variants",
+          "items": [
+            {
+              "label": "Find Next",
+              "shortcut": "F3"
+            },
+            {
+              "label": "Find Previous",
+              "shortcut": "<Shift>F3"
+            },
+            {
+              "label": "Find Selected",
+              "shortcut": "<Ctrl>H"
+            },
+            {
+              "label": "Find Selected Backwards",
+              "shortcut": "<Ctrl><Shift>H"
+            }
+          ]
+        },
+        {
+          "label": "Replace…",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Delete Line",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "label": "Delete Word Left",
+          "shortcut": "<Ctrl>BackSpace"
+        },
+        {
+          "label": "Delete Word Right",
+          "shortcut": "<Ctrl>Delete"
+        },
+        {
+          "label": "Insert a Newline Below Current Line",
+          "shortcut": "<Ctrl><Shift>Return"
+        },
+        {
+          "label": "Insert a Newline Above Current Line",
+          "shortcut": "<Ctrl><Alt>Return"
+        }
+      ]
+    },
+    {
+      "label": "Selection",
+      "items": [
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Deselect",
+          "shortcut": "<Ctrl><Shift>A"
+        },
+        {
+          "label": "Block Selection Mode",
+          "shortcut": "<Ctrl><Shift>B"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Comment",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Uncomment",
+          "shortcut": "<Ctrl><Shift>D"
+        },
+        {
+          "label": "Join Lines",
+          "shortcut": "<Ctrl>J"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Indent",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Unindent",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Capitalize",
+          "shortcut": "<Ctrl><Alt>U"
+        },
+        {
+          "label": "Uppercase",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "label": "Lowercase",
+          "shortcut": "<Ctrl><Shift>U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Add Caret above Cursor",
+          "shortcut": "<Ctrl><Alt>Up"
+        },
+        {
+          "label": "Add Caret below Cursor",
+          "shortcut": "<Ctrl><Alt>Down"
+        },
+        {
+          "label": "Add Cursors to Line Ends",
+          "shortcut": "<Shift><Alt>I"
+        },
+        {
+          "label": "Find and Select Next Occurrence",
+          "shortcut": "<Alt>J"
+        },
+        {
+          "label": "Find and Select All Occurrences",
+          "shortcut": "<Ctrl><Shift><Alt>J"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Quick Open",
+          "shortcut": "<Ctrl><Alt>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Next Tab",
+          "shortcut": "<Alt>Right"
+        },
+        {
+          "label": "Previous Tab",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Previous Location",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Go to Next Location",
+          "shortcut": "<Ctrl><Shift>1"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Line…",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Go to Previous Editing Location",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "label": "Go to Next Editing Location",
+          "shortcut": "<Ctrl><Shift>E"
+        },
+        {
+          "label": "Go to Matching Bracket",
+          "shortcut": "<Ctrl>6"
+        },
+        {
+          "label": "Select to Matching Bracket",
+          "shortcut": "<Ctrl><Shift>6"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Bookmarks",
+          "items": [
+            {
+              "label": "Set Bookmark",
+              "shortcut": "<Ctrl>B"
+            },
+            {
+              "label": "Previous",
+              "shortcut": "<Alt>Page_Up"
+            },
+            {
+              "label": "Next",
+              "shortcut": "<Alt>Page_Down"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Split View",
+          "items": [
+            {
+              "label": "Previous Split View",
+              "shortcut": "<Shift>F8"
+            },
+            {
+              "label": "Next Split View",
+              "shortcut": "F8"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Split Vertical",
+              "shortcut": "<Ctrl><Shift>L"
+            },
+            {
+              "label": "Split Horizontal",
+              "shortcut": "<Ctrl><Shift>T"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Close Current View",
+              "shortcut": "<Ctrl><Shift>R"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Enlarge Font",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Shrink Font",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Full Screen Mode",
+          "shortcut": "<Ctrl><Shift>F"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Switch to Command Line",
+          "shortcut": "F7"
+        },
+        {
+          "label": "Invoke Code Completion",
+          "shortcut": "<Ctrl>space"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reuse Word Above",
+          "shortcut": "<Ctrl>8"
+        },
+        {
+          "label": "Reuse Word Below",
+          "shortcut": "<Ctrl>9"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Switch to Next Input Mode",
+          "shortcut": "<Ctrl><Alt>v"
+        },
+        {
+          "label": "Spelling",
+          "items": [
+            {
+              "label": "Automatic Spell Checking",
+              "shortcut": "<Ctrl><Shift>O"
+            }
+          ]
+        },
+        {
+          "label": "Scripts",
+          "items": [
+            {
+              "label": "Navigation",
+              "items": [
+                {
+                  "label": "Move Cursor to Previous Matching Indent",
+                  "shortcut": "<Shift><Alt>Up"
+                },
+                {
+                  "label": "Move Cursor to Next Matching Indent",
+                  "shortcut": "<Shift><Alt>Down"
+                }
+              ]
+            },
+            {
+              "label": "Editing",
+              "items": [
+                {
+                  "label": "Move Lines Down",
+                  "shortcut": "<Ctrl><Shift>Down"
+                },
+                {
+                  "label": "Move Lines Up",
+                  "shortcut": "<Ctrl><Shift>Up"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Show Menubar",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Configure Keyboard Shortcuts…",
+          "shortcut": "<Ctrl><Alt>comma"
+        },
+        {
+          "label": "Configure KWrite…",
+          "shortcut": "<Ctrl><Shift>comma"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Help",
+          "shortcut": "F1"
+        },
+        {
+          "label": "What's This?",
+          "shortcut": "<Shift>F1"
+        }
+      ]
+    }
+  ]
+}

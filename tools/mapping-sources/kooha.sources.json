@@ -1,0 +1,111 @@
+{
+  "format": 1,
+  "app": "kooha",
+  "repos": {
+    "kooha": {
+      "url": "https://github.com/SeaDve/Kooha.git",
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Open Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "kooha",
+      "file": "data/resources/ui/shortcuts.ui",
+      "line": 10,
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    },
+    {
+      "path": [
+        "General",
+        "Show Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "kooha",
+      "file": "src/application.rs",
+      "line": 247,
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    },
+    {
+      "path": [
+        "General",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "kooha",
+      "file": "src/application.rs",
+      "line": 249,
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kooha",
+      "file": "src/application.rs",
+      "line": 248,
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    },
+    {
+      "path": [
+        "Recording",
+        "Toggle Record"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "kooha",
+      "file": "src/application.rs",
+      "line": 253,
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    },
+    {
+      "path": [
+        "Recording",
+        "Cancel Record"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kooha",
+      "file": "src/application.rs",
+      "line": 255,
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    },
+    {
+      "path": [
+        "Settings",
+        "Toggle Desktop Audio"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "kooha",
+      "file": "src/application.rs",
+      "line": 250,
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    },
+    {
+      "path": [
+        "Settings",
+        "Toggle Microphone"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "kooha",
+      "file": "src/application.rs",
+      "line": 251,
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    },
+    {
+      "path": [
+        "Settings",
+        "Toggle Pointer"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "kooha",
+      "file": "src/application.rs",
+      "line": 252,
+      "commit": "493848a057b2a9026d1a21d3e501e0df4fc3fcb0"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "app": "lxterminal",
+  "repos": {
+    "lxterminal": {
+      "url": "https://github.com/lxde/lxterminal.git",
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 70,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 71,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 72,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>Q",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 73,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 74,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 75,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Edit",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl><Shift>plus",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 81,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Edit",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl><Shift>underscore",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 82,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Edit",
+        "Zoom Reset"
+      ],
+      "shortcut": "<Ctrl><Shift>parenright",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 83,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Name Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 76,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 77,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 78,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 79,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "lxterminal",
+      "file": "src/setting.h",
+      "line": 80,
+      "commit": "e5e7076fc87c3017fc253a1c8fb64652661e2924"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "app": "mate-terminal",
+  "name": "MATE Terminal",
+  "identifiers": [
+    "mate-terminal.desktop",
+    "mate-terminal",
+    "MATE Terminal"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Open Terminal",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "label": "Open Tab",
+          "shortcut": "<Ctrl><Shift>T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Tab",
+          "shortcut": "<Ctrl><Shift>W"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl><Shift>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl><Shift>A"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Normal Size",
+          "shortcut": "<Ctrl>0"
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {
+          "label": "Find...",
+          "shortcut": "<Ctrl><Shift>F"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "<Ctrl><Shift>H"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Clear Highlight",
+          "shortcut": "<Ctrl><Shift>J"
+        }
+      ]
+    },
+    {
+      "label": "Terminal",
+      "items": [
+        {
+          "label": "Change Profile",
+          "items": [
+            {
+              "label": "Next Profile",
+              "shortcut": "<Alt>Page_Down"
+            },
+            {
+              "label": "Previous Profile",
+              "shortcut": "<Alt>Page_Up"
+            }
+          ]
+        },
+        {
+          "label": "Read Only",
+          "shortcut": "<Ctrl><Shift>R"
+        }
+      ]
+    },
+    {
+      "label": "Tabs",
+      "items": [
+        {
+          "label": "Next Tab",
+          "shortcut": "<Ctrl>Page_Down"
+        },
+        {
+          "label": "Previous Tab",
+          "shortcut": "<Ctrl>Page_Up"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Move Tab Left",
+          "shortcut": "<Ctrl><Shift>Page_Up"
+        },
+        {
+          "label": "Move Tab Right",
+          "shortcut": "<Ctrl><Shift>Page_Down"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Contents",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "app": "kmouth",
+  "repos": {
+    "kmouth": {
+      "url": "https://invent.kde.org/accessibility/kmouth.git",
+      "commit": "05921edf11e86c065d1be2a214f1f99e13c65db6"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open as History…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "kmouth",
+      "file": "kmouth.cpp",
+      "line": 107,
+      "commit": "05921edf11e86c065d1be2a214f1f99e13c65db6"
+    },
+    {
+      "path": [
+        "File",
+        "Save History As…"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "kmouth",
+      "file": "kmouth.cpp",
+      "line": 115,
+      "commit": "05921edf11e86c065d1be2a214f1f99e13c65db6"
+    },
+    {
+      "path": [
+        "File",
+        "Print History…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "kmouth",
+      "file": "kmouth.cpp",
+      "line": 123,
+      "commit": "05921edf11e86c065d1be2a214f1f99e13c65db6"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kmouth",
+      "file": "kmouth.cpp",
+      "line": 128,
+      "commit": "05921edf11e86c065d1be2a214f1f99e13c65db6"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "kmouth",
+      "file": "kmouth.cpp",
+      "line": 133,
+      "commit": "05921edf11e86c065d1be2a214f1f99e13c65db6"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kmouth",
+      "file": "kmouth.cpp",
+      "line": 139,
+      "commit": "05921edf11e86c065d1be2a214f1f99e13c65db6"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "kmouth",
+      "file": "kmouth.cpp",
+      "line": 145,
+      "commit": "05921edf11e86c065d1be2a214f1f99e13c65db6"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "kmouth",
+      "file": "kmouth.cpp",
+      "line": 164,
+      "commit": "05921edf11e86c065d1be2a214f1f99e13c65db6"
+    }
+  ]
+}

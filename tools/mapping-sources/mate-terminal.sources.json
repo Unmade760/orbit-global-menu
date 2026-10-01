@@ -1,0 +1,267 @@
+{
+  "format": 1,
+  "app": "mate-terminal",
+  "repos": {
+    "mate-terminal": {
+      "url": "https://github.com/mate-desktop/mate-terminal",
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open Terminal"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 1978,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "File",
+        "Open Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 1983,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 1998,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>Q",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2003,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2010,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2015,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2025,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "mate-terminal",
+      "file": "src/terminal-accels.c",
+      "line": 200,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2047,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2052,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "View",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2057,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Search",
+        "Find..."
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2064,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2069,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2074,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Search",
+        "Clear Highlight"
+      ],
+      "shortcut": "<Ctrl><Shift>J",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2079,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Change Profile",
+        "Next Profile"
+      ],
+      "shortcut": "<Alt>Page_Down",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2104,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Change Profile",
+        "Previous Profile"
+      ],
+      "shortcut": "<Alt>Page_Up",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2099,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Read Only"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2273,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2139,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2134,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2144,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2149,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "mate-terminal",
+      "file": "src/terminal-window.c",
+      "line": 2161,
+      "commit": "cd1baeb643af8025e300c6b78f722ee2e2e7322f"
+    }
+  ]
+}

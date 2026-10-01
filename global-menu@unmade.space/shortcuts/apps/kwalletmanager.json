@@ -1,0 +1,54 @@
+{
+  "format": 1,
+  "app": "kwalletmanager",
+  "name": "KWalletManager",
+  "identifiers": [
+    "org.kde.kwalletmanager.desktop",
+    "org.kde.kwalletmanager",
+    "org.kde.kwalletmanager5.desktop",
+    "org.kde.kwalletmanager5",
+    "kwalletmanager5",
+    "KWalletManager"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Configure Keyboard Shortcuts…",
+          "shortcut": "<Ctrl><Alt>comma"
+        }
+      ]
+    },
+    {
+      "label": "Entry",
+      "items": [
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "New...",
+          "shortcut": "Insert"
+        },
+        {
+          "label": "Rename",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Delete",
+          "shortcut": "Delete"
+        }
+      ]
+    }
+  ]
+}

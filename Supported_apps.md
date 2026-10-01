@@ -123,26 +123,48 @@
 - KFind
 - Kitty
 - KMag
+- KMouth
+- KolourPaint
 - Komikku
+- Konqueror
 - Konsole
+- Kooha
+- KOrganizer
 - Krita
+- KWalletManager
+- KWrite
 - LibreCAD
 - LibreOffice Calc
+- LibreOffice Draw
 - LibreOffice Impress
+- LibreOffice Math
 - LibreOffice Writer
+- LibreWolf
 - Logs
 - Logseq
+- LosslessCut
 - Loupe (Image Viewer)
 - Lutris
+- LXTerminal
 - Mailspring
 - Maps
+- MATE Calculator
+- MATE Terminal
 - Mattermost
 - Meld
+- melonDS
+- mGBA
+- Microsoft Edge
 - Microsoft Teams
+- Minder
+- Mission Center
+- Mousepad
 - MPV
+- Music (GNOME Music)
 - Nautilus (Files)
 - Nemo
 - Neovide
+- Newsflash
 - Nextcloud
 - Nicotine+
 - OBS Studio

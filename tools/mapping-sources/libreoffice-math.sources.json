@@ -1,0 +1,300 @@
+{
+  "format": 1,
+  "app": "libreoffice-math",
+  "repos": {
+    "libreoffice-core": {
+      "url": "https://github.com/LibreOffice/core.git",
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 167,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "N_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Open..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 179,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "O_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 230,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "S_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Save As..."
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 236,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "S_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Print..."
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 185,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "P_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 218,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "Q_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3658,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "Z_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3652,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "Y_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 260,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "X_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 48,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "C_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 248,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "V_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3597,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "A_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Next Marker"
+      ],
+      "shortcut": "F4",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3616,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Previous Marker"
+      ],
+      "shortcut": "<Shift>F4",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3622,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F4_SHIFT"
+    },
+    {
+      "path": [
+        "Edit",
+        "Next Error"
+      ],
+      "shortcut": "F3",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3604,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F3"
+    },
+    {
+      "path": [
+        "Edit",
+        "Previous Error"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3610,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F3_SHIFT"
+    },
+    {
+      "path": [
+        "View",
+        "Update"
+      ],
+      "shortcut": "F9",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3628,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F9"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen"
+      ],
+      "shortcut": "<Ctrl><Shift>J",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3634,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "J_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 60,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "PAGEUP_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 54,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "PAGEDOWN_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "View",
+        "Open the Elements Deck"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 3591,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "2_MOD2"
+    },
+    {
+      "path": [
+        "Tools",
+        "Extensions..."
+      ],
+      "shortcut": "<Ctrl><Alt>E",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 197,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "E_MOD1_MOD2"
+    },
+    {
+      "path": [
+        "Tools",
+        "Options..."
+      ],
+      "shortcut": "<Alt>F12",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 333,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F12_MOD2"
+    },
+    {
+      "path": [
+        "Window",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 254,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "W_MOD1"
+    }
+  ]
+}

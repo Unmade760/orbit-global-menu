@@ -1,0 +1,405 @@
+{
+  "format": 1,
+  "app": "mission-center",
+  "repos": {
+    "mission-center": {
+      "url": "https://gitlab.com/mission-center-devs/mission-center.git",
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Open Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 31,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "General",
+        "Open Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 41,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "General",
+        "Show Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 46,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "General",
+        "Show System Information"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 66,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "General",
+        "Toggle Sidebar"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 71,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "General",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 36,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "mission-center",
+      "file": "src/application.rs",
+      "line": 98,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Pages",
+        "Show Performance Page"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 51,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Pages",
+        "Show Apps Page"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 56,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Pages",
+        "Show Services Page"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 61,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Copy Device Information"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 86,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Toggle Summary Mode"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 91,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Select a Device",
+        "Device 1"
+      ],
+      "shortcut": "F1",
+      "repo": "mission-center",
+      "file": "src/window.rs",
+      "line": 223,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Select a Device",
+        "Device 2"
+      ],
+      "shortcut": "F2",
+      "repo": "mission-center",
+      "file": "src/window.rs",
+      "line": 224,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Select a Device",
+        "Device 3"
+      ],
+      "shortcut": "F3",
+      "repo": "mission-center",
+      "file": "src/window.rs",
+      "line": 225,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Select a Device",
+        "Device 4"
+      ],
+      "shortcut": "F4",
+      "repo": "mission-center",
+      "file": "src/window.rs",
+      "line": 226,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Select a Device",
+        "Device 5"
+      ],
+      "shortcut": "F5",
+      "repo": "mission-center",
+      "file": "src/window.rs",
+      "line": 227,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Select a Device",
+        "Device 6"
+      ],
+      "shortcut": "F6",
+      "repo": "mission-center",
+      "file": "src/window.rs",
+      "line": 228,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Select a Device",
+        "Device 7"
+      ],
+      "shortcut": "F7",
+      "repo": "mission-center",
+      "file": "src/window.rs",
+      "line": 229,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Performance",
+        "Select a Device",
+        "Device 8"
+      ],
+      "shortcut": "F8",
+      "repo": "mission-center",
+      "file": "src/window.rs",
+      "line": 230,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Apps",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 105,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Apps",
+        "Collapse All"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 110,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Apps",
+        "Stop App or Process"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 115,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Apps",
+        "Force Stop App or Process"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 120,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Apps",
+        "Show Details Dialog"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 125,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Services",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 134,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Services",
+        "Collapse All"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 139,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Services",
+        "Start Service"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 144,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Services",
+        "Stop Service"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 149,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Services",
+        "Restart Service"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 154,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Services",
+        "Show Details Dialog"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "mission-center",
+      "file": "resources/ui/keyboard_shortcuts.blp",
+      "line": 159,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Apps",
+        "Expand Row"
+      ],
+      "shortcut": "Right",
+      "repo": "mission-center",
+      "file": "resources/ui/table_view/table_view.blp",
+      "line": 98,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Apps",
+        "Collapse Row"
+      ],
+      "shortcut": "Left",
+      "repo": "mission-center",
+      "file": "resources/ui/table_view/table_view.blp",
+      "line": 103,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Services",
+        "Expand Row"
+      ],
+      "shortcut": "Right",
+      "repo": "mission-center",
+      "file": "resources/ui/table_view/table_view.blp",
+      "line": 98,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    },
+    {
+      "path": [
+        "Services",
+        "Collapse Row"
+      ],
+      "shortcut": "Left",
+      "repo": "mission-center",
+      "file": "resources/ui/table_view/table_view.blp",
+      "line": 103,
+      "commit": "41cecee5d15dc83affa9c2559bf4c20a7e6916b2"
+    }
+  ]
+}

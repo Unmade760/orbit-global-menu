@@ -1,0 +1,905 @@
+{
+  "format": 1,
+  "app": "libreoffice-draw",
+  "repos": {
+    "libreoffice-core": {
+      "url": "https://github.com/LibreOffice/core.git",
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 167,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "N_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Open..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1956,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "O_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Templates",
+        "Manage Templates"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1950,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "N_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2034,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "S_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Save As..."
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 236,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "S_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Print..."
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1962,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "P_MOD1"
+    },
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1986,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "Q_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2092,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "Z_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2086,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "Y_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2074,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "X_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1736,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "C_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2062,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "V_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Special",
+        "Paste Special..."
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2068,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "V_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Duplicate..."
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1803,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F3_SHIFT"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 29,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "A_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find..."
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 130,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find and Replace..."
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 143,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "H_MOD1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Toggle Point Edit Mode"
+      ],
+      "shortcut": "F8",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1839,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F8"
+    },
+    {
+      "path": [
+        "Edit",
+        "Edit Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 81,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "M_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "View",
+        "Rulers"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2004,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "R_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "View",
+        "Sidebar"
+      ],
+      "shortcut": "<Ctrl>F5",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1821,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F5_MOD1"
+    },
+    {
+      "path": [
+        "View",
+        "Navigator"
+      ],
+      "shortcut": "F5",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1815,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 60,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "PAGEUP_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 54,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "PAGEDOWN_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "View",
+        "Data Sources"
+      ],
+      "shortcut": "<Ctrl><Shift>F4",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 118,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F4_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "View",
+        "Open the Properties Deck"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 345,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "1_MOD2"
+    },
+    {
+      "path": [
+        "View",
+        "Open the Styles Deck"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1642,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "2_MOD2"
+    },
+    {
+      "path": [
+        "View",
+        "Open the Gallery Deck"
+      ],
+      "shortcut": "<Alt>3",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1648,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "3_MOD2"
+    },
+    {
+      "path": [
+        "View",
+        "Open the Navigator Deck"
+      ],
+      "shortcut": "<Alt>4",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1654,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "4_MOD2"
+    },
+    {
+      "path": [
+        "View",
+        "Open the Shapes Deck"
+      ],
+      "shortcut": "<Alt>5",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1660,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "5_MOD2"
+    },
+    {
+      "path": [
+        "Insert",
+        "OLE Object",
+        "Formula Object..."
+      ],
+      "shortcut": "<Shift><Alt>E",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1773,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "E_SHIFT_MOD2"
+    },
+    {
+      "path": [
+        "Insert",
+        "Text Box"
+      ],
+      "shortcut": "F2",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1785,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F2"
+    },
+    {
+      "path": [
+        "Insert",
+        "Comment"
+      ],
+      "shortcut": "<Ctrl><Alt>C",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 66,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "C_MOD1_MOD2"
+    },
+    {
+      "path": [
+        "Insert",
+        "Hyperlink..."
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 93,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "K_MOD1"
+    },
+    {
+      "path": [
+        "Insert",
+        "Formatting Mark",
+        "No-break Space"
+      ],
+      "shortcut": "<Ctrl><Shift>space",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2010,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "SPACE_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "Insert",
+        "Formatting Mark",
+        "Narrow No-break Space"
+      ],
+      "shortcut": "<Shift><Alt>space",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2016,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "SPACE_SHIFT_MOD2"
+    },
+    {
+      "path": [
+        "Insert",
+        "Formatting Mark",
+        "Zero-width Space"
+      ],
+      "shortcut": "<Ctrl>KP_Divide",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1760,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "DIVIDE_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Bold"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1716,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "B_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Italic"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1889,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "I_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Superscript"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1974,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "P_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Subscript"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1730,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "B_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Increase Size"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2106,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "BRACKETRIGHT_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Text",
+        "Decrease Size"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2098,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "BRACKETLEFT_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Spacing",
+        "Line Spacing: 1"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1666,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "1_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Spacing",
+        "Line Spacing: 1.5"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1678,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "5_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Spacing",
+        "Line Spacing: 2"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1672,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "2_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Align Text",
+        "Center"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1766,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "E_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Align Text",
+        "Justified"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1895,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "J_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Align Text",
+        "Left"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1926,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "L_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Align Text",
+        "Right"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1998,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "R_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Clear Direct Formatting"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1932,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "M_MOD1"
+    },
+    {
+      "path": [
+        "Format",
+        "Styles",
+        "Manage Styles"
+      ],
+      "shortcut": "F11",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1779,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F11"
+    },
+    {
+      "path": [
+        "Format",
+        "Character..."
+      ],
+      "shortcut": "<Alt>C",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 282,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "C_MOD2"
+    },
+    {
+      "path": [
+        "Format",
+        "Position and Size..."
+      ],
+      "shortcut": "F4",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1809,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F4"
+    },
+    {
+      "path": [
+        "Shape",
+        "Arrange",
+        "Bring to Front"
+      ],
+      "shortcut": "<Ctrl><Shift>KP_Add",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1704,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "ADD_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "Shape",
+        "Arrange",
+        "Forward One"
+      ],
+      "shortcut": "<Ctrl>KP_Add",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1698,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "ADD_MOD1"
+    },
+    {
+      "path": [
+        "Shape",
+        "Arrange",
+        "Backward One"
+      ],
+      "shortcut": "<Ctrl>KP_Subtract",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2022,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "SUBTRACT_MOD1"
+    },
+    {
+      "path": [
+        "Shape",
+        "Arrange",
+        "Send to Back"
+      ],
+      "shortcut": "<Ctrl><Shift>KP_Subtract",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 2028,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "SUBTRACT_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "Shape",
+        "Group Shapes",
+        "Group"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1871,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "G_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "Shape",
+        "Group Shapes",
+        "Ungroup"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>G",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1877,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "G_SHIFT_MOD1_MOD2"
+    },
+    {
+      "path": [
+        "Shape",
+        "Group Shapes",
+        "Enter Group"
+      ],
+      "shortcut": "F3",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1791,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F3"
+    },
+    {
+      "path": [
+        "Shape",
+        "Group Shapes",
+        "Exit Group"
+      ],
+      "shortcut": "<Ctrl>F3",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1797,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F3_MOD1"
+    },
+    {
+      "path": [
+        "Shape",
+        "Combine"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1913,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "K_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "Shape",
+        "Split"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>K",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1920,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "K_SHIFT_MOD1_MOD2"
+    },
+    {
+      "path": [
+        "Tools",
+        "Spelling..."
+      ],
+      "shortcut": "F7",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1827,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F7"
+    },
+    {
+      "path": [
+        "Tools",
+        "Automatic Spell Checking"
+      ],
+      "shortcut": "<Shift>F7",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 87,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F7_SHIFT"
+    },
+    {
+      "path": [
+        "Tools",
+        "Thesaurus..."
+      ],
+      "shortcut": "<Ctrl>F7",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 1833,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F7_MOD1"
+    },
+    {
+      "path": [
+        "Tools",
+        "Language",
+        "Hangul/Hanja Conversion..."
+      ],
+      "shortcut": "<Ctrl><Shift>F7",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 124,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F7_SHIFT_MOD1"
+    },
+    {
+      "path": [
+        "Tools",
+        "Extensions..."
+      ],
+      "shortcut": "<Ctrl><Alt>E",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 197,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "E_MOD1_MOD2"
+    },
+    {
+      "path": [
+        "Tools",
+        "Options..."
+      ],
+      "shortcut": "<Alt>F12",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 333,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "F12_MOD2"
+    },
+    {
+      "path": [
+        "Window",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 254,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "W_MOD1"
+    },
+    {
+      "path": [
+        "Help",
+        "Search Commands"
+      ],
+      "shortcut": "<Shift>Escape",
+      "repo": "libreoffice-core",
+      "file": "officecfg/registry/data/org/openoffice/Office/Accelerators.xcu",
+      "line": 339,
+      "commit": "df52af4eea4766db709a81e03f4320a7e9f93cde",
+      "key": "ESCAPE_SHIFT"
+    }
+  ]
+}

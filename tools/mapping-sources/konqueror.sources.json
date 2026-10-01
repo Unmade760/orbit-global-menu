@@ -1,0 +1,646 @@
+{
+  "format": 1,
+  "app": "konqueror",
+  "repos": {
+    "konqueror": {
+      "url": "https://invent.kde.org/network/konqueror.git",
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    "kconfig": {
+      "url": "https://invent.kde.org/frameworks/kconfig.git",
+      "commit": "975405122decec19e7952a304cd7c19d60f59e62"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2578,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3482,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "File",
+        "Open Location"
+      ],
+      "shortcut": "<Alt>O",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3338,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "File",
+        "Open File…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2612,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2667,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2695,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3583,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3588,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3595,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3597,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "konqueror",
+      "file": "webenginepart/src/webenginepart.cpp",
+      "line": 249,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "konqueror",
+      "file": "webenginepart/src/webenginepart.cpp",
+      "line": 266,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Next"
+      ],
+      "shortcut": "F3",
+      "repo": "konqueror",
+      "file": "webenginepart/src/webenginepart.cpp",
+      "line": 810,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "konqueror",
+      "file": "webenginepart/src/webenginepart.cpp",
+      "line": 811,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rename"
+      ],
+      "shortcut": "F2",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2798,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move to Trash"
+      ],
+      "shortcut": "Delete",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2808,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete"
+      ],
+      "shortcut": "<Shift>Delete",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2818,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Properties…"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2836,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Selection",
+        "Select Items Matching…"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2846,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Selection",
+        "Invert Selection"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 2896,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "View",
+        "Reload"
+      ],
+      "shortcut": "F5",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3556,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "View",
+        "Stop"
+      ],
+      "shortcut": "Escape",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3603,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "View",
+        "Reload All Tabs"
+      ],
+      "shortcut": "<Shift>F5",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3570,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "View",
+        "Force Reload"
+      ],
+      "shortcut": "<Ctrl>F5",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3579,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "konqueror",
+      "file": "webenginepart/src/webenginepart.cpp",
+      "line": 220,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "konqueror",
+      "file": "webenginepart/src/webenginepart.cpp",
+      "line": 225,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "View",
+        "Actual Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "konqueror",
+      "file": "webenginepart/src/webenginepart.cpp",
+      "line": 230,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "View",
+        "View Document Source"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "konqueror",
+      "file": "webenginepart/src/webenginepart.cpp",
+      "line": 259,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "View",
+        "Show Hidden Files"
+      ],
+      "shortcut": "<Alt>period",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 3058,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Go",
+        "Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3386,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Go",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3415,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Go",
+        "Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3422,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Go",
+        "Home"
+      ],
+      "shortcut": "<Alt>Home",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 3118,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Go",
+        "Show History"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3446,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Add Bookmark"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 3227,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Tools",
+        "Open Terminal"
+      ],
+      "shortcut": "F4",
+      "repo": "konqueror",
+      "file": "doc/konqueror/index.docbook",
+      "line": 3275,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Tools",
+        "Execute Shell Command…"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "konqueror",
+      "file": "plugins/shellcmdplugin/kshellcmdplugin.cpp",
+      "line": 34,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Tools",
+        "Create Image Gallery…"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "konqueror",
+      "file": "plugins/kimgalleryplugin/imgalleryplugin.cpp",
+      "line": 46,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Tools",
+        "Show Filter Bar"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "konqueror",
+      "file": "plugins/dirfilter/dirfilterplugin.cpp",
+      "line": 230,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Tools",
+        "Focus Searchbar"
+      ],
+      "shortcut": "<Ctrl><Alt>S",
+      "repo": "konqueror",
+      "file": "plugins/searchbar/searchbar.cpp",
+      "line": 78,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Tools",
+        "Credential management",
+        "Fill In Credentials"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "konqueror",
+      "file": "webenginepart/src/webenginepart.cpp",
+      "line": 1098,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "konqueror",
+      "file": "src/konqueror.rc",
+      "line": 64,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Sidebar"
+      ],
+      "shortcut": "F9",
+      "repo": "konqueror",
+      "file": "src/konqueror.rc",
+      "line": 134,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Settings",
+        "Full Screen Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "konqueror",
+      "file": "src/konqueror.rc",
+      "line": 68,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "konqueror",
+      "file": "src/konqueror.rc",
+      "line": 77,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Konqueror…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "konqueror",
+      "file": "src/konqueror.rc",
+      "line": 79,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Split View Left/Right"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3471,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Split View Top/Bottom"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3476,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Close Active View"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3500,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Duplicate Window"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3326,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Duplicate Current Tab"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3490,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Detach Current Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3495,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Close Current Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3505,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Move Tab Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Left",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3532,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Move Tab Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Right",
+      "repo": "konqueror",
+      "file": "src/konqmainwindow.cpp",
+      "line": 3537,
+      "commit": "22b174e0f526e52a071e8b5b87b79e8a50847aa5"
+    },
+    {
+      "path": [
+        "Window",
+        "Activate Next Tab"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "repo": "kconfig",
+      "file": "src/gui/kstandardshortcut.h",
+      "line": 537,
+      "commit": "975405122decec19e7952a304cd7c19d60f59e62"
+    },
+    {
+      "path": [
+        "Window",
+        "Activate Previous Tab"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "repo": "kconfig",
+      "file": "src/gui/kstandardshortcut.h",
+      "line": 544,
+      "commit": "975405122decec19e7952a304cd7c19d60f59e62"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "app": "microsoft-edge",
+  "name": "Microsoft Edge",
+  "identifiers": [
+    "com.microsoft.Edge.desktop",
+    "com.microsoft.Edge",
+    "microsoft-edge.desktop",
+    "microsoft-edge",
+    "microsoft-edge-stable",
+    "Microsoft Edge"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "New Tab", "shortcut": "<Ctrl>T"},
+        {"label": "New Window", "shortcut": "<Ctrl>N"},
+        {"label": "New InPrivate Window", "shortcut": "<Ctrl><Shift>N"},
+        {"label": "Reopen Closed Tab", "shortcut": "<Ctrl><Shift>T"},
+        {"label": "Open File", "shortcut": "<Ctrl>O"},
+        {"label": "Open Location", "shortcut": "<Ctrl>L"},
+        {"label": "Open Location (Alternate)", "shortcut": "<Alt>D"},
+        {"label": "Save Page As", "shortcut": "<Ctrl>S"},
+        {"label": "Print", "shortcut": "<Ctrl>P"},
+        {"label": "Print Using System Dialog", "shortcut": "<Ctrl><Shift>P"},
+        {"label": "Close Tab", "shortcut": "<Ctrl>W"},
+        {"label": "Close Tab (Alternate)", "shortcut": "<Ctrl>F4"},
+        {"label": "Close Window", "shortcut": "<Ctrl><Shift>W"},
+        {"label": "Close Window (Alternate)", "shortcut": "<Alt>F4"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Paste Without Formatting", "shortcut": "<Ctrl><Shift>V"},
+        {"label": "Find on Page", "shortcut": "<Ctrl>F"},
+        {"label": "Find on Page (Alternate)", "shortcut": "F3"},
+        {"label": "Find Next", "shortcut": "<Ctrl>G"},
+        {"label": "Find Previous", "shortcut": "<Ctrl><Shift>G"},
+        {"label": "Search From Address Bar", "shortcut": "<Ctrl>E"},
+        {"label": "Search From Address Bar (Alternate)", "shortcut": "<Ctrl>K"},
+        {"label": "Paste and Search", "shortcut": "<Ctrl><Shift>L"},
+        {"label": "Clear Browsing Data", "shortcut": "<Ctrl><Shift>Delete"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Reload", "shortcut": "<Ctrl>R"},
+        {"label": "Reload (Alternate)", "shortcut": "F5"},
+        {"label": "Reload Ignoring Cache", "shortcut": "<Ctrl><Shift>R"},
+        {"label": "Reload Ignoring Cache (Alternate)", "shortcut": "<Shift>F5"},
+        {"label": "Stop Loading", "shortcut": "Escape"},
+        {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+        {"label": "Reset Zoom", "shortcut": "<Ctrl>0"},
+        {"label": "Full Screen", "shortcut": "F11"},
+        {"label": "Immersive Reader", "shortcut": "F9"},
+        {"label": "Read Aloud", "shortcut": "<Ctrl><Shift>U"},
+        {"label": "Toggle Caret Browsing", "shortcut": "F7"},
+        {"label": "Open Settings and More", "shortcut": "<Alt>F"},
+        {"label": "Open Settings and More (Alternate)", "shortcut": "<Alt>E"},
+        {"label": "Open Sidebar Search", "shortcut": "<Ctrl><Shift>E"}
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {"label": "View Source", "shortcut": "<Ctrl>U"},
+        {"label": "Developer Tools", "shortcut": "<Ctrl><Shift>I"},
+        {"label": "Developer Tools (Alternate)", "shortcut": "F12"},
+        {"label": "Send Feedback", "shortcut": "<Shift><Alt>I"},
+        {"label": "Open Help", "shortcut": "F1"},
+        {"label": "Switch Profile or Guest", "shortcut": "<Ctrl><Shift>M"}
+      ]
+    },
+    {
+      "label": "History",
+      "items": [
+        {"label": "Go Back", "shortcut": "<Alt>Left"},
+        {"label": "Go Forward", "shortcut": "<Alt>Right"},
+        {"label": "Open Home Page", "shortcut": "<Alt>Home"},
+        {"label": "Open History", "shortcut": "<Ctrl>H"},
+        {"label": "Open Downloads", "shortcut": "<Ctrl>J"}
+      ]
+    },
+    {
+      "label": "Favorites",
+      "items": [
+        {"label": "Save Tab as Favorite", "shortcut": "<Ctrl>D"},
+        {"label": "Save All Tabs as Favorites", "shortcut": "<Ctrl><Shift>D"},
+        {"label": "Show or Hide Favorites Bar", "shortcut": "<Ctrl><Shift>B"},
+        {"label": "Open Favorites", "shortcut": "<Ctrl><Shift>O"},
+        {"label": "Focus Favorites Bar", "shortcut": "<Shift><Alt>B"},
+        {"label": "Open Collections", "shortcut": "<Ctrl><Shift>Y"}
+      ]
+    },
+    {
+      "label": "Tabs",
+      "items": [
+        {"label": "Next Tab", "shortcut": "<Ctrl>Tab"},
+        {"label": "Next Tab (Alternate)", "shortcut": "<Ctrl>Page_Down"},
+        {"label": "Previous Tab", "shortcut": "<Ctrl><Shift>Tab"},
+        {"label": "Previous Tab (Alternate)", "shortcut": "<Ctrl>Page_Up"},
+        {"label": "Last Tab", "shortcut": "<Ctrl>9"},
+        {"label": "Duplicate Tab", "shortcut": "<Ctrl><Shift>K"},
+        {"label": "Mute Tab", "shortcut": "<Ctrl>M"}
+      ]
+    }
+  ]
+}

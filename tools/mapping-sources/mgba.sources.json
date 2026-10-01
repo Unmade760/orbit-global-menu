@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "app": "mgba",
+  "repos": {
+    "mgba": {
+      "url": "https://github.com/mgba-emu/mgba.git",
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Load ROM..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1356,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "File",
+        "Load State"
+      ],
+      "shortcut": "F10",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1418,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "File",
+        "Save State"
+      ],
+      "shortcut": "<Shift>F10",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1428,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "File",
+        "Quick Load",
+        "Undo Load State"
+      ],
+      "shortcut": "F11",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1452,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "File",
+        "Quick Save",
+        "Undo Save State"
+      ],
+      "shortcut": "<Shift>F11",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1455,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1490,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Reset"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1493,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Pause"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1507,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Next Frame"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1510,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Fast Forward (Held)"
+      ],
+      "shortcut": "Tab",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1518,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Fast Forward"
+      ],
+      "shortcut": "<Shift>Tab",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1522,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Rewind (Held)"
+      ],
+      "shortcut": "grave",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1560,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Rewind"
+      ],
+      "shortcut": "asciitilde",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1565,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Step Backwards"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1570,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Audio/Video",
+        "Frame Size",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1637,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Audio/Video",
+        "Frame Size",
+        "Exit Fullscreen"
+      ],
+      "shortcut": "Escape",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1850,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    },
+    {
+      "path": [
+        "Audio/Video",
+        "Hide Menu"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "mgba",
+      "file": "src/platform/qt/Window.cpp",
+      "line": 1765,
+      "commit": "c3c8e5e813f245028de118a56734e1dc0f35ce2a"
+    }
+  ]
+}

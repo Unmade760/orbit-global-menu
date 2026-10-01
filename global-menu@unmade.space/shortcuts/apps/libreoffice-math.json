@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "libreoffice-math",
+  "name": "LibreOffice Math",
+  "identifiers": [
+    "libreoffice-math.desktop",
+    "libreoffice math",
+    "libreoffice-math",
+    "LibreOffice Math"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open...",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As...",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Print...",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Exit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl>Y"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Next Marker",
+          "shortcut": "F4"
+        },
+        {
+          "label": "Previous Marker",
+          "shortcut": "<Shift>F4"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Next Error",
+          "shortcut": "F3"
+        },
+        {
+          "label": "Previous Error",
+          "shortcut": "<Shift>F3"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Update",
+          "shortcut": "F9"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Full Screen",
+          "shortcut": "<Ctrl><Shift>J"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl><Shift>Page_Up"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl><Shift>Page_Down"
+        },
+        {
+          "label": "Open the Elements Deck",
+          "shortcut": "<Alt>2"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Extensions...",
+          "shortcut": "<Ctrl><Alt>E"
+        },
+        {
+          "label": "Options...",
+          "shortcut": "<Alt>F12"
+        }
+      ]
+    },
+    {
+      "label": "Window",
+      "items": [
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        }
+      ]
+    }
+  ]
+}

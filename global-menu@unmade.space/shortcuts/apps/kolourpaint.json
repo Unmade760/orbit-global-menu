@@ -1,0 +1,287 @@
+{
+  "format": 1,
+  "app": "kolourpaint",
+  "name": "KolourPaint",
+  "identifiers": [
+    "org.kde.kolourpaint.desktop",
+    "org.kde.kolourpaint",
+    "kolourpaint"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Reload",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste in New Window",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Deselect",
+          "shortcut": "<Ctrl><Shift>A"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Zoom to Actual Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Grid",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Show Thumbnail",
+          "shortcut": "<Ctrl>H"
+        }
+      ]
+    },
+    {
+      "label": "Image",
+      "items": [
+        {
+          "label": "Set as Image (Crop)",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "Autocrop",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Resize / Scale...",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "label": "Flip (upside down)",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Rotate Left",
+          "shortcut": "<Ctrl><Shift>Left"
+        },
+        {
+          "label": "Rotate Right",
+          "shortcut": "<Ctrl><Shift>Right"
+        },
+        {
+          "label": "Rotate...",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Skew...",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "More Effects...",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Invert Colors",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Clear",
+          "shortcut": "<Ctrl><Shift>N"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Brush",
+          "shortcut": "b"
+        },
+        {
+          "label": "Color Eraser",
+          "shortcut": "o"
+        },
+        {
+          "label": "Eraser",
+          "shortcut": "a"
+        },
+        {
+          "label": "Pen",
+          "shortcut": "p"
+        },
+        {
+          "label": "Spraycan",
+          "shortcut": "y"
+        },
+        {
+          "label": "Color Picker",
+          "shortcut": "c"
+        },
+        {
+          "label": "Flood Fill",
+          "shortcut": "f"
+        },
+        {
+          "label": "Zoom",
+          "shortcut": "z"
+        },
+        {
+          "label": "Curve",
+          "shortcut": "v"
+        },
+        {
+          "label": "Line",
+          "shortcut": "l"
+        },
+        {
+          "label": "Polygon",
+          "shortcut": "g"
+        },
+        {
+          "label": "Connected Lines",
+          "shortcut": "n"
+        },
+        {
+          "label": "Ellipse",
+          "shortcut": "e"
+        },
+        {
+          "label": "Rectangle",
+          "shortcut": "r"
+        },
+        {
+          "label": "Rounded Rectangle",
+          "shortcut": "u"
+        },
+        {
+          "label": "Selection (Elliptical)",
+          "shortcut": "i"
+        },
+        {
+          "label": "Selection (Free-Form)",
+          "shortcut": "m"
+        },
+        {
+          "label": "Selection (Rectangular)",
+          "shortcut": "s"
+        },
+        {
+          "label": "Text",
+          "shortcut": "t"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Full Screen Mode",
+          "shortcut": "<Ctrl><Shift>F"
+        },
+        {
+          "label": "Configure Keyboard Shortcuts…",
+          "shortcut": "<Ctrl><Alt>comma"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "app": "newsflash",
+  "name": "Newsflash",
+  "identifiers": [
+    "io.gitlab.news_flash.NewsFlash.desktop",
+    "io.gitlab.news_flash.NewsFlash",
+    "Newsflash"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Refresh Feeds",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Search",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "All Articles",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Only Unread Articles",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Only Starred Articles",
+          "shortcut": "<Ctrl>3"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "<Ctrl>question"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Article List",
+      "items": [
+        {
+          "label": "Next Article",
+          "shortcut": "j"
+        },
+        {
+          "label": "Previous Article",
+          "shortcut": "k"
+        },
+        {
+          "label": "Toggle Read",
+          "shortcut": "r"
+        },
+        {
+          "label": "Toggle Starred",
+          "shortcut": "m"
+        },
+        {
+          "label": "Open In Browser",
+          "shortcut": "o"
+        },
+        {
+          "label": "Copy URL",
+          "shortcut": "<Ctrl><Shift>C"
+        }
+      ]
+    },
+    {
+      "label": "Feed List",
+      "items": [
+        {
+          "label": "Next Item",
+          "shortcut": "<Ctrl>J"
+        },
+        {
+          "label": "Previous Item",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "label": "Expand/Collapse Category",
+          "shortcut": "c"
+        },
+        {
+          "label": "Mark Item Read",
+          "shortcut": "<Shift>a"
+        }
+      ]
+    },
+    {
+      "label": "Article View",
+      "items": [
+        {
+          "label": "Scroll Up",
+          "shortcut": "i"
+        },
+        {
+          "label": "Scroll Down",
+          "shortcut": "u"
+        },
+        {
+          "label": "Scrape content",
+          "shortcut": "<Shift>c"
+        },
+        {
+          "label": "Tag Article",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "Fullscreen Article",
+          "shortcut": "<Shift><Alt>X"
+        },
+        {
+          "label": "Close Article"
+        }
+      ]
+    }
+  ]
+}

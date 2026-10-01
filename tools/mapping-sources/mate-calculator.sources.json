@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "app": "mate-calculator",
+  "repos": {
+    "mate-calculator": {
+      "url": "https://github.com/mate-desktop/mate-calc.git",
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Calculator",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "mate-calculator",
+      "file": "src/math-window.c",
+      "line": 541,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "mate-calculator",
+      "file": "src/math-window.c",
+      "line": 543,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "mate-calculator",
+      "file": "src/math-window.c",
+      "line": 545,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "mate-calculator",
+      "file": "src/math-window.c",
+      "line": 547,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Clear History"
+      ],
+      "shortcut": "<Ctrl><Shift>Delete",
+      "repo": "mate-calculator",
+      "file": "src/math-window.c",
+      "line": 549,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "mate-calculator",
+      "file": "src/math-window.c",
+      "line": 554,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "View",
+        "History"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "mate-calculator",
+      "file": "src/math-window.c",
+      "line": 569,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "mate-calculator",
+      "file": "src/math-window.c",
+      "line": 573,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Calculate Result"
+      ],
+      "shortcut": "Return",
+      "repo": "mate-calculator",
+      "file": "src/math-display.c",
+      "line": 117,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Clear Display"
+      ],
+      "shortcut": "Escape",
+      "repo": "mate-calculator",
+      "file": "src/math-buttons.c",
+      "line": 246,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Square Root"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "mate-calculator",
+      "file": "help/C/keyboard.page",
+      "line": 32,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Pi"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "mate-calculator",
+      "file": "help/C/keyboard.page",
+      "line": 36,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Scientific Exponent"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "mate-calculator",
+      "file": "src/math-buttons.c",
+      "line": 111,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Square"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "mate-calculator",
+      "file": "src/math-buttons.c",
+      "line": 138,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Inverse"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "mate-calculator",
+      "file": "src/math-buttons.c",
+      "line": 195,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Factorize"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "mate-calculator",
+      "file": "src/math-buttons.c",
+      "line": 243,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Previous Entry"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "mate-calculator",
+      "file": "help/C/keyboard.page",
+      "line": 69,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Input",
+        "Next Entry"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "mate-calculator",
+      "file": "help/C/keyboard.page",
+      "line": 73,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Programming",
+        "Binary"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "mate-calculator",
+      "file": "help/C/keyboard.page",
+      "line": 48,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Programming",
+        "Octal"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "mate-calculator",
+      "file": "help/C/keyboard.page",
+      "line": 52,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Programming",
+        "Decimal"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "mate-calculator",
+      "file": "help/C/keyboard.page",
+      "line": 56,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    },
+    {
+      "path": [
+        "Programming",
+        "Hexadecimal"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "mate-calculator",
+      "file": "help/C/keyboard.page",
+      "line": 60,
+      "commit": "2b63722e97e811fcdc0518089389785393e2a899"
+    }
+  ]
+}

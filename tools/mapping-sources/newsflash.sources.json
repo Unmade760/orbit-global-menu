@@ -1,0 +1,265 @@
+{
+  "format": 1,
+  "app": "newsflash",
+  "repos": {
+    "newsflash": {
+      "url": "https://gitlab.com/news-flash/news_flash_gtk",
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Refresh Feeds"
+      ],
+      "shortcut": "F5",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 251,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "General",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 252,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "General",
+        "All Articles"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 253,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "General",
+        "Only Unread Articles"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 254,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "General",
+        "Only Starred Articles"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 255,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "General",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "newsflash",
+      "file": "src/global_actions/mod.rs",
+      "line": 79,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "newsflash",
+      "file": "src/global_actions/mod.rs",
+      "line": 80,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "newsflash",
+      "file": "src/global_actions/mod.rs",
+      "line": 81,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article List",
+        "Next Article"
+      ],
+      "shortcut": "j",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 446,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article List",
+        "Previous Article"
+      ],
+      "shortcut": "k",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 447,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article List",
+        "Toggle Read"
+      ],
+      "shortcut": "r",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 448,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article List",
+        "Toggle Starred"
+      ],
+      "shortcut": "m",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 449,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article List",
+        "Open In Browser"
+      ],
+      "shortcut": "o",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 450,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article List",
+        "Copy URL"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 451,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Feed List",
+        "Next Item"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 536,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Feed List",
+        "Previous Item"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 537,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Feed List",
+        "Expand/Collapse Category"
+      ],
+      "shortcut": "c",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 538,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Feed List",
+        "Mark Item Read"
+      ],
+      "shortcut": "<Shift>a",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 539,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article View",
+        "Scroll Up"
+      ],
+      "shortcut": "i",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 347,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article View",
+        "Scroll Down"
+      ],
+      "shortcut": "u",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 348,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article View",
+        "Scrape content"
+      ],
+      "shortcut": "<Shift>c",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 349,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article View",
+        "Tag Article"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 350,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    },
+    {
+      "path": [
+        "Article View",
+        "Fullscreen Article"
+      ],
+      "shortcut": "<Shift><Alt>X",
+      "repo": "newsflash",
+      "file": "src/settings/keybindings.rs",
+      "line": 351,
+      "commit": "6a1dcda29e9705ac7f436e7ffaf0bbd05ad74d00"
+    }
+  ]
+}

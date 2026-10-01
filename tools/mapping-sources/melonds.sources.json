@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "app": "melonds",
+  "repos": {
+    "melonds": {
+      "url": "https://github.com/melonDS-emu/melonDS.git",
+      "commit": "906e9ebb27da8c6a715cd7abab4abfe8a8d29427"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open ROM..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "melonds",
+      "file": "src/frontend/qt_sdl/Window.cpp",
+      "line": 247,
+      "commit": "906e9ebb27da8c6a715cd7abab4abfe8a8d29427"
+    },
+    {
+      "path": [
+        "File",
+        "Save state",
+        "File..."
+      ],
+      "shortcut": "<Shift>F9",
+      "repo": "melonds",
+      "file": "src/frontend/qt_sdl/Window.cpp",
+      "line": 327,
+      "commit": "906e9ebb27da8c6a715cd7abab4abfe8a8d29427"
+    },
+    {
+      "path": [
+        "File",
+        "Load state",
+        "File..."
+      ],
+      "shortcut": "F9",
+      "repo": "melonds",
+      "file": "src/frontend/qt_sdl/Window.cpp",
+      "line": 343,
+      "commit": "906e9ebb27da8c6a715cd7abab4abfe8a8d29427"
+    },
+    {
+      "path": [
+        "File",
+        "Undo state load"
+      ],
+      "shortcut": "F12",
+      "repo": "melonds",
+      "file": "src/frontend/qt_sdl/Window.cpp",
+      "line": 349,
+      "commit": "906e9ebb27da8c6a715cd7abab4abfe8a8d29427"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "melonds",
+      "file": "src/frontend/qt_sdl/Window.cpp",
+      "line": 363,
+      "commit": "906e9ebb27da8c6a715cd7abab4abfe8a8d29427"
+    },
+    {
+      "path": [
+        "File",
+        "Save state",
+        "1"
+      ],
+      "shortcut": "<Shift>F1",
+      "url": "https://melonds.kuribo64.net/faq.php",
+      "quote": "You can save a state at any time by using the keyboard shortcuts: Shift+F1..F8 for slots 1..8, or Shift+F9 to specify your own filename."
+    },
+    {
+      "path": [
+        "File",
+        "Load state",
+        "1"
+      ],
+      "shortcut": "F1",
+      "url": "https://melonds.kuribo64.net/faq.php",
+      "quote": "Similarly, you can load a saved state with F1..F8 for slots 1..8, or F9 to load any savestate file."
+    },
+    {
+      "path": [
+        "File",
+        "Load state",
+        "8"
+      ],
+      "shortcut": "F8",
+      "url": "https://melonds.kuribo64.net/faq.php",
+      "quote": "Similarly, you can load a saved state with F1..F8 for slots 1..8, or F9 to load any savestate file."
+    }
+  ]
+}

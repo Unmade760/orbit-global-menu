@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "korganizer",
+  "repos": {
+    "korganizer": {
+      "url": "https://invent.kde.org/pim/korganizer.git",
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 240,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 241,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "korganizer",
+      "file": "src/korganizer.cpp",
+      "line": 171,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 309,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 315,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 306,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 307,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 308,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 328,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Actions",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 624,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 744,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure KOrganizer…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 774,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "korganizer",
+      "file": "src/actionmanager.cpp",
+      "line": 775,
+      "commit": "a8dd3b38f522d49df79d6ef426a057561f17585d"
+    }
+  ]
+}

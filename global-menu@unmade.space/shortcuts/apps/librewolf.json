@@ -1,0 +1,568 @@
+{
+  "format": 1,
+  "app": "librewolf",
+  "name": "LibreWolf",
+  "identifiers": [
+    "io.gitlab.librewolf-community.desktop",
+    "io.gitlab.librewolf-community",
+    "librewolf.desktop",
+    "librewolf"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New Tab",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "New Private Window",
+          "shortcut": "<Ctrl><Shift>P"
+        },
+        {
+          "label": "Open File",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Open Location",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Tab",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl><Shift>W"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save Page As",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Print",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste as Plain Text",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "label": "Delete",
+          "shortcut": "Delete"
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find in Page",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find Again",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Focus Address Bar for Web Search",
+          "shortcut": "<Ctrl>K"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Reset Zoom",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Stop",
+          "shortcut": "Escape"
+        },
+        {
+          "label": "Toggle Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "label": "Toggle Caret Browsing",
+          "shortcut": "F7"
+        },
+        {
+          "label": "Toggle Reader Mode",
+          "shortcut": "<Ctrl><Alt>R"
+        },
+        {
+          "label": "Toggle Menu Bar",
+          "shortcut": "F10"
+        },
+        {
+          "label": "Toggle Context Menu",
+          "shortcut": "<Shift>F10"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "View Page Source",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "label": "View Page Info",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Take Screenshot",
+          "shortcut": "<Ctrl><Shift>S"
+        }
+      ]
+    },
+    {
+      "label": "History",
+      "items": [
+        {
+          "label": "Back",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Forward",
+          "shortcut": "<Alt>Right"
+        },
+        {
+          "label": "Home",
+          "shortcut": "<Alt>Home"
+        },
+        {
+          "label": "Reload",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Reload (Override Cache)",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show All History",
+          "shortcut": "<Ctrl><Shift>H"
+        },
+        {
+          "label": "Clear Recent History",
+          "shortcut": "<Ctrl><Shift>Delete"
+        },
+        {
+          "label": "Open History Sidebar",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reopen Closed Tab",
+          "shortcut": "<Ctrl><Shift>T"
+        },
+        {
+          "label": "Reopen Closed Window",
+          "shortcut": "<Ctrl><Shift>N"
+        }
+      ]
+    },
+    {
+      "label": "Bookmarks",
+      "items": [
+        {
+          "label": "Bookmark This Page",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Bookmark All Tabs",
+          "shortcut": "<Ctrl><Shift>D"
+        },
+        {
+          "label": "Show Bookmarks Sidebar",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Show Bookmarks Toolbar",
+          "shortcut": "<Ctrl><Shift>B"
+        },
+        {
+          "label": "Show All Bookmarks",
+          "shortcut": "<Ctrl><Shift>O"
+        }
+      ]
+    },
+    {
+      "label": "Tabs",
+      "items": [
+        {
+          "label": "Next Tab",
+          "shortcut": "<Ctrl>Tab"
+        },
+        {
+          "label": "Previous Tab",
+          "shortcut": "<Ctrl><Shift>Tab"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Last Tab",
+          "shortcut": "<Alt>9"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Move Tab to Start",
+          "shortcut": "<Ctrl><Shift>Home"
+        },
+        {
+          "label": "Move Tab to End",
+          "shortcut": "<Ctrl><Shift>End"
+        }
+      ]
+    },
+    {
+      "label": "Address Bar",
+      "items": [
+        {
+          "label": "Open Address in New Background Tab",
+          "shortcut": "<Alt><Shift>Return"
+        },
+        {
+          "label": "Open Address in New Foreground Tab",
+          "shortcut": "<Alt>Return"
+        },
+        {
+          "label": "Open Address in New Window",
+          "shortcut": "<Shift>Return"
+        },
+        {
+          "label": "Complete .com Address",
+          "shortcut": "<Ctrl>Return"
+        },
+        {
+          "label": "Delete Selected Autocomplete Entry",
+          "shortcut": "<Shift>Delete"
+        },
+        {
+          "label": "Move URL Left or Right",
+          "shortcut": "<Ctrl><Shift>X"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Add-ons and Themes",
+          "shortcut": "<Ctrl><Shift>A"
+        },
+        {
+          "label": "Task Manager",
+          "shortcut": "<Shift>Escape"
+        }
+      ]
+    },
+    {
+      "label": "Developer Tools",
+      "items": [
+        {
+          "label": "Toggle Toolbox",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "label": "Toggle Toolbox (Alternate)",
+          "shortcut": "F12"
+        },
+        {
+          "label": "Web Console",
+          "shortcut": "<Ctrl><Shift>K"
+        },
+        {
+          "label": "Toggle Pick an Element from the Page",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "Debugger",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "label": "Style Editor",
+          "shortcut": "<Shift>F7"
+        },
+        {
+          "label": "Profiler",
+          "shortcut": "<Shift>F5"
+        },
+        {
+          "label": "Network Monitor",
+          "shortcut": "<Ctrl><Shift>E"
+        },
+        {
+          "label": "Storage Inspector",
+          "shortcut": "<Shift>F9"
+        },
+        {
+          "label": "Toggle Responsive Design Mode",
+          "shortcut": "<Ctrl><Shift>M"
+        },
+        {
+          "label": "Browser Console",
+          "shortcut": "<Ctrl><Shift>J"
+        },
+        {
+          "label": "Browser Toolbox",
+          "shortcut": "<Ctrl><Alt><Shift>I"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toolbox",
+          "items": [
+            {
+              "label": "Cycle Tools Left to Right",
+              "shortcut": "<Ctrl>bracketright"
+            },
+            {
+              "label": "Cycle Tools Right to Left",
+              "shortcut": "<Ctrl>bracketleft"
+            },
+            {
+              "label": "Toggle Toolbox Settings",
+              "shortcut": "F1"
+            },
+            {
+              "label": "Toggle Docking Mode",
+              "shortcut": "<Ctrl><Shift>D"
+            },
+            {
+              "label": "Toggle Split Console",
+              "shortcut": "Escape"
+            }
+          ]
+        },
+        {
+          "label": "Debugger Panel",
+          "items": [
+            {
+              "label": "Search in All Files",
+              "shortcut": "<Ctrl><Shift>F"
+            },
+            {
+              "label": "Search for Scripts by Name",
+              "shortcut": "<Ctrl>P"
+            },
+            {
+              "label": "Resume Execution",
+              "shortcut": "F8"
+            },
+            {
+              "label": "Step Over",
+              "shortcut": "F10"
+            },
+            {
+              "label": "Step Into",
+              "shortcut": "F11"
+            },
+            {
+              "label": "Step Out",
+              "shortcut": "<Shift>F11"
+            },
+            {
+              "label": "Toggle Breakpoint",
+              "shortcut": "<Ctrl>B"
+            },
+            {
+              "label": "Toggle Conditional Breakpoint",
+              "shortcut": "<Ctrl><Shift>B"
+            },
+            {
+              "label": "Close Current File",
+              "shortcut": "<Ctrl>W"
+            },
+            {
+              "label": "Find in Current File",
+              "shortcut": "<Ctrl>F"
+            },
+            {
+              "label": "Find Next in Current File",
+              "shortcut": "<Ctrl>G"
+            }
+          ]
+        },
+        {
+          "label": "Web Console Panel",
+          "items": [
+            {
+              "label": "Clear Output",
+              "shortcut": "<Ctrl><Shift>L"
+            }
+          ]
+        },
+        {
+          "label": "Inspector Panel",
+          "items": [
+            {
+              "label": "Edit as HTML",
+              "shortcut": "F2"
+            }
+          ]
+        },
+        {
+          "label": "Style Editor Panel",
+          "items": [
+            {
+              "label": "Find Next",
+              "shortcut": "<Ctrl>G"
+            },
+            {
+              "label": "Find Previous",
+              "shortcut": "<Ctrl><Shift>G"
+            },
+            {
+              "label": "Replace",
+              "shortcut": "<Ctrl><Shift>F"
+            },
+            {
+              "label": "Focus the Filter Input",
+              "shortcut": "<Ctrl>P"
+            },
+            {
+              "label": "Save File to Disk",
+              "shortcut": "<Ctrl>S"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PDF Viewer",
+      "items": [
+        {
+          "label": "Presentation Mode",
+          "shortcut": "<Ctrl><Alt>P"
+        },
+        {
+          "label": "Go to Page Number",
+          "shortcut": "<Ctrl><Alt>G"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Automatic Zoom",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Rotate Counterclockwise",
+          "shortcut": "<Shift>R"
+        }
+      ]
+    },
+    {
+      "label": "Media",
+      "items": [
+        {
+          "label": "Increase Volume",
+          "shortcut": "Up"
+        },
+        {
+          "label": "Mute Audio",
+          "shortcut": "<Ctrl>Down"
+        },
+        {
+          "label": "Unmute Audio",
+          "shortcut": "<Ctrl>Up"
+        },
+        {
+          "label": "Seek Back 10 Percent",
+          "shortcut": "<Ctrl>Left"
+        },
+        {
+          "label": "Seek Forward 10 Percent",
+          "shortcut": "<Ctrl>Right"
+        },
+        {
+          "label": "Seek to Beginning",
+          "shortcut": "Home"
+        },
+        {
+          "label": "Seek to End",
+          "shortcut": "End"
+        }
+      ]
+    }
+  ]
+}

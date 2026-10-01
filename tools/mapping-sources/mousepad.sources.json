@@ -1,0 +1,566 @@
+{
+  "format": 1,
+  "app": "mousepad",
+  "repos": {
+    "mousepad": {
+      "url": "https://gitlab.xfce.org/apps/mousepad.git",
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 632,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 633,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "Open..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 634,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 635,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "Save As..."
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 636,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "Reload"
+      ],
+      "shortcut": "F5",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 637,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "Print..."
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 638,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "Detach Tab"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 639,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 640,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 641,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 642,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 645,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 646,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 647,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 648,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 649,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Selection"
+      ],
+      "shortcut": "Delete",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 650,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Line"
+      ],
+      "shortcut": "<Ctrl><Shift>Delete",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 651,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 652,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Convert",
+        "To Opposite Case"
+      ],
+      "shortcut": "<Ctrl><Alt>U",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 653,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Convert",
+        "Transpose"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 654,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move",
+        "One Line Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 655,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move",
+        "One Line Down"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 656,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move",
+        "One Word Left"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 657,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move",
+        "One Word Right"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 658,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Increase Indent"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 659,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Edit",
+        "Decrease Indent"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 660,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Search",
+        "Find"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 663,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 664,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 665,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Search",
+        "Find and Replace..."
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 666,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Search",
+        "Go to..."
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 667,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "View",
+        "Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 670,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 671,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 674,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 675,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 687,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "View",
+        "Increase Font Size"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 627,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "View",
+        "Decrease Font Size"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 628,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Font Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 629,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Go to Tab",
+        "Tab 1"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 676,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Go to Tab",
+        "Tab 2"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 677,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Go to Tab",
+        "Tab 3"
+      ],
+      "shortcut": "<Alt>3",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 678,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Go to Tab",
+        "Tab 4"
+      ],
+      "shortcut": "<Alt>4",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 679,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Go to Tab",
+        "Tab 5"
+      ],
+      "shortcut": "<Alt>5",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 680,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Go to Tab",
+        "Tab 6"
+      ],
+      "shortcut": "<Alt>6",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 681,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Go to Tab",
+        "Tab 7"
+      ],
+      "shortcut": "<Alt>7",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 682,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Go to Tab",
+        "Tab 8"
+      ],
+      "shortcut": "<Alt>8",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 683,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    },
+    {
+      "path": [
+        "Document",
+        "Go to Tab",
+        "Tab 9"
+      ],
+      "shortcut": "<Alt>9",
+      "repo": "mousepad",
+      "file": "mousepad/mousepad-application.c",
+      "line": 684,
+      "commit": "6f46d92968b6060a0871e3856aab09825c518479"
+    }
+  ]
+}
