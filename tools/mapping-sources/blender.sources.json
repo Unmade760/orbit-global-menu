@@ -1,0 +1,624 @@
+{
+  "format": 1,
+  "app": "blender",
+  "repos": {
+    "blender": {
+      "url": "https://projects.blender.org/blender/blender.git",
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 718,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 720,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "File",
+        "Open Recent"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 719,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 721,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 722,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "File",
+        "Save Incremental"
+      ],
+      "shortcut": "<Ctrl><Alt>S",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 724,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 726,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 835,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 836,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Edit",
+        "Adjust Last Operation…"
+      ],
+      "shortcut": "F9",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 856,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Edit",
+        "Repeat Last"
+      ],
+      "shortcut": "<Shift>R",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 826,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Edit",
+        "Menu Search…"
+      ],
+      "shortcut": "F3",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 771,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rename Active Item…"
+      ],
+      "shortcut": "F2",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 769,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Edit",
+        "Batch Rename…"
+      ],
+      "shortcut": "<Ctrl>F2",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 770,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Edit",
+        "Preferences…"
+      ],
+      "shortcut": "<Ctrl>,",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 881,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Render",
+        "Render Image"
+      ],
+      "shortcut": "F12",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 838,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Render",
+        "Render Animation"
+      ],
+      "shortcut": "<Ctrl>F12",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 840,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Render",
+        "Render Sequencer Image"
+      ],
+      "shortcut": "<Alt>F12",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 842,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Render",
+        "Render Sequencer Animation"
+      ],
+      "shortcut": "<Ctrl><Alt>F12",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 844,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Render",
+        "View Render"
+      ],
+      "shortcut": "F11",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 847,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Render",
+        "View Animation"
+      ],
+      "shortcut": "<Ctrl>F11",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 848,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Window",
+        "Next Workspace"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 819,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Window",
+        "Previous Workspace"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 821,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "Help",
+        "Manual"
+      ],
+      "shortcut": "F1",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 768,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Select",
+        "Select All"
+      ],
+      "shortcut": "A",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 423,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Select",
+        "Deselect All"
+      ],
+      "shortcut": "<Alt>A",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 424,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Select",
+        "Invert Selection"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 425,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Select",
+        "Box Select"
+      ],
+      "shortcut": "B",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 1785,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Select",
+        "Circle Select"
+      ],
+      "shortcut": "C",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 1792,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Transform",
+        "Move"
+      ],
+      "shortcut": "G",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 384,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Transform",
+        "Rotate"
+      ],
+      "shortcut": "R",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 387,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Transform",
+        "Scale"
+      ],
+      "shortcut": "S",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 390,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Add"
+      ],
+      "shortcut": "<Shift>A",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 4508,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Apply"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 4509,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Duplicate Objects"
+      ],
+      "shortcut": "<Shift>D",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 4511,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Duplicate Linked"
+      ],
+      "shortcut": "<Alt>D",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 4512,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 4504,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Hide Selected"
+      ],
+      "shortcut": "H",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 464,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Hide Unselected"
+      ],
+      "shortcut": "<Shift>H",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 465,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Show Hidden Objects"
+      ],
+      "shortcut": "<Alt>H",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 463,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Move to Collection"
+      ],
+      "shortcut": "M",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 4527,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Link to Collection"
+      ],
+      "shortcut": "<Shift>M",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 4528,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Object",
+        "Toggle Edit Mode"
+      ],
+      "shortcut": "Tab",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 4606,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "View",
+        "Frame Selected"
+      ],
+      "shortcut": "KP_Decimal",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 1635,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "View",
+        "Frame All"
+      ],
+      "shortcut": "Home",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 1663,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "View",
+        "Perspective/Orthographic"
+      ],
+      "shortcut": "KP_5",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 1701,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "View",
+        "Toggle Toolbar"
+      ],
+      "shortcut": "T",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 1578,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "View",
+        "Toggle Sidebar"
+      ],
+      "shortcut": "N",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 1579,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "View",
+        "Viewport Shading"
+      ],
+      "shortcut": "Z",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 1831,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "View",
+        "Toggle X-Ray"
+      ],
+      "shortcut": "<Alt>Z",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 1837,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "View",
+        "Maximize Area"
+      ],
+      "shortcut": "<Ctrl>space",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 853,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "View",
+        "Focus Mode"
+      ],
+      "shortcut": "<Ctrl><Alt>space",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 854,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    },
+    {
+      "path": [
+        "3D Viewport",
+        "Animation",
+        "Play Animation"
+      ],
+      "shortcut": "<Shift>space",
+      "repo": "blender",
+      "file": "scripts/presets/keyconfig/keymap_data/blender_default.py",
+      "line": 3760,
+      "commit": "adfe2921d5f3c0fe699149bcd9bc347543bbd82e"
+    }
+  ]
+}

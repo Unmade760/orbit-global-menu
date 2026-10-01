@@ -82,6 +82,15 @@ GIMP_ACCEL_KEYSYMS = {"grave": "grave", "minus": "minus", "plus": "plus", "excla
 # Inkscape's default.xml lists a comma separated key list per action, `<bind gaction="..." keys="plus,
 # equal, KP_Add" />`, over several lines. Entries with no modifier tag are bare keysym names or digits.
 INKSCAPE_BIND_KEYS = re.compile(r'<bind\s+gaction="[^"]*"\s+keys="([^"]*)"')
+# Blender's default keymap writes each binding as a dict, `{"type": 'F12', "value": 'PRESS', "ctrl": True}`.
+# Only presses are read. The pie-menu value `params.pie_value` is 'PRESS' unless the click-drag preference is on.
+BLENDER_KEYMAP_ITEM = re.compile(r"""\{\s*"type":\s*'([A-Z0-9_]+)',\s*"value":\s*(?:'PRESS'|params\.pie_value)"""
+                                 r"""((?:,\s*"(?:ctrl|shift|alt|repeat)":\s*True)*)\s*\}""")
+BLENDER_KEYS = {"TAB": "Tab", "SPACE": "space", "PAGE_UP": "Page_Up", "PAGE_DOWN": "Page_Down", "HOME": "Home",
+                "END": "End", "DEL": "Delete", "RET": "Return", "ESC": "Escape", "COMMA": "comma",
+                "PERIOD": "period", "SLASH": "slash", "ACCENT_GRAVE": "grave", "NUMPAD_PERIOD": "KP_Decimal",
+                "NUMPAD_SLASH": "KP_Divide", "LEFT_ARROW": "Left", "RIGHT_ARROW": "Right", "UP_ARROW": "Up",
+                "DOWN_ARROW": "Down"}
 SEQUENCE_GAP = re.compile(r"^\s*(?:,|then)?\s*$", re.I)
 
 ENTITY_KEYS = {"ctrl": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": "Super", "super": "Super",
@@ -92,6 +101,21 @@ ENTITY_KEYS = {"ctrl": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": "Super", 
 
 def _seqs(text, dialect):
     return [r.seq for r in accel.normalize_all(text, dialect) if r.seq]
+
+
+def _blender_key_seqs(key, flags):
+    if key in BLENDER_KEYS:
+        base = BLENDER_KEYS[key]
+    elif re.fullmatch(r"[A-Z]", key):
+        base = key.lower()
+    elif re.fullmatch(r"F(?:1[0-2]|[1-9])", key):
+        base = key
+    elif re.fullmatch(r"NUMPAD_[0-9]", key):
+        base = "KP_" + key[-1]
+    else:
+        return []
+    mods = "".join(f"<{m}>" for m in ("Ctrl", "Shift", "Alt") if f'"{m.lower()}"' in flags)
+    return _seqs(mods + base, "gtk")
 
 
 def _lo_key_seqs(name):
@@ -256,6 +280,9 @@ def find_chords(text):
         for k in re.finditer(r"[^,\s]+", m.group(1)):
             if "<" not in k.group(0):
                 add(m.start(1) + k.start(), m.start(1) + k.end(), k.group(0), _seqs(k.group(0), "gtk"))
+
+    for m in BLENDER_KEYMAP_ITEM.finditer(text):
+        add(m.start(), m.end(), m.group(0), _blender_key_seqs(m.group(1), m.group(2)))
 
     for m in LO_KEY_NODE.finditer(text):
         add(m.start(), m.end(), m.group(0), _lo_key_seqs(m.group(1)))
