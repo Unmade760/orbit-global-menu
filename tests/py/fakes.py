@@ -125,7 +125,7 @@ def gtk_item(**attrs):
 
 
 def gtk_describe(enabled, state=None):
-	"""org.gtk.Actions.Describe reply: (enabled, parameter type, [state])."""
+	"""One action as org.gtk.Actions describes it: (enabled, parameter type, [state])."""
 	states = []
 	sig = ''
 	if isinstance(state, bool):
@@ -159,12 +159,10 @@ def install_gtk_app(session, menus, actions, props=GTK_PROPS, app_menus=None):
 	for prefix, prop in (('app.', '_GTK_APPLICATION_OBJECT_PATH'), ('win.', '_GTK_WINDOW_OBJECT_PATH')):
 		path = props[prop]
 
-		def describe(name, prefix=prefix):
-			full = prefix + name
-			if full not in actions:
-				raise dbus.exceptions.DBusException('no action ' + full)
-			return actions[full]
-		session.on(bus, path, 'org.gtk.Actions', 'Describe', describe)
+		def describe_all(prefix=prefix):
+			return dbus.Dictionary({name[len(prefix):]: desc for name, desc in actions.items()
+				if name.startswith(prefix)}, signature='s(bgav)')
+		session.on(bus, path, 'org.gtk.Actions', 'DescribeAll', describe_all)
 		session.on(bus, path, 'org.gtk.Actions', 'Activate', lambda name, param, data: None)
 
 

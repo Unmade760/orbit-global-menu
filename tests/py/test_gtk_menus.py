@@ -151,6 +151,29 @@ def test_stateful_item_without_target_is_a_plain_item():
 	assert (node['toggleType'], node['toggleState']) == ('', False)
 
 
+def test_actions_are_described_once_per_group(app):
+	# One DescribeAll per exported action group, not one Describe per item:
+	# the tree is rebuilt on every menu change
+	session, _ = app
+	assert sorted(c[1] for c in session.calls_to('DescribeAll')) == sorted([APP_PATH, WIN_PATH])
+	assert session.calls_to('Describe') == []
+
+
+def test_item_whose_action_is_missing_is_greyed():
+	# gtkmenutrackeritem.c leaves an item insensitive until its action
+	# exists. A prefix nobody exports over D-Bus says nothing either way.
+	_, model = load({
+		(0, 0): [gtk_item(label='_File', submenu=(1, 0))],
+		(1, 0): [
+			gtk_item(label='_Gone', action='win.gone'),
+			gtk_item(label='_Save', action='doc.save'),
+		],
+	}, {'win.other': gtk_describe(True)})
+	tree = json_tree(model)
+	assert find(tree, '_File', '_Gone')['enabled'] is False
+	assert find(tree, '_File', '_Save')['enabled'] is True
+
+
 def test_enabled_change_signal_updates_every_item_of_the_action(app):
 	# win.open backs both File > Open and File > Recent > a.txt
 	session, model = app

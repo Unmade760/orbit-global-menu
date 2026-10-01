@@ -23,6 +23,10 @@ class DbusGtkMenu(object):
 		# Gtk action names are not unique node ids: submenu entries carry no
 		# action at all, and the same action can appear in several menus
 		self.nodes_by_action = {}
+		# 'app.', 'win.', 'unity.' -> {action name: (enabled, [state])} from
+		# DescribeAll, kept current by org.gtk.Actions.Changed; None when
+		# nothing answers for that prefix
+		self.action_groups = {}
 		self._node_seq    = 0
 		self._update_timer = 0
 		self.session      = session
@@ -116,10 +120,7 @@ class DbusGtkMenu(object):
 
 				menu_item = DbusGtkMenuItem(menu, labels)
 				menu_item.section = section
-				description = self.describe(menu_item.action)
-				if description is not None:
-					menu_item.enabled = description[0]
-					menu_item.set_toggle(description[1])
+				self._apply_action(menu_item)
 
 				menu_path = labels + [menu_item.label]
 
@@ -142,44 +143,44 @@ class DbusGtkMenu(object):
 		self._node_seq += 1
 		return 'n%d' % self._node_seq
 
-	def describe(self, action):
-		"""
-		Describe return this:
-		dbus.Struct((
-		 dbus.Boolean(True), # enabled
-		 dbus.Signature(''),
-		 dbus.Array([ # This is empty in a not checked item
-		  dbus.Boolean(True, variant_level=1)], # Checked or not
-		  signature=dbus.Signature('v'))),
-		 signature=None)
-		"""
-		if action.startswith('unity'):
-			path = self.menubar_path
-		elif action.startswith('win'):
-			path = self.win_path
-		elif action.startswith('app'):
-			path = self.app_path
-		else:
-			return None
-
-		dot = action.find('.')
-		action = action[dot+1:]
-		obj = self.session.get_object(self.bus_name, path)
-		interface = dbus.Interface(obj, dbus_interface='org.gtk.Actions')
-
-		try:
-			description = interface.Describe(action)
-		except Exception as e:
-			return None
-		enabled = description[0]
-		checked = description[2]
-		return enabled, checked
-
-	def watch_actions(self):
+	def _actions_path(self, prefix):
 		# GTK exports org.gtk.Actions at the application and window paths,
 		# not at the menubar path; unity-gtk-module serves unity.* there
-		groups = (('app.', self.app_path), ('win.', self.win_path), ('unity.', self.menubar_path))
-		for prefix, path in groups:
+		return {'app.': self.app_path, 'win.': self.win_path, 'unity.': self.menubar_path}.get(prefix)
+
+	def _action_group(self, prefix):
+		if prefix not in self.action_groups:
+			self.action_groups[prefix] = self._describe_all(prefix)
+		return self.action_groups[prefix]
+
+	def _describe_all(self, prefix):
+		path = self._actions_path(prefix)
+		if not path:
+			return None
+		try:
+			obj = self.session.get_object(self.bus_name, path)
+			# a{s(bgav)}: name -> (enabled, parameter type, [state])
+			described = dbus.Interface(obj, dbus_interface='org.gtk.Actions').DescribeAll()
+		except dbus.exceptions.DBusException:
+			return None
+		return {str(name): (desc[0], list(desc[2])) for name, desc in described.items()}
+
+	def _apply_action(self, item):
+		"""Set the item's enabled flag and check or radio state from its action."""
+		prefix, dot, name = item.action.partition('.')
+		group = self._action_group(prefix + dot)
+		if group is None:
+			return
+		# gtkmenutrackeritem.c: an item is insensitive while its action is missing
+		enabled, state = group.get(name, (False, []))
+		item.enabled = bool(enabled)
+		item.toggle_type = ''
+		item.toggle_state = False
+		item.set_toggle(state)
+
+	def watch_actions(self):
+		for prefix in ('app.', 'win.', 'unity.'):
+			path = self._actions_path(prefix)
 			if not path:
 				continue
 			obj = self.session.get_object(self.bus_name, path)
@@ -193,26 +194,23 @@ class DbusGtkMenu(object):
 	def on_gtk_actions_changed(self, prefix, removed, enabled_changed, state_changed, added):
 		"""org.gtk.Actions.Changed from the path that exports the prefix.* actions.
 		Action names in the signal carry no prefix."""
+		group = self.action_groups.get(prefix)
+		if group is not None:
+			for name in removed:
+				group.pop(name, None)
+			for name, (enabled, _parameter_type, state) in added.items():
+				group[name] = (enabled, list(state))
+			for name, enabled in enabled_changed.items():
+				group[name] = (enabled, group.get(name, (True, []))[1])
+			for name, state in state_changed.items():
+				group[name] = (group.get(name, (True, []))[0], [state])
+
 		for name in {*removed, *enabled_changed, *state_changed, *added}:
 			# One action can back several menu entries; update all of them
 			for node_id in self.nodes_by_action.get(prefix + name, []):
 				node = self.tree.get_node(node_id)
-				if node is None:
-					continue
-				item = node.data
-				if name in removed:
-					# What gtkmenutrackeritem.c does for a missing action
-					item.enabled = False
-					item.toggle_type = ''
-					item.toggle_state = False
-				if name in added:
-					enabled, _parameter_type, state = added[name]
-					item.enabled = bool(enabled)
-					item.set_toggle(state)
-				if name in enabled_changed:
-					item.enabled = bool(enabled_changed[name])
-				if name in state_changed:
-					item.set_toggle([state_changed[name]])
+				if node is not None:
+					self._apply_action(node.data)
 
 	def remove_actions_listener(self):
 		for s in self.signal_matcher:
