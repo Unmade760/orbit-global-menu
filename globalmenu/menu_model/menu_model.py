@@ -173,11 +173,7 @@ class DbusGtkMenu(object):
 				if action_name in enabled_changed:
 					item.data.enabled = enabled_changed[action_name]
 				else:
-					if item.data.toggle_type == 'radio': # 'checkmark':
-						for s in self.tree.siblings(item.identifier):
-							if s.data.section == item.data.section:
-								s.data.toggle_state = False
-					item.data.toggle_state = state_changed[action_name]
+					item.data.set_toggle([state_changed[action_name]])
 
 			if not found:
 				print('Item does not exists:', action_name)

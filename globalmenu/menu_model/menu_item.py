@@ -14,6 +14,7 @@ class DbusGtkMenuItem(object):
 		self.path = path
 		self.separator = False
 		self.action = str(item.get('action', ''))
+		self.target = item.get('target')
 		self.accel = str(item.get('accel', '')) # <Primary><Shift><Alt>p
 		self.shortcut = str(item.get('shortcut', ''))
 		self.label = item.get('label', '')
@@ -27,22 +28,19 @@ class DbusGtkMenuItem(object):
 		# used for separators and radio button groups
 		self.section = None
 
-	def set_toggle(self, toggle):
-		if not len(toggle):
+	def set_toggle(self, state):
+		# The rule of gtkmenutrackeritem.c: an item with a target is a radio
+		# item, selected while the action's state equals that target
+		if not len(state):
 			return
-		toggle = toggle[0]
-		if isinstance(toggle, dbus.Boolean):
-			self.toggle_type = 'checkmark'
-			self.toggle_state = toggle
-		elif isinstance(toggle, str):
+		state = state[0]
+		if self.target is not None:
 			self.toggle_type = 'radio'
-			self.toggle_state = len(toggle) > 0
+			self.toggle_state = state == self.target
+		elif isinstance(state, (bool, dbus.Boolean)):
+			self.toggle_type = 'checkmark'
+			self.toggle_state = bool(state)
 
-	def set_description(self, desc):
-		if desc is None:
-			return
-		self.enabled = desc[0]
-		self.toggle_state = desc[1]
 
 class DbusAppMenuItem(object):
 

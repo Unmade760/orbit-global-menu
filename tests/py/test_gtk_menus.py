@@ -59,14 +59,18 @@ def find(nodes, *labels):
 	return node
 
 
-@pytest.fixture
-def app():
+def load(menus, actions, **kwargs):
 	session = FakeSession()
 	no_registrar(session)
-	install_gtk_app(session, MENUS, ACTIONS)
+	install_gtk_app(session, menus, actions, **kwargs)
 	model = MenuModel(session, FakeWindow(GTK_PROPS))
 	model._update_menus()
 	return session, model
+
+
+@pytest.fixture
+def app():
+	return load(MENUS, ACTIONS)
 
 
 def test_top_level_menus(app):
@@ -123,6 +127,17 @@ def test_radio_state_change_signal_moves_the_dot(app, states, want):
 	small = find(json_tree(model), '_View', '_Small')
 	large = find(json_tree(model), '_View', '_Large')
 	assert (small['toggleState'], large['toggleState']) == want
+
+
+def test_stateful_item_without_target_is_a_plain_item():
+	# gtkmenutrackeritem.c: an item is a radio item when it has a target and
+	# its action a state, a check item when the state is boolean
+	_, model = load({
+		(0, 0): [gtk_item(label='_Mode', submenu=(1, 0))],
+		(1, 0): [gtk_item(label='Mode _A', action='win.mode')],
+	}, {'win.mode': gtk_describe(True, 'a')})
+	node = find(json_tree(model), '_Mode', 'Mode _A')
+	assert (node['toggleType'], node['toggleState']) == ('', False)
 
 
 def test_enabled_change_signal_updates_every_item_of_the_action(app):
