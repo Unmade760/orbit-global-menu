@@ -15,16 +15,20 @@
         {"label": "New Tab", "shortcut": "<Ctrl>T"},
         {"label": "New Window", "shortcut": "<Ctrl>N"},
         {"label": "New Private Window", "shortcut": "<Ctrl><Shift>P"},
-        {"label": "Open File", "shortcut": "<Ctrl>O"},
-        {"label": "Open Location", "shortcut": "<Ctrl>L"},
-        {"separator": true},
+        {"label": "Open Location…", "shortcut": "<Ctrl>L"},
+        {"label": "Open Location… (Alternate)", "shortcut": "<Alt>D"},
+        {"label": "Open File…", "shortcut": "<Ctrl>O"},
         {"label": "Close Tab", "shortcut": "<Ctrl>W"},
         {"label": "Close Window", "shortcut": "<Ctrl><Shift>W"},
         {"separator": true},
-        {"label": "Save Page As", "shortcut": "<Ctrl>S"},
-        {"label": "Print Page", "shortcut": "<Ctrl>P"},
+        {"label": "Save Page As…", "shortcut": "<Ctrl>S"},
+        {"label": "Email Link…"},
         {"separator": true},
-        {"label": "Quit Firefox", "shortcut": "<Ctrl>Q"}
+        {"label": "Print…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Import From Another Browser…"},
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
       ]
     },
     {
@@ -32,89 +36,167 @@
       "items": [
         {"label": "Undo", "shortcut": "<Ctrl>Z"},
         {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"label": "Redo (Alternate)", "shortcut": "<Ctrl>Y"},
         {"separator": true},
         {"label": "Cut", "shortcut": "<Ctrl>X"},
         {"label": "Copy", "shortcut": "<Ctrl>C"},
         {"label": "Paste", "shortcut": "<Ctrl>V"},
         {"label": "Paste as Plain Text", "shortcut": "<Ctrl><Shift>V"},
         {"label": "Delete", "shortcut": "Delete"},
+        {"separator": true},
         {"label": "Select All", "shortcut": "<Ctrl>A"},
         {"separator": true},
-        {"label": "Find in Page", "shortcut": "<Ctrl>F"},
+        {"label": "Find in Page…", "shortcut": "<Ctrl>F"},
         {"label": "Find Again", "shortcut": "<Ctrl>G"},
+        {"label": "Find Again (Alternate)", "shortcut": "F3"},
         {"label": "Find Previous", "shortcut": "<Ctrl><Shift>G"},
-        {"label": "Quick Find", "shortcut": "slash"},
+        {"label": "Find Previous (Alternate)", "shortcut": "<Shift>F3"},
         {"separator": true},
-        {"label": "Search with Default Engine", "shortcut": "<Ctrl>K"}
+        {"label": "Focus Address Bar for Web Search", "shortcut": "<Ctrl>K"},
+        {"separator": true},
+        {"label": "Settings"}
       ]
     },
     {
       "label": "View",
       "items": [
-        {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
-        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
-        {"label": "Reset Zoom", "shortcut": "<Ctrl>0"},
+        {"label": "Toolbars", "items": [
+          {"label": "Bookmarks Toolbar", "shortcut": "<Ctrl><Shift>B"},
+          {"label": "Customize Toolbar…"}
+        ]},
+        {"label": "Sidebar", "items": [
+          {"label": "Bookmarks", "shortcut": "<Ctrl>B"},
+          {"label": "History", "shortcut": "<Ctrl>H"},
+          {"label": "Open Tabs", "shortcut": "<Ctrl><Alt>U"}
+        ]},
         {"separator": true},
-        {"label": "Toggle Full Screen", "shortcut": "F11"},
-        {"label": "Toggle Reader View", "shortcut": "<Alt><Ctrl>R"},
+        {"label": "Zoom", "items": [
+          {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+          {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+          {"label": "Actual Size", "shortcut": "<Ctrl>0"}
+        ]},
+        {"separator": true},
+        {"label": "Full Screen", "shortcut": "F11"},
+        {"label": "Enter Reader View", "shortcut": "<Ctrl><Alt>R"},
+        {"label": "Show All Tabs", "shortcut": "<Ctrl><Shift>Tab"},
         {"label": "Toggle Caret Browsing", "shortcut": "F7"},
-        {"label": "Toggle Mute", "shortcut": "<Ctrl>M"},
-        {"label": "Toggle Picture-in-Picture", "shortcut": "<Ctrl><Shift>]"},
+        {"label": "Toggle Picture-in-Picture", "shortcut": "<Ctrl><Shift>bracketright"},
+        {"label": "Take Screenshot", "shortcut": "<Ctrl><Shift>S"},
         {"separator": true},
-        {"label": "View Page Source", "shortcut": "<Ctrl>U"},
-        {"label": "View Page Info", "shortcut": "<Ctrl>I"},
-        {"label": "Take Screenshot", "shortcut": "<Ctrl><Shift>S"}
+        {"label": "Back", "shortcut": "<Alt>Left"},
+        {"label": "Back (Alternate)", "shortcut": "<Ctrl>bracketleft"},
+        {"label": "Forward", "shortcut": "<Alt>Right"},
+        {"label": "Forward (Alternate)", "shortcut": "<Ctrl>bracketright"},
+        {"label": "Home", "shortcut": "<Alt>Home"},
+        {"separator": true},
+        {"label": "Reload", "shortcut": "<Ctrl>R"},
+        {"label": "Reload (Alternate)", "shortcut": "F5"},
+        {"label": "Reload (Override Cache)", "shortcut": "<Ctrl><Shift>R"},
+        {"label": "Reload (Override Cache, Alternate)", "shortcut": "<Ctrl>F5"},
+        {"label": "Stop", "shortcut": "Escape"},
+        {"separator": true},
+        {"label": "Move to Next Frame or Pop-Up", "shortcut": "F6"},
+        {"label": "Move to Previous Frame or Pop-Up", "shortcut": "<Shift>F6"}
       ]
     },
     {
       "label": "History",
       "items": [
-        {"label": "Back", "shortcut": "<Alt>Left"},
-        {"label": "Forward", "shortcut": "<Alt>Right"},
-        {"label": "Home", "shortcut": "<Alt>Home"},
-        {"label": "Reload", "shortcut": "<Ctrl>R"},
-        {"label": "Reload (Override Cache)", "shortcut": "<Ctrl><Shift>R"},
-        {"label": "Stop Loading", "shortcut": "Escape"},
-        {"separator": true},
         {"label": "Show All History", "shortcut": "<Ctrl><Shift>H"},
-        {"label": "Open History Sidebar", "shortcut": "<Ctrl>H"},
-        {"label": "Clear Recent History", "shortcut": "<Ctrl><Shift>Delete"},
+        {"label": "Clear Recent History…", "shortcut": "<Ctrl><Shift>Delete"},
         {"separator": true},
-        {"label": "Restore Closed Tab", "shortcut": "<Ctrl><Shift>T"},
-        {"label": "Restore Closed Window", "shortcut": "<Ctrl><Shift>N"}
+        {"label": "Restore Previous Session"},
+        {"label": "Search History"},
+        {"label": "Recently Closed Tabs", "items": [
+          {"label": "Reopen Closed Tab", "shortcut": "<Ctrl><Shift>T"}
+        ]},
+        {"label": "Recently Closed Windows", "items": [
+          {"label": "Reopen Closed Window", "shortcut": "<Ctrl><Shift>N"}
+        ]}
       ]
     },
     {
       "label": "Bookmarks",
       "items": [
-        {"label": "Bookmark Current Tab", "shortcut": "<Ctrl>D"},
-        {"label": "Bookmark All Tabs", "shortcut": "<Ctrl><Shift>D"},
+        {"label": "Manage Bookmarks", "shortcut": "<Ctrl><Shift>O"},
         {"separator": true},
-        {"label": "Show Bookmarks Sidebar", "shortcut": "<Ctrl>B"},
-        {"label": "Show Bookmarks Toolbar", "shortcut": "<Ctrl><Shift>B"},
-        {"label": "Manage Bookmarks", "shortcut": "<Ctrl><Shift>O"}
+        {"label": "Bookmark Current Tab…", "shortcut": "<Ctrl>D"},
+        {"label": "Search Bookmarks"},
+        {"label": "Bookmark All Tabs…", "shortcut": "<Ctrl><Shift>D"}
+      ]
+    },
+    {
+      "label": "Tabs",
+      "items": [
+        {"label": "Next Tab", "shortcut": "<Ctrl>Page_Down"},
+        {"label": "Next Tab (Alternate)", "shortcut": "<Ctrl>Tab"},
+        {"label": "Previous Tab", "shortcut": "<Ctrl>Page_Up"},
+        {"label": "Previous Tab (Alternate)", "shortcut": "<Ctrl><Shift>Tab"},
+        {"separator": true},
+        {"label": "Go to Tab 1", "shortcut": "<Alt>1"},
+        {"label": "Go to Last Tab", "shortcut": "<Alt>9"},
+        {"separator": true},
+        {"label": "Move Tab Left", "shortcut": "<Ctrl><Shift>Page_Up"},
+        {"label": "Move Tab Right", "shortcut": "<Ctrl><Shift>Page_Down"},
+        {"label": "Move Tab to Start", "shortcut": "<Ctrl><Shift>Home"},
+        {"label": "Move Tab to End", "shortcut": "<Ctrl><Shift>End"},
+        {"separator": true},
+        {"label": "Mute or Unmute Tab", "shortcut": "<Ctrl>M"},
+        {"label": "Close Tab (Alternate)", "shortcut": "<Ctrl>F4"}
+      ]
+    },
+    {
+      "label": "Profiles",
+      "items": [
+        {"label": "New Profile"},
+        {"separator": true},
+        {"label": "Manage Profiles"}
       ]
     },
     {
       "label": "Tools",
       "items": [
-        {"label": "Open Downloads", "shortcut": "<Ctrl><Shift>Y"},
-        {"label": "Open Add-ons and Themes", "shortcut": "<Ctrl><Shift>A"},
+        {"label": "Downloads", "shortcut": "<Ctrl><Shift>Y"},
+        {"label": "Extensions and Themes", "shortcut": "<Ctrl><Shift>A"},
         {"separator": true},
-        {"label": "Toggle Web Developer Tools", "shortcut": "<Ctrl><Shift>I"},
-        {"label": "Toggle Web Console", "shortcut": "<Ctrl><Shift>K"},
-        {"label": "Toggle Inspector", "shortcut": "<Ctrl><Shift>C"},
-        {"label": "Toggle Debugger", "shortcut": "<Ctrl><Shift>Z"},
-        {"label": "Toggle Network Monitor", "shortcut": "<Ctrl><Shift>E"},
-        {"label": "Toggle Style Editor", "shortcut": "<Shift>F7"},
-        {"label": "Toggle Performance", "shortcut": "<Shift>F5"},
-        {"label": "Toggle Storage Inspector", "shortcut": "<Shift>F9"},
-        {"label": "Toggle Accessibility Inspector", "shortcut": "<Shift>F12"},
-        {"label": "Toggle Responsive Design Mode", "shortcut": "<Ctrl><Shift>M"},
-        {"label": "Toggle Browser Console", "shortcut": "<Ctrl><Shift>J"},
-        {"label": "Toggle Browser Toolbox", "shortcut": "<Alt><Ctrl><Shift>I"},
+        {"label": "Firefox View"},
         {"separator": true},
-        {"label": "Task Manager (About Processes)", "shortcut": "<Shift>Escape"}
+        {"label": "Browser Tools", "items": [
+          {"label": "Web Developer Tools", "shortcut": "<Ctrl><Shift>I"},
+          {"label": "Web Developer Tools (Alternate)", "shortcut": "F12"},
+          {"label": "Inspector", "shortcut": "<Ctrl><Shift>C"},
+          {"label": "Web Console", "shortcut": "<Ctrl><Shift>K"},
+          {"label": "Debugger", "shortcut": "<Ctrl><Shift>Z"},
+          {"label": "Network", "shortcut": "<Ctrl><Shift>E"},
+          {"label": "Style Editor", "shortcut": "<Shift>F7"},
+          {"label": "Performance", "shortcut": "<Shift>F5"},
+          {"label": "Storage Inspector", "shortcut": "<Shift>F9"},
+          {"separator": true},
+          {"label": "Responsive Design Mode", "shortcut": "<Ctrl><Shift>M"},
+          {"label": "Eyedropper"},
+          {"label": "Page Source", "shortcut": "<Ctrl>U"},
+          {"label": "Browser Console", "shortcut": "<Ctrl><Shift>J"},
+          {"label": "Browser Toolbox", "shortcut": "<Ctrl><Shift><Alt>I"},
+          {"label": "Task Manager", "shortcut": "<Shift>Escape"},
+          {"separator": true},
+          {"label": "Remote Debugging"},
+          {"label": "Extensions for Developers"}
+        ]},
+        {"label": "Page Info", "shortcut": "<Ctrl>I"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Get Help"},
+        {"label": "Report Broken Site"},
+        {"label": "Share Ideas and Feedback…"},
+        {"label": "Troubleshoot Mode…"},
+        {"label": "More Troubleshooting Information"},
+        {"label": "Switching to a New Device"},
+        {"separator": true},
+        {"label": "About Firefox"},
+        {"label": "Share Firefox"}
       ]
     }
   ]
