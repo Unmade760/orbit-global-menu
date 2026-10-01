@@ -11,16 +11,23 @@
     {
       "label": "File",
       "items": [
-        {"label": "New Document", "shortcut": "<Ctrl>N"},
-        {"label": "Open Document", "shortcut": "<Ctrl>O"},
-        {"label": "Save Document", "shortcut": "<Ctrl>S"},
-        {"label": "Save Document As", "shortcut": "<Ctrl><Shift>S"},
-        {"label": "Import", "shortcut": "<Ctrl>I"},
-        {"label": "Export PNG / Image", "shortcut": "<Ctrl><Shift>E"},
-        {"label": "Print", "shortcut": "<Ctrl>P"},
-        {"label": "Document Properties", "shortcut": "<Ctrl><Shift>D"},
-        {"label": "Close Window", "shortcut": "<Ctrl>W"},
-        {"label": "Quit Inkscape", "shortcut": "<Ctrl>Q"}
+        {"label": "New", "shortcut": "<Ctrl>N"},
+        {"label": "New from Template…", "shortcut": "<Ctrl><Alt>N"},
+        {"label": "Open…", "shortcut": "<Ctrl>O"},
+        {"separator": true},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As…", "shortcut": "<Ctrl><Shift>S"},
+        {"label": "Save a Copy…", "shortcut": "<Ctrl><Shift><Alt>S"},
+        {"separator": true},
+        {"label": "Import…", "shortcut": "<Ctrl>I"},
+        {"label": "Export…", "shortcut": "<Ctrl><Shift>E"},
+        {"separator": true},
+        {"label": "Print…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Document Properties…", "shortcut": "<Ctrl><Shift>D"},
+        {"separator": true},
+        {"label": "Close", "shortcut": "<Ctrl>W"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
       ]
     },
     {
@@ -28,66 +35,192 @@
       "items": [
         {"label": "Undo", "shortcut": "<Ctrl>Z"},
         {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"label": "Undo History…", "shortcut": "<Ctrl><Shift>H"},
+        {"separator": true},
         {"label": "Cut", "shortcut": "<Ctrl>X"},
         {"label": "Copy", "shortcut": "<Ctrl>C"},
         {"label": "Paste", "shortcut": "<Ctrl>V"},
-        {"label": "Paste in Place", "shortcut": "<Ctrl><Alt>V"},
-        {"label": "Paste Style", "shortcut": "<Ctrl><Shift>V"},
-        {"label": "Invert Selection", "shortcut": "!"},
-        {"label": "Deselect", "shortcut": "Escape"},
-        {"label": "Find and Replace", "shortcut": "<Ctrl>F"},
-        {"label": "Preferences", "shortcut": "<Ctrl><Shift>P"}
-      ]
-    },
-    {
-      "label": "Select",
-      "items": [
-        {"label": "Duplicate Selection", "shortcut": "<Ctrl>D"},
+        {"separator": true},
+        {"label": "Paste…", "items": [
+          {"label": "In Place", "shortcut": "<Ctrl><Alt>V"},
+          {"label": "Style", "shortcut": "<Ctrl><Shift>V"}
+        ]},
+        {"separator": true},
+        {"label": "Find/Replace…", "shortcut": "<Ctrl>F"},
+        {"separator": true},
+        {"label": "Duplicate", "shortcut": "<Ctrl>D"},
+        {"label": "Clone", "items": [
+          {"label": "Create Clone", "shortcut": "<Alt>D"},
+          {"label": "Unlink Clone", "shortcut": "<Shift><Alt>D"},
+          {"label": "Select Original", "shortcut": "<Shift>D"}
+        ]},
+        {"label": "Make a Bitmap Copy", "shortcut": "<Alt>B"},
+        {"separator": true},
+        {"label": "Delete", "shortcut": "Delete"},
+        {"separator": true},
         {"label": "Select All", "shortcut": "<Ctrl>A"},
         {"label": "Select All in All Layers", "shortcut": "<Ctrl><Alt>A"},
-        {"label": "Zoom to Selection", "shortcut": "3"}
+        {"label": "Select Same", "items": [
+          {"label": "Object Type", "shortcut": "<Shift><Alt>A"}
+        ]},
+        {"label": "Invert Selection", "shortcut": "!"},
+        {"label": "Deselect", "shortcut": "Escape"},
+        {"separator": true},
+        {"label": "Resize Page to Selection", "shortcut": "<Ctrl><Shift>R"},
+        {"separator": true},
+        {"label": "XML Editor…", "shortcut": "<Ctrl><Shift>X"}
       ]
     },
     {
       "label": "View",
       "items": [
-        {"label": "Fill and Stroke Panel", "shortcut": "<Ctrl><Shift>F"},
-        {"label": "Align and Distribute Panel", "shortcut": "<Ctrl><Shift>A"},
-        {"label": "Transform Panel", "shortcut": "<Ctrl><Shift>M"},
-        {"label": "Zoom In", "shortcut": "+"},
-        {"label": "Zoom Out", "shortcut": "-"},
-        {"label": "Zoom 1:1 (Actual Size)", "shortcut": "1"},
-        {"label": "Zoom 1:2", "shortcut": "2"},
-        {"label": "Zoom to Drawing", "shortcut": "4"},
-        {"label": "Zoom to Page", "shortcut": "5"},
-        {"label": "Zoom to Page Width", "shortcut": "6"},
-        {"label": "Toggle Fullscreen", "shortcut": "F11"},
-        {"label": "Toggle Rulers", "shortcut": "<Ctrl>R"},
-        {"label": "Toggle Scrollbars", "shortcut": "<Ctrl>B"},
-        {"label": "Toggle Guides", "shortcut": "<Shift>|"},
-        {"label": "Toggle Snapping", "shortcut": "%"}
+        {"label": "Zoom", "items": [
+          {"label": "Zoom In", "shortcut": "+"},
+          {"label": "Zoom Out", "shortcut": "-"},
+          {"separator": true},
+          {"label": "Zoom to 1:1", "shortcut": "1"},
+          {"label": "Zoom to 1:2", "shortcut": "2"},
+          {"separator": true},
+          {"label": "Zoom Selection", "shortcut": "3"},
+          {"label": "Zoom Drawing", "shortcut": "4"},
+          {"label": "Zoom Page", "shortcut": "5"},
+          {"label": "Zoom Page Width", "shortcut": "6"},
+          {"label": "Center Page", "shortcut": "<Ctrl>4"},
+          {"separator": true},
+          {"label": "Zoom Previous", "shortcut": "`"},
+          {"label": "Zoom Next", "shortcut": "~"}
+        ]},
+        {"label": "Display Mode", "items": [
+          {"label": "Cycle", "shortcut": "<Ctrl>5"}
+        ]},
+        {"label": "Split Mode", "items": [
+          {"label": "Split", "shortcut": "<Ctrl>6"},
+          {"label": "X-Ray", "shortcut": "<Alt>6"}
+        ]},
+        {"separator": true},
+        {"label": "Gray Scale", "shortcut": "<Alt>5"},
+        {"separator": true},
+        {"label": "Page Grid", "shortcut": "#"},
+        {"label": "Guides", "shortcut": "|"},
+        {"separator": true},
+        {"label": "Show/Hide", "items": [
+          {"label": "Rulers", "shortcut": "<Ctrl>R"},
+          {"label": "Scrollbars", "shortcut": "<Ctrl>B"},
+          {"label": "Palette", "shortcut": "<Shift><Alt>P"}
+        ]},
+        {"label": "Show/Hide Dialogs", "shortcut": "F12"},
+        {"label": "Command Palette", "shortcut": "?"},
+        {"separator": true},
+        {"label": "Swatches…", "shortcut": "<Ctrl><Shift>W"},
+        {"separator": true},
+        {"label": "Previous Window", "shortcut": "<Ctrl><Shift>Tab"},
+        {"label": "Next Window", "shortcut": "<Ctrl>Tab"},
+        {"separator": true},
+        {"label": "Fullscreen", "shortcut": "F11"}
       ]
     },
     {
       "label": "Layer",
       "items": [
+        {"label": "Layers and Objects…", "shortcut": "<Ctrl><Shift>L"},
+        {"separator": true},
+        {"label": "Add Layer…", "shortcut": "<Ctrl><Shift>N"},
+        {"separator": true},
+        {"label": "Switch to Layer Above", "shortcut": "<Ctrl>Page_Up"},
+        {"label": "Switch to Layer Below", "shortcut": "<Ctrl>Page_Down"},
+        {"separator": true},
+        {"label": "Move Selection to Layer Above", "shortcut": "<Shift>Page_Up"},
+        {"label": "Move Selection to Layer Below", "shortcut": "<Shift>Page_Down"},
+        {"separator": true},
+        {"label": "Layer to Top", "shortcut": "<Ctrl><Shift>Home"},
+        {"label": "Raise Layer", "shortcut": "<Ctrl><Shift>Page_Up"},
+        {"label": "Lower Layer", "shortcut": "<Ctrl><Shift>Page_Down"},
+        {"label": "Layer to Bottom", "shortcut": "<Ctrl><Shift>End"}
+      ]
+    },
+    {
+      "label": "Object",
+      "items": [
+        {"label": "Layers and Objects…", "shortcut": "<Ctrl><Shift>L"},
+        {"label": "Fill and Stroke…", "shortcut": "<Ctrl><Shift>F"},
+        {"label": "Object Properties…", "shortcut": "<Ctrl><Shift>O"},
+        {"label": "Symbols…", "shortcut": "<Ctrl><Shift>Y"},
+        {"label": "Selectors and CSS…", "shortcut": "<Ctrl><Shift>Q"},
+        {"separator": true},
         {"label": "Group", "shortcut": "<Ctrl>G"},
         {"label": "Ungroup", "shortcut": "<Ctrl><Shift>G"},
-        {"label": "Layers and Objects Panel", "shortcut": "<Ctrl><Shift>L"}
+        {"separator": true},
+        {"label": "Clip", "items": [
+          {"label": "Set Clip", "shortcut": "<Ctrl>M"},
+          {"label": "Release Clip", "shortcut": "<Alt>M"}
+        ]},
+        {"separator": true},
+        {"label": "Pattern", "items": [
+          {"label": "Objects to Pattern", "shortcut": "<Alt>I"},
+          {"label": "Pattern to Objects", "shortcut": "<Shift><Alt>I"}
+        ]},
+        {"separator": true},
+        {"label": "Objects to Guides", "shortcut": "<Shift>G"},
+        {"separator": true},
+        {"label": "Raise to Top", "shortcut": "Home"},
+        {"label": "Raise", "shortcut": "Page_Up"},
+        {"label": "Lower", "shortcut": "Page_Down"},
+        {"label": "Lower to Bottom", "shortcut": "End"},
+        {"separator": true},
+        {"label": "Flip Horizontal", "shortcut": "H"},
+        {"label": "Flip Vertical", "shortcut": "V"},
+        {"separator": true},
+        {"label": "Transform…", "shortcut": "<Ctrl><Shift>M"},
+        {"label": "Align and Distribute…", "shortcut": "<Ctrl><Shift>A"}
       ]
     },
     {
-      "label": "Tools",
+      "label": "Path",
       "items": [
-        {"label": "Create Clone", "shortcut": "<Alt>D"},
-        {"label": "Unlink Clone", "shortcut": "<Alt><Shift>D"}
+        {"label": "Object to Path", "shortcut": "<Ctrl><Shift>C"},
+        {"label": "Stroke to Path", "shortcut": "<Ctrl><Alt>C"},
+        {"label": "Trace Bitmap…", "shortcut": "<Shift><Alt>B"},
+        {"separator": true},
+        {"label": "Union", "shortcut": "<Ctrl>+"},
+        {"label": "Difference", "shortcut": "<Ctrl>-"},
+        {"label": "Intersection", "shortcut": "<Ctrl>*"},
+        {"label": "Exclusion", "shortcut": "<Ctrl>^"},
+        {"label": "Division", "shortcut": "<Ctrl>/"},
+        {"label": "Cut Path", "shortcut": "<Ctrl><Alt>/"},
+        {"separator": true},
+        {"label": "Combine", "shortcut": "<Ctrl>K"},
+        {"label": "Break Apart", "shortcut": "<Ctrl><Shift>K"},
+        {"label": "Split Path", "shortcut": "<Ctrl><Shift><Alt>K"},
+        {"label": "Fracture", "shortcut": "<Shift><Alt>F"},
+        {"label": "Flatten", "shortcut": "<Shift>F"},
+        {"separator": true},
+        {"label": "Inset", "shortcut": "<Ctrl>("},
+        {"label": "Outset", "shortcut": "<Ctrl>)"},
+        {"label": "Dynamic Offset", "shortcut": "<Ctrl>J"},
+        {"label": "Linked Offset", "shortcut": "<Ctrl><Alt>J"},
+        {"separator": true},
+        {"label": "Simplify", "shortcut": "<Ctrl>L"},
+        {"separator": true},
+        {"label": "Path Effects…", "shortcut": "<Ctrl>&"},
+        {"label": "Paste Path Effect", "shortcut": "&"}
       ]
     },
     {
-      "label": "Help",
+      "label": "Text",
       "items": [
-        {"label": "Keyboard Shortcuts / Keys and Mouse Reference", "shortcut": "<Ctrl>?"},
-        {"label": "Help", "shortcut": "F1"}
+        {"label": "Text and Font…", "shortcut": "<Ctrl><Shift>T"},
+        {"separator": true},
+        {"label": "Flow into Frame", "shortcut": "<Alt>W"},
+        {"label": "Unflow", "shortcut": "<Shift><Alt>W"},
+        {"separator": true},
+        {"label": "Check Spelling…", "shortcut": "<Ctrl><Alt>K"}
+      ]
+    },
+    {
+      "label": "Extensions",
+      "items": [
+        {"label": "Previous Extension", "shortcut": "<Alt>Q"},
+        {"label": "Previous Extension Settings…", "shortcut": "<Shift><Alt>Q"}
       ]
     }
   ]

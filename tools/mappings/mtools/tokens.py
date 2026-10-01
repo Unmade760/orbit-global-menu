@@ -79,6 +79,9 @@ LIBVLC_KEY_DEFINE = re.compile(r'^[ \t]*#[ \t]*define[ \t]+KEY_\w+[ \t]+"(Page (
 GIMP_ACCEL_ARRAY = re.compile(r'\{(?:\s*"[^"\n]*"\s*,)+\s*NULL\s*\}')
 GIMP_ACCEL_KEYSYMS = {"grave": "grave", "minus": "minus", "plus": "plus", "exclam": "exclam",
                       "slash": "slash", "Prior": "Page_Up", "Next": "Page_Down"}
+# Inkscape's default.xml lists a comma separated key list per action, `<bind gaction="..." keys="plus,
+# equal, KP_Add" />`, over several lines. Entries with no modifier tag are bare keysym names or digits.
+INKSCAPE_BIND_KEYS = re.compile(r'<bind\s+gaction="[^"]*"\s+keys="([^"]*)"')
 SEQUENCE_GAP = re.compile(r"^\s*(?:,|then)?\s*$", re.I)
 
 ENTITY_KEYS = {"ctrl": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": "Super", "super": "Super",
@@ -248,6 +251,11 @@ def find_chords(text):
             if q.group(1) in GIMP_ACCEL_KEYSYMS:
                 add(m.start() + q.start(), m.start() + q.end(), q.group(1),
                     _seqs(GIMP_ACCEL_KEYSYMS[q.group(1)], "gtk"))
+
+    for m in INKSCAPE_BIND_KEYS.finditer(text):
+        for k in re.finditer(r"[^,\s]+", m.group(1)):
+            if "<" not in k.group(0):
+                add(m.start(1) + k.start(), m.start(1) + k.end(), k.group(0), _seqs(k.group(0), "gtk"))
 
     for m in LO_KEY_NODE.finditer(text):
         add(m.start(), m.end(), m.group(0), _lo_key_seqs(m.group(1)))

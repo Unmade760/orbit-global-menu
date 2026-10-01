@@ -1,0 +1,1326 @@
+{
+  "format": 1,
+  "app": "inkscape",
+  "repos": {
+    "inkscape": {
+      "url": "https://gitlab.com/inkscape/inkscape.git",
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 132,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "New from Template…"
+      ],
+      "shortcut": "<Ctrl><Alt>N",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 133,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 134,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 136,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 137,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Save a Copy…"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>S",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 138,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Import…"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 139,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Export…"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 68,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 140,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Document Properties…"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 67,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 142,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 143,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 146,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 147,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo History…"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 91,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 148,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 149,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 150,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste…",
+        "In Place"
+      ],
+      "shortcut": "<Ctrl><Alt>V",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 152,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste…",
+        "Style"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 151,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find/Replace…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 71,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Duplicate"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 159,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clone",
+        "Create Clone"
+      ],
+      "shortcut": "<Alt>D",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 161,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clone",
+        "Unlink Clone"
+      ],
+      "shortcut": "<Shift><Alt>D",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 162,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clone",
+        "Select Original"
+      ],
+      "shortcut": "<Shift>D",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 166,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Make a Bitmap Copy"
+      ],
+      "shortcut": "<Alt>B",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 167,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 168,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 174,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All in All Layers"
+      ],
+      "shortcut": "<Ctrl><Alt>A",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 175,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select Same",
+        "Object Type"
+      ],
+      "shortcut": "<Shift><Alt>A",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 179,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Invert Selection"
+      ],
+      "shortcut": "!",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 180,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Deselect"
+      ],
+      "shortcut": "Escape",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 182,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "Resize Page to Selection"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 169,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Edit",
+        "XML Editor…"
+      ],
+      "shortcut": "<Ctrl><Shift>X",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 92,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom In"
+      ],
+      "shortcut": "+",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 186,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Out"
+      ],
+      "shortcut": "-",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 187,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom to 1:1"
+      ],
+      "shortcut": "1",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 188,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom to 1:2"
+      ],
+      "shortcut": "2",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 189,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Selection"
+      ],
+      "shortcut": "3",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 191,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Drawing"
+      ],
+      "shortcut": "4",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 192,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Page"
+      ],
+      "shortcut": "5",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 193,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Page Width"
+      ],
+      "shortcut": "6",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 194,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Center Page"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 195,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Previous"
+      ],
+      "shortcut": "`",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 196,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Next"
+      ],
+      "shortcut": "~",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 197,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Display Mode",
+        "Cycle"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 212,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Split Mode",
+        "Split"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 215,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Split Mode",
+        "X-Ray"
+      ],
+      "shortcut": "<Alt>6",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 216,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Gray Scale"
+      ],
+      "shortcut": "<Alt>5",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 217,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Page Grid"
+      ],
+      "shortcut": "#",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 221,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Guides"
+      ],
+      "shortcut": "|",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 222,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide",
+        "Rulers"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 227,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide",
+        "Scrollbars"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 228,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide",
+        "Palette"
+      ],
+      "shortcut": "<Shift><Alt>P",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 229,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide Dialogs"
+      ],
+      "shortcut": "F12",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 93,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Command Palette"
+      ],
+      "shortcut": "?",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 231,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Swatches…"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 86,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Previous Window"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 232,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Next Window"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 233,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 235,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Layers and Objects…"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 80,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Add Layer…"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 240,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Switch to Layer Above"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 244,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Switch to Layer Below"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 245,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Move Selection to Layer Above"
+      ],
+      "shortcut": "<Shift>Page_Up",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 246,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Move Selection to Layer Below"
+      ],
+      "shortcut": "<Shift>Page_Down",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 247,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Layer to Top"
+      ],
+      "shortcut": "<Ctrl><Shift>Home",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 249,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Raise Layer"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 250,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Lower Layer"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 251,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Layer",
+        "Layer to Bottom"
+      ],
+      "shortcut": "<Ctrl><Shift>End",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 252,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Layers and Objects…"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 80,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Fill and Stroke…"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 69,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Object Properties…"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 79,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Symbols…"
+      ],
+      "shortcut": "<Ctrl><Shift>Y",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 87,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Selectors and CSS…"
+      ],
+      "shortcut": "<Ctrl><Shift>Q",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 83,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Group"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 265,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Ungroup"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 266,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Clip",
+        "Set Clip"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 269,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Clip",
+        "Release Clip"
+      ],
+      "shortcut": "<Alt>M",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 271,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Pattern",
+        "Objects to Pattern"
+      ],
+      "shortcut": "<Alt>I",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 276,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Pattern",
+        "Pattern to Objects"
+      ],
+      "shortcut": "<Shift><Alt>I",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 277,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Objects to Guides"
+      ],
+      "shortcut": "<Shift>G",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 280,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Raise to Top"
+      ],
+      "shortcut": "Home",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 282,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Raise"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 283,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Lower"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 284,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Lower to Bottom"
+      ],
+      "shortcut": "End",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 285,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Flip Horizontal"
+      ],
+      "shortcut": "H",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 287,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Flip Vertical"
+      ],
+      "shortcut": "V",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 288,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Transform…"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 90,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Object",
+        "Align and Distribute…"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 65,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Object to Path"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 322,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Stroke to Path"
+      ],
+      "shortcut": "<Ctrl><Alt>C",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 323,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Trace Bitmap…"
+      ],
+      "shortcut": "<Shift><Alt>B",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 89,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Union"
+      ],
+      "shortcut": "<Ctrl>+",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 324,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Difference"
+      ],
+      "shortcut": "<Ctrl>-",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 327,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Intersection"
+      ],
+      "shortcut": "<Ctrl>*",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 332,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Exclusion"
+      ],
+      "shortcut": "<Ctrl>^",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 335,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Division"
+      ],
+      "shortcut": "<Ctrl>/",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 337,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Cut Path"
+      ],
+      "shortcut": "<Ctrl><Alt>/",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 340,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Combine"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 342,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Break Apart"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 343,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Split Path"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>K",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 344,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Fracture"
+      ],
+      "shortcut": "<Shift><Alt>F",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 345,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Flatten"
+      ],
+      "shortcut": "<Shift>F",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 346,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Inset"
+      ],
+      "shortcut": "<Ctrl>(",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 348,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Outset"
+      ],
+      "shortcut": "<Ctrl>)",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 352,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Dynamic Offset"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 360,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Linked Offset"
+      ],
+      "shortcut": "<Ctrl><Alt>J",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 361,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Simplify"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 363,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Path Effects…"
+      ],
+      "shortcut": "<Ctrl>&",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 75,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Path",
+        "Paste Path Effect"
+      ],
+      "shortcut": "&",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 365,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Text",
+        "Text and Font…"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 88,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Text",
+        "Flow into Frame"
+      ],
+      "shortcut": "<Alt>W",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 370,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Text",
+        "Unflow"
+      ],
+      "shortcut": "<Shift><Alt>W",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 371,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Text",
+        "Check Spelling…"
+      ],
+      "shortcut": "<Ctrl><Alt>K",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 84,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Extensions",
+        "Previous Extension"
+      ],
+      "shortcut": "<Alt>Q",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 387,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    },
+    {
+      "path": [
+        "Extensions",
+        "Previous Extension Settings…"
+      ],
+      "shortcut": "<Shift><Alt>Q",
+      "repo": "inkscape",
+      "file": "share/keys/inkscape.xml",
+      "line": 388,
+      "commit": "0d15f7504220b00925bc3cb3673fcf44610a17d5"
+    }
+  ]
+}
