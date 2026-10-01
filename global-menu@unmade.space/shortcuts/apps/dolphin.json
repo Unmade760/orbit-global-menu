@@ -11,15 +11,21 @@
     {
       "label": "File",
       "items": [
-        {"label": "Open New Window", "shortcut": "<Ctrl>N"},
-        {"label": "Open New Tab", "shortcut": "<Ctrl>T"},
+        {"label": "New Window", "shortcut": "<Ctrl>N"},
+        {"label": "New Tab", "shortcut": "<Ctrl>T"},
+        {"label": "Create Folder…", "shortcut": "<Ctrl><Shift>N"},
+        {"separator": true},
         {"label": "Close Tab", "shortcut": "<Ctrl>W"},
-        {"label": "Undo Close Tab", "shortcut": "<Ctrl><Shift>T"},
-        {"label": "Quit Dolphin", "shortcut": "<Ctrl>Q"},
+        {"label": "Undo close tab", "shortcut": "<Ctrl><Shift>T"},
+        {"separator": true},
+        {"label": "Rename…", "shortcut": "F2"},
+        {"label": "Duplicate Here", "shortcut": "<Ctrl>D"},
+        {"label": "Move to Trash", "shortcut": "Delete"},
+        {"label": "Delete", "shortcut": "<Shift>Delete"},
+        {"separator": true},
         {"label": "Properties", "shortcut": "<Alt>Return"},
-        {"label": "Open External Terminal", "shortcut": "<Shift>F4"},
-        {"label": "Open Terminal Here", "shortcut": "<Alt><Shift>F4"},
-        {"label": "Open Preferred Search Tool", "shortcut": "<Ctrl><Shift>F"}
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
       ]
     },
     {
@@ -27,76 +33,84 @@
       "items": [
         {"label": "Undo", "shortcut": "<Ctrl>Z"},
         {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
         {"label": "Cut", "shortcut": "<Ctrl>X"},
         {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Copy Location", "shortcut": "<Ctrl><Alt>C"},
         {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"separator": true},
+        {"label": "Filter…", "shortcut": "<Ctrl>I"},
+        {"label": "Find…", "shortcut": "<Ctrl>F"},
+        {"separator": true},
+        {"label": "Select Files and Folders", "shortcut": "space"},
+        {"label": "Copy to Other View", "shortcut": "<Shift>F5"},
+        {"label": "Move to Other View", "shortcut": "<Shift>F6"},
         {"label": "Select All", "shortcut": "<Ctrl>A"},
-        {"label": "Invert Selection", "shortcut": "<Ctrl><Shift>A"},
-        {"label": "Rename", "shortcut": "F2"},
-        {"label": "Move to Trash", "shortcut": "Delete"},
-        {"label": "Delete Permanently", "shortcut": "<Shift>Delete"},
-        {"label": "Replace Location (Focus URL Bar)", "shortcut": "<Ctrl>L"},
-        {"label": "Search / Find", "shortcut": "<Ctrl>F"},
-        {"label": "Configure Shortcuts", "shortcut": "<Ctrl><Alt>,"},
-        {"label": "Configure Dolphin (Preferences)", "shortcut": "<Ctrl><Shift>,"}
+        {"label": "Invert Selection", "shortcut": "<Ctrl><Shift>A"}
       ]
     },
     {
       "label": "View",
       "items": [
-        {"label": "Select Items Matching", "shortcut": "<Ctrl>S"},
-        {"label": "Reload / Refresh", "shortcut": "F5"},
-        {"label": "Stop", "shortcut": "Escape"},
-        {"label": "Toggle Split View", "shortcut": "F3"},
-        {"label": "Icons View", "shortcut": "<Ctrl>1"},
-        {"label": "Compact View", "shortcut": "<Ctrl>2"},
-        {"label": "Details View", "shortcut": "<Ctrl>3"},
         {"label": "Zoom In", "shortcut": "<Ctrl>+"},
+        {"label": "Reset Zoom Level", "shortcut": "<Ctrl>0"},
         {"label": "Zoom Out", "shortcut": "<Ctrl>-"},
-        {"label": "Reset Zoom", "shortcut": "<Ctrl>0"},
+        {"separator": true},
+        {"label": "View Mode", "items": [
+          {"label": "Icons", "shortcut": "<Ctrl>1"},
+          {"label": "Compact", "shortcut": "<Ctrl>2"},
+          {"label": "Details", "shortcut": "<Ctrl>3"}
+        ]},
+        {"label": "Show Previews", "shortcut": "F12"},
         {"label": "Show Hidden Files", "shortcut": "<Ctrl>H"},
-        {"label": "Show Menubar", "shortcut": "<Ctrl>M"},
-        {"label": "Toggle Filter Bar", "shortcut": "<Ctrl>I"},
-        {"label": "Toggle Terminal Panel", "shortcut": "F4"},
-        {"label": "Focus Terminal Panel", "shortcut": "<Ctrl><Shift>F4"},
-        {"label": "Toggle Places Panel", "shortcut": "F9"},
-        {"label": "Focus Places Panel", "shortcut": "<Ctrl>P"},
-        {"label": "Toggle Information Panel", "shortcut": "F11"},
-        {"label": "Toggle Folders Panel", "shortcut": "F7"}
+        {"separator": true},
+        {"label": "Split View", "shortcut": "F3"},
+        {"label": "Pop out split view", "shortcut": "<Shift>F3"},
+        {"label": "Focus Other View", "shortcut": "<Ctrl>F3"},
+        {"label": "Stash", "shortcut": "<Ctrl>S"},
+        {"label": "Refresh", "shortcut": "F5"},
+        {"label": "Stop"},
+        {"separator": true},
+        {"label": "Panels", "items": [
+          {"label": "Information", "shortcut": "F11"},
+          {"label": "Folders", "shortcut": "F7"},
+          {"label": "Terminal", "shortcut": "F4"},
+          {"label": "Places", "shortcut": "F9"}
+        ]},
+        {"label": "Location Bar", "items": [
+          {"label": "Editable Location", "shortcut": "F6"},
+          {"label": "Replace Location", "shortcut": "<Ctrl>L"}
+        ]}
       ]
     },
     {
       "label": "Go",
       "items": [
-        {"label": "Go Back", "shortcut": "<Alt>Left"},
-        {"label": "Go Forward", "shortcut": "<Alt>Right"},
-        {"label": "Go Up", "shortcut": "<Alt>Up"},
-        {"label": "Go Home", "shortcut": "<Alt>Home"},
-        {"label": "Next Tab", "shortcut": "<Ctrl>Page_Down"},
-        {"label": "Previous Tab", "shortcut": "<Ctrl>Page_Up"},
-        {"label": "Activate Last Tab", "shortcut": "<Alt>0"},
-        {"label": "Add Bookmark", "shortcut": "<Ctrl>B"}
+        {"label": "Back", "shortcut": "<Alt>Left"},
+        {"label": "Forward", "shortcut": "<Alt>Right"},
+        {"label": "Up", "shortcut": "<Alt>Up"},
+        {"label": "Home", "shortcut": "<Alt>Home"},
+        {"separator": true},
+        {"label": "Go to Next Tab", "shortcut": "<Ctrl>Tab"},
+        {"label": "Go to Previous Tab", "shortcut": "<Ctrl><Shift>Tab"},
+        {"label": "Go to Last Tab", "shortcut": "<Alt>0"}
       ]
     },
     {
-      "label": "Tabs",
+      "label": "Tools",
       "items": [
-        {"label": "Activate Tab 1", "shortcut": "<Alt>1"},
-        {"label": "Activate Tab 2", "shortcut": "<Alt>2"},
-        {"label": "Activate Tab 3", "shortcut": "<Alt>3"},
-        {"label": "Activate Tab 4", "shortcut": "<Alt>4"},
-        {"label": "Activate Tab 5", "shortcut": "<Alt>5"},
-        {"label": "Activate Tab 6", "shortcut": "<Alt>6"},
-        {"label": "Activate Tab 7", "shortcut": "<Alt>7"},
-        {"label": "Activate Tab 8", "shortcut": "<Alt>8"},
-        {"label": "Activate Tab 9", "shortcut": "<Alt>9"}
+        {"label": "Open Preferred Search Tool", "shortcut": "<Ctrl><Shift>F"},
+        {"label": "Open Terminal", "shortcut": "<Shift>F4"},
+        {"label": "Open Terminal Here", "shortcut": "<Alt><Shift>F4"},
+        {"label": "Focus Terminal Panel", "shortcut": "<Ctrl><Shift>F4"}
       ]
     },
     {
-      "label": "Help",
+      "label": "Settings",
       "items": [
-        {"label": "Help Handbook", "shortcut": "F1"},
-        {"label": "What's This?", "shortcut": "<Shift>F1"}
+        {"label": "Show Menubar", "shortcut": "<Ctrl>M"},
+        {"label": "Configure Keyboard Shortcuts…", "shortcut": "<Ctrl><Alt>comma"},
+        {"label": "Configure Dolphin…", "shortcut": "<Ctrl><Shift>comma"}
       ]
     }
   ]

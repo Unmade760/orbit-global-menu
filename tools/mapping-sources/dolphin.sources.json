@@ -1,0 +1,768 @@
+{
+  "format": 1,
+  "app": "dolphin",
+  "repos": {
+    "dolphin": {
+      "url": "https://invent.kde.org/system/dolphin.git",
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "dolphin",
+      "file": "doc/index.docbook",
+      "line": 1609,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 1818,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "Create Folder…"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 87,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "dolphin",
+      "file": "doc/index.docbook",
+      "line": 1631,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "Undo close tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2117,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "Rename…"
+      ],
+      "shortcut": "F2",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 110,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "Duplicate Here"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 155,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "Move to Trash"
+      ],
+      "shortcut": "Delete",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 119,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "Delete"
+      ],
+      "shortcut": "<Shift>Delete",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 133,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 169,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 1837,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 1841,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 1842,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "dolphin",
+      "file": "src/dolphinui.rc",
+      "line": 24,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "dolphin",
+      "file": "src/dolphinui.rc",
+      "line": 25,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy Location"
+      ],
+      "shortcut": "<Ctrl><Alt>C",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 177,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "dolphin",
+      "file": "src/dolphinui.rc",
+      "line": 27,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Filter…"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 1922,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "dolphin",
+      "file": "src/dolphinui.rc",
+      "line": 30,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy to Other View"
+      ],
+      "shortcut": "<Shift>F5",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 1891,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move to Other View"
+      ],
+      "shortcut": "<Shift>F6",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 1903,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "dolphin",
+      "file": "src/dolphinpart.rc",
+      "line": 19,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Invert Selection"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "dolphin",
+      "file": "src/dolphinpart.cpp",
+      "line": 170,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>+",
+      "repo": "dolphin",
+      "file": "src/dolphinui.rc",
+      "line": 39,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom Level"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 263,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>-",
+      "repo": "dolphin",
+      "file": "src/dolphinui.rc",
+      "line": 41,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "View Mode",
+        "Icons"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 783,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "View Mode",
+        "Compact"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 794,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "View Mode",
+        "Details"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 805,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Show Previews"
+      ],
+      "shortcut": "F12",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 281,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Show Hidden Files"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "dolphin",
+      "file": "src/views/dolphinviewactionhandler.cpp",
+      "line": 390,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Split View"
+      ],
+      "shortcut": "F3",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2029,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Pop out split view"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2039,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Focus Other View"
+      ],
+      "shortcut": "<Ctrl>F3",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 1910,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Stash"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2043,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Refresh"
+      ],
+      "shortcut": "F5",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2052,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Location Bar",
+        "Editable Location"
+      ],
+      "shortcut": "F6",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2076,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Location Bar",
+        "Replace Location"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2087,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Go",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "dolphin",
+      "file": "doc/index.docbook",
+      "line": 2078,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Go",
+        "Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "dolphin",
+      "file": "doc/index.docbook",
+      "line": 2089,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Go",
+        "Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2160,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Go",
+        "Home"
+      ],
+      "shortcut": "<Alt>Home",
+      "repo": "dolphin",
+      "file": "doc/index.docbook",
+      "line": 2100,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Next Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2246,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Previous Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2249,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Last Tab"
+      ],
+      "shortcut": "<Alt>0",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2270,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Tools",
+        "Open Preferred Search Tool"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2187,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Tools",
+        "Open Terminal"
+      ],
+      "shortcut": "<Shift>F4",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2203,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Tools",
+        "Open Terminal Here"
+      ],
+      "shortcut": "<Alt><Shift>F4",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2213,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Tools",
+        "Focus Terminal Panel"
+      ],
+      "shortcut": "<Ctrl><Shift>F4",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2477,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2226,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2241,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Dolphin…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2242,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select Files and Folders"
+      ],
+      "shortcut": "space",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 1978,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Panels",
+        "Information"
+      ],
+      "shortcut": "F11",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2359,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Panels",
+        "Folders"
+      ],
+      "shortcut": "F7",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2403,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Panels",
+        "Terminal"
+      ],
+      "shortcut": "F4",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2443,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    },
+    {
+      "path": [
+        "View",
+        "Panels",
+        "Places"
+      ],
+      "shortcut": "F9",
+      "repo": "dolphin",
+      "file": "src/dolphinmainwindow.cpp",
+      "line": 2508,
+      "commit": "da98e98d3e806c1ea57edc8e39988173a6dfdef7"
+    }
+  ],
+  "unmatched": [
+    {
+      "path": [
+        "Edit",
+        "Select Files and Folders"
+      ],
+      "shortcut": "space"
+    },
+    {
+      "path": [
+        "View",
+        "Panels",
+        "Information"
+      ],
+      "shortcut": "F11"
+    },
+    {
+      "path": [
+        "View",
+        "Panels",
+        "Folders"
+      ],
+      "shortcut": "F7"
+    },
+    {
+      "path": [
+        "View",
+        "Panels",
+        "Terminal"
+      ],
+      "shortcut": "F4"
+    },
+    {
+      "path": [
+        "View",
+        "Panels",
+        "Places"
+      ],
+      "shortcut": "F9"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Tab",
+        "Go to Tab 1"
+      ],
+      "shortcut": "<Alt>1"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Tab",
+        "Go to Tab 2"
+      ],
+      "shortcut": "<Alt>2"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Tab",
+        "Go to Tab 3"
+      ],
+      "shortcut": "<Alt>3"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Tab",
+        "Go to Tab 4"
+      ],
+      "shortcut": "<Alt>4"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Tab",
+        "Go to Tab 5"
+      ],
+      "shortcut": "<Alt>5"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Tab",
+        "Go to Tab 6"
+      ],
+      "shortcut": "<Alt>6"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Tab",
+        "Go to Tab 7"
+      ],
+      "shortcut": "<Alt>7"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Tab",
+        "Go to Tab 8"
+      ],
+      "shortcut": "<Alt>8"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Tab",
+        "Go to Tab 9"
+      ],
+      "shortcut": "<Alt>9"
+    }
+  ],
+  "summary": {
+    "with_shortcut": 66,
+    "label_match": 46,
+    "action_match": 0,
+    "chord_only": 6,
+    "unmatched": 14
+  }
+}
