@@ -1,0 +1,2482 @@
+{
+ "comment": "Every app here is installed on the development machine. group = the charter coverage group, toolkit = what the binary links. mode: wayland hides nothing (X11 apps fall back to Xwayland), x11 forces X11. registrar: a com.canonical.AppMenu.Registrar stub runs before the app unless a row says false, as the daemon own registrar does in use.",
+ "apps": [
+  {
+   "id": "gedit",
+   "name": "gedit",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "gedit",
+   "version": "49.0-2.fc44",
+   "launch": [
+    "gedit"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.gedit.desktop",
+   "wm_class": "org.gnome.gedit",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "geany",
+   "name": "Geany",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "geany",
+   "version": "2.1-4.fc44",
+   "launch": [
+    "geany"
+   ],
+   "mode": "wayland",
+   "desktop_id": "geany.desktop",
+   "wm_class": "geany",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "pluma",
+   "name": "Pluma",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "pluma",
+   "version": "1.28.1-2.fc44",
+   "launch": [
+    "pluma"
+   ],
+   "mode": "wayland",
+   "desktop_id": "pluma.desktop",
+   "wm_class": "pluma",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "mousepad",
+   "name": "Mousepad",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "mousepad",
+   "version": "0.7.0-1.fc44",
+   "launch": [
+    "mousepad"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.xfce.mousepad.desktop",
+   "wm_class": "org.xfce.mousepad",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "meld",
+   "name": "Meld",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "meld",
+   "version": "3.23.1-2.fc44",
+   "launch": [
+    "meld"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Meld.desktop",
+   "wm_class": "org.gnome.Meld",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "gnumeric",
+   "name": "Gnumeric",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "gnumeric",
+   "version": "1.12.59-2.fc44",
+   "launch": [
+    "gnumeric",
+    "--name",
+    "org.gnumeric.gnumeric"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnumeric.gnumeric.desktop",
+   "wm_class": "org.gnumeric.gnumeric",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "abiword",
+   "name": "AbiWord",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "abiword",
+   "version": "3.0.8-2.fc44",
+   "launch": [
+    "abiword"
+   ],
+   "mode": "wayland",
+   "desktop_id": "com.abisource.AbiWord.desktop",
+   "wm_class": "com.abisource.AbiWord",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "xournalpp",
+   "name": "Xournal++",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "xournalpp",
+   "version": "1.3.7-1.fc44",
+   "launch": [
+    "xournalpp"
+   ],
+   "mode": "wayland",
+   "desktop_id": "com.github.xournalpp.xournalpp.desktop",
+   "wm_class": "com.github.xournalpp.xournalpp",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "gnome-disks",
+   "name": "Disks",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "gnome-disk-utility",
+   "version": "46.1-4.fc44",
+   "launch": [
+    "gnome-disks"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.DiskUtility.desktop",
+   "wm_class": "org.gnome.DiskUtility",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "seahorse",
+   "name": "Passwords and Keys",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "seahorse",
+   "version": "47.0.1-6.fc44",
+   "launch": [
+    "seahorse"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.seahorse.Application.desktop",
+   "wm_class": "org.gnome.seahorse.Application",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "gcm-viewer",
+   "name": "Color Profile Viewer",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "gnome-color-manager",
+   "version": "3.36.2-3.fc44",
+   "launch": [
+    "gcm-viewer"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.ColorProfileViewer.desktop",
+   "wm_class": "org.gnome.ColorProfileViewer",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "nm-connection-editor",
+   "name": "Network Connections",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "nm-connection-editor",
+   "version": "1.36.0-7.fc44",
+   "launch": [
+    "nm-connection-editor"
+   ],
+   "mode": "wayland",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "lollypop",
+   "name": "Lollypop",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "lollypop",
+   "version": "1.4.45-2.fc44",
+   "launch": [
+    "lollypop"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Lollypop.desktop",
+   "wm_class": "org.gnome.Lollypop",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "jstest-gtk",
+   "name": "jstest-gtk",
+   "group": "GTK3",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "jstest-gtk",
+   "version": "0.1.0-20250403git92bdf8e.10.fc44",
+   "launch": [
+    "jstest-gtk"
+   ],
+   "mode": "wayland",
+   "desktop_id": "jstest-gtk.desktop",
+   "wm_class": "jstest-gtk",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 3 exports a menubar over org.gtk.Menus only when the app sets one. appmenu-gtk3-module (GTK_MODULES=appmenu-gtk-module) converts in-window menus on Debian and Ubuntu; Fedora has no such package."
+   }
+  },
+  {
+   "id": "audacity",
+   "name": "Audacity",
+   "group": "GTK3",
+   "toolkit": "wxWidgets on GTK3",
+   "packaging": "rpm",
+   "rpm_package": "audacity",
+   "version": "3.7.7-5.fc44",
+   "launch": [
+    "audacity"
+   ],
+   "mode": "x11",
+   "desktop_id": "audacity.desktop",
+   "wm_class": "Audacity",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "GDK_BACKEND=x11",
+    "note": "wxWidgets builds a native GtkMenuBar inside the window; only a GTK module can export it. The desktop file sets UBUNTU_MENUPROXY=0."
+   }
+  },
+  {
+   "id": "gnome-text-editor",
+   "name": "Text Editor",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "gnome-text-editor",
+   "version": "50.1-1.fc44",
+   "launch": [
+    "gnome-text-editor"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.TextEditor.desktop",
+   "wm_class": "org.gnome.TextEditor",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "nautilus",
+   "name": "Files",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "nautilus",
+   "version": "50.3-1.fc44",
+   "launch": [
+    "nautilus",
+    "--new-window"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Nautilus.desktop",
+   "wm_class": "org.gnome.Nautilus",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gnome-calculator",
+   "name": "Calculator",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "gnome-calculator",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "gnome-calculator"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Calculator.desktop",
+   "wm_class": "org.gnome.Calculator",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "baobab",
+   "name": "Disk Usage Analyzer",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "baobab",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "baobab"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.baobab.desktop",
+   "wm_class": "org.gnome.baobab",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gnome-system-monitor",
+   "name": "System Monitor",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "gnome-system-monitor",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "gnome-system-monitor"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.SystemMonitor.desktop",
+   "wm_class": "gnome-system-monitor",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "loupe",
+   "name": "Image Viewer",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "loupe",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "loupe"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Loupe.desktop",
+   "wm_class": "org.gnome.Loupe",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "papers",
+   "name": "Document Viewer",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "papers",
+   "version": "49.8-1.fc44",
+   "launch": [
+    "papers"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Papers.desktop",
+   "wm_class": "org.gnome.Papers",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "showtime",
+   "name": "Video Player",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "showtime",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "showtime",
+    "--new-window"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Showtime.desktop",
+   "wm_class": "org.gnome.Showtime",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gnome-clocks",
+   "name": "Clocks",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "gnome-clocks",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "gnome-clocks"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.clocks.desktop",
+   "wm_class": "org.gnome.clocks",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gnome-characters",
+   "name": "Characters",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "gnome-characters",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "gnome-characters"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Characters.desktop",
+   "wm_class": "org.gnome.Characters",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gnome-font-viewer",
+   "name": "Fonts",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "gnome-font-viewer",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "gnome-font-viewer"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.font-viewer.desktop",
+   "wm_class": "org.gnome.font-viewer",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gnome-logs",
+   "name": "Logs",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "gnome-logs",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "gnome-logs"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Logs.desktop",
+   "wm_class": "org.gnome.Logs",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "simple-scan",
+   "name": "Document Scanner",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "simple-scan",
+   "version": "50.0-1.fc44",
+   "launch": [
+    "simple-scan"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.SimpleScan.desktop",
+   "wm_class": "org.gnome.SimpleScan",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "pavucontrol",
+   "name": "Volume Control",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "pavucontrol",
+   "version": "6.2-1.fc44",
+   "launch": [
+    "pavucontrol"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.pulseaudio.pavucontrol.desktop",
+   "wm_class": "org.pulseaudio.pavucontrol",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gtk4-widget-factory",
+   "name": "GTK Widget Factory",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4",
+   "packaging": "rpm",
+   "rpm_package": "gtk4-devel-tools",
+   "version": "4.22.5-2.fc44",
+   "launch": [
+    "gtk4-widget-factory"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gtk.WidgetFactory4.desktop",
+   "wm_class": "org.gtk.WidgetFactory4",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gtk4-demo",
+   "name": "GTK Demo",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4",
+   "packaging": "rpm",
+   "rpm_package": "gtk4-devel-tools",
+   "version": "4.22.5-2.fc44",
+   "launch": [
+    "gtk4-demo"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gtk.Demo4.desktop",
+   "wm_class": "org.gtk.Demo4",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "decibels",
+   "name": "Audio Player",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "decibels",
+   "version": "49.6.1-1.fc44",
+   "launch": [
+    "org.gnome.Decibels"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Decibels.desktop",
+   "wm_class": "org.gnome.Decibels",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "yelp",
+   "name": "Help",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "yelp",
+   "version": "49.2-1.fc44",
+   "launch": [
+    "yelp"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Yelp.desktop",
+   "wm_class": "org.gnome.Yelp",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gnome-tweaks",
+   "name": "Tweaks",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "gnome-tweaks",
+   "version": "49.0-2.fc44",
+   "launch": [
+    "gnome-tweaks"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.tweaks.desktop",
+   "wm_class": "gnome-tweaks",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gnome-control-center",
+   "name": "Settings",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "gnome-control-center",
+   "version": "50.4-1.fc44",
+   "launch": [
+    "gnome-control-center"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Settings.desktop",
+   "wm_class": "org.gnome.Settings",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "bottles",
+   "name": "Bottles",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "bottles",
+   "version": "52.0-5.fc44",
+   "launch": [
+    "bottles"
+   ],
+   "mode": "wayland",
+   "desktop_id": "com.usebottles.bottles.desktop",
+   "wm_class": "bottles",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "nicotine",
+   "name": "Nicotine+",
+   "group": "GTK4/libadwaita",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "nicotine-plus",
+   "version": null,
+   "launch": [
+    "nicotine"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.nicotine_plus.Nicotine.desktop",
+   "wm_class": "org.nicotine_plus.Nicotine",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "GTK 4 exports the app menubar over org.gtk.Menus by itself when the app calls set_menubar. Headerbar apps with a primary menu publish none."
+   }
+  },
+  {
+   "id": "gnome-calculator-flatpak",
+   "name": "Calculator",
+   "group": "Flatpak GTK4",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "flatpak",
+   "flatpak_id": "org.gnome.Calculator",
+   "version": "51.0",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "org.gnome.Calculator"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Calculator.desktop",
+   "wm_class": "org.gnome.Calculator",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "The session bus is proxied by xdg-dbus-proxy; the app owns its own name, so org.gtk.Menus and org.gtk.Actions stay reachable from the host."
+   }
+  },
+  {
+   "id": "gnome-text-editor-flatpak",
+   "name": "Text Editor",
+   "group": "Flatpak GTK4",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "flatpak",
+   "flatpak_id": "org.gnome.TextEditor",
+   "version": "51.0",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "org.gnome.TextEditor"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.TextEditor.desktop",
+   "wm_class": "org.gnome.TextEditor",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "The session bus is proxied by xdg-dbus-proxy; the app owns its own name, so org.gtk.Menus and org.gtk.Actions stay reachable from the host."
+   }
+  },
+  {
+   "id": "iotas-flatpak",
+   "name": "Iotas",
+   "group": "Flatpak GTK4",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "flatpak",
+   "flatpak_id": "org.gnome.World.Iotas",
+   "version": "2026.8",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "org.gnome.World.Iotas"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.World.Iotas.desktop",
+   "wm_class": "org.gnome.World.Iotas",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "The session bus is proxied by xdg-dbus-proxy; the app owns its own name, so org.gtk.Menus and org.gtk.Actions stay reachable from the host."
+   }
+  },
+  {
+   "id": "apostrophe-flatpak",
+   "name": "Apostrophe",
+   "group": "Flatpak GTK4",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "flatpak",
+   "flatpak_id": "org.gnome.gitlab.somas.Apostrophe",
+   "version": "3.4",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "org.gnome.gitlab.somas.Apostrophe"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.gitlab.somas.Apostrophe.desktop",
+   "wm_class": "org.gnome.gitlab.somas.Apostrophe",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "The session bus is proxied by xdg-dbus-proxy; the app owns its own name, so org.gtk.Menus and org.gtk.Actions stay reachable from the host."
+   }
+  },
+  {
+   "id": "mission-center-flatpak",
+   "name": "Mission Center",
+   "group": "Flatpak GTK4",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "flatpak",
+   "flatpak_id": "io.missioncenter.MissionCenter",
+   "version": "1.2.0",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "io.missioncenter.MissionCenter"
+   ],
+   "mode": "wayland",
+   "desktop_id": "io.missioncenter.MissionCenter.desktop",
+   "wm_class": "io.missioncenter.MissionCenter",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "The session bus is proxied by xdg-dbus-proxy; the app owns its own name, so org.gtk.Menus and org.gtk.Actions stay reachable from the host."
+   }
+  },
+  {
+   "id": "flatseal-flatpak",
+   "name": "Flatseal",
+   "group": "Flatpak GTK4",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "flatpak",
+   "flatpak_id": "com.github.tchx84.Flatseal",
+   "version": "2.4.1",
+   "flatpak_installation": "system",
+   "launch": [
+    "flatpak",
+    "run",
+    "com.github.tchx84.Flatseal"
+   ],
+   "mode": "wayland",
+   "desktop_id": "com.github.tchx84.Flatseal.desktop",
+   "wm_class": "com.github.tchx84.Flatseal",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "The session bus is proxied by xdg-dbus-proxy; the app owns its own name, so org.gtk.Menus and org.gtk.Actions stay reachable from the host."
+   }
+  },
+  {
+   "id": "extension-manager-flatpak",
+   "name": "Extension Manager",
+   "group": "Flatpak GTK4",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "flatpak",
+   "flatpak_id": "com.mattjakeman.ExtensionManager",
+   "version": "0.6.5",
+   "flatpak_installation": "system",
+   "launch": [
+    "flatpak",
+    "run",
+    "com.mattjakeman.ExtensionManager"
+   ],
+   "mode": "wayland",
+   "desktop_id": "com.mattjakeman.ExtensionManager.desktop",
+   "wm_class": "com.mattjakeman.ExtensionManager",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "The session bus is proxied by xdg-dbus-proxy; the app owns its own name, so org.gtk.Menus and org.gtk.Actions stay reachable from the host."
+   }
+  },
+  {
+   "id": "impression-flatpak",
+   "name": "Impression",
+   "group": "Flatpak GTK4",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "flatpak",
+   "flatpak_id": "io.gitlab.adhami3310.Impression",
+   "version": "3.8.0",
+   "flatpak_installation": "system",
+   "launch": [
+    "flatpak",
+    "run",
+    "io.gitlab.adhami3310.Impression"
+   ],
+   "mode": "wayland",
+   "desktop_id": "io.gitlab.adhami3310.Impression.desktop",
+   "wm_class": "io.gitlab.adhami3310.Impression",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "The session bus is proxied by xdg-dbus-proxy; the app owns its own name, so org.gtk.Menus and org.gtk.Actions stay reachable from the host."
+   }
+  },
+  {
+   "id": "kate",
+   "name": "Kate",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "kate",
+   "version": "26.08.1-1.fc44",
+   "launch": [
+    "kate",
+    "-n"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.kde.kate.desktop",
+   "wm_class": "kate",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "kwrite",
+   "name": "KWrite",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "kwrite",
+   "version": "26.08.1-1.fc44",
+   "launch": [
+    "kwrite"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.kde.kwrite.desktop",
+   "wm_class": "kwrite",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "okular",
+   "name": "Okular",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "okular",
+   "version": "26.08.1-1.fc44",
+   "launch": [
+    "okular"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.kde.okular.desktop",
+   "wm_class": "okular",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "dolphin",
+   "name": "Dolphin",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "dolphin",
+   "version": "26.08.1-1.fc44",
+   "launch": [
+    "dolphin"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.kde.dolphin.desktop",
+   "wm_class": "dolphin",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "konsole",
+   "name": "Konsole",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "konsole",
+   "version": "26.08.1-1.fc44",
+   "launch": [
+    "konsole"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.kde.konsole.desktop",
+   "wm_class": "konsole",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "kcalc",
+   "name": "KCalc",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "kcalc",
+   "version": "25.12.3-1.fc44",
+   "launch": [
+    "kcalc"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.kde.kcalc.desktop",
+   "wm_class": "org.kde.kcalc",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "systemsettings",
+   "name": "System Settings",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "plasma-systemsettings",
+   "version": "6.7.5-1.fc44",
+   "launch": [
+    "systemsettings"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.kde.systemsettings.desktop",
+   "wm_class": "org.kde.systemsettings",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "kmenuedit",
+   "name": "Menu Editor",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "kmenuedit",
+   "version": "6.7.5-1.fc44",
+   "launch": [
+    "kmenuedit"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.kde.kmenuedit.desktop",
+   "wm_class": "org.kde.kmenuedit",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "kvantummanager",
+   "name": "Kvantum Manager",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6",
+   "packaging": "rpm",
+   "rpm_package": "kvantum",
+   "version": "1.1.6-1.fc44",
+   "launch": [
+    "kvantummanager"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "kvantummanager.desktop",
+   "wm_class": "kvantummanager",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "qt6ct",
+   "name": "Qt6 Settings",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6",
+   "packaging": "rpm",
+   "rpm_package": "qt6ct",
+   "version": "0.11-17.20250907git23a985f.fc44",
+   "launch": [
+    "qt6ct"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "qt6ct.desktop",
+   "wm_class": "qt6ct",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "qt5ct",
+   "name": "Qt5 Settings",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt5",
+   "packaging": "rpm",
+   "rpm_package": "qt5ct",
+   "version": "1.9-8.fc44",
+   "launch": [
+    "qt5ct"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "qt5ct.desktop",
+   "wm_class": "qt5ct",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "vlc",
+   "name": "VLC",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt5",
+   "packaging": "rpm",
+   "rpm_package": "vlc",
+   "version": "3.0.23-10.fc44",
+   "launch": [
+    "vlc"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "vlc.desktop",
+   "wm_class": "vlc",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "env": "QT_QPA_PLATFORM=xcb",
+    "note": "QDBusMenuBar registers with com.canonical.AppMenu.Registrar only on the xcb platform; the registrar must be on the bus before the app starts."
+   }
+  },
+  {
+   "id": "kate-wayland",
+   "name": "Kate (native Wayland)",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "kate",
+   "version": "26.08.1-1.fc44",
+   "launch": [
+    "kate",
+    "-n"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.kde.kate.desktop",
+   "wm_class": "kate",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Native Wayland Qt uses the KDE appmenu protocol (org_kde_kwin_appmenu), which mutter does not implement."
+   }
+  },
+  {
+   "id": "dolphin-wayland",
+   "name": "Dolphin (native Wayland)",
+   "group": "Qt (KDE)",
+   "toolkit": "Qt6/KDE",
+   "packaging": "rpm",
+   "rpm_package": "dolphin",
+   "version": "26.08.1-1.fc44",
+   "launch": [
+    "dolphin"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.kde.dolphin.desktop",
+   "wm_class": "dolphin",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Same as kate-wayland."
+   }
+  },
+  {
+   "id": "kate-flatpak",
+   "name": "Kate",
+   "group": "Flatpak Qt",
+   "toolkit": "Qt6/KDE",
+   "packaging": "flatpak",
+   "flatpak_id": "org.kde.kate",
+   "version": "26.04.2",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "--nosocket=wayland",
+    "--socket=x11",
+    "--talk-name=com.canonical.AppMenu.Registrar",
+    "--env=QT_QPA_PLATFORM=xcb",
+    "org.kde.kate",
+    "-n"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.kde.kate.desktop",
+   "wm_class": "kate",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--talk-name=com.canonical.AppMenu.Registrar",
+    "note": "xdg-dbus-proxy blocks the registrar name unless the sandbox is given talk access."
+   }
+  },
+  {
+   "id": "qbittorrent-flatpak",
+   "name": "qBittorrent",
+   "group": "Flatpak Qt",
+   "toolkit": "Qt6",
+   "packaging": "flatpak",
+   "flatpak_id": "org.qbittorrent.qBittorrent",
+   "version": "5.2.3",
+   "flatpak_installation": "system",
+   "launch": [
+    "sh",
+    "-c",
+    "D=\"$HOME/.var/app/org.qbittorrent.qBittorrent/config/qBittorrent\"; mkdir -p \"$D\" && printf '[LegalNotice]\\nAccepted=true\\n' > \"$D/qBittorrent.conf\" && exec flatpak run --nosocket=wayland --socket=x11 --talk-name=com.canonical.AppMenu.Registrar --env=QT_QPA_PLATFORM=xcb org.qbittorrent.qBittorrent"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.qbittorrent.qBittorrent.desktop",
+   "wm_class": "qbittorrent",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--talk-name=com.canonical.AppMenu.Registrar",
+    "env": "--env=QT_QPA_PLATFORM=xcb",
+    "note": "A flatpak sets its own QT_QPA_PLATFORM, so the env var has to be passed with --env."
+   }
+  },
+  {
+   "id": "telegram-flatpak",
+   "name": "Telegram",
+   "group": "Flatpak Qt",
+   "toolkit": "Qt6 (Telegram Desktop)",
+   "packaging": "flatpak",
+   "flatpak_id": "org.telegram.desktop",
+   "version": "7.1.5",
+   "flatpak_installation": "system",
+   "launch": [
+    "flatpak",
+    "run",
+    "--nosocket=wayland",
+    "--socket=x11",
+    "--talk-name=com.canonical.AppMenu.Registrar",
+    "--env=QT_QPA_PLATFORM=xcb",
+    "org.telegram.desktop",
+    "-many"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.telegram.desktop.desktop",
+   "wm_class": "TelegramDesktop",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--talk-name=com.canonical.AppMenu.Registrar",
+    "note": "Telegram ships its own Qt build with its own menu handling."
+   }
+  },
+  {
+   "id": "vscode-flatpak",
+   "name": "Visual Studio Code",
+   "group": "Electron",
+   "toolkit": "Electron",
+   "packaging": "flatpak",
+   "flatpak_id": "com.visualstudio.code",
+   "version": "1.138.0",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "--nosocket=wayland",
+    "--socket=x11",
+    "--talk-name=com.canonical.AppMenu.Registrar",
+    "com.visualstudio.code",
+    "--ozone-platform=x11",
+    "--password-store=basic",
+    "--disable-gpu",
+    "--new-window"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "com.visualstudio.code.desktop",
+   "wm_class": "Code",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "Electron loads libdbusmenu-glib at run time and registers with the registrar on the Ozone X11 backend only. VS Code draws its own menu with the default custom title bar."
+   },
+   "settle": 10,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "obsidian-flatpak",
+   "name": "Obsidian",
+   "group": "Electron",
+   "toolkit": "Electron",
+   "packaging": "flatpak",
+   "flatpak_id": "md.obsidian.Obsidian",
+   "version": "1.13.7",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "--nosocket=wayland",
+    "--socket=x11",
+    "--talk-name=com.canonical.AppMenu.Registrar",
+    "md.obsidian.Obsidian",
+    "--ozone-platform=x11",
+    "--password-store=basic",
+    "--disable-gpu"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "md.obsidian.Obsidian.desktop",
+   "wm_class": "md.obsidian.Obsidian",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "Electron loads libdbusmenu-glib at run time and registers with the registrar on the Ozone X11 backend only."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "discord-flatpak",
+   "name": "Discord",
+   "group": "Electron",
+   "toolkit": "Electron",
+   "packaging": "flatpak",
+   "flatpak_id": "com.discordapp.Discord",
+   "version": "1.0.158",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "--nosocket=wayland",
+    "--socket=x11",
+    "--talk-name=com.canonical.AppMenu.Registrar",
+    "com.discordapp.Discord",
+    "--ozone-platform=x11",
+    "--disable-gpu"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "com.discordapp.Discord.desktop",
+   "wm_class": "discord",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "Electron loads libdbusmenu-glib at run time and registers with the registrar on the Ozone X11 backend only."
+   },
+   "settle": 10,
+   "timeout": 70,
+   "heavy": true
+  },
+  {
+   "id": "upscayl-flatpak",
+   "name": "Upscayl",
+   "group": "Electron",
+   "toolkit": "Electron",
+   "packaging": "flatpak",
+   "flatpak_id": "org.upscayl.Upscayl",
+   "version": "2.15.0",
+   "flatpak_installation": "system",
+   "launch": [
+    "flatpak",
+    "run",
+    "--nosocket=wayland",
+    "--socket=x11",
+    "--talk-name=com.canonical.AppMenu.Registrar",
+    "org.upscayl.Upscayl",
+    "--ozone-platform=x11",
+    "--disable-gpu"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.upscayl.Upscayl.desktop",
+   "wm_class": "org.upscayl.Upscayl",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "Electron loads libdbusmenu-glib at run time and registers with the registrar on the Ozone X11 backend only."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "cider",
+   "name": "Cider",
+   "group": "Electron",
+   "toolkit": "Electron",
+   "packaging": "rpm",
+   "rpm_package": "Cider",
+   "version": "4.0.17-1",
+   "launch": [
+    "Cider",
+    "--ozone-platform=x11",
+    "--password-store=basic",
+    "--disable-gpu"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "Cider.desktop",
+   "wm_class": "Cider",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "Electron loads libdbusmenu-glib at run time and registers with the registrar on the Ozone X11 backend only."
+   },
+   "settle": 10,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "youtube-music",
+   "name": "YouTube Music Desktop App",
+   "group": "Electron",
+   "toolkit": "Electron",
+   "packaging": "rpm",
+   "rpm_package": "youtube-music-desktop-app",
+   "version": "2.0.11-1",
+   "launch": [
+    "youtube-music-desktop-app",
+    "--ozone-platform=x11",
+    "--password-store=basic",
+    "--disable-gpu"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "youtube-music-desktop-app.desktop",
+   "wm_class": "youtube-music-desktop-app",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "Electron loads libdbusmenu-glib at run time and registers with the registrar on the Ozone X11 backend only."
+   },
+   "settle": 10,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "vscode-flatpak-native-titlebar",
+   "name": "Visual Studio Code (native title bar)",
+   "group": "Electron",
+   "toolkit": "Electron",
+   "packaging": "flatpak",
+   "flatpak_id": "com.visualstudio.code",
+   "version": "1.138.0",
+   "flatpak_installation": "user",
+   "launch": [
+    "sh",
+    "-c",
+    "D=\"$HOME/.var/app/com.visualstudio.code/config/Code/User\"; mkdir -p \"$D\" && echo '{\"window.titleBarStyle\": \"native\"}' > \"$D/settings.json\" && exec flatpak run --nosocket=wayland --socket=x11 --talk-name=com.canonical.AppMenu.Registrar com.visualstudio.code --ozone-platform=x11 --password-store=basic --disable-gpu --new-window"
+   ],
+   "mode": "x11",
+   "desktop_id": "com.visualstudio.code.desktop",
+   "wm_class": "Code",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "pref": "window.titleBarStyle=native",
+    "flag": "--talk-name=com.canonical.AppMenu.Registrar",
+    "note": "VS Code draws its own menu with the default custom title bar and sets no Electron menu; the native title bar setting makes it build one."
+   },
+   "settle": 12,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "vscode-flatpak-no-talk",
+   "name": "Visual Studio Code (no talk-name)",
+   "group": "Electron",
+   "toolkit": "Electron",
+   "packaging": "flatpak",
+   "flatpak_id": "com.visualstudio.code",
+   "version": "1.138.0",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "--nosocket=wayland",
+    "--socket=x11",
+    "com.visualstudio.code",
+    "--ozone-platform=x11",
+    "--password-store=basic",
+    "--disable-gpu",
+    "--new-window"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "com.visualstudio.code.desktop",
+   "wm_class": "Code",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Control row: the default sandbox, without talk access to the registrar."
+   },
+   "settle": 10,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "chromium",
+   "name": "Chromium",
+   "group": "Chromium/Chrome",
+   "toolkit": "Chromium",
+   "packaging": "rpm",
+   "rpm_package": "chromium",
+   "version": "146.0.7680.164-1.fc44",
+   "launch": [
+    "sh",
+    "-c",
+    "exec chromium-browser --no-first-run --no-default-browser-check --password-store=basic --disable-gpu --user-data-dir=\"$HOME/profile\""
+   ],
+   "mode": "wayland",
+   "desktop_id": "chromium-browser.desktop",
+   "wm_class": "Chromium-browser",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "On native Wayland Chromium exports nothing GNOME can read (its Wayland path uses the KDE appmenu protocol); force X11 with --ozone-platform=x11."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "google-chrome",
+   "name": "Google Chrome",
+   "group": "Chromium/Chrome",
+   "toolkit": "Chromium",
+   "packaging": "rpm",
+   "rpm_package": "google-chrome-stable",
+   "version": "153.0.8010.52-1",
+   "launch": [
+    "sh",
+    "-c",
+    "exec google-chrome-stable --no-first-run --no-default-browser-check --password-store=basic --disable-gpu --user-data-dir=\"$HOME/profile\""
+   ],
+   "mode": "wayland",
+   "desktop_id": "google-chrome.desktop",
+   "wm_class": "google-chrome",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "On native Wayland Chromium exports nothing GNOME can read (its Wayland path uses the KDE appmenu protocol); force X11 with --ozone-platform=x11."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "google-chrome-x11",
+   "name": "Google Chrome (X11)",
+   "group": "Chromium/Chrome",
+   "toolkit": "Chromium",
+   "packaging": "rpm",
+   "rpm_package": "google-chrome-stable",
+   "version": "153.0.8010.52-1",
+   "launch": [
+    "sh",
+    "-c",
+    "exec google-chrome-stable --ozone-platform=x11 --no-first-run --no-default-browser-check --password-store=basic --disable-gpu --user-data-dir=\"$HOME/profile\""
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "google-chrome.desktop",
+   "wm_class": "google-chrome",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "On X11 with a registrar on the bus Chromium registers a dbusmenu (measured with Chrome 153)."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "chrome-flatpak",
+   "name": "Google Chrome",
+   "group": "Chromium/Chrome",
+   "toolkit": "Chromium",
+   "packaging": "flatpak",
+   "flatpak_id": "com.google.Chrome",
+   "version": "154.0.8037.57-1",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "com.google.Chrome",
+    "--no-first-run",
+    "--no-default-browser-check",
+    "--password-store=basic",
+    "--disable-gpu"
+   ],
+   "mode": "wayland",
+   "desktop_id": "com.google.Chrome.desktop",
+   "wm_class": "google-chrome",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "On native Wayland Chromium exports nothing GNOME can read (its Wayland path uses the KDE appmenu protocol); force X11 with --ozone-platform=x11."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "chromium-x11",
+   "name": "Chromium (X11)",
+   "group": "Chromium/Chrome",
+   "toolkit": "Chromium",
+   "packaging": "rpm",
+   "rpm_package": "chromium",
+   "version": "146.0.7680.164-1.fc44",
+   "launch": [
+    "sh",
+    "-c",
+    "exec chromium-browser --ozone-platform=x11 --no-first-run --no-default-browser-check --password-store=basic --disable-gpu --user-data-dir=\"$HOME/profile\""
+   ],
+   "mode": "x11",
+   "desktop_id": "chromium-browser.desktop",
+   "wm_class": "Chromium-browser",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "On X11 with a registrar on the bus Chromium registers a dbusmenu (measured with Chrome 153)."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "brave",
+   "name": "Brave",
+   "group": "Chromium/Chrome",
+   "toolkit": "Chromium",
+   "packaging": "rpm",
+   "rpm_package": "brave-origin",
+   "version": "1.95.104-1",
+   "launch": [
+    "sh",
+    "-c",
+    "exec /usr/bin/brave-origin-stable --no-first-run --no-default-browser-check --password-store=basic --disable-gpu --user-data-dir=\"$HOME/profile\""
+   ],
+   "mode": "wayland",
+   "desktop_id": "brave-origin.desktop",
+   "wm_class": "brave-origin",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "On native Wayland Chromium exports nothing GNOME can read (its Wayland path uses the KDE appmenu protocol); force X11 with --ozone-platform=x11."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "brave-x11",
+   "name": "Brave (X11)",
+   "group": "Chromium/Chrome",
+   "toolkit": "Chromium",
+   "packaging": "rpm",
+   "rpm_package": "brave-origin",
+   "version": "1.95.104-1",
+   "launch": [
+    "sh",
+    "-c",
+    "exec /usr/bin/brave-origin-stable --ozone-platform=x11 --no-first-run --no-default-browser-check --password-store=basic --disable-gpu --user-data-dir=\"$HOME/profile\""
+   ],
+   "mode": "x11",
+   "desktop_id": "brave-origin.desktop",
+   "wm_class": "brave-origin",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "On X11 with a registrar on the bus Chromium registers a dbusmenu (measured with Chrome 153)."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "chrome-flatpak-x11",
+   "name": "Google Chrome (X11)",
+   "group": "Chromium/Chrome",
+   "toolkit": "Chromium",
+   "packaging": "flatpak",
+   "flatpak_id": "com.google.Chrome",
+   "version": "154.0.8037.57-1",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "--nosocket=wayland",
+    "--socket=x11",
+    "--talk-name=com.canonical.AppMenu.Registrar",
+    "com.google.Chrome",
+    "--ozone-platform=x11",
+    "--no-first-run",
+    "--no-default-browser-check",
+    "--password-store=basic",
+    "--disable-gpu"
+   ],
+   "mode": "x11",
+   "desktop_id": "com.google.Chrome.desktop",
+   "wm_class": "google-chrome",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "flag": "--ozone-platform=x11",
+    "note": "On X11 with a registrar on the bus Chromium registers a dbusmenu (measured with Chrome 153)."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "brave-flatpak",
+   "name": "Brave",
+   "group": "Chromium/Chrome",
+   "toolkit": "Chromium",
+   "packaging": "flatpak",
+   "flatpak_id": "com.brave.Browser",
+   "version": "1.95.102",
+   "flatpak_installation": "system",
+   "launch": [
+    "flatpak",
+    "run",
+    "com.brave.Browser",
+    "--no-first-run",
+    "--no-default-browser-check",
+    "--password-store=basic",
+    "--disable-gpu"
+   ],
+   "mode": "wayland",
+   "desktop_id": "com.brave.Browser.desktop",
+   "wm_class": "brave-browser",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "On native Wayland Chromium exports nothing GNOME can read (its Wayland path uses the KDE appmenu protocol); force X11 with --ozone-platform=x11."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "firefox",
+   "name": "Firefox",
+   "group": "Firefox",
+   "toolkit": "Gecko/GTK3",
+   "packaging": "rpm",
+   "rpm_package": "firefox",
+   "version": "156.0-1.fc44",
+   "launch": [
+    "sh",
+    "-c",
+    "mkdir -p \"$HOME/ffp\" && exec firefox --no-remote --profile \"$HOME/ffp\" about:blank"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.mozilla.firefox.desktop",
+   "wm_class": "org.mozilla.firefox",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "Default prefs: no menu export."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "firefox-globalmenu",
+   "name": "Firefox (global menu pref)",
+   "group": "Firefox",
+   "toolkit": "Gecko/GTK3",
+   "packaging": "rpm",
+   "rpm_package": "firefox",
+   "version": "156.0-1.fc44",
+   "launch": [
+    "sh",
+    "-c",
+    "mkdir -p \"$HOME/ffp\" && echo 'user_pref(\"widget.gtk.global-menu.enabled\", true);' > \"$HOME/ffp/user.js\" && exec firefox --no-remote --profile \"$HOME/ffp\" about:blank"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.mozilla.firefox.desktop",
+   "wm_class": "org.mozilla.firefox",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "pref": "widget.gtk.global-menu.enabled=true",
+    "env": "MOZ_ENABLE_WAYLAND=0",
+    "note": "Firefox exports the menubar over com.canonical.dbusmenu through libdbusmenu on X11 only, with the pref on."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "firefox-flatpak",
+   "name": "Firefox",
+   "group": "Firefox",
+   "toolkit": "Gecko/GTK3",
+   "packaging": "flatpak",
+   "flatpak_id": "org.mozilla.firefox",
+   "version": "156.0.1",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "org.mozilla.firefox",
+    "--no-remote",
+    "about:blank"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.mozilla.firefox.desktop",
+   "wm_class": "org.mozilla.firefox",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "Default prefs: no menu export."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "firefox-flatpak-globalmenu",
+   "name": "Firefox (global menu pref)",
+   "group": "Firefox",
+   "toolkit": "Gecko/GTK3",
+   "packaging": "flatpak",
+   "flatpak_id": "org.mozilla.firefox",
+   "version": "156.0.1",
+   "flatpak_installation": "user",
+   "launch": [
+    "sh",
+    "-c",
+    "P=\"$HOME/.var/app/org.mozilla.firefox/ffp\"; mkdir -p \"$P\" && echo 'user_pref(\"widget.gtk.global-menu.enabled\", true);' > \"$P/user.js\" && exec flatpak run --nosocket=wayland --socket=x11 --talk-name=com.canonical.AppMenu.Registrar org.mozilla.firefox --no-remote --profile \"$P\" about:blank"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "desktop_id": "org.mozilla.firefox.desktop",
+   "wm_class": "org.mozilla.firefox",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "pref": "widget.gtk.global-menu.enabled=true",
+    "env": "MOZ_ENABLE_WAYLAND=0",
+    "note": "The Firefox flatpak runtime has no libdbusmenu-glib, so the pref has nothing to load.",
+    "flag": "--talk-name=com.canonical.AppMenu.Registrar"
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "zen-flatpak",
+   "name": "Zen Browser",
+   "group": "Firefox",
+   "toolkit": "Gecko/GTK3",
+   "packaging": "flatpak",
+   "flatpak_id": "app.zen_browser.zen",
+   "version": "1.22.2b",
+   "flatpak_installation": "system",
+   "launch": [
+    "flatpak",
+    "run",
+    "app.zen_browser.zen",
+    "--no-remote"
+   ],
+   "mode": "wayland",
+   "desktop_id": "app.zen_browser.zen.desktop",
+   "wm_class": "zen",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Firefox fork."
+   },
+   "settle": 8,
+   "timeout": 60,
+   "heavy": true
+  },
+  {
+   "id": "libreoffice-writer",
+   "name": "LibreOffice Writer",
+   "group": "LibreOffice",
+   "toolkit": "LibreOffice gtk3 VCL",
+   "packaging": "rpm",
+   "rpm_package": "libreoffice-writer",
+   "version": "26.2.6.3-1.fc44",
+   "launch": [
+    "libreoffice",
+    "--writer",
+    "--norestore",
+    "--nologo"
+   ],
+   "mode": "wayland",
+   "env": {
+    "SAL_USE_VCLPLUGIN": "gtk3"
+   },
+   "desktop_id": "libreoffice-writer.desktop",
+   "wm_class": "libreoffice-writer",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "SAL_USE_VCLPLUGIN=gtk3",
+    "note": "The gtk3 VCL plugin exports the menubar over org.gtk.Menus for every frame and hides its own when a registrar is on the bus."
+   },
+   "settle": 10,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "libreoffice-calc",
+   "name": "LibreOffice Calc",
+   "group": "LibreOffice",
+   "toolkit": "LibreOffice gtk3 VCL",
+   "packaging": "rpm",
+   "rpm_package": "libreoffice-calc",
+   "version": "26.2.6.3-1.fc44",
+   "launch": [
+    "libreoffice",
+    "--calc",
+    "--norestore",
+    "--nologo"
+   ],
+   "mode": "wayland",
+   "env": {
+    "SAL_USE_VCLPLUGIN": "gtk3"
+   },
+   "desktop_id": "libreoffice-calc.desktop",
+   "wm_class": "libreoffice-calc",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "SAL_USE_VCLPLUGIN=gtk3",
+    "note": "The gtk3 VCL plugin exports the menubar over org.gtk.Menus for every frame and hides its own when a registrar is on the bus."
+   },
+   "settle": 10,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "libreoffice-impress",
+   "name": "LibreOffice Impress",
+   "group": "LibreOffice",
+   "toolkit": "LibreOffice gtk3 VCL",
+   "packaging": "rpm",
+   "rpm_package": "libreoffice-impress",
+   "version": "26.2.6.3-1.fc44",
+   "launch": [
+    "libreoffice",
+    "--impress",
+    "--norestore",
+    "--nologo"
+   ],
+   "mode": "wayland",
+   "env": {
+    "SAL_USE_VCLPLUGIN": "gtk3"
+   },
+   "desktop_id": "libreoffice-impress.desktop",
+   "wm_class": "libreoffice-impress",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "SAL_USE_VCLPLUGIN=gtk3",
+    "note": "The gtk3 VCL plugin exports the menubar over org.gtk.Menus for every frame and hides its own when a registrar is on the bus."
+   },
+   "settle": 10,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "libreoffice-writer-no-registrar",
+   "name": "LibreOffice Writer (no registrar)",
+   "group": "LibreOffice",
+   "toolkit": "LibreOffice gtk3 VCL",
+   "packaging": "rpm",
+   "rpm_package": "libreoffice-writer",
+   "version": "26.2.6.3-1.fc44",
+   "launch": [
+    "libreoffice",
+    "--writer",
+    "--norestore",
+    "--nologo"
+   ],
+   "mode": "wayland",
+   "registrar": false,
+   "env": {
+    "SAL_USE_VCLPLUGIN": "gtk3"
+   },
+   "desktop_id": "libreoffice-writer.desktop",
+   "wm_class": "libreoffice-writer",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Control row. Without a registrar LibreOffice keeps its in-window menubar and the exported model lists the whole menubar twice (23 top-level entries, 1336 items, against 11 and 668 with a registrar)."
+   },
+   "settle": 10,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "libreoffice-writer-x11",
+   "name": "LibreOffice Writer (X11)",
+   "group": "LibreOffice",
+   "toolkit": "LibreOffice gtk3 VCL",
+   "packaging": "rpm",
+   "rpm_package": "libreoffice-writer",
+   "version": "26.2.6.3-1.fc44",
+   "launch": [
+    "libreoffice",
+    "--writer",
+    "--norestore",
+    "--nologo"
+   ],
+   "mode": "x11",
+   "env": {
+    "SAL_USE_VCLPLUGIN": "gtk3"
+   },
+   "desktop_id": "libreoffice-writer.desktop",
+   "wm_class": "libreoffice-writer",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "SAL_USE_VCLPLUGIN=gtk3",
+    "note": "The gtk3 VCL plugin exports the menubar over org.gtk.Menus for every frame and hides its own when a registrar is on the bus."
+   },
+   "settle": 10,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "libreoffice-writer-qt6",
+   "name": "LibreOffice Writer (qt6 VCL)",
+   "group": "LibreOffice",
+   "toolkit": "LibreOffice qt6 VCL",
+   "packaging": "rpm",
+   "rpm_package": "libreoffice-writer",
+   "version": "26.2.6.3-1.fc44",
+   "launch": [
+    "libreoffice",
+    "--writer",
+    "--norestore",
+    "--nologo"
+   ],
+   "mode": "x11",
+   "registrar": true,
+   "env": {
+    "SAL_USE_VCLPLUGIN": "qt6"
+   },
+   "desktop_id": "libreoffice-writer.desktop",
+   "wm_class": "libreoffice-writer",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "SAL_USE_VCLPLUGIN=qt6",
+    "note": "Whether the qt6 plugin goes through QDBusMenuBar is what this row checks."
+   },
+   "settle": 10,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "libreoffice-flatpak",
+   "name": "LibreOffice Writer",
+   "group": "LibreOffice",
+   "toolkit": "LibreOffice gtk3 VCL",
+   "packaging": "flatpak",
+   "flatpak_id": "org.libreoffice.LibreOffice",
+   "version": "26.8.1.1",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "org.libreoffice.LibreOffice",
+    "--writer",
+    "--norestore",
+    "--nologo"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.libreoffice.LibreOffice.writer.desktop",
+   "wm_class": "libreoffice-writer",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "env": "SAL_USE_VCLPLUGIN=gtk3",
+    "note": "The gtk3 VCL plugin exports the menubar over org.gtk.Menus for every frame and hides its own when a registrar is on the bus."
+   },
+   "settle": 12,
+   "timeout": 100,
+   "heavy": true
+  },
+  {
+   "id": "intellij-flatpak",
+   "name": "IntelliJ IDEA Community",
+   "group": "JetBrains",
+   "toolkit": "Java (JetBrains Runtime)",
+   "packaging": "flatpak",
+   "flatpak_id": "com.jetbrains.IntelliJ-IDEA-Community",
+   "version": "2026.2.3",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "--nosocket=wayland",
+    "--socket=x11",
+    "com.jetbrains.IntelliJ-IDEA-Community"
+   ],
+   "mode": "x11",
+   "desktop_id": "com.jetbrains.IntelliJ-IDEA-Community.desktop",
+   "wm_class": "jetbrains-idea-ce",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "JetBrains dropped its Linux global menu support in 2024 (IJPL-156149)."
+   },
+   "settle": 25,
+   "timeout": 120,
+   "heavy": true
+  },
+  {
+   "id": "swingset2-jdk25",
+   "name": "SwingSet2 (OpenJDK 25)",
+   "group": "Java Swing",
+   "toolkit": "Java AWT/Swing",
+   "packaging": "rpm",
+   "rpm_package": "java-25-openjdk-demo",
+   "version": "25.0.4.1.1-1.1.fc44",
+   "launch": [
+    "/usr/lib/jvm/java-25-openjdk/bin/java",
+    "-jar",
+    "/usr/lib/jvm/java-25-openjdk/demo/jfc/SwingSet2/SwingSet2.jar"
+   ],
+   "mode": "x11",
+   "export_hint": {
+    "note": "Swing has no GNOME menu export. jayatana, a -javaagent that used to do it, is not in Fedora."
+   },
+   "settle": 8,
+   "timeout": 50,
+   "heavy": true
+  },
+  {
+   "id": "swingset2-jdk26",
+   "name": "SwingSet2 (OpenJDK 26)",
+   "group": "Java Swing",
+   "toolkit": "Java AWT/Swing",
+   "packaging": "rpm",
+   "rpm_package": "java-latest-openjdk-demo",
+   "version": "26.0.0.0.35-0.1.fc44",
+   "launch": [
+    "/usr/lib/jvm/java-latest-openjdk/bin/java",
+    "-jar",
+    "/usr/lib/jvm/java-latest-openjdk/demo/jfc/SwingSet2/SwingSet2.jar"
+   ],
+   "mode": "x11",
+   "export_hint": {
+    "note": "Swing has no GNOME menu export. jayatana, a -javaagent that used to do it, is not in Fedora."
+   },
+   "settle": 8,
+   "timeout": 50,
+   "heavy": true
+  },
+  {
+   "id": "gimp",
+   "name": "GIMP",
+   "group": "GIMP",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "gimp",
+   "version": "3.2.0-1.fc44",
+   "launch": [
+    "gimp-3.2",
+    "--no-splash",
+    "--new-instance"
+   ],
+   "mode": "wayland",
+   "desktop_id": "gimp.desktop",
+   "wm_class": "gimp",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "GIMP 3 builds its menubar as a GtkMenuBar, not from a GMenu model."
+   },
+   "settle": 12,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "gimp-x11",
+   "name": "GIMP (X11)",
+   "group": "GIMP",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "gimp",
+   "version": "3.2.0-1.fc44",
+   "launch": [
+    "gimp-3.2",
+    "--no-splash",
+    "--new-instance"
+   ],
+   "mode": "x11",
+   "desktop_id": "gimp.desktop",
+   "wm_class": "gimp",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Same as gimp, on X11."
+   },
+   "settle": 12,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "gimp-flatpak",
+   "name": "GIMP",
+   "group": "GIMP",
+   "toolkit": "GTK3",
+   "packaging": "flatpak",
+   "flatpak_id": "org.gimp.GIMP",
+   "version": "3.2.6",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "org.gimp.GIMP",
+    "--no-splash",
+    "--new-instance"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gimp.GIMP.desktop",
+   "wm_class": "gimp",
+   "wm_class_source": "StartupWMClass",
+   "settle": 12,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "inkscape",
+   "name": "Inkscape",
+   "group": "Inkscape",
+   "toolkit": "GTK3 (gtkmm)",
+   "packaging": "rpm",
+   "rpm_package": "inkscape",
+   "version": "1.4.3-7.fc44",
+   "launch": [
+    "inkscape"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.inkscape.Inkscape.desktop",
+   "wm_class": "org.inkscape.Inkscape",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "Inkscape 1.4 builds its menubar from a GMenu model but keeps it inside the window."
+   },
+   "settle": 12,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "inkscape-flatpak",
+   "name": "Inkscape",
+   "group": "Inkscape",
+   "toolkit": "GTK3 (gtkmm)",
+   "packaging": "flatpak",
+   "flatpak_id": "org.inkscape.Inkscape",
+   "version": "1.4.4",
+   "flatpak_installation": "user",
+   "launch": [
+    "flatpak",
+    "run",
+    "org.inkscape.Inkscape"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.inkscape.Inkscape.desktop",
+   "wm_class": "org.inkscape.Inkscape",
+   "wm_class_source": "desktop id, not verified",
+   "settle": 12,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "blender",
+   "name": "Blender",
+   "group": "Blender",
+   "toolkit": "Own (GHOST)",
+   "packaging": "rpm",
+   "rpm_package": "blender",
+   "version": "5.1.0-4.fc44",
+   "launch": [
+    "blender",
+    "--factory-startup"
+   ],
+   "mode": "wayland",
+   "desktop_id": "blender.desktop",
+   "wm_class": "Blender",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Blender draws its own menus; nothing to export."
+   },
+   "settle": 15,
+   "timeout": 90,
+   "heavy": true
+  },
+  {
+   "id": "gnome-terminal",
+   "name": "GNOME Terminal",
+   "group": "Terminals",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "gnome-terminal",
+   "version": "3.60.0-1.fc44",
+   "launch": [
+    "gnome-terminal",
+    "--wait"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Terminal.desktop",
+   "wm_class": "Gnome-terminal",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "GNOME Terminal 3.60 exports a menubar through GtkApplication."
+   }
+  },
+  {
+   "id": "ptyxis",
+   "name": "Ptyxis",
+   "group": "Terminals",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "ptyxis",
+   "version": "50.1-2.fc44",
+   "launch": [
+    "ptyxis"
+   ],
+   "mode": "wayland",
+   "desktop_id": "org.gnome.Ptyxis.desktop",
+   "wm_class": "org.gnome.Ptyxis",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "Terminals do not export menus; the extension builds one from shortcuts."
+   }
+  },
+  {
+   "id": "ghostty",
+   "name": "Ghostty",
+   "group": "Terminals",
+   "toolkit": "GTK4/libadwaita",
+   "packaging": "rpm",
+   "rpm_package": "ghostty",
+   "version": "1.3.1-3.fc44",
+   "launch": [
+    "ghostty",
+    "--gtk-single-instance=false"
+   ],
+   "mode": "wayland",
+   "desktop_id": "com.mitchellh.ghostty.desktop",
+   "wm_class": "com.mitchellh.ghostty",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Terminals do not export menus; the extension builds one from shortcuts."
+   }
+  },
+  {
+   "id": "terminator",
+   "name": "Terminator",
+   "group": "Terminals",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "terminator",
+   "version": "2.1.5-4.fc44",
+   "launch": [
+    "terminator"
+   ],
+   "mode": "wayland",
+   "desktop_id": "terminator.desktop",
+   "wm_class": "terminator",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "Terminals do not export menus; the extension builds one from shortcuts."
+   }
+  },
+  {
+   "id": "tilix",
+   "name": "Tilix",
+   "group": "Terminals",
+   "toolkit": "GTK3",
+   "packaging": "rpm",
+   "rpm_package": "tilix",
+   "version": "1.9.6-13.fc44",
+   "launch": [
+    "tilix"
+   ],
+   "mode": "wayland",
+   "desktop_id": "com.gexperts.Tilix.desktop",
+   "wm_class": "com.gexperts.Tilix",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "Terminals do not export menus; the extension builds one from shortcuts."
+   }
+  },
+  {
+   "id": "xterm",
+   "name": "XTerm",
+   "group": "Terminals",
+   "toolkit": "Xaw",
+   "packaging": "rpm",
+   "rpm_package": "xterm",
+   "version": "406-1.fc44",
+   "launch": [
+    "xterm"
+   ],
+   "mode": "x11",
+   "desktop_id": "xterm.desktop",
+   "wm_class": "XTerm",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Terminals do not export menus; the extension builds one from shortcuts."
+   }
+  },
+  {
+   "id": "kitty",
+   "name": "kitty",
+   "group": "Terminals",
+   "toolkit": "OpenGL (GLFW)",
+   "packaging": "rpm",
+   "rpm_package": "kitty",
+   "version": "0.43.1-3.fc44",
+   "launch": [
+    "kitty",
+    "--single-instance=no"
+   ],
+   "mode": "wayland",
+   "desktop_id": "kitty.desktop",
+   "wm_class": "kitty",
+   "wm_class_source": "desktop id, not verified",
+   "export_hint": {
+    "note": "Terminals do not export menus; the extension builds one from shortcuts."
+   }
+  },
+  {
+   "id": "alacritty",
+   "name": "Alacritty",
+   "group": "Terminals",
+   "toolkit": "OpenGL (winit)",
+   "packaging": "rpm",
+   "rpm_package": "alacritty",
+   "version": "0.16.1-3.fc44",
+   "launch": [
+    "alacritty"
+   ],
+   "mode": "wayland",
+   "desktop_id": "Alacritty.desktop",
+   "wm_class": "Alacritty",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "Terminals do not export menus; the extension builds one from shortcuts."
+   }
+  },
+  {
+   "id": "mpv",
+   "name": "mpv",
+   "group": "Other",
+   "toolkit": "SDL/own",
+   "packaging": "rpm",
+   "rpm_package": "mpv",
+   "version": "0.41.0-5.fc44",
+   "launch": [
+    "mpv",
+    "--player-operation-mode=pseudo-gui",
+    "--idle=yes"
+   ],
+   "mode": "wayland",
+   "desktop_id": "mpv.desktop",
+   "wm_class": "mpv",
+   "wm_class_source": "StartupWMClass",
+   "export_hint": {
+    "note": "mpv has no menubar."
+   }
+  },
+  {
+   "id": "mupdf-gl",
+   "name": "MuPDF",
+   "group": "Other",
+   "toolkit": "GLUT/own",
+   "packaging": "rpm",
+   "rpm_package": "mupdf",
+   "version": "1.28.2-1.fc44",
+   "launch": [
+    "mupdf-gl"
+   ],
+   "mode": "x11",
+   "desktop_id": "mupdf-gl.desktop",
+   "wm_class": "mupdf-gl",
+   "wm_class_source": "desktop id, not verified"
+  }
+ ]
+}
