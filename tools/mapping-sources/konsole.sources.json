@@ -1,0 +1,600 @@
+{
+  "format": 1,
+  "app": "konsole",
+  "repos": {
+    "konsole": {
+      "url": "https://invent.kde.org/utilities/konsole.git",
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 558,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 549,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 610,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>Q",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 620,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "File",
+        "Save History As"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "konsole",
+      "file": "desktop/sessionui.rc",
+      "line": 7,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "File",
+        "Print"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 590,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 643,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 651,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Selection"
+      ],
+      "shortcut": "<Ctrl><Shift>Insert",
+      "repo": "konsole",
+      "file": "src/session/SessionController.cpp",
+      "line": 738,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clear Scrollback and Reset"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 1030,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "konsole",
+      "file": "src/session/SessionController.cpp",
+      "line": 823,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Next"
+      ],
+      "shortcut": "F3",
+      "repo": "konsole",
+      "file": "desktop/sessionui.rc",
+      "line": 29,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "konsole",
+      "file": "desktop/sessionui.rc",
+      "line": 30,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Edit",
+        "Configure or Rename Tab"
+      ],
+      "shortcut": "<Ctrl><Alt>S",
+      "repo": "konsole",
+      "file": "src/session/SessionController.cpp",
+      "line": 871,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Split View Left/Right"
+      ],
+      "shortcut": "<Ctrl>(",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 135,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Split View Top/Bottom"
+      ],
+      "shortcut": "<Ctrl>)",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 142,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Split View Automatically"
+      ],
+      "shortcut": "<Ctrl>*",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 150,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Expand View"
+      ],
+      "shortcut": "<Ctrl><Shift>]",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 851,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Shrink View"
+      ],
+      "shortcut": "<Ctrl><Shift>[",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 860,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Toggle maximize current view"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 323,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Toggle zoom-maximize current view"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 332,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Equal size to all views"
+      ],
+      "shortcut": "<Ctrl><Shift>\\",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 878,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Select Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "konsole",
+      "file": "src/session/SessionController.cpp",
+      "line": 753,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Enlarge Font Size"
+      ],
+      "shortcut": "<Ctrl>+",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 996,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Shrink Font Size"
+      ],
+      "shortcut": "<Ctrl>-",
+      "repo": "konsole",
+      "file": "src/session/SessionController.cpp",
+      "line": 950,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Font Size"
+      ],
+      "shortcut": "<Ctrl><Alt>0",
+      "repo": "konsole",
+      "file": "src/session/SessionController.cpp",
+      "line": 954,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Monitor for Activity"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 963,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Monitor for Silence"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 948,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Read-Only Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 936,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Menubar"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 1141,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 1039,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Detach Current View"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 900,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Setup semantic integration (bash)"
+      ],
+      "shortcut": "<Ctrl><Alt>]",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 353,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle semantic hints display"
+      ],
+      "shortcut": "<Ctrl><Alt>[",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 359,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle line numbers display"
+      ],
+      "shortcut": "<Ctrl><Alt>\\",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 365,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab"
+      ],
+      "shortcut": "<Shift>Right",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 1186,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 246,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab"
+      ],
+      "shortcut": "<Shift>Left",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 1190,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 254,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Last Used Tabs"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 306,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Last Used Tabs (Reverse)"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 316,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Left"
+      ],
+      "shortcut": "<Ctrl><Alt>Left",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 346,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Right"
+      ],
+      "shortcut": "<Ctrl><Alt>Right",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 339,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 10"
+      ],
+      "shortcut": "<Alt>0",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 392,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Settings",
+        "Open Menu"
+      ],
+      "shortcut": "<Shift>F10",
+      "repo": "konsole",
+      "file": "src/MainWindow.cpp",
+      "line": 263,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Settings",
+        "Activate Menu"
+      ],
+      "shortcut": "<Ctrl><Shift>F10",
+      "repo": "konsole",
+      "file": "doc/manual/index.docbook",
+      "line": 1961,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Pane Up"
+      ],
+      "shortcut": "<Ctrl><Shift>Up",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 264,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Pane Down"
+      ],
+      "shortcut": "<Ctrl><Shift>Down",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 269,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Pane Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Left",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 276,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Pane Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Right",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 282,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Next Terminal"
+      ],
+      "shortcut": "<Ctrl>F11",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 288,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    },
+    {
+      "path": [
+        "Window",
+        "Focus Previous Terminal"
+      ],
+      "shortcut": "<Ctrl><Shift>F11",
+      "repo": "konsole",
+      "file": "src/ViewManager.cpp",
+      "line": 294,
+      "commit": "ed922221cbe0da81017f4de28e483e1777e6cd67"
+    }
+  ],
+  "unmatched": [],
+  "summary": {
+    "with_shortcut": 52,
+    "label_match": 42,
+    "action_match": 0,
+    "chord_only": 10,
+    "unmatched": 0
+  }
+}

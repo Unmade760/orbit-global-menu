@@ -16,8 +16,7 @@
         {"label": "Close Tab", "shortcut": "<Ctrl><Shift>W"},
         {"label": "Close Window", "shortcut": "<Ctrl><Shift>Q"},
         {"label": "Save History As", "shortcut": "<Ctrl><Shift>S"},
-        {"label": "Print", "shortcut": "<Ctrl><Shift>P"},
-        {"label": "Close Active Split View", "shortcut": "<Ctrl><Shift>X"}
+        {"label": "Print", "shortcut": "<Ctrl><Shift>P"}
       ]
     },
     {
@@ -36,6 +35,18 @@
     {
       "label": "View",
       "items": [
+        {"label": "Split View", "items": [
+          {"label": "Split View Left/Right", "shortcut": "<Ctrl>("},
+          {"label": "Split View Top/Bottom", "shortcut": "<Ctrl>)"},
+          {"label": "Split View Automatically", "shortcut": "<Ctrl>*"},
+          {"separator": true},
+          {"label": "Expand View", "shortcut": "<Ctrl><Shift>]"},
+          {"label": "Shrink View", "shortcut": "<Ctrl><Shift>["},
+          {"label": "Toggle maximize current view", "shortcut": "<Ctrl><Shift>E"},
+          {"label": "Toggle zoom-maximize current view", "shortcut": "<Ctrl><Shift>Z"},
+          {"label": "Equal size to all views", "shortcut": "<Ctrl><Shift>\\"}
+        ]},
+        {"separator": true},
         {"label": "Select Mode", "shortcut": "<Ctrl><Shift>D"},
         {"label": "Enlarge Font Size", "shortcut": "<Ctrl>+"},
         {"label": "Shrink Font Size", "shortcut": "<Ctrl>-"},
@@ -44,41 +55,47 @@
         {"label": "Monitor for Silence", "shortcut": "<Ctrl><Shift>I"},
         {"label": "Read-Only Mode", "shortcut": "<Ctrl><Shift>R"},
         {"label": "Toggle Menubar", "shortcut": "<Ctrl><Shift>M"},
-        {"label": "Toggle Fullscreen", "shortcut": "F11"}
+        {"label": "Toggle Fullscreen", "shortcut": "F11"},
+        {"separator": true},
+        {"label": "Detach Current View", "shortcut": "<Ctrl><Shift>H"},
+        {"label": "Setup semantic integration (bash)", "shortcut": "<Ctrl><Alt>]"},
+        {"label": "Toggle semantic hints display", "shortcut": "<Ctrl><Alt>["},
+        {"label": "Toggle line numbers display", "shortcut": "<Ctrl><Alt>\\"}
       ]
     },
     {
       "label": "Tabs",
       "items": [
-        {"label": "Clone Tab", "shortcut": "<Ctrl><Shift>U"},
+        {"label": "Clone Tab"},
         {"label": "Next Tab", "shortcut": "<Shift>Right"},
+        {"label": "Next Tab", "shortcut": "<Ctrl>Page_Down"},
         {"label": "Previous Tab", "shortcut": "<Shift>Left"},
+        {"label": "Previous Tab", "shortcut": "<Ctrl>Page_Up"},
         {"label": "Last Used Tabs", "shortcut": "<Ctrl>Tab"},
         {"label": "Last Used Tabs (Reverse)", "shortcut": "<Ctrl><Shift>Tab"},
         {"label": "Move Tab Left", "shortcut": "<Ctrl><Alt>Left"},
         {"label": "Move Tab Right", "shortcut": "<Ctrl><Alt>Right"},
         {"separator": true},
-        {"label": "Switch to Tab 10", "shortcut": "<Alt>0"},
-        {"label": "Switch to Tab 1", "shortcut": "<Alt>1"},
-        {"label": "Switch to Tab 2", "shortcut": "<Alt>2"},
-        {"label": "Switch to Tab 3", "shortcut": "<Alt>3"},
-        {"label": "Switch to Tab 4", "shortcut": "<Alt>4"},
-        {"label": "Switch to Tab 5", "shortcut": "<Alt>5"},
-        {"label": "Switch to Tab 6", "shortcut": "<Alt>6"},
-        {"label": "Switch to Tab 7", "shortcut": "<Alt>7"},
-        {"label": "Switch to Tab 8", "shortcut": "<Alt>8"},
-        {"label": "Switch to Tab 9", "shortcut": "<Alt>9"}
+        {"label": "Switch to Tab 10", "shortcut": "<Alt>0"}
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {"label": "Manage Profiles…"},
+        {"label": "Open Menu", "shortcut": "<Shift>F10"},
+        {"label": "Activate Menu", "shortcut": "<Ctrl><Shift>F10"}
       ]
     },
     {
       "label": "Window",
       "items": [
-        {"label": "Split View Vertically", "shortcut": "<Ctrl>("},
-        {"label": "Split View Horizontally", "shortcut": "<Ctrl>)"},
         {"label": "Focus Pane Up", "shortcut": "<Ctrl><Shift>Up"},
         {"label": "Focus Pane Down", "shortcut": "<Ctrl><Shift>Down"},
         {"label": "Focus Pane Left", "shortcut": "<Ctrl><Shift>Left"},
-        {"label": "Focus Pane Right", "shortcut": "<Ctrl><Shift>Right"}
+        {"label": "Focus Pane Right", "shortcut": "<Ctrl><Shift>Right"},
+        {"label": "Focus Next Terminal", "shortcut": "<Ctrl>F11"},
+        {"label": "Focus Previous Terminal", "shortcut": "<Ctrl><Shift>F11"}
       ]
     }
   ]
