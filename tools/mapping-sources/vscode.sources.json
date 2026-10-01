@@ -1,0 +1,1665 @@
+{
+  "format": 1,
+  "app": "vscode",
+  "repos": {
+    "vscode": {
+      "url": "https://github.com/microsoft/vscode.git",
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Text File"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/files/browser/fileCommands.ts",
+      "line": 694,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "New File…"
+      ],
+      "shortcut": "<Ctrl><Alt><Super>N",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/welcomeViews/common/newFile.contribution.ts",
+      "line": 36,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/actions/windowActions.ts",
+      "line": 434,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Open File…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/actions/workspaceActions.ts",
+      "line": 42,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Open Folder…"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>O",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/actions/workspaceActions.ts",
+      "line": 69,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Open Recent",
+        "Reopen Closed Editor"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1702,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Open Recent",
+        "More…"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/actions/windowActions.ts",
+      "line": 303,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/files/browser/fileCommands.ts",
+      "line": 496,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/files/browser/fileCommands.ts",
+      "line": 518,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Save Without Formatting"
+      ],
+      "shortcut": "<Ctrl>K S",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/files/browser/fileCommands.ts",
+      "line": 506,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Preferences",
+        "Settings"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/preferences/browser/preferences.contribution.ts",
+      "line": 238,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Preferences",
+        "Open Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>S",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/preferences/browser/preferences.contribution.ts",
+      "line": 887,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Preferences",
+        "Color Theme"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>T",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/themes/browser/themes.contribution.ts",
+      "line": 417,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Close Editor"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorCommands.ts",
+      "line": 838,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Close All Editors"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>W",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 810,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Keep Editor"
+      ],
+      "shortcut": "<Ctrl>K Return",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorCommands.ts",
+      "line": 1328,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Close Folder"
+      ],
+      "shortcut": "<Ctrl>K F",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/actions/workspaceActions.ts",
+      "line": 175,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "vscode",
+      "file": "src/vs/workbench/electron-browser/actions/windowActions.ts",
+      "line": 51,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "vscode",
+      "file": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+      "line": 91,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "vscode",
+      "file": "src/vs/editor/browser/editorExtensions.ts",
+      "line": 651,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "vscode",
+      "file": "src/vs/editor/browser/editorExtensions.ts",
+      "line": 678,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/clipboard/browser/clipboard.ts",
+      "line": 48,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/clipboard/browser/clipboard.ts",
+      "line": 85,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/clipboard/browser/clipboard.ts",
+      "line": 127,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/find/browser/findController.ts",
+      "line": 572,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Next"
+      ],
+      "shortcut": "F3",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/find/browser/findController.ts",
+      "line": 783,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/find/browser/findController.ts",
+      "line": 804,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Replace"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/find/browser/findController.ts",
+      "line": 1010,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find in Files"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/search/browser/searchActionsFind.ts",
+      "line": 240,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Replace in Files"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/search/browser/searchActionsNav.ts",
+      "line": 402,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Toggle Line Comment"
+      ],
+      "shortcut": "<Ctrl>slash",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/comment/browser/comment.ts",
+      "line": 89,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Toggle Block Comment"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/comment/browser/comment.ts",
+      "line": 145,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Add Line Comment"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>C",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/comment/browser/comment.ts",
+      "line": 111,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Remove Line Comment"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>U",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/comment/browser/comment.ts",
+      "line": 127,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Line"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 516,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Insert Line Below"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 692,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Insert Line Above"
+      ],
+      "shortcut": "<Ctrl><Shift>Return",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 666,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Indent Line"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 619,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Outdent Line"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 645,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Trim Trailing Whitespace"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>X",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 465,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Fold"
+      ],
+      "shortcut": "<Ctrl><Shift>bracketleft",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/folding/browser/folding.ts",
+      "line": 727,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Unfold"
+      ],
+      "shortcut": "<Ctrl><Shift>bracketright",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/folding/browser/folding.ts",
+      "line": 644,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Fold Recursively"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>bracketleft",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/folding/browser/folding.ts",
+      "line": 820,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Unfold Recursively"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>bracketright",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/folding/browser/folding.ts",
+      "line": 707,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Fold All"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>0",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/folding/browser/folding.ts",
+      "line": 1003,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Unfold All"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>J",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/folding/browser/folding.ts",
+      "line": 1023,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Format Document"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/format/browser/formatActions.ts",
+      "line": 222,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Format Selection"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>F",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/format/browser/formatActions.ts",
+      "line": 253,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rename Symbol"
+      ],
+      "shortcut": "F2",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/rename/browser/rename.ts",
+      "line": 370,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Quick Fix…"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/codeAction/browser/codeActionCommands.ts",
+      "line": 80,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Trigger Suggest"
+      ],
+      "shortcut": "<Ctrl>space",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/suggest/browser/suggestController.ts",
+      "line": 807,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Trigger Parameter Hints"
+      ],
+      "shortcut": "<Ctrl><Shift>space",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/parameterHints/browser/parameterHints.ts",
+      "line": 84,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Show or Focus Hover"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>I",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/hover/browser/hoverActions.ts",
+      "line": 65,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Change Language Mode"
+      ],
+      "shortcut": "<Ctrl>K M",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorStatus.ts",
+      "line": 1121,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Edit",
+        "Toggle Tab Key Moves Focus"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/toggleTabFocusMode/browser/toggleTabFocusMode.ts",
+      "line": 23,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "vscode",
+      "file": "src/vs/editor/browser/editorExtensions.ts",
+      "line": 708,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Expand Selection"
+      ],
+      "shortcut": "<Shift><Alt>Right",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/smartSelect/browser/smartSelect.ts",
+      "line": 158,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Shrink Selection"
+      ],
+      "shortcut": "<Shift><Alt>Left",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/smartSelect/browser/smartSelect.ts",
+      "line": 186,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Expand Line Selection"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/lineSelection/browser/lineSelection.ts",
+      "line": 28,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Copy Line Up"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>Up",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 87,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Copy Line Down"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>Down",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 110,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Move Line Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 202,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Move Line Down"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/linesOperations/browser/linesOperations.ts",
+      "line": 225,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Cursor Above"
+      ],
+      "shortcut": "<Shift><Alt>Up",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/multicursor/browser/multicursor.ts",
+      "line": 57,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Cursor Below"
+      ],
+      "shortcut": "<Shift><Alt>Down",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/multicursor/browser/multicursor.ts",
+      "line": 109,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Cursors to Line Ends"
+      ],
+      "shortcut": "<Shift><Alt>I",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/multicursor/browser/multicursor.ts",
+      "line": 159,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Next Occurrence"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/multicursor/browser/multicursor.ts",
+      "line": 734,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Select All Occurrences"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/multicursor/browser/multicursor.ts",
+      "line": 808,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Move Last Selection to Next Find Match"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>D",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/multicursor/browser/multicursor.ts",
+      "line": 777,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Change All Occurrences"
+      ],
+      "shortcut": "<Ctrl>F2",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/multicursor/browser/multicursor.ts",
+      "line": 832,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Selection",
+        "Cursor Undo"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/cursorUndo/browser/cursorUndo.ts",
+      "line": 136,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Command Palette…"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/quickaccess/browser/commandsQuickAccess.ts",
+      "line": 284,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Appearance",
+        "Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/actions/windowActions.ts",
+      "line": 348,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Appearance",
+        "Zen Mode"
+      ],
+      "shortcut": "<Ctrl>K Z",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/workbench.zenMode.contribution.ts",
+      "line": 112,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Appearance",
+        "Primary Side Bar"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/actions/layoutActions.ts",
+      "line": 309,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Appearance",
+        "Secondary Side Bar"
+      ],
+      "shortcut": "<Ctrl><Alt>B",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/auxiliarybar/auxiliaryBarActions.ts",
+      "line": 52,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Appearance",
+        "Panel"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/panel/panelActions.ts",
+      "line": 51,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Appearance",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "vscode",
+      "file": "src/vs/workbench/electron-browser/actions/windowActions.ts",
+      "line": 156,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Appearance",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "vscode",
+      "file": "src/vs/workbench/electron-browser/actions/windowActions.ts",
+      "line": 188,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Appearance",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>KP_0",
+      "repo": "vscode",
+      "file": "src/vs/workbench/electron-browser/actions/windowActions.ts",
+      "line": 218,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Split Editor"
+      ],
+      "shortcut": "<Ctrl>backslash",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 90,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Split Editor Orthogonal"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>backslash",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 106,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Split in Group"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl><Shift>backslash",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorCommands.ts",
+      "line": 1132,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Move Editor Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 2069,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Move Editor Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 2088,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Move Editor Group Left"
+      ],
+      "shortcut": "<Ctrl>K Left",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 983,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Move Editor Group Right"
+      ],
+      "shortcut": "<Ctrl>K Right",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 999,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Move Editor Group Up"
+      ],
+      "shortcut": "<Ctrl>K Up",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1015,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Move Editor Group Down"
+      ],
+      "shortcut": "<Ctrl>K Down",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1031,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Copy Editor into New Window"
+      ],
+      "shortcut": "<Ctrl>K O",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 2670,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Editor Layout",
+        "Flip Layout"
+      ],
+      "shortcut": "<Shift><Alt>0",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/files/browser/views/openEditorsView.ts",
+      "line": 937,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Explorer"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/files/browser/explorerViewlet.ts",
+      "line": 271,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Source Control"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+      "line": 123,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Run"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+      "line": 459,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Extensions"
+      ],
+      "shortcut": "<Ctrl><Shift>X",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+      "line": 122,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Chat"
+      ],
+      "shortcut": "<Ctrl><Alt>I",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/chat/browser/chatParticipant.contribution.ts",
+      "line": 65,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Problems"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/markers/browser/markers.contribution.ts",
+      "line": 153,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Output"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>H",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/output/browser/output.contribution.ts",
+      "line": 97,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Debug Console"
+      ],
+      "shortcut": "<Ctrl><Shift>Y",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+      "line": 447,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Terminal"
+      ],
+      "shortcut": "<Ctrl>grave",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/terminal/browser/terminal.contribution.ts",
+      "line": 128,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Word Wrap"
+      ],
+      "shortcut": "<Alt>Z",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/codeEditor/browser/toggleWordWrap.ts",
+      "line": 65,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Preview"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "vscode",
+      "file": "extensions/markdown-language-features/package.json",
+      "line": 961,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "View",
+        "Open Preview to the Side"
+      ],
+      "shortcut": "<Ctrl>K V",
+      "repo": "vscode",
+      "file": "extensions/markdown-language-features/package.json",
+      "line": 955,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Back"
+      ],
+      "shortcut": "<Ctrl><Alt>minus",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1518,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Forward"
+      ],
+      "shortcut": "<Ctrl><Shift>minus",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1483,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Last Edit Location"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>Q",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1611,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Editor",
+        "Next Editor"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1276,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Editor",
+        "Previous Editor"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1324,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Editor",
+        "Next Editor in Group"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>Page_Down",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1372,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Editor",
+        "Previous Editor in Group"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>Page_Up",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1399,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Editor",
+        "Quick Open Previous Recently Used Editor in Group"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1876,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Editor",
+        "Quick Open Least Recently Used Editor in Group"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 1896,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Group",
+        "Group 1"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 303,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Group",
+        "Group Left"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>Left",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 355,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Group",
+        "Group Right"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>Right",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 371,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Group",
+        "Group Above"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>Up",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 387,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Switch Group",
+        "Group Below"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>Down",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/parts/editor/editorActions.ts",
+      "line": 403,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to File…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/actions/quickAccessActions.ts",
+      "line": 26,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Symbol in Workspace…"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/search/browser/searchActionsSymbol.ts",
+      "line": 32,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Symbol in Editor…"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoSymbolQuickAccess.ts",
+      "line": 356,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Definition"
+      ],
+      "shortcut": "F12",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/gotoSymbol/browser/goToCommands.ts",
+      "line": 292,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Peek Definition"
+      ],
+      "shortcut": "<Ctrl><Shift>F10",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/gotoSymbol/browser/goToCommands.ts",
+      "line": 363,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Open Definition to the Side"
+      ],
+      "shortcut": "<Ctrl>K F12",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/gotoSymbol/browser/goToCommands.ts",
+      "line": 331,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Implementations"
+      ],
+      "shortcut": "<Ctrl>F12",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/gotoSymbol/browser/goToCommands.ts",
+      "line": 592,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to References"
+      ],
+      "shortcut": "<Shift>F12",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/gotoSymbol/browser/goToCommands.ts",
+      "line": 681,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Line/Column…"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess.ts",
+      "line": 83,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Bracket"
+      ],
+      "shortcut": "<Ctrl><Shift>backslash",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/bracketMatching/browser/bracketMatching.ts",
+      "line": 37,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Problem"
+      ],
+      "shortcut": "F8",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/gotoError/browser/gotoError.ts",
+      "line": 249,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Problem"
+      ],
+      "shortcut": "<Shift>F8",
+      "repo": "vscode",
+      "file": "src/vs/editor/contrib/gotoError/browser/gotoError.ts",
+      "line": 271,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Change"
+      ],
+      "shortcut": "<Alt>F3",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/scm/browser/quickDiffWidget.ts",
+      "line": 809,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Change"
+      ],
+      "shortcut": "<Shift><Alt>F3",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/scm/browser/quickDiffWidget.ts",
+      "line": 776,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "Start Debugging"
+      ],
+      "shortcut": "F5",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugCommands.ts",
+      "line": 767,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "Run Without Debugging"
+      ],
+      "shortcut": "<Ctrl>F5",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugCommands.ts",
+      "line": 782,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "Stop Debugging"
+      ],
+      "shortcut": "<Shift>F5",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugCommands.ts",
+      "line": 663,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "Restart Debugging"
+      ],
+      "shortcut": "<Ctrl><Shift>F5",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugCommands.ts",
+      "line": 474,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "Step Over"
+      ],
+      "shortcut": "F10",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugCommands.ts",
+      "line": 504,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "Step Into"
+      ],
+      "shortcut": "F11",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugCommands.ts",
+      "line": 516,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "Step Out"
+      ],
+      "shortcut": "<Shift>F11",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugCommands.ts",
+      "line": 538,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "Continue"
+      ],
+      "shortcut": "F5",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugCommands.ts",
+      "line": 687,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "Toggle Breakpoint"
+      ],
+      "shortcut": "F9",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugEditorActions.ts",
+      "line": 50,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Run",
+        "New Breakpoint",
+        "Inline Breakpoint"
+      ],
+      "shortcut": "<Shift>F9",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/debug/browser/debugCommands.ts",
+      "line": 1039,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Terminal",
+        "New Terminal"
+      ],
+      "shortcut": "<Ctrl><Shift>grave",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/terminal/browser/terminalActions.ts",
+      "line": 1219,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Split Terminal"
+      ],
+      "shortcut": "<Ctrl><Shift>5",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/terminal/browser/terminalActions.ts",
+      "line": 1058,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Run Build Task…"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/tasks/browser/task.contribution.ts",
+      "line": 392,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Help",
+        "Show All Commands"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "vscode",
+      "file": "src/vs/workbench/contrib/quickaccess/browser/commandsQuickAccess.ts",
+      "line": 284,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Help",
+        "Keyboard Shortcuts Reference"
+      ],
+      "shortcut": "<Ctrl>K <Ctrl>R",
+      "repo": "vscode",
+      "file": "src/vs/workbench/browser/actions/helpActions.ts",
+      "line": 39,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    },
+    {
+      "path": [
+        "Help",
+        "Toggle Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "vscode",
+      "file": "src/vs/workbench/electron-browser/actions/developerActions.ts",
+      "line": 34,
+      "commit": "f44267726f3892ad5fab2dfde800d1b47819cb83"
+    }
+  ]
+}

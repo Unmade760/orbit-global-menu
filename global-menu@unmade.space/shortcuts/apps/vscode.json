@@ -14,16 +14,41 @@
     {
       "label": "File",
       "items": [
-        {"label": "Create New File", "shortcut": "<Ctrl>N"},
-        {"label": "Open File", "shortcut": "<Ctrl>O"},
-        {"label": "Open Folder", "shortcut": "<Ctrl>k <Ctrl>o"},
-        {"label": "Save File", "shortcut": "<Ctrl>S"},
-        {"label": "Save File As", "shortcut": "<Ctrl><Shift>S"},
-        {"label": "Save All Files", "shortcut": "<Ctrl>k s"},
-        {"label": "Close Active Editor Tab", "shortcut": "<Ctrl>W"},
+        {"label": "New Text File", "shortcut": "<Ctrl>N"},
+        {"label": "New File…", "shortcut": "<Ctrl><Alt><Super>N"},
+        {"label": "New Window", "shortcut": "<Ctrl><Shift>N"},
+        {"separator": true},
+        {"label": "Open File…", "shortcut": "<Ctrl>O"},
+        {"label": "Open Folder…", "shortcut": "<Ctrl>K <Ctrl>O"},
+        {
+          "label": "Open Recent",
+          "items": [
+          {"label": "Reopen Closed Editor", "shortcut": "<Ctrl><Shift>T"},
+          {"label": "More…", "shortcut": "<Ctrl>R"}
+          ]
+        },
+        {"separator": true},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As…", "shortcut": "<Ctrl><Shift>S"},
+        {"label": "Save All"},
+        {"label": "Save Without Formatting", "shortcut": "<Ctrl>K S"},
+        {"separator": true},
+        {
+          "label": "Preferences",
+          "items": [
+          {"label": "Settings", "shortcut": "<Ctrl>comma"},
+          {"label": "Open Keyboard Shortcuts", "shortcut": "<Ctrl>K <Ctrl>S"},
+          {"label": "Color Theme", "shortcut": "<Ctrl>K <Ctrl>T"}
+          ]
+        },
+        {"separator": true},
+        {"label": "Close Editor", "shortcut": "<Ctrl>W"},
+        {"label": "Close All Editors", "shortcut": "<Ctrl>K <Ctrl>W"},
+        {"label": "Keep Editor", "shortcut": "<Ctrl>K Return"},
+        {"label": "Close Folder", "shortcut": "<Ctrl>K F"},
         {"label": "Close Window", "shortcut": "<Ctrl><Shift>W"},
-        {"label": "Reopen Closed Editor", "shortcut": "<Ctrl><Shift>T"},
-        {"label": "Quit VS Code", "shortcut": "<Ctrl>Q"}
+        {"separator": true},
+        {"label": "Exit", "shortcut": "<Ctrl>Q"}
       ]
     },
     {
@@ -31,65 +56,217 @@
       "items": [
         {"label": "Undo", "shortcut": "<Ctrl>Z"},
         {"label": "Redo", "shortcut": "<Ctrl>Y"},
+        {"separator": true},
         {"label": "Cut", "shortcut": "<Ctrl>X"},
         {"label": "Copy", "shortcut": "<Ctrl>C"},
         {"label": "Paste", "shortcut": "<Ctrl>V"},
-        {"label": "Find in Buffer", "shortcut": "<Ctrl>F"},
-        {"label": "Replace in Buffer", "shortcut": "<Ctrl>H"},
-        {"label": "Find in Files (Global Search)", "shortcut": "<Ctrl><Shift>F"},
+        {"separator": true},
+        {"label": "Find", "shortcut": "<Ctrl>F"},
+        {"label": "Find Next", "shortcut": "F3"},
+        {"label": "Find Previous", "shortcut": "<Shift>F3"},
+        {"label": "Replace", "shortcut": "<Ctrl>H"},
+        {"separator": true},
+        {"label": "Find in Files", "shortcut": "<Ctrl><Shift>F"},
         {"label": "Replace in Files", "shortcut": "<Ctrl><Shift>H"},
-        {"label": "Format Document", "shortcut": "<Ctrl><Shift>I"},
-        {"label": "Toggle Line Comment", "shortcut": "<Ctrl>/"},
+        {"separator": true},
+        {"label": "Toggle Line Comment", "shortcut": "<Ctrl>slash"},
         {"label": "Toggle Block Comment", "shortcut": "<Ctrl><Shift>A"},
-        {"label": "Open Settings", "shortcut": "<Ctrl>,"}
+        {"label": "Add Line Comment", "shortcut": "<Ctrl>K <Ctrl>C"},
+        {"label": "Remove Line Comment", "shortcut": "<Ctrl>K <Ctrl>U"},
+        {"separator": true},
+        {"label": "Delete Line", "shortcut": "<Ctrl><Shift>K"},
+        {"label": "Insert Line Below", "shortcut": "<Ctrl>Return"},
+        {"label": "Insert Line Above", "shortcut": "<Ctrl><Shift>Return"},
+        {"label": "Indent Line", "shortcut": "<Ctrl>bracketright"},
+        {"label": "Outdent Line", "shortcut": "<Ctrl>bracketleft"},
+        {"label": "Trim Trailing Whitespace", "shortcut": "<Ctrl>K <Ctrl>X"},
+        {"separator": true},
+        {"label": "Fold", "shortcut": "<Ctrl><Shift>bracketleft"},
+        {"label": "Unfold", "shortcut": "<Ctrl><Shift>bracketright"},
+        {"label": "Fold Recursively", "shortcut": "<Ctrl>K <Ctrl>bracketleft"},
+        {"label": "Unfold Recursively", "shortcut": "<Ctrl>K <Ctrl>bracketright"},
+        {"label": "Fold All", "shortcut": "<Ctrl>K <Ctrl>0"},
+        {"label": "Unfold All", "shortcut": "<Ctrl>K <Ctrl>J"},
+        {"separator": true},
+        {"label": "Format Document", "shortcut": "<Ctrl><Shift>I"},
+        {"label": "Format Selection", "shortcut": "<Ctrl>K <Ctrl>F"},
+        {"label": "Rename Symbol", "shortcut": "F2"},
+        {"label": "Quick Fix…", "shortcut": "<Ctrl>period"},
+        {"label": "Trigger Suggest", "shortcut": "<Ctrl>space"},
+        {"label": "Trigger Parameter Hints", "shortcut": "<Ctrl><Shift>space"},
+        {"label": "Show or Focus Hover", "shortcut": "<Ctrl>K <Ctrl>I"},
+        {"label": "Change Language Mode", "shortcut": "<Ctrl>K M"},
+        {"label": "Toggle Tab Key Moves Focus", "shortcut": "<Ctrl>M"}
       ]
     },
     {
       "label": "Selection",
       "items": [
-        {"label": "Select All", "shortcut": "<Ctrl>A"}
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"label": "Expand Selection", "shortcut": "<Shift><Alt>Right"},
+        {"label": "Shrink Selection", "shortcut": "<Shift><Alt>Left"},
+        {"label": "Expand Line Selection", "shortcut": "<Ctrl>L"},
+        {"separator": true},
+        {"label": "Copy Line Up", "shortcut": "<Ctrl><Shift><Alt>Up"},
+        {"label": "Copy Line Down", "shortcut": "<Ctrl><Shift><Alt>Down"},
+        {"label": "Move Line Up", "shortcut": "<Alt>Up"},
+        {"label": "Move Line Down", "shortcut": "<Alt>Down"},
+        {"label": "Duplicate Selection"},
+        {"separator": true},
+        {"label": "Add Cursor Above", "shortcut": "<Shift><Alt>Up"},
+        {"label": "Add Cursor Below", "shortcut": "<Shift><Alt>Down"},
+        {"label": "Add Cursors to Line Ends", "shortcut": "<Shift><Alt>I"},
+        {"label": "Add Next Occurrence", "shortcut": "<Ctrl>D"},
+        {"label": "Add Previous Occurrence"},
+        {"label": "Select All Occurrences", "shortcut": "<Ctrl><Shift>L"},
+        {"label": "Move Last Selection to Next Find Match", "shortcut": "<Ctrl>K <Ctrl>D"},
+        {"label": "Change All Occurrences", "shortcut": "<Ctrl>F2"},
+        {"label": "Cursor Undo", "shortcut": "<Ctrl>U"}
       ]
     },
     {
       "label": "View",
       "items": [
-        {"label": "Show Command Palette", "shortcut": "<Ctrl><Shift>P"},
-        {"label": "Toggle Primary Sidebar", "shortcut": "<Ctrl>B"},
-        {"label": "Toggle Secondary Sidebar", "shortcut": "<Ctrl><Alt>B"},
-        {"label": "Toggle Full Screen", "shortcut": "F11"},
-        {"label": "Zoom In", "shortcut": "<Ctrl>="},
-        {"label": "Zoom Out", "shortcut": "<Ctrl>-"},
-        {"label": "Reset Zoom", "shortcut": "<Ctrl>KP_0"}
+        {"label": "Command Palette…", "shortcut": "<Ctrl><Shift>P"},
+        {"separator": true},
+        {
+          "label": "Appearance",
+          "items": [
+          {"label": "Full Screen", "shortcut": "F11"},
+          {"label": "Zen Mode", "shortcut": "<Ctrl>K Z"},
+          {"separator": true},
+          {"label": "Primary Side Bar", "shortcut": "<Ctrl>B"},
+          {"label": "Secondary Side Bar", "shortcut": "<Ctrl><Alt>B"},
+          {"label": "Panel", "shortcut": "<Ctrl>J"},
+          {"separator": true},
+          {"label": "Zoom In", "shortcut": "<Ctrl>equal"},
+          {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+          {"label": "Reset Zoom", "shortcut": "<Ctrl>KP_0"}
+          ]
+        },
+        {
+          "label": "Editor Layout",
+          "items": [
+          {"label": "Split Editor", "shortcut": "<Ctrl>backslash"},
+          {"label": "Split Editor Orthogonal", "shortcut": "<Ctrl>K <Ctrl>backslash"},
+          {"label": "Split in Group", "shortcut": "<Ctrl>K <Ctrl><Shift>backslash"},
+          {"separator": true},
+          {"label": "Move Editor Left", "shortcut": "<Ctrl><Shift>Page_Up"},
+          {"label": "Move Editor Right", "shortcut": "<Ctrl><Shift>Page_Down"},
+          {"label": "Move Editor Group Left", "shortcut": "<Ctrl>K Left"},
+          {"label": "Move Editor Group Right", "shortcut": "<Ctrl>K Right"},
+          {"label": "Move Editor Group Up", "shortcut": "<Ctrl>K Up"},
+          {"label": "Move Editor Group Down", "shortcut": "<Ctrl>K Down"},
+          {"separator": true},
+          {"label": "Copy Editor into New Window", "shortcut": "<Ctrl>K O"},
+          {"separator": true},
+          {"label": "Flip Layout", "shortcut": "<Shift><Alt>0"}
+          ]
+        },
+        {"separator": true},
+        {"label": "Explorer", "shortcut": "<Ctrl><Shift>E"},
+        {"label": "Source Control", "shortcut": "<Ctrl><Shift>G"},
+        {"label": "Run", "shortcut": "<Ctrl><Shift>D"},
+        {"label": "Extensions", "shortcut": "<Ctrl><Shift>X"},
+        {"label": "Chat", "shortcut": "<Ctrl><Alt>I"},
+        {"separator": true},
+        {"label": "Problems", "shortcut": "<Ctrl><Shift>M"},
+        {"label": "Output", "shortcut": "<Ctrl>K <Ctrl>H"},
+        {"label": "Debug Console", "shortcut": "<Ctrl><Shift>Y"},
+        {"label": "Terminal", "shortcut": "<Ctrl>grave"},
+        {"separator": true},
+        {"label": "Word Wrap", "shortcut": "<Alt>Z"},
+        {"label": "Toggle Preview", "shortcut": "<Ctrl><Shift>V"},
+        {"label": "Open Preview to the Side", "shortcut": "<Ctrl>K V"}
       ]
     },
     {
       "label": "Go",
       "items": [
-        {"label": "Quick Open / Go to File", "shortcut": "<Ctrl>P"},
-        {"label": "Next Editor Tab", "shortcut": "<Ctrl>Page_Down"},
-        {"label": "Previous Editor Tab", "shortcut": "<Ctrl>Page_Up"},
-        {"label": "Go to Line", "shortcut": "<Ctrl>G"},
-        {"label": "Go to Symbol in File", "shortcut": "<Ctrl><Shift>O"},
+        {"label": "Back", "shortcut": "<Ctrl><Alt>minus"},
+        {"label": "Forward", "shortcut": "<Ctrl><Shift>minus"},
+        {"label": "Last Edit Location", "shortcut": "<Ctrl>K <Ctrl>Q"},
+        {"separator": true},
+        {
+          "label": "Switch Editor",
+          "items": [
+          {"label": "Next Editor", "shortcut": "<Ctrl>Page_Down"},
+          {"label": "Previous Editor", "shortcut": "<Ctrl>Page_Up"},
+          {"label": "Next Editor in Group", "shortcut": "<Ctrl>K <Ctrl>Page_Down"},
+          {"label": "Previous Editor in Group", "shortcut": "<Ctrl>K <Ctrl>Page_Up"},
+          {"separator": true},
+          {"label": "Quick Open Previous Recently Used Editor in Group", "shortcut": "<Ctrl>Tab"},
+          {"label": "Quick Open Least Recently Used Editor in Group", "shortcut": "<Ctrl><Shift>Tab"}
+          ]
+        },
+        {
+          "label": "Switch Group",
+          "items": [
+          {"label": "Group 1", "shortcut": "<Ctrl>1"},
+          {"label": "Group Left", "shortcut": "<Ctrl>K <Ctrl>Left"},
+          {"label": "Group Right", "shortcut": "<Ctrl>K <Ctrl>Right"},
+          {"label": "Group Above", "shortcut": "<Ctrl>K <Ctrl>Up"},
+          {"label": "Group Below", "shortcut": "<Ctrl>K <Ctrl>Down"}
+          ]
+        },
+        {"separator": true},
+        {"label": "Go to File…", "shortcut": "<Ctrl>P"},
+        {"label": "Go to Symbol in Workspace…", "shortcut": "<Ctrl>T"},
+        {"label": "Go to Symbol in Editor…", "shortcut": "<Ctrl><Shift>O"},
+        {"separator": true},
         {"label": "Go to Definition", "shortcut": "F12"},
-        {"label": "Rename Symbol", "shortcut": "F2"}
+        {"label": "Peek Definition", "shortcut": "<Ctrl><Shift>F10"},
+        {"label": "Open Definition to the Side", "shortcut": "<Ctrl>K F12"},
+        {"label": "Go to Implementations", "shortcut": "<Ctrl>F12"},
+        {"label": "Go to References", "shortcut": "<Shift>F12"},
+        {"separator": true},
+        {"label": "Go to Line/Column…", "shortcut": "<Ctrl>G"},
+        {"label": "Go to Bracket", "shortcut": "<Ctrl><Shift>backslash"},
+        {"separator": true},
+        {"label": "Next Problem", "shortcut": "F8"},
+        {"label": "Previous Problem", "shortcut": "<Shift>F8"},
+        {"label": "Next Change", "shortcut": "<Alt>F3"},
+        {"label": "Previous Change", "shortcut": "<Shift><Alt>F3"}
+      ]
+    },
+    {
+      "label": "Run",
+      "items": [
+        {"label": "Start Debugging", "shortcut": "F5"},
+        {"label": "Run Without Debugging", "shortcut": "<Ctrl>F5"},
+        {"label": "Stop Debugging", "shortcut": "<Shift>F5"},
+        {"label": "Restart Debugging", "shortcut": "<Ctrl><Shift>F5"},
+        {"separator": true},
+        {"label": "Step Over", "shortcut": "F10"},
+        {"label": "Step Into", "shortcut": "F11"},
+        {"label": "Step Out", "shortcut": "<Shift>F11"},
+        {"label": "Continue", "shortcut": "F5"},
+        {"separator": true},
+        {"label": "Toggle Breakpoint", "shortcut": "F9"},
+        {
+          "label": "New Breakpoint",
+          "items": [
+          {"label": "Inline Breakpoint", "shortcut": "<Shift>F9"}
+          ]
+        }
       ]
     },
     {
       "label": "Terminal",
       "items": [
-        {"label": "Toggle Integrated Terminal", "shortcut": "<Ctrl>`"}
-      ]
-    },
-    {
-      "label": "Window",
-      "items": [
-        {"label": "Split Editor Right", "shortcut": "<Ctrl>\\"}
+        {"label": "New Terminal", "shortcut": "<Ctrl><Shift>grave"},
+        {"label": "Split Terminal", "shortcut": "<Ctrl><Shift>5"},
+        {"separator": true},
+        {"label": "Run Build Task…", "shortcut": "<Ctrl><Shift>B"}
       ]
     },
     {
       "label": "Help",
       "items": [
-        {"label": "Open Keyboard Shortcuts", "shortcut": "<Ctrl>k <Ctrl>s"}
+        {"label": "Show All Commands", "shortcut": "<Ctrl><Shift>P"},
+        {"label": "Keyboard Shortcuts Reference", "shortcut": "<Ctrl>K <Ctrl>R"},
+        {"separator": true},
+        {"label": "Toggle Developer Tools", "shortcut": "<Ctrl><Shift>I"}
       ]
     }
   ]
