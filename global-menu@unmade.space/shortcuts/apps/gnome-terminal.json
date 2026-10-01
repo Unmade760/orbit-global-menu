@@ -11,64 +11,264 @@
     {
       "label": "File",
       "items": [
-        {"label": "New Tab", "shortcut": "<Ctrl><Shift>T"},
-        {"label": "New Window", "shortcut": "<Ctrl><Shift>N"},
-        {"label": "Close Tab", "shortcut": "<Ctrl><Shift>W"},
-        {"label": "Close Window", "shortcut": "<Ctrl><Shift>Q"}
+        {
+          "label": "New Terminal",
+          "items": [
+            {
+              "label": "Tab",
+              "shortcut": "<Ctrl><Shift>T"
+            },
+            {
+              "label": "Window",
+              "shortcut": "<Ctrl><Shift>N"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save Contents…"
+        },
+        {
+          "label": "Export…"
+        },
+        {
+          "label": "Print…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Tab",
+          "shortcut": "<Ctrl><Shift>W"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl><Shift>Q"
+        }
       ]
     },
     {
       "label": "Edit",
       "items": [
-        {"label": "Copy", "shortcut": "<Ctrl><Shift>C"},
-        {"label": "Paste", "shortcut": "<Ctrl><Shift>V"},
-        {"label": "Select All", "shortcut": "<Ctrl><Shift>A"},
-        {"label": "Find", "shortcut": "<Ctrl><Shift>F"},
-        {"label": "Find Next", "shortcut": "<Ctrl><Shift>G"},
-        {"label": "Find Previous", "shortcut": "<Ctrl><Shift>H"},
-        {"label": "Clear Highlight", "shortcut": "<Ctrl><Shift>J"},
-        {"label": "Preferences", "shortcut": "<Ctrl><Shift>P"}
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "Copy as HTML"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences"
+        }
       ]
     },
     {
       "label": "View",
       "items": [
-        {"label": "Zoom In", "shortcut": "<Ctrl>+"},
-        {"label": "Zoom Out", "shortcut": "<Ctrl>-"},
-        {"label": "Normal Size", "shortcut": "<Ctrl>0"},
-        {"label": "Toggle Fullscreen", "shortcut": "F11"},
-        {"label": "Scroll Up One Line", "shortcut": "<Ctrl><Shift>Up"},
-        {"label": "Scroll Down One Line", "shortcut": "<Ctrl><Shift>Down"},
-        {"label": "Scroll Up One Page", "shortcut": "<Shift>Page_Up"},
-        {"label": "Scroll Down One Page", "shortcut": "<Shift>Page_Down"},
-        {"label": "Scroll to Top", "shortcut": "<Shift>Home"},
-        {"label": "Scroll to Bottom", "shortcut": "<Shift>End"}
+        {
+          "label": "Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>+"
+        },
+        {
+          "label": "Normal Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>-"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Scroll Up One Line",
+          "shortcut": "<Ctrl><Shift>Up"
+        },
+        {
+          "label": "Scroll Down One Line",
+          "shortcut": "<Ctrl><Shift>Down"
+        },
+        {
+          "label": "Scroll Up One Page",
+          "shortcut": "<Shift>Page_Up"
+        },
+        {
+          "label": "Scroll Down One Page",
+          "shortcut": "<Shift>Page_Down"
+        },
+        {
+          "label": "Scroll to Top",
+          "shortcut": "<Shift>Home"
+        },
+        {
+          "label": "Scroll to Bottom",
+          "shortcut": "<Shift>End"
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {
+          "label": "Find…",
+          "shortcut": "<Ctrl><Shift>F"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Ctrl><Shift>H"
+        },
+        {
+          "label": "Clear Highlight",
+          "shortcut": "<Ctrl><Shift>J"
+        }
+      ]
+    },
+    {
+      "label": "Terminal",
+      "items": [
+        {
+          "label": "Set Title…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Read-Only"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reset"
+        },
+        {
+          "label": "Reset and Clear"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "1. 80×24"
+        },
+        {
+          "label": "2. 80×43"
+        },
+        {
+          "label": "3. 132×24"
+        },
+        {
+          "label": "4. 132×43"
+        }
       ]
     },
     {
       "label": "Tabs",
       "items": [
-        {"label": "Switch to Previous Tab", "shortcut": "<Ctrl>Page_Up"},
-        {"label": "Switch to Next Tab", "shortcut": "<Ctrl>Page_Down"},
-        {"label": "Move Tab Left", "shortcut": "<Ctrl><Shift>Page_Up"},
-        {"label": "Move Tab Right", "shortcut": "<Ctrl><Shift>Page_Down"},
-        {"separator": true},
-        {"label": "Switch to Tab 10", "shortcut": "<Alt>0"},
-        {"label": "Switch to Tab 1", "shortcut": "<Alt>1"},
-        {"label": "Switch to Tab 2", "shortcut": "<Alt>2"},
-        {"label": "Switch to Tab 3", "shortcut": "<Alt>3"},
-        {"label": "Switch to Tab 4", "shortcut": "<Alt>4"},
-        {"label": "Switch to Tab 5", "shortcut": "<Alt>5"},
-        {"label": "Switch to Tab 6", "shortcut": "<Alt>6"},
-        {"label": "Switch to Tab 7", "shortcut": "<Alt>7"},
-        {"label": "Switch to Tab 8", "shortcut": "<Alt>8"},
-        {"label": "Switch to Tab 9", "shortcut": "<Alt>9"}
+        {
+          "label": "Previous Tab",
+          "shortcut": "<Ctrl>Page_Up"
+        },
+        {
+          "label": "Next Tab",
+          "shortcut": "<Ctrl>Page_Down"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Move Terminal Left",
+          "shortcut": "<Ctrl><Shift>Page_Up"
+        },
+        {
+          "label": "Move Terminal Right",
+          "shortcut": "<Ctrl><Shift>Page_Down"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Detach Terminal"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Switch to Tab 10",
+          "shortcut": "<Alt>0"
+        },
+        {
+          "label": "Switch to Tab 1",
+          "shortcut": "<Alt>1"
+        },
+        {
+          "label": "Switch to Tab 2",
+          "shortcut": "<Alt>2"
+        },
+        {
+          "label": "Switch to Tab 3",
+          "shortcut": "<Alt>3"
+        },
+        {
+          "label": "Switch to Tab 4",
+          "shortcut": "<Alt>4"
+        },
+        {
+          "label": "Switch to Tab 5",
+          "shortcut": "<Alt>5"
+        },
+        {
+          "label": "Switch to Tab 6",
+          "shortcut": "<Alt>6"
+        },
+        {
+          "label": "Switch to Tab 7",
+          "shortcut": "<Alt>7"
+        },
+        {
+          "label": "Switch to Tab 8",
+          "shortcut": "<Alt>8"
+        },
+        {
+          "label": "Switch to Tab 9",
+          "shortcut": "<Alt>9"
+        }
       ]
     },
     {
       "label": "Help",
       "items": [
-        {"label": "Help", "shortcut": "F1"}
+        {
+          "label": "Contents"
+        },
+        {
+          "label": "About"
+        }
       ]
     }
   ]

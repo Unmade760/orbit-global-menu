@@ -1,0 +1,388 @@
+{
+  "format": 1,
+  "app": "gnome-terminal",
+  "repos": {
+    "gnome-terminal": {
+      "url": "https://gitlab.gnome.org/GNOME/gnome-terminal.git",
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Terminal",
+        "Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 372,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "File",
+        "New Terminal",
+        "Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 376,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 392,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>Q",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 396,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 400,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 408,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 420,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>+",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 632,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 640,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>-",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 636,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Scroll Up One Line"
+      ],
+      "shortcut": "<Ctrl><Shift>Up",
+      "repo": "gnome-terminal",
+      "file": "help/C/adv-keyboard-shortcuts.page",
+      "line": 294,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Scroll Down One Line"
+      ],
+      "shortcut": "<Ctrl><Shift>Down",
+      "repo": "gnome-terminal",
+      "file": "help/C/adv-keyboard-shortcuts.page",
+      "line": 298,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Scroll Up One Page"
+      ],
+      "shortcut": "<Shift>Page_Up",
+      "repo": "gnome-terminal",
+      "file": "help/C/adv-keyboard-shortcuts.page",
+      "line": 302,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Scroll Down One Page"
+      ],
+      "shortcut": "<Shift>Page_Down",
+      "repo": "gnome-terminal",
+      "file": "help/C/adv-keyboard-shortcuts.page",
+      "line": 306,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Scroll to Top"
+      ],
+      "shortcut": "<Shift>Home",
+      "repo": "gnome-terminal",
+      "file": "help/C/adv-keyboard-shortcuts.page",
+      "line": 310,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "View",
+        "Scroll to Bottom"
+      ],
+      "shortcut": "<Shift>End",
+      "repo": "gnome-terminal",
+      "file": "help/C/adv-keyboard-shortcuts.page",
+      "line": 314,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Search",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 436,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 440,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 444,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Search",
+        "Clear Highlight"
+      ],
+      "shortcut": "<Ctrl><Shift>J",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 448,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 452,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 456,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Terminal Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 460,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Terminal Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 464,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 10"
+      ],
+      "shortcut": "<Alt>0",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 520,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 1"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 484,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 2"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 488,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 3"
+      ],
+      "shortcut": "<Alt>3",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 492,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 4"
+      ],
+      "shortcut": "<Alt>4",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 496,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 5"
+      ],
+      "shortcut": "<Alt>5",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 500,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 6"
+      ],
+      "shortcut": "<Alt>6",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 504,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 7"
+      ],
+      "shortcut": "<Alt>7",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 508,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 8"
+      ],
+      "shortcut": "<Alt>8",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 512,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Switch to Tab 9"
+      ],
+      "shortcut": "<Alt>9",
+      "repo": "gnome-terminal",
+      "file": "src/org.gnome.Terminal.gschema.xml",
+      "line": 516,
+      "commit": "b23813aa7d9fbfa978f8389a8ba0f738421e76c1"
+    }
+  ]
+}
