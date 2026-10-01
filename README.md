@@ -21,7 +21,8 @@ dependencies, and it is optional.
 
 ## Installing the extension
 
-Needs GNOME Shell 49 or 50, on Wayland or X11. Nothing else.
+Needs GNOME Shell 48 to 51. Wayland on every version; Xorg only on 48 (Debian 13).
+Nothing else.
 
 ```sh
 git clone https://github.com/Unmade760/orbit-global-menu.git
