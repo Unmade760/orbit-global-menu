@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "app": "vacuumtube",
+  "repos": {
+    "vacuumtube": {
+      "url": "https://github.com/shy1132/VacuumTube.git",
+      "commit": "3fa684ec5bb69d6df00ea934c74556cd05432c0f"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "VacuumTube",
+        "Open VacuumTube Settings"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "vacuumtube",
+      "file": "README.md",
+      "line": 116,
+      "commit": "3fa684ec5bb69d6df00ea934c74556cd05432c0f"
+    },
+    {
+      "path": [
+        "VacuumTube",
+        "Copy Current Video URL"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "vacuumtube",
+      "file": "README.md",
+      "line": 118,
+      "commit": "3fa684ec5bb69d6df00ea934c74556cd05432c0f"
+    },
+    {
+      "path": [
+        "VacuumTube",
+        "Simulate Long Press of Enter"
+      ],
+      "shortcut": "<Shift>Return",
+      "repo": "vacuumtube",
+      "file": "README.md",
+      "line": 120,
+      "commit": "3fa684ec5bb69d6df00ea934c74556cd05432c0f"
+    },
+    {
+      "path": [
+        "VacuumTube",
+        "Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "vacuumtube",
+      "file": "README.md",
+      "line": 139,
+      "commit": "3fa684ec5bb69d6df00ea934c74556cd05432c0f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Toggle Mute"
+      ],
+      "shortcut": "m",
+      "repo": "vacuumtube",
+      "file": "src/preload/modules/volume-control/index.js",
+      "line": 110,
+      "commit": "3fa684ec5bb69d6df00ea934c74556cd05432c0f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Increase Playback Speed"
+      ],
+      "shortcut": "d",
+      "repo": "vacuumtube",
+      "file": "src/preload/modules/speed-control/index.js",
+      "line": 99,
+      "commit": "3fa684ec5bb69d6df00ea934c74556cd05432c0f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Decrease Playback Speed"
+      ],
+      "shortcut": "a",
+      "repo": "vacuumtube",
+      "file": "src/preload/modules/speed-control/index.js",
+      "line": 97,
+      "commit": "3fa684ec5bb69d6df00ea934c74556cd05432c0f"
+    },
+    {
+      "path": [
+        "Playback",
+        "Toggle Captions"
+      ],
+      "shortcut": "c",
+      "repo": "vacuumtube",
+      "file": "src/preload/modules/keybinds.js",
+      "line": 118,
+      "commit": "3fa684ec5bb69d6df00ea934c74556cd05432c0f"
+    }
+  ]
+}

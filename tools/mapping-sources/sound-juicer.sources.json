@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "app": "sound-juicer",
+  "repos": {
+    "sound-juicer": {
+      "url": "https://gitlab.gnome.org/GNOME/sound-juicer.git",
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Disc",
+        "Reread Track Names"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 18,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "Disc",
+        "Eject Disc"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 25,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "Disc",
+        "Open MusicBrainz"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer.ui",
+      "line": 855,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "Disc",
+        "Toggle Playback"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 32,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "Disc",
+        "Next Track"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 39,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "Disc",
+        "Previous Track"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 46,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "General",
+        "Select All Tracks"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 80,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "General",
+        "Unselect All Tracks"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 87,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "General",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 59,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "General",
+        "Shortcuts Help"
+      ],
+      "shortcut": "<Ctrl>F1",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 66,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "sound-juicer",
+      "file": "data/sound-juicer-shortcuts.ui",
+      "line": 73,
+      "commit": "13557b661f607427f88dc1edf3e5eeeab07483a9"
+    }
+  ]
+}

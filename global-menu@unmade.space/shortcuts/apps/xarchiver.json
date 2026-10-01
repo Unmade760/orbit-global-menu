@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "app": "xarchiver",
+  "name": "Xarchiver",
+  "identifiers": [
+    "xarchiver.desktop",
+    "xarchiver",
+    "Xarchiver"
+  ],
+  "menus": [
+    {
+      "label": "Archive",
+      "items": [
+        {"label": "Test", "shortcut": "<Ctrl>T"},
+        {"label": "Properties", "shortcut": "<Ctrl>P"}
+      ]
+    },
+    {
+      "label": "Action",
+      "items": [
+        {"label": "Add", "shortcut": "<Ctrl>D"},
+        {"label": "Extract", "shortcut": "<Ctrl>E"},
+        {"label": "Delete", "shortcut": "Delete"},
+        {"label": "Sort", "shortcut": "<Ctrl>S"},
+        {"separator": true},
+        {"label": "Make SFX", "shortcut": "<Ctrl>X"},
+        {"label": "Multi-Extract", "shortcut": "<Ctrl>M"},
+        {"label": "Archive Comment", "shortcut": "<Ctrl>C"},
+        {"separator": true},
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"label": "Deselect All", "shortcut": "<Ctrl>L"},
+        {"label": "Select by Pattern", "shortcut": "<Ctrl>B"},
+        {"separator": true},
+        {"label": "Cmd-line Output", "shortcut": "<Ctrl>U"},
+        {"label": "Enter Password", "shortcut": "<Ctrl>R"},
+        {"separator": true},
+        {"label": "Preferences", "shortcut": "<Ctrl>F"}
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {"label": "Back", "shortcut": "<Alt>Left"},
+        {"label": "Up", "shortcut": "<Alt>Up"},
+        {"label": "Forward", "shortcut": "<Alt>Right"},
+        {"label": "Root", "shortcut": "<Alt>Home"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Contents", "shortcut": "F1"}
+      ]
+    }
+  ]
+}

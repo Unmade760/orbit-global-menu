@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "app": "video-downloader",
+  "repos": {
+    "video-downloader": {
+      "url": "https://github.com/Unrud/video-downloader.git",
+      "commit": "a4500f4d25701c318765a73ae1507b6f868ca263"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Open Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "video-downloader",
+      "file": "src/shortcuts_dialog.ui",
+      "line": 32,
+      "commit": "a4500f4d25701c318765a73ae1507b6f868ca263"
+    },
+    {
+      "path": [
+        "General",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "video-downloader",
+      "file": "src/shortcuts_dialog.ui",
+      "line": 38,
+      "commit": "a4500f4d25701c318765a73ae1507b6f868ca263"
+    },
+    {
+      "path": [
+        "General",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "video-downloader",
+      "file": "src/shortcuts_dialog.ui",
+      "line": 44,
+      "commit": "a4500f4d25701c318765a73ae1507b6f868ca263"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "video-downloader",
+      "file": "src/shortcuts_dialog.ui",
+      "line": 50,
+      "commit": "a4500f4d25701c318765a73ae1507b6f868ca263"
+    },
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "video-downloader",
+      "file": "src/shortcuts_dialog.ui",
+      "line": 56,
+      "commit": "a4500f4d25701c318765a73ae1507b6f868ca263"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "video-downloader",
+      "file": "src/shortcuts_dialog.ui",
+      "line": 67,
+      "commit": "a4500f4d25701c318765a73ae1507b6f868ca263"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch to Audio"
+      ],
+      "shortcut": "<Alt>A",
+      "repo": "video-downloader",
+      "file": "src/shortcuts_dialog.ui",
+      "line": 73,
+      "commit": "a4500f4d25701c318765a73ae1507b6f868ca263"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Switch to Video"
+      ],
+      "shortcut": "<Alt>V",
+      "repo": "video-downloader",
+      "file": "src/shortcuts_dialog.ui",
+      "line": 79,
+      "commit": "a4500f4d25701c318765a73ae1507b6f868ca263"
+    }
+  ]
+}

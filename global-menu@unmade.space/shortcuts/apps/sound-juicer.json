@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "app": "sound-juicer",
+  "name": "Sound Juicer",
+  "identifiers": [
+    "org.gnome.SoundJuicer.desktop",
+    "org.gnome.SoundJuicer",
+    "sound-juicer",
+    "Sound Juicer"
+  ],
+  "menus": [
+    {
+      "label": "Disc",
+      "items": [
+        {
+          "label": "Reread Track Names",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Eject Disc",
+          "shortcut": "<Ctrl>J"
+        },
+        {
+          "label": "Open MusicBrainz",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Extract"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Playback",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Next Track",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Previous Track",
+          "shortcut": "<Ctrl>B"
+        }
+      ]
+    },
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Select All Tracks",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Unselect All Tracks",
+          "shortcut": "<Ctrl><Shift>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Help",
+          "shortcut": "F1"
+        },
+        {
+          "label": "Shortcuts Help",
+          "shortcut": "<Ctrl>F1"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    }
+  ]
+}

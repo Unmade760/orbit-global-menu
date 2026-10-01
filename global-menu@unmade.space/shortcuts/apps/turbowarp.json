@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "app": "turbowarp",
+  "name": "TurboWarp",
+  "identifiers": [
+    "org.turbowarp.TurboWarp.desktop",
+    "org.turbowarp.TurboWarp",
+    "turbowarp-desktop",
+    "TurboWarp"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl>N"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Reload",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>equal"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Actual Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Toggle Full Screen",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Developer",
+      "items": [
+        {
+          "label": "Toggle Developer Tools",
+          "shortcut": "<Ctrl><Shift>I"
+        }
+      ]
+    }
+  ]
+}

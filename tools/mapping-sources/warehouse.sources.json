@@ -1,0 +1,177 @@
+{
+  "format": 1,
+  "app": "warehouse",
+  "repos": {
+    "warehouse": {
+      "url": "https://github.com/flattool/warehouse.git",
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Refresh"
+      ],
+      "shortcut": "F5",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 50,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "General",
+        "Open Files"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 51,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "General",
+        "Open Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 49,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 48,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Show Packages Page"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 53,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Show Remotes Page"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 54,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Show User Data Page"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 55,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Show Snapshots Page"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 56,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Show Install Page"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 57,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Page Actions",
+        "Search Mode"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 61,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Page Actions",
+        "Selection Mode"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 59,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Page Actions",
+        "Filters, Sorting Modes or Disabled Remotes"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 62,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Page Actions",
+        "New Remote or New Snapshots"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 63,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Page Actions",
+        "Show Active Data"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 64,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    },
+    {
+      "path": [
+        "Page Actions",
+        "Show Leftover Data"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "warehouse",
+      "file": "src/main.py",
+      "line": 65,
+      "commit": "007cd801b22c8b5c84fa97cac5634a2bcc877f6c"
+    }
+  ]
+}

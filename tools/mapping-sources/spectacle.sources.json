@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "app": "spectacle",
+  "repos": {
+    "spectacle": {
+      "url": "https://invent.kde.org/plasma/spectacle.git",
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Screenshot",
+        "Take a new screenshot"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "spectacle",
+      "file": "src/Gui/SpectacleWindow.cpp",
+      "line": 455,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Screenshot",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "spectacle",
+      "file": "src/Gui/ViewerWindow.cpp",
+      "line": 39,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Screenshot",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "spectacle",
+      "file": "src/Gui/ViewerWindow.cpp",
+      "line": 40,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Screenshot",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "spectacle",
+      "file": "src/Gui/ViewerWindow.cpp",
+      "line": 41,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Screenshot",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "spectacle",
+      "file": "src/Gui/ViewerWindow.cpp",
+      "line": 42,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Screenshot",
+        "Cancel"
+      ],
+      "shortcut": "Escape",
+      "repo": "spectacle",
+      "file": "src/Gui/SpectacleWindow.cpp",
+      "line": 444,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Screenshot",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "spectacle",
+      "file": "src/Gui/SpectacleWindow.cpp",
+      "line": 443,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Screenshot",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "spectacle",
+      "file": "src/Gui/SpectacleWindow.cpp",
+      "line": 442,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "spectacle",
+      "file": "src/Gui/AnnotationEditor.qml",
+      "line": 44,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "spectacle",
+      "file": "src/Gui/AnnotationEditor.qml",
+      "line": 49,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "spectacle",
+      "file": "src/Gui/ViewerPage.qml",
+      "line": 222,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "spectacle",
+      "file": "src/Gui/ViewerPage.qml",
+      "line": 227,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Spectacle…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "spectacle",
+      "file": "src/Gui/OptionsMenu.cpp",
+      "line": 164,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    },
+    {
+      "path": [
+        "Settings",
+        "Spectacle Handbook"
+      ],
+      "shortcut": "F1",
+      "repo": "spectacle",
+      "file": "src/Gui/SpectacleWindow.cpp",
+      "line": 458,
+      "commit": "b5ec850bf018f40cb722e39ffb9341fd93d685ee"
+    }
+  ]
+}

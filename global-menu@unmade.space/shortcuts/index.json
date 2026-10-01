@@ -259,6 +259,27 @@
     "ristretto.json",
     "rnote.json",
     "rufin.json",
-    "smplayer.json"
+    "smplayer.json",
+    "sound-juicer.json",
+    "sound-recorder.json",
+    "spectacle.json",
+    "speech-note.json",
+    "sticky-notes.json",
+    "strawberry-music-player.json",
+    "supermodel.json",
+    "super-productivity.json",
+    "turbowarp.json",
+    "vacuumtube.json",
+    "vesktop.json",
+    "video-downloader.json",
+    "videos.json",
+    "warehouse.json",
+    "whatsie.json",
+    "wireshark.json",
+    "wps-office.json",
+    "xarchiver.json",
+    "xfce-terminal.json",
+    "xsane.json",
+    "zapzap.json"
   ]
 }

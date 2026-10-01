@@ -1,0 +1,300 @@
+{
+  "format": 1,
+  "app": "super-productivity",
+  "name": "Super Productivity",
+  "identifiers": [
+    "com.super_productivity.SuperProductivity.desktop",
+    "com.super_productivity.SuperProductivity",
+    "superproductivity.desktop",
+    "superproductivity",
+    "Super Productivity"
+  ],
+  "menus": [
+    {
+      "label": "Application",
+      "items": [
+        {
+          "label": "Add New Task",
+          "shortcut": "<Shift>A"
+        },
+        {
+          "label": "Add New Project",
+          "shortcut": "<Shift>P"
+        },
+        {
+          "label": "Add New Note",
+          "shortcut": "<Alt>N"
+        },
+        {
+          "label": "Show/Hide Notes",
+          "shortcut": "<Shift>N"
+        },
+        {
+          "label": "Show Search Bar",
+          "shortcut": "<Shift>F"
+        },
+        {
+          "label": "Trigger Sync (If Configured)",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Keyboard Shortcut Cheat Sheet",
+          "shortcut": "<Shift>slash"
+        }
+      ]
+    },
+    {
+      "label": "Go To",
+      "items": [
+        {
+          "label": "Go to Task List and Focus First Task",
+          "shortcut": "W"
+        },
+        {
+          "label": "Enter Focus Mode",
+          "shortcut": "F"
+        },
+        {
+          "label": "Go to Today",
+          "shortcut": "<Shift>T"
+        },
+        {
+          "label": "Go to Schedule",
+          "shortcut": "<Shift>S"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Focus Sidenav",
+          "shortcut": "<Shift>D"
+        },
+        {
+          "label": "Toggle Sidebar Compact/Full Mode",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Show/Hide Project Backlog",
+          "shortcut": "B"
+        },
+        {
+          "label": "Show/Hide Issue Provider Panel",
+          "shortcut": "P"
+        },
+        {
+          "label": "Toggle Filter/Group/Sort Panel",
+          "shortcut": "C"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Zoom Default",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Toggle Full-Screen Mode",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Task",
+      "items": [
+        {
+          "label": "Schedule Task",
+          "shortcut": "S"
+        },
+        {
+          "label": "Schedule Task for Today"
+        },
+        {
+          "label": "Set Task Deadline"
+        },
+        {
+          "label": "Unschedule Task",
+          "shortcut": "U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Task Completed Status",
+          "shortcut": "D"
+        },
+        {
+          "label": "Add Subtask",
+          "shortcut": "A"
+        },
+        {
+          "label": "Duplicate Task",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Attach File or Link",
+          "shortcut": "L"
+        },
+        {
+          "label": "Edit Tags",
+          "shortcut": "G"
+        },
+        {
+          "label": "Edit Estimate/Time Spent",
+          "shortcut": "T"
+        },
+        {
+          "label": "Edit Title",
+          "shortcut": "Return"
+        },
+        {
+          "label": "Delete Task",
+          "shortcut": "BackSpace"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show/Hide Task Panel",
+          "shortcut": "I"
+        },
+        {
+          "label": "Open Note/Checklist in Task Panel",
+          "shortcut": "N"
+        },
+        {
+          "label": "Open Move Task to Project Menu",
+          "shortcut": "E"
+        },
+        {
+          "label": "Open Task Context Menu",
+          "shortcut": "Q"
+        },
+        {
+          "label": "Start/Stop Time Tracking for Task",
+          "shortcut": "Y"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select Previous Task",
+          "shortcut": "K"
+        },
+        {
+          "label": "Select Next Task",
+          "shortcut": "J"
+        },
+        {
+          "label": "Move Task up in the List",
+          "shortcut": "<Ctrl><Shift>Up"
+        },
+        {
+          "label": "Move Task down in the List",
+          "shortcut": "<Ctrl><Shift>Down"
+        },
+        {
+          "label": "Move Task to the Top of the List"
+        },
+        {
+          "label": "Move Task to the Bottom of the List"
+        },
+        {
+          "label": "Move Task to Project Backlog",
+          "shortcut": "<Shift>B"
+        }
+      ]
+    },
+    {
+      "label": "Selection",
+      "items": [
+        {
+          "label": "Extend Selection Up",
+          "shortcut": "<Shift>Up"
+        },
+        {
+          "label": "Toggle Task in Multi-Selection",
+          "shortcut": "X"
+        },
+        {
+          "label": "Select Every Task in the List",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Clear Selection",
+          "shortcut": "Escape"
+        }
+      ]
+    },
+    {
+      "label": "Planner",
+      "items": [
+        {
+          "label": "Move Task One Day Earlier",
+          "shortcut": "<Ctrl><Shift>Left"
+        },
+        {
+          "label": "Move Task One Day Later",
+          "shortcut": "<Ctrl><Shift>Right"
+        }
+      ]
+    },
+    {
+      "label": "Add Task Bar",
+      "items": [
+        {
+          "label": "Toggle Issue-Search Mode",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Toggle Note Field",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Toggle Add to Top/Bottom of List",
+          "shortcut": "<Ctrl>3"
+        },
+        {
+          "label": "Open Project Selector",
+          "shortcut": "<Ctrl>4"
+        },
+        {
+          "label": "Open Schedule Dialog",
+          "shortcut": "<Ctrl>5"
+        },
+        {
+          "label": "Open Tags Selector",
+          "shortcut": "<Ctrl>6"
+        },
+        {
+          "label": "Open Estimate Selector",
+          "shortcut": "<Ctrl>7"
+        },
+        {
+          "label": "Open Repeat Settings",
+          "shortcut": "<Ctrl>8"
+        },
+        {
+          "label": "Open Deadline Dialog",
+          "shortcut": "<Ctrl>9"
+        },
+        {
+          "label": "Reveal the Note Field",
+          "shortcut": "<Ctrl>Return"
+        }
+      ]
+    }
+  ]
+}

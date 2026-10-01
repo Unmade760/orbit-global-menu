@@ -1,0 +1,342 @@
+{
+  "format": 1,
+  "app": "speech-note",
+  "repos": {
+    "speech-note": {
+      "url": "https://github.com/mkiol/dsnote.git",
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 56,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "File",
+        "Open File Menu"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 114,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "File",
+        "Import from a File"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 134,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "File",
+        "Import from a URL"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 150,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "File",
+        "Export to a File"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 162,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 94,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 60,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 72,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 86,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 98,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 110,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 122,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 136,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut (Alternate)"
+      ],
+      "shortcut": "<Shift>Delete",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 86,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy (Alternate)"
+      ],
+      "shortcut": "<Ctrl>Insert",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 98,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste (Alternate)"
+      ],
+      "shortcut": "<Shift>Insert",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 110,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste (Second Alternate)"
+      ],
+      "shortcut": "<Ctrl><Shift>Insert",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 110,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete (Alternate)"
+      ],
+      "shortcut": "Delete",
+      "repo": "speech-note",
+      "file": "desktop/qml/TextContextMenu.qml",
+      "line": 122,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "View",
+        "Languages and Models"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 195,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "View",
+        "Rules"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 302,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "View",
+        "Notepad"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 349,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "View",
+        "Translator"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "speech-note",
+      "file": "desktop/qml/MainToolBar.qml",
+      "line": 366,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "View",
+        "Go Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "speech-note",
+      "file": "desktop/qml/LangsPage.qml",
+      "line": 327,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "View",
+        "Close"
+      ],
+      "shortcut": "Escape",
+      "repo": "speech-note",
+      "file": "desktop/qml/LangsPage.qml",
+      "line": 351,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Notepad",
+        "Listen"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>L",
+      "repo": "speech-note",
+      "file": "desktop/qml/Notepad.qml",
+      "line": 176,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Notepad",
+        "Pause Reading"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>P",
+      "repo": "speech-note",
+      "file": "desktop/qml/SpeechWidget.qml",
+      "line": 238,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Notepad",
+        "Stop"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>S",
+      "repo": "speech-note",
+      "file": "desktop/qml/SpeechWidget.qml",
+      "line": 273,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Notepad",
+        "Cancel"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>C",
+      "repo": "speech-note",
+      "file": "desktop/qml/SpeechWidget.qml",
+      "line": 306,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Translator",
+        "Translate"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>T",
+      "repo": "speech-note",
+      "file": "desktop/qml/Translator.qml",
+      "line": 268,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    },
+    {
+      "path": [
+        "Translator",
+        "Switch Languages"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>O",
+      "repo": "speech-note",
+      "file": "desktop/qml/Translator.qml",
+      "line": 288,
+      "commit": "6ec0a315b4915a92ff0a1de0bd75e3c3037fbd21"
+    }
+  ]
+}

@@ -1,0 +1,626 @@
+{
+  "format": 1,
+  "app": "super-productivity",
+  "repos": {
+    "super-productivity": {
+      "url": "https://github.com/super-productivity/super-productivity.git",
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Application",
+        "Add New Task"
+      ],
+      "shortcut": "<Shift>A",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 144,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Application",
+        "Add New Project"
+      ],
+      "shortcut": "<Shift>P",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 145,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Application",
+        "Add New Note"
+      ],
+      "shortcut": "<Alt>N",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 146,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Application",
+        "Show/Hide Notes"
+      ],
+      "shortcut": "<Shift>N",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 147,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Application",
+        "Show Search Bar"
+      ],
+      "shortcut": "<Shift>F",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 153,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Application",
+        "Trigger Sync (If Configured)"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 165,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Application",
+        "Show Keyboard Shortcut Cheat Sheet"
+      ],
+      "shortcut": "<Shift>slash",
+      "url": "https://github.com/super-productivity/super-productivity/blob/878c9a3b4cba30fd28feffc3aa88743ea0aa72f6/docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "quote": "usually typed as Shift+/"
+    },
+    {
+      "path": [
+        "Go To",
+        "Go to Task List and Focus First Task"
+      ],
+      "shortcut": "W",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 156,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Go To",
+        "Enter Focus Mode"
+      ],
+      "shortcut": "F",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 155,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Go To",
+        "Go to Today"
+      ],
+      "shortcut": "<Shift>T",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 158,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Go To",
+        "Go to Schedule"
+      ],
+      "shortcut": "<Shift>S",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 157,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "View",
+        "Focus Sidenav"
+      ],
+      "shortcut": "<Shift>D",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 150,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Sidebar Compact/Full Mode"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 151,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide Project Backlog"
+      ],
+      "shortcut": "B",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 154,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide Issue Provider Panel"
+      ],
+      "shortcut": "P",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 149,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Filter/Group/Sort Panel"
+      ],
+      "shortcut": "C",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 148,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 162,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 163,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Default"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 164,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full-Screen Mode"
+      ],
+      "shortcut": "F11",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 46,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Schedule Task"
+      ],
+      "shortcut": "S",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 171,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Unschedule Task"
+      ],
+      "shortcut": "U",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 177,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Toggle Task Completed Status"
+      ],
+      "shortcut": "D",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 178,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Add Subtask"
+      ],
+      "shortcut": "A",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 179,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Duplicate Task"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 180,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Attach File or Link"
+      ],
+      "shortcut": "L",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 181,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Edit Tags"
+      ],
+      "shortcut": "G",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 195,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Edit Estimate/Time Spent"
+      ],
+      "shortcut": "T",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 170,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Edit Title"
+      ],
+      "shortcut": "Return",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 84,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Delete Task"
+      ],
+      "shortcut": "BackSpace",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 182,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Show/Hide Task Panel"
+      ],
+      "shortcut": "I",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 167,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Open Note/Checklist in Task Panel"
+      ],
+      "shortcut": "N",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 168,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Open Move Task to Project Menu"
+      ],
+      "shortcut": "E",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 183,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Open Task Context Menu"
+      ],
+      "shortcut": "Q",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 184,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Start/Stop Time Tracking for Task"
+      ],
+      "shortcut": "Y",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 194,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Select Previous Task"
+      ],
+      "shortcut": "K",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 185,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Select Next Task"
+      ],
+      "shortcut": "J",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 186,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Move Task up in the List"
+      ],
+      "shortcut": "<Ctrl><Shift>Up",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 187,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Move Task down in the List"
+      ],
+      "shortcut": "<Ctrl><Shift>Down",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 188,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Task",
+        "Move Task to Project Backlog"
+      ],
+      "shortcut": "<Shift>B",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 191,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Selection",
+        "Extend Selection Up"
+      ],
+      "shortcut": "<Shift>Up",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 133,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Selection",
+        "Toggle Task in Multi-Selection"
+      ],
+      "shortcut": "X",
+      "repo": "super-productivity",
+      "file": "src/app/features/config/default-global-config.const.ts",
+      "line": 196,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Selection",
+        "Select Every Task in the List"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "super-productivity",
+      "file": "src/app/features/tasks/task-shortcut.service.ts",
+      "line": 425,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Selection",
+        "Clear Selection"
+      ],
+      "shortcut": "Escape",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 107,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Planner",
+        "Move Task One Day Earlier"
+      ],
+      "shortcut": "<Ctrl><Shift>Left",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 129,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Planner",
+        "Move Task One Day Later"
+      ],
+      "shortcut": "<Ctrl><Shift>Right",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 129,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Toggle Issue-Search Mode"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 50,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Toggle Note Field"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 51,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Toggle Add to Top/Bottom of List"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 52,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Open Project Selector"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 53,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Open Schedule Dialog"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 54,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Open Tags Selector"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 55,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Open Estimate Selector"
+      ],
+      "shortcut": "<Ctrl>7",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 56,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Open Repeat Settings"
+      ],
+      "shortcut": "<Ctrl>8",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 57,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Open Deadline Dialog"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 58,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    },
+    {
+      "path": [
+        "Add Task Bar",
+        "Reveal the Note Field"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "super-productivity",
+      "file": "docs/wiki/3.03-Keyboard-Shortcuts.md",
+      "line": 59,
+      "commit": "878c9a3b4cba30fd28feffc3aa88743ea0aa72f6"
+    }
+  ]
+}

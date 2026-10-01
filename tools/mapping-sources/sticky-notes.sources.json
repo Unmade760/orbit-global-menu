@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "app": "sticky-notes",
+  "repos": {
+    "sticky-notes": {
+      "url": "https://github.com/vixalien/sticky.git",
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Show Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 307,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 298,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Notes",
+        "New Note"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 299,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Notes",
+        "Close Note"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 308,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Notes",
+        "Delete Note"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 304,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Show All Notes"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 300,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Cycle Between Notes"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "sticky-notes",
+      "file": "data/ui/help-overlay.ui",
+      "line": 55,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Cycle Between Notes in Reverse Order"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "repo": "sticky-notes",
+      "file": "data/ui/help-overlay.ui",
+      "line": 61,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Editing",
+        "Bold"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 310,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Editing",
+        "Italic"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 311,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Editing",
+        "Underline"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 312,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    },
+    {
+      "path": [
+        "Editing",
+        "Strikethrough"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "sticky-notes",
+      "file": "src/application.ts",
+      "line": 313,
+      "commit": "235efbaf93996b48db351b0000cd9cd9088d3c70"
+    }
+  ]
+}

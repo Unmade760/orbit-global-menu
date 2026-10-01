@@ -1,0 +1,42 @@
+{
+  "format": 1,
+  "app": "supermodel",
+  "name": "Supermodel",
+  "identifiers": [
+    "com.supermodel3.Supermodel.desktop",
+    "com.supermodel3.Supermodel",
+    "Supermodel"
+  ],
+  "menus": [
+    {
+      "label": "Emulation",
+      "items": [
+        {"label": "Reset", "shortcut": "<Alt>R"},
+        {"label": "Pause", "shortcut": "<Alt>P"},
+        {"label": "Toggle Frame Limiting", "shortcut": "<Alt>T"},
+        {"separator": true},
+        {"label": "Clear NVRAM", "shortcut": "<Alt>N"},
+        {"label": "Select Crosshairs", "shortcut": "<Alt>I"},
+        {"separator": true},
+        {"label": "Exit", "shortcut": "Escape"}
+      ]
+    },
+    {
+      "label": "State",
+      "items": [
+        {"label": "Save State", "shortcut": "F5"},
+        {"label": "Change Save Slot", "shortcut": "F6"},
+        {"label": "Load State", "shortcut": "F7"}
+      ]
+    },
+    {
+      "label": "Audio",
+      "items": [
+        {"label": "Increase Music Volume", "shortcut": "F10"},
+        {"label": "Decrease Music Volume", "shortcut": "F9"},
+        {"label": "Increase Sound Volume", "shortcut": "F12"},
+        {"label": "Decrease Sound Volume", "shortcut": "F11"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "format": 1,
+  "app": "wireshark",
+  "name": "Wireshark",
+  "identifiers": [
+    "org.wireshark.Wireshark.desktop",
+    "org.wireshark.Wireshark",
+    "wireshark",
+    "Wireshark"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Open", "shortcut": "<Ctrl>O"},
+        {"label": "Merge…"},
+        {"label": "Import from Hex Dump…"},
+        {"label": "Close", "shortcut": "<Ctrl>W"},
+        {"separator": true},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As…", "shortcut": "<Ctrl><Shift>S"},
+        {"separator": true},
+        {"label": "File Set", "items": [
+          {"label": "List Files"},
+          {"label": "Next File"},
+          {"label": "Previous File"}
+        ]},
+        {"separator": true},
+        {"label": "Export Specified Packets…"},
+        {"label": "Export Packet Dissections", "items": [
+          {"label": "As Plain Text…"},
+          {"label": "As CSV…"},
+          {"label": "As \"C\" Arrays…"},
+          {"separator": true},
+          {"label": "As PSML XML…"},
+          {"label": "As PDML XML…"},
+          {"label": "As JSON…"}
+        ]},
+        {"label": "Export Packet Bytes…", "shortcut": "<Ctrl><Shift>X"},
+        {"label": "Export PDUs to File…"},
+        {"label": "Strip Headers…"},
+        {"label": "Export TLS Session Keys…"},
+        {"separator": true},
+        {"label": "Print…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Copy", "items": [
+          {"label": "As Plain Text"},
+          {"label": "As CSV"},
+          {"label": "As YAML"},
+          {"label": "As HTML"},
+          {"separator": true},
+          {"label": "All Visible Items", "shortcut": "<Ctrl><Shift><Alt>A"},
+          {"label": "All Visible Selected Tree Items"},
+          {"label": "Description", "shortcut": "<Ctrl><Shift><Alt>D"},
+          {"label": "Field Name", "shortcut": "<Ctrl><Shift><Alt>F"},
+          {"label": "Value", "shortcut": "<Ctrl><Shift><Alt>V"},
+          {"separator": true},
+          {"label": "As Filter", "shortcut": "<Ctrl><Shift>C"}
+        ]},
+        {"label": "Find Packet…", "shortcut": "<Ctrl>F"},
+        {"label": "Find Next", "shortcut": "<Ctrl>N"},
+        {"label": "Find Previous", "shortcut": "<Ctrl>B"},
+        {"label": "Display Filter Input", "shortcut": "<Ctrl>slash"},
+        {"separator": true},
+        {"label": "Mark/Unmark Selected", "shortcut": "<Ctrl>M"},
+        {"label": "Mark All Displayed", "shortcut": "<Ctrl><Shift>M"},
+        {"label": "Unmark All Displayed", "shortcut": "<Ctrl><Alt>M"},
+        {"label": "Next Mark", "shortcut": "<Ctrl><Shift>N"},
+        {"label": "Previous Mark", "shortcut": "<Ctrl><Shift>B"},
+        {"separator": true},
+        {"label": "Ignore/Unignore Selected", "shortcut": "<Ctrl>D"},
+        {"label": "Ignore All Displayed", "shortcut": "<Ctrl><Shift>D"},
+        {"label": "Unignore All Displayed", "shortcut": "<Ctrl><Alt>D"},
+        {"separator": true},
+        {"label": "Set/Unset Time Reference", "shortcut": "<Ctrl>T"},
+        {"label": "Unset All Time References", "shortcut": "<Ctrl><Alt>T"},
+        {"label": "Next Time Reference", "shortcut": "<Ctrl><Alt>N"},
+        {"label": "Previous Time Reference", "shortcut": "<Ctrl><Alt>B"},
+        {"separator": true},
+        {"label": "Time Shift…", "shortcut": "<Ctrl><Shift>T"},
+        {"separator": true},
+        {"label": "Delete All Packet Comments"},
+        {"separator": true},
+        {"label": "Inject TLS Secrets"},
+        {"label": "Inject ESP Secrets"},
+        {"label": "Discard All Secrets"},
+        {"separator": true},
+        {"label": "Configuration Profiles…", "shortcut": "<Ctrl><Shift>A"},
+        {"label": "Preferences…", "shortcut": "<Ctrl><Shift>P"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Main Toolbar"},
+        {"label": "Filter Toolbar"},
+        {"label": "Wireless Toolbar"},
+        {"label": "Status Bar"},
+        {"separator": true},
+        {"label": "Full Screen"},
+        {"separator": true},
+        {"label": "Packet List"},
+        {"label": "Packet Details"},
+        {"label": "Packet Bytes"},
+        {"label": "Packet Diagram"},
+        {"separator": true},
+        {"label": "Time Display Format", "items": [
+          {"label": "Date and Time of Day (1970-01-01 01:02:03.123456)", "shortcut": "<Ctrl><Alt>1"},
+          {"label": "Year, Day of Year, and Time of Day (1970/001 01:02:03.123456)"},
+          {"label": "Time of Day (01:02:03.123456)", "shortcut": "<Ctrl><Alt>2"},
+          {"label": "Seconds Since 1970-01-01", "shortcut": "<Ctrl><Alt>3"},
+          {"label": "Seconds Since Capture Start"},
+          {"label": "Seconds Since First Captured Packet", "shortcut": "<Ctrl><Alt>4"},
+          {"label": "Seconds Since Previous Captured Packet", "shortcut": "<Ctrl><Alt>5"},
+          {"label": "Seconds Since Previous Displayed Packet", "shortcut": "<Ctrl><Alt>6"},
+          {"label": "UTC Date and Time of Day (1970-01-01 01:02:03.123456Z)", "shortcut": "<Ctrl><Alt>7"},
+          {"label": "UTC Year, Day of Year, and Time of Day (1970/001 01:02:03.123456Z)"},
+          {"label": "UTC Time of Day (01:02:03.123456Z)", "shortcut": "<Ctrl><Alt>8"},
+          {"separator": true},
+          {"label": "Automatic (from capture file)"},
+          {"label": "Seconds"},
+          {"label": "Tenths of a second"},
+          {"label": "Hundredths of a second"},
+          {"label": "Milliseconds"},
+          {"label": "Tenths of a millisecond"},
+          {"label": "Hundredths of a millisecond"},
+          {"label": "Microseconds"},
+          {"label": "Tenths of a microsecond"},
+          {"label": "Hundredths of a microsecond"},
+          {"label": "Nanoseconds"},
+          {"separator": true},
+          {"label": "Display Seconds With Hours and Minutes"}
+        ]},
+        {"label": "Name Resolution", "items": [
+          {"label": "Edit Resolved Name"},
+          {"separator": true},
+          {"label": "Resolve Physical Addresses"},
+          {"label": "Resolve Network Addresses"},
+          {"label": "Resolve Transport Addresses"}
+        ]},
+        {"separator": true},
+        {"label": "Zoom", "items": [
+          {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+          {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+          {"label": "Normal Size", "shortcut": "<Ctrl>0"}
+        ]},
+        {"separator": true},
+        {"label": "Expand Subtrees", "shortcut": "<Shift>Right"},
+        {"label": "Collapse Subtrees", "shortcut": "<Shift>Left"},
+        {"label": "Expand All", "shortcut": "<Ctrl>Right"},
+        {"label": "Collapse All", "shortcut": "<Ctrl>Left"},
+        {"separator": true},
+        {"label": "Colorize Packet List"},
+        {"label": "Coloring Rules…"},
+        {"label": "Colorize Conversation", "items": [
+          {"label": "Color 1", "shortcut": "<Ctrl>1"},
+          {"label": "Color 2", "shortcut": "<Ctrl>2"},
+          {"label": "Color 3", "shortcut": "<Ctrl>3"},
+          {"label": "Color 4", "shortcut": "<Ctrl>4"},
+          {"label": "Color 5", "shortcut": "<Ctrl>5"},
+          {"label": "Color 6", "shortcut": "<Ctrl>6"},
+          {"label": "Color 7", "shortcut": "<Ctrl>7"},
+          {"label": "Color 8", "shortcut": "<Ctrl>8"},
+          {"label": "Color 9", "shortcut": "<Ctrl>9"},
+          {"label": "Color 10"},
+          {"separator": true},
+          {"label": "Reset Colorization", "shortcut": "<Ctrl>space"},
+          {"label": "New Coloring Rule…"}
+        ]},
+        {"separator": true},
+        {"label": "Reset Layout", "shortcut": "<Ctrl><Shift>W"},
+        {"label": "Resize Columns", "shortcut": "<Ctrl><Shift>R"},
+        {"separator": true},
+        {"label": "Internals", "items": [
+          {"label": "Conversation Hash Tables"},
+          {"label": "Dissector Tables"},
+          {"label": "Supported Protocols"},
+          {"label": "Keyboard Shortcuts"},
+          {"label": "Theme Debug"}
+        ]},
+        {"separator": true},
+        {"label": "Show Packet in New Window"},
+        {"label": "Redissect Packets"},
+        {"label": "Reload as File Format/Capture", "shortcut": "<Ctrl><Shift>F"},
+        {"label": "Reload", "shortcut": "<Ctrl>R"}
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {"label": "Go to Packet…", "shortcut": "<Ctrl>G"},
+        {"label": "Go to Linked Packet"},
+        {"separator": true},
+        {"label": "Next Packet", "shortcut": "<Ctrl>Down"},
+        {"label": "Previous Packet", "shortcut": "<Ctrl>Up"},
+        {"label": "First Packet", "shortcut": "<Ctrl>Home"},
+        {"label": "Last Packet", "shortcut": "<Ctrl>End"},
+        {"label": "Next Packet in Conversation", "shortcut": "<Ctrl>period"},
+        {"label": "Previous Packet in Conversation", "shortcut": "<Ctrl>comma"},
+        {"label": "First Packet in Conversation"},
+        {"label": "Last Packet in Conversation"},
+        {"label": "Next Packet In History", "shortcut": "<Alt>Right"},
+        {"label": "Previous Packet In History", "shortcut": "<Alt>Left"},
+        {"separator": true},
+        {"label": "Auto Scroll in Live Capture"},
+        {"label": "Aggregation in Live Capture"}
+      ]
+    },
+    {
+      "label": "Capture",
+      "items": [
+        {"label": "Options…", "shortcut": "<Ctrl>K"},
+        {"label": "Start", "shortcut": "<Ctrl>E"},
+        {"label": "Stop", "shortcut": "<Ctrl>E"},
+        {"label": "Restart", "shortcut": "<Ctrl>R"},
+        {"label": "Capture Filters…"},
+        {"label": "Refresh Interfaces", "shortcut": "F5"}
+      ]
+    },
+    {
+      "label": "Analyze",
+      "items": [
+        {"label": "Display Filters…"},
+        {"label": "Display Filter Macros…"},
+        {"label": "Display Filter Expression…"},
+        {"separator": true},
+        {"label": "Apply as Column", "shortcut": "<Ctrl><Shift>I"},
+        {"separator": true},
+        {"label": "Enabled Protocols…", "shortcut": "<Ctrl><Shift>E"},
+        {"label": "Decode As…", "shortcut": "<Ctrl><Shift>U"},
+        {"label": "Reload Lua Plugins", "shortcut": "<Ctrl><Shift>L"},
+        {"separator": true},
+        {"label": "SCTP", "items": [
+          {"label": "Analyse this Association"},
+          {"label": "Show All Associations"},
+          {"label": "Filter this Association"}
+        ]},
+        {"separator": true},
+        {"label": "Follow", "items": [
+          {"label": "TCP Stream", "shortcut": "<Ctrl><Shift><Alt>T"},
+          {"label": "UDP Stream", "shortcut": "<Ctrl><Shift><Alt>U"},
+          {"label": "DCCP Stream", "shortcut": "<Ctrl><Shift><Alt>E"},
+          {"label": "TLS Stream", "shortcut": "<Ctrl><Shift><Alt>S"},
+          {"label": "HTTP Stream", "shortcut": "<Ctrl><Shift><Alt>H"}
+        ]},
+        {"separator": true},
+        {"label": "Show Packet Bytes…", "shortcut": "<Ctrl><Shift>O"},
+        {"label": "Expert Information"}
+      ]
+    },
+    {
+      "label": "Statistics",
+      "items": [
+        {"label": "Capture File Properties", "shortcut": "<Ctrl><Shift><Alt>C"},
+        {"label": "Resolved Addresses"},
+        {"label": "Protocol Hierarchy"},
+        {"label": "Conversations"},
+        {"label": "Endpoints"},
+        {"label": "Packet Lengths"},
+        {"label": "I/O Graphs"},
+        {"label": "Plots"},
+        {"label": "Distribution"}
+      ]
+    },
+    {
+      "label": "Telephony",
+      "items": [
+        {"label": "VoIP Calls"},
+        {"label": "RTP", "items": [
+          {"label": "RTP Streams"},
+          {"label": "RTP Stream Analysis"},
+          {"label": "RTP Player"}
+        ]}
+      ]
+    },
+    {
+      "label": "Wireless",
+      "items": [
+        {"label": "Bluetooth ATT Server Attributes"},
+        {"label": "Bluetooth Devices"},
+        {"label": "Bluetooth HCI Summary"},
+        {"separator": true},
+        {"label": "WLAN Traffic"}
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {"label": "Firewall ACL Rules"},
+        {"label": "Credentials"},
+        {"label": "MAC Address Blocks"},
+        {"label": "TLS Keylog Launcher"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "User's Guide", "shortcut": "F1"},
+        {"label": "Manual pages", "items": [
+          {"label": "Wireshark"},
+          {"label": "Display Filters"},
+          {"label": "Display Filter Reference"},
+          {"separator": true},
+          {"label": "Capinfos"},
+          {"label": "Dumpcap"},
+          {"label": "Editcap"},
+          {"label": "Mergecap"},
+          {"label": "Rawshark"},
+          {"label": "Reordercap"},
+          {"label": "Text2pcap"},
+          {"label": "TShark"}
+        ]},
+        {"separator": true},
+        {"label": "Website"},
+        {"label": "FAQs"},
+        {"label": "Ask (QA)"},
+        {"label": "Downloads"},
+        {"label": "Wiki"},
+        {"label": "Sample Captures"},
+        {"label": "Release Notes"},
+        {"separator": true},
+        {"label": "About Wireshark"},
+        {"separator": true},
+        {"label": "Check for Updates…"}
+      ]
+    }
+  ]
+}

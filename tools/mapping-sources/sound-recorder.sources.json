@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "app": "sound-recorder",
+  "repos": {
+    "sound-recorder": {
+      "url": "https://gitlab.gnome.org/World/vocalis.git",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Record"
+      ],
+      "shortcut": "<Ctrl>R",
+      "file": "src/application.ts",
+      "line": 116,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "General",
+        "Stop Recording"
+      ],
+      "shortcut": "S",
+      "file": "src/application.ts",
+      "line": 120,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "General",
+        "Play / Pause / Resume"
+      ],
+      "shortcut": "space",
+      "file": "src/application.ts",
+      "line": 117,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "General",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "file": "src/application.ts",
+      "line": 119,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "General",
+        "Open Main Menu"
+      ],
+      "shortcut": "F10",
+      "file": "src/application.ts",
+      "line": 112,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "file": "src/application.ts",
+      "line": 114,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "file": "src/application.ts",
+      "line": 111,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "Recording",
+        "Seek Backward"
+      ],
+      "shortcut": "B",
+      "file": "src/application.ts",
+      "line": 124,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "Recording",
+        "Seek Forward"
+      ],
+      "shortcut": "N",
+      "file": "src/application.ts",
+      "line": 125,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "Recording",
+        "Rename"
+      ],
+      "shortcut": "F2",
+      "file": "src/application.ts",
+      "line": 126,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    },
+    {
+      "path": [
+        "Recording",
+        "Export"
+      ],
+      "shortcut": "<Ctrl>S",
+      "file": "src/application.ts",
+      "line": 128,
+      "repo": "sound-recorder",
+      "commit": "902c7ee099f63c91d5c8b901987825b869c0fffa"
+    }
+  ]
+}

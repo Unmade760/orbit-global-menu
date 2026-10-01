@@ -1,0 +1,683 @@
+{
+  "format": 1,
+  "app": "videos",
+  "repos": {
+    "totem": {
+      "url": "https://gitlab.gnome.org/GNOME/totem.git",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Show Help"
+      ],
+      "shortcut": "F1",
+      "file": "data/shortcuts.ui",
+      "line": 20,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "file": "data/shortcuts.ui",
+      "line": 27,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts (Alternate)"
+      ],
+      "shortcut": "<Ctrl>H",
+      "file": "data/shortcuts.ui",
+      "line": 27,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Keyboard Shortcuts (Alternate 2)"
+      ],
+      "shortcut": "<Ctrl>F1",
+      "file": "data/shortcuts.ui",
+      "line": 27,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Open Main Menu"
+      ],
+      "shortcut": "F10",
+      "file": "src/totem-menu.c",
+      "line": 356,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Add Local Video"
+      ],
+      "shortcut": "<Ctrl>O",
+      "file": "data/shortcuts.ui",
+      "line": 34,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Add Web Video"
+      ],
+      "shortcut": "<Ctrl>L",
+      "file": "data/shortcuts.ui",
+      "line": 41,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Properties"
+      ],
+      "shortcut": "<Ctrl>P",
+      "file": "data/shortcuts.ui",
+      "line": 48,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Properties (Alternate)"
+      ],
+      "shortcut": "<Ctrl>I",
+      "file": "data/shortcuts.ui",
+      "line": 48,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Make Available Offline"
+      ],
+      "shortcut": "<Ctrl>S",
+      "file": "data/shortcuts.ui",
+      "line": 55,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Take Screenshot"
+      ],
+      "shortcut": "<Ctrl><Alt>S",
+      "file": "data/shortcuts.ui",
+      "line": 62,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Eject"
+      ],
+      "shortcut": "<Ctrl>E",
+      "file": "data/totem.ui",
+      "line": 98,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "file": "data/shortcuts.ui",
+      "line": 69,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Quit (Alternate)"
+      ],
+      "shortcut": "<Ctrl>W",
+      "file": "data/shortcuts.ui",
+      "line": 69,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "General",
+        "Quit (Alternate 2)"
+      ],
+      "shortcut": "Q",
+      "file": "data/shortcuts.ui",
+      "line": 69,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause"
+      ],
+      "shortcut": "P",
+      "file": "data/shortcuts.ui",
+      "line": 144,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause (Alternate)"
+      ],
+      "shortcut": "K",
+      "file": "data/shortcuts.ui",
+      "line": 144,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause (Alternate 2)"
+      ],
+      "shortcut": "<Ctrl>space",
+      "file": "data/shortcuts.ui",
+      "line": 144,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Previous Video or Chapter"
+      ],
+      "shortcut": "B",
+      "file": "data/shortcuts.ui",
+      "line": 151,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Previous Video or Chapter (Alternate)"
+      ],
+      "shortcut": "<Alt>Left",
+      "file": "data/shortcuts.ui",
+      "line": 151,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Previous Video or Chapter (Alternate 2)"
+      ],
+      "shortcut": "minus",
+      "file": "data/shortcuts.ui",
+      "line": 151,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next Video or Chapter"
+      ],
+      "shortcut": "N",
+      "file": "data/shortcuts.ui",
+      "line": 159,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next Video or Chapter (Alternate)"
+      ],
+      "shortcut": "<Alt>Right",
+      "file": "data/shortcuts.ui",
+      "line": 159,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next Video or Chapter (Alternate 2)"
+      ],
+      "shortcut": "plus",
+      "file": "data/shortcuts.ui",
+      "line": 159,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Step Back One Frame"
+      ],
+      "shortcut": "comma",
+      "file": "data/shortcuts.ui",
+      "line": 205,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Playback",
+        "Step Forward One Frame"
+      ],
+      "shortcut": "period",
+      "file": "data/shortcuts.ui",
+      "line": 212,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go Back 15 Seconds"
+      ],
+      "shortcut": "Left",
+      "file": "data/shortcuts.ui",
+      "line": 189,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go Forward 60 Seconds"
+      ],
+      "shortcut": "Right",
+      "file": "data/shortcuts.ui",
+      "line": 197,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go Back 5 Seconds"
+      ],
+      "shortcut": "<Shift>Left",
+      "file": "data/shortcuts.ui",
+      "line": 219,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go Forward 15 Seconds"
+      ],
+      "shortcut": "<Shift>Right",
+      "file": "data/shortcuts.ui",
+      "line": 227,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go Back 3 Minutes"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "file": "data/shortcuts.ui",
+      "line": 235,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go Forward 10 Minutes"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "file": "data/shortcuts.ui",
+      "line": 243,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to Start"
+      ],
+      "shortcut": "Home",
+      "file": "src/totem-object.c",
+      "line": 3503,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to 10%"
+      ],
+      "shortcut": "1",
+      "file": "data/shortcuts.ui",
+      "line": 299,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to 20%"
+      ],
+      "shortcut": "2",
+      "file": "data/shortcuts.ui",
+      "line": 299,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to 30%"
+      ],
+      "shortcut": "3",
+      "file": "data/shortcuts.ui",
+      "line": 299,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to 40%"
+      ],
+      "shortcut": "4",
+      "file": "data/shortcuts.ui",
+      "line": 299,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to 50%"
+      ],
+      "shortcut": "5",
+      "file": "data/shortcuts.ui",
+      "line": 299,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to 60%"
+      ],
+      "shortcut": "6",
+      "file": "data/shortcuts.ui",
+      "line": 299,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to 70%"
+      ],
+      "shortcut": "7",
+      "file": "data/shortcuts.ui",
+      "line": 299,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to 80%"
+      ],
+      "shortcut": "8",
+      "file": "data/shortcuts.ui",
+      "line": 299,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Skip",
+        "Go to 90%"
+      ],
+      "shortcut": "9",
+      "file": "data/shortcuts.ui",
+      "line": 299,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "F",
+      "file": "data/shortcuts.ui",
+      "line": 109,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Fullscreen (Alternate)"
+      ],
+      "shortcut": "F11",
+      "file": "data/shortcuts.ui",
+      "line": 109,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "View",
+        "Exit Fullscreen"
+      ],
+      "shortcut": "Escape",
+      "file": "data/shortcuts.ui",
+      "line": 116,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "View",
+        "Rotate \u21b7"
+      ],
+      "shortcut": "<Ctrl>R",
+      "file": "data/shortcuts.ui",
+      "line": 123,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "View",
+        "Rotate \u21b6"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "file": "data/shortcuts.ui",
+      "line": 130,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Volume",
+        "Increase Volume"
+      ],
+      "shortcut": "Up",
+      "file": "data/shortcuts.ui",
+      "line": 82,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Volume",
+        "Decrease Volume"
+      ],
+      "shortcut": "Down",
+      "file": "data/shortcuts.ui",
+      "line": 89,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Volume",
+        "Mute/Unmute"
+      ],
+      "shortcut": "M",
+      "file": "data/shortcuts.ui",
+      "line": 96,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Select Next Subtitle"
+      ],
+      "shortcut": "V",
+      "file": "data/shortcuts.ui",
+      "line": 353,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Toggle Subtitles"
+      ],
+      "shortcut": "<Shift>V",
+      "file": "data/shortcuts.ui",
+      "line": 360,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Download Movie Subtitles"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "file": "src/plugins/opensubtitles/opensubtitles.py",
+      "line": 530,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "DVD Menu",
+        "DVD Menu"
+      ],
+      "shortcut": "<Ctrl>M",
+      "file": "data/totem.ui",
+      "line": 133,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "DVD Menu",
+        "Switch Angles"
+      ],
+      "shortcut": "<Ctrl>G",
+      "file": "data/totem.ui",
+      "line": 77,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "DVD Menu",
+        "Navigate Up"
+      ],
+      "shortcut": "KP_8",
+      "file": "data/shortcuts.ui",
+      "line": 312,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "DVD Menu",
+        "Navigate Down"
+      ],
+      "shortcut": "KP_2",
+      "file": "data/shortcuts.ui",
+      "line": 319,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "DVD Menu",
+        "Navigate Left"
+      ],
+      "shortcut": "KP_4",
+      "file": "data/shortcuts.ui",
+      "line": 326,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "DVD Menu",
+        "Navigate Right"
+      ],
+      "shortcut": "KP_6",
+      "file": "data/shortcuts.ui",
+      "line": 333,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Library",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "file": "src/grilo.ui",
+      "line": 9,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    },
+    {
+      "path": [
+        "Library",
+        "Select None"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "file": "src/totem-grilo.c",
+      "line": 2231,
+      "repo": "totem",
+      "commit": "8784d998695c66ef76943763f3d93badfa3915ce"
+    }
+  ]
+}

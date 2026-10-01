@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "supermodel",
+  "repos": {
+    "supermodel": {
+      "url": "https://github.com/trzy/Supermodel.git",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Emulation",
+        "Reset"
+      ],
+      "shortcut": "<Alt>R",
+      "file": "Docs/README.txt",
+      "line": 343,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Pause"
+      ],
+      "shortcut": "<Alt>P",
+      "file": "Docs/README.txt",
+      "line": 342,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Toggle Frame Limiting"
+      ],
+      "shortcut": "<Alt>T",
+      "file": "Docs/README.txt",
+      "line": 346,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Clear NVRAM"
+      ],
+      "shortcut": "<Alt>N",
+      "file": "Docs/README.txt",
+      "line": 344,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Select Crosshairs"
+      ],
+      "shortcut": "<Alt>I",
+      "file": "Docs/README.txt",
+      "line": 345,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "Emulation",
+        "Exit"
+      ],
+      "shortcut": "Escape",
+      "file": "Docs/README.txt",
+      "line": 341,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "State",
+        "Save State"
+      ],
+      "shortcut": "F5",
+      "file": "Docs/README.txt",
+      "line": 347,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "State",
+        "Change Save Slot"
+      ],
+      "shortcut": "F6",
+      "file": "Docs/README.txt",
+      "line": 349,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "State",
+        "Load State"
+      ],
+      "shortcut": "F7",
+      "file": "Docs/README.txt",
+      "line": 348,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "Audio",
+        "Increase Music Volume"
+      ],
+      "shortcut": "F10",
+      "file": "Docs/README.txt",
+      "line": 351,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "Audio",
+        "Decrease Music Volume"
+      ],
+      "shortcut": "F9",
+      "file": "Docs/README.txt",
+      "line": 350,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "Audio",
+        "Increase Sound Volume"
+      ],
+      "shortcut": "F12",
+      "file": "Docs/README.txt",
+      "line": 353,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    },
+    {
+      "path": [
+        "Audio",
+        "Decrease Sound Volume"
+      ],
+      "shortcut": "F11",
+      "file": "Docs/README.txt",
+      "line": 352,
+      "repo": "supermodel",
+      "commit": "8b4de239bf3e0fd921f4383edcd3c21c2e62067b"
+    }
+  ]
+}

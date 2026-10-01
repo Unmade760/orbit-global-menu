@@ -1,0 +1,231 @@
+{
+  "format": 1,
+  "app": "xsane",
+  "name": "XSane",
+  "identifiers": [
+    "xsane.desktop",
+    "xsane",
+    "XSane Image scanning program"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Info",
+          "shortcut": "<Ctrl>i"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>q"
+        }
+      ]
+    },
+    {
+      "label": "Preferences",
+      "items": [
+        {
+          "label": "Show Tooltips",
+          "shortcut": "<Ctrl>t"
+        },
+        {
+          "label": "Show Resolution List",
+          "shortcut": "<Ctrl>l"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Setup",
+          "shortcut": "<Alt>s"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save Device Settings",
+          "shortcut": "<Ctrl>p"
+        },
+        {
+          "label": "Load Device Settings",
+          "shortcut": "<Ctrl>g"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Show Preview",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Show Histogram",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Show Batch Scan",
+          "shortcut": "<Ctrl>4"
+        },
+        {
+          "label": "Show Standard Options",
+          "shortcut": "<Ctrl>5"
+        },
+        {
+          "label": "Show Advanced Options",
+          "shortcut": "<Ctrl>6"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "XSane Doc",
+          "shortcut": "F1"
+        },
+        {
+          "label": "Problems?",
+          "shortcut": "F4"
+        },
+        {
+          "label": "Scantips",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "About XSane",
+          "shortcut": "F6"
+        },
+        {
+          "label": "About Translation",
+          "shortcut": "F7"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show License (GPL)",
+          "shortcut": "F9"
+        }
+      ]
+    },
+    {
+      "label": "Scan",
+      "items": [
+        {
+          "label": "Scan",
+          "shortcut": "<Ctrl>Return"
+        },
+        {
+          "label": "Cancel Scan",
+          "shortcut": "Escape"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "RGB Default",
+          "shortcut": "<Ctrl>b"
+        },
+        {
+          "label": "Negative",
+          "shortcut": "<Ctrl>n"
+        },
+        {
+          "label": "Autoadjust Gamma, Brightness and Contrast",
+          "shortcut": "<Ctrl>a"
+        },
+        {
+          "label": "Set Default Enhancement Values",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Restore Enhancement Values from Preferences",
+          "shortcut": "<Ctrl>r"
+        },
+        {
+          "label": "Store Active Enhancement Values to Preferences",
+          "shortcut": "<Ctrl>plus"
+        }
+      ]
+    },
+    {
+      "label": "Preview",
+      "items": [
+        {
+          "label": "Acquire Preview",
+          "shortcut": "<Alt>p"
+        },
+        {
+          "label": "Cancel Preview"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Alt>KP_Subtract"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Alt>KP_Add"
+        },
+        {
+          "label": "Zoom into Selected Area",
+          "shortcut": "<Alt>KP_Enter"
+        },
+        {
+          "label": "Undo Last Zoom",
+          "shortcut": "<Alt>KP_Divide"
+        },
+        {
+          "label": "Use Full Scan Area",
+          "shortcut": "<Alt>KP_Multiply"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Autoselect Scan Area",
+          "shortcut": "<Alt>a"
+        },
+        {
+          "label": "Select Visible Area",
+          "shortcut": "<Alt>v"
+        }
+      ]
+    },
+    {
+      "label": "Histogram",
+      "items": [
+        {
+          "label": "Show Histogram of Intensity/Gray",
+          "shortcut": "<Alt>i"
+        },
+        {
+          "label": "Show Histogram of Red Component",
+          "shortcut": "<Alt>r"
+        },
+        {
+          "label": "Show Histogram of Green Component",
+          "shortcut": "<Alt>g"
+        },
+        {
+          "label": "Show Histogram of Blue Component",
+          "shortcut": "<Alt>b"
+        },
+        {
+          "label": "Show Histogram with Lines Instead of Pixels",
+          "shortcut": "<Alt>m"
+        },
+        {
+          "label": "Show Logarithm of Pixelcount",
+          "shortcut": "<Alt>l"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "format": 1,
+  "app": "strawberry-music-player",
+  "repos": {
+    "strawberry-music-player": {
+      "url": "https://github.com/strawberrymusicplayer/strawberry.git",
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Music",
+        "Previous Track"
+      ],
+      "shortcut": "F5",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 540,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Music",
+        "Play"
+      ],
+      "shortcut": "F6",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 548,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Music",
+        "Stop"
+      ],
+      "shortcut": "F7",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 559,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Music",
+        "Next Track"
+      ],
+      "shortcut": "F8",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 567,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Music",
+        "Stop After This Track"
+      ],
+      "shortcut": "<Ctrl><Alt>V",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 586,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Music",
+        "Mute"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 809,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Music",
+        "Love"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 597,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Music",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 575,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Add File…"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 673,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "New Playlist"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 739,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Save Playlist…"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 747,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Load Playlist…"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 755,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Jump to the Currently Playing Track"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 731,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Clear Playlist"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 608,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Shuffle Playlist"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 665,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "strawberry-music-player",
+      "file": "src/playlist/playlistcontainer.cpp",
+      "line": 238,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "strawberry-music-player",
+      "file": "src/playlist/playlistcontainer.cpp",
+      "line": 240,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "strawberry-music-player",
+      "file": "src/playlist/playlistview.cpp",
+      "line": 722,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Remove from Playlist"
+      ],
+      "shortcut": "Delete",
+      "repo": "strawberry-music-player",
+      "file": "src/playlist/playlistview.cpp",
+      "line": 712,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Toggle Queue Status"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 897,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Queue Selected Tracks to Play Next"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 900,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Edit Track Information…"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 616,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Complete Tags Automatically…"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 830,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Add File(s) to Transcoder"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 859,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Go to Next Playlist Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 658,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Go to Next Playlist Tab (Alternate)"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 658,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Go to Previous Playlist Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 659,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Go to Previous Playlist Tab (Alternate)"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 659,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Go to Last Playlist Tab"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 660,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Go to Active Playlist Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 661,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Close Current Playlist Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 662,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Focus Search Field"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 1176,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Playlist",
+        "Hide Window"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.cpp",
+      "line": 1169,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Tools",
+        "Settings…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 639,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Tools",
+        "Show Sidebar"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 875,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    },
+    {
+      "path": [
+        "Help",
+        "About Strawberry"
+      ],
+      "shortcut": "F1",
+      "repo": "strawberry-music-player",
+      "file": "src/core/mainwindow.ui",
+      "line": 654,
+      "commit": "a2c37e7dfc1aea52a0f0dfaf08b2454c3140cdb8"
+    }
+  ]
+}

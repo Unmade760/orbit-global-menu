@@ -1,0 +1,37 @@
+{
+  "format": 1,
+  "app": "sound-recorder",
+  "name": "Sound Recorder",
+  "identifiers": [
+    "org.gnome.SoundRecorder.desktop",
+    "org.gnome.SoundRecorder",
+    "Sound Recorder",
+    "app.drey.Vocalis.desktop",
+    "app.drey.Vocalis",
+    "Vocalis"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {"label": "Record", "shortcut": "<Ctrl>R"},
+        {"label": "Stop Recording", "shortcut": "S"},
+        {"label": "Play / Pause / Resume", "shortcut": "space"},
+        {"label": "Delete", "shortcut": "Delete"},
+        {"separator": true},
+        {"label": "Open Main Menu", "shortcut": "F10"},
+        {"label": "Keyboard Shortcuts", "shortcut": "<Ctrl>question"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Recording",
+      "items": [
+        {"label": "Seek Backward", "shortcut": "B"},
+        {"label": "Seek Forward", "shortcut": "N"},
+        {"label": "Rename", "shortcut": "F2"},
+        {"label": "Export", "shortcut": "<Ctrl>S"}
+      ]
+    }
+  ]
+}

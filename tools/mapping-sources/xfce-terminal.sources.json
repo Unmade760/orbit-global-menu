@@ -1,0 +1,425 @@
+{
+  "format": 1,
+  "app": "xfce-terminal",
+  "repos": {
+    "xfce-terminal": {
+      "url": "https://gitlab.xfce.org/apps/xfce4-terminal.git",
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 410,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "File",
+        "Open Terminal"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 420,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "File",
+        "Undo Close Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 440,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "File",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 460,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>Q",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 480,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 500,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 520,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Alt"
+      ],
+      "shortcut": "<Ctrl><Shift>Insert",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 530,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 560,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "View",
+        "Show Menubar Temporarily"
+      ],
+      "shortcut": "F10",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 850,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 890,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 600,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom In Alt"
+      ],
+      "shortcut": "<Ctrl>KP_Add",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 610,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 620,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Out Alt"
+      ],
+      "shortcut": "<Ctrl>KP_Subtract",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 630,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 640,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Normal Size Alt"
+      ],
+      "shortcut": "<Ctrl>KP_0",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 650,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Set Title…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 670,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 690,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Scroll One Line Up"
+      ],
+      "shortcut": "<Shift>Up",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-widget.c",
+      "line": 179,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Scroll One Line Down"
+      ],
+      "shortcut": "<Shift>Down",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-widget.c",
+      "line": 189,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Scroll One Page Up"
+      ],
+      "shortcut": "<Shift>Page_Up",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-widget.c",
+      "line": 199,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Scroll One Page Down"
+      ],
+      "shortcut": "<Shift>Page_Down",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-widget.c",
+      "line": 209,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Previous Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 760,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Next Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 770,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 790,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 800,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Tab 1"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 921,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Tab 2"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 931,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Tab 3"
+      ],
+      "shortcut": "<Alt>3",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 941,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Tab 4"
+      ],
+      "shortcut": "<Alt>4",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 951,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Tab 5"
+      ],
+      "shortcut": "<Alt>5",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 961,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Tab 6"
+      ],
+      "shortcut": "<Alt>6",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 971,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Tab 7"
+      ],
+      "shortcut": "<Alt>7",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 981,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Tab 8"
+      ],
+      "shortcut": "<Alt>8",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 991,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Tab 9"
+      ],
+      "shortcut": "<Alt>9",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 1001,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "xfce-terminal",
+      "file": "terminal/terminal-window.c",
+      "line": 820,
+      "commit": "ee94e32f4c4a523c6a5bd699aa66e1c4bd483ca7"
+    }
+  ]
+}

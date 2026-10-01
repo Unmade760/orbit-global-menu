@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "app": "turbowarp",
+  "repos": {
+    "turbowarp": {
+      "url": "https://github.com/TurboWarp/desktop.git",
+      "commit": "62817d5431c0e25ccdcd2ce2c1345d2691482bab"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "turbowarp",
+      "file": "src-main/windows/abstract.js",
+      "line": 252,
+      "commit": "62817d5431c0e25ccdcd2ce2c1345d2691482bab"
+    },
+    {
+      "path": [
+        "View",
+        "Reload"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "turbowarp",
+      "file": "src-main/windows/abstract.js",
+      "line": 290,
+      "commit": "62817d5431c0e25ccdcd2ce2c1345d2691482bab"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "turbowarp",
+      "file": "src-main/windows/abstract.js",
+      "line": 261,
+      "commit": "62817d5431c0e25ccdcd2ce2c1345d2691482bab"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "turbowarp",
+      "file": "src-main/windows/abstract.js",
+      "line": 267,
+      "commit": "62817d5431c0e25ccdcd2ce2c1345d2691482bab"
+    },
+    {
+      "path": [
+        "View",
+        "Actual Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "turbowarp",
+      "file": "src-main/windows/abstract.js",
+      "line": 273,
+      "commit": "62817d5431c0e25ccdcd2ce2c1345d2691482bab"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "turbowarp",
+      "file": "src-main/windows/abstract.js",
+      "line": 279,
+      "commit": "62817d5431c0e25ccdcd2ce2c1345d2691482bab"
+    },
+    {
+      "path": [
+        "Developer",
+        "Toggle Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "turbowarp",
+      "file": "src-main/windows/abstract.js",
+      "line": 246,
+      "commit": "62817d5431c0e25ccdcd2ce2c1345d2691482bab"
+    }
+  ]
+}

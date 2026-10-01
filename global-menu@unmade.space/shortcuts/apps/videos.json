@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "app": "videos",
+  "name": "Videos",
+  "identifiers": [
+    "org.gnome.Totem.desktop",
+    "org.gnome.Totem",
+    "Videos",
+    "totem"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {"label": "Show Help", "shortcut": "F1"},
+        {"label": "Keyboard Shortcuts", "shortcut": "<Ctrl>question"},
+        {"label": "Keyboard Shortcuts (Alternate)", "shortcut": "<Ctrl>H"},
+        {"label": "Keyboard Shortcuts (Alternate 2)", "shortcut": "<Ctrl>F1"},
+        {"label": "Open Main Menu", "shortcut": "F10"},
+        {"separator": true},
+        {"label": "Add Local Video", "shortcut": "<Ctrl>O"},
+        {"label": "Add Web Video", "shortcut": "<Ctrl>L"},
+        {"label": "Properties", "shortcut": "<Ctrl>P"},
+        {"label": "Properties (Alternate)", "shortcut": "<Ctrl>I"},
+        {"label": "Make Available Offline", "shortcut": "<Ctrl>S"},
+        {"label": "Take Screenshot", "shortcut": "<Ctrl><Alt>S"},
+        {"label": "Eject", "shortcut": "<Ctrl>E"},
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"},
+        {"label": "Quit (Alternate)", "shortcut": "<Ctrl>W"},
+        {"label": "Quit (Alternate 2)", "shortcut": "Q"}
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {"label": "Play/Pause", "shortcut": "P"},
+        {"label": "Play/Pause (Alternate)", "shortcut": "K"},
+        {"label": "Play/Pause (Alternate 2)", "shortcut": "<Ctrl>space"},
+        {"label": "Previous Video or Chapter", "shortcut": "B"},
+        {"label": "Previous Video or Chapter (Alternate)", "shortcut": "<Alt>Left"},
+        {"label": "Previous Video or Chapter (Alternate 2)", "shortcut": "minus"},
+        {"label": "Next Video or Chapter", "shortcut": "N"},
+        {"label": "Next Video or Chapter (Alternate)", "shortcut": "<Alt>Right"},
+        {"label": "Next Video or Chapter (Alternate 2)", "shortcut": "plus"},
+        {"separator": true},
+        {"label": "Step Back One Frame", "shortcut": "comma"},
+        {"label": "Step Forward One Frame", "shortcut": "period"}
+      ]
+    },
+    {
+      "label": "Skip",
+      "items": [
+        {"label": "Go Back 15 Seconds", "shortcut": "Left"},
+        {"label": "Go Forward 60 Seconds", "shortcut": "Right"},
+        {"label": "Go Back 5 Seconds", "shortcut": "<Shift>Left"},
+        {"label": "Go Forward 15 Seconds", "shortcut": "<Shift>Right"},
+        {"label": "Go Back 3 Minutes", "shortcut": "<Ctrl>Left"},
+        {"label": "Go Forward 10 Minutes", "shortcut": "<Ctrl>Right"},
+        {"separator": true},
+        {"label": "Go to Start", "shortcut": "Home"},
+        {"label": "Go to 10%", "shortcut": "1"},
+        {"label": "Go to 20%", "shortcut": "2"},
+        {"label": "Go to 30%", "shortcut": "3"},
+        {"label": "Go to 40%", "shortcut": "4"},
+        {"label": "Go to 50%", "shortcut": "5"},
+        {"label": "Go to 60%", "shortcut": "6"},
+        {"label": "Go to 70%", "shortcut": "7"},
+        {"label": "Go to 80%", "shortcut": "8"},
+        {"label": "Go to 90%", "shortcut": "9"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Toggle Fullscreen", "shortcut": "F"},
+        {"label": "Toggle Fullscreen (Alternate)", "shortcut": "F11"},
+        {"label": "Exit Fullscreen", "shortcut": "Escape"},
+        {"separator": true},
+        {"label": "Rotate ↷", "shortcut": "<Ctrl>R"},
+        {"label": "Rotate ↶", "shortcut": "<Ctrl><Shift>R"}
+      ]
+    },
+    {
+      "label": "Volume",
+      "items": [
+        {"label": "Increase Volume", "shortcut": "Up"},
+        {"label": "Decrease Volume", "shortcut": "Down"},
+        {"label": "Mute/Unmute", "shortcut": "M"}
+      ]
+    },
+    {
+      "label": "Subtitles",
+      "items": [
+        {"label": "Select Next Subtitle", "shortcut": "V"},
+        {"label": "Toggle Subtitles", "shortcut": "<Shift>V"},
+        {"label": "Download Movie Subtitles", "shortcut": "<Ctrl><Shift>S"}
+      ]
+    },
+    {
+      "label": "DVD Menu",
+      "items": [
+        {"label": "DVD Menu", "shortcut": "<Ctrl>M"},
+        {"label": "Switch Angles", "shortcut": "<Ctrl>G"},
+        {"separator": true},
+        {"label": "Navigate Up", "shortcut": "KP_8"},
+        {"label": "Navigate Down", "shortcut": "KP_2"},
+        {"label": "Navigate Left", "shortcut": "KP_4"},
+        {"label": "Navigate Right", "shortcut": "KP_6"}
+      ]
+    },
+    {
+      "label": "Library",
+      "items": [
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"label": "Select None", "shortcut": "<Ctrl><Shift>A"}
+      ]
+    }
+  ]
+}

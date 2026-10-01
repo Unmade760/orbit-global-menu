@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "app": "video-downloader",
+  "name": "Video Downloader",
+  "identifiers": [
+    "com.github.unrud.VideoDownloader.desktop",
+    "com.github.unrud.VideoDownloader",
+    "video-downloader",
+    "Video Downloader"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Open Menu",
+          "shortcut": "F10"
+        },
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "<Ctrl>question"
+        }
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {
+          "label": "Go Back",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Switch to Audio",
+          "shortcut": "<Alt>A"
+        },
+        {
+          "label": "Switch to Video",
+          "shortcut": "<Alt>V"
+        }
+      ]
+    }
+  ]
+}

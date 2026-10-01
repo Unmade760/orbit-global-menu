@@ -1,0 +1,55 @@
+{
+  "format": 1,
+  "app": "vacuumtube",
+  "name": "VacuumTube",
+  "identifiers": [
+    "rocks.shy.VacuumTube.desktop",
+    "rocks.shy.VacuumTube",
+    "VacuumTube",
+    "startvacuumtube"
+  ],
+  "menus": [
+    {
+      "label": "VacuumTube",
+      "items": [
+        {
+          "label": "Open VacuumTube Settings",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Copy Current Video URL",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "Simulate Long Press of Enter",
+          "shortcut": "<Shift>Return"
+        },
+        {
+          "label": "Developer Tools",
+          "shortcut": "<Ctrl><Shift>I"
+        }
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {
+          "label": "Toggle Mute",
+          "shortcut": "m"
+        },
+        {
+          "label": "Increase Playback Speed",
+          "shortcut": "d"
+        },
+        {
+          "label": "Decrease Playback Speed",
+          "shortcut": "a"
+        },
+        {
+          "label": "Toggle Captions",
+          "shortcut": "c"
+        }
+      ]
+    }
+  ]
+}

@@ -220,11 +220,19 @@
 - SMPlayer
 - Sober
 - Software (GNOME Software)
+- Sound Juicer
+- Sound Recorder
+- Spectacle
+- Speech Note
 - Spotify
 - Standard Notes
 - Steam
+- Sticky Notes
+- Strawberry Music Player
 - Stremio
 - Sublime Text
+- Super Productivity
+- Supermodel
 - System Monitor
 - Telegram
 - Terminator
@@ -237,21 +245,34 @@
 - Tor Browser
 - Transmission
 - Trello
+- TurboWarp
 - Typora
 - Upscayl
+- VacuumTube
+- Vesktop
 - Viber
+- Video Downloader
 - Video Trimmer
+- Videos (Totem)
 - Virt-Manager
 - VirtualBox
 - Vivaldi
 - VLC Media Player
 - VS Code
 - VSCodium
+- Warehouse
 - Warp
 - Weather
 - WebStorm
 - WezTerm
+- Whatsie
+- Wireshark
+- WPS Office
+- Xarchiver
+- Xfce Terminal
 - Xournal++
+- XSane
+- ZapZap
 - Zathura
 - Zed
 - Zen Browser

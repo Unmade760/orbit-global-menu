@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "app": "speech-note",
+  "name": "Speech Note",
+  "identifiers": ["net.mkiol.SpeechNote.desktop", "net.mkiol.SpeechNote", "dsnote.desktop", "dsnote", "Speech Note"],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Open Menu", "shortcut": "F10"},
+        {"label": "Open File Menu", "shortcut": "<Ctrl>F"},
+        {"separator": true},
+        {"label": "Import from a File", "shortcut": "<Ctrl>O"},
+        {"label": "Import from a URL", "shortcut": "<Ctrl>U"},
+        {"label": "Export to a File", "shortcut": "<Ctrl>S"},
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"label": "Delete", "shortcut": "<Ctrl>D"},
+        {"separator": true},
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"separator": true},
+        {"label": "Cut (Alternate)", "shortcut": "<Shift>Delete"},
+        {"label": "Copy (Alternate)", "shortcut": "<Ctrl>Insert"},
+        {"label": "Paste (Alternate)", "shortcut": "<Shift>Insert"},
+        {"label": "Paste (Second Alternate)", "shortcut": "<Ctrl><Shift>Insert"},
+        {"label": "Delete (Alternate)", "shortcut": "Delete"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Languages and Models", "shortcut": "<Ctrl>L"},
+        {"label": "Voice Profiles"},
+        {"label": "Rules", "shortcut": "<Ctrl>R"},
+        {"separator": true},
+        {"label": "Notepad", "shortcut": "<Ctrl>N"},
+        {"label": "Translator", "shortcut": "<Ctrl>T"},
+        {"separator": true},
+        {"label": "Go Back", "shortcut": "<Alt>Left"},
+        {"label": "Close", "shortcut": "Escape"}
+      ]
+    },
+    {
+      "label": "Notepad",
+      "items": [
+        {"label": "Listen", "shortcut": "<Ctrl><Shift><Alt>L"},
+        {"label": "Read"},
+        {"separator": true},
+        {"label": "Pause Reading", "shortcut": "<Ctrl><Shift><Alt>P"},
+        {"label": "Stop", "shortcut": "<Ctrl><Shift><Alt>S"},
+        {"label": "Cancel", "shortcut": "<Ctrl><Shift><Alt>C"}
+      ]
+    },
+    {
+      "label": "Translator",
+      "items": [
+        {"label": "Translate", "shortcut": "<Ctrl><Shift><Alt>T"},
+        {"label": "Switch Languages", "shortcut": "<Ctrl><Shift><Alt>O"},
+        {"label": "Read Translation"}
+      ]
+    }
+  ]
+}

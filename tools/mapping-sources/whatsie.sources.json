@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "app": "whatsie",
+  "repos": {
+    "whatsie": {
+      "url": "https://github.com/keshavbhatt/whatsie.git",
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Chat",
+        "New Chat…"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 29,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "Chat",
+        "Downloads…"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 31,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "Chat",
+        "Mute Sounds"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 32,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "Chat",
+        "Blur Messages"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 33,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "Chat",
+        "Lock"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 35,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "Chat",
+        "Hide to Tray"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 28,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "View",
+        "Reload"
+      ],
+      "shortcut": "F5",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 30,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 36,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 37,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 38,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Theme"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 34,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 39,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "App",
+        "Settings…"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 40,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "App",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "F1",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 41,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "App",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "whatsie",
+      "file": "src/ui/actions.cpp",
+      "line": 43,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    },
+    {
+      "path": [
+        "View",
+        "Exit Full Screen"
+      ],
+      "shortcut": "Escape",
+      "repo": "whatsie",
+      "file": "src/ui/main_window.cpp",
+      "line": 150,
+      "commit": "1086d7eca4ed36c6b898353bc6c6468d32f82ff4"
+    }
+  ]
+}

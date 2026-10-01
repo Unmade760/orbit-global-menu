@@ -1,0 +1,989 @@
+{
+  "format": 1,
+  "app": "wireshark",
+  "repos": {
+    "wireshark": {
+      "url": "https://gitlab.com/wireshark/wireshark.git",
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 922,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 975,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1293,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1307,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "File",
+        "Export Packet Bytes…"
+      ],
+      "shortcut": "<Ctrl><Shift>X",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1323,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1336,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 936,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy",
+        "All Visible Items"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>A",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1494,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy",
+        "Description"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>D",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1466,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy",
+        "Field Name"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>F",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1510,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy",
+        "Value"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>V",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1521,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy",
+        "As Filter"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1532,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Packet…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1564,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1575,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1586,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Display Filter Input"
+      ],
+      "shortcut": "<Ctrl>slash",
+      "repo": "wireshark",
+      "file": "ui/qt/keyboard_shortcuts_dialog.cpp",
+      "line": 74,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Mark/Unmark Selected"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1597,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Mark All Displayed"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1608,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Unmark All Displayed"
+      ],
+      "shortcut": "<Ctrl><Alt>M",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1619,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Next Mark"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1630,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Previous Mark"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1641,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Ignore/Unignore Selected"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1652,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Ignore All Displayed"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1663,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Unignore All Displayed"
+      ],
+      "shortcut": "<Ctrl><Alt>D",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1674,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Set/Unset Time Reference"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1685,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Unset All Time References"
+      ],
+      "shortcut": "<Ctrl><Alt>T",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1696,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Next Time Reference"
+      ],
+      "shortcut": "<Ctrl><Alt>N",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1707,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Previous Time Reference"
+      ],
+      "shortcut": "<Ctrl><Alt>B",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1718,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Time Shift…"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1729,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Configuration Profiles…"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1778,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Edit",
+        "Preferences…"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1792,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Time Display Format",
+        "Date and Time of Day (1970-01-01 01:02:03.123456)"
+      ],
+      "shortcut": "<Ctrl><Alt>1",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2391,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Time Display Format",
+        "Time of Day (01:02:03.123456)"
+      ],
+      "shortcut": "<Ctrl><Alt>2",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2416,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Time Display Format",
+        "Seconds Since 1970-01-01"
+      ],
+      "shortcut": "<Ctrl><Alt>3",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2430,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Time Display Format",
+        "Seconds Since First Captured Packet"
+      ],
+      "shortcut": "<Ctrl><Alt>4",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2455,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Time Display Format",
+        "Seconds Since Previous Captured Packet"
+      ],
+      "shortcut": "<Ctrl><Alt>5",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2469,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Time Display Format",
+        "Seconds Since Previous Displayed Packet"
+      ],
+      "shortcut": "<Ctrl><Alt>6",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2483,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Time Display Format",
+        "UTC Date and Time of Day (1970-01-01 01:02:03.123456Z)"
+      ],
+      "shortcut": "<Ctrl><Alt>7",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2497,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Time Display Format",
+        "UTC Time of Day (01:02:03.123456Z)"
+      ],
+      "shortcut": "<Ctrl><Alt>8",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2522,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2333,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2344,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2355,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Expand Subtrees"
+      ],
+      "shortcut": "<Shift>Right",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1216,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Collapse Subtrees"
+      ],
+      "shortcut": "<Shift>Left",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1230,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Expand All"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1241,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Collapse All"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1252,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Color 1"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2995,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Color 2"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3006,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Color 3"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3017,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Color 4"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3028,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Color 5"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3039,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Color 6"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3050,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Color 7"
+      ],
+      "shortcut": "<Ctrl>7",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3061,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Color 8"
+      ],
+      "shortcut": "<Ctrl>8",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3072,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Color 9"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3083,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Colorize Conversation",
+        "Reset Colorization"
+      ],
+      "shortcut": "<Ctrl>space",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3110,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Layout"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2366,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Resize Columns"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2377,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Reload as File Format/Capture"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1378,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "View",
+        "Reload"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1367,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Packet…"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1266,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Packet"
+      ],
+      "shortcut": "<Ctrl>Down",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1109,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Packet"
+      ],
+      "shortcut": "<Ctrl>Up",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1120,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Go",
+        "First Packet"
+      ],
+      "shortcut": "<Ctrl>Home",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1175,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Go",
+        "Last Packet"
+      ],
+      "shortcut": "<Ctrl>End",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1186,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Packet in Conversation"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1131,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Packet in Conversation"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1142,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Packet In History"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1153,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Packet In History"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1164,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Capture",
+        "Options…"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1392,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Capture",
+        "Start"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 953,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Capture",
+        "Stop"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 964,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Capture",
+        "Restart"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1425,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Capture",
+        "Refresh Interfaces"
+      ],
+      "shortcut": "F5",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1414,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Apply as Column"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1553,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Enabled Protocols…"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3153,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Decode As…"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2152,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Reload Lua Plugins"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 2163,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Follow",
+        "TCP Stream"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>T",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.cpp",
+      "line": 2406,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Follow",
+        "UDP Stream"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>U",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.cpp",
+      "line": 2408,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Follow",
+        "DCCP Stream"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>E",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.cpp",
+      "line": 2411,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Follow",
+        "TLS Stream"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>S",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.cpp",
+      "line": 2413,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Follow",
+        "HTTP Stream"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>H",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.cpp",
+      "line": 2415,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Analyze",
+        "Show Packet Bytes…"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 3161,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Statistics",
+        "Capture File Properties"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>C",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 1809,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    },
+    {
+      "path": [
+        "Help",
+        "User's Guide"
+      ],
+      "shortcut": "F1",
+      "repo": "wireshark",
+      "file": "ui/qt/wireshark_main_window.ui",
+      "line": 997,
+      "commit": "37cdaf0d55b273e7aff9e7907d92ebac8cbb6031"
+    }
+  ]
+}

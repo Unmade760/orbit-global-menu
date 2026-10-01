@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "app": "xfce-terminal",
+  "name": "Xfce Terminal",
+  "identifiers": ["xfce4-terminal.desktop", "xfce4-terminal", "Xfce Terminal"],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Open Tab", "shortcut": "<Ctrl><Shift>T"},
+        {"label": "Open Terminal", "shortcut": "<Ctrl><Shift>N"},
+        {"separator": true},
+        {"label": "Undo Close Tab", "shortcut": "<Ctrl><Shift>D"},
+        {"label": "Close Tab", "shortcut": "<Ctrl><Shift>W"},
+        {"label": "Close Window", "shortcut": "<Ctrl><Shift>Q"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Copy", "shortcut": "<Ctrl><Shift>C"},
+        {"label": "Paste", "shortcut": "<Ctrl><Shift>V"},
+        {"label": "Paste Alt", "shortcut": "<Ctrl><Shift>Insert"},
+        {"label": "Select All", "shortcut": "<Ctrl><Shift>A"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Show Menubar Temporarily", "shortcut": "F10"},
+        {"label": "Fullscreen", "shortcut": "F11"},
+        {"separator": true},
+        {"label": "Zoom", "items": [
+          {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+          {"label": "Zoom In Alt", "shortcut": "<Ctrl>KP_Add"},
+          {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+          {"label": "Zoom Out Alt", "shortcut": "<Ctrl>KP_Subtract"},
+          {"label": "Normal Size", "shortcut": "<Ctrl>0"},
+          {"label": "Normal Size Alt", "shortcut": "<Ctrl>KP_0"}
+        ]}
+      ]
+    },
+    {
+      "label": "Terminal",
+      "items": [
+        {"label": "Set Title…", "shortcut": "<Ctrl><Shift>S"},
+        {"label": "Find…", "shortcut": "<Ctrl><Shift>F"},
+        {"separator": true},
+        {"label": "Scroll One Line Up", "shortcut": "<Shift>Up"},
+        {"label": "Scroll One Line Down", "shortcut": "<Shift>Down"},
+        {"label": "Scroll One Page Up", "shortcut": "<Shift>Page_Up"},
+        {"label": "Scroll One Page Down", "shortcut": "<Shift>Page_Down"}
+      ]
+    },
+    {
+      "label": "Tabs",
+      "items": [
+        {"label": "Previous Tab", "shortcut": "<Ctrl>Page_Up"},
+        {"label": "Next Tab", "shortcut": "<Ctrl>Page_Down"},
+        {"label": "Move Tab Left", "shortcut": "<Ctrl><Shift>Page_Up"},
+        {"label": "Move Tab Right", "shortcut": "<Ctrl><Shift>Page_Down"},
+        {"separator": true},
+        {"label": "Go to Tab 1", "shortcut": "<Alt>1"},
+        {"label": "Go to Tab 2", "shortcut": "<Alt>2"},
+        {"label": "Go to Tab 3", "shortcut": "<Alt>3"},
+        {"label": "Go to Tab 4", "shortcut": "<Alt>4"},
+        {"label": "Go to Tab 5", "shortcut": "<Alt>5"},
+        {"label": "Go to Tab 6", "shortcut": "<Alt>6"},
+        {"label": "Go to Tab 7", "shortcut": "<Alt>7"},
+        {"label": "Go to Tab 8", "shortcut": "<Alt>8"},
+        {"label": "Go to Tab 9", "shortcut": "<Alt>9"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Contents", "shortcut": "F1"}
+      ]
+    }
+  ]
+}

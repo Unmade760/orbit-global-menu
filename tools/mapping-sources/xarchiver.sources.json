@@ -1,0 +1,236 @@
+{
+  "format": 1,
+  "app": "xarchiver",
+  "repos": {
+    "xarchiver": {
+      "url": "https://github.com/ib/xarchiver.git",
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    "gtk3": {
+      "url": "https://gitlab.gnome.org/GNOME/gtk.git",
+      "commit": "788f4de2799b3f5902d27733ea603e8dfee8d0a6"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Archive",
+        "Test"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 847,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Archive",
+        "Properties"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 857,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Add"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 888,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Extract"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 898,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 908,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Sort"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 923,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Make SFX"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 938,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Multi-Extract"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 947,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Archive Comment"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 953,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 967,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Deselect All"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 977,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Select by Pattern"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 983,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Cmd-line Output"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 992,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Enter Password"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 1000,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Action",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 1014,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 1076,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 1086,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 1096,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Root"
+      ],
+      "shortcut": "<Alt>Home",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 1106,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "xarchiver",
+      "file": "src/interface.c",
+      "line": 1030,
+      "commit": "46258fc17b34258b732503726201096d0d60d7f9"
+    }
+  ]
+}

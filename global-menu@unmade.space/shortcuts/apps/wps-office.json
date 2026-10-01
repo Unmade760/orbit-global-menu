@@ -1,0 +1,206 @@
+{
+  "format": 1,
+  "app": "wps-office",
+  "name": "WPS Office",
+  "identifiers": [
+    "com.wps.Office.desktop",
+    "com.wps.Office",
+    "WPS Office",
+    "wpsoffice",
+    "wps-office-prometheus.desktop",
+    "wps-office-wps.desktop",
+    "wps-office-et.desktop",
+    "wps-office-wpp.desktop"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "New Blank File", "shortcut": "<Ctrl>N"},
+        {"label": "Open File", "shortcut": "<Ctrl>O"},
+        {"separator": true},
+        {"label": "Save File", "shortcut": "<Ctrl>S"},
+        {"label": "Save As", "shortcut": "F12"},
+        {"separator": true},
+        {"label": "Print", "shortcut": "<Ctrl>P"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"separator": true},
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"label": "Paste (Alternate)", "shortcut": "<Shift>Insert"},
+        {"separator": true},
+        {"label": "Find", "shortcut": "<Ctrl>F"},
+        {"label": "Replace", "shortcut": "<Ctrl>H"}
+      ]
+    },
+    {
+      "label": "Insert",
+      "items": [
+        {"label": "Insert Hyperlink", "shortcut": "<Ctrl>K"}
+      ]
+    },
+    {
+      "label": "Format",
+      "items": [
+        {"label": "Bold", "shortcut": "<Ctrl>B"},
+        {"label": "Italic", "shortcut": "<Ctrl>I"},
+        {"label": "Underline", "shortcut": "<Ctrl>U"}
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {"label": "Check Spelling", "shortcut": "F7"},
+        {"label": "Task Pane", "shortcut": "<Ctrl>F1"},
+        {"separator": true},
+        {"label": "Run Macro"},
+        {"label": "Visual Basic Editor", "shortcut": "<Alt>F11"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Help", "shortcut": "F1"}
+      ]
+    },
+    {
+      "label": "Writer",
+      "items": [
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"label": "Redo", "shortcut": "<Ctrl>Y"},
+        {"label": "Copy (Alternate)", "shortcut": "<Ctrl>Insert"},
+        {"label": "Cut (Alternate)", "shortcut": "<Shift>Delete"},
+        {"separator": true},
+        {"label": "Go To", "shortcut": "<Ctrl>G"},
+        {"label": "Insert Page Break", "shortcut": "<Ctrl>Return"},
+        {"label": "Word Count", "shortcut": "<Ctrl><Shift>G"},
+        {"label": "Track Changes", "shortcut": "<Ctrl><Shift>E"},
+        {"label": "Translation", "shortcut": "F6"},
+        {"separator": true},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+        {"label": "Next Window", "shortcut": "<Ctrl>Tab"},
+        {"label": "Previous Window", "shortcut": "<Ctrl><Shift>Tab"},
+        {"label": "Text Format", "items": [
+          {"label": "Font", "shortcut": "<Ctrl>D"},
+          {"separator": true},
+          {"label": "Align Left", "shortcut": "<Ctrl>L"},
+          {"label": "Align Center", "shortcut": "<Ctrl>E"},
+          {"label": "Align Right", "shortcut": "<Ctrl>R"},
+          {"label": "Justify", "shortcut": "<Ctrl>J"},
+          {"label": "Distributed", "shortcut": "<Ctrl><Shift>J"},
+          {"separator": true},
+          {"label": "Subscript", "shortcut": "<Ctrl>equal"},
+          {"label": "Superscript", "shortcut": "<Ctrl><Shift>equal"},
+          {"separator": true},
+          {"label": "Grow Font", "shortcut": "<Ctrl><Shift>period"},
+          {"label": "Shrink Font", "shortcut": "<Ctrl><Shift>comma"},
+          {"label": "Grow Font (Alternate)", "shortcut": "<Ctrl>bracketright"},
+          {"label": "Shrink Font (Alternate)", "shortcut": "<Ctrl>bracketleft"}
+        ]},
+        {"label": "Outline", "items": [
+          {"label": "Promote"},
+          {"label": "Demote"},
+          {"label": "Demote to Lowest Level", "shortcut": "<Ctrl><Shift>N"},
+          {"separator": true},
+          {"label": "Show Level 1", "shortcut": "<Alt><Shift>1"},
+          {"label": "Show Level 2", "shortcut": "<Alt><Shift>2"},
+          {"label": "Show Level 3", "shortcut": "<Alt><Shift>3"},
+          {"label": "Show Level 4", "shortcut": "<Alt><Shift>4"},
+          {"label": "Show Level 5", "shortcut": "<Alt><Shift>5"},
+          {"label": "Show Level 6", "shortcut": "<Alt><Shift>6"},
+          {"label": "Show Level 7", "shortcut": "<Alt><Shift>7"},
+          {"label": "Show Level 8", "shortcut": "<Alt><Shift>8"},
+          {"label": "Show Level 9", "shortcut": "<Alt><Shift>9"},
+          {"label": "Show All Levels", "shortcut": "<Alt><Shift>A"}
+        ]},
+        {"label": "Fields", "items": [
+          {"label": "View Field Codes", "shortcut": "<Alt>F9"},
+          {"label": "Update Field", "shortcut": "F9"},
+          {"separator": true},
+          {"label": "Insert Blank Field", "shortcut": "<Ctrl>F9"},
+          {"label": "Lock Field", "shortcut": "<Ctrl>F11"},
+          {"label": "Unlock Field", "shortcut": "<Ctrl><Shift>F11"},
+          {"label": "Field to Text", "shortcut": "<Ctrl><Shift>F9"}
+        ]}
+      ]
+    },
+    {
+      "label": "Spreadsheets",
+      "items": [
+        {"label": "Repeat", "shortcut": "<Ctrl>Y"},
+        {"label": "Go To", "shortcut": "<Ctrl>G"},
+        {"label": "Format Cells", "shortcut": "<Ctrl>1"},
+        {"label": "Insert", "shortcut": "<Ctrl><Shift>equal"},
+        {"label": "Close Workbook Window", "shortcut": "<Ctrl>W"},
+        {"separator": true},
+        {"label": "Edit Active Cell", "shortcut": "F2"},
+        {"label": "New Line in Cell", "shortcut": "<Alt>Return"},
+        {"label": "Fill Down", "shortcut": "<Ctrl>D"},
+        {"label": "Fill Right", "shortcut": "<Ctrl>R"},
+        {"label": "Fill Range with Current Entry", "shortcut": "<Ctrl>Return"},
+        {"label": "Insert Current Date", "shortcut": "<Ctrl>semicolon"},
+        {"label": "Insert Current Time", "shortcut": "<Ctrl>apostrophe"},
+        {"label": "Repeat Adding or Deleting Row/Column", "shortcut": "F4"},
+        {"label": "Calculate All", "shortcut": "F9"},
+        {"label": "Insert Chart", "shortcut": "F11"},
+        {"label": "Show Context Menu", "shortcut": "<Shift>F10"},
+        {"separator": true},
+        {"label": "Next Worksheet Tab", "shortcut": "<Ctrl>Tab"},
+        {"label": "Previous Worksheet Tab", "shortcut": "<Ctrl><Shift>Tab"},
+        {"label": "Switch Worksheet Tab, Right to Left", "shortcut": "<Ctrl>Page_Down"},
+        {"label": "Switch Worksheet Tab, Left to Right", "shortcut": "<Ctrl>Page_Up"},
+        {"separator": true},
+        {"label": "Go to Beginning of Worksheet", "shortcut": "<Ctrl>Home"},
+        {"label": "Extend Selection to Beginning of Worksheet", "shortcut": "<Ctrl><Shift>Home"}
+      ]
+    },
+    {
+      "label": "Presentation",
+      "items": [
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"label": "Redo", "shortcut": "<Ctrl>Y"},
+        {"label": "Copy (Alternate)", "shortcut": "<Ctrl>Insert"},
+        {"label": "Cut (Alternate)", "shortcut": "<Shift>Delete"},
+        {"separator": true},
+        {"label": "Slide Show", "shortcut": "F5"},
+        {"label": "Slide Show from Current Slide", "shortcut": "<Shift>F5"},
+        {"separator": true},
+        {"label": "Group", "shortcut": "<Ctrl>G"},
+        {"label": "Ungroup", "shortcut": "<Ctrl><Shift>G"},
+        {"label": "Show/Hide Grid", "shortcut": "<Shift>F9"},
+        {"label": "Open Thesaurus", "shortcut": "<Shift>F7"},
+        {"separator": true},
+        {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+        {"label": "Reset Zoom", "shortcut": "<Ctrl>0"},
+        {"separator": true},
+        {"label": "Increase Indent", "shortcut": "<Shift><Alt>Right"},
+        {"label": "Decrease Indent", "shortcut": "<Shift><Alt>Left"},
+        {"label": "Screen Grab", "shortcut": "<Ctrl><Alt>X"},
+        {"label": "Screen Grab Hide", "shortcut": "<Ctrl><Alt>C"},
+        {"label": "Next Window", "shortcut": "<Ctrl>Tab"},
+        {"label": "Previous Window", "shortcut": "<Ctrl><Shift>Tab"},
+        {"label": "Text Format", "items": [
+          {"label": "Align Left", "shortcut": "<Ctrl>L"},
+          {"label": "Align Center", "shortcut": "<Ctrl>E"},
+          {"label": "Align Right", "shortcut": "<Ctrl>R"},
+          {"label": "Justify", "shortcut": "<Ctrl>J"},
+          {"separator": true},
+          {"label": "Subscript", "shortcut": "<Ctrl>equal"},
+          {"label": "Superscript", "shortcut": "<Ctrl><Shift>equal"},
+          {"separator": true},
+          {"label": "Increase Font Size", "shortcut": "<Ctrl><Shift>period"},
+          {"label": "Decrease Font Size", "shortcut": "<Ctrl><Shift>comma"},
+          {"label": "Increase Font Size (Alternate)", "shortcut": "<Ctrl>bracketright"},
+          {"label": "Decrease Font Size (Alternate)", "shortcut": "<Ctrl>bracketleft"}
+        ]}
+      ]
+    }
+  ]
+}

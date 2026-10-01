@@ -1,0 +1,109 @@
+{
+  "format": 1,
+  "app": "whatsie",
+  "name": "Whatsie",
+  "identifiers": [
+    "com.ktechpit.whatsie.desktop",
+    "com.ktechpit.whatsie",
+    "whatsie"
+  ],
+  "menus": [
+    {
+      "label": "Chat",
+      "items": [
+        {
+          "label": "New Chat…",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Downloads…",
+          "shortcut": "<Ctrl>J"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Mute Sounds",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Blur Messages",
+          "shortcut": "<Ctrl><Shift>B"
+        },
+        {
+          "label": "Lock",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Hide to Tray",
+          "shortcut": "<Ctrl>W"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Reload",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Reset Zoom",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Theme",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "label": "Exit Full Screen",
+          "shortcut": "Escape"
+        }
+      ]
+    },
+    {
+      "label": "App",
+      "items": [
+        {
+          "label": "Settings…",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "F1"
+        },
+        {
+          "label": "About Whatsie"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    }
+  ]
+}

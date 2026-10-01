@@ -1,0 +1,1395 @@
+{
+  "format": 1,
+  "app": "wps-office",
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Blank File"
+      ],
+      "shortcut": "<Ctrl>N",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+N NewBlankFile"
+    },
+    {
+      "path": [
+        "File",
+        "New Blank File"
+      ],
+      "shortcut": "<Ctrl>N",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+N - Creates a new, blank workbook."
+    },
+    {
+      "path": [
+        "File",
+        "New Blank File"
+      ],
+      "shortcut": "<Ctrl>N",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+N NewBlankFile"
+    },
+    {
+      "path": [
+        "File",
+        "Open File"
+      ],
+      "shortcut": "<Ctrl>O",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+O OpenFile"
+    },
+    {
+      "path": [
+        "File",
+        "Open File"
+      ],
+      "shortcut": "<Ctrl>O",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+O - Displays the Open dialog box to open or find a file."
+    },
+    {
+      "path": [
+        "File",
+        "Open File"
+      ],
+      "shortcut": "<Ctrl>O",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+O OpenFile"
+    },
+    {
+      "path": [
+        "File",
+        "Save File"
+      ],
+      "shortcut": "<Ctrl>S",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+S SaveFile"
+    },
+    {
+      "path": [
+        "File",
+        "Save File"
+      ],
+      "shortcut": "<Ctrl>S",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+S - Saves the active file with its current file name, location, and file format."
+    },
+    {
+      "path": [
+        "File",
+        "Save File"
+      ],
+      "shortcut": "<Ctrl>S",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+S SaveFile"
+    },
+    {
+      "path": [
+        "File",
+        "Save As"
+      ],
+      "shortcut": "F12",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "F12 SaveAs"
+    },
+    {
+      "path": [
+        "File",
+        "Save As"
+      ],
+      "shortcut": "F12",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "F12 - Displays the Save As dialog box to save the file with a different name, type or location."
+    },
+    {
+      "path": [
+        "File",
+        "Save As"
+      ],
+      "shortcut": "F12",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "F12 SaveAs"
+    },
+    {
+      "path": [
+        "File",
+        "Print"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+P Print"
+    },
+    {
+      "path": [
+        "File",
+        "Print"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+P - Displays the Print dialog box."
+    },
+    {
+      "path": [
+        "File",
+        "Print"
+      ],
+      "shortcut": "<Ctrl>P",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+P Print"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Z Undo"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+Z - Uses the Undo command to reverse the last command"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Z Undo"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+X Cut"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+X - Cuts the selected cells."
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+X Cut"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+C Copy"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+C - Copies the selected cells."
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+C Copy"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+V Paste"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+V - Inserts the contents of the Clipboard at the insertion point and replaces any selection."
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+V Paste"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste (Alternate)"
+      ],
+      "shortcut": "<Shift>Insert",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Shift+Ins Paste"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste (Alternate)"
+      ],
+      "shortcut": "<Shift>Insert",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Shift+Insert - Inserts the contents of the Clipboard at the insertion point and replaces any selection."
+    },
+    {
+      "path": [
+        "Edit",
+        "Find"
+      ],
+      "shortcut": "<Ctrl>F",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+F Find"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find"
+      ],
+      "shortcut": "<Ctrl>F",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+F - Displays the Find dialog box."
+    },
+    {
+      "path": [
+        "Edit",
+        "Find"
+      ],
+      "shortcut": "<Ctrl>F",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+F Find"
+    },
+    {
+      "path": [
+        "Edit",
+        "Replace"
+      ],
+      "shortcut": "<Ctrl>H",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+H Replace"
+    },
+    {
+      "path": [
+        "Edit",
+        "Replace"
+      ],
+      "shortcut": "<Ctrl>H",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+H - Displays the Replace dialog box."
+    },
+    {
+      "path": [
+        "Edit",
+        "Replace"
+      ],
+      "shortcut": "<Ctrl>H",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+H Replace"
+    },
+    {
+      "path": [
+        "Insert",
+        "Insert Hyperlink"
+      ],
+      "shortcut": "<Ctrl>K",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+K InsertHyperlink"
+    },
+    {
+      "path": [
+        "Insert",
+        "Insert Hyperlink"
+      ],
+      "shortcut": "<Ctrl>K",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+K - Displays the Hyperlink dialog box to insert new hyperlinks"
+    },
+    {
+      "path": [
+        "Insert",
+        "Insert Hyperlink"
+      ],
+      "shortcut": "<Ctrl>K",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+K HyperlinkAlwaysVisible"
+    },
+    {
+      "path": [
+        "Format",
+        "Bold"
+      ],
+      "shortcut": "<Ctrl>B",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+B Bold"
+    },
+    {
+      "path": [
+        "Format",
+        "Bold"
+      ],
+      "shortcut": "<Ctrl>B",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+B - Applies or removes bold formatting."
+    },
+    {
+      "path": [
+        "Format",
+        "Bold"
+      ],
+      "shortcut": "<Ctrl>B",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+B Bold"
+    },
+    {
+      "path": [
+        "Format",
+        "Italic"
+      ],
+      "shortcut": "<Ctrl>I",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+I Italic"
+    },
+    {
+      "path": [
+        "Format",
+        "Italic"
+      ],
+      "shortcut": "<Ctrl>I",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+I - Applies or removes italic formatting."
+    },
+    {
+      "path": [
+        "Format",
+        "Italic"
+      ],
+      "shortcut": "<Ctrl>I",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+I Italic"
+    },
+    {
+      "path": [
+        "Format",
+        "Underline"
+      ],
+      "shortcut": "<Ctrl>U",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+U Underline"
+    },
+    {
+      "path": [
+        "Format",
+        "Underline"
+      ],
+      "shortcut": "<Ctrl>U",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+U - Applies or removes underlining."
+    },
+    {
+      "path": [
+        "Tools",
+        "Check Spelling"
+      ],
+      "shortcut": "F7",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "F7 CheckSpelling"
+    },
+    {
+      "path": [
+        "Tools",
+        "Check Spelling"
+      ],
+      "shortcut": "F7",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "F7 - Displays the Spelling dialog box"
+    },
+    {
+      "path": [
+        "Tools",
+        "Check Spelling"
+      ],
+      "shortcut": "F7",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "F7 CheckSpelling"
+    },
+    {
+      "path": [
+        "Tools",
+        "Task Pane"
+      ],
+      "shortcut": "<Ctrl>F1",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+F1 TaskPane"
+    },
+    {
+      "path": [
+        "Tools",
+        "Task Pane"
+      ],
+      "shortcut": "<Ctrl>F1",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+F1 - Displays the Task Pane"
+    },
+    {
+      "path": [
+        "Tools",
+        "Task Pane"
+      ],
+      "shortcut": "<Ctrl>F1",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+F1 TaskPane"
+    },
+    {
+      "path": [
+        "Tools",
+        "Visual Basic Editor"
+      ],
+      "shortcut": "<Alt>F11",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+F11 VisualBasicEditor"
+    },
+    {
+      "path": [
+        "Tools",
+        "Visual Basic Editor"
+      ],
+      "shortcut": "<Alt>F11",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Alt+F11 - Displays the Microsoft Visual Basic Editor"
+    },
+    {
+      "path": [
+        "Tools",
+        "Visual Basic Editor"
+      ],
+      "shortcut": "<Alt>F11",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Alt+F11 VisualBasicEditor"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "F1 Help"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "F1 - Help"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "F1 Help"
+    },
+    {
+      "path": [
+        "Writer",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+A SelectAll"
+    },
+    {
+      "path": [
+        "Writer",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Y Redo"
+    },
+    {
+      "path": [
+        "Writer",
+        "Copy (Alternate)"
+      ],
+      "shortcut": "<Ctrl>Insert",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Ins Copy"
+    },
+    {
+      "path": [
+        "Writer",
+        "Cut (Alternate)"
+      ],
+      "shortcut": "<Shift>Delete",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Shift+Del Cut"
+    },
+    {
+      "path": [
+        "Writer",
+        "Go To"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+G GoTo"
+    },
+    {
+      "path": [
+        "Writer",
+        "Insert Page Break"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Return InsertPageBreak"
+    },
+    {
+      "path": [
+        "Writer",
+        "Word Count"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+G WordCount"
+    },
+    {
+      "path": [
+        "Writer",
+        "Track Changes"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+E TrackChanges"
+    },
+    {
+      "path": [
+        "Writer",
+        "Translation"
+      ],
+      "shortcut": "F6",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "F6 Translation"
+    },
+    {
+      "path": [
+        "Writer",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+- ShrinkZoom"
+    },
+    {
+      "path": [
+        "Writer",
+        "Next Window"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Tab ActivateNextSubWindow"
+    },
+    {
+      "path": [
+        "Writer",
+        "Previous Window"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+Tab ActivatePreviousSubWindow"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Font"
+      ],
+      "shortcut": "<Ctrl>D",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+D Font"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Align Left"
+      ],
+      "shortcut": "<Ctrl>L",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+L FormatAlignLeft"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Align Center"
+      ],
+      "shortcut": "<Ctrl>E",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+E FormatAlignCenter"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Align Right"
+      ],
+      "shortcut": "<Ctrl>R",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+R FormatAlignRight"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Justify"
+      ],
+      "shortcut": "<Ctrl>J",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+J FormatAlignJustify"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Distributed"
+      ],
+      "shortcut": "<Ctrl><Shift>J",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+J FormatAlignDistributed"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Subscript"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+= Subscript"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Superscript"
+      ],
+      "shortcut": "<Ctrl><Shift>equal",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+= Superscript"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Grow Font"
+      ],
+      "shortcut": "<Ctrl><Shift>period",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+. GrowFont"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Shrink Font"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+, ShrinkFont"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Grow Font (Alternate)"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+] GrowFont"
+    },
+    {
+      "path": [
+        "Writer",
+        "Text Format",
+        "Shrink Font (Alternate)"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+[ ShrinkFont"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Demote to Lowest Level"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+N DemoteToLowestLevelOnOutlinin"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show Level 1"
+      ],
+      "shortcut": "<Alt><Shift>1",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+1 ShowLevelOnOutlining_1"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show Level 2"
+      ],
+      "shortcut": "<Alt><Shift>2",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+2 ShowLevelOnOutlining_2"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show Level 3"
+      ],
+      "shortcut": "<Alt><Shift>3",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+3 ShowLevelOnOutlining_3"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show Level 4"
+      ],
+      "shortcut": "<Alt><Shift>4",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+4 ShowLevelOnOutlining_4"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show Level 5"
+      ],
+      "shortcut": "<Alt><Shift>5",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+5 ShowLevelOnOutlining_5"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show Level 6"
+      ],
+      "shortcut": "<Alt><Shift>6",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+6 ShowLevelOnOutlining_6"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show Level 7"
+      ],
+      "shortcut": "<Alt><Shift>7",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+7 ShowLevelOnOutlining_7"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show Level 8"
+      ],
+      "shortcut": "<Alt><Shift>8",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+8 ShowLevelOnOutlining_8"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show Level 9"
+      ],
+      "shortcut": "<Alt><Shift>9",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+9 ShowLevelOnOutlining_9"
+    },
+    {
+      "path": [
+        "Writer",
+        "Outline",
+        "Show All Levels"
+      ],
+      "shortcut": "<Alt><Shift>A",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+Shift+A ShowLevelOnOutlining_All"
+    },
+    {
+      "path": [
+        "Writer",
+        "Fields",
+        "View Field Codes"
+      ],
+      "shortcut": "<Alt>F9",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Alt+F9 ViewFieldCodes"
+    },
+    {
+      "path": [
+        "Writer",
+        "Fields",
+        "Update Field"
+      ],
+      "shortcut": "F9",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "F9 UpdateField"
+    },
+    {
+      "path": [
+        "Writer",
+        "Fields",
+        "Insert Blank Field"
+      ],
+      "shortcut": "<Ctrl>F9",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+F9 InsertBlankField"
+    },
+    {
+      "path": [
+        "Writer",
+        "Fields",
+        "Lock Field"
+      ],
+      "shortcut": "<Ctrl>F11",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+F11 LockField"
+    },
+    {
+      "path": [
+        "Writer",
+        "Fields",
+        "Unlock Field"
+      ],
+      "shortcut": "<Ctrl><Shift>F11",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+F11 UnlockField"
+    },
+    {
+      "path": [
+        "Writer",
+        "Fields",
+        "Field to Text"
+      ],
+      "shortcut": "<Ctrl><Shift>F9",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-writer",
+      "quote": "Ctrl+Shift+F9 FieldToText"
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Repeat"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+Y - Repeats the last command or action, if possible."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Go To"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+G - Displays the Go To dialog box."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Format Cells"
+      ],
+      "shortcut": "<Ctrl>1",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+1 - Displays the Format Cells dialog box."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Insert"
+      ],
+      "shortcut": "<Ctrl><Shift>equal",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+Shift+= - Displays the Insert dialog box."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Close Workbook Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+W - Closes the selected workbook window."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Edit Active Cell"
+      ],
+      "shortcut": "F2",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "F2 - Edits the active cell and positions the insertion point at the end of the cell contents."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "New Line in Cell"
+      ],
+      "shortcut": "<Alt>Return",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Alt+Enter - Starts a new line in the same cell."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Fill Down"
+      ],
+      "shortcut": "<Ctrl>D",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+D - Uses the Fill Down command to copy the contents and format of the topmost cell"
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Fill Right"
+      ],
+      "shortcut": "<Ctrl>R",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+R - Uses the Fill Right command to copy the contents and format of the leftmost"
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Fill Range with Current Entry"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+Enter - Fills the selected cell range with the current entry."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Insert Current Date"
+      ],
+      "shortcut": "<Ctrl>semicolon",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+; - Enters the current date."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Insert Current Time"
+      ],
+      "shortcut": "<Ctrl>apostrophe",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+' - Enters the current time."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Repeat Adding or Deleting Row/Column"
+      ],
+      "shortcut": "F4",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "F4 - Repeats the last action of adding or deleting the whole row/column."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Calculate All"
+      ],
+      "shortcut": "F9",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "F9 - Calculates all worksheets in all open workbooks."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Insert Chart"
+      ],
+      "shortcut": "F11",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "F11 - Insert chart."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Show Context Menu"
+      ],
+      "shortcut": "<Shift>F10",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Shift+f10 - Displays context menu for a selected item."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Next Worksheet Tab"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+Tab - Goes to next worksheet tab."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Previous Worksheet Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+Shift+Tab - Goes to previous worksheet tab."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Switch Worksheet Tab, Right to Left"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+PageDown - Switches between worksheet tabs, from right-to-left."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Switch Worksheet Tab, Left to Right"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+PageUp - Switches between worksheet tabs, from left-to-right."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Go to Beginning of Worksheet"
+      ],
+      "shortcut": "<Ctrl>Home",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+Home - Moves to the beginning of a worksheet."
+    },
+    {
+      "path": [
+        "Spreadsheets",
+        "Extend Selection to Beginning of Worksheet"
+      ],
+      "shortcut": "<Ctrl><Shift>Home",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-spreadsheets",
+      "quote": "Ctrl+Shift+Home - Extends the selection of cells to the beginning of the worksheet."
+    },
+    {
+      "path": [
+        "Presentation",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+A SelectAll"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Y Redo"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Copy (Alternate)"
+      ],
+      "shortcut": "<Ctrl>Insert",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Ins Copy"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Cut (Alternate)"
+      ],
+      "shortcut": "<Shift>Delete",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Shift+Del Cut"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Slide Show"
+      ],
+      "shortcut": "F5",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "F5 SlideShow"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Slide Show from Current Slide"
+      ],
+      "shortcut": "<Shift>F5",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Shift+F5 SlideShowFromCurrent"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Group"
+      ],
+      "shortcut": "<Ctrl>G",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+G Group_sc"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Ungroup"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Shift+G UnGroup_sc"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Show/Hide Grid"
+      ],
+      "shortcut": "<Shift>F9",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Shift+F9 ShowHideGrid"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Open Thesaurus"
+      ],
+      "shortcut": "<Shift>F7",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Shift+F7 OpenThesaurus"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl++ GrowZoom"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+- ShrinkZoom"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+0 ResetZoom"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Increase Indent"
+      ],
+      "shortcut": "<Shift><Alt>Right",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Shift+Alt+Right IncreaseIndent"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Decrease Indent"
+      ],
+      "shortcut": "<Shift><Alt>Left",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Shift+Alt+Left DecreaseIndent"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Screen Grab"
+      ],
+      "shortcut": "<Ctrl><Alt>X",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Alt+X ScreenGrab"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Screen Grab Hide"
+      ],
+      "shortcut": "<Ctrl><Alt>C",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Alt+C ScreenGrabHide"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Next Window"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Tab ActivateNextSubWindow"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Previous Window"
+      ],
+      "shortcut": "<Ctrl><Shift>Tab",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Shift+Tab ActivatePreviousSubWindow"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Align Left"
+      ],
+      "shortcut": "<Ctrl>L",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+L Left"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Align Center"
+      ],
+      "shortcut": "<Ctrl>E",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+E Center"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Align Right"
+      ],
+      "shortcut": "<Ctrl>R",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+R Right"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Justify"
+      ],
+      "shortcut": "<Ctrl>J",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+J Justify"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Subscript"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+= Subscript"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Superscript"
+      ],
+      "shortcut": "<Ctrl><Shift>equal",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Shift+= Superscript"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Increase Font Size"
+      ],
+      "shortcut": "<Ctrl><Shift>period",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Shift+. IncreaseFontSize"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Decrease Font Size"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+Shift+, DecreaseFontSize"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Increase Font Size (Alternate)"
+      ],
+      "shortcut": "<Ctrl>bracketright",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+] IncreaseFontSize"
+    },
+    {
+      "path": [
+        "Presentation",
+        "Text Format",
+        "Decrease Font Size (Alternate)"
+      ],
+      "shortcut": "<Ctrl>bracketleft",
+      "url": "https://help.wps.com/articles/list-of-keyboard-shortcuts-for-presentation",
+      "quote": "Ctrl+[ DecreaseFontSize"
+    }
+  ]
+}

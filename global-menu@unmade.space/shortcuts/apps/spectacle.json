@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "app": "spectacle",
+  "name": "Spectacle",
+  "identifiers": [
+    "org.kde.spectacle.desktop",
+    "org.kde.spectacle",
+    "kde-spectacle",
+    "spectacle",
+    "Spectacle"
+  ],
+  "menus": [
+    {
+      "label": "Screenshot",
+      "items": [
+        {
+          "label": "Take a new screenshot",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cancel",
+          "shortcut": "Escape"
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Configure Spectacle…",
+          "shortcut": "<Ctrl><Shift>comma"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Spectacle Handbook",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

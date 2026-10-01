@@ -1,0 +1,236 @@
+{
+  "format": 1,
+  "app": "zapzap",
+  "name": "ZapZap",
+  "identifiers": [
+    "com.rtosta.zapzap.desktop",
+    "com.rtosta.zapzap",
+    "zapzap",
+    "ZapZap"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Settings",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Hide",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Grid View",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Downloads",
+          "shortcut": "<Ctrl>J"
+        },
+        {
+          "label": "Open DevTools",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Sidebar"
+        },
+        {
+          "label": "Toggle Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Automatic Theme",
+          "shortcut": "<Ctrl><Alt>1"
+        },
+        {
+          "label": "Light Theme",
+          "shortcut": "<Ctrl><Alt>2"
+        },
+        {
+          "label": "Dark Theme",
+          "shortcut": "<Ctrl><Alt>3"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reset Zoom",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        }
+      ]
+    },
+    {
+      "label": "Chat",
+      "items": [
+        {
+          "label": "Reload",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "New Chat",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "By Number Phone",
+          "shortcut": "<Ctrl>M"
+        }
+      ]
+    },
+    {
+      "label": "Users",
+      "items": [
+        {
+          "label": "New Account",
+          "shortcut": "<Ctrl>U"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Keyboard Shortcuts",
+          "shortcut": "<Ctrl><Shift>slash"
+        },
+        {
+          "label": "About"
+        }
+      ]
+    },
+    {
+      "label": "WhatsApp Web",
+      "items": [
+        {
+          "label": "New Conversation",
+          "shortcut": "<Ctrl><Alt>N"
+        },
+        {
+          "label": "New Group",
+          "shortcut": "<Ctrl><Alt><Shift>N"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Next Conversation"
+        },
+        {
+          "label": "Previous Conversation"
+        },
+        {
+          "label": "Close Conversation",
+          "shortcut": "Escape"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Mark as Unread",
+          "shortcut": "<Ctrl><Alt><Shift>U"
+        },
+        {
+          "label": "Archive Conversation",
+          "shortcut": "<Ctrl><Alt><Shift>E"
+        },
+        {
+          "label": "Pin Conversation",
+          "shortcut": "<Ctrl><Alt><Shift>P"
+        },
+        {
+          "label": "Mute",
+          "shortcut": "<Ctrl><Alt><Shift>M"
+        },
+        {
+          "label": "Delete Conversation",
+          "shortcut": "<Ctrl><Alt>BackSpace"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Search",
+          "shortcut": "<Ctrl><Alt>slash"
+        },
+        {
+          "label": "Search in Conversation",
+          "shortcut": "<Ctrl><Alt><Shift>F"
+        },
+        {
+          "label": "Extended Search",
+          "shortcut": "<Alt>K"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Profile and Status",
+          "shortcut": "<Ctrl><Alt>P"
+        },
+        {
+          "label": "Settings",
+          "shortcut": "<Ctrl><Alt>comma"
+        },
+        {
+          "label": "Lock the App",
+          "shortcut": "<Ctrl><Alt>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Emoji Panel",
+          "shortcut": "<Ctrl><Alt>E"
+        },
+        {
+          "label": "Sticker Panel",
+          "shortcut": "<Ctrl><Alt>S"
+        },
+        {
+          "label": "GIF Panel",
+          "shortcut": "<Ctrl><Alt>G"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Decrease Speed of Selected Voice Message",
+          "shortcut": "<Shift>comma"
+        },
+        {
+          "label": "Increase Speed of Selected Voice Message",
+          "shortcut": "<Shift>period"
+        }
+      ]
+    }
+  ]
+}

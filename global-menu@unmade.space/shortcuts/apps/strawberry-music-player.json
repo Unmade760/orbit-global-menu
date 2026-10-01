@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "app": "strawberry-music-player",
+  "name": "Strawberry Music Player",
+  "identifiers": ["org.strawberrymusicplayer.strawberry.desktop", "org.strawberrymusicplayer.strawberry", "strawberry", "Strawberry", "Strawberry Music Player"],
+  "menus": [
+    {
+      "label": "Music",
+      "items": [
+        {"label": "Previous Track", "shortcut": "F5"},
+        {"label": "Play", "shortcut": "F6"},
+        {"label": "Stop", "shortcut": "F7"},
+        {"label": "Next Track", "shortcut": "F8"},
+        {"label": "Stop After This Track", "shortcut": "<Ctrl><Alt>V"},
+        {"separator": true},
+        {"label": "Mute", "shortcut": "<Ctrl>M"},
+        {"separator": true},
+        {"label": "Love", "shortcut": "<Ctrl>L"},
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Playlist",
+      "items": [
+        {"label": "Add File…", "shortcut": "<Ctrl><Shift>A"},
+        {"separator": true},
+        {"label": "New Playlist", "shortcut": "<Ctrl>N"},
+        {"label": "Save Playlist…", "shortcut": "<Ctrl>S"},
+        {"label": "Load Playlist…", "shortcut": "<Ctrl><Shift>O"},
+        {"separator": true},
+        {"label": "Jump to the Currently Playing Track", "shortcut": "<Ctrl>J"},
+        {"label": "Clear Playlist", "shortcut": "<Ctrl>K"},
+        {"label": "Shuffle Playlist", "shortcut": "<Ctrl><Shift>H"},
+        {"separator": true},
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Remove from Playlist", "shortcut": "Delete"},
+        {"label": "Toggle Queue Status", "shortcut": "<Ctrl>D"},
+        {"label": "Queue Selected Tracks to Play Next", "shortcut": "<Ctrl><Shift>D"},
+        {"separator": true},
+        {"label": "Edit Track Information…", "shortcut": "<Ctrl>E"},
+        {"label": "Complete Tags Automatically…", "shortcut": "<Ctrl>T"},
+        {"label": "Add File(s) to Transcoder", "shortcut": "<Ctrl><Shift>T"},
+        {"separator": true},
+        {"label": "Go to Next Playlist Tab", "shortcut": "<Ctrl>Tab"},
+        {"label": "Go to Next Playlist Tab (Alternate)", "shortcut": "<Ctrl>Page_Down"},
+        {"label": "Go to Previous Playlist Tab", "shortcut": "<Ctrl><Shift>Tab"},
+        {"label": "Go to Previous Playlist Tab (Alternate)", "shortcut": "<Ctrl>Page_Up"},
+        {"label": "Go to Last Playlist Tab", "shortcut": "<Ctrl>9"},
+        {"label": "Go to Active Playlist Tab", "shortcut": "<Ctrl><Shift>P"},
+        {"label": "Close Current Playlist Tab", "shortcut": "<Ctrl>W"},
+        {"separator": true},
+        {"label": "Focus Search Field", "shortcut": "<Ctrl>F"},
+        {"label": "Hide Window", "shortcut": "<Ctrl><Shift>W"}
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {"label": "Settings…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Show Sidebar", "shortcut": "<Ctrl>B"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "About Strawberry", "shortcut": "F1"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "format": 1,
+  "app": "xsane",
+  "repos": {
+    "xsane": {
+      "url": "https://gitlab.com/sane-project/frontend/xsane.git",
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Info"
+      ],
+      "shortcut": "<Ctrl>i",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 2704,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>q",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 2713,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preferences",
+        "Show Tooltips"
+      ],
+      "shortcut": "<Ctrl>t",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4166,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preferences",
+        "Show Resolution List"
+      ],
+      "shortcut": "<Ctrl>l",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4183,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preferences",
+        "Setup"
+      ],
+      "shortcut": "<Alt>s",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4376,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preferences",
+        "Save Device Settings"
+      ],
+      "shortcut": "<Ctrl>p",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4432,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preferences",
+        "Load Device Settings"
+      ],
+      "shortcut": "<Ctrl>g",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4440,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "View",
+        "Show Preview"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4304,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "View",
+        "Show Histogram"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4312,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "View",
+        "Show Batch Scan"
+      ],
+      "shortcut": "<Ctrl>4",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4333,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "View",
+        "Show Standard Options"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4342,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "View",
+        "Show Advanced Options"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4352,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Help",
+        "XSane Doc"
+      ],
+      "shortcut": "F1",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4466,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Help",
+        "Problems?"
+      ],
+      "shortcut": "F4",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4482,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Help",
+        "Scantips"
+      ],
+      "shortcut": "F5",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4495,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Help",
+        "About XSane"
+      ],
+      "shortcut": "F6",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4511,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Help",
+        "About Translation"
+      ],
+      "shortcut": "F7",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4519,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Help",
+        "Show License (GPL)"
+      ],
+      "shortcut": "F9",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 4535,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Scan",
+        "Scan"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 5462,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Scan",
+        "Cancel Scan"
+      ],
+      "shortcut": "Escape",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 5472,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Scan",
+        "RGB Default"
+      ],
+      "shortcut": "<Ctrl>b",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 1984,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Scan",
+        "Negative"
+      ],
+      "shortcut": "<Ctrl>n",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 1989,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Scan",
+        "Autoadjust Gamma, Brightness and Contrast"
+      ],
+      "shortcut": "<Ctrl>a",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 1993,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Scan",
+        "Set Default Enhancement Values"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 1997,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Scan",
+        "Restore Enhancement Values from Preferences"
+      ],
+      "shortcut": "<Ctrl>r",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 2004,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Scan",
+        "Store Active Enhancement Values to Preferences"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "xsane",
+      "file": "src/xsane.c",
+      "line": 2008,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preview",
+        "Acquire Preview"
+      ],
+      "shortcut": "<Alt>p",
+      "repo": "xsane",
+      "file": "src/xsane-preview.c",
+      "line": 4170,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preview",
+        "Zoom Out"
+      ],
+      "shortcut": "<Alt>KP_Subtract",
+      "repo": "xsane",
+      "file": "src/xsane-preview.c",
+      "line": 3897,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preview",
+        "Zoom In"
+      ],
+      "shortcut": "<Alt>KP_Add",
+      "repo": "xsane",
+      "file": "src/xsane-preview.c",
+      "line": 3898,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preview",
+        "Zoom into Selected Area"
+      ],
+      "shortcut": "<Alt>KP_Enter",
+      "repo": "xsane",
+      "file": "src/xsane-preview.c",
+      "line": 3899,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preview",
+        "Undo Last Zoom"
+      ],
+      "shortcut": "<Alt>KP_Divide",
+      "repo": "xsane",
+      "file": "src/xsane-preview.c",
+      "line": 3900,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preview",
+        "Use Full Scan Area"
+      ],
+      "shortcut": "<Alt>KP_Multiply",
+      "repo": "xsane",
+      "file": "src/xsane-preview.c",
+      "line": 3896,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preview",
+        "Autoselect Scan Area"
+      ],
+      "shortcut": "<Alt>a",
+      "repo": "xsane",
+      "file": "src/xsane-preview.c",
+      "line": 3901,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Preview",
+        "Select Visible Area"
+      ],
+      "shortcut": "<Alt>v",
+      "repo": "xsane",
+      "file": "src/xsane-preview.c",
+      "line": 3902,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Histogram",
+        "Show Histogram of Intensity/Gray"
+      ],
+      "shortcut": "<Alt>i",
+      "repo": "xsane",
+      "file": "src/xsane-gamma.c",
+      "line": 2357,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Histogram",
+        "Show Histogram of Red Component"
+      ],
+      "shortcut": "<Alt>r",
+      "repo": "xsane",
+      "file": "src/xsane-gamma.c",
+      "line": 2361,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Histogram",
+        "Show Histogram of Green Component"
+      ],
+      "shortcut": "<Alt>g",
+      "repo": "xsane",
+      "file": "src/xsane-gamma.c",
+      "line": 2365,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Histogram",
+        "Show Histogram of Blue Component"
+      ],
+      "shortcut": "<Alt>b",
+      "repo": "xsane",
+      "file": "src/xsane-gamma.c",
+      "line": 2369,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Histogram",
+        "Show Histogram with Lines Instead of Pixels"
+      ],
+      "shortcut": "<Alt>m",
+      "repo": "xsane",
+      "file": "src/xsane-gamma.c",
+      "line": 2373,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    },
+    {
+      "path": [
+        "Histogram",
+        "Show Logarithm of Pixelcount"
+      ],
+      "shortcut": "<Alt>l",
+      "repo": "xsane",
+      "file": "src/xsane-gamma.c",
+      "line": 2377,
+      "commit": "24a6b79964233aa89d003386cbe008648a74e05a"
+    }
+  ]
+}

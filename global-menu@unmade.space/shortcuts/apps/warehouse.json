@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "app": "warehouse",
+  "name": "Warehouse",
+  "identifiers": [
+    "io.github.flattool.Warehouse.desktop",
+    "io.github.flattool.Warehouse",
+    "warehouse"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Refresh",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Open Files",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Open Menu",
+          "shortcut": "F10"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {
+          "label": "Show Packages Page",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Show Remotes Page",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Show User Data Page",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Show Snapshots Page",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Show Install Page",
+          "shortcut": "<Ctrl>I"
+        }
+      ]
+    },
+    {
+      "label": "Page Actions",
+      "items": [
+        {
+          "label": "Search Mode",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Selection Mode",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Filters, Sorting Modes or Disabled Remotes",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "New Remote or New Snapshots",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Show Active Data",
+          "shortcut": "<Alt>1"
+        },
+        {
+          "label": "Show Leftover Data",
+          "shortcut": "<Alt>2"
+        }
+      ]
+    }
+  ]
+}

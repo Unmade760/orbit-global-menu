@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "app": "sticky-notes",
+  "name": "Sticky Notes",
+  "identifiers": [
+    "com.vixalien.sticky.desktop",
+    "com.vixalien.sticky",
+    "Sticky Notes",
+    "sticky-notes"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {"label": "Show Shortcuts", "shortcut": "<Ctrl>question"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Notes",
+      "items": [
+        {"label": "New Note", "shortcut": "<Ctrl>N"},
+        {"label": "Close Note", "shortcut": "<Ctrl>W"},
+        {"label": "Delete Note", "shortcut": "<Ctrl>D"}
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {"label": "Show All Notes", "shortcut": "<Ctrl>H"},
+        {"label": "Cycle Between Notes", "shortcut": "<Ctrl>Tab"},
+        {"label": "Cycle Between Notes in Reverse Order", "shortcut": "<Ctrl><Shift>Tab"}
+      ]
+    },
+    {
+      "label": "Editing",
+      "items": [
+        {"label": "Bold", "shortcut": "<Ctrl>B"},
+        {"label": "Italic", "shortcut": "<Ctrl>I"},
+        {"label": "Underline", "shortcut": "<Ctrl>U"},
+        {"label": "Strikethrough", "shortcut": "<Ctrl>T"}
+      ]
+    }
+  ]
+}

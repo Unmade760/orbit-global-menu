@@ -1,0 +1,419 @@
+{
+  "format": 1,
+  "app": "zapzap",
+  "repos": {
+    "zapzap": {
+      "url": "https://github.com/rafatosta/zapzap.git",
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Settings"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 193,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "File",
+        "Hide"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 191,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 189,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Grid View"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 205,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Downloads"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 207,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Open DevTools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 203,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 201,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Automatic Theme"
+      ],
+      "shortcut": "<Ctrl><Alt>1",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 210,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Light Theme"
+      ],
+      "shortcut": "<Ctrl><Alt>2",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 212,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Dark Theme"
+      ],
+      "shortcut": "<Ctrl><Alt>3",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 214,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 195,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 197,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 199,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "Chat",
+        "Reload"
+      ],
+      "shortcut": "F5",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 216,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "Chat",
+        "New Chat"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 218,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "Chat",
+        "By Number Phone"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 220,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "Users",
+        "New Account"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "zapzap",
+      "file": "zapzap/features/browser/shell/browser_controller.py",
+      "line": 619,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "Help",
+        "Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl><Shift>slash",
+      "repo": "zapzap",
+      "file": "zapzap/ui/components/main_window.py",
+      "line": 222,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "New Conversation"
+      ],
+      "shortcut": "<Ctrl><Alt>N",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 12,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "New Group"
+      ],
+      "shortcut": "<Ctrl><Alt><Shift>N",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 31,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Close Conversation"
+      ],
+      "shortcut": "Escape",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 17,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Mark as Unread"
+      ],
+      "shortcut": "<Ctrl><Alt><Shift>U",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 13,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Archive Conversation"
+      ],
+      "shortcut": "<Ctrl><Alt><Shift>E",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 14,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Pin Conversation"
+      ],
+      "shortcut": "<Ctrl><Alt><Shift>P",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 15,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Mute"
+      ],
+      "shortcut": "<Ctrl><Alt><Shift>M",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 29,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Delete Conversation"
+      ],
+      "shortcut": "<Ctrl><Alt>BackSpace",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 20,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Search"
+      ],
+      "shortcut": "<Ctrl><Alt>slash",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 30,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Search in Conversation"
+      ],
+      "shortcut": "<Ctrl><Alt><Shift>F",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 18,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Extended Search"
+      ],
+      "shortcut": "<Alt>K",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 32,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Profile and Status"
+      ],
+      "shortcut": "<Ctrl><Alt>P",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 21,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Settings"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 22,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Lock the App"
+      ],
+      "shortcut": "<Ctrl><Alt>L",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 28,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Emoji Panel"
+      ],
+      "shortcut": "<Ctrl><Alt>E",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 25,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Sticker Panel"
+      ],
+      "shortcut": "<Ctrl><Alt>S",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 26,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "GIF Panel"
+      ],
+      "shortcut": "<Ctrl><Alt>G",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 27,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Decrease Speed of Selected Voice Message"
+      ],
+      "shortcut": "<Shift>comma",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 23,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    },
+    {
+      "path": [
+        "WhatsApp Web",
+        "Increase Speed of Selected Voice Message"
+      ],
+      "shortcut": "<Shift>period",
+      "repo": "zapzap",
+      "file": "zapzap/features/shortcuts/model.py",
+      "line": 24,
+      "commit": "7ee8929ef8af46631eb99f55befc551282fca163"
+    }
+  ]
+}
