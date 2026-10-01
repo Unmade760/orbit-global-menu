@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "app": "juk",
+  "name": "JuK",
+  "identifiers": [
+    "org.kde.juk.desktop",
+    "org.kde.juk",
+    "juk",
+    "JuK"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "items": [
+            {
+              "label": "Empty Playlist…",
+              "shortcut": "<Ctrl>N"
+            },
+            {
+              "label": "Search Playlist…",
+              "shortcut": "<Ctrl>F"
+            },
+            {
+              "label": "Playlist From Folder…",
+              "shortcut": "<Ctrl>D"
+            }
+          ]
+        },
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Edit Track Search",
+          "shortcut": "F6"
+        }
+      ]
+    },
+    {
+      "label": "Tagger",
+      "items": [
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Guess Tag Information From File Name",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Rename File",
+          "shortcut": "<Ctrl>R"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Show Menubar",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Configure Keyboard Shortcuts…",
+          "shortcut": "<Ctrl><Alt>comma"
+        }
+      ]
+    }
+  ]
+}

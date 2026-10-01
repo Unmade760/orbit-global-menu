@@ -1,0 +1,145 @@
+{
+  "format": 1,
+  "app": "kaddressbook",
+  "name": "KAddressBook",
+  "identifiers": [
+    "org.kde.kaddressbook.desktop",
+    "org.kde.kaddressbook",
+    "kaddressbook",
+    "KAddressBook"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "items": [
+            {
+              "label": "New Contact",
+              "shortcut": "<Ctrl>N"
+            },
+            {
+              "label": "New Group",
+              "shortcut": "<Ctrl>G"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Print Preview"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Cut Contact",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy Contact"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Delete Contact",
+          "shortcut": "Delete"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Simple (one column)",
+          "shortcut": "<Ctrl><Shift>1"
+        },
+        {
+          "label": "Two Columns",
+          "shortcut": "<Ctrl><Shift>2"
+        },
+        {
+          "label": "Three Columns",
+          "shortcut": "<Ctrl><Shift>3"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show QR Codes"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Set Focus to Quick Search",
+          "shortcut": "<Alt>Q"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Full Screen Mode",
+          "shortcut": "F11"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Show Menubar",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Configure Keyboard Shortcuts…",
+          "shortcut": "<Ctrl><Alt>comma"
+        },
+        {
+          "label": "Configure Toolbars…"
+        },
+        {
+          "label": "Configure KAddressBook…",
+          "shortcut": "<Ctrl><Shift>comma"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "KAddressBook Handbook",
+          "shortcut": "F1"
+        },
+        {
+          "label": "What's This?",
+          "shortcut": "<Shift>F1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+{
+  "format": 1,
+  "app": "github-desktop",
+  "repos": {
+    "github-desktop": {
+      "url": "https://github.com/shiftkey/desktop.git",
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Repository…"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 104,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "File",
+        "Add Local Repository…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 110,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "File",
+        "Clone Repository…"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 116,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "File",
+        "Options…"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 131,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 124,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 148,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 149,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 151,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 152,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 153,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 156,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 163,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Changes"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 175,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "History"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 181,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Repository List"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 187,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Branches List"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 193,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Go to Summary"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 200,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Show Stashed Changes"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 206,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 211,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 218,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 223,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 228,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Expand Active Resizable"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 236,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Contract Active Resizable"
+      ],
+      "shortcut": "<Ctrl>8",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 244,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 269,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Repository",
+        "Push"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 294,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Repository",
+        "Pull"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 300,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Repository",
+        "Fetch"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 306,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Repository",
+        "Remove…"
+      ],
+      "shortcut": "<Ctrl>BackSpace",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 312,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Repository",
+        "View on GitHub"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 319,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Repository",
+        "Open in Shell"
+      ],
+      "shortcut": "<Ctrl>grave",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 327,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Repository",
+        "Show in Your File Manager"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 337,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Repository",
+        "Open in External Editor"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 345,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Repository",
+        "Create Issue on GitHub"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 354,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "New Branch…"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 370,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Rename…"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 376,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Delete…"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 382,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Discard All Changes…"
+      ],
+      "shortcut": "<Ctrl><Shift>BackSpace",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 389,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Stash All Changes…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 397,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Update from Default Branch"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 406,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Compare to Branch"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 412,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Merge into Current Branch…"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 420,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Squash and Merge into Current Branch…"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 428,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Rebase Current Branch…"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 434,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Compare on GitHub"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 441,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "View Branch on GitHub"
+      ],
+      "shortcut": "<Ctrl><Alt>B",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 447,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Preview Pull Request"
+      ],
+      "shortcut": "<Ctrl><Alt>P",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 455,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Branch",
+        "Create Pull Request"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "github-desktop",
+      "file": "app/src/main-process/menu/build-default-menu.ts",
+      "line": 462,
+      "commit": "cab1d2ca900ff21deb46539bd9501572d77da875"
+    },
+    {
+      "path": [
+        "Commit",
+        "Commit Changes"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "url": "https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/keyboard-shortcuts",
+      "quote": "Ctrl + Enter   Commit changes when summary or description field is active"
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "format": 1,
+  "app": "galculator",
+  "repos": {
+    "galculator": {
+      "url": "https://github.com/galculator/galculator.git",
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 71,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut Display Value"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 99,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy Display Value"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 113,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste and Append to Display Value"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 127,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Edit",
+        "Preferences..."
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 147,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "View",
+        "Show Menu Bar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 271,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Number Bases",
+        "Decimal"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 307,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Number Bases",
+        "Hexadecimal"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 319,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Number Bases",
+        "Octal"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 331,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Number Bases",
+        "Binary"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 343,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Angle Units",
+        "Degrees"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 368,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Angle Units",
+        "Radians"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 380,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Angle Units",
+        "Gradians"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 392,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Notation Modes",
+        "Algebraic"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 417,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Notation Modes",
+        "Reverse Polish (RPN)"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 429,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Calculator",
+        "Notation Modes",
+        "Formula Entry"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "galculator",
+      "file": "ui/main_frame.ui",
+      "line": 441,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Display Control",
+        "Reset Calculator (Clear All)"
+      ],
+      "shortcut": "Escape",
+      "repo": "galculator",
+      "file": "ui/dispctrl_bottom_gtk3.ui",
+      "line": 23,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Display Control",
+        "Clear Display"
+      ],
+      "shortcut": "Delete",
+      "repo": "galculator",
+      "file": "ui/dispctrl_bottom_gtk3.ui",
+      "line": 47,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Display Control",
+        "Backspace"
+      ],
+      "shortcut": "BackSpace",
+      "repo": "galculator",
+      "file": "ui/dispctrl_bottom_gtk3.ui",
+      "line": 69,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Tangent"
+      ],
+      "shortcut": "t",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 37,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Sine"
+      ],
+      "shortcut": "s",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 408,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Cosine"
+      ],
+      "shortcut": "o",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 151,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Inverse Mode"
+      ],
+      "shortcut": "i",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 364,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Hyperbolic Mode"
+      ],
+      "shortcut": "h",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 386,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Natural Logarithm"
+      ],
+      "shortcut": "n",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 60,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Logarithm"
+      ],
+      "shortcut": "l",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 174,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Square Root"
+      ],
+      "shortcut": "r",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 83,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Square"
+      ],
+      "shortcut": "q",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 197,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Power"
+      ],
+      "shortcut": "p",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 221,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Factorial"
+      ],
+      "shortcut": "exclam",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 107,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Enter Exponent"
+      ],
+      "shortcut": "<Ctrl><Alt>E",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 129,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Percent"
+      ],
+      "shortcut": "percent",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 342,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "User Defined Functions"
+      ],
+      "shortcut": "<Alt>U",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 242,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Constants"
+      ],
+      "shortcut": "<Alt>O",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 291,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Add to Memory"
+      ],
+      "shortcut": "<Alt>plus",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 1014,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Read from Memory"
+      ],
+      "shortcut": "<Alt>R",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 1065,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Functions",
+        "Save to Memory"
+      ],
+      "shortcut": "<Alt>S",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 1115,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Logical AND"
+      ],
+      "shortcut": "ampersand",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 446,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Logical OR"
+      ],
+      "shortcut": "bar",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 468,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Logical XOR"
+      ],
+      "shortcut": "x",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 490,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Bitwise Complement"
+      ],
+      "shortcut": "asciitilde",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 513,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Modulus"
+      ],
+      "shortcut": "m",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 787,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Left Shift"
+      ],
+      "shortcut": "less",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 947,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Hexadecimal 0xA"
+      ],
+      "shortcut": "a",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 655,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Hexadecimal 0xB"
+      ],
+      "shortcut": "b",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 631,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Hexadecimal 0xC"
+      ],
+      "shortcut": "c",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 535,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Hexadecimal 0xD"
+      ],
+      "shortcut": "d",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 559,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Hexadecimal 0xE"
+      ],
+      "shortcut": "e",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 583,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Logical",
+        "Hexadecimal 0xF"
+      ],
+      "shortcut": "f",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 607,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Standard",
+        "Divide"
+      ],
+      "shortcut": "slash",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 764,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Standard",
+        "Multiply"
+      ],
+      "shortcut": "asterisk",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 993,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Standard",
+        "Subtract"
+      ],
+      "shortcut": "minus",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 902,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Standard",
+        "Sum"
+      ],
+      "shortcut": "plus",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 925,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Standard",
+        "Change Sign"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 970,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Standard",
+        "Open Bracket"
+      ],
+      "shortcut": "parenleft",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 1189,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Standard",
+        "Close Bracket"
+      ],
+      "shortcut": "parenright",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 1167,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Standard",
+        "Decimal Point"
+      ],
+      "shortcut": "period",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 1235,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    },
+    {
+      "path": [
+        "Standard",
+        "Enter"
+      ],
+      "shortcut": "Return",
+      "repo": "galculator",
+      "file": "ui/scientific_buttons_gtk3.ui",
+      "line": 1301,
+      "commit": "ccf6f06602a5cf9d9fc95d767b545b03af6a7f71"
+    }
+  ]
+}

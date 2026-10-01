@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "jellyfin-desktop",
+  "repos": {
+    "jellyfin-desktop": {
+      "url": "https://github.com/jellyfin/jellyfin-desktop.git",
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 102,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 119,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 160,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 167,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 139,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 132,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 146,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 153,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 82,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "View",
+        "Actual Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 189,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Debug"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 125,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "Go",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 174,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    },
+    {
+      "path": [
+        "Go",
+        "Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "jellyfin-desktop",
+      "file": "src/ui/webview.qml",
+      "line": 181,
+      "commit": "2cb4a4456fd29b5b62d825ef0e5df93ed6913328"
+    }
+  ]
+}

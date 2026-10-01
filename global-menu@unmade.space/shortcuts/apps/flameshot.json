@@ -1,0 +1,196 @@
+{
+  "format": 1,
+  "app": "flameshot",
+  "name": "Flameshot",
+  "identifiers": [
+    "org.flameshot.Flameshot.desktop",
+    "org.flameshot.Flameshot",
+    "flameshot"
+  ],
+  "menus": [
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Pencil",
+          "shortcut": "p"
+        },
+        {
+          "label": "Line",
+          "shortcut": "d"
+        },
+        {
+          "label": "Arrow",
+          "shortcut": "a"
+        },
+        {
+          "label": "Selection",
+          "shortcut": "s"
+        },
+        {
+          "label": "Rectangle",
+          "shortcut": "r"
+        },
+        {
+          "label": "Circle",
+          "shortcut": "c"
+        },
+        {
+          "label": "Marker",
+          "shortcut": "m"
+        },
+        {
+          "label": "Pixelate",
+          "shortcut": "b"
+        },
+        {
+          "label": "Text",
+          "shortcut": "t"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Grab a Color from the Screen",
+          "shortcut": "g"
+        },
+        {
+          "label": "Toggle Side Panel",
+          "shortcut": "space"
+        },
+        {
+          "label": "Commit Text in Text Area",
+          "shortcut": "<Ctrl>Return"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select Entire Screen",
+          "shortcut": "<Ctrl>a"
+        },
+        {
+          "label": "Move the Selection Area",
+          "shortcut": "<Ctrl>m"
+        },
+        {
+          "label": "Cancel Current Selection",
+          "shortcut": "<Ctrl>BackSpace"
+        }
+      ]
+    },
+    {
+      "label": "Selection",
+      "items": [
+        {
+          "label": "Move Selection",
+          "items": [
+            {
+              "label": "Move Selection Left 1px",
+              "shortcut": "Left"
+            },
+            {
+              "label": "Move Selection Right 1px",
+              "shortcut": "Right"
+            },
+            {
+              "label": "Move Selection Up 1px",
+              "shortcut": "Up"
+            },
+            {
+              "label": "Move Selection Down 1px",
+              "shortcut": "Down"
+            }
+          ]
+        },
+        {
+          "label": "Resize Selection",
+          "items": [
+            {
+              "label": "Resize Selection Left 1px",
+              "shortcut": "<Shift>Left"
+            },
+            {
+              "label": "Resize Selection Right 1px",
+              "shortcut": "<Shift>Right"
+            },
+            {
+              "label": "Resize Selection Up 1px",
+              "shortcut": "<Shift>Up"
+            },
+            {
+              "label": "Resize Selection Down 1px",
+              "shortcut": "<Shift>Down"
+            }
+          ]
+        },
+        {
+          "label": "Resize Symmetrically",
+          "items": [
+            {
+              "label": "Symmetrically Decrease Width by 2px",
+              "shortcut": "<Ctrl><Shift>Left"
+            },
+            {
+              "label": "Symmetrically Increase Width by 2px",
+              "shortcut": "<Ctrl><Shift>Right"
+            },
+            {
+              "label": "Symmetrically Increase Height by 2px",
+              "shortcut": "<Ctrl><Shift>Up"
+            },
+            {
+              "label": "Symmetrically Decrease Height by 2px",
+              "shortcut": "<Ctrl><Shift>Down"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Capture",
+      "items": [
+        {
+          "label": "Copy Selection to Clipboard",
+          "shortcut": "<Ctrl>c"
+        },
+        {
+          "label": "Save Screenshot to a File",
+          "shortcut": "<Ctrl>s"
+        },
+        {
+          "label": "Accept the Capture",
+          "shortcut": "Return"
+        },
+        {
+          "label": "Choose an App to Open the Capture",
+          "shortcut": "<Ctrl>o"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Leave the Capture Screen",
+          "shortcut": "<Ctrl>q"
+        },
+        {
+          "label": "Quit Capture",
+          "shortcut": "Escape"
+        }
+      ]
+    }
+  ]
+}

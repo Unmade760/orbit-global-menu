@@ -1,0 +1,950 @@
+{
+  "format": 1,
+  "app": "kate",
+  "repos": {
+    "kate": {
+      "url": "https://invent.kde.org/utilities/kate.git",
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    "ktexteditor": {
+      "url": "https://invent.kde.org/frameworks/ktexteditor.git",
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "kate",
+      "file": "apps/lib/data/kateui.rc",
+      "line": 7,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 564,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "kate",
+      "file": "apps/lib/data/kateui.rc",
+      "line": 11,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "File",
+        "Save All"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 452,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "kate",
+      "file": "apps/lib/data/kateui.rc",
+      "line": 24,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 551,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kate",
+      "file": "apps/lib/data/kateui.rc",
+      "line": 42,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Go",
+        "Quick Open"
+      ],
+      "shortcut": "<Ctrl><Alt>O",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 385,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Previous Location"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 683,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Next Location"
+      ],
+      "shortcut": "<Ctrl><Shift>1",
+      "repo": "kate",
+      "file": "apps/lib/katemainwindow.cpp",
+      "line": 692,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Previous Split View"
+      ],
+      "shortcut": "<Shift>F8",
+      "repo": "kate",
+      "file": "apps/lib/kateviewmanager.cpp",
+      "line": 222,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Split Vertical"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "kate",
+      "file": "apps/lib/kateviewmanager.cpp",
+      "line": 151,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Split Horizontal"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "kate",
+      "file": "apps/lib/kateviewmanager.cpp",
+      "line": 159,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "View",
+        "Split View",
+        "Close Current View"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "kate",
+      "file": "apps/lib/kateviewmanager.cpp",
+      "line": 185,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Document"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "kate",
+      "file": "addons/filetree/katefiletreeplugin.cpp",
+      "line": 247,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Document"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "kate",
+      "file": "addons/filetree/katefiletreeplugin.cpp",
+      "line": 253,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Tools",
+        "Show Git Blame Details"
+      ],
+      "shortcut": "<Ctrl>T B",
+      "repo": "kate",
+      "file": "addons/git-blame/kategitblameplugin.cpp",
+      "line": 191,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Tools",
+        "Show Terminal Panel"
+      ],
+      "shortcut": "F4",
+      "repo": "kate",
+      "file": "addons/konsole/kateconsole.cpp",
+      "line": 178,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Tools",
+        "Focus Terminal Panel"
+      ],
+      "shortcut": "<Ctrl><Shift>F4",
+      "repo": "kate",
+      "file": "addons/konsole/kateconsole.cpp",
+      "line": 184,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "LSP Client",
+        "Find References"
+      ],
+      "shortcut": "<Ctrl><Alt>L",
+      "repo": "kate",
+      "file": "addons/lspclient/lspclientpluginview.cpp",
+      "line": 518,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "LSP Client",
+        "Search and Go to Symbol"
+      ],
+      "shortcut": "<Ctrl><Alt>P",
+      "repo": "kate",
+      "file": "addons/lspclient/lspclientpluginview.cpp",
+      "line": 527,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "LSP Client",
+        "Format"
+      ],
+      "shortcut": "<Ctrl>T F",
+      "repo": "kate",
+      "file": "addons/lspclient/lspclientpluginview.cpp",
+      "line": 532,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "LSP Client",
+        "Rename"
+      ],
+      "shortcut": "F2",
+      "repo": "kate",
+      "file": "addons/lspclient/lspclientpluginview.cpp",
+      "line": 535,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "LSP Client",
+        "Expand Selection"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "kate",
+      "file": "addons/lspclient/lspclientpluginview.cpp",
+      "line": 538,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "LSP Client",
+        "Shrink Selection"
+      ],
+      "shortcut": "<Ctrl><Shift>2",
+      "repo": "kate",
+      "file": "addons/lspclient/lspclientpluginview.cpp",
+      "line": 541,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "File",
+        "Open Folder..."
+      ],
+      "shortcut": "<Ctrl>T O",
+      "repo": "kate",
+      "file": "addons/project/kateprojectpluginview.cpp",
+      "line": 178,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Projects",
+        "Activate Previous Project"
+      ],
+      "shortcut": "<Ctrl><Alt>Left",
+      "repo": "kate",
+      "file": "addons/project/kateprojectpluginview.cpp",
+      "line": 189,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Projects",
+        "Activate Next Project"
+      ],
+      "shortcut": "<Ctrl><Alt>Right",
+      "repo": "kate",
+      "file": "addons/project/kateprojectpluginview.cpp",
+      "line": 195,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Projects",
+        "Lookup"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "kate",
+      "file": "addons/project/kateprojectpluginview.cpp",
+      "line": 200,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find in Files"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "kate",
+      "file": "addons/search/SearchPlugin.cpp",
+      "line": 326,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find in Files Variants",
+        "Go to Next Match"
+      ],
+      "shortcut": "F6",
+      "repo": "kate",
+      "file": "addons/search/SearchPlugin.cpp",
+      "line": 340,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find in Files Variants",
+        "Go to Previous Match"
+      ],
+      "shortcut": "<Shift>F6",
+      "repo": "kate",
+      "file": "addons/search/SearchPlugin.cpp",
+      "line": 346,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Go",
+        "Last Used Views"
+      ],
+      "shortcut": "<Ctrl>Tab",
+      "repo": "kate",
+      "file": "addons/tabswitcher/tabswitcher.cpp",
+      "line": 104,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "File",
+        "New From Template"
+      ],
+      "shortcut": "<Shift><Alt>N",
+      "repo": "kate",
+      "file": "addons/template/templateplugin.cpp",
+      "line": 45,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Tools",
+        "Filter Through Command..."
+      ],
+      "shortcut": "<Ctrl>backslash",
+      "repo": "kate",
+      "file": "addons/textfilter/plugin_katetextfilter.cpp",
+      "line": 267,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Tools",
+        "Diagnostics View",
+        "Quick Fix"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "kate",
+      "file": "apps/lib/diagnostics/diagnosticview.cpp",
+      "line": 374,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Tools",
+        "Diagnostics View",
+        "Next Item"
+      ],
+      "shortcut": "<Shift><Alt>Right",
+      "repo": "kate",
+      "file": "apps/lib/diagnostics/diagnosticview.cpp",
+      "line": 381,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Tools",
+        "Diagnostics View",
+        "Previous Item"
+      ],
+      "shortcut": "<Shift><Alt>Left",
+      "repo": "kate",
+      "file": "apps/lib/diagnostics/diagnosticview.cpp",
+      "line": 389,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "Tools",
+        "Diagnostics View",
+        "Clear Diagnostics Filter"
+      ],
+      "shortcut": "<Shift><Alt>C",
+      "repo": "kate",
+      "file": "apps/lib/diagnostics/diagnosticview.cpp",
+      "line": 398,
+      "commit": "038bfab9f15694d71288c40d9d7feb87f53bac1b"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 5,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 6,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "File",
+        "Reload"
+      ],
+      "shortcut": "F5",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 662,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "File",
+        "Print/Export",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 11,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 18,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 19,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 21,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 22,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 25,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Selection"
+      ],
+      "shortcut": "<Ctrl><Shift>Insert",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 460,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clipboard History Paste"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>V",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 455,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Overwrite Mode"
+      ],
+      "shortcut": "Insert",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 770,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 35,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Variants",
+        "Find Next"
+      ],
+      "shortcut": "F3",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 37,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Variants",
+        "Find Previous"
+      ],
+      "shortcut": "<Shift>F3",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 38,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Variants",
+        "Find Selected"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 904,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Variants",
+        "Find Selected Backwards"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 910,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Replace…"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 42,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 47,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Deselect"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 48,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Block Selection Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 758,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Toggle Comment"
+      ],
+      "shortcut": "<Ctrl>slash",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 579,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Join Lines"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 626,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Capitalization",
+        "Uppercase"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 600,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Capitalization",
+        "Lowercase"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 609,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Capitalization",
+        "Capitalize"
+      ],
+      "shortcut": "<Ctrl><Alt>U",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 618,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Caret above Cursor"
+      ],
+      "shortcut": "<Ctrl><Alt>Up",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 957,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Caret below Cursor"
+      ],
+      "shortcut": "<Ctrl><Alt>Down",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 951,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Add Cursors to Line Ends"
+      ],
+      "shortcut": "<Shift><Alt>I",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 945,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Find and Select Next Occurrence"
+      ],
+      "shortcut": "<Alt>J",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 916,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Selection",
+        "Find and Select All Occurrences"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>J",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 928,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "View",
+        "Enlarge Font"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 734,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "View",
+        "Shrink Font"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 743,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Font Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 752,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Line…"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "ktexteditor",
+      "file": "src/data/katepart5ui.rc",
+      "line": 111,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Previous Editing Location"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 560,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Next Editing Location"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 566,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Matching Bracket"
+      ],
+      "shortcut": "<Ctrl>6",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 1255,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Go",
+        "Select to Matching Bracket"
+      ],
+      "shortcut": "<Ctrl><Shift>6",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 1261,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Tools",
+        "Switch to Command Line"
+      ],
+      "shortcut": "F7",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 855,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Tools",
+        "Invoke Code Completion"
+      ],
+      "shortcut": "<Ctrl>space",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 632,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Tools",
+        "Word Completion",
+        "Reuse Word Below"
+      ],
+      "shortcut": "<Ctrl>9",
+      "repo": "ktexteditor",
+      "file": "src/completion/katewordcompletion.cpp",
+      "line": 314,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Tools",
+        "Word Completion",
+        "Reuse Word Above"
+      ],
+      "shortcut": "<Ctrl>8",
+      "repo": "ktexteditor",
+      "file": "src/completion/katewordcompletion.cpp",
+      "line": 308,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    },
+    {
+      "path": [
+        "Tools",
+        "Spelling",
+        "Automatic Spell Checking"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "ktexteditor",
+      "file": "src/view/kateview.cpp",
+      "line": 976,
+      "commit": "90e387402b71d57b703f245a73682ec363be127d"
+    }
+  ]
+}

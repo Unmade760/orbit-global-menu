@@ -1,0 +1,441 @@
+{
+  "format": 1,
+  "app": "kcalc",
+  "repos": {
+    "kcalc": {
+      "url": "https://invent.kde.org/utilities/kcalc.git",
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 170,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 173,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 174,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 175,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 176,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 177,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show History"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 206,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "kcalc",
+      "file": "kcalcui.rc",
+      "line": 15,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure KCalc…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "kcalc",
+      "file": "kcalcui.rc",
+      "line": 16,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Second Function"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "kcalc",
+      "file": "doc/index.docbook",
+      "line": 176,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Backspace"
+      ],
+      "shortcut": "BackSpace",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 301,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Clear"
+      ],
+      "shortcut": "Escape",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 306,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Clear All"
+      ],
+      "shortcut": "Delete",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 311,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Open Parenthesis"
+      ],
+      "shortcut": "parenleft",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 318,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Close Parenthesis"
+      ],
+      "shortcut": "parenright",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 322,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Divide"
+      ],
+      "shortcut": "slash",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 363,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Multiply"
+      ],
+      "shortcut": "asterisk",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 368,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Subtract"
+      ],
+      "shortcut": "minus",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 374,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Add"
+      ],
+      "shortcut": "plus",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 378,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Equals"
+      ],
+      "shortcut": "KP_Enter",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 396,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Percent"
+      ],
+      "shortcut": "percent",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 342,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Change Sign"
+      ],
+      "shortcut": "backslash",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 346,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Modulo"
+      ],
+      "shortcut": "colon",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 597,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Factorial"
+      ],
+      "shortcut": "exclam",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 608,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Square"
+      ],
+      "shortcut": "bracketleft",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 615,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "x to the Power of y"
+      ],
+      "shortcut": "asciicircum",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 625,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Bitwise AND"
+      ],
+      "shortcut": "ampersand",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 416,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Bitwise OR"
+      ],
+      "shortcut": "bar",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 420,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Left Bit Shift"
+      ],
+      "shortcut": "less",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 427,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Right Bit Shift"
+      ],
+      "shortcut": "greater",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 431,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "One's Complement"
+      ],
+      "shortcut": "asciitilde",
+      "repo": "kcalc",
+      "file": "kcalc.cpp",
+      "line": 435,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Reciprocal"
+      ],
+      "shortcut": "r",
+      "repo": "kcalc",
+      "file": "doc/index.docbook",
+      "line": 593,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Hyperbolic"
+      ],
+      "shortcut": "h",
+      "repo": "kcalc",
+      "file": "doc/index.docbook",
+      "line": 515,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Sin"
+      ],
+      "shortcut": "s",
+      "repo": "kcalc",
+      "file": "doc/index.docbook",
+      "line": 520,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Cos"
+      ],
+      "shortcut": "c",
+      "repo": "kcalc",
+      "file": "doc/index.docbook",
+      "line": 524,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Tan"
+      ],
+      "shortcut": "t",
+      "repo": "kcalc",
+      "file": "doc/index.docbook",
+      "line": 528,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Ln"
+      ],
+      "shortcut": "n",
+      "repo": "kcalc",
+      "file": "doc/index.docbook",
+      "line": 532,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Log"
+      ],
+      "shortcut": "l",
+      "repo": "kcalc",
+      "file": "doc/index.docbook",
+      "line": 536,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    },
+    {
+      "path": [
+        "Keypad",
+        "Enter Data Item"
+      ],
+      "shortcut": "d",
+      "repo": "kcalc",
+      "file": "doc/index.docbook",
+      "line": 584,
+      "commit": "c6f786c11aa2e36b9a41e3c4c9a2dc23151d0a65"
+    }
+  ]
+}

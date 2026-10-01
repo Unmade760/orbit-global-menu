@@ -1,0 +1,22 @@
+{
+  "format": 1,
+  "app": "keypunch",
+  "name": "Keypunch",
+  "identifiers": [
+    "no.bragefuglseth.Keypunch.desktop",
+    "no.bragefuglseth.Keypunch",
+    "Keypunch"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {"label": "Open Menu", "shortcut": "F10"},
+        {"label": "Text Language", "shortcut": "<Ctrl>comma"},
+        {"label": "Cancel Test", "shortcut": "Escape"},
+        {"label": "Close Window", "shortcut": "<Ctrl>W"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    }
+  ]
+}

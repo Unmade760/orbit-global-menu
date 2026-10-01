@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "app": "keypunch",
+  "repos": {
+    "keypunch": {
+      "url": "https://github.com/bragefuglseth/keypunch.git",
+      "commit": "f86b334589f0706f5d898cbc966e13237ccc3018"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Open Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "keypunch",
+      "file": "data/resources/shortcuts-dialog.ui",
+      "line": 10,
+      "commit": "f86b334589f0706f5d898cbc966e13237ccc3018"
+    },
+    {
+      "path": [
+        "General",
+        "Text Language"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "keypunch",
+      "file": "src/application.rs",
+      "line": 53,
+      "commit": "f86b334589f0706f5d898cbc966e13237ccc3018"
+    },
+    {
+      "path": [
+        "General",
+        "Cancel Test"
+      ],
+      "shortcut": "Escape",
+      "repo": "keypunch",
+      "file": "src/application.rs",
+      "line": 54,
+      "commit": "f86b334589f0706f5d898cbc966e13237ccc3018"
+    },
+    {
+      "path": [
+        "General",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "keypunch",
+      "file": "src/application.rs",
+      "line": 55,
+      "commit": "f86b334589f0706f5d898cbc966e13237ccc3018"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "keypunch",
+      "file": "src/application.rs",
+      "line": 56,
+      "commit": "f86b334589f0706f5d898cbc966e13237ccc3018"
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "format": 1,
+  "app": "falkon",
+  "repos": {
+    "falkon": {
+      "url": "https://invent.kde.org/network/falkon.git",
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 493,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 494,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "File",
+        "New Private Window"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 495,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "File",
+        "Open Location"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 496,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "File",
+        "Open File..."
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 497,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "File",
+        "Save Page As..."
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 512,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "File",
+        "Print..."
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 514,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 498,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "falkon",
+      "file": "src/lib/app/browserwindow.cpp",
+      "line": 611,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 522,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 524,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 527,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 529,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 531,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 534,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 536,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "View",
+        "Stop"
+      ],
+      "shortcut": "Escape",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 559,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "View",
+        "Reload"
+      ],
+      "shortcut": "F5",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 560,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "View",
+        "Reload and Bypass Cache"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "falkon",
+      "file": "src/lib/app/browserwindow.cpp",
+      "line": 470,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 562,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 563,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "View",
+        "Reset"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 564,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "View",
+        "Page Source"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 568,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "View",
+        "FullScreen"
+      ],
+      "shortcut": "F11",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 570,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "History",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "falkon",
+      "file": "src/lib/history/historymenu.cpp",
+      "line": 255,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "History",
+        "Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "falkon",
+      "file": "src/lib/history/historymenu.cpp",
+      "line": 258,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "History",
+        "Home"
+      ],
+      "shortcut": "<Alt>Home",
+      "repo": "falkon",
+      "file": "src/lib/history/historymenu.cpp",
+      "line": 261,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "History",
+        "Show All History"
+      ],
+      "shortcut": "<Ctrl><Shift>H",
+      "repo": "falkon",
+      "file": "src/lib/history/historymenu.cpp",
+      "line": 264,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "History",
+        "Restore Closed Window"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "falkon",
+      "file": "src/lib/app/browserwindow.cpp",
+      "line": 488,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Bookmark This Page"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "falkon",
+      "file": "src/lib/bookmarks/bookmarksmenu.cpp",
+      "line": 174,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Bookmarks",
+        "Organize Bookmarks"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "falkon",
+      "file": "src/lib/bookmarks/bookmarksmenu.cpp",
+      "line": 176,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Close Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "falkon",
+      "file": "src/lib/app/browserwindow.cpp",
+      "line": 474,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Restore Closed Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 618,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Tools",
+        "Web Search"
+      ],
+      "shortcut": "<Ctrl>K",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 576,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Tools",
+        "Site Info"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 577,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Tools",
+        "Download Manager"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 580,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Tools",
+        "Web Inspector"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 582,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Tools",
+        "Clear Recent History"
+      ],
+      "shortcut": "<Ctrl><Shift>Delete",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 583,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    },
+    {
+      "path": [
+        "Help",
+        "Information about application"
+      ],
+      "shortcut": "F1",
+      "repo": "falkon",
+      "file": "src/lib/app/mainmenu.cpp",
+      "line": 606,
+      "commit": "48125996625ffb9ca5a74b9bd1b1ca3653ea2948"
+    }
+  ]
+}

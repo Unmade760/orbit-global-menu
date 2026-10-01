@@ -1,0 +1,303 @@
+{
+  "format": 1,
+  "app": "freetube",
+  "name": "FreeTube",
+  "identifiers": [
+    "io.freetubeapp.FreeTube.desktop",
+    "io.freetubeapp.FreeTube",
+    "freetube.desktop",
+    "freetube"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste and Match Style",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "label": "Delete"
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Toggle Developer Tools",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "label": "Enter Inspect Element Mode",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "GPU Internals (chrome://gpu)"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Actual Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Back",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Forward",
+          "shortcut": "<Alt>Right"
+        }
+      ]
+    },
+    {
+      "label": "Navigate",
+      "items": [
+        {
+          "label": "Subscriptions"
+        },
+        {
+          "label": "Channels"
+        },
+        {
+          "label": "Trending"
+        },
+        {
+          "label": "Most Popular"
+        },
+        {
+          "label": "Playlists"
+        },
+        {
+          "label": "History",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "label": "Profile Manager"
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {
+          "label": "Focus Search Bar",
+          "shortcut": "<Alt>D"
+        },
+        {
+          "label": "Focus Search Bar (Alternate)",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "label": "Search in New Window",
+          "shortcut": "<Shift>Return"
+        },
+        {
+          "label": "Focus Secondary Search Bar",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Refresh Feed",
+          "shortcut": "r"
+        }
+      ]
+    },
+    {
+      "label": "Player",
+      "items": [
+        {
+          "label": "Toggle Captions",
+          "shortcut": "c"
+        },
+        {
+          "label": "Toggle Theatre Mode",
+          "shortcut": "t"
+        },
+        {
+          "label": "Toggle Fullscreen",
+          "shortcut": "f"
+        },
+        {
+          "label": "Toggle Full Window",
+          "shortcut": "s"
+        },
+        {
+          "label": "Toggle Picture in Picture",
+          "shortcut": "i"
+        },
+        {
+          "label": "Show Video Statistics",
+          "shortcut": "d"
+        },
+        {
+          "label": "Take Screenshot",
+          "shortcut": "u"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Mute",
+          "shortcut": "m"
+        },
+        {
+          "label": "Increase Volume",
+          "shortcut": "Up"
+        },
+        {
+          "label": "Decrease Volume",
+          "shortcut": "Down"
+        }
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {
+          "label": "Large Rewind",
+          "shortcut": "j"
+        },
+        {
+          "label": "Large Fast-Forward",
+          "shortcut": "l"
+        },
+        {
+          "label": "Small Rewind",
+          "shortcut": "Left"
+        },
+        {
+          "label": "Small Fast-Forward",
+          "shortcut": "Right"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Decrease Video Speed",
+          "shortcut": "o"
+        },
+        {
+          "label": "Increase Video Speed",
+          "shortcut": "p"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Last Chapter",
+          "shortcut": "<Ctrl>Left"
+        },
+        {
+          "label": "Next Chapter",
+          "shortcut": "<Ctrl>Right"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Seek to Start",
+          "shortcut": "Home"
+        },
+        {
+          "label": "Seek to End",
+          "shortcut": "End"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Skip to Next Video",
+          "shortcut": "<Shift>N"
+        },
+        {
+          "label": "Skip to Previous Video",
+          "shortcut": "<Shift>P"
+        }
+      ]
+    },
+    {
+      "label": "Window",
+      "items": [
+        {
+          "label": "Minimize",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Show Keyboard Shortcuts",
+          "shortcut": "<Shift>question"
+        }
+      ]
+    }
+  ]
+}

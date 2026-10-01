@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "app": "foot",
+  "repos": {
+    "foot": {
+      "url": "https://codeberg.org/dnkl/foot.git",
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Clipboard",
+        "Clipboard Copy"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 207,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Clipboard",
+        "Clipboard Paste"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 208,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Clipboard",
+        "Primary Paste"
+      ],
+      "shortcut": "<Shift>Insert",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 209,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Scrollback",
+        "Scrollback Up Page"
+      ],
+      "shortcut": "<Shift>Page_Up",
+      "repo": "foot",
+      "file": "README.md",
+      "line": 140,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Scrollback",
+        "Search Start"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 210,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Scrollback",
+        "Prompt Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 225,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Scrollback",
+        "Prompt Next"
+      ],
+      "shortcut": "<Ctrl><Shift>X",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 226,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Font Size",
+        "Font Increase"
+      ],
+      "shortcut": "<Ctrl>equal",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 211,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Font Size",
+        "Font Decrease"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 212,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Font Size",
+        "Font Reset"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 213,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Spawn Terminal"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 214,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Show URLs Launch"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 222,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    },
+    {
+      "path": [
+        "Terminal",
+        "Unicode Input"
+      ],
+      "shortcut": "<Ctrl><Shift>U",
+      "repo": "foot",
+      "file": "foot.ini",
+      "line": 227,
+      "commit": "cb2771788998f6a6288e2de8273c55a8214551e0"
+    }
+  ]
+}

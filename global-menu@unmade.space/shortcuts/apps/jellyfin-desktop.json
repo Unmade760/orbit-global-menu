@@ -1,0 +1,97 @@
+{
+  "format": 1,
+  "app": "jellyfin-desktop",
+  "name": "Jellyfin Desktop",
+  "identifiers": [
+    "org.jellyfin.JellyfinDesktop.desktop",
+    "org.jellyfin.JellyfinDesktop",
+    "jellyfin-desktop",
+    "Jellyfin Desktop"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Toggle Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Actual Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Debug",
+          "shortcut": "<Ctrl><Shift>D"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Back",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Forward",
+          "shortcut": "<Alt>Right"
+        }
+      ]
+    }
+  ]
+}

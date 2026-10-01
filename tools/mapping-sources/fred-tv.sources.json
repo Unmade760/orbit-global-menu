@@ -1,0 +1,177 @@
+{
+  "format": 1,
+  "app": "fred-tv",
+  "repos": {
+    "fred-tv": {
+      "url": "https://github.com/Fredolx/open-tv.git",
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "View",
+        "Show All Channels"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 342,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "View",
+        "Show Categories"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 349,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "View",
+        "Show History"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 355,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "View",
+        "Show Favorites"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 361,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Filters",
+        "Enable/Disable Livestreams"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 367,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Filters",
+        "Enable/Disable Movies"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 378,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Filters",
+        "Enable/Disable Series"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 389,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 334,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Back"
+      ],
+      "shortcut": "Escape",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 605,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Left"
+      ],
+      "shortcut": "Left",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 400,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Right"
+      ],
+      "shortcut": "Right",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 407,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Up"
+      ],
+      "shortcut": "Up",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 414,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Go Down"
+      ],
+      "shortcut": "Down",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 422,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Next Item"
+      ],
+      "shortcut": "Tab",
+      "repo": "fred-tv",
+      "file": "src/app/home/home.component.ts",
+      "line": 610,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    },
+    {
+      "path": [
+        "Navigation",
+        "Previous Item"
+      ],
+      "shortcut": "<Shift>Tab",
+      "repo": "fred-tv",
+      "file": "README.md",
+      "line": 101,
+      "commit": "1bfa78a181166025a6b977d783f895e819ff720f"
+    }
+  ]
+}

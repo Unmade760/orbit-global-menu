@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "app": "kcalc",
+  "name": "KCalc",
+  "identifiers": ["org.kde.kcalc.desktop", "org.kde.kcalc", "kcalc"],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"}
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {"label": "Show History", "shortcut": "<Ctrl>H"},
+        {"separator": true},
+        {"label": "Configure Keyboard Shortcuts…", "shortcut": "<Ctrl><Alt>comma"},
+        {"label": "Configure KCalc…", "shortcut": "<Ctrl><Shift>comma"}
+      ]
+    },
+    {
+      "label": "Keypad",
+      "items": [
+        {"label": "Second Function", "shortcut": "<Ctrl>2"},
+        {"separator": true},
+        {"label": "Backspace", "shortcut": "BackSpace"},
+        {"label": "Clear", "shortcut": "Escape"},
+        {"label": "Clear All", "shortcut": "Delete"},
+        {"separator": true},
+        {"label": "Open Parenthesis", "shortcut": "parenleft"},
+        {"label": "Close Parenthesis", "shortcut": "parenright"},
+        {"separator": true},
+        {"label": "Divide", "shortcut": "slash"},
+        {"label": "Multiply", "shortcut": "asterisk"},
+        {"label": "Subtract", "shortcut": "minus"},
+        {"label": "Add", "shortcut": "plus"},
+        {"label": "Equals", "shortcut": "KP_Enter"},
+        {"separator": true},
+        {"label": "Percent", "shortcut": "percent"},
+        {"label": "Change Sign", "shortcut": "backslash"},
+        {"label": "Modulo", "shortcut": "colon"},
+        {"label": "Factorial", "shortcut": "exclam"},
+        {"label": "Square", "shortcut": "bracketleft"},
+        {"label": "x to the Power of y", "shortcut": "asciicircum"},
+        {"separator": true},
+        {"label": "Bitwise AND", "shortcut": "ampersand"},
+        {"label": "Bitwise OR", "shortcut": "bar"},
+        {"label": "Left Bit Shift", "shortcut": "less"},
+        {"label": "Right Bit Shift", "shortcut": "greater"},
+        {"label": "One's Complement", "shortcut": "asciitilde"},
+        {"separator": true},
+        {"label": "Reciprocal", "shortcut": "r"},
+        {"label": "Hyperbolic", "shortcut": "h"},
+        {"label": "Sin", "shortcut": "s"},
+        {"label": "Cos", "shortcut": "c"},
+        {"label": "Tan", "shortcut": "t"},
+        {"label": "Ln", "shortcut": "n"},
+        {"label": "Log", "shortcut": "l"},
+        {"label": "Enter Data Item", "shortcut": "d"}
+      ]
+    }
+  ]
+}

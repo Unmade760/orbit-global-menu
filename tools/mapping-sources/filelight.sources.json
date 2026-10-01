@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "app": "filelight",
+  "repos": {
+    "filelight": {
+      "url": "https://invent.kde.org/utilities/filelight.git",
+      "commit": "cca8f7ab8fb991a8e5e7a7feb725913709459473"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Scan",
+        "Other Folder…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "filelight",
+      "file": "src/qml/main.qml",
+      "line": 54,
+      "commit": "cca8f7ab8fb991a8e5e7a7feb725913709459473"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "filelight",
+      "file": "src/qml/MapPage.qml",
+      "line": 90,
+      "commit": "cca8f7ab8fb991a8e5e7a7feb725913709459473"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "filelight",
+      "file": "src/qml/MapPage.qml",
+      "line": 100,
+      "commit": "cca8f7ab8fb991a8e5e7a7feb725913709459473"
+    },
+    {
+      "path": [
+        "Go",
+        "Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "filelight",
+      "file": "src/qml/MapPage.qml",
+      "line": 63,
+      "commit": "cca8f7ab8fb991a8e5e7a7feb725913709459473"
+    },
+    {
+      "path": [
+        "Go",
+        "Rescan"
+      ],
+      "shortcut": "F5",
+      "repo": "filelight",
+      "file": "src/qml/MapPage.qml",
+      "line": 72,
+      "commit": "cca8f7ab8fb991a8e5e7a7feb725913709459473"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "filelight",
+      "file": "src/qml/main.qml",
+      "line": 81,
+      "commit": "cca8f7ab8fb991a8e5e7a7feb725913709459473"
+    }
+  ]
+}

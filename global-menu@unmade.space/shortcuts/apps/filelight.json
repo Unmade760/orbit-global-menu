@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "app": "filelight",
+  "name": "Filelight",
+  "identifiers": [
+    "org.kde.filelight.desktop",
+    "org.kde.filelight",
+    "filelight",
+    "Filelight"
+  ],
+  "menus": [
+    {
+      "label": "Scan",
+      "items": [
+        {
+          "label": "Other Folder…",
+          "shortcut": "<Ctrl>O"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Up",
+          "shortcut": "<Alt>Up"
+        },
+        {
+          "label": "Rescan",
+          "shortcut": "F5"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Configure…",
+          "shortcut": "<Ctrl><Shift>comma"
+        }
+      ]
+    }
+  ]
+}

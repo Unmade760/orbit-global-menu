@@ -1,0 +1,275 @@
+{
+  "format": 1,
+  "app": "github-desktop",
+  "name": "GitHub Desktop",
+  "identifiers": [
+    "io.github.shiftey.Desktop.desktop",
+    "io.github.shiftey.Desktop",
+    "github-desktop",
+    "GitHub Desktop"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New Repository…",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Add Local Repository…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Clone Repository…",
+          "shortcut": "<Ctrl><Shift>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Options…",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Exit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find",
+          "shortcut": "<Ctrl>F"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Changes",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "History",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Repository List",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "Branches List",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Summary",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Show Stashed Changes",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "label": "Toggle Full Screen",
+          "shortcut": "F11"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reset Zoom",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>equal"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Expand Active Resizable",
+          "shortcut": "<Ctrl>9"
+        },
+        {
+          "label": "Contract Active Resizable",
+          "shortcut": "<Ctrl>8"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Developer Tools",
+          "shortcut": "<Ctrl><Shift>I"
+        }
+      ]
+    },
+    {
+      "label": "Repository",
+      "items": [
+        {
+          "label": "Push",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Pull",
+          "shortcut": "<Ctrl><Shift>P"
+        },
+        {
+          "label": "Fetch",
+          "shortcut": "<Ctrl><Shift>T"
+        },
+        {
+          "label": "Remove…",
+          "shortcut": "<Ctrl>BackSpace"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "View on GitHub",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Open in Shell",
+          "shortcut": "<Ctrl>grave"
+        },
+        {
+          "label": "Show in Your File Manager",
+          "shortcut": "<Ctrl><Shift>F"
+        },
+        {
+          "label": "Open in External Editor",
+          "shortcut": "<Ctrl><Shift>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Create Issue on GitHub",
+          "shortcut": "<Ctrl>I"
+        }
+      ]
+    },
+    {
+      "label": "Branch",
+      "items": [
+        {
+          "label": "New Branch…",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "label": "Rename…",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "label": "Delete…",
+          "shortcut": "<Ctrl><Shift>D"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Discard All Changes…",
+          "shortcut": "<Ctrl><Shift>BackSpace"
+        },
+        {
+          "label": "Stash All Changes…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Update from Default Branch",
+          "shortcut": "<Ctrl><Shift>U"
+        },
+        {
+          "label": "Compare to Branch",
+          "shortcut": "<Ctrl><Shift>B"
+        },
+        {
+          "label": "Merge into Current Branch…",
+          "shortcut": "<Ctrl><Shift>M"
+        },
+        {
+          "label": "Squash and Merge into Current Branch…",
+          "shortcut": "<Ctrl><Shift>H"
+        },
+        {
+          "label": "Rebase Current Branch…",
+          "shortcut": "<Ctrl><Shift>E"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Compare on GitHub",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "View Branch on GitHub",
+          "shortcut": "<Ctrl><Alt>B"
+        },
+        {
+          "label": "Preview Pull Request",
+          "shortcut": "<Ctrl><Alt>P"
+        },
+        {
+          "label": "Create Pull Request",
+          "shortcut": "<Ctrl>R"
+        }
+      ]
+    },
+    {
+      "label": "Commit",
+      "items": [
+        {
+          "label": "Commit Changes",
+          "shortcut": "<Ctrl>Return"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "app": "kde-partition-manager",
+  "repos": {
+    "kde-partition-manager": {
+      "url": "https://invent.kde.org/system/partitionmanager.git",
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 275,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 284,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Device",
+        "Refresh Devices"
+      ],
+      "shortcut": "F5",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 510,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Device",
+        "New Partition Table"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 310,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Partition",
+        "New"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 380,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Partition",
+        "Resize/Move"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 389,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Partition",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 398,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Partition",
+        "Shred"
+      ],
+      "shortcut": "<Shift>Delete",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 407,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Partition",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 416,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Partition",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 425,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Tools",
+        "New Volume Group"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 496,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure KDE Partition Manager…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "kde-partition-manager",
+      "file": "src/gui/mainwindow.cpp",
+      "line": 520,
+      "commit": "1b8d274da3aabe237bae60cb30595eb7a73936a8"
+    }
+  ]
+}

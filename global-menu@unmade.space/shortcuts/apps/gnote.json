@@ -1,0 +1,202 @@
+{
+  "format": 1,
+  "app": "gnote",
+  "name": "Gnote",
+  "identifiers": [
+    "org.gnome.Gnote.desktop",
+    "org.gnome.Gnote",
+    "gnote"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Show Help",
+          "shortcut": "F1"
+        },
+        {
+          "label": "Shortcuts",
+          "shortcut": "<Ctrl><Shift>question"
+        },
+        {
+          "label": "Open Actions Menu",
+          "shortcut": "F10"
+        },
+        {
+          "label": "Open Actions Menu",
+          "shortcut": "<Ctrl>comma"
+        },
+        {
+          "label": "Open Note Actions Menu",
+          "shortcut": "F8"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Open Tab 1 (up to 9)",
+          "shortcut": "<Alt>1"
+        },
+        {
+          "label": "Close Current Tab",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {
+          "label": "Display Search Bar",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Select Next Match",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Select Previous Match",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Hide Search Bar",
+          "shortcut": "Escape"
+        }
+      ]
+    },
+    {
+      "label": "Notes List",
+      "items": [
+        {
+          "label": "Create New Note",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "label": "Open Selected Note",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Open Selected Note in New Window",
+          "shortcut": "<Alt>W"
+        },
+        {
+          "label": "Delete Selected Note",
+          "shortcut": "Delete"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo Last Edit",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo Last Edit",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "label": "Create Link to Note on Selected Text",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Insert Timestamp",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Replace Title",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        }
+      ]
+    },
+    {
+      "label": "Format",
+      "items": [
+        {
+          "label": "Toggle Bold",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Toggle Italic",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Toggle Strikethrough",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Toggle Highlight",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "label": "Toggle Fixed Width",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "label": "Toggle Underline",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Increase Font Size",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Decrease Font Size",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Increase Indent",
+          "shortcut": "Tab"
+        },
+        {
+          "label": "Increase Indent",
+          "shortcut": "<Alt>Right"
+        },
+        {
+          "label": "Decrease Indent",
+          "shortcut": "<Shift>Tab"
+        },
+        {
+          "label": "Decrease Indent",
+          "shortcut": "<Alt>Left"
+        }
+      ]
+    },
+    {
+      "label": "Headings",
+      "items": [
+        {
+          "label": "Heading 1",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Heading 2",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Table of Contents",
+          "shortcut": "<Ctrl><Alt>1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "format": 1,
+  "app": "kfind",
+  "name": "KFind",
+  "identifiers": ["org.kde.kfind.desktop", "org.kde.kfind", "kfind", "KFind"],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Open…", "shortcut": "<Ctrl>O"},
+        {"label": "Move to Trash", "shortcut": "Delete"},
+        {"label": "Delete", "shortcut": "<Shift>Delete"},
+        {"label": "Properties", "shortcut": "<Alt>Return"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Copy Location", "shortcut": "<Ctrl><Alt>C"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "app": "k3b",
+  "name": "K3b",
+  "identifiers": [
+    "org.kde.k3b.desktop",
+    "org.kde.k3b",
+    "k3b",
+    "K3b"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        }
+      ]
+    },
+    {
+      "label": "Project",
+      "items": [
+        {
+          "label": "Burn",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Properties",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Add to Project",
+          "shortcut": "<Shift>Return"
+        }
+      ]
+    },
+    {
+      "label": "Data Project",
+      "items": [
+        {
+          "label": "New Folder…",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Remove",
+          "shortcut": "Delete"
+        },
+        {
+          "label": "Rename",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Parent Folder",
+          "shortcut": "BackSpace"
+        },
+        {
+          "label": "Properties",
+          "shortcut": "<Alt>Return"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Show Menubar",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Configure Keyboard Shortcuts…",
+          "shortcut": "<Ctrl><Alt>comma"
+        },
+        {
+          "label": "Configure K3b…",
+          "shortcut": "<Ctrl><Shift>comma"
+        }
+      ]
+    }
+  ]
+}

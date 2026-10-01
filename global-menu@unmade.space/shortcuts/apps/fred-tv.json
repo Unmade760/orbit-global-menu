@@ -1,0 +1,47 @@
+{
+  "format": 1,
+  "app": "fred-tv",
+  "name": "Fred TV",
+  "identifiers": [
+    "dev.fredol.open-tv.desktop",
+    "dev.fredol.open-tv",
+    "open_tv.desktop",
+    "open_tv",
+    "open-tv",
+    "Fred TV"
+  ],
+  "menus": [
+    {
+      "label": "View",
+      "items": [
+        {"label": "Show All Channels", "shortcut": "<Ctrl>A"},
+        {"label": "Show Categories", "shortcut": "<Ctrl>S"},
+        {"label": "Show History", "shortcut": "<Ctrl>D"},
+        {"label": "Show Favorites", "shortcut": "<Ctrl>R"}
+      ]
+    },
+    {
+      "label": "Filters",
+      "items": [
+        {"label": "Enable/Disable Livestreams", "shortcut": "<Ctrl>Q"},
+        {"label": "Enable/Disable Movies", "shortcut": "<Ctrl>W"},
+        {"label": "Enable/Disable Series", "shortcut": "<Ctrl>E"}
+      ]
+    },
+    {
+      "label": "Navigation",
+      "items": [
+        {"label": "Search", "shortcut": "<Ctrl>F"},
+        {"separator": true},
+        {"label": "Go Back", "shortcut": "Escape"},
+        {"label": "Go Left", "shortcut": "Left"},
+        {"label": "Go Right", "shortcut": "Right"},
+        {"label": "Go Up", "shortcut": "Up"},
+        {"label": "Go Down", "shortcut": "Down"},
+        {"separator": true},
+        {"label": "Next Item", "shortcut": "Tab"},
+        {"label": "Previous Item", "shortcut": "<Shift>Tab"}
+      ]
+    }
+  ]
+}

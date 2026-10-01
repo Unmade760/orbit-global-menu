@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "app": "kmag",
+  "repos": {
+    "kmag": {
+      "url": "https://invent.kde.org/accessibility/kmag.git",
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "kmag",
+      "file": "src/kmag.cpp",
+      "line": 102,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "File",
+        "Save Snapshot As…"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "kmag",
+      "file": "src/kmag.cpp",
+      "line": 119,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "kmag",
+      "file": "src/kmagui.rc",
+      "line": 28,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kmag",
+      "file": "src/kmagui.rc",
+      "line": 30,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kmag",
+      "file": "src/kmagui.rc",
+      "line": 33,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "View",
+        "Stop"
+      ],
+      "shortcut": "F5",
+      "repo": "kmag",
+      "file": "src/kmag.cpp",
+      "line": 109,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "kmag",
+      "file": "src/kmagui.rc",
+      "line": 39,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "kmag",
+      "file": "src/kmagui.rc",
+      "line": 40,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "kmag",
+      "file": "src/kmagui.rc",
+      "line": 48,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "Settings",
+        "Follow Mouse Mode"
+      ],
+      "shortcut": "F2",
+      "repo": "kmag",
+      "file": "src/kmag.cpp",
+      "line": 141,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "Settings",
+        "Follow Focus Mode"
+      ],
+      "shortcut": "F8",
+      "repo": "kmag",
+      "file": "src/kmag.cpp",
+      "line": 151,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "Settings",
+        "Selection Window Mode"
+      ],
+      "shortcut": "F3",
+      "repo": "kmag",
+      "file": "src/kmag.cpp",
+      "line": 161,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "Settings",
+        "Whole Screen Mode"
+      ],
+      "shortcut": "F4",
+      "repo": "kmag",
+      "file": "src/kmag.cpp",
+      "line": 168,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "Settings",
+        "Hide Mouse Cursor"
+      ],
+      "shortcut": "F6",
+      "repo": "kmag",
+      "file": "src/kmag.cpp",
+      "line": 176,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "Settings",
+        "Stays On Top"
+      ],
+      "shortcut": "F7",
+      "repo": "kmag",
+      "file": "src/kmag.cpp",
+      "line": 186,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "kmag",
+      "file": "src/kmagui.rc",
+      "line": 63,
+      "commit": "97fb215f3f188cf15d10140d24eb11632a1ba53c"
+    }
+  ]
+}

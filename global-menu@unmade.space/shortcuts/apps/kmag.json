@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "app": "kmag",
+  "name": "KMag",
+  "identifiers": [
+    "org.kde.kmag.desktop",
+    "org.kde.kmag",
+    "kmag",
+    "KMag"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Save Snapshot As…",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Stop",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Show Menubar",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Follow Mouse Mode",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Follow Focus Mode",
+          "shortcut": "F8"
+        },
+        {
+          "label": "Selection Window Mode",
+          "shortcut": "F3"
+        },
+        {
+          "label": "Whole Screen Mode",
+          "shortcut": "F4"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Hide Mouse Cursor",
+          "shortcut": "F6"
+        },
+        {
+          "label": "Stays On Top",
+          "shortcut": "F7"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Configure Keyboard Shortcuts…",
+          "shortcut": "<Ctrl><Alt>comma"
+        }
+      ]
+    }
+  ]
+}

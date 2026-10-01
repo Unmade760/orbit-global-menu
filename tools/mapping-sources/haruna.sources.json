@@ -1,0 +1,873 @@
+{
+  "format": 1,
+  "app": "haruna",
+  "repos": {
+    "haruna": {
+      "url": "https://invent.kde.org/multimedia/haruna.git",
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open File"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 138,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "File",
+        "Open URL"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 154,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "File",
+        "Load Last Played File"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 114,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "File",
+        "Open Actions Dialog"
+      ],
+      "shortcut": "<Ctrl>grave",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 26,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 218,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "F",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 418,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "View",
+        "Exit Fullscreen"
+      ],
+      "shortcut": "Escape",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 90,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Menu Bar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 426,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Header"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 434,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "View",
+        "Playlist"
+      ],
+      "shortcut": "P",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 442,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Transcript Panel"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 450,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "View",
+        "Open Context Menu"
+      ],
+      "shortcut": "Menu",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 130,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause"
+      ],
+      "shortcut": "space",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 186,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play Next"
+      ],
+      "shortcut": "<Shift>period",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 202,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play Previous"
+      ],
+      "shortcut": "<Shift>comma",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 210,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Restart Playback"
+      ],
+      "shortcut": "F5",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 226,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Set Loop"
+      ],
+      "shortcut": "L",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 322,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Increase Playback Speed"
+      ],
+      "shortcut": "bracketright",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 162,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Decrease Playback Speed"
+      ],
+      "shortcut": "bracketleft",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 170,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Reset Playback Speed"
+      ],
+      "shortcut": "BackSpace",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 178,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek Small Step Forward"
+      ],
+      "shortcut": "Right",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 234,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek Small Step Backward"
+      ],
+      "shortcut": "Left",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 242,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek Medium Step Forward"
+      ],
+      "shortcut": "<Shift>Right",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 250,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek Medium Step Backward"
+      ],
+      "shortcut": "<Shift>Left",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 258,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek Big Step Forward"
+      ],
+      "shortcut": "Up",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 266,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek Big Step Backward"
+      ],
+      "shortcut": "Down",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 274,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek To Next Subtitle"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 298,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek To Previous Subtitle"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 306,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek To Next Chapter"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 282,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek To Previous Chapter"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 290,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Step Frame Forward"
+      ],
+      "shortcut": "period",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 98,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Step Frame Backward"
+      ],
+      "shortcut": "comma",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 106,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek",
+        "Seek To Watch Later Position"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 314,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Toggle Deinterlacing"
+      ],
+      "shortcut": "D",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 410,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 522,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 530,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 538,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Screenshot"
+      ],
+      "shortcut": "S",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 330,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Rotate Clockwise"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 490,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Rotate Counter Clockwise"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 498,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Move Video Left"
+      ],
+      "shortcut": "<Ctrl><Alt>Left",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 458,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Move Video Right"
+      ],
+      "shortcut": "<Ctrl><Alt>Right",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 466,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Move Video Up"
+      ],
+      "shortcut": "<Ctrl><Alt>Up",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 474,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Move Video Down"
+      ],
+      "shortcut": "<Ctrl><Alt>Down",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 482,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Increase Contrast"
+      ],
+      "shortcut": "1",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 546,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Decrease Contrast"
+      ],
+      "shortcut": "2",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 554,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Reset Contrast"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 562,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Increase Brightness"
+      ],
+      "shortcut": "3",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 570,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Decrease Brightness"
+      ],
+      "shortcut": "4",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 578,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Reset Brightness"
+      ],
+      "shortcut": "<Ctrl>3",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 586,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Increase Gamma"
+      ],
+      "shortcut": "5",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 594,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Decrease Gamma"
+      ],
+      "shortcut": "6",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 602,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Reset Gamma"
+      ],
+      "shortcut": "<Ctrl>5",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 610,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Increase Saturation"
+      ],
+      "shortcut": "7",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 618,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Decrease Saturation"
+      ],
+      "shortcut": "8",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 626,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Video",
+        "Adjustments",
+        "Reset Saturation"
+      ],
+      "shortcut": "<Ctrl>7",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 634,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Add External Subtitle…"
+      ],
+      "shortcut": "<Alt>S",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 146,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Increase Subtitle Font Size"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 346,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Decrease Subtitle Font Size"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 354,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Move Subtitle Up"
+      ],
+      "shortcut": "R",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 362,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Move Subtitle Down"
+      ],
+      "shortcut": "<Shift>R",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 370,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Show Subtitles Earlier"
+      ],
+      "shortcut": "Z",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 378,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Show Subtitles Later"
+      ],
+      "shortcut": "<Shift>Z",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 386,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Toggle Subtitles"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 338,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Cycle Up Subtitle"
+      ],
+      "shortcut": "J",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 394,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Subtitles",
+        "Cycle Down Subtitle"
+      ],
+      "shortcut": "<Shift>J",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 402,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Audio",
+        "Mute"
+      ],
+      "shortcut": "M",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 122,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Audio",
+        "Volume Up"
+      ],
+      "shortcut": "9",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 506,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Audio",
+        "Volume Down"
+      ],
+      "shortcut": "0",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 514,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Audio",
+        "Cycle Up Audio Track"
+      ],
+      "shortcut": "<Shift>3",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 58,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Audio",
+        "Cycle Down Audio Track"
+      ],
+      "shortcut": "<Shift>2",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 66,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Settings",
+        "Settings"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 74,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 82,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Help",
+        "About Haruna"
+      ],
+      "shortcut": "F1",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 34,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Help",
+        "Report Bug"
+      ],
+      "shortcut": "<Ctrl><Shift>F1",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 42,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    },
+    {
+      "path": [
+        "Help",
+        "Sponsor Haruna"
+      ],
+      "shortcut": "dollar",
+      "repo": "haruna",
+      "file": "src/models/actionsmodel.cpp",
+      "line": 50,
+      "commit": "d8885e0ce65dd53aa0bc37d68b99563cc818c4b7"
+    }
+  ]
+}

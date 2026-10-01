@@ -67,40 +67,62 @@
 - Evolution
 - Extension Manager
 - Eye of GNOME
+- Eye of MATE Image Viewer
+- Falkon
 - Ferdium
 - File Roller
+- Filelight
 - FileZilla
 - Firefox
+- Flameshot
 - Flatseal
 - FocusWriter
 - Foliate
 - Font Viewer
+- foot
+- Fred TV
 - FreeCAD
+- FreeTube
+- galculator
 - Geary
+- gedit
 - Ghostty
 - GIMP
+- GitHub Desktop
 - GitKraken
 - GNOME Boxes
 - GNOME Builder
 - GNOME Terminal
 - GNOME Tweaks
+- Gnote
 - Godot
 - Gradia
 - GParted
 - GVim
 - Gwenview
 - HandBrake
+- Haruna
 - Heroic Games Launcher
 - Impression
 - Inkscape
 - Insomnia
 - IntelliJ IDEA
 - Iotas
+- Jellyfin Desktop
 - Joplin
+- JuK
+- K3b
+- KAddressBook
 - Karere
+- Kate
+- KCalc
+- KDE Partition Manager
 - Kdenlive
 - KeePassXC
+- Keypunch
+- KFind
 - Kitty
+- KMag
 - Komikku
 - Konsole
 - Krita

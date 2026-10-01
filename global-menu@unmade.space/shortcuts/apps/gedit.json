@@ -1,0 +1,159 @@
+{
+  "format": 1,
+  "app": "gedit",
+  "name": "gedit",
+  "identifiers": [
+    "org.gnome.gedit.desktop",
+    "org.gnome.gedit",
+    "gedit"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "New", "shortcut": "<Ctrl>T"},
+        {"separator": true},
+        {"label": "Open", "shortcut": "<Ctrl>O"},
+        {"label": "Open Recent", "items": [
+          {"label": "Reopen Closed Tab", "shortcut": "<Ctrl><Shift>T"}
+        ]},
+        {"separator": true},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As…", "shortcut": "<Ctrl><Shift>S"},
+        {"separator": true},
+        {"label": "New Window", "shortcut": "<Ctrl>N"},
+        {"separator": true},
+        {"label": "Reload"},
+        {"separator": true},
+        {"label": "Print…", "shortcut": "<Ctrl>P"},
+        {"separator": true},
+        {"label": "Close", "shortcut": "<Ctrl>W"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
+        {"separator": true},
+        {"label": "Cut", "shortcut": "<Ctrl>X"},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"},
+        {"label": "Delete", "shortcut": "Delete"},
+        {"separator": true},
+        {"label": "Overwrite Mode", "shortcut": "Insert"},
+        {"separator": true},
+        {"label": "Select All", "shortcut": "<Ctrl>A"},
+        {"label": "Unselect All", "shortcut": "<Ctrl>backslash"},
+        {"separator": true},
+        {"label": "Preferences", "shortcut": "<Ctrl>comma"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Side Panel", "shortcut": "F9"},
+        {"label": "Bottom Panel", "shortcut": "<Ctrl>F9"},
+        {"separator": true},
+        {"label": "Fullscreen", "shortcut": "F11"},
+        {"separator": true},
+        {"label": "Highlight Mode…"},
+        {"separator": true},
+        {"label": "Larger Text", "shortcut": "<Ctrl>plus"},
+        {"label": "Smaller Text", "shortcut": "<Ctrl>minus"},
+        {"label": "Normal Size", "shortcut": "<Ctrl>0"}
+      ]
+    },
+    {
+      "label": "Search",
+      "items": [
+        {"label": "Find…", "shortcut": "<Ctrl>F"},
+        {"label": "Find Next", "shortcut": "<Ctrl>G"},
+        {"label": "Find Previous", "shortcut": "<Ctrl><Shift>G"},
+        {"separator": true},
+        {"label": "Find and Replace…", "shortcut": "<Ctrl>H"},
+        {"separator": true},
+        {"label": "Clear Highlight", "shortcut": "<Ctrl><Shift>K"},
+        {"separator": true},
+        {"label": "Go to Line…", "shortcut": "<Ctrl>I"},
+        {"label": "Move to Matching Bracket", "shortcut": "<Ctrl>percent"},
+        {"separator": true},
+        {"label": "Toggle Bookmark", "shortcut": "<Ctrl><Alt>B"},
+        {"label": "Go to Next Bookmark", "shortcut": "<Ctrl>B"},
+        {"label": "Go to Previous Bookmark", "shortcut": "<Ctrl><Shift>B"}
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {"label": "Check Spelling…", "shortcut": "<Shift>F7"},
+        {"label": "Set Language…"},
+        {"label": "Highlight Misspelled Words"},
+        {"separator": true},
+        {"label": "Document Statistics"},
+        {"label": "Sort…"},
+        {"label": "Insert Date and Time…", "shortcut": "<Shift><Alt>D"},
+        {"separator": true},
+        {"label": "Comment Code", "shortcut": "<Ctrl>M"},
+        {"label": "Uncomment Code", "shortcut": "<Ctrl><Shift>M"},
+        {"separator": true},
+        {"label": "Show Completion Window", "shortcut": "<Ctrl>space"}
+      ]
+    },
+    {
+      "label": "Documents",
+      "items": [
+        {"label": "Save All", "shortcut": "<Ctrl><Shift>L"},
+        {"label": "Close All", "shortcut": "<Ctrl><Shift>W"},
+        {"separator": true},
+        {"label": "New Tab Group", "shortcut": "<Ctrl><Alt>N"},
+        {"label": "Previous Tab Group", "shortcut": "<Ctrl><Shift><Alt>Page_Up"},
+        {"label": "Next Tab Group", "shortcut": "<Ctrl><Shift><Alt>Page_Down"},
+        {"separator": true},
+        {"label": "Previous Document", "shortcut": "<Ctrl><Alt>Page_Up"},
+        {"label": "Next Document", "shortcut": "<Ctrl><Alt>Page_Down"},
+        {"separator": true},
+        {"label": "Move To New Window"}
+      ]
+    },
+    {
+      "label": "Text",
+      "items": [
+        {"label": "Editing", "items": [
+          {"label": "Delete Current Line", "shortcut": "<Ctrl>D"},
+          {"label": "Move Current Line Up", "shortcut": "<Alt>Up"},
+          {"label": "Move Current Line Down", "shortcut": "<Alt>Down"},
+          {"label": "Move Current Word Left", "shortcut": "<Alt>Left"},
+          {"label": "Move Current Word Right", "shortcut": "<Alt>Right"},
+          {"separator": true},
+          {"label": "Convert to Uppercase", "shortcut": "<Ctrl>U"},
+          {"label": "Convert to Lowercase", "shortcut": "<Ctrl>L"},
+          {"label": "Invert Case", "shortcut": "<Ctrl>asciitilde"},
+          {"separator": true},
+          {"label": "Increment Number at Cursor", "shortcut": "<Ctrl><Shift>A"},
+          {"label": "Decrement Number at Cursor", "shortcut": "<Ctrl><Shift>X"},
+          {"separator": true},
+          {"label": "Toggle Cursor Visibility", "shortcut": "F7"}
+        ]},
+        {"label": "Navigation", "items": [
+          {"label": "Move to the Beginning of the Current Line", "shortcut": "Home"},
+          {"label": "Move to the End of the Current Line", "shortcut": "End"},
+          {"label": "Move to the Beginning of the Document", "shortcut": "<Ctrl>Home"},
+          {"label": "Move to the End of the Document", "shortcut": "<Ctrl>End"},
+          {"separator": true},
+          {"label": "Move Viewport Up within the File", "shortcut": "<Shift><Alt>Up"},
+          {"label": "Move Viewport Down within the File", "shortcut": "<Shift><Alt>Down"},
+          {"label": "Move Viewport to Beginning of File", "shortcut": "<Shift><Alt>Home"},
+          {"label": "Move Viewport to End of File", "shortcut": "<Shift><Alt>End"}
+        ]}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Help", "shortcut": "F1"}
+      ]
+    }
+  ]
+}

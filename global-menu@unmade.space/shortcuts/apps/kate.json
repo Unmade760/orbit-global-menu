@@ -1,0 +1,951 @@
+{
+  "format": 1,
+  "app": "kate",
+  "name": "Kate",
+  "identifiers": [
+    "org.kde.kate.desktop",
+    "org.kde.kate",
+    "kate",
+    "Kate"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "New Window",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "label": "New From Template",
+          "shortcut": "<Shift><Alt>N"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Open Folder...",
+          "shortcut": "<Ctrl>T O"
+        },
+        {
+          "label": "Open Recent"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Save As with Encoding…"
+        },
+        {
+          "label": "Save Copy As…"
+        },
+        {
+          "label": "Save All",
+          "shortcut": "<Ctrl>L"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reload",
+          "shortcut": "F5"
+        },
+        {
+          "label": "Reload All"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Print/Export",
+          "items": [
+            {
+              "label": "Print…",
+              "shortcut": "<Ctrl>P"
+            },
+            {
+              "label": "Print Preview"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Close Other"
+        },
+        {
+          "label": "Close All"
+        },
+        {
+          "label": "Close Orphaned"
+        },
+        {
+          "label": "Close Window",
+          "shortcut": "<Ctrl><Shift>W"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "File Actions",
+          "items": [
+            {
+              "label": "Rename..."
+            },
+            {
+              "label": "Delete"
+            },
+            {
+              "label": "Compare"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Copy Location"
+            },
+            {
+              "label": "Copy Filename"
+            },
+            {
+              "label": "Open Containing Folder"
+            },
+            {
+              "label": "Properties"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Find in Files",
+          "shortcut": "<Ctrl><Shift>F"
+        },
+        {
+          "label": "Find in Files Variants",
+          "items": [
+            {
+              "label": "Go to Next Match",
+              "shortcut": "F6"
+            },
+            {
+              "label": "Go to Previous Match",
+              "shortcut": "<Shift>F6"
+            },
+            {
+              "label": "Find in Files (in a New Tab)"
+            },
+            {
+              "label": "Cut Matching Lines"
+            }
+          ]
+        },
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste Selection",
+          "shortcut": "<Ctrl><Shift>Insert"
+        },
+        {
+          "label": "Clipboard History Paste",
+          "shortcut": "<Ctrl><Shift><Alt>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Overwrite Mode",
+          "shortcut": "Insert"
+        },
+        {
+          "label": "Read Only Mode"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find…",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find Variants",
+          "items": [
+            {
+              "label": "Find Next",
+              "shortcut": "F3"
+            },
+            {
+              "label": "Find Previous",
+              "shortcut": "<Shift>F3"
+            },
+            {
+              "label": "Find Selected",
+              "shortcut": "<Ctrl>H"
+            },
+            {
+              "label": "Find Selected Backwards",
+              "shortcut": "<Ctrl><Shift>H"
+            }
+          ]
+        },
+        {
+          "label": "Replace…",
+          "shortcut": "<Ctrl>R"
+        }
+      ]
+    },
+    {
+      "label": "Selection",
+      "items": [
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Deselect",
+          "shortcut": "<Ctrl><Shift>A"
+        },
+        {
+          "label": "Block Selection Mode",
+          "shortcut": "<Ctrl><Shift>B"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toggle Comment",
+          "shortcut": "<Ctrl>slash"
+        },
+        {
+          "label": "Join Lines",
+          "shortcut": "<Ctrl>J"
+        },
+        {
+          "label": "Capitalization",
+          "items": [
+            {
+              "label": "Uppercase",
+              "shortcut": "<Ctrl>U"
+            },
+            {
+              "label": "Lowercase",
+              "shortcut": "<Ctrl><Shift>U"
+            },
+            {
+              "label": "Capitalize",
+              "shortcut": "<Ctrl><Alt>U"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Clean Indentation"
+        },
+        {
+          "label": "Convert Indentation to Spaces"
+        },
+        {
+          "label": "Convert Indentation to Tabs"
+        },
+        {
+          "label": "Format Indentation"
+        },
+        {
+          "label": "Align On…"
+        },
+        {
+          "label": "Apply Word Wrap"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Add Caret above Cursor",
+          "shortcut": "<Ctrl><Alt>Up"
+        },
+        {
+          "label": "Add Caret below Cursor",
+          "shortcut": "<Ctrl><Alt>Down"
+        },
+        {
+          "label": "Add Cursors to Line Ends",
+          "shortcut": "<Shift><Alt>I"
+        },
+        {
+          "label": "Find and Select Next Occurrence",
+          "shortcut": "<Alt>J"
+        },
+        {
+          "label": "Find and Select All Occurrences",
+          "shortcut": "<Ctrl><Shift><Alt>J"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Quick Open",
+          "shortcut": "<Ctrl><Alt>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Previous Location",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Go to Next Location",
+          "shortcut": "<Ctrl><Shift>1"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Previous Document",
+          "shortcut": "<Alt>Up"
+        },
+        {
+          "label": "Next Document",
+          "shortcut": "<Alt>Down"
+        },
+        {
+          "label": "Show Active Document"
+        },
+        {
+          "label": "Last Used Views",
+          "shortcut": "<Ctrl>Tab"
+        },
+        {
+          "label": "Go to Line…",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Previous Editing Location",
+          "shortcut": "<Ctrl>E"
+        },
+        {
+          "label": "Go to Next Editing Location",
+          "shortcut": "<Ctrl><Shift>E"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Previous Modified Line"
+        },
+        {
+          "label": "Go to Next Modified Line"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Matching Bracket",
+          "shortcut": "<Ctrl>6"
+        },
+        {
+          "label": "Select to Matching Bracket",
+          "shortcut": "<Ctrl><Shift>6"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Split View",
+          "items": [
+            {
+              "label": "Previous Split View",
+              "shortcut": "<Shift>F8"
+            },
+            {
+              "label": "Next Split View"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Left Split View"
+            },
+            {
+              "label": "Right Split View"
+            },
+            {
+              "label": "Upward Split View"
+            },
+            {
+              "label": "Downward Split View"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Split Vertical",
+              "shortcut": "<Ctrl><Shift>L"
+            },
+            {
+              "label": "Split Horizontal",
+              "shortcut": "<Ctrl><Shift>T"
+            },
+            {
+              "label": "Move Document to New Vertical Split"
+            },
+            {
+              "label": "Move Document to New Horizontal Split"
+            },
+            {
+              "label": "Toggle Orientation"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Close Current View",
+              "shortcut": "<Ctrl><Shift>R"
+            },
+            {
+              "label": "Close Inactive Views"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Hide Inactive Views"
+            },
+            {
+              "label": "Toggle Scroll Synchronization"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Move Splitter Left"
+            },
+            {
+              "label": "Move Splitter Right"
+            },
+            {
+              "label": "Move Splitter Up"
+            },
+            {
+              "label": "Move Splitter Down"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Enlarge Font",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Shrink Font",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Reset Font Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Editor Color Theme"
+        },
+        {
+          "label": "Word Wrap",
+          "items": [
+            {
+              "label": "Dynamic Word Wrap"
+            },
+            {
+              "label": "Dynamic Word Wrap Indicators"
+            },
+            {
+              "label": "Static Word Wrap"
+            },
+            {
+              "label": "Show Static Word Wrap Marker"
+            }
+          ]
+        },
+        {
+          "label": "Borders",
+          "items": [
+            {
+              "label": "Show Icon Border"
+            },
+            {
+              "label": "Show Line Numbers"
+            },
+            {
+              "label": "Show Scrollbar Marks"
+            },
+            {
+              "label": "Show Scrollbar Mini-Map"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Code Folding",
+          "items": [
+            {
+              "label": "Show Folding Markers"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Toggle Current Node"
+            },
+            {
+              "label": "Toggle Contained Nodes"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Fold Toplevel Nodes"
+            },
+            {
+              "label": "Unfold Toplevel Nodes"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Non-Printable Spaces"
+        },
+        {
+          "label": "Force RTL Direction"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "External Tools"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Git Blame Details",
+          "shortcut": "<Ctrl>T B"
+        },
+        {
+          "label": "Toggle Git Blame Details"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Terminal Panel",
+          "shortcut": "F4"
+        },
+        {
+          "label": "Focus Terminal Panel",
+          "shortcut": "<Ctrl><Shift>F4"
+        },
+        {
+          "label": "Split Terminal Vertically"
+        },
+        {
+          "label": "Split Terminal Horizontally"
+        },
+        {
+          "label": "New Terminal Tab"
+        },
+        {
+          "label": "Pipe to Terminal"
+        },
+        {
+          "label": "Synchronize Terminal with Current Document"
+        },
+        {
+          "label": "Run Current Document"
+        },
+        {
+          "label": "Create Snippet"
+        },
+        {
+          "label": "Filter Through Command...",
+          "shortcut": "<Ctrl>backslash"
+        },
+        {
+          "label": "Diagnostics View",
+          "items": [
+            {
+              "label": "Quick Fix",
+              "shortcut": "<Ctrl>period"
+            },
+            {
+              "label": "Next Item",
+              "shortcut": "<Shift><Alt>Right"
+            },
+            {
+              "label": "Previous Item",
+              "shortcut": "<Shift><Alt>Left"
+            },
+            {
+              "label": "Clear Diagnostics Filter",
+              "shortcut": "<Shift><Alt>C"
+            }
+          ]
+        },
+        {
+          "label": "Indentation"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Encoding"
+        },
+        {
+          "label": "Add Byte Order Mark (BOM)"
+        },
+        {
+          "label": "End of Line"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Switch to Command Line",
+          "shortcut": "F7"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Invoke Code Completion",
+          "shortcut": "<Ctrl>space"
+        },
+        {
+          "label": "Word Completion",
+          "items": [
+            {
+              "label": "Reuse Word Below",
+              "shortcut": "<Ctrl>9"
+            },
+            {
+              "label": "Reuse Word Above",
+              "shortcut": "<Ctrl>8"
+            },
+            {
+              "label": "Shell Completion"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Spelling",
+          "items": [
+            {
+              "label": "Automatic Spell Checking",
+              "shortcut": "<Ctrl><Shift>O"
+            },
+            {
+              "label": "Spelling…"
+            },
+            {
+              "label": "Spelling (from Cursor)…"
+            },
+            {
+              "label": "Change Dictionary…"
+            },
+            {
+              "label": "Clear Dictionary Ranges"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Text to Speech",
+          "items": [
+            {
+              "label": "Say current selection or document"
+            },
+            {
+              "label": "Stop current output"
+            },
+            {
+              "label": "Pause current output"
+            },
+            {
+              "label": "Resume current output"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Show Tabs"
+        },
+        {
+          "label": "Show Path in Titlebar"
+        },
+        {
+          "label": "Show Navigation Bar"
+        },
+        {
+          "label": "Configure Editor…"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Welcome Page"
+        }
+      ]
+    },
+    {
+      "label": "CTags",
+      "items": [
+        {
+          "label": "Jump back one step"
+        },
+        {
+          "label": "Lookup Current Text"
+        },
+        {
+          "label": "Go to Declaration"
+        },
+        {
+          "label": "Go to Definition"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Configure ..."
+        }
+      ]
+    },
+    {
+      "label": "Build",
+      "items": [
+        {
+          "label": "Select Target..."
+        },
+        {
+          "label": "Build Selected Target"
+        },
+        {
+          "label": "Build and Run Selected Target"
+        },
+        {
+          "label": "Compile Current File"
+        },
+        {
+          "label": "Stop"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Focus Next Tab to the Left"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Load targets from CMake Build Dir"
+        }
+      ]
+    },
+    {
+      "label": "SQL",
+      "items": [
+        {
+          "label": "Add Connection..."
+        },
+        {
+          "label": "Remove Connection"
+        },
+        {
+          "label": "Edit Connection..."
+        },
+        {
+          "label": "Reconnect"
+        }
+      ]
+    },
+    {
+      "label": "LSP Client",
+      "items": [
+        {
+          "label": "Find References",
+          "shortcut": "<Ctrl><Alt>L"
+        },
+        {
+          "label": "Search and Go to Symbol",
+          "shortcut": "<Ctrl><Alt>P"
+        },
+        {
+          "label": "Format",
+          "shortcut": "<Ctrl>T F"
+        },
+        {
+          "label": "Rename",
+          "shortcut": "F2"
+        },
+        {
+          "label": "Expand Selection",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Shrink Selection",
+          "shortcut": "<Ctrl><Shift>2"
+        }
+      ]
+    },
+    {
+      "label": "Projects",
+      "items": [
+        {
+          "label": "Activate Previous Project",
+          "shortcut": "<Ctrl><Alt>Left"
+        },
+        {
+          "label": "Activate Next Project",
+          "shortcut": "<Ctrl><Alt>Right"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Lookup",
+          "shortcut": "<Alt>1"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close Project"
+        },
+        {
+          "label": "Close All Projects"
+        },
+        {
+          "label": "Close Orphaned Projects"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Reload All Projects"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Project TODOs"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Run replicode"
+        },
+        {
+          "label": "Stop replicode"
+        }
+      ]
+    },
+    {
+      "label": "XML",
+      "items": [
+        {
+          "label": "Validate XML"
+        },
+        {
+          "label": "Insert Element..."
+        },
+        {
+          "label": "Close Element"
+        },
+        {
+          "label": "Assign Meta DTD..."
+        }
+      ]
+    }
+  ]
+}

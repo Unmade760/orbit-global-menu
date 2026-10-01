@@ -1,0 +1,769 @@
+{
+  "format": 1,
+  "app": "gedit",
+  "repos": {
+    "gedit": {
+      "url": "https://gitlab.gnome.org/World/gedit/gedit.git",
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 68,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "File",
+        "Open"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 77,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "File",
+        "Open Recent",
+        "Reopen Closed Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 90,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 103,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 108,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 116,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 131,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 139,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 145,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 156,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 161,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 168,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 173,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 178,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 183,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Overwrite Mode"
+      ],
+      "shortcut": "Insert",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 191,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 199,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Unselect All"
+      ],
+      "shortcut": "<Ctrl>backslash",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 217,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Edit",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "gedit",
+      "file": "gedit/gedit-app.c",
+      "line": 738,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "View",
+        "Side Panel"
+      ],
+      "shortcut": "F9",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 217,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "View",
+        "Bottom Panel"
+      ],
+      "shortcut": "<Ctrl>F9",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 223,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 231,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "View",
+        "Larger Text"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "gedit",
+      "file": "plugins/textsize/gedit-text-size-app-activatable.c",
+      "line": 112,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "View",
+        "Smaller Text"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "gedit",
+      "file": "plugins/textsize/gedit-text-size-app-activatable.c",
+      "line": 117,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "View",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "gedit",
+      "file": "plugins/textsize/gedit-text-size-app-activatable.c",
+      "line": 121,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Find…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 249,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Next"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 254,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Find Previous"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 259,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Find and Replace…"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 267,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Clear Highlight"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 275,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Go to Line…"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 283,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Move to Matching Bracket"
+      ],
+      "shortcut": "<Ctrl>percent",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 320,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Toggle Bookmark"
+      ],
+      "shortcut": "<Ctrl><Alt>B",
+      "repo": "gedit",
+      "file": "plugins/bookmarks/gedit-bookmarks-app-activatable.c",
+      "line": 132,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Go to Next Bookmark"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "gedit",
+      "file": "plugins/bookmarks/gedit-bookmarks-app-activatable.c",
+      "line": 133,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Search",
+        "Go to Previous Bookmark"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "gedit",
+      "file": "plugins/bookmarks/gedit-bookmarks-app-activatable.c",
+      "line": 134,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Tools",
+        "Check Spelling…"
+      ],
+      "shortcut": "<Shift>F7",
+      "repo": "gedit",
+      "file": "plugins/spell/gedit-spell-app-activatable.c",
+      "line": 111,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Tools",
+        "Insert Date and Time…"
+      ],
+      "shortcut": "<Shift><Alt>D",
+      "repo": "gedit",
+      "file": "plugins/time/gedit-time-plugin.c",
+      "line": 255,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Tools",
+        "Comment Code"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "gedit",
+      "file": "plugins/codecomment/gedit-code-comment-app-activatable.c",
+      "line": 109,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Tools",
+        "Uncomment Code"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "gedit",
+      "file": "plugins/codecomment/gedit-code-comment-app-activatable.c",
+      "line": 113,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Tools",
+        "Show Completion Window"
+      ],
+      "shortcut": "<Ctrl>space",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 451,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Documents",
+        "Save All"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 309,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Documents",
+        "Close All"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 314,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Documents",
+        "New Tab Group"
+      ],
+      "shortcut": "<Ctrl><Alt>N",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 322,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Documents",
+        "Previous Tab Group"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>Page_Up",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 327,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Documents",
+        "Next Tab Group"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>Page_Down",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 332,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Documents",
+        "Previous Document"
+      ],
+      "shortcut": "<Ctrl><Alt>Page_Up",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 340,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Documents",
+        "Next Document"
+      ],
+      "shortcut": "<Ctrl><Alt>Page_Down",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 345,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Delete Current Line"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 361,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Move Current Line Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 368,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Move Current Line Down"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 375,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Move Current Word Left"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 382,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Move Current Word Right"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 389,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Convert to Uppercase"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 396,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Convert to Lowercase"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 403,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Invert Case"
+      ],
+      "shortcut": "<Ctrl>asciitilde",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 410,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Increment Number at Cursor"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 417,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Decrement Number at Cursor"
+      ],
+      "shortcut": "<Ctrl><Shift>X",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 424,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Editing",
+        "Toggle Cursor Visibility"
+      ],
+      "shortcut": "F7",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 354,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Navigation",
+        "Move to the Beginning of the Current Line"
+      ],
+      "shortcut": "Home",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 264,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Navigation",
+        "Move to the End of the Current Line"
+      ],
+      "shortcut": "End",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 271,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Navigation",
+        "Move to the Beginning of the Document"
+      ],
+      "shortcut": "<Ctrl>Home",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 278,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Navigation",
+        "Move to the End of the Document"
+      ],
+      "shortcut": "<Ctrl>End",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 285,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Navigation",
+        "Move Viewport Up within the File"
+      ],
+      "shortcut": "<Shift><Alt>Up",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 292,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Navigation",
+        "Move Viewport Down within the File"
+      ],
+      "shortcut": "<Shift><Alt>Down",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 299,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Navigation",
+        "Move Viewport to Beginning of File"
+      ],
+      "shortcut": "<Shift><Alt>Home",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 313,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Text",
+        "Navigation",
+        "Move Viewport to End of File"
+      ],
+      "shortcut": "<Shift><Alt>End",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/help-overlay.ui",
+      "line": 306,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "gedit",
+      "file": "gedit/resources/gtk/menus-common.ui",
+      "line": 363,
+      "commit": "13bd7669ed5df51536056a2b224d965ec5479e41"
+    }
+  ]
+}

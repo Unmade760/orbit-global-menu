@@ -1,0 +1,419 @@
+{
+  "format": 1,
+  "app": "gnote",
+  "repos": {
+    "gnote": {
+      "url": "https://gitlab.gnome.org/GNOME/gnote.git",
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Show Help"
+      ],
+      "shortcut": "F1",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 17,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "General",
+        "Shortcuts"
+      ],
+      "shortcut": "<Ctrl><Shift>question",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 24,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "General",
+        "Open Actions Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 31,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "General",
+        "Open Actions Menu"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 133,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "General",
+        "Open Note Actions Menu"
+      ],
+      "shortcut": "F8",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 147,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "General",
+        "Open Tab 1 (up to 9)"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 52,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "General",
+        "Close Current Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 175,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "General",
+        "Close Window"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 45,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Search",
+        "Display Search Bar"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 65,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Search",
+        "Select Next Match"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 72,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Search",
+        "Select Previous Match"
+      ],
+      "shortcut": "<Ctrl><Shift>G",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 79,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Search",
+        "Hide Search Bar"
+      ],
+      "shortcut": "Escape",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 38,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Notes List",
+        "Create New Note"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 92,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Notes List",
+        "Open Selected Note"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 99,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Notes List",
+        "Open Selected Note in New Window"
+      ],
+      "shortcut": "<Alt>W",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 106,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Notes List",
+        "Delete Selected Note"
+      ],
+      "shortcut": "Delete",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 113,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo Last Edit"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 188,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo Last Edit"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 195,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Create Link to Note on Selected Text"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 202,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Insert Timestamp"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "gnote",
+      "file": "src/plugins/inserttimestamp/inserttimestampnoteaddin.cpp",
+      "line": 90,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Replace Title"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "gnote",
+      "file": "src/plugins/replacetitle/replacetitlenoteaddin.cpp",
+      "line": 49,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Edit",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "gnote",
+      "file": "src/plugins/printnotes/printnotesnoteaddin.cpp",
+      "line": 58,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Toggle Bold"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 215,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Toggle Italic"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 222,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Toggle Strikethrough"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 229,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Toggle Highlight"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 236,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Toggle Fixed Width"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 243,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Toggle Underline"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 250,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Increase Font Size"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 257,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Decrease Font Size"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 264,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Increase Indent"
+      ],
+      "shortcut": "Tab",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 271,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Increase Indent"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "gnote",
+      "file": "src/notewindow.cpp",
+      "line": 276,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Decrease Indent"
+      ],
+      "shortcut": "<Shift>Tab",
+      "repo": "gnote",
+      "file": "data/shortcuts-gnote.ui",
+      "line": 278,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Format",
+        "Decrease Indent"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "gnote",
+      "file": "src/notewindow.cpp",
+      "line": 282,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Headings",
+        "Heading 1"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "gnote",
+      "file": "src/plugins/tableofcontents/tableofcontentsnoteaddin.cpp",
+      "line": 79,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Headings",
+        "Heading 2"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "gnote",
+      "file": "src/plugins/tableofcontents/tableofcontentsnoteaddin.cpp",
+      "line": 84,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    },
+    {
+      "path": [
+        "Headings",
+        "Table of Contents"
+      ],
+      "shortcut": "<Ctrl><Alt>1",
+      "repo": "gnote",
+      "file": "src/plugins/tableofcontents/tableofcontentsnoteaddin.cpp",
+      "line": 89,
+      "commit": "b207f78f711b242e3d6c58200eead15bcd38b51d"
+    }
+  ]
+}

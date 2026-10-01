@@ -1,0 +1,309 @@
+{
+  "format": 1,
+  "app": "eye-of-mate-image-viewer",
+  "repos": {
+    "eye-of-mate-image-viewer": {
+      "url": "https://github.com/mate-desktop/eom",
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Image",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3779,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Image",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3815,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Image",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3821,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Image",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3827,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Image",
+        "Set as Desktop Background"
+      ],
+      "shortcut": "<Ctrl>F8",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3849,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Image",
+        "Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3830,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Image",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3782,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3833,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3854,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rotate Clockwise"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3842,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rotate Counterclockwise"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3845,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move to Trash"
+      ],
+      "shortcut": "Delete",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3878,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "View",
+        "Image Collection"
+      ],
+      "shortcut": "<Ctrl>F9",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3806,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "View",
+        "Side Pane"
+      ],
+      "shortcut": "F9",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3809,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3884,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "View",
+        "Slideshow"
+      ],
+      "shortcut": "F5",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3920,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3857,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3860,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "View",
+        "Normal Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3863,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "View",
+        "Best Fit"
+      ],
+      "shortcut": "F",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3866,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Go",
+        "Previous Image"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3893,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Go",
+        "Next Image"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3896,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Go",
+        "First Image"
+      ],
+      "shortcut": "<Alt>Home",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3899,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Go",
+        "Last Image"
+      ],
+      "shortcut": "<Alt>End",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3902,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Go",
+        "Random Image"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3905,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Tools",
+        "Reload Image"
+      ],
+      "shortcut": "R",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "plugins/reload/eom-reload-plugin.c",
+      "line": 45,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    },
+    {
+      "path": [
+        "Help",
+        "Contents"
+      ],
+      "shortcut": "F1",
+      "repo": "eye-of-mate-image-viewer",
+      "file": "src/eom-window.c",
+      "line": 3791,
+      "commit": "8214609d0e939b774bf5fa952d68a7422b81ae88"
+    }
+  ]
+}

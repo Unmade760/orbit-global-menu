@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "app": "haruna",
+  "name": "Haruna",
+  "identifiers": ["org.kde.haruna.desktop", "org.kde.haruna", "haruna"],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Open File", "shortcut": "<Ctrl>O"},
+        {"label": "Open URL", "shortcut": "<Ctrl><Shift>O"},
+        {"label": "Load Last Played File", "shortcut": "<Ctrl><Shift>L"},
+        {"label": "Open Actions Dialog", "shortcut": "<Ctrl>grave"},
+        {"separator": true},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Toggle Fullscreen", "shortcut": "F"},
+        {"label": "Exit Fullscreen", "shortcut": "Escape"},
+        {"label": "Toggle Menu Bar", "shortcut": "<Ctrl>M"},
+        {"label": "Toggle Header", "shortcut": "<Ctrl>H"},
+        {"label": "Playlist", "shortcut": "P"},
+        {"label": "Toggle Transcript Panel", "shortcut": "<Ctrl>P"},
+        {"label": "Open Context Menu", "shortcut": "Menu"}
+      ]
+    },
+    {
+      "label": "Playback",
+      "items": [
+        {"label": "Play/Pause", "shortcut": "space"},
+        {"label": "Play Next", "shortcut": "<Shift>period"},
+        {"label": "Play Previous", "shortcut": "<Shift>comma"},
+        {"label": "Restart Playback", "shortcut": "F5"},
+        {"label": "Set Loop", "shortcut": "L"},
+        {"separator": true},
+        {"label": "Increase Playback Speed", "shortcut": "bracketright"},
+        {"label": "Decrease Playback Speed", "shortcut": "bracketleft"},
+        {"label": "Reset Playback Speed", "shortcut": "BackSpace"},
+        {"label": "Seek", "items": [
+          {"label": "Seek Small Step Forward", "shortcut": "Right"},
+          {"label": "Seek Small Step Backward", "shortcut": "Left"},
+          {"label": "Seek Medium Step Forward", "shortcut": "<Shift>Right"},
+          {"label": "Seek Medium Step Backward", "shortcut": "<Shift>Left"},
+          {"label": "Seek Big Step Forward", "shortcut": "Up"},
+          {"label": "Seek Big Step Backward", "shortcut": "Down"},
+          {"label": "Seek To Next Subtitle", "shortcut": "<Ctrl>Right"},
+          {"label": "Seek To Previous Subtitle", "shortcut": "<Ctrl>Left"},
+          {"label": "Seek To Next Chapter", "shortcut": "Page_Up"},
+          {"label": "Seek To Previous Chapter", "shortcut": "Page_Down"},
+          {"label": "Step Frame Forward", "shortcut": "period"},
+          {"label": "Step Frame Backward", "shortcut": "comma"},
+          {"label": "Seek To Watch Later Position", "shortcut": "<Ctrl><Shift>P"}
+        ]}
+      ]
+    },
+    {
+      "label": "Video",
+      "items": [
+        {"label": "Toggle Deinterlacing", "shortcut": "D"},
+        {"label": "Zoom In", "shortcut": "<Ctrl>plus"},
+        {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
+        {"label": "Reset Zoom", "shortcut": "<Ctrl>0"},
+        {"label": "Screenshot", "shortcut": "S"},
+        {"label": "Rotate Clockwise", "shortcut": "<Ctrl>R"},
+        {"label": "Rotate Counter Clockwise", "shortcut": "<Ctrl>E"},
+        {"label": "Move Video Left", "shortcut": "<Ctrl><Alt>Left"},
+        {"label": "Move Video Right", "shortcut": "<Ctrl><Alt>Right"},
+        {"label": "Move Video Up", "shortcut": "<Ctrl><Alt>Up"},
+        {"label": "Move Video Down", "shortcut": "<Ctrl><Alt>Down"},
+        {"label": "Adjustments", "items": [
+          {"label": "Increase Contrast", "shortcut": "1"},
+          {"label": "Decrease Contrast", "shortcut": "2"},
+          {"label": "Reset Contrast", "shortcut": "<Ctrl>1"},
+          {"label": "Increase Brightness", "shortcut": "3"},
+          {"label": "Decrease Brightness", "shortcut": "4"},
+          {"label": "Reset Brightness", "shortcut": "<Ctrl>3"},
+          {"label": "Increase Gamma", "shortcut": "5"},
+          {"label": "Decrease Gamma", "shortcut": "6"},
+          {"label": "Reset Gamma", "shortcut": "<Ctrl>5"},
+          {"label": "Increase Saturation", "shortcut": "7"},
+          {"label": "Decrease Saturation", "shortcut": "8"},
+          {"label": "Reset Saturation", "shortcut": "<Ctrl>7"}
+        ]}
+      ]
+    },
+    {
+      "label": "Subtitles",
+      "items": [
+        {"label": "Add External Subtitle…", "shortcut": "<Alt>S"},
+        {"label": "Increase Subtitle Font Size", "shortcut": "<Ctrl>Z"},
+        {"label": "Decrease Subtitle Font Size", "shortcut": "<Ctrl>X"},
+        {"label": "Move Subtitle Up", "shortcut": "R"},
+        {"label": "Move Subtitle Down", "shortcut": "<Shift>R"},
+        {"label": "Show Subtitles Earlier", "shortcut": "Z"},
+        {"label": "Show Subtitles Later", "shortcut": "<Shift>Z"},
+        {"label": "Toggle Subtitles", "shortcut": "<Ctrl>S"},
+        {"label": "Cycle Up Subtitle", "shortcut": "J"},
+        {"label": "Cycle Down Subtitle", "shortcut": "<Shift>J"}
+      ]
+    },
+    {
+      "label": "Audio",
+      "items": [
+        {"label": "Mute", "shortcut": "M"},
+        {"label": "Volume Up", "shortcut": "9"},
+        {"label": "Volume Down", "shortcut": "0"},
+        {"label": "Cycle Up Audio Track", "shortcut": "<Shift>3"},
+        {"label": "Cycle Down Audio Track", "shortcut": "<Shift>2"}
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {"label": "Settings", "shortcut": "<Ctrl><Shift>comma"},
+        {"label": "Configure Keyboard Shortcuts", "shortcut": "<Ctrl><Alt>comma"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "About Haruna", "shortcut": "F1"},
+        {"label": "Report Bug", "shortcut": "<Ctrl><Shift>F1"},
+        {"label": "Sponsor Haruna", "shortcut": "dollar"}
+      ]
+    }
+  ]
+}

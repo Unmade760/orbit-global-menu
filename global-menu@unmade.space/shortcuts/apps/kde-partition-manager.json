@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "app": "kde-partition-manager",
+  "name": "KDE Partition Manager",
+  "identifiers": ["org.kde.partitionmanager.desktop", "org.kde.partitionmanager", "partitionmanager", "KDE Partition Manager"],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {"label": "Undo", "shortcut": "<Ctrl>Z"}
+      ]
+    },
+    {
+      "label": "Device",
+      "items": [
+        {"label": "Refresh Devices", "shortcut": "F5"},
+        {"label": "New Partition Table", "shortcut": "<Ctrl><Shift>N"}
+      ]
+    },
+    {
+      "label": "Partition",
+      "items": [
+        {"label": "New", "shortcut": "<Ctrl>N"},
+        {"label": "Resize/Move", "shortcut": "<Ctrl>R"},
+        {"label": "Delete", "shortcut": "Delete"},
+        {"label": "Shred", "shortcut": "<Shift>Delete"},
+        {"separator": true},
+        {"label": "Copy", "shortcut": "<Ctrl>C"},
+        {"label": "Paste", "shortcut": "<Ctrl>V"}
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {"label": "New Volume Group", "shortcut": "<Ctrl><Shift>L"}
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {"label": "Configure KDE Partition Manager…", "shortcut": "<Ctrl><Shift>comma"}
+      ]
+    }
+  ]
+}

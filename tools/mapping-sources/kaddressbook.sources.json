@@ -1,0 +1,212 @@
+{
+  "format": 1,
+  "app": "kaddressbook",
+  "repos": {
+    "kaddressbook": {
+      "url": "https://invent.kde.org/pim/kaddressbook.git",
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New",
+        "New Contact"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "kaddressbook",
+      "file": "doc/index.docbook",
+      "line": 1102,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "File",
+        "New",
+        "New Group"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "kaddressbook",
+      "file": "doc/index.docbook",
+      "line": 1110,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "kaddressbook",
+      "file": "src/kaddressbookui.rc",
+      "line": 17,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kaddressbook",
+      "file": "src/kaddressbookui.rc",
+      "line": 22,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "kaddressbook",
+      "file": "src/mainwidget.cpp",
+      "line": 673,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut Contact"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "kaddressbook",
+      "file": "doc/index.docbook",
+      "line": 1234,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "kaddressbook",
+      "file": "doc/index.docbook",
+      "line": 1248,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Contact"
+      ],
+      "shortcut": "Delete",
+      "repo": "kaddressbook",
+      "file": "src/mainwidget.cpp",
+      "line": 288,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "View",
+        "Simple (one column)"
+      ],
+      "shortcut": "<Ctrl><Shift>1",
+      "repo": "kaddressbook",
+      "file": "src/mainwidget.cpp",
+      "line": 687,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "View",
+        "Two Columns"
+      ],
+      "shortcut": "<Ctrl><Shift>2",
+      "repo": "kaddressbook",
+      "file": "src/mainwidget.cpp",
+      "line": 695,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "View",
+        "Three Columns"
+      ],
+      "shortcut": "<Ctrl><Shift>3",
+      "repo": "kaddressbook",
+      "file": "src/mainwidget.cpp",
+      "line": 700,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "View",
+        "Set Focus to Quick Search"
+      ],
+      "shortcut": "<Alt>Q",
+      "repo": "kaddressbook",
+      "file": "src/mainwidget.cpp",
+      "line": 714,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen Mode"
+      ],
+      "shortcut": "F11",
+      "repo": "kaddressbook",
+      "file": "src/mainwindow.cpp",
+      "line": 158,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "kaddressbook",
+      "file": "src/mainwindow.cpp",
+      "line": 137,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "kaddressbook",
+      "file": "src/mainwindow.cpp",
+      "line": 139,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure KAddressBook…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "kaddressbook",
+      "file": "src/mainwindow.cpp",
+      "line": 144,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "Help",
+        "KAddressBook Handbook"
+      ],
+      "shortcut": "F1",
+      "repo": "kaddressbook",
+      "file": "doc/index.docbook",
+      "line": 1564,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    },
+    {
+      "path": [
+        "Help",
+        "What's This?"
+      ],
+      "shortcut": "<Shift>F1",
+      "repo": "kaddressbook",
+      "file": "doc/index.docbook",
+      "line": 1571,
+      "commit": "31c6ab290f7331c2ee8eb017fc7af36276d03ba8"
+    }
+  ]
+}

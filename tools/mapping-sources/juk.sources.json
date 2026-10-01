@@ -1,0 +1,213 @@
+{
+  "format": 1,
+  "app": "juk",
+  "repos": {
+    "juk": {
+      "url": "https://invent.kde.org/multimedia/juk.git",
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New",
+        "Empty Playlist…"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "juk",
+      "file": "playlistcollection.cpp",
+      "line": 896,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "File",
+        "New",
+        "Search Playlist…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "juk",
+      "file": "playlistcollection.cpp",
+      "line": 900,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "File",
+        "New",
+        "Playlist From Folder…"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "juk",
+      "file": "playlistcollection.cpp",
+      "line": 904,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "juk",
+      "file": "playlistcollection.cpp",
+      "line": 935,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "juk",
+      "file": "playlistcollection.cpp",
+      "line": 936,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "juk",
+      "file": "playlistcollection.cpp",
+      "line": 937,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "juk",
+      "file": "juk.cpp",
+      "line": 227,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "juk",
+      "file": "juk.cpp",
+      "line": 228,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "juk",
+      "file": "juk.cpp",
+      "line": 229,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "juk",
+      "file": "juk.cpp",
+      "line": 230,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "juk",
+      "file": "juk.cpp",
+      "line": 231,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "juk",
+      "file": "juk.cpp",
+      "line": 233,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Edit Track Search"
+      ],
+      "shortcut": "F6",
+      "repo": "juk",
+      "file": "playlistsplitter.cpp",
+      "line": 163,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Tagger",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "juk",
+      "file": "tageditor.cpp",
+      "line": 475,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Tagger",
+        "Guess Tag Information From File Name"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "juk",
+      "file": "playlistcollection.cpp",
+      "line": 926,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Tagger",
+        "Rename File"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "juk",
+      "file": "playlistcollection.cpp",
+      "line": 961,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "juk",
+      "file": "juk.cpp",
+      "line": 235,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "juk",
+      "file": "juk.cpp",
+      "line": 234,
+      "commit": "1191a6c94f7cb9ab3a04f4e029bd4a5c0f507d0a"
+    }
+  ]
+}

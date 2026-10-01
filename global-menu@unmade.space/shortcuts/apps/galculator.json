@@ -1,0 +1,316 @@
+{
+  "format": 1,
+  "app": "galculator",
+  "name": "galculator",
+  "identifiers": [
+    "galculator.desktop",
+    "galculator"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Cut Display Value",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy Display Value",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste and Append to Display Value",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Preferences...",
+          "shortcut": "<Ctrl>P"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Show Menu Bar",
+          "shortcut": "<Ctrl>M"
+        }
+      ]
+    },
+    {
+      "label": "Calculator",
+      "items": [
+        {
+          "label": "Number Bases",
+          "items": [
+            {
+              "label": "Decimal",
+              "shortcut": "<Ctrl>D"
+            },
+            {
+              "label": "Hexadecimal",
+              "shortcut": "<Ctrl>H"
+            },
+            {
+              "label": "Octal",
+              "shortcut": "<Ctrl>O"
+            },
+            {
+              "label": "Binary",
+              "shortcut": "<Ctrl>B"
+            }
+          ]
+        },
+        {
+          "label": "Angle Units",
+          "items": [
+            {
+              "label": "Degrees",
+              "shortcut": "<Ctrl>E"
+            },
+            {
+              "label": "Radians",
+              "shortcut": "<Ctrl>R"
+            },
+            {
+              "label": "Gradians",
+              "shortcut": "<Ctrl>G"
+            }
+          ]
+        },
+        {
+          "label": "Notation Modes",
+          "items": [
+            {
+              "label": "Algebraic",
+              "shortcut": "<Ctrl>A"
+            },
+            {
+              "label": "Reverse Polish (RPN)",
+              "shortcut": "<Ctrl>N"
+            },
+            {
+              "label": "Formula Entry",
+              "shortcut": "<Ctrl>F"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Display Control",
+      "items": [
+        {
+          "label": "Reset Calculator (Clear All)",
+          "shortcut": "Escape"
+        },
+        {
+          "label": "Clear Display",
+          "shortcut": "Delete"
+        },
+        {
+          "label": "Backspace",
+          "shortcut": "BackSpace"
+        }
+      ]
+    },
+    {
+      "label": "Functions",
+      "items": [
+        {
+          "label": "Tangent",
+          "shortcut": "t"
+        },
+        {
+          "label": "Sine",
+          "shortcut": "s"
+        },
+        {
+          "label": "Cosine",
+          "shortcut": "o"
+        },
+        {
+          "label": "Inverse Mode",
+          "shortcut": "i"
+        },
+        {
+          "label": "Hyperbolic Mode",
+          "shortcut": "h"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Natural Logarithm",
+          "shortcut": "n"
+        },
+        {
+          "label": "Logarithm",
+          "shortcut": "l"
+        },
+        {
+          "label": "Square Root",
+          "shortcut": "r"
+        },
+        {
+          "label": "Square",
+          "shortcut": "q"
+        },
+        {
+          "label": "Power",
+          "shortcut": "p"
+        },
+        {
+          "label": "Factorial",
+          "shortcut": "exclam"
+        },
+        {
+          "label": "Enter Exponent",
+          "shortcut": "<Ctrl><Alt>E"
+        },
+        {
+          "label": "Percent",
+          "shortcut": "percent"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "User Defined Functions",
+          "shortcut": "<Alt>U"
+        },
+        {
+          "label": "Constants",
+          "shortcut": "<Alt>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Add to Memory",
+          "shortcut": "<Alt>plus"
+        },
+        {
+          "label": "Read from Memory",
+          "shortcut": "<Alt>R"
+        },
+        {
+          "label": "Save to Memory",
+          "shortcut": "<Alt>S"
+        }
+      ]
+    },
+    {
+      "label": "Logical",
+      "items": [
+        {
+          "label": "Logical AND",
+          "shortcut": "ampersand"
+        },
+        {
+          "label": "Logical OR",
+          "shortcut": "bar"
+        },
+        {
+          "label": "Logical XOR",
+          "shortcut": "x"
+        },
+        {
+          "label": "Bitwise Complement",
+          "shortcut": "asciitilde"
+        },
+        {
+          "label": "Modulus",
+          "shortcut": "m"
+        },
+        {
+          "label": "Left Shift",
+          "shortcut": "less"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Hexadecimal 0xA",
+          "shortcut": "a"
+        },
+        {
+          "label": "Hexadecimal 0xB",
+          "shortcut": "b"
+        },
+        {
+          "label": "Hexadecimal 0xC",
+          "shortcut": "c"
+        },
+        {
+          "label": "Hexadecimal 0xD",
+          "shortcut": "d"
+        },
+        {
+          "label": "Hexadecimal 0xE",
+          "shortcut": "e"
+        },
+        {
+          "label": "Hexadecimal 0xF",
+          "shortcut": "f"
+        }
+      ]
+    },
+    {
+      "label": "Standard",
+      "items": [
+        {
+          "label": "Divide",
+          "shortcut": "slash"
+        },
+        {
+          "label": "Multiply",
+          "shortcut": "asterisk"
+        },
+        {
+          "label": "Subtract",
+          "shortcut": "minus"
+        },
+        {
+          "label": "Sum",
+          "shortcut": "plus"
+        },
+        {
+          "label": "Change Sign",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Open Bracket",
+          "shortcut": "parenleft"
+        },
+        {
+          "label": "Close Bracket",
+          "shortcut": "parenright"
+        },
+        {
+          "label": "Decimal Point",
+          "shortcut": "period"
+        },
+        {
+          "label": "Enter",
+          "shortcut": "Return"
+        }
+      ]
+    }
+  ]
+}

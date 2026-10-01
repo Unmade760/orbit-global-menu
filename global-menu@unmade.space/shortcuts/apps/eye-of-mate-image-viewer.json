@@ -1,0 +1,208 @@
+{
+  "format": 1,
+  "app": "eye-of-mate-image-viewer",
+  "name": "Eye of MATE Image Viewer",
+  "identifiers": [
+    "eom.desktop",
+    "eom",
+    "Eye of MATE Image Viewer",
+    "Eye of MATE"
+  ],
+  "menus": [
+    {
+      "label": "Image",
+      "items": [
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Set as Desktop Background",
+          "shortcut": "<Ctrl>F8"
+        },
+        {
+          "label": "Open Containing Folder"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Properties",
+          "shortcut": "<Alt>Return"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Flip Horizontal"
+        },
+        {
+          "label": "Flip Vertical"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Rotate Clockwise",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Rotate Counterclockwise",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Move to Trash",
+          "shortcut": "Delete"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Toolbar"
+        },
+        {
+          "label": "Preferences"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Image Collection",
+          "shortcut": "<Ctrl>F9"
+        },
+        {
+          "label": "Side Pane",
+          "shortcut": "F9"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Fullscreen",
+          "shortcut": "F11"
+        },
+        {
+          "label": "Slideshow",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Normal Size",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Best Fit",
+          "shortcut": "F"
+        }
+      ]
+    },
+    {
+      "label": "Go",
+      "items": [
+        {
+          "label": "Previous Image",
+          "shortcut": "<Alt>Left"
+        },
+        {
+          "label": "Next Image",
+          "shortcut": "<Alt>Right"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "First Image",
+          "shortcut": "<Alt>Home"
+        },
+        {
+          "label": "Last Image",
+          "shortcut": "<Alt>End"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Random Image",
+          "shortcut": "<Ctrl>M"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Reload Image",
+          "shortcut": "R"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Contents",
+          "shortcut": "F1"
+        }
+      ]
+    }
+  ]
+}

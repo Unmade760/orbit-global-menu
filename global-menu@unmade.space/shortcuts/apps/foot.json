@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "app": "foot",
+  "name": "foot",
+  "identifiers": [
+    "foot",
+    "foot.desktop",
+    "foot-server.desktop",
+    "foot-server",
+    "footclient.desktop",
+    "footclient"
+  ],
+  "menus": [
+    {
+      "label": "Clipboard",
+      "items": [
+        {
+          "label": "Clipboard Copy",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "Clipboard Paste",
+          "shortcut": "<Ctrl><Shift>V"
+        },
+        {
+          "label": "Primary Paste",
+          "shortcut": "<Shift>Insert"
+        }
+      ]
+    },
+    {
+      "label": "Scrollback",
+      "items": [
+        {
+          "label": "Scrollback Up Page",
+          "shortcut": "<Shift>Page_Up"
+        },
+        {
+          "label": "Search Start",
+          "shortcut": "<Ctrl><Shift>R"
+        },
+        {
+          "label": "Prompt Previous",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "label": "Prompt Next",
+          "shortcut": "<Ctrl><Shift>X"
+        }
+      ]
+    },
+    {
+      "label": "Font Size",
+      "items": [
+        {
+          "label": "Font Increase",
+          "shortcut": "<Ctrl>equal"
+        },
+        {
+          "label": "Font Decrease",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Font Reset",
+          "shortcut": "<Ctrl>0"
+        }
+      ]
+    },
+    {
+      "label": "Terminal",
+      "items": [
+        {
+          "label": "Spawn Terminal",
+          "shortcut": "<Ctrl><Shift>N"
+        },
+        {
+          "label": "Show URLs Launch",
+          "shortcut": "<Ctrl><Shift>O"
+        },
+        {
+          "label": "Unicode Input",
+          "shortcut": "<Ctrl><Shift>U"
+        }
+      ]
+    }
+  ]
+}

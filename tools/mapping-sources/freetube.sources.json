@@ -1,0 +1,521 @@
+{
+  "format": 1,
+  "app": "freetube",
+  "repos": {
+    "freetube": {
+      "url": "https://github.com/FreeTubeApp/FreeTube.git",
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    "freetube-docs": {
+      "url": "https://github.com/FreeTubeApp/FreeTube-Docs.git",
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2398,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "File",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2410,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2417,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2423,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2426,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2431,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste and Match Style"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2434,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2436,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2442,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "View",
+        "Enter Inspect Element Mode"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2446,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "View",
+        "Actual Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2473,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2474,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 165,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 68,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "View",
+        "Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2484,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "View",
+        "Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "freetube",
+      "file": "src/main/index.js",
+      "line": 2508,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Navigate",
+        "History"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 153,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Search",
+        "Focus Search Bar"
+      ],
+      "shortcut": "<Alt>D",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 159,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Search",
+        "Focus Search Bar (Alternate)"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 160,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Search",
+        "Search in New Window"
+      ],
+      "shortcut": "<Shift>Return",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 162,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Search",
+        "Focus Secondary Search Bar"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 170,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Search",
+        "Refresh Feed"
+      ],
+      "shortcut": "r",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 51,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Player",
+        "Toggle Captions"
+      ],
+      "shortcut": "c",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 17,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Player",
+        "Toggle Theatre Mode"
+      ],
+      "shortcut": "t",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 22,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Player",
+        "Toggle Fullscreen"
+      ],
+      "shortcut": "f",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 15,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Player",
+        "Toggle Full Window"
+      ],
+      "shortcut": "s",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 21,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Player",
+        "Toggle Picture in Picture"
+      ],
+      "shortcut": "i",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 20,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Player",
+        "Show Video Statistics"
+      ],
+      "shortcut": "d",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 23,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Player",
+        "Take Screenshot"
+      ],
+      "shortcut": "u",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 24,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Player",
+        "Toggle Mute"
+      ],
+      "shortcut": "m",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 16,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Player",
+        "Increase Volume"
+      ],
+      "shortcut": "Up",
+      "url": "https://docs.freetubeapp.io/usage/keyboard-shortcuts",
+      "quote": "Up Arrow Increase volume"
+    },
+    {
+      "path": [
+        "Player",
+        "Decrease Volume"
+      ],
+      "shortcut": "Down",
+      "url": "https://docs.freetubeapp.io/usage/keyboard-shortcuts",
+      "quote": "Down Arrow Decrease volume"
+    },
+    {
+      "path": [
+        "Playback",
+        "Large Rewind"
+      ],
+      "shortcut": "j",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 13,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Playback",
+        "Large Fast-Forward"
+      ],
+      "shortcut": "l",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 14,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Playback",
+        "Small Rewind"
+      ],
+      "shortcut": "Left",
+      "url": "https://docs.freetubeapp.io/usage/keyboard-shortcuts",
+      "quote": "Left Arrow Rewind X seconds"
+    },
+    {
+      "path": [
+        "Playback",
+        "Small Fast-Forward"
+      ],
+      "shortcut": "Right",
+      "url": "https://docs.freetubeapp.io/usage/keyboard-shortcuts",
+      "quote": "Right Arrow Fast-Forward X seconds"
+    },
+    {
+      "path": [
+        "Playback",
+        "Decrease Video Speed"
+      ],
+      "shortcut": "o",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 18,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Playback",
+        "Increase Video Speed"
+      ],
+      "shortcut": "p",
+      "repo": "freetube-docs",
+      "file": "usage/keyboard-shortcuts.md",
+      "line": 19,
+      "commit": "2d1671420c32da8a20b4d0ad12d7e00a835b6e51"
+    },
+    {
+      "path": [
+        "Playback",
+        "Last Chapter"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 197,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next Chapter"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 198,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek to Start"
+      ],
+      "shortcut": "Home",
+      "url": "https://docs.freetubeapp.io/usage/keyboard-shortcuts",
+      "quote": "Home Seek to the beginning of the video"
+    },
+    {
+      "path": [
+        "Playback",
+        "Seek to End"
+      ],
+      "shortcut": "End",
+      "url": "https://docs.freetubeapp.io/usage/keyboard-shortcuts",
+      "quote": "End Seek to the end of the video"
+    },
+    {
+      "path": [
+        "Playback",
+        "Skip to Next Video"
+      ],
+      "shortcut": "<Shift>N",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 203,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Playback",
+        "Skip to Previous Video"
+      ],
+      "shortcut": "<Shift>P",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 204,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Window",
+        "Minimize"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 156,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Window",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 157,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    },
+    {
+      "path": [
+        "Help",
+        "Show Keyboard Shortcuts"
+      ],
+      "shortcut": "<Shift>question",
+      "repo": "freetube",
+      "file": "src/constants.js",
+      "line": 146,
+      "commit": "e4262cb942156d99ea91bb332c6102fe28f91ae9"
+    }
+  ]
+}

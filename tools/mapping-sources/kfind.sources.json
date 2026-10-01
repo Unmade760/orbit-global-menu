@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "app": "kfind",
+  "repos": {
+    "kfind": {
+      "url": "https://invent.kde.org/utilities/kfind.git",
+      "commit": "4747f06e5aba9499404e5c7cb86de39bf5b97985"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "kfind",
+      "file": "src/kfindtreeview.cpp",
+      "line": 350,
+      "commit": "4747f06e5aba9499404e5c7cb86de39bf5b97985"
+    },
+    {
+      "path": [
+        "File",
+        "Move to Trash"
+      ],
+      "shortcut": "Delete",
+      "repo": "kfind",
+      "file": "src/kfindtreeview.cpp",
+      "line": 374,
+      "commit": "4747f06e5aba9499404e5c7cb86de39bf5b97985"
+    },
+    {
+      "path": [
+        "File",
+        "Delete"
+      ],
+      "shortcut": "<Shift>Delete",
+      "repo": "kfind",
+      "file": "src/kfindtreeview.cpp",
+      "line": 370,
+      "commit": "4747f06e5aba9499404e5c7cb86de39bf5b97985"
+    },
+    {
+      "path": [
+        "File",
+        "Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "kfind",
+      "file": "src/kfindtreeview.cpp",
+      "line": 379,
+      "commit": "4747f06e5aba9499404e5c7cb86de39bf5b97985"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kfind",
+      "file": "src/kfindtreeview.cpp",
+      "line": 353,
+      "commit": "4747f06e5aba9499404e5c7cb86de39bf5b97985"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy Location"
+      ],
+      "shortcut": "<Ctrl><Alt>C",
+      "repo": "kfind",
+      "file": "src/kfindtreeview.cpp",
+      "line": 360,
+      "commit": "4747f06e5aba9499404e5c7cb86de39bf5b97985"
+    }
+  ]
+}

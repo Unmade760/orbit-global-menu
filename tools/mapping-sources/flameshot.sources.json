@@ -1,0 +1,409 @@
+{
+  "format": 1,
+  "app": "flameshot",
+  "repos": {
+    "flameshot": {
+      "url": "https://github.com/flameshot-org/flameshot.git",
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Tools",
+        "Pencil"
+      ],
+      "shortcut": "p",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 215,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Line"
+      ],
+      "shortcut": "d",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 216,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Arrow"
+      ],
+      "shortcut": "a",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 217,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection"
+      ],
+      "shortcut": "s",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 218,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Rectangle"
+      ],
+      "shortcut": "r",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 219,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Circle"
+      ],
+      "shortcut": "c",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 220,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Marker"
+      ],
+      "shortcut": "m",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 221,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Pixelate"
+      ],
+      "shortcut": "b",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 223,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Text"
+      ],
+      "shortcut": "t",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 222,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Grab a Color from the Screen"
+      ],
+      "shortcut": "g",
+      "repo": "flameshot",
+      "file": "README.md",
+      "line": 239,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Toggle Side Panel"
+      ],
+      "shortcut": "space",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 184,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Tools",
+        "Commit Text in Text Area"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 199,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>z",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 168,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>z",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 182,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select Entire Screen"
+      ],
+      "shortcut": "<Ctrl>a",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 194,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move the Selection Area"
+      ],
+      "shortcut": "<Ctrl>m",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 167,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cancel Current Selection"
+      ],
+      "shortcut": "<Ctrl>BackSpace",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 173,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Move Selection",
+        "Move Selection Left 1px"
+      ],
+      "shortcut": "Left",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 195,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Move Selection",
+        "Move Selection Right 1px"
+      ],
+      "shortcut": "Right",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 196,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Move Selection",
+        "Move Selection Up 1px"
+      ],
+      "shortcut": "Up",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 197,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Move Selection",
+        "Move Selection Down 1px"
+      ],
+      "shortcut": "Down",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 198,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Resize Selection",
+        "Resize Selection Left 1px"
+      ],
+      "shortcut": "<Shift>Left",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 186,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Resize Selection",
+        "Resize Selection Right 1px"
+      ],
+      "shortcut": "<Shift>Right",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 187,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Resize Selection",
+        "Resize Selection Up 1px"
+      ],
+      "shortcut": "<Shift>Up",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 188,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Resize Selection",
+        "Resize Selection Down 1px"
+      ],
+      "shortcut": "<Shift>Down",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 189,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Resize Symmetrically",
+        "Symmetrically Decrease Width by 2px"
+      ],
+      "shortcut": "<Ctrl><Shift>Left",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 190,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Resize Symmetrically",
+        "Symmetrically Increase Width by 2px"
+      ],
+      "shortcut": "<Ctrl><Shift>Right",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 191,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Resize Symmetrically",
+        "Symmetrically Increase Height by 2px"
+      ],
+      "shortcut": "<Ctrl><Shift>Up",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 192,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Selection",
+        "Resize Symmetrically",
+        "Symmetrically Decrease Height by 2px"
+      ],
+      "shortcut": "<Ctrl><Shift>Down",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 193,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Capture",
+        "Copy Selection to Clipboard"
+      ],
+      "shortcut": "<Ctrl>c",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 169,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Capture",
+        "Save Screenshot to a File"
+      ],
+      "shortcut": "<Ctrl>s",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 170,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Capture",
+        "Accept the Capture"
+      ],
+      "shortcut": "Return",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 171,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Capture",
+        "Choose an App to Open the Capture"
+      ],
+      "shortcut": "<Ctrl>o",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 178,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Capture",
+        "Leave the Capture Screen"
+      ],
+      "shortcut": "<Ctrl>q",
+      "repo": "flameshot",
+      "file": "src/utils/confighandler.cpp",
+      "line": 172,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    },
+    {
+      "path": [
+        "Capture",
+        "Quit Capture"
+      ],
+      "shortcut": "Escape",
+      "repo": "flameshot",
+      "file": "src/config/shortcutswidget.cpp",
+      "line": 209,
+      "commit": "2d478061ffeeba5919d3a3d9168f93542ea9b357"
+    }
+  ]
+}

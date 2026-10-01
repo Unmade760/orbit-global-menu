@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "app": "k3b",
+  "repos": {
+    "k3b": {
+      "url": "https://invent.kde.org/multimedia/k3b.git",
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "k3b",
+      "file": "src/k3b.cpp",
+      "line": 286,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "k3b",
+      "file": "src/k3b.cpp",
+      "line": 294,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "k3b",
+      "file": "src/k3b.cpp",
+      "line": 298,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "k3b",
+      "file": "src/k3b.cpp",
+      "line": 308,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "k3b",
+      "file": "src/k3b.cpp",
+      "line": 318,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "k3b",
+      "file": "src/rip/k3baudiocdview.cpp",
+      "line": 266,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Project",
+        "Burn"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "k3b",
+      "file": "src/projects/k3bview.cpp",
+      "line": 44,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Project",
+        "Properties"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "k3b",
+      "file": "src/projects/k3bview.cpp",
+      "line": 47,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Data Project",
+        "New Folder…"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "k3b",
+      "file": "src/projects/k3bdataviewimpl.cpp",
+      "line": 107,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Data Project",
+        "Remove"
+      ],
+      "shortcut": "Delete",
+      "repo": "k3b",
+      "file": "src/projects/k3bdataviewimpl.cpp",
+      "line": 113,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Data Project",
+        "Rename"
+      ],
+      "shortcut": "F2",
+      "repo": "k3b",
+      "file": "src/projects/k3bdataviewimpl.cpp",
+      "line": 119,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Data Project",
+        "Parent Folder"
+      ],
+      "shortcut": "BackSpace",
+      "repo": "k3b",
+      "file": "src/projects/k3bdataviewimpl.cpp",
+      "line": 125,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Data Project",
+        "Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "k3b",
+      "file": "src/projects/k3bdataviewimpl.cpp",
+      "line": 130,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Project",
+        "Add to Project"
+      ],
+      "shortcut": "<Shift>Return",
+      "repo": "k3b",
+      "file": "src/k3bdiroperator.cpp",
+      "line": 48,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Settings",
+        "Show Menubar"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "k3b",
+      "file": "src/k3b.cpp",
+      "line": 437,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure Keyboard Shortcuts…"
+      ],
+      "shortcut": "<Ctrl><Alt>comma",
+      "repo": "k3b",
+      "file": "src/k3b.cpp",
+      "line": 438,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    },
+    {
+      "path": [
+        "Settings",
+        "Configure K3b…"
+      ],
+      "shortcut": "<Ctrl><Shift>comma",
+      "repo": "k3b",
+      "file": "src/k3b.cpp",
+      "line": 442,
+      "commit": "6d7f690a80d7a42db40926a470d6e5cd86c81564"
+    }
+  ]
+}
