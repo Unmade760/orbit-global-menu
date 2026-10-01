@@ -5,7 +5,7 @@
 // Checks every built-in shortcut mapping under <extdir>/shortcuts against
 // docs/shortcut-mappings.md, using the extension's own code wherever the
 // extension has code for it:
-//   - parseAccelerator() from keySynth.js decides whether a shortcut parses
+//   - parseAccelerator() from accelerator.js decides whether a shortcut parses
 //   - validateMapping() from shortcutStore.js must accept the file without
 //     dropping anything
 //   - ShortcutStore.load() must load every file with no warning, and
@@ -29,7 +29,7 @@ if (!extdir || !summaryPath) {
 }
 
 const uriOf = path => Gio.File.new_for_path(path).get_uri();
-const {parseAccelerator} = await import(uriOf(`${extdir}/keySynth.js`));
+const {parseAccelerator} = await import(uriOf(`${extdir}/accelerator.js`));
 const {validateMapping, ShortcutStore} = await import(uriOf(`${extdir}/shortcutStore.js`));
 
 const shortcutsDir = `${extdir}/shortcuts`;
@@ -121,7 +121,7 @@ function checkItems(items, path, counts, report) {
         }
         const chords = parseAccelerator(item.shortcut);
         if (!chords) {
-            report(`${itemPath}: shortcut ${JSON.stringify(item.shortcut)} does not parse with keySynth.parseAccelerator`);
+            report(`${itemPath}: shortcut ${JSON.stringify(item.shortcut)} does not parse with accelerator.parseAccelerator`);
             return;
         }
         counts.withShortcut++;

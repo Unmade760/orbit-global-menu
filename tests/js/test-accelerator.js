@@ -1,12 +1,14 @@
-// keySynth.parseAccelerator: the one parser for every shortcut the extension
+// accelerator.parseAccelerator: the one parser for every shortcut the extension
 // sends, checked against the syntax in docs/shortcut-mappings.md.
+
+import GLib from 'gi://GLib';
 
 import {test, run, assert} from './lib/testlib.js';
 import {EXT_DIR} from './lib/stubbed.js';
 
-const {parseAccelerator} = await import(`file://${EXT_DIR}/keySynth.js`);
+const {parseAccelerator} = await import(`file://${EXT_DIR}/accelerator.js`);
 
-// X11 keysyms, the values keySynth.js uses (same as Clutter.KEY_*)
+// X11 keysyms, the values accelerator.js uses (same as Clutter.KEY_*)
 const CTRL = 0xffe3, SHIFT = 0xffe1, ALT = 0xffe9, SUPER = 0xffeb;
 
 const chord = (modifiers, keyval) => ({modifiers, keyval});
@@ -71,6 +73,64 @@ test('chord sequences split on a space', () => {
 test('malformed strings are rejected', () => {
     for (const bad of ['', ' ', 'a  b', 'a ', ' a', '<Ctrl>', 'NotAKey', '<Ctrl>NotAKey', 'é', 'F13', null, undefined, 42])
         assert.equal(parseAccelerator(bad), null, JSON.stringify(bad));
+});
+
+// Modules both the shell process and the preferences process load. Best
+// practices on gjs.guide: they must not import St, Clutter, Gtk, Gdk or Adw.
+function resolve(fromRel, spec) {
+    const parts = GLib.path_get_dirname(fromRel).split('/').filter(p => p && p !== '.');
+    for (const part of spec.split('/')) {
+        if (part === '..')
+            parts.pop();
+        else if (part !== '.')
+            parts.push(part);
+    }
+    return parts.join('/');
+}
+
+function importsOf(rel) {
+    const [, bytes] = GLib.file_get_contents(`${EXT_DIR}/${rel}`);
+    const text = new TextDecoder().decode(bytes);
+    const local = [], gi = [];
+    for (const m of text.matchAll(/(?:from|import\()\s*'([^']+)'/g)) {
+        if (m[1].startsWith('gi://'))
+            gi.push(m[1].replace('gi://', '').replace(/\?.*/, ''));
+        else if (m[1].startsWith('.'))
+            local.push(resolve(rel, m[1]));
+    }
+    return {local, gi};
+}
+
+function reachable(entry) {
+    const seen = new Map();
+    const walk = rel => {
+        if (seen.has(rel))
+            return;
+        const {local, gi} = importsOf(rel);
+        seen.set(rel, gi);
+        local.forEach(walk);
+    };
+    walk(entry);
+    return seen;
+}
+
+test('modules shared by extension.js and prefs.js import no shell-only or GTK library', () => {
+    const shell = reachable('extension.js');
+    const prefs = reachable('prefs.js');
+    const shared = [...prefs.keys()].filter(rel => shell.has(rel));
+    assert.ok(shared.includes('accelerator.js'), 'accelerator.js is reached from both entry points');
+    for (const rel of shared) {
+        for (const lib of prefs.get(rel))
+            assert.ok(!['Clutter', 'St', 'Gtk', 'Gdk', 'Adw'].includes(lib), `${rel} imports gi://${lib}`);
+    }
+});
+
+test('the preferences process never loads keySynth.js', () => {
+    assert.ok(!reachable('prefs.js').has('keySynth.js'), 'prefs.js reaches keySynth.js');
+});
+
+test('accelerator.js imports no library', () => {
+    assert.deepEqual(importsOf('accelerator.js').gi, []);
 });
 
 await run();

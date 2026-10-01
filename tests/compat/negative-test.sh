@@ -42,7 +42,7 @@ plant nativeMenu.js '		void GmNoSuchExport;' 'hasMenus() {'
 # A field of a gnome-shell class that does not exist
 plant panelBar.js '	void Main.panel._gmNoSuchPanelField;' 'function runStart() {'
 # A JS builtin newer than SpiderMonkey 128 (gjs 1.82, Debian 13)
-plant shortcutStore.js 'const GM_PROMISE_TRY = typeof Promise.try;' "import {parseAccelerator} from './keySynth.js';"
+plant shortcutStore.js 'const GM_PROMISE_TRY = typeof Promise.try;' "import {parseAccelerator} from './accelerator.js';"
 # A shell-only namespace in a preferences module
 plant prefsPages/appearancePage.js "import St from 'gi://St';" "import Gtk from 'gi://Gtk';"
 plant prefsPages/appearancePage.js '	void St;' 'function blurMyShellInstalled() {'
@@ -91,8 +91,8 @@ expect 'Promise.try missing in gjs 1.82 (Debian 13)' \
 	"any(x['symbol'] == 'JS Promise.try' and x['target'] == 'debian-13' for x in f)"
 expect 'St imported by a preferences module' \
 	"any(x['symbol'] == 'process separation' and 'gi://St' in x['status'] for x in f)"
-expect 'the real findings are still there' \
-	"any(x['symbol'] == 'Clutter.get_default_backend()' and x['target'] == 'fedora-45' for x in f)"
+expect 'Clutter.get_default_backend() is no longer called' \
+	"not any('get_default_backend' in x['symbol'] for x in f)"
 
 if ((fails > 0)); then
 	echo "negative test: $fails expectation(s) failed"

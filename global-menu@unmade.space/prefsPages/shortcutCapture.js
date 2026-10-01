@@ -7,7 +7,7 @@ import Gdk from 'gi://Gdk';
 import GLib from 'gi://GLib';
 import Gtk from 'gi://Gtk';
 
-import {parseAccelerator} from '../keySynth.js';
+import {parseAccelerator} from '../accelerator.js';
 
 const MODIFIER_KEYVALS = new Set([
 	Gdk.KEY_Control_L, Gdk.KEY_Control_R,
@@ -20,9 +20,14 @@ const MODIFIER_KEYVALS = new Set([
 /**
  * Presents the capture dialog over parentWindow. onCaptured is called with:
  *   a string    the captured accelerator, already validated against
- *               keySynth.parseAccelerator and so known to be synthesizable
+ *               accelerator.parseAccelerator and so known to be synthesizable
  *   null        Backspace was pressed: clear the shortcut
  *   undefined   cancelled with Escape or by dismissing the dialog
+ *
+ * @param {object} options
+ * @param {Adw.Window} options.parentWindow
+ * @param {string} options.itemLabel
+ * @param {Function} options.onCaptured
  */
 export function captureShortcut({parentWindow, itemLabel, onCaptured}) {
 	const dialog = new Adw.Dialog({content_width: 420, can_close: true});

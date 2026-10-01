@@ -12,7 +12,7 @@ import Gio from 'gi://Gio';
 import Gtk from 'gi://Gtk';
 
 import {validateMapping} from '../shortcutStore.js';
-import {parseAccelerator} from '../keySynth.js';
+import {parseAccelerator} from '../accelerator.js';
 import {captureShortcut} from './shortcutCapture.js';
 
 const MODIFIER_LABELS = {

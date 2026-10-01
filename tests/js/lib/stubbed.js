@@ -12,7 +12,9 @@
 // resource:/// specifier is pointed at the stub source given for it, and
 // each file named in `locals` is replaced by the given source. A resource
 // the test gave no stub for throws on import, naming the specifier, so a
-// test never runs against an accidental stand-in.
+// test never runs against an accidental stand-in. keySynth.js imports
+// gi://Clutter, which only a running shell can load, so it is replaced by a
+// stub unless `locals` gives another source for it.
 
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
@@ -22,6 +24,9 @@ export const EXT_DIR = GLib.build_filenamev([
         GLib.path_get_dirname(Gio.File.new_for_uri(import.meta.url).get_path())))),
     'global-menu@unmade.space',
 ]);
+
+// A test that needs to see what the extension would have sent passes its own.
+const KEY_SYNTH_STUB = 'export function sendShortcut() { return true; }\nexport function setDebug() {}\n';
 
 const decoder = new TextDecoder();
 const encoder = new TextEncoder();
@@ -61,6 +66,7 @@ const stubFile = spec => `${spec.replace('resource:///', '').replace(/[^\w]/g, '
 export function importWithStubs(rel, {resources = {}, locals = {}} = {}) {
     const dir = GLib.dir_make_tmp('gm-unit-XXXXXX');
     const wanted = new Set();
+    locals = {'keySynth.js': KEY_SYNTH_STUB, ...locals};
     for (const mod of listModules(EXT_DIR)) {
         let text = locals[mod];
         if (text === undefined) {

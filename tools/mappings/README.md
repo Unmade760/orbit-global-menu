@@ -87,7 +87,7 @@ Prose is never read as a shortcut: "Press Enter to confirm" gives nothing. A key
 
 ### normalize ACCEL [ACCEL ...] [--from auto|gtk|gdk|qt|electron|java|vscode|text] [--gjs]
 
-Any dialect to the mapping grammar (`<Ctrl><Shift>S`, modifiers in the order Ctrl, Shift, Alt, Super, punctuation by keysym name, sequences space-separated). `--gjs` also runs the result through the extension's own `parseAccelerator()` in `keySynth.js`. Exit 1 if any input fails.
+Any dialect to the mapping grammar (`<Ctrl><Shift>S`, modifiers in the order Ctrl, Shift, Alt, Super, punctuation by keysym name, sequences space-separated). `--gjs` also runs the result through the extension's own `parseAccelerator()` in `accelerator.js`. Exit 1 if any input fails.
 
 ```sh
 $ bin/normalize "Qt::CTRL | Qt::SHIFT | Qt::Key_L" "KeyChord(KeyMod.CtrlCmd | KeyCode.KeyK, KeyCode.KeyS)" \
@@ -212,4 +212,4 @@ What the runs found in shipped mappings, for the mapping integrator:
 cd tools/mappings && python3 -m pytest -q
 ```
 
-174 tests. `test_gjs_parser.py` checks every normalized form against the extension's `keySynth.js` under gjs, including every shortcut in the shipped mappings. `test_tables.py::RegenerateTest` rebuilds the standard tables from the upstream clones when they are present. Fixtures under `tests/fixtures/` copy real declaration shapes from the apps above.
+174 tests. `test_gjs_parser.py` checks every normalized form against the extension's `accelerator.js` under gjs, including every shortcut in the shipped mappings. `test_tables.py::RegenerateTest` rebuilds the standard tables from the upstream clones when they are present. Fixtures under `tests/fixtures/` copy real declaration shapes from the apps above.

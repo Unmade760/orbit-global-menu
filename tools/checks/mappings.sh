@@ -2,7 +2,7 @@
 # mappings: every built-in shortcut mapping is valid and loads whole.
 #
 # tools/lib/mappings-validator.js does the work under gjs, importing the
-# extension's own keySynth.js and shortcutStore.js (both load outside the
+# extension's own accelerator.js and shortcutStore.js (both load outside the
 # shell, see tools/checks/imports.sh). It checks strict JSON and the format
 # in docs/shortcut-mappings.md, parses every shortcut with the extension's
 # parseAccelerator, runs validateMapping and ShortcutStore.load on the real

@@ -1,4 +1,4 @@
-"""Run the extension's accelerator parser (keySynth.js) under gjs."""
+"""Run the extension's accelerator parser (accelerator.js) under gjs."""
 
 import json
 import os
@@ -7,7 +7,7 @@ import tempfile
 from pathlib import Path
 
 HARNESS = Path(__file__).resolve().parent / "gjs" / "parse_accels.js"
-KEYSYNTH_REL = Path("global-menu@unmade.space") / "keySynth.js"
+KEYSYNTH_REL = Path("global-menu@unmade.space") / "accelerator.js"
 FALLBACK = Path("/home/ravi/fildem") / KEYSYNTH_REL
 
 

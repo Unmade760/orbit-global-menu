@@ -1,6 +1,6 @@
 """Accelerators: the mapping grammar and every dialect that normalizes to it.
 
-The mapping grammar is the one global-menu@unmade.space/keySynth.js
+The mapping grammar is the one global-menu@unmade.space/accelerator.js
 parseAccelerator() accepts (docs/shortcut-mappings.md): modifiers <Ctrl>
 (also <Control>, <Primary>), <Shift>, <Alt>, <Super>, then one printable
 ASCII character or one of a fixed set of keysym names; chords separated by a
@@ -8,7 +8,7 @@ space form a sequence. A capital letter is not Shift.
 
 Internally a chord is (frozenset of "ctrl"/"shift"/"alt"/"super", key id).
 The key id is the lower-cased character for printable ASCII (so "comma" and
-"," are the same key, as they are in keySynth.js) or the lower-cased keysym
+"," are the same key, as they are in accelerator.js) or the lower-cased keysym
 name for everything else. A sequence is a tuple of chords.
 
 Canonical output orders modifiers Ctrl, Shift, Alt, Super, writes letters in
@@ -22,7 +22,7 @@ from dataclasses import dataclass, field
 MOD_ORDER = ("ctrl", "shift", "alt", "super")
 MOD_TOKEN = {"ctrl": "<Ctrl>", "shift": "<Shift>", "alt": "<Alt>", "super": "<Super>"}
 
-# keySynth.js NAMED_KEYVALS: lower-cased name -> canonical spelling.
+# accelerator.js NAMED_KEYVALS: lower-cased name -> canonical spelling.
 # tests/test_gjs_parser.py fails if this drifts from the extension.
 GRAMMAR_NAMES = {
     **{f"f{i}": f"F{i}" for i in range(1, 13)},
@@ -85,7 +85,7 @@ class Result:
 # --- the grammar itself --------------------------------------------------
 
 def key_id(token):
-    """Grammar key token (one printable char or a keySynth name) to key id."""
+    """Grammar key token (one printable char or an accelerator.js name) to key id."""
     if len(token) == 1:
         if not 0x21 <= ord(token) <= 0x7E:
             return None
@@ -131,7 +131,7 @@ _GRAMMAR_MODS = {"ctrl": "ctrl", "control": "ctrl", "primary": "ctrl",
 
 
 def parse_grammar(text):
-    """Mirror of keySynth.js parseAccelerator(): a sequence, or None."""
+    """Mirror of accelerator.js parseAccelerator(): a sequence, or None."""
     if not isinstance(text, str) or text == "":
         return None
     seq = []

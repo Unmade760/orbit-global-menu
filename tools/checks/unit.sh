@@ -24,8 +24,17 @@ done
 scratch=$(mktemp -d "${TMPDIR:-/tmp}/gm-unit.XXXXXX")
 trap 'rm -rf -- "$scratch"' EXIT
 
+# GTK translates its key names, and the label test compares against them, so
+# run under English when the machine has the locale. The test skips that
+# comparison under any other locale.
+english=()
+if locale -a 2>/dev/null | grep -qix 'en_US\.utf-\?8'; then
+	english=(LC_ALL=en_US.UTF-8 LANGUAGE=en_US:en)
+fi
+
 isolated() {
 	env -u DISPLAY -u WAYLAND_DISPLAY -u DBUS_SESSION_BUS_ADDRESS \
+		${english[@]+"${english[@]}"} \
 		TMPDIR="$scratch" GIO_USE_VFS=local GSETTINGS_BACKEND=memory \
 		NO_AT_BRIDGE=1 GTK_A11Y=none GTK_USE_PORTAL=0 GDK_DEBUG=no-portals \
 		PYTHONDONTWRITEBYTECODE=1 \

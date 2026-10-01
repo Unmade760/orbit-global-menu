@@ -10,7 +10,7 @@
 
 import Gio from 'gi://Gio';
 
-import {parseAccelerator} from './keySynth.js';
+import {parseAccelerator} from './accelerator.js';
 
 function readJson(file, warnings) {
 	try {
@@ -31,6 +31,11 @@ function readJson(file, warnings) {
  *
  * Exported so the preferences editor can check a mapping before writing it,
  * against the same rules the running extension loads with.
+ *
+ * @param {object} raw - the parsed JSON
+ * @param {string} stem - the file name without .json
+ * @param {object[]} warnings - collects what was dropped
+ * @returns {object|null}
  */
 export function validateMapping(raw, stem, warnings) {
 	const file = `${stem}.json`;
@@ -209,6 +214,9 @@ export class ShortcutStore {
 	/**
 	 * candidates: lowercased identifier candidates for the focused app
 	 * (desktop id, WM class, app name). Returns the matching mapping or null.
+	 *
+	 * @param {string[]} candidates
+	 * @returns {object|null}
 	 */
 	resolveMapping(candidates) {
 		for (const mapping of this._ordered) {
@@ -235,7 +243,7 @@ export class ShortcutStore {
 						builtinIds.add(name.slice(0, -'.json'.length));
 				}
 			}
-		} catch (e) { /* index missing or unreadable; load() already warns */ }
+		} catch { /* index missing or unreadable; load() already warns */ }
 
 		const userIds = new Set();
 		try {
@@ -248,7 +256,7 @@ export class ShortcutStore {
 					userIds.add(name.slice(0, -'.json'.length));
 			}
 			enumerator.close(null);
-		} catch (e) { /* no user directory, which is the normal case */ }
+		} catch { /* no user directory, which is the normal case */ }
 
 		return [...new Set([...builtinIds, ...userIds])]
 			.map(app => ({app, hasBuiltin: builtinIds.has(app), hasUser: userIds.has(app)}))
@@ -289,7 +297,7 @@ export class ShortcutStore {
 		let enumerator;
 		try {
 			enumerator = appsDir.enumerate_children('standard::name', Gio.FileQueryInfoFlags.NONE, null);
-		} catch (e) {
+		} catch {
 			// No user directory, which is the normal case
 			return out;
 		}

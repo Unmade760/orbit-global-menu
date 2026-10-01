@@ -33,7 +33,7 @@ def main(argv=None):
     parser.add_argument("--from", dest="dialect", default="auto", choices=DIALECT_CHOICES,
                         help="source dialect (default: auto-detect per input)")
     parser.add_argument("--gjs", action="store_true",
-                        help="also run each result through keySynth.js parseAccelerator() under gjs")
+                        help="also run each result through accelerator.js parseAccelerator() under gjs")
     args = parser.parse_args(argv)
 
     results = [normalize_one(text, args.dialect) for text in args.accel]

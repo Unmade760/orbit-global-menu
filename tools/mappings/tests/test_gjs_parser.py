@@ -1,6 +1,6 @@
 """The normalizer checked against the extension's own parser, run under gjs.
 
-keySynth.js parseAccelerator() is the parser the running extension uses, so
+accelerator.js parseAccelerator() is the parser the running extension uses, so
 every string normalize() emits must parse there, to the chord the Python
 side meant. Keyvals for the check come from GDK's keysym table, independent
 of both parsers.
