@@ -1,7 +1,7 @@
 /* Every selector here is scoped to a global-menu-* class that only this
  * extension's own actors carry, so nothing can match unrelated shell UI.
  * Spacing, radius and translucency are inline styles set by appearance.js;
- * this file only holds the on/off classes. */
+ * this file holds the on/off classes and the shortcut label. */
 
 /* Menus drop straight down from the bar instead of pointing at the button */
 .global-menu-no-arrow {
@@ -12,4 +12,16 @@
  * rectangle into a translucent popup */
 .global-menu-popup .popup-sub-menu {
 	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Shortcut labels: right-aligned, 24px clear of the item text. RTL moves
+ * them to the left, so the gap moves to their right */
+.global-menu-accel {
+	margin-left: 24px;
+	font-feature-settings: "tnum";
+}
+
+.global-menu-accel:rtl {
+	margin-left: 0;
+	margin-right: 24px;
 }

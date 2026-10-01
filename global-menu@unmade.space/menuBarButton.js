@@ -3,7 +3,8 @@
 //
 // Menus are described by item specs:
 //   {separator: true}
-// | {label, enabled?, ornament?, key?, onActivate?, children?: spec[]}
+// | {label, enabled?, ornament?, key?, accel?, onActivate?, children?: spec[]}
+// accel is a GTK accelerator string ("<Primary>s"), shown as the shortcut.
 // setItems() also accepts a function returning specs, re-evaluated every time
 // the menu opens. The dynamic Window menu uses that.
 
@@ -14,7 +15,30 @@ import St from 'gi://St';
 import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
+import {acceleratorLabel} from './accelerator.js';
 import * as Appearance from './appearance.js';
+
+// The item's own text colour at 55 %, as GTK 4 draws accelerators in its
+// popover menus. St has no CSS opacity, so it is the actor's.
+const ACCEL_OPACITY = 140;
+
+function addAccelLabel(item, text) {
+	const label = new St.Label({
+		text,
+		style_class: 'global-menu-accel',
+		x_expand: true,
+		x_align: Clutter.ActorAlign.END,
+		y_align: Clutter.ActorAlign.CENTER,
+	});
+	item.add_child(label);
+	// St gives an item that is not reactive the theme's :insensitive style,
+	// which greys its label and shortcut together
+	const sync = () => {
+		label.opacity = item.reactive ? ACCEL_OPACITY : 255;
+	};
+	item.connect('notify::reactive', sync);
+	sync();
+}
 
 export const MenuBarButton = GObject.registerClass(
 class MenuBarButton extends PanelMenu.Button {
@@ -88,6 +112,9 @@ class MenuBarButton extends PanelMenu.Button {
 				parentMenu.addMenuItem(subMenu);
 			} else {
 				const item = new PopupMenu.PopupMenuItem(spec.label);
+				const accel = acceleratorLabel(spec.accel);
+				if (accel)
+					addAccelLabel(item, accel);
 				if (spec.enabled === false)
 					item.setSensitive(false);
 				if (spec.ornament !== undefined)

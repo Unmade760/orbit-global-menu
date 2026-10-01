@@ -74,16 +74,16 @@ test('ShortcutMenu: one bar button per menu, after the app-name button', () => {
     assert.ok(menu.hasMenus());
 });
 
-test('ShortcutMenu: shortcut, separator, placeholder and submenu specs', () => {
+test('ShortcutMenu: shortcut, separator, placeholder and submenu specs; the shortcut is the accel', () => {
     const rec = reset();
     new ShortcutMenu('uuid').setMapping(MAPPING);
     assert.deepEqual(plain(rec.buttons[0].items), [
-        {label: 'Save', onActivate: 'fn:onActivate'},
+        {label: 'Save', accel: '<Ctrl>S', onActivate: 'fn:onActivate'},
         {separator: true},
         {label: 'Only by Mouse', enabled: false},
     ]);
     assert.deepEqual(plain(rec.buttons[1].items), [
-        {label: 'Zoom', children: [{label: 'Zoom In', onActivate: 'fn:onActivate'}]},
+        {label: 'Zoom', children: [{label: 'Zoom In', accel: '<Ctrl>plus', onActivate: 'fn:onActivate'}]},
     ]);
 });
 
@@ -165,6 +165,54 @@ test('NativeMenu: ornaments, enabled state, submenus and activation keys', () =>
     specs[0].onActivate();
     specs[6].children[0].onActivate();
     assert.deepEqual(proxy.calls, [['ActivateMenuItem', 'File  »  New'], ['ActivateMenuItem', 'File  »  Recent  »  a.txt']]);
+});
+
+test('NativeMenu: a node accel becomes the spec accel, at any depth', () => {
+    const rec = reset();
+    new NativeMenu(makeProxy(), 'uuid').setItems([
+        {
+            label: '_File', key: 'File', children: [
+                {label: '_Save', key: 'File  »  Save', accel: '<Primary>s'},
+                {label: 'Print', key: 'File  »  Print', accel: ''},
+                {
+                    label: 'Recent', key: 'File  »  Recent', children: [
+                        {label: 'Clear', key: 'File  »  Recent  »  Clear', accel: '<Control><Shift>Delete'},
+                    ],
+                },
+            ],
+        },
+    ]);
+    const specs = rec.buttons[0].items();
+    assert.equal(specs[0].accel, '<Primary>s');
+    assert.equal(specs[1].accel, '');
+    assert.equal(specs[2].children[0].accel, '<Control><Shift>Delete');
+});
+
+test('NativeMenu: a top-level app menu node gets no bar button', () => {
+    const rec = reset();
+    new NativeMenu(makeProxy(), 'uuid').setItems([
+        {label: 'Application', key: 'app', appMenu: true, children: [{label: 'About', key: 'app  »  About'}]},
+        {label: '_File', key: 'File', children: [{label: '_New', key: 'File  »  New'}]},
+    ]);
+    assert.deepEqual(rec.added, [{id: 'uuid-native-0', label: 'File', position: 1}]);
+});
+
+test('NativeMenu: mnemonics are stripped the way GTK and dbusmenu draw them', () => {
+    const cases = [
+        ['文件(_F)', '文件'],
+        ['편집(&E)', '편집'],
+        ['另存为(_A)…', '另存为…'],
+        ['_File', 'File'],
+        ['Save__As', 'Save_As'],
+        ['Open _Recent', 'Open Recent'],
+        ['Find & Replace', 'Find & Replace'],
+    ];
+    const rec = reset();
+    new NativeMenu(makeProxy(), 'uuid').setItems(cases.map(([label], i) => ({
+        label, key: `k${i}`, children: [{label, key: `k${i}  »  item`}],
+    })));
+    assert.deepEqual(rec.added.map(a => a.label), cases.map(([, want]) => want), 'bar titles');
+    assert.deepEqual(rec.buttons.map(b => b.items()[0].label), cases.map(([, want]) => want), 'item labels');
 });
 
 test('NativeMenu: opening a menu asks the daemon for a fresh tree', () => {

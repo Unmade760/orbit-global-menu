@@ -21,7 +21,11 @@ export class ShortcutMenu {
 		this._timeoutIds = new Set();
 	}
 
-	/** Build buttons for the mapping, or clear with null. */
+	/**
+	 * Build buttons for the mapping, or clear with null.
+	 *
+	 * @param {object|null} mapping
+	 */
 	setMapping(mapping) {
 		// The daemon re-sends empty trees periodically. Rebuilding for the
 		// mapping already shown would close a menu the user is navigating.
@@ -67,7 +71,7 @@ export class ShortcutMenu {
 			if (item.items)
 				return {label: item.label, children: this._toSpecs(item.items)};
 			if (item.shortcut)
-				return {label: item.label, onActivate: () => this._fireShortcut(item.shortcut)};
+				return {label: item.label, accel: item.shortcut, onActivate: () => this._fireShortcut(item.shortcut)};
 			// Placeholder: the mapping records the item but no usable
 			// accelerator for it, so show it greyed out rather than lie
 			return {label: item.label, enabled: false};

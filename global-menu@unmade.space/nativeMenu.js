@@ -9,8 +9,14 @@ import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';
 
+// CJK translations append the mnemonic as "(_F)" or "(&F)". It only names the
+// key the underline marks, and the bar draws no underline, so it goes. Then
+// the dbusmenu label rule: "__" is a literal underscore and any other
+// underscore is not drawn.
 function stripMnemonic(label) {
-	return (label ?? '').replace('_', '');
+	return (label ?? '')
+		.replace(/\s*\([_&][^_&)]\)(…|\.\.\.)?$/u, '$1')
+		.replace(/_(.?)/gu, '$1');
 }
 
 function toOrnament(toggleType, toggleState) {
@@ -79,7 +85,8 @@ export class NativeMenu {
 
 	_rebuild(nodes, json = JSON.stringify(nodes)) {
 		this.clear();
-		const topLevel = nodes.filter(n => !n.separator && stripMnemonic(n.label));
+		// The GTK app menu belongs under the app name, not in the bar
+		const topLevel = nodes.filter(n => !n.separator && !n.appMenu && stripMnemonic(n.label));
 		topLevel.forEach((node, index) => {
 			const btn = new MenuBarButton(stripMnemonic(node.label), {
 				// Ask the daemon for fresh toggle/enabled state on open
@@ -107,6 +114,7 @@ export class NativeMenu {
 				label: stripMnemonic(node.label),
 				enabled: node.enabled !== false,
 				key: node.key,
+				accel: node.accel,
 				ornament: toOrnament(node.toggleType, node.toggleState),
 			};
 			if (node.children)
