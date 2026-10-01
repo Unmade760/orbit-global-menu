@@ -1,0 +1,680 @@
+{
+  "format": 1,
+  "app": "nautilus",
+  "repos": {
+    "nautilus": {
+      "url": "https://gitlab.gnome.org/GNOME/nautilus.git",
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New Window"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "nautilus",
+      "file": "src/nautilus-application.c",
+      "line": 617,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "New Tab"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "nautilus",
+      "file": "src/nautilus-window.c",
+      "line": 1127,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Create Folder"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 52,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Open"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 10,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Open in New Tab"
+      ],
+      "shortcut": "<Ctrl>Return",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 15,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Open in New Window"
+      ],
+      "shortcut": "<Shift>Return",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 20,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Open Item Location (Search and Recent Only)"
+      ],
+      "shortcut": "<Ctrl><Alt>O",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 25,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Open Current Directory in Console"
+      ],
+      "shortcut": "<Ctrl>period",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 35,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Open Current Folder Menu"
+      ],
+      "shortcut": "F10",
+      "repo": "nautilus",
+      "file": "src/nautilus-window.c",
+      "line": 1135,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Open Context Menu"
+      ],
+      "shortcut": "<Shift>F10",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 45,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Show Item Properties"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 119,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Close Window or Tab"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "nautilus",
+      "file": "src/nautilus-window.c",
+      "line": 1128,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "nautilus",
+      "file": "src/nautilus-application.c",
+      "line": 621,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "nautilus",
+      "file": "src/nautilus-window.c",
+      "line": 1130,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "nautilus",
+      "file": "src/nautilus-window.c",
+      "line": 1131,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 59,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 64,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 69,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Create Link to Copied Item"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 107,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Create Link to Selected Item"
+      ],
+      "shortcut": "<Ctrl><Shift>M",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 112,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 209,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select Items Matching"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 219,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Invert Selection"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 214,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Rename"
+      ],
+      "shortcut": "F2",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 76,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Move to Trash"
+      ],
+      "shortcut": "Delete",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 95,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Delete Permanently"
+      ],
+      "shortcut": "<Shift>Delete",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 100,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Edit",
+        "Show Preferences"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "nautilus",
+      "file": "src/nautilus-application.c",
+      "line": 623,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 135,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 140,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "View",
+        "Reset Zoom"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 145,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "View",
+        "List View"
+      ],
+      "shortcut": "<Ctrl>1",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 152,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "View",
+        "Grid View"
+      ],
+      "shortcut": "<Ctrl>2",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 157,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "View",
+        "Refresh View"
+      ],
+      "shortcut": "F5",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 162,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide Hidden Files"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 195,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "View",
+        "Show/Hide Sidebar"
+      ],
+      "shortcut": "F9",
+      "repo": "nautilus",
+      "file": "src/nautilus-window.c",
+      "line": 1137,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Go Back"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 228,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Go Forward"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 240,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Go Up"
+      ],
+      "shortcut": "<Alt>Up",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 252,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Go Down"
+      ],
+      "shortcut": "<Alt>Down",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 257,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Go to Home Folder"
+      ],
+      "shortcut": "<Alt>Home",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 262,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Enter Location"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 269,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Location Bar With Root Location"
+      ],
+      "shortcut": "slash",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 274,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Location Bar With Home Location"
+      ],
+      "shortcut": "asciitilde",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 279,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Search Current Folder"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 293,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Search Everywhere"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 288,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Go",
+        "Bookmark Current Location"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 126,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Restore Closed Tab"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "nautilus",
+      "file": "src/nautilus-window.c",
+      "line": 1136,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Previous Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Up",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 324,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Go to Next Tab"
+      ],
+      "shortcut": "<Ctrl>Page_Down",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 329,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Left"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Up",
+      "repo": "nautilus",
+      "file": "src/nautilus-window.c",
+      "line": 1133,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Move Tab Right"
+      ],
+      "shortcut": "<Ctrl><Shift>Page_Down",
+      "repo": "nautilus",
+      "file": "src/nautilus-window.c",
+      "line": 1134,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Open Tab",
+        "Tab 1"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 334,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Open Tab",
+        "Tab 2"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 334,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Open Tab",
+        "Tab 3"
+      ],
+      "shortcut": "<Alt>3",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 334,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Open Tab",
+        "Tab 4"
+      ],
+      "shortcut": "<Alt>4",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 334,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Open Tab",
+        "Tab 5"
+      ],
+      "shortcut": "<Alt>5",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 334,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Open Tab",
+        "Tab 6"
+      ],
+      "shortcut": "<Alt>6",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 334,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Open Tab",
+        "Tab 7"
+      ],
+      "shortcut": "<Alt>7",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 334,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Tabs",
+        "Open Tab",
+        "Tab 8"
+      ],
+      "shortcut": "<Alt>8",
+      "repo": "nautilus",
+      "file": "src/resources/ui/shortcuts-dialog.blp",
+      "line": 334,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    },
+    {
+      "path": [
+        "Help",
+        "Show Help"
+      ],
+      "shortcut": "F1",
+      "repo": "nautilus",
+      "file": "src/nautilus-application.c",
+      "line": 619,
+      "commit": "26a07ce237a5ef5dcf6c5e0cbb8c60585d38d394"
+    }
+  ]
+}

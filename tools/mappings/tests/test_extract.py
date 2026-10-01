@@ -75,6 +75,11 @@ class ExtractTest(unittest.TestCase):
         tabs = [r for r in self.rows if r["file"] == "gtk/help-overlay.ui" and r.get("label") == "Switch to tab"]
         self.assertEqual([r["accel"] for r in tabs], [f"<Alt>{d}" for d in range(1, 10)])
 
+    def test_shortcuts_window_range_with_one_modifier_prefix(self):
+        # Nautilus writes "<alt>0...8": the modifiers on the first key cover the last.
+        tabs = [r for r in self.rows if r["file"] == "gtk/short-range.ui" and r.get("label") == "Open tab"]
+        self.assertEqual([r["accel"] for r in tabs], [f"<Alt>{d}" for d in range(0, 9)])
+
     def test_shortcuts_window_alternatives_and_sequence(self):
         self.find("gtk/help-overlay.ui", "<Ctrl>W", action="win.close")
         self.find("gtk/help-overlay.ui", "<Ctrl>F4", action="win.close")

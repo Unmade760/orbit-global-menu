@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkShortcutsWindow">
+    <child>
+      <object class="GtkShortcutsSection">
+        <child>
+          <object class="GtkShortcutsShortcut">
+            <property name="title" translatable="yes">Open tab</property>
+            <property name="accelerator">&lt;alt&gt;0...8</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

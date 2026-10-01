@@ -14,16 +14,21 @@
       "items": [
         {"label": "New Window", "shortcut": "<Ctrl>N"},
         {"label": "New Tab", "shortcut": "<Ctrl>T"},
-        {"label": "New Folder", "shortcut": "<Ctrl><Shift>N"},
+        {"label": "Create Folder", "shortcut": "<Ctrl><Shift>N"},
         {"separator": true},
         {"label": "Open", "shortcut": "<Ctrl>O"},
         {"label": "Open in New Tab", "shortcut": "<Ctrl>Return"},
         {"label": "Open in New Window", "shortcut": "<Shift>Return"},
-        {"label": "Open Item Location", "shortcut": "<Ctrl><Alt>O"},
+        {"label": "Open Item Location (Search and Recent Only)", "shortcut": "<Ctrl><Alt>O"},
         {"separator": true},
-        {"label": "Properties", "shortcut": "<Alt>Return"},
+        {"label": "Open Current Directory in Console", "shortcut": "<Ctrl>period"},
+        {"label": "Open Current Folder Menu", "shortcut": "F10"},
+        {"label": "Open Context Menu", "shortcut": "<Shift>F10"},
         {"separator": true},
-        {"label": "Close Window or Tab", "shortcut": "<Ctrl>W"}
+        {"label": "Show Item Properties", "shortcut": "<Ctrl>I"},
+        {"separator": true},
+        {"label": "Close Window or Tab", "shortcut": "<Ctrl>W"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
       ]
     },
     {
@@ -36,13 +41,18 @@
         {"label": "Copy", "shortcut": "<Ctrl>C"},
         {"label": "Paste", "shortcut": "<Ctrl>V"},
         {"separator": true},
+        {"label": "Create Link to Copied Item", "shortcut": "<Ctrl>M"},
+        {"label": "Create Link to Selected Item", "shortcut": "<Ctrl><Shift>M"},
+        {"separator": true},
         {"label": "Select All", "shortcut": "<Ctrl>A"},
         {"label": "Select Items Matching", "shortcut": "<Ctrl>S"},
         {"label": "Invert Selection", "shortcut": "<Ctrl><Shift>I"},
         {"separator": true},
         {"label": "Rename", "shortcut": "F2"},
         {"label": "Move to Trash", "shortcut": "Delete"},
-        {"label": "Delete Permanently", "shortcut": "<Shift>Delete"}
+        {"label": "Delete Permanently", "shortcut": "<Shift>Delete"},
+        {"separator": true},
+        {"label": "Show Preferences", "shortcut": "<Ctrl>comma"}
       ]
     },
     {
@@ -52,27 +62,31 @@
         {"label": "Zoom Out", "shortcut": "<Ctrl>minus"},
         {"label": "Reset Zoom", "shortcut": "<Ctrl>0"},
         {"separator": true},
-        {"label": "Reload", "shortcut": "<Ctrl>R"},
-        {"separator": true},
-        {"label": "Show Hidden Files", "shortcut": "<Ctrl>H"},
-        {"label": "Show Sidebar", "shortcut": "F9"},
-        {"separator": true},
         {"label": "List View", "shortcut": "<Ctrl>1"},
-        {"label": "Grid View", "shortcut": "<Ctrl>2"}
+        {"label": "Grid View", "shortcut": "<Ctrl>2"},
+        {"label": "Refresh View", "shortcut": "F5"},
+        {"separator": true},
+        {"label": "Show/Hide Hidden Files", "shortcut": "<Ctrl>H"},
+        {"label": "Show/Hide Sidebar", "shortcut": "F9"}
       ]
     },
     {
       "label": "Go",
       "items": [
-        {"label": "Back", "shortcut": "<Alt>Left"},
-        {"label": "Forward", "shortcut": "<Alt>Right"},
-        {"label": "Parent Folder", "shortcut": "<Alt>Up"},
-        {"label": "Home", "shortcut": "<Alt>Home"},
+        {"label": "Go Back", "shortcut": "<Alt>Left"},
+        {"label": "Go Forward", "shortcut": "<Alt>Right"},
+        {"label": "Go Up", "shortcut": "<Alt>Up"},
+        {"label": "Go Down", "shortcut": "<Alt>Down"},
+        {"label": "Go to Home Folder", "shortcut": "<Alt>Home"},
         {"separator": true},
         {"label": "Enter Location", "shortcut": "<Ctrl>L"},
-        {"label": "Search", "shortcut": "<Ctrl>F"},
+        {"label": "Location Bar With Root Location", "shortcut": "slash"},
+        {"label": "Location Bar With Home Location", "shortcut": "asciitilde"},
         {"separator": true},
-        {"label": "Bookmark This Location", "shortcut": "<Ctrl>D"}
+        {"label": "Search Current Folder", "shortcut": "<Ctrl>F"},
+        {"label": "Search Everywhere", "shortcut": "<Ctrl><Shift>F"},
+        {"separator": true},
+        {"label": "Bookmark Current Location", "shortcut": "<Ctrl>D"}
       ]
     },
     {
@@ -80,22 +94,32 @@
       "items": [
         {"label": "Restore Closed Tab", "shortcut": "<Ctrl><Shift>T"},
         {"separator": true},
-        {"label": "Previous Tab", "shortcut": "<Ctrl>Page_Up"},
-        {"label": "Next Tab", "shortcut": "<Ctrl>Page_Down"},
+        {"label": "Go to Previous Tab", "shortcut": "<Ctrl>Page_Up"},
+        {"label": "Go to Next Tab", "shortcut": "<Ctrl>Page_Down"},
         {"separator": true},
         {"label": "Move Tab Left", "shortcut": "<Ctrl><Shift>Page_Up"},
         {"label": "Move Tab Right", "shortcut": "<Ctrl><Shift>Page_Down"},
         {"separator": true},
-        {"label": "Tab 1", "shortcut": "<Alt>1"},
-        {"label": "Tab 2", "shortcut": "<Alt>2"},
-        {"label": "Tab 3", "shortcut": "<Alt>3"}
+        {
+          "label": "Open Tab",
+          "items": [
+            {"label": "Tab 1", "shortcut": "<Alt>1"},
+            {"label": "Tab 2", "shortcut": "<Alt>2"},
+            {"label": "Tab 3", "shortcut": "<Alt>3"},
+            {"label": "Tab 4", "shortcut": "<Alt>4"},
+            {"label": "Tab 5", "shortcut": "<Alt>5"},
+            {"label": "Tab 6", "shortcut": "<Alt>6"},
+            {"label": "Tab 7", "shortcut": "<Alt>7"},
+            {"label": "Tab 8", "shortcut": "<Alt>8"}
+          ]
+        }
       ]
     },
     {
       "label": "Help",
       "items": [
-        {"label": "Keyboard Shortcuts", "shortcut": "<Ctrl>question"},
-        {"label": "Help", "shortcut": "F1"}
+        {"label": "Show Help", "shortcut": "F1"},
+        {"label": "Shortcuts"}
       ]
     }
   ]

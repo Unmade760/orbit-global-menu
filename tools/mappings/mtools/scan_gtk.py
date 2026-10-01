@@ -85,6 +85,8 @@ def shortcut_label_alternatives(text):
                 yield alt, None, err_a or err_b
                 continue
             (mods_a, key_a), (mods_b, key_b) = a[0], b[0]
+            if not mods_b:
+                mods_b = mods_a  # "<alt>0...8": the first key's modifiers cover the range
             if mods_a != mods_b or len(key_a) != 1 or len(key_b) != 1 or \
                     key_a.isdigit() != key_b.isdigit() or key_a > key_b:
                 yield alt, None, "range endpoints are not two keys of one kind"
