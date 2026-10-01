@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import dbus
+import functools
 import traceback
 import time
 
@@ -71,11 +72,12 @@ class DbusGtkMenu(object):
 
 			s = interface.connect_to_signal('Changed', self.on_actions_changed)
 			self.signal_matcher.append(s)
-			self.connect_to_actions_iface(obj)
 
 			for menu in results:
 				self.results[(menu[0], menu[1])] = menu[2]
 
+		if self.results:
+			self.watch_actions()
 		self.tree.create_node('Root', 'Root')
 		self.nodes_by_action = {}
 		self._node_seq = 0
@@ -151,39 +153,44 @@ class DbusGtkMenu(object):
 		checked = description[2]
 		return enabled, checked
 
-	def connect_to_actions_iface(self, obj):
-		try:
+	def watch_actions(self):
+		# GTK exports org.gtk.Actions at the application and window paths,
+		# not at the menubar path; unity-gtk-module serves unity.* there
+		groups = (('app.', self.app_path), ('win.', self.win_path), ('unity.', self.menubar_path))
+		for prefix, path in groups:
+			if not path:
+				continue
+			obj = self.session.get_object(self.bus_name, path)
 			iface = dbus.Interface(obj, dbus_interface='org.gtk.Actions')
-			s = iface.connect_to_signal('Changed', self.on_gtk_actions_changed)
+			s = iface.connect_to_signal('Changed', functools.partial(self.on_gtk_actions_changed, prefix))
 			self.signal_matcher.append(s)
-		except Exception as e:
-			pass
 
 	def on_actions_changed(self, *args):
 		print(f'on_actions_changed {args=}')
 
-	def on_gtk_actions_changed(self, removed, enabled_changed, state_changed, new_actions):
-		"""
-		The name of the actions doesn't have the unity. app. or win. preprended
-		"""
-		prefixes = ['unity.', 'win.', 'app.']
-		for action_name in [*enabled_changed, *state_changed]:
-			node_ids = []
-			for prefix in prefixes:
-				node_ids += self.nodes_by_action.get(prefix + action_name, [])
-			items = filter(None, (self.tree.get_node(i) for i in node_ids))
-
-			found = False
+	def on_gtk_actions_changed(self, prefix, removed, enabled_changed, state_changed, added):
+		"""org.gtk.Actions.Changed from the path that exports the prefix.* actions.
+		Action names in the signal carry no prefix."""
+		for name in {*removed, *enabled_changed, *state_changed, *added}:
 			# One action can back several menu entries; update all of them
-			for item in items:
-				found = True
-				if action_name in enabled_changed:
-					item.data.enabled = enabled_changed[action_name]
-				else:
-					item.data.set_toggle([state_changed[action_name]])
-
-			if not found:
-				print('Item does not exists:', action_name)
+			for node_id in self.nodes_by_action.get(prefix + name, []):
+				node = self.tree.get_node(node_id)
+				if node is None:
+					continue
+				item = node.data
+				if name in removed:
+					# What gtkmenutrackeritem.c does for a missing action
+					item.enabled = False
+					item.toggle_type = ''
+					item.toggle_state = False
+				if name in added:
+					enabled, _parameter_type, state = added[name]
+					item.enabled = bool(enabled)
+					item.set_toggle(state)
+				if name in enabled_changed:
+					item.enabled = bool(enabled_changed[name])
+				if name in state_changed:
+					item.set_toggle([state_changed[name]])
 
 	def remove_actions_listener(self):
 		for s in self.signal_matcher:

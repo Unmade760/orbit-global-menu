@@ -6,6 +6,7 @@ against a scripted GTK application: a menubar with sections, a submenu, a
 disabled item, a checkbox and a radio group.
 """
 
+import dbus
 import pytest
 
 from fakes import (FakeSession, FakeWindow, GTK_BUS, GTK_PROPS, gtk_item, gtk_describe,
@@ -41,6 +42,16 @@ ACTIONS = {
 	'win.grid': gtk_describe(True, True),
 	'win.size': gtk_describe(True, 'small'),
 }
+
+
+APP_PATH = GTK_PROPS['_GTK_APPLICATION_OBJECT_PATH']
+WIN_PATH = GTK_PROPS['_GTK_WINDOW_OBJECT_PATH']
+
+
+def actions_changed(session, path, removed=(), enabled=None, state=None, added=None):
+	"""org.gtk.Actions.Changed as GTK emits it at the app or window path."""
+	session.emit(GTK_BUS, path, 'org.gtk.Actions', 'Changed',
+		list(removed), enabled or {}, state or {}, added or {})
 
 
 def json_tree(model):
@@ -121,9 +132,9 @@ def test_radio_marks_only_the_item_whose_target_is_the_state(app):
 	(['large', 'small'], (True, False)),
 ])
 def test_radio_state_change_signal_moves_the_dot(app, states, want):
-	_, model = app
+	session, model = app
 	for state in states:
-		model.gtkmenu.on_gtk_actions_changed([], {}, {'size': state}, [])
+		actions_changed(session, WIN_PATH, state={'size': state})
 	small = find(json_tree(model), '_View', '_Small')
 	large = find(json_tree(model), '_View', '_Large')
 	assert (small['toggleState'], large['toggleState']) == want
@@ -142,17 +153,52 @@ def test_stateful_item_without_target_is_a_plain_item():
 
 def test_enabled_change_signal_updates_every_item_of_the_action(app):
 	# win.open backs both File > Open and File > Recent > a.txt
-	_, model = app
-	model.gtkmenu.on_gtk_actions_changed([], {'open': True}, {}, [])
+	session, model = app
+	actions_changed(session, WIN_PATH, enabled={'open': True})
 	tree = json_tree(model)
 	assert find(tree, '_File', '_Open')['enabled'] is True
 	assert find(tree, '_File', 'Recent', 'a.txt')['enabled'] is True
 
 
 def test_checkbox_change_signal(app):
-	_, model = app
-	model.gtkmenu.on_gtk_actions_changed([], {}, {'grid': False}, [])
+	session, model = app
+	actions_changed(session, WIN_PATH, state={'grid': False})
 	assert find(json_tree(model), '_View', 'Show _Grid')['toggleState'] is False
+
+
+def test_action_changes_are_heard_where_gtk_exports_actions(app):
+	# GTK exports org.gtk.Actions at the application and window paths only,
+	# never at the menubar path
+	session, _ = app
+	paths = {s[1] for s in session.signals if s[2] == 'org.gtk.Actions' and s[3].signal == 'Changed'}
+	assert {APP_PATH, WIN_PATH} <= paths
+
+
+def test_change_at_the_app_path_leaves_win_actions_alone(app):
+	session, model = app
+	actions_changed(session, APP_PATH, enabled={'grid': False}, state={'grid': False})
+	grid = find(json_tree(model), '_View', 'Show _Grid')
+	assert (grid['enabled'], grid['toggleState']) == (True, True)
+
+
+def test_enabled_and_state_change_in_one_signal(app):
+	session, model = app
+	actions_changed(session, WIN_PATH, enabled={'grid': False}, state={'grid': False})
+	grid = find(json_tree(model), '_View', 'Show _Grid')
+	assert (grid['enabled'], grid['toggleState']) == (False, False)
+
+
+def test_removed_and_added_actions(app):
+	# gtkmenutrackeritem.c: an item whose action goes away is insensitive and
+	# plain; when the action comes back it takes the new description
+	session, model = app
+	actions_changed(session, WIN_PATH, removed=['grid'])
+	grid = find(json_tree(model), '_View', 'Show _Grid')
+	assert (grid['enabled'], grid['toggleType'], grid['toggleState']) == (False, '', False)
+	actions_changed(session, WIN_PATH, added={'grid': (dbus.Boolean(True), dbus.Signature(''),
+		dbus.Array([dbus.Boolean(True, variant_level=1)], signature='v'))})
+	grid = find(json_tree(model), '_View', 'Show _Grid')
+	assert (grid['enabled'], grid['toggleType'], grid['toggleState']) == (True, 'checkmark', True)
 
 
 def test_activate_sends_the_action_to_the_right_object(app):

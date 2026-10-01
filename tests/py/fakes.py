@@ -62,6 +62,12 @@ class FakeSession:
 	def calls_to(self, member):
 		return [c for c in self.calls if c[3] == member]
 
+	def emit(self, bus_name, path, iface, member, *args):
+		"""Deliver a signal to every handler still subscribed to it."""
+		for name, obj_path, obj_iface, match in list(self.signals):
+			if (name, obj_path, obj_iface, match.signal) == (bus_name, path, iface, member) and not match.removed:
+				match.handler(*args)
+
 
 class FakeWindow:
 	def __init__(self, props=None, xid=0x4200001, app_name='Demo'):
