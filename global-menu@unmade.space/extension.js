@@ -8,6 +8,7 @@
 
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
+import Meta from 'gi://Meta';
 import Shell from 'gi://Shell';
 
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
@@ -232,13 +233,17 @@ class MenuBar {
 	}
 
 	// What the daemon needs to find the window's exported menu. The X11 id is
-	// dug out of the description because Wayland windows have none, and the
-	// gtk_* properties are only set on windows that export a GMenu.
+	// read from the description, which mutter starts with "0x<id> (" for an
+	// X11 window; a Wayland window has none, and its description holds only
+	// a counter and the title. The gtk_* properties are only set on windows
+	// that export a GMenu.
 	_windowData(win) {
 		const data = {xid: '0'};
-		const description = win.get_description()?.match(/0x[0-9a-f]+/);
-		if (description)
-			data.xid = String(parseInt(description[0]));
+		if (win.get_client_type() === Meta.WindowClientType.X11) {
+			const xid = win.get_description()?.match(/^0x[0-9a-f]+/);
+			if (xid)
+				data.xid = String(parseInt(xid[0]));
+		}
 
 		const gtkProps = [
 			'gtk_unique_bus_name',

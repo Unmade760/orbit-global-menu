@@ -595,4 +595,26 @@ test('an empty tree is not cached in place of the app menu', async () => {
     });
 });
 
+// R1-45: the X11 window id
+
+test('a Wayland window with a hex number in its title is sent with xid 0', async () => {
+    reset();
+    const {app, main} = focusedMainWindow();
+    await session(async (ext, daemon) => {
+        await connected(daemon, main);
+        await focusAndReport(daemon, makeWindow(app, {title: '0x1f40.bin - GHex'}));
+        assert.equal(daemon.lastWindowData().xid, '0');
+    });
+});
+
+test('an X11 window sends the id from the start of its description', async () => {
+    reset();
+    const {app, main} = focusedMainWindow();
+    await session(async (ext, daemon) => {
+        await connected(daemon, main);
+        await focusAndReport(daemon, makeWindow(app, {title: 'Notes 0x10', xid: '0x1e00003'}));
+        assert.equal(daemon.lastWindowData().xid, String(0x1e00003));
+    });
+});
+
 await run();
