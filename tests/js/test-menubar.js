@@ -554,4 +554,45 @@ test('disable disconnects every input before it destroys a menu, in reverse orde
     assert.equal(liveInputs() + t.settings.handlerCount, 0, 'every handler disconnected');
 });
 
+// R1-33: dialogs and other transient windows
+
+test('a dialog reports the window it is transient for', async () => {
+    reset();
+    const {app, main} = focusedMainWindow();
+    await session(async (ext, daemon) => {
+        await connected(daemon, main);
+        const chooser = makeWindow(app, {title: 'Open', transientFor: main});
+        await focusAndReport(daemon, makeWindow(app, {title: 'Confirm', transientFor: chooser, attached: true}));
+        assert.equal(daemon.lastWindowData().gtk_menubar_object_path, '/org/example/Main/menubar');
+    });
+});
+
+test('a parent window of another app is not used', async () => {
+    reset();
+    const {main} = focusedMainWindow();
+    const portal = makeApp('org.example.Portal');
+    await session(async (ext, daemon) => {
+        await connected(daemon, main);
+        await focusAndReport(daemon, makeWindow(portal, {title: 'Open', transientFor: main}));
+        assert.deepEqual(daemon.lastWindowData(), {xid: '0'});
+    });
+});
+
+test('an empty tree is not cached in place of the app menu', async () => {
+    reset();
+    const {app, main} = focusedMainWindow();
+    const other = makeWindow(app, {title: 'Preferences'});
+    await session(async (ext, daemon) => {
+        await connected(daemon, main);
+        daemon.sendTree(TREE);
+        await until(() => trees().length === 1, 'the tree');
+        focus(other);
+        daemon.sendTree([]);
+        await until(() => trees().length === 3, 'the empty tree');
+        focus(main);
+        // Straight from the cache, before the daemon answers
+        assert.equal(trees().at(-1), 'native.setItems File');
+    });
+});
+
 await run();

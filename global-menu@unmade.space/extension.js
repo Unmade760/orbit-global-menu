@@ -25,6 +25,10 @@ import * as KeySynth from './keySynth.js';
 const BUS_NAME = 'space.unmade.GlobalMenu';
 const BUS_PATH = '/space/unmade/GlobalMenu';
 
+// Mutter refuses transient-for loops; this only bounds the walk up from a
+// dialog to the window that holds the menu
+const MAX_TRANSIENT_STEPS = 8;
+
 // Menu trees are large and the daemon takes a moment to answer, so the last
 // few are kept per application to make alt-tabbing back instant.
 class MenuTreeCache {
@@ -69,7 +73,11 @@ class MenuBar {
 
 		this._proxy = new DaemonProxy({
 			onMenuTree: items => {
-				this._cache.storeForLastQuery(items);
+				// A window without a menubar gets an empty tree. Cached under
+				// the app id, it would stand in for the app's own menu the
+				// next time the app is focused.
+				if (items.length > 0)
+					this._cache.storeForLastQuery(items);
 				this.setMenuTree(items);
 			},
 			// The window it should have been told about is still focused
@@ -118,7 +126,7 @@ class MenuBar {
 		this._shortcutMapping = null;
 
 		const focusApp = this._winTracker.focus_app;
-		const win = focusApp?.get_windows()[0];
+		const win = focusApp ? this._menuWindow(focusApp) : null;
 		if (!win) {
 			this._showNothing();
 			return;
@@ -185,6 +193,21 @@ class MenuBar {
 		this._native.clear();
 		this._shortcuts.setMapping(null);
 		this._fallback?.setNativeMenusPresent(false);
+	}
+
+	// A dialog (file chooser, About) has none of the gtk_* properties that
+	// lead the daemon to a menu, so the menu comes from the window it is
+	// transient for. Attached dialogs are transient too. A parent that
+	// belongs to another app is not used: its menu is not the focused app's.
+	_menuWindow(app) {
+		let win = global.display.focus_window;
+		for (let step = 0; win && step < MAX_TRANSIENT_STEPS; step++) {
+			const parent = win.get_transient_for();
+			if (!parent || this._winTracker.get_window_app(parent) !== app)
+				break;
+			win = parent;
+		}
+		return win;
 	}
 
 	_shortcutsEnabledForApp(mapping) {
