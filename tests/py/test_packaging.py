@@ -46,3 +46,12 @@ def test_pkgbuild_depends_name_gtk3():
 		text = f.read()
 	depends = re.search(r'^depends=\((.*?)\)', text, re.M | re.S).group(1)
 	assert "'gtk3'" in depends
+
+
+def test_makefile_targets_are_phony():
+	# "make build" leaves a build/ directory behind, and without .PHONY the
+	# next run answers "'build' is up to date" and builds nothing.
+	with open(os.path.join(ROOT, 'Makefile')) as f:
+		text = f.read()
+	m = re.search(r'^\.PHONY:(.*)$', text, re.M)
+	assert m and {'build', 'clean'} <= set(m.group(1).split())

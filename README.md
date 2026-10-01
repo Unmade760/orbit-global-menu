@@ -45,31 +45,55 @@ Skip this unless you want the menus applications export themselves. Without
 it the extension still works, and says so once in the journal instead of
 failing.
 
-Install the GTK 3 bindings and dbus-python for your distribution:
+Debian and Ubuntu mark the system Python as externally managed (PEP 668), so
+`pip install --user .` fails there with `externally-managed-environment`. On
+those two, build the package and let `apt` install its dependencies.
+
+### Debian 13 and Ubuntu 26.04
 
 ```sh
-# Fedora
+sudo apt install git make python3-setuptools
+git clone https://github.com/Unmade760/orbit-global-menu.git
+cd orbit-global-menu
+make build
+sudo apt install ./global-menu_*.deb
+```
+
+`make build` writes `global-menu_<version>_all.deb` into the repository.
+`apt install` then pulls in `python3-gi`, `python3-dbus`, `gir1.2-gtk-3.0` and
+`appmenu-gtk3-module`. Once it is installed, `make clean` removes the
+build files and the `.deb`.
+
+### Fedora
+
+```sh
 sudo dnf install python3-gobject python3-dbus gtk3
+pip install --user .
+```
 
-# Debian and Ubuntu
-sudo apt install python3-gi python3-dbus gir1.2-gtk-3.0
+Run `pip` from the repository. Fedora has no `appmenu-gtk3-module`, so GTK 3
+apps with an in-window menubar stay on the shortcut menu.
 
-# Arch
+### Arch
+
+```sh
 sudo pacman -S python-gobject python-dbus gtk3
 ```
 
-Then, from the repository:
+`PKGBUILD` in the repository builds a package from there. It has not been run
+on Arch.
 
-```sh
-pip install --user .
-```
+### After installing
 
 Nothing goes in autostart. The extension starts `global-menu` when nobody owns
 its bus name and stops the process it started when it is disabled.
 
-On X11 only, `bamf` improves window matching and `libkeybinder` enables the
-Alt+Space menu search. Both are optional, and neither does anything on
-Wayland. Packaging for Arch and Debian is in `PKGBUILD` and `debian/`.
+On Xorg only, Bamf improves window matching and Keybinder enables the Alt+Space
+menu search. Both are optional and do nothing on Wayland. The deb recommends
+`gir1.2-bamf-3`, `bamfdaemon` and `gir1.2-keybinder-3.0`; on Fedora the
+packages are `bamf` and `keybinder3`, on Arch `bamf` and `libkeybinder3`.
+Packaging for Arch and Debian is in
+`PKGBUILD` and `debian/`.
 
 ## Which applications export a menu
 
