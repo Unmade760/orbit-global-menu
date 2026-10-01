@@ -6,14 +6,19 @@ against a scripted GTK application: a menubar with sections, a submenu, a
 disabled item, a checkbox and a radio group.
 """
 
+import json
+import time
+
 import dbus
 import pytest
+from gi.repository import GLib
 
 from fakes import (FakeSession, FakeWindow, GTK_APP_MENU_PROPS, GTK_BUS, GTK_PROPS, gtk_item,
 	gtk_describe, install_gtk_app, no_registrar)
 
 from globalmenu.menu_model.menu_model import MenuModel
 from globalmenu.utils.menu import DbusMenu
+from globalmenu.utils.service import MyService
 
 
 MENUS = {
@@ -46,12 +51,41 @@ ACTIONS = {
 
 APP_PATH = GTK_PROPS['_GTK_APPLICATION_OBJECT_PATH']
 WIN_PATH = GTK_PROPS['_GTK_WINDOW_OBJECT_PATH']
+MENUBAR_PATH = GTK_PROPS['_GTK_MENUBAR_OBJECT_PATH']
 
 
 def actions_changed(session, path, removed=(), enabled=None, state=None, added=None):
 	"""org.gtk.Actions.Changed as GTK emits it at the app or window path."""
 	session.emit(GTK_BUS, path, 'org.gtk.Actions', 'Changed',
 		list(removed), enabled or {}, state or {}, added or {})
+
+
+def menus_changed(session, *changes):
+	"""org.gtk.Menus.Changed: (group, menu, position, removed, [added items])."""
+	session.emit(GTK_BUS, MENUBAR_PATH, 'org.gtk.Menus', 'Changed', [
+		(dbus.UInt32(g), dbus.UInt32(m), dbus.UInt32(pos), dbus.UInt32(rm), dbus.Array(added, signature='a{sv}'))
+		for g, m, pos, rm, added in changes])
+
+
+def pump(seconds=0.0):
+	"""Run the default main context, where the daemon's idle and timeout
+	sources fire."""
+	ctx = GLib.MainContext.default()
+	end = time.monotonic() + seconds
+	while True:
+		while ctx.pending():
+			ctx.iteration(False)
+		if time.monotonic() >= end:
+			return
+		time.sleep(0.01)
+
+
+def started_groups(session):
+	return sorted(int(g) for c in session.calls_to('Start') for g in c[4][0])
+
+
+def ended_groups(session):
+	return sorted(int(g) for c in session.calls_to('End') for g in c[4][0])
 
 
 def json_tree(model):
@@ -255,6 +289,105 @@ def test_activating_any_targeted_item_passes_its_target():
 	model.activate('_Go  »  _Home')
 	sent = [(c[4][0], [str(v) for v in c[4][1]]) for c in session.calls_to('Activate')]
 	assert sent == [('go-tab', ['2']), ('home', [])]
+
+
+def test_starts_only_the_groups_the_menus_link_and_keeps_them(app):
+	# GMenuExporter reports changes only in groups somebody has started, and
+	# a Start for a group that does not exist yet makes a placeholder that a
+	# later submenu replaces (gmenuexporter.c), so End on it would trip
+	# g_assert in the app. The menus link groups 0, 1 and 2.
+	session, model = app
+	assert started_groups(session) == [0, 1, 2]
+	assert ended_groups(session) == []
+	model.gtkmenu.remove_actions_listener()
+	assert ended_groups(session) == [0, 1, 2]
+
+
+def test_item_the_app_adds_reaches_the_tree(app):
+	session, model = app
+	menus_changed(session, (2, 1, 1, 0, [gtk_item(label='Added _Later', action='app.new')]))
+	pump()
+	view = find(json_tree(model), '_View')['children']
+	assert [n.get('label', '---') for n in view] == ['Show _Grid', 'Added _Later', '---', '_Small', '_Large']
+	assert view[1]['key'] == '_View  »  Added _Later'
+
+
+def test_a_new_submenu_is_started_and_read():
+	menus = dict(MENUS)
+	session, model = load(menus, ACTIONS)
+	menus[(3, 0)] = [gtk_item(label='_Zoom In', action='app.new')]
+	menus_changed(session, (2, 1, 1, 0, [gtk_item(label='_Zoom', submenu=(3, 0))]))
+	pump()
+	assert started_groups(session) == [0, 1, 2, 3]
+	zoom = find(json_tree(model), '_View', '_Zoom')
+	assert [c['label'] for c in zoom['children']] == ['_Zoom In']
+
+
+def test_a_removed_submenu_group_is_ended(app):
+	session, model = app
+	menus_changed(session, (0, 1, 1, 1, []))
+	pump()
+	assert [n['label'] for n in json_tree(model)] == ['_File']
+	assert ended_groups(session) == [2]
+
+
+def test_change_in_a_group_not_started_is_ignored(app):
+	# Changed is a broadcast: another client's groups show up too
+	session, model = app
+	before = json_tree(model)
+	menus_changed(session, (7, 0, 0, 0, [gtk_item(label='Stray', action='app.new')]))
+	pump()
+	assert json_tree(model) == before
+
+
+def test_only_changes_to_menu_actions_are_announced():
+	# Editors flip actions such as undo on every keystroke; a change that
+	# no item uses must not cost a tree push
+	announced = []
+	session = FakeSession()
+	no_registrar(session)
+	install_gtk_app(session, MENUS, ACTIONS)
+	model = MenuModel(session, FakeWindow(GTK_PROPS), lambda: announced.append(True))
+	model._update_menus()
+	actions_changed(session, WIN_PATH, enabled={'not-in-a-menu': False})
+	assert announced == []
+	actions_changed(session, WIN_PATH, enabled={'grid': False})
+	assert announced == [True]
+
+
+def daemon_for(session):
+	"""DbusMenu without its bus service: the model for one window and the
+	trees it sends."""
+	sent = []
+	session.on(MyService.BUS_NAME, MyService.BUS_PATH, None, 'EchoSendMenuTree',
+		lambda tree: sent.append(json.loads(tree)))
+	menu = DbusMenu.__new__(DbusMenu)
+	menu.session = session
+	menu._push_timer = 0
+	menu._sent_json = None
+	menu._menu_model = MenuModel(session, FakeWindow(GTK_PROPS), menu._on_menu_changed)
+	menu._menu_model._update_menus()
+	menu._send_tree()
+	return menu, sent
+
+
+def test_changes_are_pushed_once_and_only_when_the_tree_differs():
+	session = FakeSession()
+	no_registrar(session)
+	install_gtk_app(session, MENUS, ACTIONS)
+	_menu, sent = daemon_for(session)
+	assert len(sent) == 1
+
+	actions_changed(session, WIN_PATH, state={'grid': False})
+	menus_changed(session, (2, 1, 1, 0, [gtk_item(label='Added _Later', action='app.new')]))
+	pump(0.3)
+	assert len(sent) == 2
+	assert find(sent[1], '_View', 'Show _Grid')['toggleState'] is False
+	assert find(sent[1], '_View', 'Added _Later') is not None
+
+	actions_changed(session, WIN_PATH, state={'grid': False})
+	pump(0.3)
+	assert len(sent) == 2
 
 
 APP_MENU = {

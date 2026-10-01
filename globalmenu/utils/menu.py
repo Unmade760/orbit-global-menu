@@ -24,6 +24,9 @@ class DbusMenu:
 		self.retry_timer_id = 0
 		self.collect_timer = 0
 		self._menu_model = None
+		self._push_timer = 0
+		# The JSON last sent for the focused window
+		self._sent_json = None
 
 		self._init_window()
 		self._listen_menu_activated()
@@ -32,8 +35,18 @@ class DbusMenu:
 		WindowManager.add_listener(self.on_window_switched)
 
 	def _init_window(self):
-		self._menu_model = MenuModel(self.session, self.window)
+		self._menu_model = MenuModel(self.session, self.window, self._on_menu_changed)
 		self._update()
+
+	def _on_menu_changed(self):
+		# One push for a burst of changes
+		if not self._push_timer:
+			self._push_timer = GLib.timeout_add(100, self._push_tree)
+
+	def _push_tree(self):
+		self._push_timer = 0
+		self._send_tree(only_if_changed=True)
+		return False
 
 	def on_window_switched(self, window):
 		self.reset_timeout()
@@ -48,6 +61,10 @@ class DbusMenu:
 
 		if self.collect_timer:
 			GLib.source_remove(self.collect_timer)
+
+		if self._push_timer:
+			GLib.source_remove(self._push_timer)
+			self._push_timer = 0
 
 	def _listen_menu_activated(self):
 		proxy = self.session.get_object(MyService.BUS_NAME, MyService.BUS_PATH)
@@ -192,19 +209,24 @@ class DbusMenu:
 			out.append(d)
 		return out
 
-	def _send_tree(self):
+	def _send_tree(self, only_if_changed=False):
 		tree = self._menu_model.tree
 		if tree.root is None:
 			payload = []
 		else:
 			payload = self._children_list(tree, tree[tree.root])
+		tree_json = json.dumps(payload)
+		if only_if_changed and tree_json == self._sent_json:
+			return
 		try:
 			proxy = self.session.get_object(MyService.BUS_NAME, MyService.BUS_PATH)
-			proxy.EchoSendMenuTree(json.dumps(payload))
+			proxy.EchoSendMenuTree(tree_json)
 		except dbus.exceptions.DBusException:
 			# The service may not be up yet (startup race); the tree is
 			# re-sent on every window switch anyway
 			pass
+		else:
+			self._sent_json = tree_json
 
 	@property
 	def prompt(self):

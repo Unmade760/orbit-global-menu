@@ -14,8 +14,11 @@ from globalmenu.menu_model.menu_item import DbusGtkMenuItem, DbusAppMenuItem
 
 class DbusGtkMenu(object):
 
-	def __init__(self, session, window):
+	def __init__(self, session, window, on_changed=None):
+		# object path -> {(group, menu): [items]}, and the groups started there
 		self.results      = {}
+		self.groups       = {}
+		self.menu_interfaces = {}
 		self.actions      = {}
 		self.targets      = {}
 		self.accels       = {}
@@ -41,6 +44,8 @@ class DbusGtkMenu(object):
 
 		self.top_level_menus = []
 		self.signal_matcher = []
+		# Called after the tree changed without being asked for
+		self.on_changed = on_changed
 
 	def activate(self, selection):
 		action = self.actions.get(selection, '')
@@ -66,21 +71,99 @@ class DbusGtkMenu(object):
 		for path in filter(None, (self.menubar_path, self.appmenu_path)):
 			obj       = self.session.get_object(self.bus_name, path)
 			interface = dbus.Interface(obj, dbus_interface='org.gtk.Menus')
-			try:
-				results   = interface.Start([x for x in range(1024)])
-				interface.End([x for x in range(1024)])
-			except Exception:
-				continue
-
-			s = interface.connect_to_signal('Changed', self.on_actions_changed)
+			# Listen first, so no change falls between Start and the match
+			s = interface.connect_to_signal('Changed', functools.partial(self.on_menus_changed, path))
 			self.signal_matcher.append(s)
-
+			self.menu_interfaces[path] = interface
 			# Each exported model numbers its own groups from (0, 0)
-			self.results[path] = {(menu[0], menu[1]): menu[2] for menu in results}
+			self.results[path] = {}
+			self.groups[path] = set()
+			try:
+				self._sync_groups(path)
+			except dbus.exceptions.DBusException:
+				del self.results[path]
 
 		if self.results:
 			self.watch_actions()
 		self.build_tree()
+
+	def _sync_groups(self, path):
+		"""Start every group the menus at path link to and End the ones
+		nothing links to any more. GMenuExporter reports changes only in
+		started groups, and treats a Start for an id it has not created as a
+		placeholder that a later submenu replaces, so only linked ids are
+		started. A group id is never reused once its submenu is gone."""
+		menus = self.results[path]
+		groups = self.groups[path]
+		interface = self.menu_interfaces[path]
+		while True:
+			linked = self._linked_groups(menus)
+			new = sorted(linked - groups)
+			if not new:
+				break
+			groups.update(new)
+			for group, menu, items in interface.Start(dbus.Array(new, signature='u')):
+				menus[(int(group), int(menu))] = list(items)
+
+		dead = sorted(groups - linked)
+		if dead:
+			groups.difference_update(dead)
+			for key in [k for k in menus if k[0] in dead]:
+				del menus[key]
+			interface.End(dbus.Array(dead, signature='u'), ignore_reply=True)
+
+	@staticmethod
+	def _linked_groups(menus):
+		"""Groups reachable from the root menu through sections and submenus."""
+		groups = set()
+		seen = set()
+		todo = [(0, 0)]
+		while todo:
+			key = todo.pop()
+			if key in seen:
+				continue
+			seen.add(key)
+			groups.add(key[0])
+			for item in menus.get(key, []):
+				for link in (':section', ':submenu'):
+					if link in item:
+						todo.append((int(item[link][0]), int(item[link][1])))
+		return groups
+
+	def on_menus_changed(self, path, changes):
+		"""org.gtk.Menus.Changed: a(uuuuaa{sv}), each change being group,
+		menu, position, number of items removed there, items added there."""
+		menus = self.results.get(path)
+		if menus is None:
+			return
+		changed = False
+		for group, menu, position, removed, added in changes:
+			# The signal reaches every listener; a group not started here
+			# belongs to some other client
+			if group not in self.groups[path]:
+				continue
+			items = menus.setdefault((int(group), int(menu)), [])
+			items[position:position + removed] = list(added)
+			changed = True
+		# One rebuild for a burst: GTK sends one signal per changed menu
+		if changed and not self._update_timer:
+			self._update_timer = GLib.idle_add(self._rebuild)
+
+	def _rebuild(self):
+		self._update_timer = 0
+		try:
+			for path in self.results:
+				self._sync_groups(path)
+		except dbus.exceptions.DBusException:
+			# The app is going away; show what was read
+			pass
+		self.build_tree()
+		self._notify()
+		return False
+
+	def _notify(self):
+		if self.on_changed is not None:
+			self.on_changed()
 
 	def build_tree(self):
 		self.tree = Tree()
@@ -188,9 +271,6 @@ class DbusGtkMenu(object):
 			s = iface.connect_to_signal('Changed', functools.partial(self.on_gtk_actions_changed, prefix))
 			self.signal_matcher.append(s)
 
-	def on_actions_changed(self, *args):
-		print(f'on_actions_changed {args=}')
-
 	def on_gtk_actions_changed(self, prefix, removed, enabled_changed, state_changed, added):
 		"""org.gtk.Actions.Changed from the path that exports the prefix.* actions.
 		Action names in the signal carry no prefix."""
@@ -205,17 +285,33 @@ class DbusGtkMenu(object):
 			for name, state in state_changed.items():
 				group[name] = (group.get(name, (True, []))[0], [state])
 
+		touched = False
 		for name in {*removed, *enabled_changed, *state_changed, *added}:
 			# One action can back several menu entries; update all of them
 			for node_id in self.nodes_by_action.get(prefix + name, []):
 				node = self.tree.get_node(node_id)
 				if node is not None:
 					self._apply_action(node.data)
+					touched = True
+		if touched:
+			self._notify()
 
 	def remove_actions_listener(self):
 		for s in self.signal_matcher:
 			s.remove()
 		self.signal_matcher = []
+		if self._update_timer:
+			GLib.source_remove(self._update_timer)
+			self._update_timer = 0
+		for path, groups in self.groups.items():
+			if not groups:
+				continue
+			try:
+				self.menu_interfaces[path].End(dbus.Array(sorted(groups), signature='u'), ignore_reply=True)
+			except dbus.exceptions.DBusException:
+				# Gone already; the app drops our groups when our name vanishes
+				pass
+		self.groups = {}
 
 
 class DbusAppMenu(object):
@@ -352,16 +448,16 @@ class DbusAppMenu(object):
 
 class MenuModel:
 	# The menubars have to be reused so they are cleanup
-	def __init__(self, session, window):
+	def __init__(self, session, window, on_changed=None):
 		self.appmenu = None
 		self.gtkmenu = None
 		self._session = session
 		self.window = window
-		self._init_window(session, window)
+		self._init_window(session, window, on_changed)
 
-	def _init_window(self, session, window):
+	def _init_window(self, session, window, on_changed):
 		self.appmenu = DbusAppMenu(session, window)
-		self.gtkmenu = DbusGtkMenu(session, window)
+		self.gtkmenu = DbusGtkMenu(session, window, on_changed)
 
 	def _update_menus(self):
 		try:

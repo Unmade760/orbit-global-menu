@@ -41,6 +41,12 @@ class FakeObject:
 			return handler(*args)
 		return call
 
+	def __getattr__(self, member):
+		# proxy.Method(...), which dbus-python allows without an interface
+		if member.startswith('_'):
+			raise AttributeError(member)
+		return self.get_dbus_method(member)
+
 	def connect_to_signal(self, signal_name, handler, dbus_interface=None, **keywords):
 		match = FakeMatch(signal_name, handler)
 		self.session.signals.append((self.bus_name, self.object_path, dbus_interface, match))
