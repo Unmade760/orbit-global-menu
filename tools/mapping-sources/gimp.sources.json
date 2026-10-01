@@ -1,0 +1,1302 @@
+{
+  "format": 1,
+  "app": "gimp",
+  "repos": {
+    "gimp": {
+      "url": "https://gitlab.gnome.org/GNOME/gimp.git",
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "New…"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "gimp",
+      "file": "app/actions/image-actions.c",
+      "line": 55,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Create",
+        "From Clipboard"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 117,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 74,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Open as Layers…"
+      ],
+      "shortcut": "<Ctrl><Alt>O",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 80,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Open as Link Layer…"
+      ],
+      "shortcut": "<Ctrl><Shift><Alt>O",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 86,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 137,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 143,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Export…"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 163,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Export As…"
+      ],
+      "shortcut": "<Ctrl><Shift>E",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 175,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Show in File Manager"
+      ],
+      "shortcut": "<Ctrl><Alt>F",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 122,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Close View"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 77,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Close All"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 110,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "gimp",
+      "file": "app/actions/file-actions.c",
+      "line": 128,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 66,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 72,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 97,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 103,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy Visible"
+      ],
+      "shortcut": "<Ctrl><Shift>C",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 109,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 157,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste In Place"
+      ],
+      "shortcut": "<Ctrl><Alt>V",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 163,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste as",
+        "Paste as New Image"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 117,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Clear"
+      ],
+      "shortcut": "Delete",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 148,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Fill with FG Color"
+      ],
+      "shortcut": "<Ctrl>,",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 213,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Fill with BG Color"
+      ],
+      "shortcut": "<Ctrl>.",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 219,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Edit",
+        "Fill with Pattern"
+      ],
+      "shortcut": "<Ctrl>;",
+      "repo": "gimp",
+      "file": "app/actions/edit-actions.c",
+      "line": 225,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Select",
+        "All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "gimp",
+      "file": "app/actions/select-actions.c",
+      "line": 44,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Select",
+        "None"
+      ],
+      "shortcut": "<Ctrl><Shift>A",
+      "repo": "gimp",
+      "file": "app/actions/select-actions.c",
+      "line": 50,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Select",
+        "Invert"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "gimp",
+      "file": "app/actions/select-actions.c",
+      "line": 56,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Select",
+        "Float",
+        "Cut and Float"
+      ],
+      "shortcut": "<Ctrl><Shift>L",
+      "repo": "gimp",
+      "file": "app/actions/select-actions.c",
+      "line": 62,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Select",
+        "Selection From Paths"
+      ],
+      "shortcut": "<Shift>V",
+      "repo": "gimp",
+      "file": "app/actions/paths-actions.c",
+      "line": 247,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Select",
+        "Toggle Quick Mask"
+      ],
+      "shortcut": "<Shift>Q",
+      "repo": "gimp",
+      "file": "app/actions/quick-mask-actions.c",
+      "line": 51,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Revert Zoom"
+      ],
+      "shortcut": "`",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 107,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Out"
+      ],
+      "shortcut": "-",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 353,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom In"
+      ],
+      "shortcut": "+",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 359,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Fit Image in Window"
+      ],
+      "shortcut": "<Ctrl><Shift>J",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 89,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "16:1 (1600%)"
+      ],
+      "shortcut": "5",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 380,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "8:1 (800%)"
+      ],
+      "shortcut": "4",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 388,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "4:1 (400%)"
+      ],
+      "shortcut": "3",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 396,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "2:1 (200%)"
+      ],
+      "shortcut": "2",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 404,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "1:1 (100%)"
+      ],
+      "shortcut": "1",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 412,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "1:2 (50%)"
+      ],
+      "shortcut": "<Shift>2",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 420,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "1:4 (25%)"
+      ],
+      "shortcut": "<Shift>3",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 428,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "1:8 (12.5%)"
+      ],
+      "shortcut": "<Shift>4",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 436,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "1:16 (6.25%)"
+      ],
+      "shortcut": "<Shift>5",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 444,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Flip & Rotate",
+        "Reset Flip & Rotate"
+      ],
+      "shortcut": "!",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 126,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Center Image in Window"
+      ],
+      "shortcut": "<Shift>J",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 83,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Shrink Wrap"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 152,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen"
+      ],
+      "shortcut": "F11",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 324,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Show Selection"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 211,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Show Guides"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 232,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "View",
+        "Show Rulers"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "gimp",
+      "file": "app/actions/view-actions.c",
+      "line": 302,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Image",
+        "Duplicate"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "gimp",
+      "file": "app/actions/image-actions.c",
+      "line": 61,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Image",
+        "Merge Visible Layers…"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "gimp",
+      "file": "app/actions/image-actions.c",
+      "line": 139,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Image",
+        "Image Properties"
+      ],
+      "shortcut": "<Alt>Return",
+      "repo": "gimp",
+      "file": "app/actions/image-actions.c",
+      "line": 157,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Layer",
+        "New Layer…"
+      ],
+      "shortcut": "<Ctrl><Shift>N",
+      "repo": "gimp",
+      "file": "app/actions/layers-actions.c",
+      "line": 79,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Layer",
+        "Duplicate Layers"
+      ],
+      "shortcut": "<Ctrl><Shift>D",
+      "repo": "gimp",
+      "file": "app/actions/layers-actions.c",
+      "line": 104,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Layer",
+        "Anchor Floating Layer or Mask"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "gimp",
+      "file": "app/actions/layers-actions.c",
+      "line": 141,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Layer",
+        "Stack",
+        "Select Previous Layers"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "gimp",
+      "file": "app/actions/layers-actions.c",
+      "line": 557,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Layer",
+        "Stack",
+        "Select Next Layers"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "gimp",
+      "file": "app/actions/layers-actions.c",
+      "line": 565,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Layer",
+        "Stack",
+        "Select Top Layer"
+      ],
+      "shortcut": "Home",
+      "repo": "gimp",
+      "file": "app/actions/layers-actions.c",
+      "line": 545,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Layer",
+        "Stack",
+        "Select Bottom Layer"
+      ],
+      "shortcut": "End",
+      "repo": "gimp",
+      "file": "app/actions/layers-actions.c",
+      "line": 551,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Layer",
+        "Transform",
+        "Offset…"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "gimp",
+      "file": "app/actions/filters-actions.c",
+      "line": 529,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection Tools",
+        "Rectangle Select"
+      ],
+      "shortcut": "R",
+      "repo": "gimp",
+      "file": "app/tools/gimprectangleselecttool.c",
+      "line": 151,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection Tools",
+        "Ellipse Select"
+      ],
+      "shortcut": "E",
+      "repo": "gimp",
+      "file": "app/tools/gimpellipseselecttool.c",
+      "line": 66,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection Tools",
+        "Free Select"
+      ],
+      "shortcut": "F",
+      "repo": "gimp",
+      "file": "app/tools/gimpfreeselecttool.c",
+      "line": 108,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection Tools",
+        "Fuzzy Select"
+      ],
+      "shortcut": "U",
+      "repo": "gimp",
+      "file": "app/tools/gimpfuzzyselecttool.c",
+      "line": 71,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection Tools",
+        "By Color Select"
+      ],
+      "shortcut": "<Shift>O",
+      "repo": "gimp",
+      "file": "app/tools/gimpbycolorselecttool.c",
+      "line": 73,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Selection Tools",
+        "Scissors Select"
+      ],
+      "shortcut": "I",
+      "repo": "gimp",
+      "file": "app/tools/gimpiscissorstool.c",
+      "line": 295,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Bucket Fill"
+      ],
+      "shortcut": "<Shift>B",
+      "repo": "gimp",
+      "file": "app/tools/gimpbucketfilltool.c",
+      "line": 173,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Gradient"
+      ],
+      "shortcut": "G",
+      "repo": "gimp",
+      "file": "app/tools/gimpgradienttool.c",
+      "line": 168,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Pencil"
+      ],
+      "shortcut": "N",
+      "repo": "gimp",
+      "file": "app/tools/gimppenciltool.c",
+      "line": 55,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Paintbrush"
+      ],
+      "shortcut": "P",
+      "repo": "gimp",
+      "file": "app/tools/gimppaintbrushtool.c",
+      "line": 61,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Eraser"
+      ],
+      "shortcut": "<Shift>E",
+      "repo": "gimp",
+      "file": "app/tools/gimperasertool.c",
+      "line": 73,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Airbrush"
+      ],
+      "shortcut": "A",
+      "repo": "gimp",
+      "file": "app/tools/gimpairbrushtool.c",
+      "line": 71,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Ink"
+      ],
+      "shortcut": "K",
+      "repo": "gimp",
+      "file": "app/tools/gimpinktool.c",
+      "line": 73,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "MyPaint Brush"
+      ],
+      "shortcut": "Y",
+      "repo": "gimp",
+      "file": "app/tools/gimpmybrushtool.c",
+      "line": 80,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Clone"
+      ],
+      "shortcut": "C",
+      "repo": "gimp",
+      "file": "app/tools/gimpclonetool.c",
+      "line": 65,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Heal"
+      ],
+      "shortcut": "H",
+      "repo": "gimp",
+      "file": "app/tools/gimphealtool.c",
+      "line": 58,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Blur / Sharpen"
+      ],
+      "shortcut": "<Shift>U",
+      "repo": "gimp",
+      "file": "app/tools/gimpconvolvetool.c",
+      "line": 78,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Smudge"
+      ],
+      "shortcut": "S",
+      "repo": "gimp",
+      "file": "app/tools/gimpsmudgetool.c",
+      "line": 59,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paint Tools",
+        "Dodge / Burn"
+      ],
+      "shortcut": "<Shift>D",
+      "repo": "gimp",
+      "file": "app/tools/gimpdodgeburntool.c",
+      "line": 76,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Align and Distribute"
+      ],
+      "shortcut": "Q",
+      "repo": "gimp",
+      "file": "app/tools/gimpaligntool.c",
+      "line": 134,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Move"
+      ],
+      "shortcut": "M",
+      "repo": "gimp",
+      "file": "app/tools/gimpmovetool.c",
+      "line": 118,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Crop"
+      ],
+      "shortcut": "<Shift>C",
+      "repo": "gimp",
+      "file": "app/tools/gimpcroptool.c",
+      "line": 127,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Rotate"
+      ],
+      "shortcut": "<Shift>R",
+      "repo": "gimp",
+      "file": "app/tools/gimprotatetool.c",
+      "line": 105,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Scale"
+      ],
+      "shortcut": "<Shift>S",
+      "repo": "gimp",
+      "file": "app/tools/gimpscaletool.c",
+      "line": 98,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Shear"
+      ],
+      "shortcut": "<Shift>H",
+      "repo": "gimp",
+      "file": "app/tools/gimpsheartool.c",
+      "line": 93,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Perspective"
+      ],
+      "shortcut": "<Shift>P",
+      "repo": "gimp",
+      "file": "app/tools/gimpperspectivetool.c",
+      "line": 88,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "3D Transform"
+      ],
+      "shortcut": "<Shift>W",
+      "repo": "gimp",
+      "file": "app/tools/gimptransform3dtool.c",
+      "line": 116,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Unified Transform"
+      ],
+      "shortcut": "<Shift>T",
+      "repo": "gimp",
+      "file": "app/tools/gimpunifiedtransformtool.c",
+      "line": 92,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Handle Transform"
+      ],
+      "shortcut": "<Shift>L",
+      "repo": "gimp",
+      "file": "app/tools/gimphandletransformtool.c",
+      "line": 114,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Flip"
+      ],
+      "shortcut": "<Shift>F",
+      "repo": "gimp",
+      "file": "app/tools/gimpfliptool.c",
+      "line": 115,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Cage Transform"
+      ],
+      "shortcut": "<Shift>G",
+      "repo": "gimp",
+      "file": "app/tools/gimpcagetool.c",
+      "line": 166,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Transform Tools",
+        "Warp Transform"
+      ],
+      "shortcut": "W",
+      "repo": "gimp",
+      "file": "app/tools/gimpwarptool.c",
+      "line": 180,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Paths"
+      ],
+      "shortcut": "B",
+      "repo": "gimp",
+      "file": "app/tools/gimppathtool.c",
+      "line": 193,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Text"
+      ],
+      "shortcut": "T",
+      "repo": "gimp",
+      "file": "app/tools/gimptexttool.c",
+      "line": 224,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Color Picker"
+      ],
+      "shortcut": "O",
+      "repo": "gimp",
+      "file": "app/tools/gimpcolorpickertool.c",
+      "line": 110,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Measure"
+      ],
+      "shortcut": "<Shift>M",
+      "repo": "gimp",
+      "file": "app/tools/gimpmeasuretool.c",
+      "line": 132,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Zoom"
+      ],
+      "shortcut": "Z",
+      "repo": "gimp",
+      "file": "app/tools/gimpmagnifytool.c",
+      "line": 95,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Toolbox"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "gimp",
+      "file": "app/actions/dialogs-actions.c",
+      "line": 51,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Default Colors"
+      ],
+      "shortcut": "D",
+      "repo": "gimp",
+      "file": "app/actions/context-actions.c",
+      "line": 47,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Tools",
+        "Swap Colors"
+      ],
+      "shortcut": "X",
+      "repo": "gimp",
+      "file": "app/actions/context-actions.c",
+      "line": 54,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Filters",
+        "Repeat Last"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "gimp",
+      "file": "app/actions/filters-actions.c",
+      "line": 737,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Filters",
+        "Re-Show Last"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "gimp",
+      "file": "app/actions/filters-actions.c",
+      "line": 744,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Windows",
+        "Dockable Dialogs",
+        "Layers"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "gimp",
+      "file": "app/actions/dialogs-actions.c",
+      "line": 83,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Windows",
+        "Dockable Dialogs",
+        "Brushes"
+      ],
+      "shortcut": "<Ctrl><Shift>B",
+      "repo": "gimp",
+      "file": "app/actions/dialogs-actions.c",
+      "line": 170,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Windows",
+        "Dockable Dialogs",
+        "Patterns"
+      ],
+      "shortcut": "<Ctrl><Shift>P",
+      "repo": "gimp",
+      "file": "app/actions/dialogs-actions.c",
+      "line": 208,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Windows",
+        "Dockable Dialogs",
+        "Gradients"
+      ],
+      "shortcut": "<Ctrl>G",
+      "repo": "gimp",
+      "file": "app/actions/dialogs-actions.c",
+      "line": 216,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Windows",
+        "Toolbox"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "gimp",
+      "file": "app/actions/dialogs-actions.c",
+      "line": 51,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "gimp",
+      "file": "app/actions/help-actions.c",
+      "line": 39,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Help",
+        "Context Help"
+      ],
+      "shortcut": "<Shift>F1",
+      "repo": "gimp",
+      "file": "app/actions/help-actions.c",
+      "line": 45,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    },
+    {
+      "path": [
+        "Help",
+        "Search and Run a Command"
+      ],
+      "shortcut": "/",
+      "repo": "gimp",
+      "file": "app/actions/dialogs-actions.c",
+      "line": 372,
+      "commit": "e101dd19b165f927d3ba0a74658a71537c5661b9"
+    }
+  ]
+}

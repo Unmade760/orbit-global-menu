@@ -13,17 +13,25 @@
     {
       "label": "File",
       "items": [
-        {"label": "New Image", "shortcut": "<Ctrl>N"},
-        {"label": "Open Image", "shortcut": "<Ctrl>O"},
-        {"label": "Open Image as Layers", "shortcut": "<Ctrl><Alt>O"},
-        {"label": "Save Image", "shortcut": "<Ctrl>S"},
-        {"label": "Save Image As", "shortcut": "<Ctrl><Shift>S"},
-        {"label": "Export", "shortcut": "<Ctrl>E"},
-        {"label": "Export As", "shortcut": "<Ctrl><Shift>E"},
-        {"label": "Print", "shortcut": "<Ctrl>P"},
+        {"label": "New…", "shortcut": "<Ctrl>N"},
+        {"label": "Create", "items": [
+          {"label": "From Clipboard", "shortcut": "<Ctrl><Shift>V"}
+        ]},
+        {"label": "Open…", "shortcut": "<Ctrl>O"},
+        {"label": "Open as Layers…", "shortcut": "<Ctrl><Alt>O"},
+        {"label": "Open as Link Layer…", "shortcut": "<Ctrl><Shift><Alt>O"},
+        {"separator": true},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As…", "shortcut": "<Ctrl><Shift>S"},
+        {"separator": true},
+        {"label": "Export…", "shortcut": "<Ctrl>E"},
+        {"label": "Export As…", "shortcut": "<Ctrl><Shift>E"},
+        {"separator": true},
+        {"label": "Show in File Manager", "shortcut": "<Ctrl><Alt>F"},
+        {"separator": true},
         {"label": "Close View", "shortcut": "<Ctrl>W"},
         {"label": "Close All", "shortcut": "<Ctrl><Shift>W"},
-        {"label": "Quit GIMP", "shortcut": "<Ctrl>Q"}
+        {"label": "Quit", "shortcut": "<Ctrl>Q"}
       ]
     },
     {
@@ -31,110 +39,177 @@
       "items": [
         {"label": "Undo", "shortcut": "<Ctrl>Z"},
         {"label": "Redo", "shortcut": "<Ctrl>Y"},
+        {"separator": true},
         {"label": "Cut", "shortcut": "<Ctrl>X"},
         {"label": "Copy", "shortcut": "<Ctrl>C"},
         {"label": "Copy Visible", "shortcut": "<Ctrl><Shift>C"},
         {"label": "Paste", "shortcut": "<Ctrl>V"},
-        {"label": "Paste into Selection", "shortcut": "<Ctrl><Alt>V"},
-        {"label": "Paste as New Image", "shortcut": "<Ctrl><Shift>V"},
+        {"label": "Paste In Place", "shortcut": "<Ctrl><Alt>V"},
+        {"label": "Paste as", "items": [
+          {"label": "Paste as New Image", "shortcut": "<Ctrl><Shift>V"}
+        ]},
+        {"separator": true},
         {"label": "Clear", "shortcut": "Delete"},
-        {"label": "Fill with Foreground Color", "shortcut": "<Ctrl>,"},
-        {"label": "Fill with Background Color", "shortcut": "<Ctrl>."},
-        {"label": "Fill with Pattern", "shortcut": "<Ctrl>;"},
-        {"label": "Invert Selection", "shortcut": "<Ctrl>I"},
-        {"label": "Search Actions", "shortcut": "/"}
+        {"label": "Fill with FG Color", "shortcut": "<Ctrl>,"},
+        {"label": "Fill with BG Color", "shortcut": "<Ctrl>."},
+        {"label": "Fill with Pattern", "shortcut": "<Ctrl>;"}
       ]
     },
     {
       "label": "Select",
       "items": [
-        {"label": "Select All", "shortcut": "<Ctrl>A"},
-        {"label": "Select None", "shortcut": "<Ctrl><Shift>A"},
-        {"label": "Float Selection", "shortcut": "<Ctrl><Shift>L"},
-        {"label": "Select Next Layer", "shortcut": "Page_Down"},
-        {"label": "Select Previous Layer", "shortcut": "Page_Up"},
-        {"label": "Rectangle Select Tool", "shortcut": "R"},
-        {"label": "Ellipse Select Tool", "shortcut": "E"},
-        {"label": "Free Select (Lasso) Tool", "shortcut": "F"},
-        {"label": "Fuzzy Select (Magic Wand) Tool", "shortcut": "U"},
-        {"label": "Select by Color Tool", "shortcut": "<Shift>O"}
+        {"label": "All", "shortcut": "<Ctrl>A"},
+        {"label": "None", "shortcut": "<Ctrl><Shift>A"},
+        {"label": "Invert", "shortcut": "<Ctrl>I"},
+        {"label": "Float", "items": [
+          {"label": "Cut and Float", "shortcut": "<Ctrl><Shift>L"}
+        ]},
+        {"label": "Selection From Paths", "shortcut": "<Shift>V"},
+        {"separator": true},
+        {"label": "Toggle Quick Mask", "shortcut": "<Shift>Q"}
       ]
     },
     {
       "label": "View",
       "items": [
-        {"label": "Toggle Quick Mask", "shortcut": "<Shift>Q"},
-        {"label": "Zoom In", "shortcut": "+"},
-        {"label": "Zoom Out", "shortcut": "-"},
-        {"label": "Zoom 1:1 (100%)", "shortcut": "1"},
-        {"label": "Toggle Fullscreen", "shortcut": "F11"},
-        {"label": "Toggle Rulers", "shortcut": "<Ctrl><Shift>R"},
-        {"label": "Toggle Guides", "shortcut": "<Ctrl><Shift>T"},
-        {"label": "Toggle Grid", "shortcut": "<Ctrl><Shift>'"}
+        {"label": "Zoom", "items": [
+          {"label": "Revert Zoom", "shortcut": "`"},
+          {"label": "Zoom Out", "shortcut": "-"},
+          {"label": "Zoom In", "shortcut": "+"},
+          {"label": "Fit Image in Window", "shortcut": "<Ctrl><Shift>J"},
+          {"separator": true},
+          {"label": "16:1 (1600%)", "shortcut": "5"},
+          {"label": "8:1 (800%)", "shortcut": "4"},
+          {"label": "4:1 (400%)", "shortcut": "3"},
+          {"label": "2:1 (200%)", "shortcut": "2"},
+          {"label": "1:1 (100%)", "shortcut": "1"},
+          {"label": "1:2 (50%)", "shortcut": "<Shift>2"},
+          {"label": "1:4 (25%)", "shortcut": "<Shift>3"},
+          {"label": "1:8 (12.5%)", "shortcut": "<Shift>4"},
+          {"label": "1:16 (6.25%)", "shortcut": "<Shift>5"}
+        ]},
+        {"label": "Flip & Rotate", "items": [
+          {"label": "Reset Flip & Rotate", "shortcut": "!"}
+        ]},
+        {"label": "Center Image in Window", "shortcut": "<Shift>J"},
+        {"separator": true},
+        {"label": "Shrink Wrap", "shortcut": "<Ctrl>J"},
+        {"label": "Fullscreen", "shortcut": "F11"},
+        {"separator": true},
+        {"label": "Show Selection", "shortcut": "<Ctrl>T"},
+        {"label": "Show Guides", "shortcut": "<Ctrl><Shift>T"},
+        {"separator": true},
+        {"label": "Show Rulers", "shortcut": "<Ctrl><Shift>R"}
       ]
     },
     {
       "label": "Image",
       "items": [
-        {"label": "Fit Image in Window", "shortcut": "<Ctrl><Shift>J"},
-        {"label": "Crop Tool", "shortcut": "<Shift>C"},
-        {"label": "Rotate Tool", "shortcut": "<Shift>R"},
-        {"label": "Scale Tool", "shortcut": "<Shift>S"},
-        {"label": "Flip Tool", "shortcut": "<Shift>F"}
-      ]
-    },
-    {
-      "label": "Colors",
-      "items": [
-        {"label": "Color Picker Tool", "shortcut": "O"}
+        {"label": "Duplicate", "shortcut": "<Ctrl>D"},
+        {"separator": true},
+        {"label": "Merge Visible Layers…", "shortcut": "<Ctrl>M"},
+        {"separator": true},
+        {"label": "Image Properties", "shortcut": "<Alt>Return"}
       ]
     },
     {
       "label": "Layer",
       "items": [
-        {"label": "New Layer", "shortcut": "<Ctrl><Shift>N"},
-        {"label": "Duplicate Layer", "shortcut": "<Ctrl><Shift>D"},
-        {"label": "Merge Down", "shortcut": "<Ctrl>M"},
-        {"label": "Anchor Layer", "shortcut": "<Ctrl>H"}
-      ]
-    },
-    {
-      "label": "Filters",
-      "items": [
-        {"label": "Repeat Last Filter", "shortcut": "<Ctrl>F"},
-        {"label": "Re-Show Last Filter", "shortcut": "<Ctrl><Shift>F"}
+        {"label": "New Layer…", "shortcut": "<Ctrl><Shift>N"},
+        {"label": "Duplicate Layers", "shortcut": "<Ctrl><Shift>D"},
+        {"label": "Anchor Floating Layer or Mask", "shortcut": "<Ctrl>H"},
+        {"separator": true},
+        {"label": "Stack", "items": [
+          {"label": "Select Previous Layers", "shortcut": "Page_Up"},
+          {"label": "Select Next Layers", "shortcut": "Page_Down"},
+          {"label": "Select Top Layer", "shortcut": "Home"},
+          {"label": "Select Bottom Layer", "shortcut": "End"}
+        ]},
+        {"label": "Transform", "items": [
+          {"label": "Offset…", "shortcut": "<Ctrl><Shift>O"}
+        ]}
       ]
     },
     {
       "label": "Tools",
       "items": [
-        {"label": "Navigation Window", "shortcut": "<Ctrl><Shift>N"},
-        {"label": "Paths Tool", "shortcut": "B"},
-        {"label": "Zoom Tool", "shortcut": "Z"},
-        {"label": "Measure Tool", "shortcut": "<Shift>M"},
-        {"label": "Move Tool", "shortcut": "M"},
-        {"label": "Shear Tool", "shortcut": "<Shift>H"},
-        {"label": "Perspective Tool", "shortcut": "<Shift>P"},
-        {"label": "Unified Transform Tool", "shortcut": "<Shift>T"},
-        {"label": "Bucket Fill Tool", "shortcut": "<Shift>B"},
-        {"label": "Gradient Tool", "shortcut": "G"},
-        {"label": "Pencil Tool", "shortcut": "N"},
-        {"label": "Paintbrush Tool", "shortcut": "P"},
-        {"label": "Eraser Tool", "shortcut": "<Shift>E"},
-        {"label": "Airbrush Tool", "shortcut": "A"},
-        {"label": "Ink Tool", "shortcut": "K"},
-        {"label": "Clone Tool", "shortcut": "C"},
-        {"label": "Healing Tool", "shortcut": "H"},
-        {"label": "Smudge Tool", "shortcut": "S"},
-        {"label": "Dodge / Burn Tool", "shortcut": "<Shift>D"},
-        {"label": "Text Tool", "shortcut": "T"}
+        {"label": "Selection Tools", "items": [
+          {"label": "Rectangle Select", "shortcut": "R"},
+          {"label": "Ellipse Select", "shortcut": "E"},
+          {"label": "Free Select", "shortcut": "F"},
+          {"label": "Fuzzy Select", "shortcut": "U"},
+          {"label": "By Color Select", "shortcut": "<Shift>O"},
+          {"label": "Scissors Select", "shortcut": "I"}
+        ]},
+        {"label": "Paint Tools", "items": [
+          {"label": "Bucket Fill", "shortcut": "<Shift>B"},
+          {"label": "Gradient", "shortcut": "G"},
+          {"label": "Pencil", "shortcut": "N"},
+          {"label": "Paintbrush", "shortcut": "P"},
+          {"label": "Eraser", "shortcut": "<Shift>E"},
+          {"label": "Airbrush", "shortcut": "A"},
+          {"label": "Ink", "shortcut": "K"},
+          {"label": "MyPaint Brush", "shortcut": "Y"},
+          {"label": "Clone", "shortcut": "C"},
+          {"label": "Heal", "shortcut": "H"},
+          {"label": "Blur / Sharpen", "shortcut": "<Shift>U"},
+          {"label": "Smudge", "shortcut": "S"},
+          {"label": "Dodge / Burn", "shortcut": "<Shift>D"}
+        ]},
+        {"label": "Transform Tools", "items": [
+          {"label": "Align and Distribute", "shortcut": "Q"},
+          {"label": "Move", "shortcut": "M"},
+          {"label": "Crop", "shortcut": "<Shift>C"},
+          {"label": "Rotate", "shortcut": "<Shift>R"},
+          {"label": "Scale", "shortcut": "<Shift>S"},
+          {"label": "Shear", "shortcut": "<Shift>H"},
+          {"label": "Perspective", "shortcut": "<Shift>P"},
+          {"label": "3D Transform", "shortcut": "<Shift>W"},
+          {"label": "Unified Transform", "shortcut": "<Shift>T"},
+          {"label": "Handle Transform", "shortcut": "<Shift>L"},
+          {"label": "Flip", "shortcut": "<Shift>F"},
+          {"label": "Cage Transform", "shortcut": "<Shift>G"},
+          {"label": "Warp Transform", "shortcut": "W"}
+        ]},
+        {"label": "Paths", "shortcut": "B"},
+        {"label": "Text", "shortcut": "T"},
+        {"separator": true},
+        {"label": "Color Picker", "shortcut": "O"},
+        {"label": "Measure", "shortcut": "<Shift>M"},
+        {"label": "Zoom", "shortcut": "Z"},
+        {"separator": true},
+        {"label": "Toolbox", "shortcut": "<Ctrl>B"},
+        {"label": "Default Colors", "shortcut": "D"},
+        {"label": "Swap Colors", "shortcut": "X"}
+      ]
+    },
+    {
+      "label": "Filters",
+      "items": [
+        {"label": "Repeat Last", "shortcut": "<Ctrl>F"},
+        {"label": "Re-Show Last", "shortcut": "<Ctrl><Shift>F"}
+      ]
+    },
+    {
+      "label": "Windows",
+      "items": [
+        {"label": "Dockable Dialogs", "items": [
+          {"label": "Layers", "shortcut": "<Ctrl>L"},
+          {"separator": true},
+          {"label": "Brushes", "shortcut": "<Ctrl><Shift>B"},
+          {"label": "Patterns", "shortcut": "<Ctrl><Shift>P"},
+          {"label": "Gradients", "shortcut": "<Ctrl>G"}
+        ]},
+        {"label": "Toolbox", "shortcut": "<Ctrl>B"}
       ]
     },
     {
       "label": "Help",
       "items": [
         {"label": "Help", "shortcut": "F1"},
-        {"label": "Context Help", "shortcut": "<Shift>F1"}
+        {"label": "Context Help", "shortcut": "<Shift>F1"},
+        {"separator": true},
+        {"label": "Search and Run a Command", "shortcut": "/"}
       ]
     }
   ]

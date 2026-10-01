@@ -74,6 +74,11 @@ BLINK_MODS = {"Ctrl": "Control", "Shift": "Shift", "Alt": "Alt"}
 # here ("+", "[", "Page Up", "Space"); chords with modifiers and letters already read as text. The
 # value may be followed by a backslash-t and a media key alias ("Space\tMedia Play Pause").
 LIBVLC_KEY_DEFINE = re.compile(r'^[ \t]*#[ \t]*define[ \t]+KEY_\w+[ \t]+"(Page (?:Up|Down)|Space|[^\sA-Za-z0-9"\\])(?=\\t|")', re.M)
+# GIMP's action tables write unmodified punctuation and paging keys as GDK keysym names inside a
+# NULL-terminated accelerator array: `{ "minus", "KP_Subtract", NULL }`. Only that shape is read.
+GIMP_ACCEL_ARRAY = re.compile(r'\{(?:\s*"[^"\n]*"\s*,)+\s*NULL\s*\}')
+GIMP_ACCEL_KEYSYMS = {"grave": "grave", "minus": "minus", "plus": "plus", "exclam": "exclam",
+                      "slash": "slash", "Prior": "Page_Up", "Next": "Page_Down"}
 SEQUENCE_GAP = re.compile(r"^\s*(?:,|then)?\s*$", re.I)
 
 ENTITY_KEYS = {"ctrl": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": "Super", "super": "Super",
@@ -237,6 +242,12 @@ def find_chords(text):
 
     for m in LIBVLC_KEY_DEFINE.finditer(text):
         add(m.start(1), m.end(1), m.group(1), _seqs(m.group(1).replace(" ", "_"), "gtk"))
+
+    for m in GIMP_ACCEL_ARRAY.finditer(text):
+        for q in re.finditer(r'"([A-Za-z]+)"', m.group(0)):
+            if q.group(1) in GIMP_ACCEL_KEYSYMS:
+                add(m.start() + q.start(), m.start() + q.end(), q.group(1),
+                    _seqs(GIMP_ACCEL_KEYSYMS[q.group(1)], "gtk"))
 
     for m in LO_KEY_NODE.finditer(text):
         add(m.start(), m.end(), m.group(0), _lo_key_seqs(m.group(1)))
