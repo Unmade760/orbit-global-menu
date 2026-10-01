@@ -72,6 +72,8 @@ class MenuBar {
 				this._cache.storeForLastQuery(items);
 				this.setMenuTree(items);
 			},
+			// The window it should have been told about is still focused
+			onDaemonAppeared: () => this.refresh(),
 		});
 		this._native = new NativeMenu(this._proxy, uuid);
 		this._shortcuts = new ShortcutMenu(uuid);
@@ -79,6 +81,10 @@ class MenuBar {
 		this._notifyFocusWinId = global.display.connect('notify::focus-window',
 			() => this.refresh());
 		this._overviewHandler = Main.overview.connect('showing', () => this._closeAllMenus());
+
+		// Enabling starts with a window already focused, and so does every
+		// unlock, since the extension is disabled on the lock screen
+		this.refresh();
 	}
 
 	setFallback(fallbackMenu) {
@@ -254,10 +260,13 @@ class DaemonProxy {
 	/**
 	 * @param {object} callbacks
 	 * @param {Function} callbacks.onMenuTree - receives every tree the daemon sends
+	 * @param {Function} callbacks.onDaemonAppeared - the daemon took its bus name
 	 */
-	constructor({onMenuTree}) {
+	constructor({onMenuTree, onDaemonAppeared}) {
 		this._onMenuTree = onMenuTree;
+		this._onDaemonAppeared = onDaemonAppeared;
 		this._signalIds = [];
+		this._ownerChangedId = 0;
 		this._currentWindow = null;
 		this._cancellable = new Gio.Cancellable();
 		this._proxy = new MenuProxy(Gio.DBus.session, BUS_NAME, BUS_PATH,
@@ -281,6 +290,9 @@ class DaemonProxy {
 		for (const id of this._signalIds)
 			this._proxy.disconnectSignal(id);
 		this._signalIds = [];
+		if (this._ownerChangedId)
+			this._proxy.disconnect(this._ownerChangedId);
+		this._ownerChangedId = 0;
 		this._proxy = null;
 		this._currentWindow = null;
 	}
@@ -312,6 +324,15 @@ class DaemonProxy {
 			this._proxy.connectSignal('RequestWindowActionsSignal', this._onRequestWindowActions.bind(this)),
 			this._proxy.connectSignal('ActivateWindowActionSignal', this._onActivateWindowAction.bind(this))
 		);
+		// The daemon that enable() just spawned, and every restart. One
+		// that owned the name before this point is never notified, so it is
+		// announced here.
+		this._ownerChangedId = this._proxy.connect('notify::g-name-owner', () => {
+			if (this._proxy.g_name_owner)
+				this._onDaemonAppeared();
+		});
+		if (this._proxy.g_name_owner)
+			this._onDaemonAppeared();
 	}
 
 	_onSendMenuTree(proxy, nameOwner, args) {

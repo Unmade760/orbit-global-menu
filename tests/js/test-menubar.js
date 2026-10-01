@@ -476,13 +476,46 @@ test('any other error is logged once, naming the method', async () => {
     reset();
     focusedMainWindow();
     await session(async (ext, daemon) => {
-        daemon.errorName = 'org.freedesktop.DBus.Error.Failed';
         await wait(150);
+        daemon.errorName = 'org.freedesktop.DBus.Error.Failed';
+        logged.length = 0;
         t.nativeProxy.RequestMenuTree();
         await until(() => daemon.count('RequestMenuTree') > 0, 'the call');
         await wait(100);
         assert.equal(logged.length, 1, `one line: ${JSON.stringify(logged)}`);
         assert.ok(logged[0].includes('RequestMenuTree'), `names the method: ${logged[0]}`);
+    });
+});
+
+// H-17: enabling, and every unlock, starts with a window already focused
+
+test('enable builds the menu for the focused window without a focus change', async () => {
+    reset();
+    focusedMainWindow();
+    t.mapping = {app: 'editor'};
+    await session(() => {
+        assert.ok(t.events.includes('shortcuts.setMapping editor'), JSON.stringify(t.events));
+    }, {daemonFirst: false});
+});
+
+test('enable reports the focused window once the daemon takes its name', async () => {
+    reset();
+    focusedMainWindow();
+    await session(async (ext, daemon) => {
+        await wait(150);
+        daemon.start();
+        await until(() => daemon.count('WindowSwitched') > 0, 'WindowSwitched');
+        assert.equal(daemon.lastWindowData().gtk_menubar_object_path, '/org/example/Main/menubar');
+    }, {daemonFirst: false});
+});
+
+test('enable reports the focused window to a daemon that already runs', async () => {
+    reset();
+    focusedMainWindow();
+    await session(async (ext, daemon) => {
+        await until(() => daemon.count('WindowSwitched') > 0, 'WindowSwitched');
+        await wait(100);
+        assert.equal(daemon.count('WindowSwitched'), 1, 'sent once');
     });
 });
 
