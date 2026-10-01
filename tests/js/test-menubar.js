@@ -436,4 +436,54 @@ test('disabled before the proxy is ready: nothing stays connected', async () => 
     }
 });
 
+// R1-34: an absent or crashed daemon is reported once, by daemon.js
+
+test('no daemon: focus changes and menu opens send nothing and log nothing', async () => {
+    reset();
+    const {app} = focusedMainWindow();
+    await session(async (ext, daemon) => {
+        await wait(150);
+        focus(makeWindow(app, {title: 'Second', menubar: true}));
+        t.nativeProxy.RequestMenuTree();
+        t.nativeProxy.ActivateMenuItem('File');
+        await wait(200);
+        assert.equal(daemon.calls.length, 0, 'calls');
+        assert.deepEqual(logged, [], 'log');
+    }, {daemonFirst: false});
+});
+
+// NoReply is what the bus answers when the daemon exits before replying
+test('ServiceUnknown, NameHasNoOwner and NoReply answers are not logged', async () => {
+    for (const errorName of ['org.freedesktop.DBus.Error.ServiceUnknown',
+        'org.freedesktop.DBus.Error.NameHasNoOwner', 'org.freedesktop.DBus.Error.NoReply']) {
+        reset();
+        const {app} = focusedMainWindow();
+        // eslint-disable-next-line no-await-in-loop
+        await session(async (ext, daemon) => {
+            daemon.errorName = errorName;
+            await wait(150);
+            focus(makeWindow(app, {title: 'Second', menubar: true}));
+            t.nativeProxy.RequestMenuTree();
+            t.nativeProxy.ActivateMenuItem('File');
+            await until(() => daemon.count('ActivateMenuItem') > 0, 'the calls');
+            await wait(100);
+            assert.deepEqual(logged, [], errorName);
+        });
+    }
+});
+
+test('any other error is logged once, naming the method', async () => {
+    reset();
+    focusedMainWindow();
+    await session(async (ext, daemon) => {
+        daemon.errorName = 'org.freedesktop.DBus.Error.Failed';
+        await wait(150);
+        t.nativeProxy.RequestMenuTree();
+        await until(() => daemon.count('RequestMenuTree') > 0, 'the call');
+        await wait(100);
+        assert.equal(logged.length, 1, `one line: ${JSON.stringify(logged)}`);
+        assert.ok(logged[0].includes('RequestMenuTree'), `names the method: ${logged[0]}`);
+    });
+});
+
 await run();

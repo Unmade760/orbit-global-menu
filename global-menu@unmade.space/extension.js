@@ -242,6 +242,14 @@ const ifaceXml = `
 
 const MenuProxy = Gio.DBusProxy.makeProxyWrapper(ifaceXml);
 
+// What a call gets back when the daemon is not running, or exits or hangs
+// before it answers. daemon.js reports a missing or crashed daemon once.
+const DAEMON_GONE_ERRORS = [
+	Gio.DBusError.SERVICE_UNKNOWN,
+	Gio.DBusError.NAME_HAS_NO_OWNER,
+	Gio.DBusError.NO_REPLY,
+];
+
 class DaemonProxy {
 	/**
 	 * @param {object} callbacks
@@ -257,15 +265,15 @@ class DaemonProxy {
 	}
 
 	WindowSwitched(windowData) {
-		this._proxy.WindowSwitchedRemote(windowData);
+		this._call('WindowSwitched', windowData);
 	}
 
 	ActivateMenuItem(itemPath) {
-		this._proxy.ActivateMenuItemRemote(itemPath);
+		this._call('ActivateMenuItem', itemPath);
 	}
 
 	RequestMenuTree() {
-		this._proxy.RequestMenuTreeRemote();
+		this._call('RequestMenuTree');
 	}
 
 	destroy() {
@@ -275,6 +283,17 @@ class DaemonProxy {
 		this._signalIds = [];
 		this._proxy = null;
 		this._currentWindow = null;
+	}
+
+	// Skips a daemon that is not on the bus. The callback is not optional:
+	// gjs logs every failed call made without one.
+	_call(method, ...args) {
+		if (!this._proxy.g_name_owner)
+			return;
+		this._proxy[`${method}Remote`](...args, (result, error) => {
+			if (error && !DAEMON_GONE_ERRORS.some(code => error.matches(Gio.DBusError, code)))
+				console.warn(`[global-menu] ${method} failed: ${error.message}`);
+		});
 	}
 
 	_onProxyReady(error) {
@@ -307,7 +326,7 @@ class DaemonProxy {
 
 	_onRequestWindowActions() {
 		this._currentWindow = new WindowActions();
-		this._proxy.ListWindowActionsRemote(this._currentWindow.getActions());
+		this._call('ListWindowActions', this._currentWindow.getActions());
 	}
 
 	_onActivateWindowAction(proxy, nameOwner, args) {
