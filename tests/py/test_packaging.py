@@ -29,3 +29,20 @@ def test_maintainer_script_is_executable_in_git(script):
 	if out.returncode != 0 or not out.stdout:
 		pytest.skip('not a git checkout')
 	assert out.stdout.split()[0] == '100755'
+
+
+def test_deb_depends_name_the_gtk3_typelib():
+	assert 'gir1.2-gtk-3.0' in _control_field('Depends')
+
+
+def test_deb_recommends_name_the_x11_typelibs():
+	rec = _control_field('Recommends')
+	assert {'gir1.2-bamf-3', 'gir1.2-keybinder-3.0'} <= rec
+	assert 'libkeybinder-3.0-0' not in rec
+
+
+def test_pkgbuild_depends_name_gtk3():
+	with open(os.path.join(ROOT, 'PKGBUILD')) as f:
+		text = f.read()
+	depends = re.search(r'^depends=\((.*?)\)', text, re.M | re.S).group(1)
+	assert "'gtk3'" in depends

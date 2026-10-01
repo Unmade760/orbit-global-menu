@@ -7,9 +7,11 @@ url="https://github.com/Unmade760/orbit-global-menu"
 license=('GPL3')
 depends=('python-gobject'
          'python-dbus'
-         'appmenu-gtk-module'
-         'libdbusmenu-gtk2'
-         'libdbusmenu-gtk3')
+         'gtk3'
+         'appmenu-gtk-module')
+optdepends=('bamf: window matching on X11'
+            'libkeybinder3: Alt+Space menu search on X11'
+            'libdbusmenu-glib: lets Electron and Firefox export their menus')
 makedepends=('git' 'python-setuptools')
 provides=("python-global-menu=$pkgver")
 source=('git+https://github.com/Unmade760/orbit-global-menu.git')

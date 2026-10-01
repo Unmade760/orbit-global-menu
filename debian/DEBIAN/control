@@ -3,8 +3,9 @@ Source: global-menu
 Version: 1.0.0
 Architecture: all
 Maintainer: unmade.space <https://github.com/Unmade760>
-Depends: python3-gi, python3-dbus, appmenu-gtk3-module, python3:any
-Recommends: bamfdaemon, libkeybinder-3.0-0
+Depends: python3-gi, python3-dbus, gir1.2-gtk-3.0, appmenu-gtk3-module, python3:any
+Recommends: gir1.2-bamf-3, bamfdaemon, gir1.2-keybinder-3.0
+Suggests: libdbusmenu-glib4
 Section: python
 Priority: optional
 Homepage: https://github.com/Unmade760/orbit-global-menu
