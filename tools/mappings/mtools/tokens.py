@@ -70,6 +70,10 @@ VKEY_KEYS = {"NEXT": "Page_Down", "PRIOR": "Page_Up", "OEM_MINUS": "minus", "OEM
 # Blink editing key table: {'Z', kCtrlKey | kShiftKey, "Redo"}. Meta is the Mac Command key.
 BLINK_ENTRY = re.compile(r"\{\s*'([A-Z0-9])'\s*,\s*((?:k(?:Ctrl|Shift|Alt|Meta)Key\s*\|?\s*)+)")
 BLINK_MODS = {"Ctrl": "Control", "Shift": "Shift", "Alt": "Alt"}
+# VLC's default hotkeys, `#define KEY_FASTER "+"`. Only keys with no modifier and no letter are read
+# here ("+", "[", "Page Up", "Space"); chords with modifiers and letters already read as text. The
+# value may be followed by a backslash-t and a media key alias ("Space\tMedia Play Pause").
+LIBVLC_KEY_DEFINE = re.compile(r'^[ \t]*#[ \t]*define[ \t]+KEY_\w+[ \t]+"(Page (?:Up|Down)|Space|[^\sA-Za-z0-9"\\])(?=\\t|")', re.M)
 SEQUENCE_GAP = re.compile(r"^\s*(?:,|then)?\s*$", re.I)
 
 ENTITY_KEYS = {"ctrl": "Ctrl", "shift": "Shift", "alt": "Alt", "meta": "Super", "super": "Super",
@@ -230,6 +234,9 @@ def find_chords(text):
 
     for m in BLINK_ENTRY.finditer(text):
         add(m.start(), m.end(), m.group(0), _blink_seqs(m.group(1), m.group(2)))
+
+    for m in LIBVLC_KEY_DEFINE.finditer(text):
+        add(m.start(1), m.end(1), m.group(1), _seqs(m.group(1).replace(" ", "_"), "gtk"))
 
     for m in LO_KEY_NODE.finditer(text):
         add(m.start(), m.end(), m.group(0), _lo_key_seqs(m.group(1)))

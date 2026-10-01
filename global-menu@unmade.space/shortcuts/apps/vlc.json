@@ -10,90 +10,186 @@
   ],
   "menus": [
     {
-      "label": "File",
+      "label": "Media",
       "items": [
-        {"label": "Open File", "shortcut": "<Ctrl>O"},
-        {"label": "Open Multiple Files", "shortcut": "<Ctrl><Shift>O"},
-        {"label": "Open Folder", "shortcut": "<Ctrl>F"},
-        {"label": "Open Disc", "shortcut": "<Ctrl>D"},
-        {"label": "Open Network Stream", "shortcut": "<Ctrl>N"},
-        {"label": "Open Capture Device", "shortcut": "<Ctrl>C"},
+        {"label": "Open File…", "shortcut": "<Ctrl>O"},
+        {"label": "Open Multiple Files…", "shortcut": "<Ctrl><Shift>O"},
+        {"label": "Open Directory…", "shortcut": "<Ctrl>F"},
+        {"label": "Open Disc…", "shortcut": "<Ctrl>D"},
+        {"label": "Open Network Stream…", "shortcut": "<Ctrl>N"},
+        {"label": "Open Capture Device…", "shortcut": "<Ctrl>C"},
         {"label": "Open Location from Clipboard", "shortcut": "<Ctrl>V"},
-        {"label": "Save Playlist to File", "shortcut": "<Ctrl>Y"},
-        {"label": "Convert / Save", "shortcut": "<Ctrl>R"},
-        {"label": "Stream", "shortcut": "<Ctrl>S"},
+        {"separator": true},
+        {"label": "Save Playlist to File…", "shortcut": "<Ctrl>Y"},
+        {"label": "Convert / Save…", "shortcut": "<Ctrl>R"},
+        {"label": "Stream…", "shortcut": "<Ctrl>S"},
+        {"separator": true},
+        {"label": "Quit at the End of Playlist"},
         {"label": "Quit", "shortcut": "<Ctrl>Q"}
-      ]
-    },
-    {
-      "label": "Edit",
-      "items": [
-        {"label": "Preferences", "shortcut": "<Ctrl>P"}
       ]
     },
     {
       "label": "Playback",
       "items": [
-        {"label": "Play / Pause", "shortcut": "space"},
-        {"label": "Stop", "shortcut": "S"},
-        {"label": "Faster Playback", "shortcut": "+"},
-        {"label": "Slower Playback", "shortcut": "-"},
-        {"label": "Normal Playback Speed", "shortcut": "="},
+        {"label": "Title", "items": [
+          {"label": "Select Previous DVD Title", "shortcut": "<Shift>O"},
+          {"label": "Select Next DVD Title", "shortcut": "<Shift>B"}
+        ]},
+        {"label": "Chapter", "items": [
+          {"label": "Select Previous DVD Chapter", "shortcut": "<Shift>P"},
+          {"label": "Select Next DVD Chapter", "shortcut": "<Shift>N"}
+        ]},
+        {"label": "Go to the DVD Menu", "shortcut": "<Shift>M"},
+        {"label": "Custom Bookmarks", "items": [
+          {"label": "Manage", "shortcut": "<Ctrl>B"}
+        ]},
+        {"separator": true},
+        {"label": "Speed", "items": [
+          {"label": "Faster", "shortcut": "+"},
+          {"label": "Faster (fine)", "shortcut": "]"},
+          {"label": "Normal Speed", "shortcut": "="},
+          {"label": "Slower (fine)", "shortcut": "["},
+          {"label": "Slower", "shortcut": "-"}
+        ]},
+        {"separator": true},
+        {"label": "Jump Forward", "items": [
+          {"label": "Very Short Forward Jump", "shortcut": "<Shift>Right"},
+          {"label": "Short Forward Jump", "shortcut": "<Alt>Right"},
+          {"label": "Medium Forward Jump", "shortcut": "<Ctrl>Right"},
+          {"label": "Long Forward Jump", "shortcut": "<Ctrl><Alt>Right"}
+        ]},
+        {"label": "Jump Backward", "items": [
+          {"label": "Very Short Backward Jump", "shortcut": "<Shift>Left"},
+          {"label": "Short Backward Jump", "shortcut": "<Alt>Left"},
+          {"label": "Medium Backward Jump", "shortcut": "<Ctrl>Left"},
+          {"label": "Long Backward Jump", "shortcut": "<Ctrl><Alt>Left"}
+        ]},
+        {"label": "Jump to Specific Time", "shortcut": "<Ctrl>T"},
         {"label": "Next Frame", "shortcut": "E"},
-        {"label": "Jump 3 Seconds Forward", "shortcut": "<Shift>Right"},
-        {"label": "Jump 3 Seconds Backward", "shortcut": "<Shift>Left"},
-        {"label": "Jump 10 Seconds Forward", "shortcut": "<Alt>Right"},
-        {"label": "Jump 10 Seconds Backward", "shortcut": "<Alt>Left"},
-        {"label": "Jump 1 Minute Forward", "shortcut": "<Ctrl>Right"},
-        {"label": "Jump 1 Minute Backward", "shortcut": "<Ctrl>Left"},
-        {"label": "Jump 5 Minutes Forward", "shortcut": "<Ctrl><Alt>Right"},
-        {"label": "Jump 5 Minutes Backward", "shortcut": "<Ctrl><Alt>Left"}
+        {"label": "Position", "shortcut": "T"},
+        {"separator": true},
+        {"label": "Play/Pause", "shortcut": "space"},
+        {"label": "Stop", "shortcut": "S"},
+        {"label": "Previous", "shortcut": "P"},
+        {"label": "Next", "shortcut": "N"},
+        {"label": "Record", "shortcut": "<Shift>R"},
+        {"separator": true},
+        {"label": "Normal/Loop/Repeat", "shortcut": "L"},
+        {"label": "Random", "shortcut": "R"}
       ]
     },
     {
       "label": "Audio",
       "items": [
-        {"label": "Next Track", "shortcut": "N"},
-        {"label": "Previous Track", "shortcut": "P"},
-        {"label": "Mute Volume", "shortcut": "M"},
+        {"label": "Cycle Audio Track", "shortcut": "B"},
+        {"label": "Cycle Through Audio Devices", "shortcut": "<Shift>A"},
+        {"separator": true},
         {"label": "Increase Volume", "shortcut": "<Ctrl>Up"},
         {"label": "Decrease Volume", "shortcut": "<Ctrl>Down"},
-        {"label": "Cycle Audio Tracks", "shortcut": "B"},
-        {"label": "Audio Delay +50ms", "shortcut": "K"},
-        {"label": "Audio Delay -50ms", "shortcut": "J"}
+        {"label": "Mute", "shortcut": "M"},
+        {"separator": true},
+        {"label": "Audio Delay Up", "shortcut": "K"},
+        {"label": "Audio Delay Down", "shortcut": "J"}
       ]
     },
     {
       "label": "Video",
       "items": [
-        {"label": "Take Snapshot", "shortcut": "<Shift>S"}
-      ]
-    },
-    {
-      "label": "Subtitles",
-      "items": [
-        {"label": "Cycle Subtitle Tracks", "shortcut": "V"},
-        {"label": "Subtitle Delay +50ms", "shortcut": "H"},
-        {"label": "Subtitle Delay -50ms", "shortcut": "G"}
-      ]
-    },
-    {
-      "label": "View",
-      "items": [
-        {"label": "Toggle Fullscreen", "shortcut": "F"},
+        {"label": "Fullscreen", "shortcut": "F"},
         {"label": "Exit Fullscreen", "shortcut": "Escape"},
-        {"label": "Minimal Interface", "shortcut": "<Ctrl>H"},
-        {"label": "Show / Hide Playlist", "shortcut": "<Ctrl>L"}
+        {"label": "Toggle Autoscaling", "shortcut": "O"},
+        {"label": "Toggle Wallpaper Mode", "shortcut": "W"},
+        {"separator": true},
+        {"label": "Zoom", "items": [
+          {"label": "1:4 Quarter", "shortcut": "<Alt>1"},
+          {"label": "1:2 Half", "shortcut": "<Alt>2"},
+          {"label": "1:1 Original", "shortcut": "<Alt>3"},
+          {"label": "2:1 Double", "shortcut": "<Alt>4"},
+          {"separator": true},
+          {"label": "Zoom", "shortcut": "Z"},
+          {"label": "Un-Zoom", "shortcut": "<Shift>Z"},
+          {"label": "Increase Scale Factor", "shortcut": "<Alt>O"},
+          {"label": "Decrease Scale Factor", "shortcut": "<Alt><Shift>O"}
+        ]},
+        {"label": "Aspect Ratio", "items": [
+          {"label": "Cycle Source Aspect Ratio", "shortcut": "A"}
+        ]},
+        {"label": "Crop", "items": [
+          {"label": "Cycle Video Crop", "shortcut": "C"},
+          {"separator": true},
+          {"label": "Crop One Pixel from the Top", "shortcut": "<Alt>R"},
+          {"label": "Uncrop One Pixel from the Top", "shortcut": "<Alt><Shift>R"},
+          {"label": "Crop One Pixel from the Left", "shortcut": "<Alt>D"},
+          {"label": "Uncrop One Pixel from the Left", "shortcut": "<Alt><Shift>D"},
+          {"label": "Crop One Pixel from the Bottom", "shortcut": "<Alt>C"},
+          {"label": "Uncrop One Pixel from the Bottom", "shortcut": "<Alt><Shift>C"},
+          {"label": "Crop One Pixel from the Right", "shortcut": "<Alt>F"},
+          {"label": "Uncrop One Pixel from the Right", "shortcut": "<Alt><Shift>F"}
+        ]},
+        {"label": "Deinterlace", "items": [
+          {"label": "Toggle Deinterlacing", "shortcut": "D"},
+          {"label": "Cycle Deinterlace Modes", "shortcut": "<Shift>D"}
+        ]},
+        {"separator": true},
+        {"label": "Take Snapshot", "shortcut": "<Shift>S"},
+        {"separator": true},
+        {"label": "Shrink the Viewpoint Field of View (360°)", "shortcut": "Page_Up"},
+        {"label": "Expand the Viewpoint Field of View (360°)", "shortcut": "Page_Down"}
+      ]
+    },
+    {
+      "label": "Subtitle",
+      "items": [
+        {"label": "Add Subtitle File…"},
+        {"separator": true},
+        {"label": "Cycle Subtitle Track", "shortcut": "V"},
+        {"label": "Cycle Subtitle Track in Reverse Order", "shortcut": "<Alt>V"},
+        {"label": "Toggle Subtitles", "shortcut": "<Shift>V"},
+        {"separator": true},
+        {"label": "Subtitle Delay Up", "shortcut": "H"},
+        {"label": "Subtitle Delay Down", "shortcut": "G"},
+        {"label": "Subtitle Sync", "items": [
+          {"label": "Bookmark Audio Timestamp", "shortcut": "<Shift>H"},
+          {"label": "Bookmark Subtitle Timestamp", "shortcut": "<Shift>J"},
+          {"label": "Synchronize Audio and Subtitle Timestamps", "shortcut": "<Shift>K"},
+          {"label": "Reset Audio and Subtitle Synchronization", "shortcut": "<Ctrl><Shift>K"}
+        ]},
+        {"separator": true},
+        {"label": "Reset Subtitles Text Scale", "shortcut": "<Ctrl>0"}
       ]
     },
     {
       "label": "Tools",
       "items": [
         {"label": "Effects and Filters", "shortcut": "<Ctrl>E"},
-        {"label": "Track Synchronization", "shortcut": "<Ctrl><Shift>S"},
+        {"label": "Track Synchronization"},
         {"label": "Media Information", "shortcut": "<Ctrl>I"},
         {"label": "Codec Information", "shortcut": "<Ctrl>J"},
-        {"label": "Messages Log", "shortcut": "<Ctrl>M"}
+        {"label": "VLM Configuration", "shortcut": "<Ctrl><Shift>W"},
+        {"label": "Program Guide"},
+        {"label": "Messages", "shortcut": "<Ctrl>M"},
+        {"label": "Plugins and Extensions"},
+        {"separator": true},
+        {"label": "Customize Interface…"},
+        {"label": "Preferences", "shortcut": "<Ctrl>P"}
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {"label": "Playlist", "shortcut": "<Ctrl>L"},
+        {"separator": true},
+        {"label": "Minimal Interface", "shortcut": "<Ctrl>H"},
+        {"label": "Fullscreen Interface", "shortcut": "F11"},
+        {"label": "Show Controller in Fullscreen", "shortcut": "I"}
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {"label": "Help", "shortcut": "F1"},
+        {"separator": true},
+        {"label": "About", "shortcut": "<Shift>F1"}
       ]
     }
   ]

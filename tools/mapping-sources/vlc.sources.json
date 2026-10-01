@@ -1,0 +1,1110 @@
+{
+  "format": 1,
+  "app": "vlc",
+  "repos": {
+    "vlc": {
+      "url": "https://code.videolan.org/videolan/vlc.git",
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "Media",
+        "Open File…"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 361,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Open Multiple Files…"
+      ],
+      "shortcut": "<Ctrl><Shift>O",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 363,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Open Directory…"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 365,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Open Disc…"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 367,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Open Network Stream…"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 369,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Open Capture Device…"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 371,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Open Location from Clipboard"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 374,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Save Playlist to File…"
+      ],
+      "shortcut": "<Ctrl>Y",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 387,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Convert / Save…"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 391,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Stream…"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 393,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Media",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 409,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Title",
+        "Select Previous DVD Title"
+      ],
+      "shortcut": "<Shift>O",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2427,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Title",
+        "Select Next DVD Title"
+      ],
+      "shortcut": "<Shift>B",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2428,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Chapter",
+        "Select Previous DVD Chapter"
+      ],
+      "shortcut": "<Shift>P",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2429,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Chapter",
+        "Select Next DVD Chapter"
+      ],
+      "shortcut": "<Shift>N",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2430,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Go to the DVD Menu"
+      ],
+      "shortcut": "<Shift>M",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2426,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Custom Bookmarks",
+        "Manage"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 731,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Speed",
+        "Faster"
+      ],
+      "shortcut": "+",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2350,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Speed",
+        "Faster (fine)"
+      ],
+      "shortcut": "]",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2353,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Speed",
+        "Normal Speed"
+      ],
+      "shortcut": "=",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2352,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Speed",
+        "Slower (fine)"
+      ],
+      "shortcut": "[",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2354,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Speed",
+        "Slower"
+      ],
+      "shortcut": "-",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2351,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Forward",
+        "Very Short Forward Jump"
+      ],
+      "shortcut": "<Shift>Right",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2368,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Forward",
+        "Short Forward Jump"
+      ],
+      "shortcut": "<Alt>Right",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2370,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Forward",
+        "Medium Forward Jump"
+      ],
+      "shortcut": "<Ctrl>Right",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2372,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Forward",
+        "Long Forward Jump"
+      ],
+      "shortcut": "<Ctrl><Alt>Right",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2374,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Backward",
+        "Very Short Backward Jump"
+      ],
+      "shortcut": "<Shift>Left",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2367,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Backward",
+        "Short Backward Jump"
+      ],
+      "shortcut": "<Alt>Left",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2369,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Backward",
+        "Medium Backward Jump"
+      ],
+      "shortcut": "<Ctrl>Left",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2371,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump Backward",
+        "Long Backward Jump"
+      ],
+      "shortcut": "<Ctrl><Alt>Left",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2373,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Jump to Specific Time"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 932,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next Frame"
+      ],
+      "shortcut": "E",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2386,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Position"
+      ],
+      "shortcut": "T",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2366,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Play/Pause"
+      ],
+      "shortcut": "space",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2356,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Stop"
+      ],
+      "shortcut": "S",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2359,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Previous"
+      ],
+      "shortcut": "P",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2358,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Next"
+      ],
+      "shortcut": "N",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2357,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Record"
+      ],
+      "shortcut": "<Shift>R",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2438,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Normal/Loop/Repeat"
+      ],
+      "shortcut": "L",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2408,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Playback",
+        "Random"
+      ],
+      "shortcut": "R",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2407,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Audio",
+        "Cycle Audio Track"
+      ],
+      "shortcut": "B",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2410,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Audio",
+        "Cycle Through Audio Devices"
+      ],
+      "shortcut": "<Shift>A",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2436,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Audio",
+        "Increase Volume"
+      ],
+      "shortcut": "<Ctrl>Up",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2383,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Audio",
+        "Decrease Volume"
+      ],
+      "shortcut": "<Ctrl>Down",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2384,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Audio",
+        "Mute"
+      ],
+      "shortcut": "M",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2385,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Audio",
+        "Audio Delay Up"
+      ],
+      "shortcut": "K",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2405,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Audio",
+        "Audio Delay Down"
+      ],
+      "shortcut": "J",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2406,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Fullscreen"
+      ],
+      "shortcut": "F",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2346,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Exit Fullscreen"
+      ],
+      "shortcut": "Escape",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2347,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Toggle Autoscaling"
+      ],
+      "shortcut": "O",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2418,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Toggle Wallpaper Mode"
+      ],
+      "shortcut": "W",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2439,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "1:4 Quarter"
+      ],
+      "shortcut": "<Alt>1",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2456,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "1:2 Half"
+      ],
+      "shortcut": "<Alt>2",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2457,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "1:1 Original"
+      ],
+      "shortcut": "<Alt>3",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2458,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "2:1 Double"
+      ],
+      "shortcut": "<Alt>4",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2459,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Zoom"
+      ],
+      "shortcut": "Z",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2433,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Un-Zoom"
+      ],
+      "shortcut": "<Shift>Z",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2434,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Increase Scale Factor"
+      ],
+      "shortcut": "<Alt>O",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2419,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Zoom",
+        "Decrease Scale Factor"
+      ],
+      "shortcut": "<Alt><Shift>O",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2420,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Aspect Ratio",
+        "Cycle Source Aspect Ratio"
+      ],
+      "shortcut": "A",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2416,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Crop",
+        "Cycle Video Crop"
+      ],
+      "shortcut": "C",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2417,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Crop",
+        "Crop One Pixel from the Top"
+      ],
+      "shortcut": "<Alt>R",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2442,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Crop",
+        "Uncrop One Pixel from the Top"
+      ],
+      "shortcut": "<Alt><Shift>R",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2443,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Crop",
+        "Crop One Pixel from the Left"
+      ],
+      "shortcut": "<Alt>D",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2444,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Crop",
+        "Uncrop One Pixel from the Left"
+      ],
+      "shortcut": "<Alt><Shift>D",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2445,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Crop",
+        "Crop One Pixel from the Bottom"
+      ],
+      "shortcut": "<Alt>C",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2446,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Crop",
+        "Uncrop One Pixel from the Bottom"
+      ],
+      "shortcut": "<Alt><Shift>C",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2447,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Crop",
+        "Crop One Pixel from the Right"
+      ],
+      "shortcut": "<Alt>F",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2448,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Crop",
+        "Uncrop One Pixel from the Right"
+      ],
+      "shortcut": "<Alt><Shift>F",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2449,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Deinterlace",
+        "Toggle Deinterlacing"
+      ],
+      "shortcut": "D",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2421,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Deinterlace",
+        "Cycle Deinterlace Modes"
+      ],
+      "shortcut": "<Shift>D",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2422,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Take Snapshot"
+      ],
+      "shortcut": "<Shift>S",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2431,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Shrink the Viewpoint Field of View (360°)"
+      ],
+      "shortcut": "Page_Up",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2452,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Video",
+        "Expand the Viewpoint Field of View (360°)"
+      ],
+      "shortcut": "Page_Down",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2453,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Cycle Subtitle Track"
+      ],
+      "shortcut": "V",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2411,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Cycle Subtitle Track in Reverse Order"
+      ],
+      "shortcut": "<Alt>V",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2413,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Toggle Subtitles"
+      ],
+      "shortcut": "<Shift>V",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2412,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Subtitle Delay Up"
+      ],
+      "shortcut": "H",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2394,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Subtitle Delay Down"
+      ],
+      "shortcut": "G",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2395,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Subtitle Sync",
+        "Bookmark Audio Timestamp"
+      ],
+      "shortcut": "<Shift>H",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2401,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Subtitle Sync",
+        "Bookmark Subtitle Timestamp"
+      ],
+      "shortcut": "<Shift>J",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2402,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Subtitle Sync",
+        "Synchronize Audio and Subtitle Timestamps"
+      ],
+      "shortcut": "<Shift>K",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2403,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Subtitle Sync",
+        "Reset Audio and Subtitle Synchronization"
+      ],
+      "shortcut": "<Ctrl><Shift>K",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2404,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Subtitle",
+        "Reset Subtitles Text Scale"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2400,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Tools",
+        "Effects and Filters"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 419,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Tools",
+        "Media Information"
+      ],
+      "shortcut": "<Ctrl>I",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 425,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Tools",
+        "Codec Information"
+      ],
+      "shortcut": "<Ctrl>J",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 427,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Tools",
+        "VLM Configuration"
+      ],
+      "shortcut": "<Ctrl><Shift>W",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 431,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Tools",
+        "Messages"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 438,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Tools",
+        "Preferences"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 449,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "View",
+        "Playlist"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 491,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "View",
+        "Minimal Interface"
+      ],
+      "shortcut": "<Ctrl>H",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 513,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "View",
+        "Fullscreen Interface"
+      ],
+      "shortcut": "F11",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 523,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "View",
+        "Show Controller in Fullscreen"
+      ],
+      "shortcut": "I",
+      "repo": "vlc",
+      "file": "src/libvlc-module.c",
+      "line": 2423,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Help",
+        "Help"
+      ],
+      "shortcut": "F1",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 794,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    },
+    {
+      "path": [
+        "Help",
+        "About"
+      ],
+      "shortcut": "<Shift>F1",
+      "repo": "vlc",
+      "file": "modules/gui/qt/menus.cpp",
+      "line": 801,
+      "commit": "578d28f6c9f2379164516e689418f92ac74a3445"
+    }
+  ]
+}
