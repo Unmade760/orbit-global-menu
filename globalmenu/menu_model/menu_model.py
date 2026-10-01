@@ -59,9 +59,7 @@ class DbusGtkMenu(object):
 		interface.Activate(name.replace(prefix, ''), parameter, dbus.Dictionary({}, signature='sv'))
 
 	def get_results(self):
-		paths = [self.appmenu_path, self.menubar_path]
-
-		for path in filter(None, paths):
+		for path in filter(None, (self.menubar_path, self.appmenu_path)):
 			obj       = self.session.get_object(self.bus_name, path)
 			interface = dbus.Interface(obj, dbus_interface='org.gtk.Menus')
 			try:
@@ -73,21 +71,45 @@ class DbusGtkMenu(object):
 			s = interface.connect_to_signal('Changed', self.on_actions_changed)
 			self.signal_matcher.append(s)
 
-			for menu in results:
-				self.results[(menu[0], menu[1])] = menu[2]
+			# Each exported model numbers its own groups from (0, 0)
+			self.results[path] = {(menu[0], menu[1]): menu[2] for menu in results}
 
 		if self.results:
 			self.watch_actions()
+		self.build_tree()
+
+	def build_tree(self):
+		self.tree = Tree()
 		self.tree.create_node('Root', 'Root')
+		self.actions = {}
+		self.targets = {}
 		self.nodes_by_action = {}
+		self.top_level_menus = []
 		self._node_seq = 0
-		self.collect_entries(treelib_parent='Root')
-		if not len(self.tree.children(self.tree[self.tree.root].identifier)):
+
+		menubar = self.results.get(self.menubar_path)
+		if menubar:
+			self.collect_entries(menubar, [], 'Root')
+
+		# The app menu goes after the menubar as one unlabelled node; its item
+		# keys start with an empty label, so they never collide with the bar's
+		app_menu = self.results.get(self.appmenu_path)
+		if app_menu:
+			menu_item = DbusGtkMenuItem({'label': ''})
+			menu_item.app_menu = True
+			node_id = self._new_node_id()
+			self.tree.create_node('', node_id, 'Root', data=menu_item)
+			self.collect_entries(app_menu, [''], node_id)
+			if not self.tree.children(node_id):
+				self.tree.remove_node(node_id)
+
+		if not self.tree.children('Root'):
 			self.tree = Tree()
 
-	def collect_entries(self, menu=(0, 0), labels=[], treelib_parent=None):
-		section = (menu[0], menu[1])
-		for menu in self.results.get(section, []):
+	def collect_entries(self, menus, labels, treelib_parent, link=(0, 0)):
+		# link: the (group, menu) pair of a :section or :submenu
+		section = (link[0], link[1])
+		for menu in menus.get(section, []):
 			if 'label' in menu:
 				if len(labels) == 0:
 					self.top_level_menus.append(menu.get('label', None))
@@ -107,14 +129,14 @@ class DbusGtkMenu(object):
 					self.nodes_by_action.setdefault(menu_item.action, []).append(node_id)
 
 				if ':submenu' in menu:
-					self.collect_entries(menu[':submenu'], menu_path, node_id)
+					self.collect_entries(menus, menu_path, node_id, menu[':submenu'])
 				elif 'action' in menu:
 					self.actions[menu_item.text] = menu_item.action
 					if menu_item.target is not None:
 						self.targets[menu_item.text] = menu_item.target
 
 			elif ':section' in menu:
-				self.collect_entries(menu[':section'], labels, treelib_parent)
+				self.collect_entries(menus, labels, treelib_parent, menu[':section'])
 
 	def _new_node_id(self):
 		self._node_seq += 1

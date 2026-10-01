@@ -9,8 +9,8 @@ disabled item, a checkbox and a radio group.
 import dbus
 import pytest
 
-from fakes import (FakeSession, FakeWindow, GTK_BUS, GTK_PROPS, gtk_item, gtk_describe,
-	install_gtk_app, no_registrar)
+from fakes import (FakeSession, FakeWindow, GTK_APP_MENU_PROPS, GTK_BUS, GTK_PROPS, gtk_item,
+	gtk_describe, install_gtk_app, no_registrar)
 
 from globalmenu.menu_model.menu_model import MenuModel
 from globalmenu.utils.menu import DbusMenu
@@ -70,11 +70,11 @@ def find(nodes, *labels):
 	return node
 
 
-def load(menus, actions, **kwargs):
+def load(menus, actions, props=GTK_PROPS, **kwargs):
 	session = FakeSession()
 	no_registrar(session)
-	install_gtk_app(session, menus, actions, **kwargs)
-	model = MenuModel(session, FakeWindow(GTK_PROPS))
+	install_gtk_app(session, menus, actions, props=props, **kwargs)
+	model = MenuModel(session, FakeWindow(props))
 	model._update_menus()
 	return session, model
 
@@ -232,6 +232,42 @@ def test_activating_any_targeted_item_passes_its_target():
 	model.activate('_Go  »  _Home')
 	sent = [(c[4][0], [str(v) for v in c[4][1]]) for c in session.calls_to('Activate')]
 	assert sent == [('go-tab', ['2']), ('home', [])]
+
+
+APP_MENU = {
+	(0, 0): [gtk_item(section=(0, 1)), gtk_item(section=(0, 2))],
+	(0, 1): [gtk_item(label='_About Demo', action='app.about')],
+	(0, 2): [gtk_item(label='_Quit', action='app.quit')],
+}
+APP_MENU_ACTIONS = {'app.new': gtk_describe(True), 'app.about': gtk_describe(True), 'app.quit': gtk_describe(True)}
+
+
+def test_app_menu_and_menubar_both_reach_the_tree():
+	# Each export numbers its groups from (0, 0), so neither may overwrite
+	# the other. The app menu is one more top-level node, after the menubar
+	session, model = load({
+		(0, 0): [gtk_item(label='_File', submenu=(1, 0))],
+		(1, 0): [gtk_item(label='_New', action='app.new')],
+	}, APP_MENU_ACTIONS, props=GTK_APP_MENU_PROPS, app_menus=APP_MENU)
+	tree = json_tree(model)
+	assert [(n['label'], n.get('appMenu', False)) for n in tree] == [('_File', False), ('', True)]
+	assert find(tree, '_File', '_New')['key'] == '_File  »  _New'
+	app_menu = tree[1]
+	assert [n.get('label', '---') for n in app_menu['children']] == ['_About Demo', '---', '_Quit']
+	assert app_menu['children'][0]['key'] == '  »  _About Demo'
+	assert model.top_level_menus == ['_File']
+
+	model.activate(app_menu['children'][0]['key'])
+	model.activate('_File  »  _New')
+	sent = [(c[1], c[4][0]) for c in session.calls_to('Activate')]
+	assert sent == [(APP_PATH, 'about'), (APP_PATH, 'new')]
+
+
+def test_app_menu_only():
+	_, model = load({}, APP_MENU_ACTIONS, props=GTK_APP_MENU_PROPS, app_menus=APP_MENU)
+	tree = json_tree(model)
+	assert [(n['label'], n.get('appMenu', False)) for n in tree] == [('', True)]
+	assert model.top_level_menus == []
 
 
 @pytest.mark.skip(reason='feature F2: the JSON tree does not carry the item accel yet, '

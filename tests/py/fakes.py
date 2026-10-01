@@ -107,6 +107,7 @@ GTK_PROPS = {
 	'_GTK_MENUBAR_OBJECT_PATH': '/org/example/Demo/menus/menubar',
 	'_GTK_APP_MENU_OBJECT_PATH': None,
 }
+GTK_APP_MENU_PROPS = dict(GTK_PROPS, _GTK_APP_MENU_OBJECT_PATH='/org/example/Demo/menus/appmenu')
 
 
 def gtk_item(**attrs):
@@ -135,19 +136,25 @@ def gtk_describe(enabled, state=None):
 	return dbus.Struct((dbus.Boolean(enabled), dbus.Signature(sig), dbus.Array(states, signature='v')))
 
 
-def install_gtk_app(session, menus, actions, props=GTK_PROPS):
-	"""menus: {(group, menu): [gtk_item(...)]} for the menubar path.
+def install_gtk_app(session, menus, actions, props=GTK_PROPS, app_menus=None):
+	"""menus: {(group, menu): [gtk_item(...)]} for the menubar path, and
+	app_menus the same for the app menu path (props must name one).
 	actions: {'app.new': gtk_describe(...), 'win.grid': ...}."""
 	bus = props['_GTK_UNIQUE_BUS_NAME']
 
-	def start(groups):
-		return dbus.Array([
-			dbus.Struct((dbus.UInt32(g), dbus.UInt32(m), dbus.Array(items, signature='a{sv}')))
-			for (g, m), items in sorted(menus.items()) if g in groups
-		], signature='(uuaa{sv})')
+	def serve_menus(path, menus):
+		def start(groups):
+			return dbus.Array([
+				dbus.Struct((dbus.UInt32(g), dbus.UInt32(m), dbus.Array(items, signature='a{sv}')))
+				for (g, m), items in sorted(menus.items()) if g in groups
+			], signature='(uuaa{sv})')
 
-	session.on(bus, props['_GTK_MENUBAR_OBJECT_PATH'], 'org.gtk.Menus', 'Start', start)
-	session.on(bus, props['_GTK_MENUBAR_OBJECT_PATH'], 'org.gtk.Menus', 'End', lambda groups: None)
+		session.on(bus, path, 'org.gtk.Menus', 'Start', start)
+		session.on(bus, path, 'org.gtk.Menus', 'End', lambda groups: None)
+
+	serve_menus(props['_GTK_MENUBAR_OBJECT_PATH'], menus)
+	if app_menus is not None:
+		serve_menus(props['_GTK_APP_MENU_OBJECT_PATH'], app_menus)
 
 	for prefix, prop in (('app.', '_GTK_APPLICATION_OBJECT_PATH'), ('win.', '_GTK_WINDOW_OBJECT_PATH')):
 		path = props[prop]

@@ -159,6 +159,8 @@ class DbusMenu:
 			'toggleType': str(getattr(data, 'toggle_type', '')),
 			'toggleState': bool(getattr(data, 'toggle_state', False)),
 		}
+		if getattr(data, 'app_menu', False):
+			d['appMenu'] = True
 		children = self._children_list(tree, node)
 		if len(children):
 			d['children'] = children
@@ -175,6 +177,9 @@ class DbusMenu:
 				continue
 			if getattr(data, 'separator', False):
 				out.append({'separator': True})
+				continue
+			if getattr(data, 'app_menu', False):
+				out.append(self._node_to_dict(tree, c))
 				continue
 			section = getattr(data, 'section', None)
 			if current_section is not None and section != current_section:

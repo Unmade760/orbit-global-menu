@@ -22,6 +22,8 @@ class DbusGtkMenuItem(object):
 		self.enabled = enabled
 		self.toggle_type = ''
 		self.toggle_state = False
+		# The node that holds the GTK app menu, sent as {"appMenu": true}
+		self.app_menu = False
 		# :submenu
 		# two index that indicate the group
 		# dbus.String(':submenu'): dbus.Struct((dbus.UInt32(11), dbus.UInt32(0))
