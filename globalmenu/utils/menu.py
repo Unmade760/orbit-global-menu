@@ -176,6 +176,11 @@ class DbusMenu:
 			'toggleType': str(getattr(data, 'toggle_type', '')),
 			'toggleState': bool(getattr(data, 'toggle_state', False)),
 		}
+		# GTK's accel attribute as exported ('<Primary>n'), or the dbusmenu
+		# shortcut in the same form ('<Control>n')
+		accel = str(getattr(data, 'accel', '') or '')
+		if accel:
+			d['accel'] = accel
 		if getattr(data, 'app_menu', False):
 			d['appMenu'] = True
 		children = self._children_list(tree, node)

@@ -123,11 +123,12 @@ def test_shortcut_to_accelerator():
 	assert DbusAppMenuItem((2, {'label': 'x'})).accel == ''
 
 
-@pytest.mark.skip(reason='feature F2: the JSON tree does not carry the dbusmenu shortcut yet, '
-	'so native menus cannot show shortcut labels. Expected key name is "accel"')
 def test_json_carries_the_shortcut(app):
 	_, model = app
-	assert find(json_tree(model), '_File', '_New').get('accel') == '<Control>n'
+	tree = json_tree(model)
+	assert find(tree, '_File', '_New').get('accel') == '<Control>n'
+	assert find(tree, '_Help', 'About').get('accel') == '<Control><Shift>F1'
+	assert 'accel' not in find(tree, '_File', 'Print')
 
 
 def test_remove_listener_disconnects_every_signal(app):

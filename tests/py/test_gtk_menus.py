@@ -426,11 +426,13 @@ def test_app_menu_only():
 	assert model.top_level_menus == []
 
 
-@pytest.mark.skip(reason='feature F2: the JSON tree does not carry the item accel yet, '
-	'so native menus cannot show shortcut labels. Expected key name is "accel"')
 def test_json_carries_the_accel(app):
+	# Feature F2: the extension draws the label from this key. Items with
+	# no shortcut leave it out, which keeps large menus small
 	_, model = app
-	assert find(json_tree(model), '_File', '_New').get('accel') == '<Primary>n'
+	tree = json_tree(model)
+	assert find(tree, '_File', '_New').get('accel') == '<Primary>n'
+	assert 'accel' not in find(tree, '_File', '_Open')
 
 
 def test_remove_listener_disconnects_every_signal(app):
