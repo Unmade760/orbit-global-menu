@@ -332,7 +332,7 @@ class DbusAppMenu(object):
 		action = self.actions[selection]
 		try:
 			self.interface.Event(action, 'clicked', 0, 0)
-		except Exception as e:
+		except Exception:
 			self.retry_activate(selection)
 
 	def retry_activate(self, selection):
@@ -521,7 +521,7 @@ class MenuModel:
 			promt = ''
 			try:
 				promt = self.prompt
-			except Exception as e:
+			except Exception:
 				pass
 			print('Gnome HUD: WARNING: (%s) %s' % (promt, alert))
 

@@ -68,11 +68,11 @@ class DbusMenu:
 
 	def _listen_menu_activated(self):
 		proxy = self.session.get_object(MyService.BUS_NAME, MyService.BUS_PATH)
-		signal = proxy.connect_to_signal("MenuActivated", self.on_menu_activated)
+		proxy.connect_to_signal("MenuActivated", self.on_menu_activated)
 
 	def _listen_hud_activated(self):
 		proxy = self.session.get_object(MyService.BUS_NAME, MyService.BUS_PATH)
-		signal = proxy.connect_to_signal("HudActivated", self.on_hud_activated)
+		proxy.connect_to_signal("HudActivated", self.on_hud_activated)
 
 	def _listen_menu_tree_signals(self):
 		proxy = self.session.get_object(MyService.BUS_NAME, MyService.BUS_PATH)
