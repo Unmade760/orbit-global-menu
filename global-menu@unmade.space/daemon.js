@@ -2,9 +2,14 @@
 // exported menu off the bus and hands it back as a JSON tree.
 //
 // The daemon ships separately from the extension, so this only ever launches
-// a program already on PATH and bundles nothing. Distributions that install
-// the D-Bus activation file get it started on demand instead, in which case
-// the name is already owned and nothing is spawned here.
+// a program that is already installed and bundles nothing. Nothing installs a
+// D-Bus activation file yet, so enable() is the only thing that starts it. If
+// something else already owns the name, nothing is spawned here.
+//
+// The program that gets spawned owns no bus name itself: it starts the menu
+// service as a child, which takes space.unmade.GlobalMenu, and exits when
+// that child does. A crash therefore shows up twice, as the name vanishing
+// and as the process exiting, and either one can arrive first.
 
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
@@ -12,16 +17,20 @@ import GLib from 'gi://GLib';
 const BUS_NAME = 'space.unmade.GlobalMenu';
 const PROGRAM = 'global-menu';
 
-// A daemon that takes the name and then dies is a crash loop. One that never
-// takes it stops on its own, because the watcher fires only once.
-const MAX_RESTARTS = 3;
+// A daemon that crashes MAX_STARTS times within START_WINDOW_US is not
+// started again. Each restart waits twice as long as the one before.
+const MAX_STARTS = 3;
+const START_WINDOW_US = 60 * 1000 * 1000;
+const FIRST_RETRY_MS = 1000;
 
 export class DaemonManager {
 	constructor() {
 		this._proc = null;
 		this._cancellable = null;
 		this._nameWatchId = 0;
-		this._restarts = 0;
+		this._retryId = 0;
+		this._nameOwned = false;
+		this._starts = [];
 		this._warned = false;
 	}
 
@@ -31,15 +40,18 @@ export class DaemonManager {
 
 		this._cancellable = new Gio.Cancellable();
 		// Fires vanished() straight away when nobody owns the name, which
-		// covers both the initial start and crash recovery
+		// covers both the initial start and a crash after it
 		this._nameWatchId = Gio.bus_watch_name(
 			Gio.BusType.SESSION,
 			BUS_NAME,
 			Gio.BusNameWatcherFlags.NONE,
 			() => {
-				this._restarts = 0;
+				this._nameOwned = true;
 			},
-			() => this._spawn()
+			() => {
+				this._nameOwned = false;
+				this._respawn();
+			}
 		);
 	}
 
@@ -48,60 +60,93 @@ export class DaemonManager {
 			Gio.bus_unwatch_name(this._nameWatchId);
 			this._nameWatchId = 0;
 		}
+		if (this._retryId) {
+			GLib.source_remove(this._retryId);
+			this._retryId = 0;
+		}
 		this._cancellable?.cancel();
 		this._cancellable = null;
+		this._nameOwned = false;
+		this._starts = [];
 
 		// SIGTERM rather than force_exit, because the daemon traps it to take
 		// its own children down with it. Only ever our own process: a daemon
 		// the user started themselves is left alone.
-		if (this._proc) {
-			try {
-				this._proc.send_signal(15);
-			} catch (e) {
-				console.warn(`[global-menu] could not stop ${PROGRAM}: ${e.message}`);
-			}
-			this._proc = null;
-		}
+		this._proc?.send_signal(15);
+		this._proc = null;
 	}
 
-	_spawn() {
-		if (!this._cancellable || this._cancellable.is_cancelled())
-			return;
-		// One in flight is enough; wait_async clears it when it exits
-		if (this._proc)
+	// Start the daemon unless one is running, one is already queued, or it
+	// has crashed too often to be worth another try
+	_respawn() {
+		if (this._proc || this._retryId)
 			return;
 
-		if (this._restarts >= MAX_RESTARTS) {
+		const now = GLib.get_monotonic_time();
+		this._starts = this._starts.filter(t => now - t < START_WINDOW_US);
+		if (this._starts.length >= MAX_STARTS) {
 			this._warnOnce(`${PROGRAM} keeps exiting; giving up. ` +
-				`Run it in a terminal to see why.`);
+				'Run it in a terminal to see why.');
 			return;
 		}
 
-		const path = GLib.find_program_in_path(PROGRAM);
+		if (this._starts.length === 0) {
+			this._launch();
+			return;
+		}
+		const delay = FIRST_RETRY_MS * 2 ** (this._starts.length - 1);
+		this._retryId = GLib.timeout_add(GLib.PRIORITY_DEFAULT, delay, () => {
+			this._retryId = 0;
+			if (!this._proc && !this._nameOwned)
+				this._launch();
+			return GLib.SOURCE_REMOVE;
+		});
+	}
+
+	_launch() {
+		const path = this._findProgram();
 		if (!path) {
-			this._warnOnce(`${PROGRAM} is not on PATH. Menus exported by ` +
-				`applications need it; install the global-menu package.`);
+			this._warnOnce(`${PROGRAM} is not on PATH or in ~/.local/bin. ` +
+				'Menus exported by applications need it; install the global-menu package.');
 			return;
 		}
 
-		this._restarts++;
+		this._starts.push(GLib.get_monotonic_time());
+		let proc;
 		try {
-			this._proc = Gio.Subprocess.new([path], Gio.SubprocessFlags.NONE);
+			proc = Gio.Subprocess.new([path], Gio.SubprocessFlags.NONE);
 		} catch (e) {
 			console.warn(`[global-menu] could not start ${PROGRAM}: ${e.message}`);
 			return;
 		}
 
-		const proc = this._proc;
+		this._proc = proc;
 		proc.wait_async(this._cancellable, (p, res) => {
+			// Superseded by destroy() or by a later start
+			if (this._proc !== proc)
+				return;
 			try {
 				p.wait_finish(res);
-			} catch (e) {
+			} catch {
 				// Cancelled on disable
+				return;
 			}
-			if (this._proc === proc)
-				this._proc = null;
+			this._proc = null;
+			// The name vanishing may have come first, while this process was
+			// still winding down
+			if (!this._nameOwned)
+				this._respawn();
 		});
+	}
+
+	// A stock session PATH has no ~/.local/bin, which is where
+	// `pip install --user` puts the program
+	_findProgram() {
+		const onPath = GLib.find_program_in_path(PROGRAM);
+		if (onPath)
+			return onPath;
+		const local = GLib.build_filenamev([GLib.get_home_dir(), '.local', 'bin', PROGRAM]);
+		return GLib.file_test(local, GLib.FileTest.IS_EXECUTABLE) ? local : null;
 	}
 
 	_warnOnce(message) {
