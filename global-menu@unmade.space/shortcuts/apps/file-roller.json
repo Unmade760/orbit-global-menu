@@ -4,9 +4,7 @@
   "name": "Archive Manager",
   "identifiers": [
     "org.gnome.FileRoller.desktop",
-    "file-roller",
-    "archive manager",
-    "Archive Manager"
+    "file-roller"
   ],
   "menus": [
     {

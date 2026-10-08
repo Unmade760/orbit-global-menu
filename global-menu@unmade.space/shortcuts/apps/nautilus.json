@@ -5,8 +5,7 @@
   "identifiers": [
     "org.gnome.Nautilus.desktop",
     "org.gnome.Nautilus",
-    "nautilus",
-    "Files"
+    "nautilus"
   ],
   "menus": [
     {

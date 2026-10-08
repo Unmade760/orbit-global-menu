@@ -5,8 +5,7 @@
   "identifiers": [
     "org.gnome.Loupe.desktop",
     "org.gnome.Loupe",
-    "loupe",
-    "Image Viewer"
+    "loupe"
   ],
   "menus": [
     {

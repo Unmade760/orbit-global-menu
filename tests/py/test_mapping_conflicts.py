@@ -20,6 +20,16 @@ def load_mappings():
 
 MAPPINGS = load_mappings()
 
+# Display names that more than one app uses as its desktop name.
+GENERIC_NAMES = {
+    'archive manager',
+    'calculator',
+    'document viewer',
+    'files',
+    'image viewer',
+    'terminal',
+}
+
 
 def test_identifier_is_not_another_mappings_name():
     names = {}
@@ -43,3 +53,12 @@ def test_identifier_is_claimed_by_one_mapping():
             if owner != filename:
                 clashes.append('%s: %r is already claimed by %s' % (filename, identifier, owner))
     assert not clashes, clashes
+
+
+def test_identifiers_avoid_generic_names():
+    found = []
+    for filename, mapping in MAPPINGS:
+        for identifier in mapping['identifiers']:
+            if identifier.lower() in GENERIC_NAMES:
+                found.append('%s: %r' % (filename, identifier))
+    assert not found, found

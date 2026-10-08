@@ -5,8 +5,7 @@
   "identifiers": [
     "org.gnome.Calculator.desktop",
     "org.gnome.Calculator",
-    "gnome-calculator",
-    "Calculator"
+    "gnome-calculator"
   ],
   "menus": [
     {
