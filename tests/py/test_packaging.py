@@ -70,3 +70,11 @@ def test_pkgbuild_cd_matches_the_source_checkout_directory():
 	dirs = re.findall(r'^\s*cd "\$srcdir/([^"]+)"', text, re.M)
 	assert dirs
 	assert set(dirs) == {checkout}
+
+
+def test_deb_is_built_with_root_ownership():
+	# Without --root-owner-group the .deb records the builder's uid and gid
+	with open(os.path.join(ROOT, 'Makefile')) as f:
+		text = f.read()
+	build = re.search(r'^\t.*\bdpkg(-deb)? .*$', text, re.M).group(0)
+	assert '--root-owner-group' in build

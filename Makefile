@@ -7,7 +7,7 @@ build:
 	install -Dm644 data/60-global-menu-gtk-module.conf debian/usr/lib/environment.d/60-global-menu-gtk-module.conf
 	cd debian && find . -type f ! -regex '.*.hg.*' ! -regex '.*?debian-binary.*' ! -regex '.*?DEBIAN.*' -printf '%P ' | xargs md5sum > DEBIAN/md5sums && cd -
 	sed -i "s/Version: .*/Version: $(version)/" "debian/DEBIAN/control"
-	dpkg -b debian/ global-menu_$(version)_all.deb
+	dpkg-deb --root-owner-group -b debian/ global-menu_$(version)_all.deb
 
 clean:
 	rm -rf dist/
