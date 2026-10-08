@@ -13,6 +13,7 @@ import Shell from 'gi://Shell';
 import * as SystemActions from 'resource:///org/gnome/shell/misc/systemActions.js';
 import * as Dialog from 'resource:///org/gnome/shell/ui/dialog.js';
 import * as ModalDialog from 'resource:///org/gnome/shell/ui/modalDialog.js';
+import {showScreenshotUI} from 'resource:///org/gnome/shell/ui/screenshot.js';
 
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';
@@ -31,6 +32,7 @@ const DIRECT_ACTIONS = {
 	'open-settings': () => launchDesktopApp('org.gnome.Settings.desktop', 'gnome-control-center.desktop'),
 	'new-folder': () => makeDesktopFolder(),
 	'empty-trash': () => emptyTrash(),
+	'screenshot-area': () => showScreenshotUI(),
 	'lock-screen': () => SystemActions.getDefault().activateLockScreen(),
 	'suspend': () => SystemActions.getDefault().activateSuspend(),
 	'log-out': () => SystemActions.getDefault().activateLogout(),
@@ -254,7 +256,6 @@ const ACTION_SHORTCUTS = {
 	'properties': '<Alt>Return',
 	'screenshot-full': 'Print',
 	'screenshot-window': '<Alt>Print',
-	'screenshot-area': '<Shift>Print',
 	'snap-left': '<Super>Left',
 	'snap-right': '<Super>Right',
 	'switch-windows': '<Super>Tab',

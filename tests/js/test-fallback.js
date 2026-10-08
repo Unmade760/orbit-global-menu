@@ -34,6 +34,7 @@ export class WindowActions { getActions() { return []; } doAction() {} }
 export const actionLabel = action => action;
 `;
 const SYSTEM_ACTIONS_STUB = 'export const getDefault = () => ({});\n';
+const SCREENSHOT_STUB = 'export function showScreenshotUI() { globalThis.gmTest.screenshotUI++; }\n';
 const MODAL_DIALOG_STUB = `
 export class ModalDialog {
     constructor() {
@@ -74,6 +75,7 @@ const {FallbackMenu} = await importWithStubs('fallbackMenu.js', {
         'resource:///org/gnome/shell/misc/systemActions.js': SYSTEM_ACTIONS_STUB,
         'resource:///org/gnome/shell/ui/modalDialog.js': MODAL_DIALOG_STUB,
         'resource:///org/gnome/shell/ui/dialog.js': DIALOG_STUB,
+        'resource:///org/gnome/shell/ui/screenshot.js': SCREENSHOT_STUB,
     },
     locals: {
         'fallbackMenu.js': fallbackSource
@@ -88,7 +90,7 @@ const {FallbackMenu} = await importWithStubs('fallbackMenu.js', {
 const {acceleratorLabel} = await importWithStubs('accelerator.js');
 
 function reset(focusApp = null) {
-    globalThis.gmTest = {buttons: [], added: [], dialogs: [], focusApp, panel: null, sent: []};
+    globalThis.gmTest = {buttons: [], added: [], dialogs: [], focusApp, panel: null, sent: [], screenshotUI: 0};
     return globalThis.gmTest;
 }
 
@@ -191,6 +193,16 @@ test('a keystroke item waits for the menu to release its grab', () => {
     new FallbackMenu('uuid');
     specsOf(t.buttons.find(b => b.label === 'Edit')).find(s => s.label === 'Copy').onActivate();
     assert.deepEqual(t.sent, ['after menu <Ctrl>C']);
+});
+
+test('Screenshot of Area opens the screenshot UI and sends no keystroke', () => {
+    const t = reset();
+    new FallbackMenu('uuid');
+    const item = specsOf(t.buttons.find(b => b.label === 'Edit')).find(s => s.label === 'Screenshot of Area');
+    assert.equal(item.accel, undefined);
+    item.onActivate();
+    assert.equal(t.screenshotUI, 1);
+    assert.deepEqual(t.sent, []);
 });
 
 test('items that act through an API, not a keystroke, carry no accel', () => {
