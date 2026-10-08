@@ -9,20 +9,93 @@
 // Mapping file format: docs/shortcut-mappings.md
 
 import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
 
 import {parseAccelerator} from './accelerator.js';
+
+const decodeJson = bytes => JSON.parse(new TextDecoder().decode(bytes));
+
+function unreadable(file, e, warnings) {
+	warnings.push({file: file.get_basename(), message: `Cannot read/parse: ${e.message}`});
+}
 
 function readJson(file, warnings) {
 	try {
 		const [ok, bytes] = file.load_contents(null);
 		if (!ok)
 			return null;
-		return JSON.parse(new TextDecoder().decode(bytes));
+		return decodeJson(bytes);
 	} catch (e) {
-		warnings.push({file: file.get_basename(), message: `Cannot read/parse: ${e.message}`});
+		unreadable(file, e, warnings);
 		return null;
 	}
 }
+
+// The Gio async calls, as promises. A cancelled call rejects with a
+// G_IO_ERROR_CANCELLED error.
+function loadBytes(file, cancellable) {
+	return new Promise((resolve, reject) => {
+		file.load_contents_async(cancellable, (_o, res) => {
+			try {
+				resolve(file.load_contents_finish(res)[1]);
+			} catch (e) {
+				reject(e);
+			}
+		});
+	});
+}
+
+async function readJsonAsync(file, warnings, cancellable) {
+	try {
+		return decodeJson(await loadBytes(file, cancellable));
+	} catch (e) {
+		if (cancellable?.is_cancelled())
+			throw e;
+		unreadable(file, e, warnings);
+		return null;
+	}
+}
+
+// Directory entries read per round trip
+const ENUMERATE_BATCH_SIZE = 100;
+
+function listNamesAsync(dir, cancellable) {
+	return new Promise((resolve, reject) => {
+		dir.enumerate_children_async('standard::name', Gio.FileQueryInfoFlags.NONE,
+			GLib.PRIORITY_DEFAULT, cancellable, (_o, res) => {
+				let enumerator;
+				try {
+					enumerator = dir.enumerate_children_finish(res);
+				} catch (e) {
+					reject(e);
+					return;
+				}
+				collectNames(enumerator, [], cancellable, resolve, reject);
+			});
+	});
+}
+
+function collectNames(enumerator, names, cancellable, resolve, reject) {
+	enumerator.next_files_async(ENUMERATE_BATCH_SIZE, GLib.PRIORITY_DEFAULT, cancellable, (_o, res) => {
+		let infos;
+		try {
+			infos = enumerator.next_files_finish(res);
+		} catch (e) {
+			enumerator.close_async(GLib.PRIORITY_DEFAULT, null, () => {});
+			reject(e);
+			return;
+		}
+		if (infos.length > 0) {
+			names.push(...infos.map(info => info.get_name()));
+			collectNames(enumerator, names, cancellable, resolve, reject);
+			return;
+		}
+		enumerator.close_async(GLib.PRIORITY_DEFAULT, null, () => {});
+		resolve(names);
+	});
+}
+
+const jsonNames = names => names.filter(name => name.endsWith('.json')).sort();
 
 /**
  * Validate a raw parsed mapping. Returns a sanitized mapping, or null if it
@@ -149,6 +222,31 @@ function collectDuplicateShortcuts(mapping, warnings) {
 	}
 }
 
+// The file names listed by a parsed index.json, or none if it is unusable
+function builtinNames(index, warnings) {
+	if (!index)
+		return [];
+	if (index.format !== 1 || !Array.isArray(index.apps)) {
+		warnings.push({file: 'index.json', message: 'Malformed index (need {format: 1, apps: [...]})'});
+		return [];
+	}
+	return index.apps.filter(name => {
+		if (typeof name === 'string' && name.endsWith('.json'))
+			return true;
+		warnings.push({file: 'index.json', message: `Bad apps entry ${JSON.stringify(name)} skipped`});
+		return false;
+	});
+}
+
+function buildMapping(raw, name, builtin, warnings) {
+	if (!raw)
+		return null;
+	const mapping = validateMapping(raw, name.slice(0, -'.json'.length), warnings);
+	if (mapping)
+		mapping.builtin = builtin;
+	return mapping;
+}
+
 export class ShortcutStore {
 	constructor(builtinDir /* Gio.File: <ext>/shortcuts */,
 	            userDir /* Gio.File: ~/.config/global-menu/shortcuts */) {
@@ -164,7 +262,52 @@ export class ShortcutStore {
 		const warnings = [];
 		const builtins = this._loadBuiltins(warnings);
 		const users = this._loadUserMappings(warnings);
+		this._commit(builtins, users, warnings);
+	}
 
+	/**
+	 * load() without blocking the caller: every file is read with the async
+	 * Gio calls. The store keeps what it had until the new data is complete.
+	 *
+	 * @param {Gio.Cancellable|null} cancellable - a cancelled load rejects with
+	 *     G_IO_ERROR_CANCELLED and leaves the store as it was
+	 * @returns {Promise<void>}
+	 */
+	async loadAsync(cancellable = null) {
+		const warnings = [];
+		const builtins = [];
+		const index = await readJsonAsync(this._builtinDir.get_child('index.json'), warnings, cancellable);
+		const builtinApps = this._builtinDir.get_child('apps');
+		for (const name of builtinNames(index, warnings)) {
+			// One file at a time keeps the warnings in file order
+			// eslint-disable-next-line no-await-in-loop
+			const raw = await readJsonAsync(builtinApps.get_child(name), warnings, cancellable);
+			const mapping = buildMapping(raw, name, true, warnings);
+			if (mapping)
+				builtins.push(mapping);
+		}
+
+		const users = [];
+		const userApps = this._userDir.get_child('apps');
+		let names = [];
+		try {
+			names = jsonNames(await listNamesAsync(userApps, cancellable));
+		} catch (e) {
+			// No user directory, which is the normal case
+			if (cancellable?.is_cancelled())
+				throw e;
+		}
+		for (const name of names) {
+			// eslint-disable-next-line no-await-in-loop
+			const raw = await readJsonAsync(userApps.get_child(name), warnings, cancellable);
+			const mapping = buildMapping(raw, name, false, warnings);
+			if (mapping)
+				users.push(mapping);
+		}
+		this._commit(builtins, users, warnings);
+	}
+
+	_commit(builtins, users, warnings) {
 		// A user file with the same "app" id replaces the built-in outright,
 		// rather than merging into it
 		const mappings = new Map();
@@ -267,28 +410,12 @@ export class ShortcutStore {
 
 	_loadBuiltins(warnings) {
 		const out = [];
-		const indexFile = this._builtinDir.get_child('index.json');
-		const index = readJson(indexFile, warnings);
-		if (!index)
-			return out;
-		if (index.format !== 1 || !Array.isArray(index.apps)) {
-			warnings.push({file: 'index.json', message: 'Malformed index (need {format: 1, apps: [...]})'});
-			return out;
-		}
+		const index = readJson(this._builtinDir.get_child('index.json'), warnings);
 		const appsDir = this._builtinDir.get_child('apps');
-		for (const name of index.apps) {
-			if (typeof name !== 'string' || !name.endsWith('.json')) {
-				warnings.push({file: 'index.json', message: `Bad apps entry ${JSON.stringify(name)} skipped`});
-				continue;
-			}
-			const raw = readJson(appsDir.get_child(name), warnings);
-			if (!raw)
-				continue;
-			const mapping = validateMapping(raw, name.slice(0, -'.json'.length), warnings);
-			if (mapping) {
-				mapping.builtin = true;
+		for (const name of builtinNames(index, warnings)) {
+			const mapping = buildMapping(readJson(appsDir.get_child(name), warnings), name, true, warnings);
+			if (mapping)
 				out.push(mapping);
-			}
 		}
 		return out;
 	}
@@ -305,21 +432,13 @@ export class ShortcutStore {
 		}
 		const names = [];
 		let info;
-		while ((info = enumerator.next_file(null))) {
-			if (info.get_name().endsWith('.json'))
-				names.push(info.get_name());
-		}
+		while ((info = enumerator.next_file(null)))
+			names.push(info.get_name());
 		enumerator.close(null);
-		names.sort();
-		for (const name of names) {
-			const raw = readJson(appsDir.get_child(name), warnings);
-			if (!raw)
-				continue;
-			const mapping = validateMapping(raw, name.slice(0, -'.json'.length), warnings);
-			if (mapping) {
-				mapping.builtin = false;
+		for (const name of jsonNames(names)) {
+			const mapping = buildMapping(readJson(appsDir.get_child(name), warnings), name, false, warnings);
+			if (mapping)
 				out.push(mapping);
-			}
 		}
 		return out;
 	}

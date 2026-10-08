@@ -95,6 +95,7 @@ const t = globalThis.gmTest = {
         get_window_app: win => win.app,
     },
     mapping: null,
+    loads: [],
     nativeProxy: null,
     events: [],
     inputsAtDestroy: [],
@@ -163,10 +164,21 @@ export class DaemonManager {
 }
 `;
 const STORE_STUB = `
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+
 export class ShortcutStore {
     constructor() { this.warnings = []; }
-    load() {}
-    resolveMapping() { return globalThis.gmTest.mapping; }
+    load() { globalThis.gmTest.event('store.load'); }
+    // Settles when the test says so, or rejects once the load is cancelled
+    loadAsync(cancellable) {
+        globalThis.gmTest.event('store.loadAsync');
+        return new Promise((resolve, reject) => {
+            globalThis.gmTest.loads.push({cancellable, resolve});
+            cancellable.connect(() => reject(new GLib.Error(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED, 'cancelled')));
+        });
+    }
+    resolveMapping() { globalThis.gmTest.event('store.resolve'); return globalThis.gmTest.mapping; }
 }
 `;
 const WINDOW_ACTIONS_STUB = `
@@ -358,6 +370,7 @@ function reset() {
     t.display.focus_window = null;
     t.tracker.focus_app = null;
     t.mapping = null;
+    t.loads = [];
     t.nativeProxy = null;
     t.events = [];
     t.inputsAtDestroy = [];
@@ -448,6 +461,57 @@ test('a tree with only the GTK app menu leaves the shortcut mapping in place', a
         assert.equal(t.events.filter(e => e.startsWith('shortcuts.setMapping')).at(-1),
             'shortcuts.setMapping editor');
     });
+});
+
+// The mapping files are read without blocking the shell
+
+test('enable() reads the mappings asynchronously and refreshes when they are in', async () => {
+    reset();
+    focusedMainWindow();
+    await session(async () => {
+        assert.deepEqual(t.events.filter(e => e.startsWith('store.')), ['store.loadAsync', 'store.resolve']);
+        t.loads[0].resolve();
+        await wait(20);
+        assert.equal(t.events.filter(e => e === 'store.resolve').length, 2, 'the menu bar refreshed');
+        assert.ok(!t.events.includes('store.load'), 'no synchronous load');
+    }, {daemonFirst: false});
+});
+
+test('a mappings revision change reloads asynchronously and a newer reload cancels the older', async () => {
+    reset();
+    focusedMainWindow();
+    await session(async () => {
+        t.loads[0].resolve();
+        await wait(20);
+        t.settings.emit('changed::shortcuts-revision');
+        t.settings.emit('changed::shortcuts-revision');
+        assert.equal(t.loads.length, 3);
+        assert.ok(t.loads[1].cancellable.is_cancelled(), 'the first reload is superseded');
+        assert.ok(!t.loads[2].cancellable.is_cancelled());
+        const resolves = t.events.filter(e => e === 'store.resolve').length;
+        t.loads[2].resolve();
+        await wait(20);
+        assert.equal(t.events.filter(e => e === 'store.resolve').length, resolves + 1);
+        assert.ok(!t.events.includes('store.load'), 'no synchronous load');
+        assert.deepEqual(logged, []);
+    }, {daemonFirst: false});
+});
+
+test('a load that finishes after disable() is cancelled and does nothing', async () => {
+    reset();
+    focusedMainWindow();
+    const ext = new GlobalMenuExtension();
+    ext.enable();
+    const {cancellable} = t.loads[0];
+    assert.ok(!cancellable.is_cancelled());
+    ext.disable();
+    assert.ok(cancellable.is_cancelled(), 'disable() cancels the load');
+    const resolves = t.events.filter(e => e === 'store.resolve').length;
+    await wait(50);
+    t.loads[0].resolve();
+    await wait(50);
+    assert.equal(t.events.filter(e => e === 'store.resolve').length, resolves, 'no refresh');
+    assert.deepEqual(logged, [], 'a cancelled load is not an error');
 });
 
 // R1-43: the proxy's lifecycle, kept the same through the rewrite

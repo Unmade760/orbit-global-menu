@@ -457,8 +457,7 @@ export default class GlobalMenuExtension extends Extension {
 			Gio.File.new_for_path(GLib.build_filenamev(
 				[GLib.get_user_config_dir(), 'global-menu', 'shortcuts']))
 		);
-		this._store.load();
-		this._logStoreWarnings();
+		this._reloadStore();
 
 		this._fallback = this._settings.get_boolean('enable-fallback-menu')
 			? new FallbackMenu(this.uuid) : null;
@@ -468,11 +467,7 @@ export default class GlobalMenuExtension extends Extension {
 
 		this._watch('enable-fallback-menu', () => this._toggleFallback());
 		// The preferences bump the revision after writing a mapping file
-		this._watch('shortcuts-revision', () => {
-			this._store.load();
-			this._logStoreWarnings();
-			this._menubar.refresh();
-		});
+		this._watch('shortcuts-revision', () => this._reloadStore());
 		this._watch('shortcut-menus-enabled', () => this._menubar.refresh());
 		this._watch('shortcut-disabled-apps', () => this._menubar.refresh());
 		this._watch('debug-shortcut-menus',
@@ -495,6 +490,8 @@ export default class GlobalMenuExtension extends Extension {
 		this._menubar = null;
 		this._fallback?.destroy();
 		this._fallback = null;
+		this._storeLoad?.cancel();
+		this._storeLoad = null;
 		this._store = null;
 		KeySynth.setDebug(false);
 		this._daemon?.destroy();
@@ -504,6 +501,22 @@ export default class GlobalMenuExtension extends Extension {
 
 	_watch(key, callback) {
 		this._settingsHandlerIds.push(this._settings.connect(`changed::${key}`, callback));
+	}
+
+	// Reading the mapping files must not stall the shell, so the menu bar
+	// shows what it has until the files are in, then refreshes. A newer
+	// reload, or disable(), cancels the one in flight.
+	_reloadStore() {
+		this._storeLoad?.cancel();
+		const cancellable = new Gio.Cancellable();
+		this._storeLoad = cancellable;
+		this._store.loadAsync(cancellable).then(() => {
+			this._logStoreWarnings();
+			this._menubar.refresh();
+		}).catch(e => {
+			if (!e.matches?.(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED))
+				console.error(`[global-menu-shortcuts] could not read the mappings: ${e.message}`);
+		});
 	}
 
 	// Informational findings (duplicate shortcuts, mostly) would put dozens

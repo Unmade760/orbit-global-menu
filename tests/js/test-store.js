@@ -26,9 +26,10 @@ function mapping(app, identifiers, menus = [{label: 'File', items: [{label: 'Qui
  * @param {Array} builtins - [[fileName, content]] in index order
  * @param {Array} users - [[fileName, content]], any order
  * @param {object|null} index - index.json content, default lists builtins
- * @returns {ShortcutStore} the loaded store
+ * @param {boolean} load - read the files with load(); false leaves the store empty
+ * @returns {ShortcutStore} the store
  */
-function makeStore(builtins, users = [], index = null) {
+function makeStore(builtins, users = [], index = null, load = true) {
     const root = GLib.dir_make_tmp('gm-store-XXXXXX');
     for (const [name, content] of builtins)
         writeJson(`${root}/builtin/apps/${name}`, content);
@@ -36,7 +37,8 @@ function makeStore(builtins, users = [], index = null) {
     for (const [name, content] of users)
         writeJson(`${root}/user/apps/${name}`, content);
     const store = new ShortcutStore(Gio.File.new_for_path(`${root}/builtin`), Gio.File.new_for_path(`${root}/user`));
-    store.load();
+    if (load)
+        store.load();
     return store;
 }
 
@@ -143,6 +145,74 @@ test('validateMapping keeps a blank mapping with no menus', () => {
     assert.equal(out.blank, true);
     assert.deepEqual(out.menus, []);
     assert.equal(validateMapping(mapping('x', ['X']), 'x', []).blank, false);
+});
+
+// loadAsync(): the same files, read without blocking
+
+// Each fixture is a directory of its own, and one warning names it
+const snapshot = store => JSON.stringify({
+    mappings: [...store.mappings.entries()],
+    resolved: ['shared', 'a', 'b', 'c', 'u'].map(id => store.resolveMapping([id])?.app ?? null),
+    warnings: store.warnings,
+}).replace(/gm-store-\w+/g, 'gm-store');
+
+function mixedFixture(load) {
+    return makeStore([
+        ['a.json', mapping('a', ['shared', 'a'])],
+        ['b.json', mapping('b', ['shared', 'b'], [{label: 'File', items: [{label: 'Bad', shortcut: '<Meta>Z'}]}])],
+        ['broken.json', '{not json'],
+        ['c.json', mapping('wrong-id', ['c'])],
+        ['d.json', mapping('d', ['d'])],
+    ], [
+        ['u.json', mapping('u', ['u'])],
+        ['d.json', mapping('d', ['d2'], [{label: 'Mine', items: []}])],
+        ['skipped.txt', 'not a mapping'],
+        ['bad.json', '[]'],
+    ], {format: 1, apps: ['a.json', 'b.json', 'broken.json', 'c.json', 'd.json', 5, 'gone.json']}, load);
+}
+
+test('loadAsync() yields the mappings, order and warnings load() does', async () => {
+    const sync = mixedFixture(true);
+    const async_ = mixedFixture(false);
+    assert.equal(async_.mappings.size, 0, 'nothing is read before loadAsync');
+    await async_.loadAsync();
+    assert.ok(async_.mappings.size >= 4, `${async_.mappings.size} mappings`);
+    assert.ok(async_.warnings.length >= 5, `${async_.warnings.length} warnings`);
+    assert.equal(snapshot(async_), snapshot(sync));
+});
+
+test('loadAsync() reads a user directory larger than one enumeration batch', async () => {
+    const users = Array.from({length: 230}, (_v, i) => [`app${i}.json`, mapping(`app${i}`, [`id${i}`])]);
+    const store = makeStore([], users, null, false);
+    await store.loadAsync();
+    assert.equal(store.mappings.size, 230);
+    assert.equal(store.resolveMapping(['id229'])?.app, 'app229');
+});
+
+test('loadAsync() with no user directory loads the built-ins', async () => {
+    const root = GLib.dir_make_tmp('gm-store-XXXXXX');
+    writeJson(`${root}/builtin/apps/a.json`, mapping('a', ['a']));
+    writeJson(`${root}/builtin/index.json`, {format: 1, apps: ['a.json']});
+    const store = new ShortcutStore(Gio.File.new_for_path(`${root}/builtin`), Gio.File.new_for_path(`${root}/missing`));
+    await store.loadAsync();
+    assert.equal(store.resolveMapping(['a'])?.app, 'a');
+    assert.deepEqual(store.warnings, []);
+});
+
+test('a cancelled loadAsync() rejects as cancelled and keeps what the store had', async () => {
+    const store = makeStore([['a.json', mapping('a', ['a'])]]);
+    const before = snapshot(store);
+    const cancellable = new Gio.Cancellable();
+    const done = store.loadAsync(cancellable);
+    cancellable.cancel();
+    let error = null;
+    try {
+        await done;
+    } catch (e) {
+        error = e;
+    }
+    assert.ok(error?.matches(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED), `rejected with ${error}`);
+    assert.equal(snapshot(store), before);
 });
 
 await run();
