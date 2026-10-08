@@ -98,21 +98,33 @@ export class NativeMenu {
 	}
 
 	_rebuild(nodes, json = JSON.stringify(nodes)) {
-		this.clear();
+		this._pendingNodes = null;
 		// The GTK app menu belongs under the app name, not in the bar
 		const topLevel = nodes.filter(n => !n.separator && !n.appMenu && stripMnemonic(n.label));
+		// Buttons already in the panel are relabelled, and only the
+		// difference is added or removed. Each panel insert or removal
+		// emits child-added or child-removed on the panel box, and other
+		// extensions that place panel items, such as one that moves the date
+		// menu (issue #3), react to every one of them.
+		while (this._buttons.length > topLevel.length)
+			this._buttons.pop().destroy();
 		topLevel.forEach((node, index) => {
-			const btn = new MenuBarButton(stripMnemonic(node.label), {
-				// Ask the daemon for fresh toggle/enabled state on open
-				onOpen: () => this._proxy.RequestMenuTree(),
-				onClose: () => this._scheduleRebuildIfPending(),
-			});
+			let btn = this._buttons[index];
+			if (btn) {
+				btn.setLabel(stripMnemonic(node.label));
+			} else {
+				btn = new MenuBarButton(stripMnemonic(node.label), {
+					// Ask the daemon for fresh toggle/enabled state on open
+					onOpen: () => this._proxy.RequestMenuTree(),
+					onClose: () => this._scheduleRebuildIfPending(),
+				});
+				addBarButton(`${this._uuid}-native-${index}`, btn, 1 + index);
+				this._buttons.push(btn);
+			}
 			// A function source builds the popup's items when it opens, not
 			// here. Large apps export thousands of nodes, and building them
 			// all on every tree change is what made the shell stutter.
 			btn.setItems(() => this._toSpecs(node.children ?? []));
-			addBarButton(`${this._uuid}-native-${index}`, btn, 1 + index);
-			this._buttons.push(btn);
 		});
 		const appNode = nodes.find(n => n.appMenu);
 		this._setAppMenu(appNode ? () => this._toSpecs(appNode.children ?? []) : null);

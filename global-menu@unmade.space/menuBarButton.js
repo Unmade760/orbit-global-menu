@@ -75,6 +75,7 @@ class MenuBarButton extends PanelMenu.Button {
 
 	setLabel(text) {
 		this._titleLabel.text = text;
+		this.accessible_name = text;
 	}
 
 	setItems(items) {

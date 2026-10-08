@@ -21,6 +21,7 @@ export class MenuBarButton {
         globalThis.gmTest.buttons.push(this);
     }
     setItems(items) { this.items = items; }
+    setLabel(label) { this.label = label; }
     destroy() { this.destroyed = true; }
 }
 `;
@@ -247,8 +248,36 @@ test('NativeMenu: an unchanged tree does not rebuild, a changed one does', () =>
     menu.setItems(JSON.parse(JSON.stringify(TREE)));
     assert.equal(rec.buttons.length, 2, 'unchanged tree kept');
     menu.setItems(TREE.slice(0, 1));
-    assert.equal(rec.buttons.length, 3, 'changed tree rebuilt');
-    assert.ok(rec.buttons.slice(0, 2).every(b => b.destroyed), 'old buttons destroyed');
+    assert.equal(rec.buttons.length, 2, 'no button created for a shorter tree');
+    assert.deepEqual(rec.buttons.map(b => b.destroyed), [false, true], 'only the extra button removed');
+});
+
+test('NativeMenu: a changed tree reuses the panel buttons and adds only new ones', () => {
+    // Every panel insert is a child-added that other extensions react to,
+    // such as one that moves the date menu (issue #3)
+    const rec = reset();
+    const menu = new NativeMenu(makeProxy(), 'uuid');
+    menu.setItems([{label: '_File', key: 'File', children: [{label: '_New', key: 'File  »  New'}]}]);
+    menu.setItems([
+        {label: '_Edit', key: 'Edit', children: [{label: '_Copy', key: 'Edit  »  Copy'}]},
+        {label: '_View', key: 'View', children: [{label: '_Zoom', key: 'View  »  Zoom'}]},
+    ]);
+    assert.equal(rec.added.length, 2, 'one insert for the new second menu');
+    assert.deepEqual(rec.buttons.map(b => [b.label, b.destroyed]), [['Edit', false], ['View', false]]);
+    assert.deepEqual(rec.buttons[0].items().map(s => s.label), ['Copy']);
+});
+
+test('ShortcutMenu: another mapping reuses the panel buttons', () => {
+    const rec = reset();
+    const menu = new ShortcutMenu('uuid');
+    menu.setMapping(MAPPING);
+    const before = rec.added.length;
+    menu.setMapping({...MAPPING, menus: [{label: 'Tools', items: [{label: 'Run', shortcut: '<Ctrl>r'}]}]});
+    assert.equal(rec.added.length, before, 'no new panel insert');
+    assert.equal(rec.buttons[0].label, 'Tools');
+    assert.ok(rec.buttons.slice(1).every(b => b.destroyed), 'extra buttons removed');
+    menu.setMapping(null);
+    assert.ok(rec.buttons.every(b => b.destroyed), 'null clears');
 });
 
 test('NativeMenu: a tree arriving while a menu is open waits for close', () => {

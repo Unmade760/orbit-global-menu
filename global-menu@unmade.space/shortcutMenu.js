@@ -31,15 +31,22 @@ export class ShortcutMenu {
 		// mapping already shown would close a menu the user is navigating.
 		if (mapping === this._mapping && (mapping === null || this._buttons.length > 0))
 			return;
-		this.clear();
 		this._mapping = mapping;
-		if (!mapping)
-			return;
-		mapping.menus.forEach((menu, index) => {
-			const btn = new MenuBarButton(menu.label);
+		const menus = mapping?.menus ?? [];
+		// Relabel the buttons already in the panel and add or remove only the
+		// difference, for the reason given in NativeMenu._rebuild()
+		while (this._buttons.length > menus.length)
+			this._buttons.pop().destroy();
+		menus.forEach((menu, index) => {
+			let btn = this._buttons[index];
+			if (btn) {
+				btn.setLabel(menu.label);
+			} else {
+				btn = new MenuBarButton(menu.label);
+				addBarButton(`${this._uuid}-shortcut-${index}`, btn, 1 + index);
+				this._buttons.push(btn);
+			}
 			btn.setItems(this._toSpecs(menu.items));
-			addBarButton(`${this._uuid}-shortcut-${index}`, btn, 1 + index);
-			this._buttons.push(btn);
 		});
 	}
 
