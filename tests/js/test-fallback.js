@@ -228,4 +228,96 @@ if (desktopIsScratch) {
     skip('New Folder on Desktop numbers its folders', 'the desktop folder could not be pointed at a scratch directory');
 }
 
+// panelBar.js: where addBarButton() puts a button. The fake panel keeps a
+// list of containers and does what Panel.addToStatusArea() does with it.
+
+function fakePanel(initial) {
+    const children = [];
+    const named = name => ({name, first_child: {}});
+    const panel = {
+        children,
+        _leftBox: {get_children: () => children.slice()},
+        statusArea: {activities: {container: named('activities')}},
+        addToStatusArea(role, btn, position) {
+            const container = {name: role, first_child: btn};
+            children.splice(position, 0, container);
+        },
+        names: () => children.map(c => c.name),
+    };
+    children.push(panel.statusArea.activities.container);
+    for (const name of initial)
+        children.push(named(name));
+    globalThis.gmTest.panel = panel;
+    return panel;
+}
+const appNameButton = {_globalMenuButton: true, _globalMenuAppName: true};
+const menuButton = {_globalMenuButton: true, _globalMenuAppName: false};
+
+// Panel is read through a module-level import, so each case needs the stub
+// to see its own panel
+async function barFor(panel) {
+    const mod = await importWithStubs('panelBar.js', {
+        resources: {'resource:///org/gnome/shell/ui/main.js': 'export const panel = globalThis.gmTest.panel;\n'},
+    });
+    globalThis.gmTest.panel = panel;
+    return mod.addBarButton;
+}
+
+test('without an app-name button the first menu sits right after the workspace indicator', async () => {
+    reset();
+    const panel = fakePanel(['other-extension']);
+    const add = await barFor(panel);
+    ['native-0', 'native-1', 'native-2'].forEach((role, i) => add(role, menuButton, 1 + i));
+    assert.deepEqual(panel.names(), ['activities', 'native-0', 'native-1', 'native-2', 'other-extension']);
+});
+
+test('without an app-name button a rebuild keeps the run in order', async () => {
+    reset();
+    const panel = fakePanel(['other-extension']);
+    const add = await barFor(panel);
+    ['a', 'b'].forEach((role, i) => add(role, menuButton, 1 + i));
+    // the three menus of the next tree replace the two of the last
+    panel.children.splice(1, 2);
+    ['c', 'd', 'e'].forEach((role, i) => add(role, menuButton, 1 + i));
+    assert.deepEqual(panel.names(), ['activities', 'c', 'd', 'e', 'other-extension']);
+});
+
+test('with an app-name button the first menu follows it', async () => {
+    reset();
+    const panel = fakePanel(['other-extension']);
+    const add = await barFor(panel);
+    add('app', appNameButton, 0);
+    ['native-0', 'native-1'].forEach((role, i) => add(role, menuButton, 1 + i));
+    assert.deepEqual(panel.names(), ['activities', 'app', 'native-0', 'native-1', 'other-extension']);
+});
+
+test('the run follows its app-name button when another extension moves it', async () => {
+    reset();
+    const panel = fakePanel([]);
+    const add = await barFor(panel);
+    add('app', appNameButton, 0);
+    panel.children.unshift({name: 'late-extension', first_child: {}});
+    ['native-0', 'native-1'].forEach((role, i) => add(role, menuButton, 1 + i));
+    assert.deepEqual(panel.names(), ['late-extension', 'activities', 'app', 'native-0', 'native-1']);
+});
+
+test('the app-name button goes ahead of menus that are already there', async () => {
+    reset();
+    const panel = fakePanel([]);
+    const add = await barFor(panel);
+    add('native-0', menuButton, 1);
+    add('app', appNameButton, 0);
+    assert.deepEqual(panel.names(), ['activities', 'app', 'native-0']);
+});
+
+test('the panel is not touched when it has no workspace indicator', async () => {
+    reset();
+    const panel = fakePanel([]);
+    panel.children.length = 0;
+    panel.statusArea.activities = undefined;
+    const add = await barFor(panel);
+    add('native-0', menuButton, 1);
+    assert.deepEqual(panel.names(), ['native-0']);
+});
+
 await run();

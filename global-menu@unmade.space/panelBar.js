@@ -11,7 +11,8 @@ import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
 /**
  * Panel index the run starts at: the app-name button when it exists,
- * otherwise the first free slot after the workspace indicator.
+ * otherwise the first menu button, otherwise the first free slot after the
+ * workspace indicator.
  *
  * Anchoring on the app-name button also heals a run that is already out of
  * order, since menu buttons are placed after wherever it currently is.
@@ -22,19 +23,26 @@ function runStart() {
 	const children = Main.panel._leftBox.get_children();
 	const app = children.findIndex(c => c.first_child?._globalMenuAppName);
 	if (app !== -1)
-		return app;
+		return {index: app, hasAppName: true};
 	const ours = children.findIndex(c => c.first_child?._globalMenuButton);
 	if (ours !== -1)
-		return ours;
+		return {index: ours, hasAppName: false};
 	const activities = Main.panel.statusArea.activities?.container;
 	const at = activities ? children.indexOf(activities) : -1;
-	return at + 1;
+	return {index: at + 1, hasAppName: false};
 }
 
 /**
  * Add a menu-bar button to the panel. `rank` is its place within the run:
- * 0 is the app-name button, menu buttons start at 1.
+ * 0 is the app-name button, menu buttons start at 1. Rank 1 is the run's
+ * first slot when there is no app-name button, so the slot rank 0 would
+ * have held is not skipped.
+ *
+ * @param {string} role - status area role, unique per button
+ * @param {object} btn - the MenuBarButton to add
+ * @param {number} rank - place within the run
  */
 export function addBarButton(role, btn, rank) {
-	Main.panel.addToStatusArea(role, btn, runStart() + rank, 'left');
+	const {index, hasAppName} = runStart();
+	Main.panel.addToStatusArea(role, btn, index + (hasAppName ? rank : Math.max(rank - 1, 0)), 'left');
 }
