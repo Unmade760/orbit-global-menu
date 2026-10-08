@@ -227,12 +227,10 @@
           "separator": true
         },
         {
-          "label": "Add Caret above Cursor",
-          "shortcut": "<Ctrl><Alt>Up"
+          "label": "Add Caret above Cursor"
         },
         {
-          "label": "Add Caret below Cursor",
-          "shortcut": "<Ctrl><Alt>Down"
+          "label": "Add Caret below Cursor"
         },
         {
           "label": "Add Cursors to Line Ends",

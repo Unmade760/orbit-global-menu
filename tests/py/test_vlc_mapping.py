@@ -98,7 +98,10 @@ def test_every_shortcut_has_a_source_record(by_path):
     records = {(tuple(r['path']), r['shortcut']) for r in load(SOURCES)['items']}
     wanted = {(p, s) for p, s in by_path.items() if s}
     assert wanted - records == set()
-    assert records - wanted == set()
+    # A recorded chord the mapping does not send belongs to a placeholder,
+    # an item whose chord the shell grabs
+    placeholders = {p for p, s in by_path.items() if not s}
+    assert {p for p, _ in records - wanted} <= placeholders
 
 
 def test_no_em_dash():

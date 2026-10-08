@@ -29,10 +29,10 @@
       "items": [
         {"label": "Add Torrent", "shortcut": "<Ctrl>O"},
         {"label": "Connection Manager", "shortcut": "<Ctrl>M"},
-        {"label": "Move Queue Up", "shortcut": "<Ctrl><Alt>Up"},
-        {"label": "Move Queue Down", "shortcut": "<Ctrl><Alt>Down"},
-        {"label": "Move Queue to Top", "shortcut": "<Ctrl><Alt><Shift>Up"},
-        {"label": "Move Queue to Bottom", "shortcut": "<Ctrl><Alt><Shift>Down"},
+        {"label": "Move Queue Up"},
+        {"label": "Move Queue Down"},
+        {"label": "Move Queue to Top"},
+        {"label": "Move Queue to Bottom"},
         {"label": "Remove Torrent", "shortcut": "Delete"},
         {"label": "Remove Torrent and Data", "shortcut": "<Shift>Delete"},
         {"label": "Torrent Context Menu", "shortcut": "Menu"}

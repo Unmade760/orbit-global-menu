@@ -205,8 +205,8 @@
           {"label": "Unfold Level 9", "shortcut": "<Shift><Alt>9"}
         ]},
         {"separator": true},
-        {"label": "Split Horizontal", "shortcut": "<Ctrl><Alt>Right"},
-        {"label": "Split Vertical", "shortcut": "<Ctrl><Alt>Down"},
+        {"label": "Split Horizontal"},
+        {"label": "Split Vertical"},
         {"separator": true},
         {"label": "Next Tab", "shortcut": "<Ctrl>Tab"},
         {"label": "Previous Tab", "shortcut": "<Ctrl><Shift>Tab"}

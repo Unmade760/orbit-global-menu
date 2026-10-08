@@ -47,12 +47,10 @@
           "shortcut": "<Ctrl>Right"
         },
         {
-          "label": "Back 5 Minutes",
-          "shortcut": "<Ctrl><Alt>Left"
+          "label": "Back 5 Minutes"
         },
         {
-          "label": "Forward 5 Minutes",
-          "shortcut": "<Ctrl><Alt>Right"
+          "label": "Forward 5 Minutes"
         }
       ]
     },

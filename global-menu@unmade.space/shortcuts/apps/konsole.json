@@ -73,8 +73,8 @@
         {"label": "Previous Tab", "shortcut": "<Ctrl>Page_Up"},
         {"label": "Last Used Tabs", "shortcut": "<Ctrl>Tab"},
         {"label": "Last Used Tabs (Reverse)", "shortcut": "<Ctrl><Shift>Tab"},
-        {"label": "Move Tab Left", "shortcut": "<Ctrl><Alt>Left"},
-        {"label": "Move Tab Right", "shortcut": "<Ctrl><Alt>Right"},
+        {"label": "Move Tab Left"},
+        {"label": "Move Tab Right"},
         {"separator": true},
         {"label": "Switch to Tab 10", "shortcut": "<Alt>0"}
       ]

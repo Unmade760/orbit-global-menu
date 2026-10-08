@@ -73,10 +73,10 @@
         {"label": "Navigate Pane Right", "shortcut": "<Ctrl><Shift>Right"},
         {"label": "Navigate Pane Up", "shortcut": "<Ctrl><Shift>Up"},
         {"label": "Navigate Pane Down", "shortcut": "<Ctrl><Shift>Down"},
-        {"label": "Adjust Pane Size Left", "shortcut": "<Ctrl><Alt><Shift>Left"},
-        {"label": "Adjust Pane Size Right", "shortcut": "<Ctrl><Alt><Shift>Right"},
-        {"label": "Adjust Pane Size Up", "shortcut": "<Ctrl><Alt><Shift>Up"},
-        {"label": "Adjust Pane Size Down", "shortcut": "<Ctrl><Alt><Shift>Down"}
+        {"label": "Adjust Pane Size Left"},
+        {"label": "Adjust Pane Size Right"},
+        {"label": "Adjust Pane Size Up"},
+        {"label": "Adjust Pane Size Down"}
       ]
     }
   ]

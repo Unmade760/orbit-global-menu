@@ -46,8 +46,8 @@
         {"label": "Previous Channel", "shortcut": "<Alt>Up"},
         {"label": "Next Unread Channel", "shortcut": "<Alt><Shift>Down"},
         {"label": "Previous Unread Channel", "shortcut": "<Alt><Shift>Up"},
-        {"label": "Next Team", "shortcut": "<Ctrl><Alt>Down"},
-        {"label": "Previous Team", "shortcut": "<Ctrl><Alt>Up"},
+        {"label": "Next Team"},
+        {"label": "Previous Team"},
         {"label": "Edit Last Message", "shortcut": "Up"},
         {"label": "Reply to Last Message", "shortcut": "<Shift>Up"}
       ]

@@ -56,13 +56,13 @@
           {"label": "Very Short Forward Jump", "shortcut": "<Shift>Right"},
           {"label": "Short Forward Jump", "shortcut": "<Alt>Right"},
           {"label": "Medium Forward Jump", "shortcut": "<Ctrl>Right"},
-          {"label": "Long Forward Jump", "shortcut": "<Ctrl><Alt>Right"}
+          {"label": "Long Forward Jump"}
         ]},
         {"label": "Jump Backward", "items": [
           {"label": "Very Short Backward Jump", "shortcut": "<Shift>Left"},
           {"label": "Short Backward Jump", "shortcut": "<Alt>Left"},
           {"label": "Medium Backward Jump", "shortcut": "<Ctrl>Left"},
-          {"label": "Long Backward Jump", "shortcut": "<Ctrl><Alt>Left"}
+          {"label": "Long Backward Jump"}
         ]},
         {"label": "Jump to Specific Time", "shortcut": "<Ctrl>T"},
         {"label": "Next Frame", "shortcut": "E"},

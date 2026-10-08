@@ -71,8 +71,8 @@
     {
       "label": "Go",
       "items": [
-        {"label": "Navigate Back", "shortcut": "<Ctrl><Alt>Left"},
-        {"label": "Navigate Forward", "shortcut": "<Ctrl><Alt>Right"},
+        {"label": "Navigate Back"},
+        {"label": "Navigate Forward"},
         {"separator": true},
         {"label": "Follow Link Under Cursor", "shortcut": "<Alt>Return"},
         {"label": "Open Link in New Tab", "shortcut": "<Ctrl>Return"},

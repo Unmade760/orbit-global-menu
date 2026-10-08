@@ -78,5 +78,10 @@ def test_chords_the_source_does_not_define_are_dropped(entries):
 
 def test_every_chord_has_a_source_record(entries):
     with open(SOURCES, encoding='utf-8') as f:
-        records = sorted((tuple(r["path"]), r["shortcut"]) for r in json.load(f)["items"])
-    assert records == sorted((p, s) for p, s in entries if s)
+        records = {(tuple(r["path"]), r["shortcut"]) for r in json.load(f)["items"]}
+    wanted = {(p, s) for p, s in entries if s}
+    assert wanted <= records
+    # A recorded chord the mapping does not send belongs to a placeholder,
+    # an item whose chord the shell grabs
+    placeholders = {p for p, s in entries if not s}
+    assert {p for p, _ in records - wanted} <= placeholders

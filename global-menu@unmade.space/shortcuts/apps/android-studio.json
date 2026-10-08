@@ -45,8 +45,8 @@
         {"label": "Navigate to Symbol", "shortcut": "<Ctrl><Alt><Shift>N"},
         {"label": "Recent Files", "shortcut": "<Ctrl>E"},
         {"label": "Go to Line", "shortcut": "<Ctrl>G"},
-        {"label": "Back", "shortcut": "<Ctrl><Alt>Left"},
-        {"label": "Forward", "shortcut": "<Ctrl><Alt>Right"}
+        {"label": "Back"},
+        {"label": "Forward"}
       ]
     },
     {

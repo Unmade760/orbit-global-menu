@@ -314,12 +314,10 @@
           "separator": true
         },
         {
-          "label": "Add Caret above Cursor",
-          "shortcut": "<Ctrl><Alt>Up"
+          "label": "Add Caret above Cursor"
         },
         {
-          "label": "Add Caret below Cursor",
-          "shortcut": "<Ctrl><Alt>Down"
+          "label": "Add Caret below Cursor"
         },
         {
           "label": "Add Cursors to Line Ends",
@@ -881,12 +879,10 @@
       "label": "Projects",
       "items": [
         {
-          "label": "Activate Previous Project",
-          "shortcut": "<Ctrl><Alt>Left"
+          "label": "Activate Previous Project"
         },
         {
-          "label": "Activate Next Project",
-          "shortcut": "<Ctrl><Alt>Right"
+          "label": "Activate Next Project"
         },
         {
           "separator": true
