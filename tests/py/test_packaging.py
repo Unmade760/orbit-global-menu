@@ -55,3 +55,18 @@ def test_makefile_targets_are_phony():
 		text = f.read()
 	m = re.search(r'^\.PHONY:(.*)$', text, re.M)
 	assert m and {'build', 'clean'} <= set(m.group(1).split())
+
+
+def test_pkgbuild_cd_matches_the_source_checkout_directory():
+	# makepkg checks a git source out to "name" for "name::git+URL", else to
+	# the URL's basename without .git.
+	with open(os.path.join(ROOT, 'PKGBUILD')) as f:
+		text = f.read()
+	source = re.search(r"^source=\(\s*'([^']+)'", text, re.M).group(1)
+	if '::' in source:
+		checkout = source.split('::', 1)[0]
+	else:
+		checkout = re.sub(r'\.git$', '', source.split('#')[0].rstrip('/').rsplit('/', 1)[-1])
+	dirs = re.findall(r'^\s*cd "\$srcdir/([^"]+)"', text, re.M)
+	assert dirs
+	assert set(dirs) == {checkout}

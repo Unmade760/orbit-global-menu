@@ -14,7 +14,7 @@ optdepends=('bamf: window matching on X11'
             'libdbusmenu-glib: lets Electron and Firefox export their menus')
 makedepends=('git' 'python-setuptools')
 provides=("python-global-menu=$pkgver")
-source=('git+https://github.com/Unmade760/orbit-global-menu.git')
+source=('global-menu::git+https://github.com/Unmade760/orbit-global-menu.git')
 md5sums=('SKIP')
 
 pkgver() {
