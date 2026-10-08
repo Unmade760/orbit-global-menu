@@ -131,6 +131,23 @@ def test_sections_become_separators(app):
 	assert shape == ['_New', '_Open', 'Recent', '---', '_Quit']
 
 
+def test_labelled_section_is_followed():
+	# GTK exports <section><attribute name="label"> as an item with both
+	# label and :section; the menu tracker follows the section link
+	_, model = load({
+		(0, 0): [gtk_item(label='_File', submenu=(1, 0))],
+		(1, 0): [
+			gtk_item(label='_New', action='app.new'),
+			gtk_item(label='Recent', section=(1, 1)),
+		],
+		(1, 1): [gtk_item(label='_Quit', action='app.quit')],
+	}, {'app.new': gtk_describe(True), 'app.quit': gtk_describe(True)})
+	file_menu = find(json_tree(model), '_File')['children']
+	shape = ['---' if n.get('separator') else n['label'] for n in file_menu]
+	assert shape == ['_New', '---', '_Quit']
+	assert '_File  \u00bb  _Quit' in model.actions
+
+
 def test_submenu_and_keys(app):
 	_, model = app
 	recent = find(json_tree(model), '_File', 'Recent')

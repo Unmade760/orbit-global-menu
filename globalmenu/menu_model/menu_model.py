@@ -197,7 +197,11 @@ class DbusGtkMenu(object):
 		# link: the (group, menu) pair of a :section or :submenu
 		section = (link[0], link[1])
 		for menu in menus.get(section, []):
-			if 'label' in menu:
+			# A section may carry a label as a heading; its items still belong here
+			if ':section' in menu:
+				self.collect_entries(menus, labels, treelib_parent, menu[':section'])
+
+			elif 'label' in menu:
 				if len(labels) == 0:
 					self.top_level_menus.append(menu.get('label', None))
 
@@ -218,9 +222,6 @@ class DbusGtkMenu(object):
 					self.actions[menu_item.text] = menu_item.action
 					if menu_item.target is not None:
 						self.targets[menu_item.text] = menu_item.target
-
-			elif ':section' in menu:
-				self.collect_entries(menus, labels, treelib_parent, menu[':section'])
 
 	def _new_node_id(self):
 		self._node_seq += 1
