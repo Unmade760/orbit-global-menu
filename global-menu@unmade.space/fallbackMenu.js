@@ -258,9 +258,8 @@ const ACTION_SHORTCUTS = {
 	'screenshot-window': '<Alt>Print',
 	'snap-left': '<Super>Left',
 	'snap-right': '<Super>Right',
-	'switch-windows': '<Super>Tab',
+	'switch-applications': '<Super>Tab',
 	'cycle-windows': '<Alt>Escape',
-	'cycle-app-windows': '<Super>`',
 	'window-menu': '<Alt>space',
 	'next-workspace': '<Super>Page_Down',
 	'previous-workspace': '<Super>Page_Up',
@@ -306,9 +305,8 @@ function windowMenuSpecs() {
 		actionSpec('Snap Window Left', 'snap-left'),
 		actionSpec('Snap Window Right', 'snap-right'),
 		{separator: true},
-		actionSpec('Switch Between Windows', 'switch-windows'),
+		actionSpec('Switch Between Applications', 'switch-applications'),
 		actionSpec('Cycle Through Windows', 'cycle-windows'),
-		actionSpec('Switch Windows of Same App', 'cycle-app-windows'),
 		actionSpec('Window Menu', 'window-menu')
 	);
 	return specs;

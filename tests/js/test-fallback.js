@@ -196,6 +196,19 @@ test('items with a fixed shortcut carry an accel that has a label', () => {
     assert.equal(windowMenu.find(s => s.label === 'Snap Window Left').accel, '<Super>Left');
 });
 
+test('the Window menu keeps no switcher item whose chord the shell does not bind as labelled', () => {
+    const t = reset();
+    new FallbackMenu('uuid');
+    const windowMenu = specsOf(t.buttons.find(b => b.label === 'Window'));
+    const labels = windowMenu.filter(s => !s.separator).map(s => s.label);
+    assert.ok(!labels.includes('Switch Between Windows'), 'Super+Tab switches applications');
+    assert.ok(!labels.includes('Switch Windows of Same App'), 'Super+grave is layout dependent');
+    const switcher = windowMenu.find(s => s.label === 'Switch Between Applications');
+    assert.equal(switcher.accel, '<Super>Tab');
+    switcher.onActivate();
+    assert.deepEqual(t.sent, ['after menu <Super>Tab']);
+});
+
 test('a keystroke item waits for the menu to release its grab', () => {
     const t = reset();
     new FallbackMenu('uuid');
