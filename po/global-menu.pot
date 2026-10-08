@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: global-menu\n"
 "Report-Msgid-Bugs-To: https://github.com/Unmade760/orbit-global-menu/issues\n"
-"POT-Creation-Date: 2026-10-08 23:29+0530\n"
+"POT-Creation-Date: 2026-10-08 19:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid "All items in the Trash will be permanently deleted."
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:158
-#: global-menu@unmade.space/prefsPages/editorPage.js:245
+#: global-menu@unmade.space/prefsPages/editorPage.js:264
 msgid "Cancel"
 msgstr ""
 
@@ -44,194 +44,194 @@ msgstr ""
 msgid "Empty Trash"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:296
+#: global-menu@unmade.space/fallbackMenu.js:298
 msgid "No Window"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:303
+#: global-menu@unmade.space/fallbackMenu.js:305
 msgid "Snap Window Left"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:304
+#: global-menu@unmade.space/fallbackMenu.js:306
 msgid "Snap Window Right"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:306
+#: global-menu@unmade.space/fallbackMenu.js:308
 msgid "Switch Between Windows"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:307
+#: global-menu@unmade.space/fallbackMenu.js:309
 msgid "Cycle Through Windows"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:308
+#: global-menu@unmade.space/fallbackMenu.js:310
 msgid "Switch Windows of Same App"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:309
+#: global-menu@unmade.space/fallbackMenu.js:311
 msgid "Window Menu"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:333
+#: global-menu@unmade.space/fallbackMenu.js:335
 msgid "New Window"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:337
+#: global-menu@unmade.space/fallbackMenu.js:339
 #, javascript-format
 msgid "Hide %s"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:343
+#: global-menu@unmade.space/fallbackMenu.js:345
 #, javascript-format
 msgid "Quit %s"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:351
-#: global-menu@unmade.space/fallbackMenu.js:453
+#: global-menu@unmade.space/fallbackMenu.js:353
+#: global-menu@unmade.space/fallbackMenu.js:455
 msgid "Desktop"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:356
+#: global-menu@unmade.space/fallbackMenu.js:358
 msgid "File"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:358
+#: global-menu@unmade.space/fallbackMenu.js:360
 msgid "New Folder on Desktop"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:359
+#: global-menu@unmade.space/fallbackMenu.js:361
 msgid "New Tab"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:360
+#: global-menu@unmade.space/fallbackMenu.js:362
 msgid "Open"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:362
+#: global-menu@unmade.space/fallbackMenu.js:364
 msgid "Properties"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:364
+#: global-menu@unmade.space/fallbackMenu.js:366
 msgid "Show Desktop"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:366
+#: global-menu@unmade.space/fallbackMenu.js:368
 msgid "Close Window"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:370
+#: global-menu@unmade.space/fallbackMenu.js:372
 msgid "Edit"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:372
+#: global-menu@unmade.space/fallbackMenu.js:374
 msgid "Undo"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:373
+#: global-menu@unmade.space/fallbackMenu.js:375
 msgid "Redo"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:375
+#: global-menu@unmade.space/fallbackMenu.js:377
 msgid "Cut"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:376
+#: global-menu@unmade.space/fallbackMenu.js:378
 msgid "Copy"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:377
+#: global-menu@unmade.space/fallbackMenu.js:379
 msgid "Paste"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:378
+#: global-menu@unmade.space/fallbackMenu.js:380
 msgid "Delete"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:380
+#: global-menu@unmade.space/fallbackMenu.js:382
 msgid "Select All"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:382
+#: global-menu@unmade.space/fallbackMenu.js:384
 msgid "Take Screenshot"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:383
+#: global-menu@unmade.space/fallbackMenu.js:385
 msgid "Screenshot of Window"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:384
+#: global-menu@unmade.space/fallbackMenu.js:386
 msgid "Screenshot of Area"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:388
+#: global-menu@unmade.space/fallbackMenu.js:390
 msgid "Go"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:390
+#: global-menu@unmade.space/fallbackMenu.js:392
 msgid "Back"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:391
+#: global-menu@unmade.space/fallbackMenu.js:393
 msgid "Forward"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:393
+#: global-menu@unmade.space/fallbackMenu.js:395
 msgid "Next Workspace"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:394
+#: global-menu@unmade.space/fallbackMenu.js:396
 msgid "Previous Workspace"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:395
+#: global-menu@unmade.space/fallbackMenu.js:397
 msgid "First Workspace"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:399
+#: global-menu@unmade.space/fallbackMenu.js:401
 msgid "Window"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:403
+#: global-menu@unmade.space/fallbackMenu.js:405
 msgid "System"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:405
+#: global-menu@unmade.space/fallbackMenu.js:407
 msgid "Show Applications"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:406
+#: global-menu@unmade.space/fallbackMenu.js:408
 msgid "Show Notifications"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:408
+#: global-menu@unmade.space/fallbackMenu.js:410
 msgid "Open Files"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:409
+#: global-menu@unmade.space/fallbackMenu.js:411
 msgid "Settings"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:411
+#: global-menu@unmade.space/fallbackMenu.js:413
 msgid "Empty Trash…"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:413
+#: global-menu@unmade.space/fallbackMenu.js:415
 msgid "Lock Screen"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:414
+#: global-menu@unmade.space/fallbackMenu.js:416
 msgid "Suspend"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:415
+#: global-menu@unmade.space/fallbackMenu.js:417
 msgid "Hibernate"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:417
+#: global-menu@unmade.space/fallbackMenu.js:419
 msgid "Log Out"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:418
+#: global-menu@unmade.space/fallbackMenu.js:420
 msgid "Power Off / Restart"
 msgstr ""
 
@@ -240,7 +240,7 @@ msgid "General"
 msgstr ""
 
 #: global-menu@unmade.space/prefs.js:17
-#: global-menu@unmade.space/prefsPages/editorPage.js:116
+#: global-menu@unmade.space/prefsPages/editorPage.js:135
 msgid "Menus"
 msgstr ""
 
@@ -458,6 +458,18 @@ msgstr ""
 msgid "failed to load"
 msgstr ""
 
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:83
+msgid "Built-in, overridden"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:85
+msgid "Custom"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:87
+msgid "Built-in"
+msgstr ""
+
 #: global-menu@unmade.space/prefsPages/applicationsPage.js:125
 msgid "Add Application"
 msgstr ""
@@ -474,98 +486,114 @@ msgstr ""
 msgid "Search installed applications"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:80
+#: global-menu@unmade.space/prefsPages/editorPage.js:99
 msgid "Save"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:87
+#: global-menu@unmade.space/prefsPages/editorPage.js:106
 msgid "Reset to Built-in Default"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:87
+#: global-menu@unmade.space/prefsPages/editorPage.js:106
 msgid "Delete This Mapping"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:94
+#: global-menu@unmade.space/prefsPages/editorPage.js:113
 msgid "Application"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:97
+#: global-menu@unmade.space/prefsPages/editorPage.js:116
 msgid "Display Name"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:101
+#: global-menu@unmade.space/prefsPages/editorPage.js:120
 msgid "App ID (file name, fixed)"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:106
+#: global-menu@unmade.space/prefsPages/editorPage.js:125
 msgid "Identifiers (comma-separated)"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:112
+#: global-menu@unmade.space/prefsPages/editorPage.js:131
 msgid ""
 "This is a built-in mapping. Saving creates a user override in ~/.config/"
 "global-menu/shortcuts/apps. The built-in file itself is never modified."
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:117
+#: global-menu@unmade.space/prefsPages/editorPage.js:136
 msgid ""
 "Click the shortcut button on an item to set it, exactly like GNOME Settings' "
 "Keyboard Shortcuts panel."
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:147
+#: global-menu@unmade.space/prefsPages/editorPage.js:149
+msgid "(untitled menu)"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:166
 msgid "Add Item"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:149
+#: global-menu@unmade.space/prefsPages/editorPage.js:168
 msgid "New Item"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:154
+#: global-menu@unmade.space/prefsPages/editorPage.js:173
 msgid "Add Separator"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:165
+#: global-menu@unmade.space/prefsPages/editorPage.js:184
 msgid "Add Menu…"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:167
+#: global-menu@unmade.space/prefsPages/editorPage.js:186
 msgid "New Menu"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:176
+#: global-menu@unmade.space/prefsPages/editorPage.js:195
 msgid "── Separator ──"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:187
+#: global-menu@unmade.space/prefsPages/editorPage.js:205
+msgid "(complex item)"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:206
 msgid "Submenu or advanced item. Not editable here, kept as it is on save."
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:196
+#: global-menu@unmade.space/prefsPages/editorPage.js:215
 msgid "Label"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:205
+#: global-menu@unmade.space/prefsPages/editorPage.js:224
 msgid "Disabled"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:246
+#: global-menu@unmade.space/prefsPages/editorPage.js:232
+msgid "(unnamed item)"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:261
+msgid "Rename Menu"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:265
 msgid "Rename"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:289
+#: global-menu@unmade.space/prefsPages/editorPage.js:308
 #, javascript-format
 msgid "Saved, but %d item had a problem: %s"
 msgid_plural "Saved, but %d items had problems: %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:292
+#: global-menu@unmade.space/prefsPages/editorPage.js:311
 msgid "Saved"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:301
+#: global-menu@unmade.space/prefsPages/editorPage.js:320
 #, javascript-format
 msgid "Could not delete: %s"
 msgstr ""
@@ -588,66 +616,72 @@ msgstr ""
 msgid "Press Esc to cancel or Backspace to disable the keyboard shortcut"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:26
+#. Translators: %s is a key combination such as "Ctrl+Shift+F"
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:102
+#, javascript-format
+msgid "\"%s\" is not supported, try another"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:24
 msgid "Minimize"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:27
+#: global-menu@unmade.space/windowActions.js:25
 msgid "Unmaximize"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:28
+#: global-menu@unmade.space/windowActions.js:26
 msgid "Maximize"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:29
+#: global-menu@unmade.space/windowActions.js:27
 msgid "Move"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:30
+#: global-menu@unmade.space/windowActions.js:28
 msgid "Resize"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:31
+#: global-menu@unmade.space/windowActions.js:29
 msgid "Always on Top"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:32
+#: global-menu@unmade.space/windowActions.js:30
 msgid "Always on Visible Workspace"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:33
+#: global-menu@unmade.space/windowActions.js:31
 msgid "Move to Workspace Left"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:34
+#: global-menu@unmade.space/windowActions.js:32
 msgid "Move to Workspace Right"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:35
+#: global-menu@unmade.space/windowActions.js:33
 msgid "Move to Workspace Up"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:36
+#: global-menu@unmade.space/windowActions.js:34
 msgid "Move to Workspace Down"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:37
+#: global-menu@unmade.space/windowActions.js:35
 msgid "Move to Monitor Up"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:38
+#: global-menu@unmade.space/windowActions.js:36
 msgid "Move to Monitor Down"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:39
+#: global-menu@unmade.space/windowActions.js:37
 msgid "Move to Monitor Left"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:40
+#: global-menu@unmade.space/windowActions.js:38
 msgid "Move to Monitor Right"
 msgstr ""
 
-#: global-menu@unmade.space/windowActions.js:41
+#: global-menu@unmade.space/windowActions.js:39
 msgid "Close"
 msgstr ""

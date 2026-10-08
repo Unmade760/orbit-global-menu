@@ -80,11 +80,11 @@ export class ApplicationsPage {
 			row.set_subtitle(_('Error: %s').replace('%s', warning?.message ?? _('failed to load')));
 			row.add_css_class('error');
 		} else if (entry.hasUser && entry.hasBuiltin) {
-			row.set_subtitle(`${entry.app} · Built-in, overridden`);
+			row.set_subtitle(`${entry.app} · ${_('Built-in, overridden')}`);
 		} else if (entry.hasUser) {
-			row.set_subtitle(`${entry.app} · Custom`);
+			row.set_subtitle(`${entry.app} · ${_('Custom')}`);
 		} else {
-			row.set_subtitle(`${entry.app} · Built-in`);
+			row.set_subtitle(`${entry.app} · ${_('Built-in')}`);
 		}
 
 		if (mapping) {

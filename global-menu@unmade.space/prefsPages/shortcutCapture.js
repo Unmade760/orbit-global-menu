@@ -98,7 +98,8 @@ export function captureShortcut({parentWindow, itemLabel, onCaptured}) {
 
 		const accel = Gtk.accelerator_name(keyval, mods);
 		if (!parseAccelerator(accel)) {
-			preview.set_label(`"${Gtk.accelerator_get_label(keyval, mods)}" is not supported, try another`);
+			// Translators: %s is a key combination such as "Ctrl+Shift+F"
+			preview.set_label(_('"%s" is not supported, try another').replace('%s', Gtk.accelerator_get_label(keyval, mods)));
 			return true;
 		}
 

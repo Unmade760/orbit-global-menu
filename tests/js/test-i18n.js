@@ -31,6 +31,18 @@ test('zh_CN strings come back translated, untranslated ones unchanged', () => {
     }
 });
 
+test('the mapping editor and Applications page strings are translated', () => {
+    GLib.setenv('LANGUAGE', 'zh_CN', true);
+    try {
+        for (const msgid of ['Built-in, overridden', 'Custom', 'Built-in', '(untitled menu)',
+            '(complex item)', '(unnamed item)', 'Rename Menu', '"%s" is not supported, try another'])
+            assert.ok(_(msgid) !== msgid, `${msgid} is not translated`);
+        assert.equal(_('Custom'), '自定义');
+    } finally {
+        GLib.setenv('LANGUAGE', 'en_US:en', true);
+    }
+});
+
 test('N_ only marks the string', () => {
     assert.equal(N_('Copy'), 'Copy');
 });

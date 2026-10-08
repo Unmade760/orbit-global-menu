@@ -146,7 +146,7 @@ export class EditorPage {
 		this._menuRows = [];
 
 		this._menus.forEach((menu, menuIndex) => {
-			const expander = new Adw.ExpanderRow({title: menu.label || '(untitled menu)', expanded: true});
+			const expander = new Adw.ExpanderRow({title: menu.label || _('(untitled menu)'), expanded: true});
 
 			const renameButton = new Gtk.Button({icon_name: 'document-edit-symbolic', valign: Gtk.Align.CENTER, css_classes: ['flat']});
 			renameButton.connect('clicked', () => this._renameMenu(menu, expander));
@@ -202,7 +202,7 @@ export class EditorPage {
 
 		if (!isSimpleLeaf(item)) {
 			const row = new Adw.ActionRow({
-				title: item.label ?? '(complex item)',
+				title: item.label ?? _('(complex item)'),
 				subtitle: _('Submenu or advanced item. Not editable here, kept as it is on save.'),
 			});
 			row.add_suffix(this._buildRemoveButton(() => {
@@ -229,7 +229,7 @@ export class EditorPage {
 		shortcutButton.connect('clicked', () => {
 			captureShortcut({
 				parentWindow: this._window,
-				itemLabel: item.label || '(unnamed item)',
+				itemLabel: item.label || _('(unnamed item)'),
 				onCaptured: result => {
 					if (result === undefined)
 						return; // cancelled, so no change
@@ -258,7 +258,7 @@ export class EditorPage {
 	}
 
 	_renameMenu(menu, expander) {
-		const dialog = new Adw.AlertDialog({heading: 'Rename Menu'});
+		const dialog = new Adw.AlertDialog({heading: _('Rename Menu')});
 		const entry = new Gtk.Entry({text: menu.label});
 		dialog.set_extra_child(entry);
 		dialog.add_response('cancel', _('Cancel'));
