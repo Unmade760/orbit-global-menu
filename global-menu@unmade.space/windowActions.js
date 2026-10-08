@@ -101,7 +101,9 @@ export class WindowActions {
 		const win = this._win;
 		if (typeof win.is_maximized === 'function')
 			return win.is_maximized();
-		return win.get_maximized() === Meta.MaximizeFlags.BOTH;
+		if (typeof win.get_maximized === 'function')
+			return win.get_maximized() === Meta.MaximizeFlags.BOTH;
+		return false;
 	}
 
 	// The argument count gjs enforces: 48 needs the directions, 49 and later take none
@@ -180,9 +182,14 @@ export class WindowActions {
 		const win = this._win;
 		const id = GLib.timeout_add(GLib.PRIORITY_DEFAULT, GRAB_DELAY_MS, () => {
 			pendingGrabs.delete(id);
-			const backend = global.stage.get_context().get_backend();
-			const sprite = backend.get_pointer_sprite(global.stage);
-			win.begin_grab_op(op, sprite, global.get_current_time(), null);
+			const backend = global.stage.context.get_backend();
+			const seat = backend.get_default_seat();
+			const time = global.get_current_time();
+			// mutter 48 takes the pointer device and an event sequence, 49 and later a sprite
+			if (typeof seat.get_pointer === 'function' && win.begin_grab_op.length === 5)
+				win.begin_grab_op(op, seat.get_pointer(), null, time, null);
+			if (typeof backend.get_pointer_sprite === 'function' && win.begin_grab_op.length === 4)
+				win.begin_grab_op(op, backend.get_pointer_sprite(global.stage), time, null);
 			return GLib.SOURCE_REMOVE;
 		});
 		pendingGrabs.add(id);

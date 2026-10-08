@@ -130,6 +130,7 @@ const backend48 = {
     get_default_seat: () => ({get_pointer: () => 'pointer-device'}),
 };
 const backend49 = {
+    get_default_seat: () => ({}),
     get_pointer_sprite: stage => `sprite-of-${stage === globalThis.global.stage}`,
 };
 
@@ -178,6 +179,20 @@ test('49: Maximize and Unmaximize pass no argument', () => {
     actions.doAction('Maximize');
     actions.doAction('Unmaximize');
     assert.deepEqual(t.calls, [['maximize'], ['unmaximize']]);
+});
+
+test('48: Move grabs with the seat pointer and no sequence', () => {
+    const t = setup(window48, backend48);
+    new WindowActions().doAction('Move');
+    fireGrabs(t);
+    assert.deepEqual(t.calls, [['begin_grab_op', 100, 'pointer-device', null, 4242, null]]);
+});
+
+test('49: Resize grabs with the backend pointer sprite', () => {
+    const t = setup(window49, backend49);
+    new WindowActions().doAction('Resize');
+    fireGrabs(t);
+    assert.deepEqual(t.calls, [['begin_grab_op', 101, 'sprite-of-true', 4242, null]]);
 });
 
 test('a grab waiting on its timeout is cancelled on disable', () => {
