@@ -3,8 +3,10 @@
   "name": "Global Menu",
   "description": "A menu bar for GNOME. The focused application's menus appear in the top panel.\n\nIt tries three sources in order: the menu the application exports over D-Bus, then a curated menu that fires the application's own keyboard shortcuts, then a generic window and system menu.\n\nReading a menu an application exports needs the companion global-menu daemon, installed separately.",
   "shell-version": [
+    "48",
     "49",
-    "50"
+    "50",
+    "51"
   ],
   "url": "https://github.com/Unmade760/orbit-global-menu",
   "settings-schema": "org.gnome.shell.extensions.global-menu",
