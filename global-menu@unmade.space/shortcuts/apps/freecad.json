@@ -20,7 +20,7 @@
         {"label": "Close Document", "shortcut": "<Ctrl>F4"},
         {"label": "Close All Documents", "shortcut": "<Ctrl><Shift>W"},
         {"label": "Print Document", "shortcut": "<Ctrl>P"},
-        {"label": "Print Preview", "shortcut": "<Ctrl><Shift>P"},
+        {"label": "Print Preview"},
         {"label": "Export", "shortcut": "<Ctrl>E"},
         {"label": "Import", "shortcut": "<Ctrl>I"},
         {"label": "Quit FreeCAD", "shortcut": "<Ctrl>Q"}
@@ -52,7 +52,7 @@
         {"label": "Bottom View", "shortcut": "5"},
         {"label": "Left View", "shortcut": "6"},
         {"label": "Toggle Fullscreen", "shortcut": "F11"},
-        {"label": "Toggle Axis Cross", "shortcut": "V"},
+        {"label": "Toggle Axis Cross", "shortcut": "A C"},
         {"label": "Toggle Object Visibility", "shortcut": "space"},
         {"label": "Refresh / Recompute Document", "shortcut": "F5"}
       ]
@@ -60,16 +60,16 @@
     {
       "label": "Draw",
       "items": [
-        {"label": "Draw Style Flat Lines", "shortcut": "V"},
-        {"label": "Draw Style Shaded", "shortcut": "V"},
-        {"label": "Draw Style Wireframe", "shortcut": "V"}
+        {"label": "Draw Style Flat Lines", "shortcut": "V 7"},
+        {"label": "Draw Style Shaded", "shortcut": "V 6"},
+        {"label": "Draw Style Wireframe", "shortcut": "V 3"}
       ]
     },
     {
       "label": "Tools",
       "items": [
         {"label": "Box Selection", "shortcut": "<Shift>B"},
-        {"label": "Fit Selection", "shortcut": "V"},
+        {"label": "Fit Selection", "shortcut": "V S"},
         {"label": "Python Console", "shortcut": "<Ctrl><Shift>P"}
       ]
     },

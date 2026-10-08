@@ -171,26 +171,13 @@ SHARED_CHORDS = {
     'thunar.json': {
         'Escape': SCOPED,
     },
-    'gparted.json': {
-        '<Ctrl>R': UNREVIEWED,
-        '<Alt>V': UNREVIEWED,
-        '<Alt>P': UNREVIEWED,
-    },
     'timeshift.json': {
         'Return': SCOPED,
-    },
-    'bleachbit.json': {
-        '<Alt>F': UNREVIEWED,
-        '<Alt>H': UNREVIEWED,
     },
     'pinta.json': {
         '<Ctrl><Alt>V': UNREVIEWED,
         '<Ctrl>R': UNREVIEWED,
         '<Ctrl>G': UNREVIEWED,
-    },
-    'freecad.json': {
-        '<Ctrl><Shift>P': UNREVIEWED,
-        'V': UNREVIEWED,
     },
     'element.json': {
         '<Ctrl>E': SCOPED,

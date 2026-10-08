@@ -29,8 +29,8 @@
       "label": "View",
       "items": [
         {"label": "Refresh Devices", "shortcut": "<Ctrl>R"},
-        {"label": "Toggle Device Information Panel", "shortcut": "<Alt>V"},
-        {"label": "Toggle Pending Operations Panel", "shortcut": "<Alt>V"}
+        {"label": "Toggle Device Information Panel"},
+        {"label": "Toggle Pending Operations Panel"}
       ]
     },
     {
@@ -43,15 +43,15 @@
       "label": "Tools",
       "items": [
         {"label": "Apply All Operations", "shortcut": "<Ctrl>Return"},
-        {"label": "View File System Support", "shortcut": "<Alt>V"},
-        {"label": "Resize/Move Partition", "shortcut": "<Ctrl>R"},
+        {"label": "View File System Support"},
+        {"label": "Resize/Move Partition"},
         {"label": "Partition Information", "shortcut": "<Ctrl>I"},
-        {"label": "Format Partition Menu", "shortcut": "<Alt>P"},
-        {"label": "Manage Partition Flags", "shortcut": "<Alt>P"},
-        {"label": "Check and Repair File System", "shortcut": "<Alt>P"},
-        {"label": "Mount / Unmount Partition", "shortcut": "<Alt>P"},
-        {"label": "Change Partition UUID", "shortcut": "<Alt>P"},
-        {"label": "Partition Label", "shortcut": "<Alt>P"}
+        {"label": "Format Partition Menu"},
+        {"label": "Manage Partition Flags"},
+        {"label": "Check and Repair File System"},
+        {"label": "Mount / Unmount Partition"},
+        {"label": "Change Partition UUID"},
+        {"label": "Partition Label"}
       ]
     },
     {
