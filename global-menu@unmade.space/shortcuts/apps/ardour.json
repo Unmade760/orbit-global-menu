@@ -53,7 +53,7 @@
       "label": "Transport",
       "items": [
         {"label": "Toggle Roll", "shortcut": "space"},
-        {"label": "Play Edit Range", "shortcut": "<Alt>space"},
+        {"label": "Play Edit Range"},
         {"label": "Play from Edit Point and Return", "shortcut": "<Ctrl><Shift>space"},
         {"label": "Stop and Keep Loop or Range Play", "shortcut": "<Ctrl><Alt>space"},
         {"label": "Stop and Destroy", "shortcut": "<Ctrl>space"},

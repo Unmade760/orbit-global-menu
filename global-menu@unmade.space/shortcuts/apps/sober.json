@@ -34,7 +34,7 @@
       "label": "Tools",
       "items": [
         {"label": "Pause MicroProfiler", "shortcut": "<Ctrl>P"},
-        {"label": "Take Screenshot", "shortcut": "Print"},
+        {"label": "Take Screenshot"},
         {"label": "Rotate Camera Left", "shortcut": ","},
         {"label": "Rotate Camera Right", "shortcut": "."}
       ]

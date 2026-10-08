@@ -40,7 +40,7 @@
         {"label": "Toggle Fullscreen", "shortcut": "F11"},
         {"label": "Lock Ferdium", "shortcut": "<Ctrl><Shift>L"},
         {"label": "Reload Ferdium", "shortcut": "<Ctrl><Shift>R"},
-        {"label": "Reload Todos", "shortcut": "<Ctrl><Alt><Shift>R"},
+        {"label": "Reload Todos"},
         {"label": "Toggle Application DevTools", "shortcut": "<Ctrl><Alt>I"},
         {"label": "Toggle Todos DevTools", "shortcut": "<Ctrl><Alt><Shift>O"}
       ]

@@ -38,7 +38,7 @@
         {"label": "Toggle In-Meeting Chat Panel", "shortcut": "<Alt>H"},
         {"label": "Toggle Fullscreen", "shortcut": "<Alt>F"},
         {"label": "Switch to Active Speaker View", "shortcut": "<Alt>F1"},
-        {"label": "Switch to Gallery Video View", "shortcut": "<Alt>F2"},
+        {"label": "Switch to Gallery Video View"},
         {"label": "Increase Chat Font Size", "shortcut": "<Ctrl>+"},
         {"label": "Decrease Chat Font Size", "shortcut": "<Ctrl>-"}
       ]

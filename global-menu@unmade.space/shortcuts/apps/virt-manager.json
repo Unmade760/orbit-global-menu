@@ -43,7 +43,7 @@
         {"label": "Pause / Resume VM"},
         {"label": "Shut Down VM"},
         {"label": "Force Reset VM"},
-        {"label": "Send Key Combination (Ctrl+Alt+Del)", "shortcut": "<Ctrl><Alt>Delete"},
+        {"label": "Send Key Combination (Ctrl+Alt+Del)"},
         {"label": "Send Key Combination (Ctrl+Alt+Backspace)", "shortcut": "<Ctrl><Alt>BackSpace"}
       ]
     },

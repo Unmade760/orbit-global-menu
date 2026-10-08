@@ -107,6 +107,18 @@ GLOBAL_CHORDS = set()
 for key in ('left', 'right', 'up', 'down'):
     GLOBAL_CHORDS.add((frozenset({'ctrl', 'alt'}), key))
     GLOBAL_CHORDS.add((frozenset({'ctrl', 'shift', 'alt'}), key))
+GLOBAL_CHORDS |= {
+    (frozenset({'alt'}), 'f2'),
+    (frozenset({'shift', 'alt'}), 'f6'),
+    (frozenset({'alt'}), 'space'),
+    (frozenset(), 'print'),
+    (frozenset({'shift'}), 'print'),
+    (frozenset({'alt'}), 'print'),
+    (frozenset({'ctrl', 'shift', 'alt'}), 'r'),
+    (frozenset({'ctrl', 'alt'}), 'delete'),
+}
+for digit in '123456789':
+    GLOBAL_CHORDS.add((frozenset({'super'}), digit))
 
 
 def test_no_item_sends_a_chord_the_shell_grabs():

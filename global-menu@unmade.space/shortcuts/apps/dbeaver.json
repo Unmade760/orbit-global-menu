@@ -55,7 +55,7 @@
         {"label": "Open New SQL Console", "shortcut": "<Ctrl><Alt>Return"},
         {"label": "Connect to Database", "shortcut": "<Ctrl><Shift>N"},
         {"label": "Commit Changes", "shortcut": "<Ctrl><Alt><Shift>K"},
-        {"label": "Rollback Changes", "shortcut": "<Ctrl><Alt><Shift>R"},
+        {"label": "Rollback Changes"},
         {"label": "Select Active Schema", "shortcut": "<Ctrl>0"},
         {"label": "Select Connection", "shortcut": "<Ctrl>9"},
         {"label": "Fetch Next Page of Results", "shortcut": "<Ctrl><Alt>N"},

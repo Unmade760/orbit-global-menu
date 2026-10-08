@@ -96,7 +96,7 @@
         {"label": "Ungroup Tab", "shortcut": "<Super><Shift>t"},
         {"label": "Ungroup Window", "shortcut": "<Super><Shift>w"},
         {"separator": true},
-        {"label": "Insert Terminal Number", "shortcut": "<Super>1"},
+        {"label": "Insert Terminal Number"},
         {"label": "Insert Padded Terminal Number", "shortcut": "<Super>0"},
         {"separator": true},
         {"label": "Layout Launcher", "shortcut": "<Alt>l"}

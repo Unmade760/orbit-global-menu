@@ -15,7 +15,7 @@
         {"label": "Create New Playlist", "shortcut": "<Ctrl>N"},
         {"separator": true},
         {"label": "Preferences", "shortcut": "<Ctrl>comma"},
-        {"label": "Log Out", "shortcut": "<Alt><Shift>F6"}
+        {"label": "Log Out"}
       ]
     },
     {
