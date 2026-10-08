@@ -8,8 +8,24 @@ are registered per (bus name, object path, interface, member) and every call
 is recorded in FakeSession.calls.
 """
 
+import time
+
 import dbus
 import dbus.exceptions
+from gi.repository import GLib
+
+
+def pump(seconds=0.0):
+	"""Run the default main context, where the daemon's idle and timeout
+	sources fire."""
+	ctx = GLib.MainContext.default()
+	end = time.monotonic() + seconds
+	while True:
+		while ctx.pending():
+			ctx.iteration(False)
+		if time.monotonic() >= end:
+			return
+		time.sleep(0.01)
 
 
 class FakeMatch:

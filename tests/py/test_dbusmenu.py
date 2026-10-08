@@ -8,7 +8,7 @@ exporter reached through the AppMenu registrar.
 
 import pytest
 
-from fakes import DBUSMENU_BUS, DBUSMENU_PATH, FakeSession, FakeWindow, dm, install_dbusmenu_app
+from fakes import DBUSMENU_BUS, DBUSMENU_PATH, FakeSession, FakeWindow, dm, install_dbusmenu_app, pump
 
 from globalmenu.menu_model.menu_item import DbusAppMenuItem
 from globalmenu.menu_model.menu_model import MenuModel
@@ -137,3 +137,37 @@ def test_remove_listener_disconnects_every_signal(app):
 	assert {s[3].signal for s in dbusmenu_signals} == {'ItemsPropertiesUpdated', 'LayoutUpdated'}
 	model.appmenu.remove_actions_listener()
 	assert all(s[3].removed for s in dbusmenu_signals)
+
+
+def changing_app(layout):
+	session = FakeSession()
+	window = FakeWindow({})
+	install_dbusmenu_app(session, layout, window)
+	changed = []
+	model = MenuModel(session, window, lambda: changed.append(json_tree(model)))
+	model._update_menus()
+	return session, window, model, changed
+
+
+def emit_layout_updated(session):
+	session.emit(DBUSMENU_BUS, DBUSMENU_PATH, 'com.canonical.dbusmenu', 'LayoutUpdated', 8, 0)
+
+
+def test_layout_update_reaches_on_changed():
+	# An app that fills in its menubar after it registers must reach the panel
+	session, window, model, changed = changing_app(dm(0, SUB, []))
+	assert json_tree(model) == []
+	install_dbusmenu_app(session, LAYOUT, window)
+	emit_layout_updated(session)
+	emit_layout_updated(session)
+	assert changed == []
+	pump(0.5)
+	assert len(changed) == 1
+	assert [n['label'] for n in changed[0]] == ['_File', '_Help']
+
+
+def test_properties_update_reaches_on_changed():
+	_, _, model, changed = changing_app(LAYOUT)
+	model.appmenu.on_actions_changed([(4, {'toggle-state': 0}), (6, {'enabled': True})], [])
+	assert len(changed) == 1
+	assert find(changed[0], '_File', 'Print')['enabled'] is True

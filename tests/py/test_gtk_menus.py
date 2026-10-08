@@ -7,14 +7,12 @@ disabled item, a checkbox and a radio group.
 """
 
 import json
-import time
 
 import dbus
 import pytest
-from gi.repository import GLib
 
 from fakes import (FakeSession, FakeWindow, GTK_APP_MENU_PROPS, GTK_BUS, GTK_PROPS, gtk_item,
-	gtk_describe, install_gtk_app, no_registrar)
+	gtk_describe, install_gtk_app, no_registrar, pump)
 
 from globalmenu.menu_model.menu_model import MenuModel
 from globalmenu.utils.menu import DbusMenu
@@ -65,19 +63,6 @@ def menus_changed(session, *changes):
 	session.emit(GTK_BUS, MENUBAR_PATH, 'org.gtk.Menus', 'Changed', [
 		(dbus.UInt32(g), dbus.UInt32(m), dbus.UInt32(pos), dbus.UInt32(rm), dbus.Array(added, signature='a{sv}'))
 		for g, m, pos, rm, added in changes])
-
-
-def pump(seconds=0.0):
-	"""Run the default main context, where the daemon's idle and timeout
-	sources fire."""
-	ctx = GLib.MainContext.default()
-	end = time.monotonic() + seconds
-	while True:
-		while ctx.pending():
-			ctx.iteration(False)
-		if time.monotonic() >= end:
-			return
-		time.sleep(0.01)
 
 
 def started_groups(session):

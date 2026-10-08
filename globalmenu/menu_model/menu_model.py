@@ -322,7 +322,7 @@ class DbusGtkMenu(object):
 
 class DbusAppMenu(object):
 
-	def __init__(self, session, window):
+	def __init__(self, session, window, on_changed=None):
 		self.actions   = {}
 		self.accels    = {}
 		self.tree      = Tree()
@@ -330,6 +330,8 @@ class DbusAppMenu(object):
 		self.window    = window
 		self._update_timer = 0
 		self.signal_matcher = []
+		# Called after the tree changed without being asked for
+		self.on_changed = on_changed
 		self.interface = self.get_interface()
 		self.top_level_menus = []
 		self.results = None
@@ -419,6 +421,7 @@ class DbusAppMenu(object):
 			self.actions[menu_item.text] = menu_item.action
 
 	def on_actions_changed(self, updated, removed):
+		touched = False
 		for upd in updated:
 			item = self.tree.get_node(int(upd[0]))
 			if item is not None:
@@ -427,7 +430,13 @@ class DbusAppMenu(object):
 					# Just update everything
 					self.add_timer()
 					break
+				touched = True
+		if touched:
+			self._notify()
 
+	def _notify(self):
+		if self.on_changed is not None:
+			self.on_changed()
 
 	def layout_updated(self, revision, parent):
 		self.add_timer()
@@ -442,6 +451,7 @@ class DbusAppMenu(object):
 		self.tree = Tree()
 		self.get_results()
 		self._update_timer = 0
+		self._notify()
 		return False
 
 	def remove_actions_listener(self):
@@ -462,7 +472,7 @@ class MenuModel:
 		self._init_window(session, window, on_changed)
 
 	def _init_window(self, session, window, on_changed):
-		self.appmenu = DbusAppMenu(session, window)
+		self.appmenu = DbusAppMenu(session, window, on_changed)
 		self.gtkmenu = DbusGtkMenu(session, window, on_changed)
 
 	def _update_menus(self):
