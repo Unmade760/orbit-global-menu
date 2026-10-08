@@ -296,4 +296,27 @@ test('NativeMenu: a tree arriving while a menu is open waits for close', () => {
     menu.destroy();
 });
 
+test('NativeMenu: an open menu goes back to the shown state when the tree changes back', () => {
+    const rec = reset();
+    const menu = new NativeMenu(makeProxy(), 'uuid');
+    const bold = {key: 'Format » Bold', toggleType: 'checkmark'};
+    const tree = checked => [{label: 'Format', children: [{...bold, label: 'Bold', toggleState: checked}]}];
+    menu.setItems(tree(false));
+    const item = {
+        _globalMenuKey: bold.key,
+        ornament: Ornament.NONE,
+        setSensitive() {},
+        setOrnament(o) {
+            this.ornament = o;
+        },
+    };
+    rec.buttons[0].menu._getMenuItems = () => [item];
+    rec.buttons[0].menu.isOpen = true;
+    menu.setItems(tree(true));
+    assert.equal(item.ornament, Ornament.CHECK, 'the pending state is applied in place');
+    menu.setItems(tree(false));
+    assert.equal(item.ornament, Ornament.NONE, 'the shown state is back');
+    menu.destroy();
+});
+
 await run();

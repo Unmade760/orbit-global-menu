@@ -66,6 +66,10 @@ export class NativeMenu {
 		// and popup contents for nothing
 		const json = JSON.stringify(nodes);
 		if (json === this._shownJson) {
+			// The open menu may show the state of a pending tree, applied in
+			// place, which this one replaces
+			if (this._pendingNodes)
+				this._applyState(nodes);
 			this._pendingNodes = null;
 			return;
 		}
