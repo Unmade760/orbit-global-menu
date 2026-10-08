@@ -193,6 +193,29 @@ def test_actions_are_described_once_per_group(app):
 	assert session.calls_to('Describe') == []
 
 
+def test_failed_describe_is_asked_again():
+	# A freshly started app may not answer DescribeAll yet. That failure must
+	# not be cached, or Open stays enabled until the next window switch.
+	session = FakeSession()
+	no_registrar(session)
+	install_gtk_app(session, MENUS, ACTIONS)
+	answer = session.handlers[(GTK_BUS, WIN_PATH, 'org.gtk.Actions', 'DescribeAll')]
+	replies = iter([None, answer])
+
+	def flaky():
+		reply = next(replies)
+		if reply is None:
+			raise dbus.exceptions.DBusException('not ready', name='org.freedesktop.DBus.Error.NoReply')
+		return reply()
+	session.on(GTK_BUS, WIN_PATH, 'org.gtk.Actions', 'DescribeAll', flaky)
+
+	model = MenuModel(session, FakeWindow(GTK_PROPS))
+	model._update_menus()
+	model._update_menus()
+	assert len([c for c in session.calls_to('DescribeAll') if c[1] == WIN_PATH]) == 2
+	assert find(json_tree(model), '_File', '_Open')['enabled'] is False
+
+
 def test_item_whose_action_is_missing_is_greyed():
 	# gtkmenutrackeritem.c leaves an item insensitive until its action
 	# exists. A prefix nobody exports over D-Bus says nothing either way.

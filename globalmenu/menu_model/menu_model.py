@@ -232,20 +232,25 @@ class DbusGtkMenu(object):
 		return {'app.': self.app_path, 'win.': self.win_path, 'unity.': self.menubar_path}.get(prefix)
 
 	def _action_group(self, prefix):
-		if prefix not in self.action_groups:
-			self.action_groups[prefix] = self._describe_all(prefix)
-		return self.action_groups[prefix]
-
-	def _describe_all(self, prefix):
+		if prefix in self.action_groups:
+			return self.action_groups[prefix]
 		path = self._actions_path(prefix)
 		if not path:
+			self.action_groups[prefix] = None
 			return None
 		try:
-			obj = self.session.get_object(self.bus_name, path)
-			# a{s(bgav)}: name -> (enabled, parameter type, [state])
-			described = dbus.Interface(obj, dbus_interface='org.gtk.Actions').DescribeAll()
+			group = self._describe_all(path)
 		except dbus.exceptions.DBusException:
+			# A freshly started app may not answer yet. Not cached, so the
+			# next lookup asks again.
 			return None
+		self.action_groups[prefix] = group
+		return group
+
+	def _describe_all(self, path):
+		obj = self.session.get_object(self.bus_name, path)
+		# a{s(bgav)}: name -> (enabled, parameter type, [state])
+		described = dbus.Interface(obj, dbus_interface='org.gtk.Actions').DescribeAll()
 		return {str(name): (desc[0], list(desc[2])) for name, desc in described.items()}
 
 	def _apply_action(self, item):
