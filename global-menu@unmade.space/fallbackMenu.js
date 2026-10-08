@@ -17,7 +17,7 @@ import * as ModalDialog from 'resource:///org/gnome/shell/ui/modalDialog.js';
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';
 import {WindowActions, actionLabel} from './windowActions.js';
-import {sendShortcut} from './keySynth.js';
+import {sendShortcutAfterMenu} from './keySynth.js';
 import {_, N_} from './i18n.js';
 
 // The daemon briefly reports no menus while windows are switching, so wait
@@ -280,8 +280,10 @@ function executeFallbackAction(action) {
 	}
 
 	const accel = ACTION_SHORTCUTS[action];
-	if (accel)
-		return sendShortcut(accel);
+	if (accel) {
+		sendShortcutAfterMenu(accel);
+		return true;
+	}
 
 	return false;
 }

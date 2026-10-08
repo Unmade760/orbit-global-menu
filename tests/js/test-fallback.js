@@ -57,6 +57,11 @@ export class ModalDialog {
 const DIALOG_STUB = 'export class MessageDialogContent { constructor(params) { Object.assign(this, params); } }\n';
 const SHELL_STUB = 'export default {WindowTracker: {get_default: () => ({focus_app: globalThis.gmTest.focusApp})}, AppSystem: {get_default: () => ({lookup_app: () => null})}};\n';
 const CLUTTER_STUB = 'export default {KEY_Escape: 0xff1b};\n';
+const KEY_SYNTH_STUB = `
+export function sendShortcut(accel) { globalThis.gmTest.sent.push('now ' + accel); return true; }
+export function sendShortcutAfterMenu(accel) { globalThis.gmTest.sent.push('after menu ' + accel); }
+export function setDebug() {}
+`;
 
 const decoder = new TextDecoder();
 const readSource = name => decoder.decode(GLib.file_get_contents(`${EXT_DIR}/${name}`)[1]);
@@ -77,12 +82,13 @@ const {FallbackMenu} = await importWithStubs('fallbackMenu.js', {
         'menuBarButton.js': MENU_BAR_BUTTON_STUB,
         'panelBar.js': PANEL_BAR_STUB,
         'windowActions.js': WINDOW_ACTIONS_STUB,
+        'keySynth.js': KEY_SYNTH_STUB,
     },
 });
 const {acceleratorLabel} = await importWithStubs('accelerator.js');
 
 function reset(focusApp = null) {
-    globalThis.gmTest = {buttons: [], added: [], dialogs: [], focusApp, panel: null};
+    globalThis.gmTest = {buttons: [], added: [], dialogs: [], focusApp, panel: null, sent: []};
     return globalThis.gmTest;
 }
 
@@ -178,6 +184,13 @@ test('items with a fixed shortcut carry an accel that has a label', () => {
         assert.ok(acceleratorLabel(spec.accel), `${spec.label}: ${spec.accel} has no label`);
     const windowMenu = specsOf(t.buttons.find(b => b.label === 'Window'));
     assert.equal(windowMenu.find(s => s.label === 'Snap Window Left').accel, '<Super>Left');
+});
+
+test('a keystroke item waits for the menu to release its grab', () => {
+    const t = reset();
+    new FallbackMenu('uuid');
+    specsOf(t.buttons.find(b => b.label === 'Edit')).find(s => s.label === 'Copy').onActivate();
+    assert.deepEqual(t.sent, ['after menu <Ctrl>C']);
 });
 
 test('items that act through an API, not a keystroke, carry no accel', () => {

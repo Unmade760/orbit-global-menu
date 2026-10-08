@@ -29,6 +29,15 @@ function logDebug(msg) {
 // cannot tell them apart.
 const CHORD_GAP_US = 1000;
 
+// When a menu item activates the shell still holds the input grab, and the
+// target window may not have keyboard focus back yet, so synthesizing
+// immediately delivers the keystroke to the shell instead of the app.
+const AFTER_MENU_DELAY_MS = 100;
+
+// Keystrokes waiting for their menu to let go. The extension's disable()
+// removes them.
+const pendingSends = new Set();
+
 /**
  * Parse and synthesize an accelerator. Returns false and logs a warning if
  * the accelerator is unparseable, true if synthesis was dispatched.
@@ -49,6 +58,27 @@ export function sendShortcut(accel) {
 		console.error(`[global-menu-keysynth] Synthesis failed for "${accel}": ${e}`);
 	}
 	return true;
+}
+
+/**
+ * sendShortcut() for a menu item's activate handler: the keystroke goes
+ * out once the menu has released its grab.
+ *
+ * @param {string} accel
+ */
+export function sendShortcutAfterMenu(accel) {
+	const id = GLib.timeout_add(GLib.PRIORITY_DEFAULT, AFTER_MENU_DELAY_MS, () => {
+		pendingSends.delete(id);
+		sendShortcut(accel);
+		return GLib.SOURCE_REMOVE;
+	});
+	pendingSends.add(id);
+}
+
+export function cancelPendingShortcuts() {
+	for (const id of pendingSends)
+		GLib.source_remove(id);
+	pendingSends.clear();
 }
 
 function synthesize(chords) {

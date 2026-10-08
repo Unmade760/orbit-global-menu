@@ -26,7 +26,12 @@ export const EXT_DIR = GLib.build_filenamev([
 ]);
 
 // A test that needs to see what the extension would have sent passes its own.
-const KEY_SYNTH_STUB = 'export function sendShortcut() { return true; }\nexport function setDebug() {}\n';
+const KEY_SYNTH_STUB = `
+export function sendShortcut() { return true; }
+export function sendShortcutAfterMenu() {}
+export function cancelPendingShortcuts() {}
+export function setDebug() {}
+`;
 
 const decoder = new TextDecoder();
 const encoder = new TextEncoder();

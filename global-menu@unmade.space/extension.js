@@ -483,6 +483,7 @@ export default class GlobalMenuExtension extends Extension {
 			this._settings.disconnect(id);
 		this._settingsHandlerIds = [];
 		cancelPendingActions();
+		KeySynth.cancelPendingShortcuts();
 		// Reverse order of enable(). The appearance manager goes while the
 		// buttons are still alive: styling is undone per button, and a blur
 		// effect has to go back to Blur My Shell rather than vanish with the
