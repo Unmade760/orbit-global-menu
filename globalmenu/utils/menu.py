@@ -225,7 +225,8 @@ class DbusMenu:
 			return
 		try:
 			proxy = self.session.get_object(MyService.BUS_NAME, MyService.BUS_PATH)
-			proxy.EchoSendMenuTree(tree_json)
+			# The extension drops a tree whose request is not its latest
+			proxy.EchoSendMenuTree(tree_json, self.window.get_utf8_prop('_REQUEST') or '')
 		except dbus.exceptions.DBusException:
 			# The service may not be up yet (startup race); the tree is
 			# re-sent on every window switch anyway

@@ -383,15 +383,34 @@ def daemon_for(session):
 	trees it sends."""
 	sent = []
 	session.on(MyService.BUS_NAME, MyService.BUS_PATH, None, 'EchoSendMenuTree',
-		lambda tree: sent.append(json.loads(tree)))
+		lambda tree, request: sent.append(json.loads(tree)))
 	menu = DbusMenu.__new__(DbusMenu)
 	menu.session = session
+	menu.window = FakeWindow(GTK_PROPS)
 	menu._push_timer = 0
 	menu._sent_json = None
 	menu._menu_model = MenuModel(session, FakeWindow(GTK_PROPS), menu._on_menu_changed)
 	menu._menu_model._update_menus()
 	menu._send_tree()
 	return menu, sent
+
+
+def test_a_tree_carries_the_request_of_the_window_it_was_built_for():
+	session = FakeSession()
+	no_registrar(session)
+	install_gtk_app(session, MENUS, ACTIONS)
+	requests = []
+	session.on(MyService.BUS_NAME, MyService.BUS_PATH, None, 'EchoSendMenuTree',
+		lambda tree, request: requests.append(request))
+	menu = DbusMenu.__new__(DbusMenu)
+	menu.session = session
+	menu._push_timer = 0
+	menu._sent_json = None
+	menu.window = FakeWindow(dict(GTK_PROPS, _REQUEST='7'))
+	menu._menu_model = MenuModel(session, menu.window, menu._on_menu_changed)
+	menu._menu_model._update_menus()
+	menu._send_tree()
+	assert requests == ['7']
 
 
 def test_changes_are_pushed_once_and_only_when_the_tree_differs():

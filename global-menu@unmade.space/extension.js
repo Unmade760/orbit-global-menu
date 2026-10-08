@@ -37,23 +37,17 @@ class MenuTreeCache {
 		this._size = size;
 		this._lru = [];
 		this._entries = new Map();
-		this._lastQueried = '';
 	}
 
 	get(appId) {
-		this._lastQueried = appId;
 		return this._entries.get(appId);
 	}
 
 	/**
-	 * Store a tree that arrived from the daemon. It answers the most
-	 * recent get(), since a window switch always queries the cache before it
-	 * asks the daemon.
-	 *
+	 * @param {string} key - the app id the tree was built for
 	 * @param {object[]} items - the tree's top-level nodes
 	 */
-	storeForLastQuery(items) {
-		const key = this._lastQueried;
+	store(key, items) {
 		if (this._entries.has(key))
 			this._lru.splice(this._lru.indexOf(key), 1);
 		this._lru.push(key);
@@ -73,14 +67,22 @@ class MenuBar {
 		this._settings = settings;
 		this._shortcutMapping = null;
 		this._cache = new MenuTreeCache();
+		// Each WindowSwitched carries a new request id and the daemon sends
+		// it back with every tree, so a tree built for a window that has
+		// since lost focus is recognised. A daemon too old to send one
+		// passes undefined.
+		this._request = 0;
+		this._requestApp = null;
 
 		this._proxy = new DaemonProxy({
-			onMenuTree: items => {
+			onMenuTree: (items, request) => {
+				if (request !== undefined && request !== String(this._request))
+					return;
 				// A window without a menubar gets an empty tree. Cached under
 				// the app id, it would stand in for the app's own menu the
 				// next time the app is focused.
 				if (items.length > 0)
-					this._cache.storeForLastQuery(items);
+					this._cache.store(this._requestApp, items);
 				this.setMenuTree(items);
 			},
 			// A daemon that started after enable(), or restarted after a
@@ -180,7 +182,9 @@ class MenuBar {
 			this._showNothing();
 		}
 
-		this._proxy.WindowSwitched(this._windowData(win));
+		this._request++;
+		this._requestApp = appId;
+		this._proxy.WindowSwitched({...this._windowData(win), request: String(this._request)});
 	}
 
 	destroy() {
@@ -293,6 +297,9 @@ const ifaceXml = `
 	  <arg name="win_data" type="a{ss}" direction="in"/>
 	</method>
 
+	<signal name="MenuTreeRequest">
+	  <arg name="request" type="s"/>
+	</signal>
 	<signal name="SendMenuTree">
 	  <arg name="tree_json" type="s"/>
 	</signal>
@@ -333,6 +340,9 @@ class DaemonProxy {
 		this._signalIds = [];
 		this._ownerChangedId = 0;
 		this._currentWindow = null;
+		// The request id announced for the next tree. A daemon from before
+		// request ids never announces one.
+		this._treeRequest = undefined;
 		this._cancellable = new Gio.Cancellable();
 		this._proxy = new MenuProxy(Gio.DBus.session, BUS_NAME, BUS_PATH,
 			(proxy, error) => this._onProxyReady(error), this._cancellable);
@@ -387,6 +397,9 @@ class DaemonProxy {
 		}
 
 		this._signalIds.push(
+			this._proxy.connectSignal('MenuTreeRequest', (proxy, nameOwner, [request]) => {
+				this._treeRequest = request;
+			}),
 			this._proxy.connectSignal('SendMenuTree', this._onSendMenuTree.bind(this)),
 			this._proxy.connectSignal('RequestWindowActionsSignal', this._onRequestWindowActions.bind(this)),
 			this._proxy.connectSignal('ActivateWindowActionSignal', this._onActivateWindowAction.bind(this))
@@ -409,7 +422,9 @@ class DaemonProxy {
 		} catch (e) {
 			console.warn(`[global-menu] daemon sent an unreadable menu tree: ${e.message}`);
 		}
-		this._onMenuTree(items);
+		const request = this._treeRequest;
+		this._treeRequest = undefined;
+		this._onMenuTree(items, request);
 	}
 
 	_onRequestWindowActions() {

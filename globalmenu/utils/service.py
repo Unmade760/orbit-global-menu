@@ -77,10 +77,18 @@ class MyService(dbus.service.Object):
 	def EchoSendTopLevelMenus(self, top_level_menus):
 		self.SendTopLevelMenus(top_level_menus)
 
-	# Full menu tree as JSON, rendered by the shell extension
-	@dbus.service.method(BUS_NAME, in_signature='s')
-	def EchoSendMenuTree(self, tree_json):
+	# Full menu tree as JSON, rendered by the shell extension. It is
+	# preceded by the request id of the WindowSwitched it describes, in a
+	# signal of its own so that SendMenuTree keeps the type every extension
+	# version declares.
+	@dbus.service.method(BUS_NAME, in_signature='ss')
+	def EchoSendMenuTree(self, tree_json, request):
+		self.MenuTreeRequest(request)
 		self.SendMenuTree(tree_json)
+
+	@dbus.service.signal(BUS_NAME, signature='s')
+	def MenuTreeRequest(self, request):
+		pass
 
 	@dbus.service.signal(BUS_NAME, signature='s')
 	def SendMenuTree(self, tree_json):

@@ -18,6 +18,7 @@ const DAEMON_XML = `
 <node>
   <interface name="space.unmade.GlobalMenu">
     <method name="WindowSwitched"><arg name="win_data" type="a{ss}" direction="in"/></method>
+    <signal name="MenuTreeRequest"><arg name="request" type="s"/></signal>
     <signal name="SendMenuTree"><arg name="tree_json" type="s"/></signal>
     <method name="ActivateMenuItem"><arg name="item_path" type="s" direction="in"/></method>
     <method name="RequestMenuTree"/>
@@ -242,7 +243,10 @@ class FakeDaemon {
         this._object = null;
     }
 
-    sendTree(tree) {
+    // Without `request`, what a daemon from before request ids sends
+    sendTree(tree, request) {
+        if (request !== undefined)
+            this._object.emit_signal('MenuTreeRequest', new GLib.Variant('(s)', [request]));
         this._object.emit_signal('SendMenuTree', new GLib.Variant('(s)', [JSON.stringify(tree)]));
     }
 
@@ -590,7 +594,8 @@ test('a parent window of another app is not used', async () => {
     await session(async (ext, daemon) => {
         await connected(daemon, main);
         await focusAndReport(daemon, makeWindow(portal, {title: 'Open', transientFor: main}));
-        assert.deepEqual(daemon.lastWindowData(), {xid: '0', appName: 'org.example.Portal'});
+        const {request: _request, ...data} = daemon.lastWindowData();
+        assert.deepEqual(data, {xid: '0', appName: 'org.example.Portal'});
     });
 });
 
@@ -605,6 +610,44 @@ test('an empty tree is not cached in place of the app menu', async () => {
         focus(other);
         daemon.sendTree([]);
         await until(() => trees().length === 3, 'the empty tree');
+        focus(main);
+        // Straight from the cache, before the daemon answers
+        assert.equal(trees().at(-1), 'native.setItems File');
+    });
+});
+
+test('a tree answering a superseded window switch is neither shown nor cached', async () => {
+    reset();
+    const {main} = focusedMainWindow();
+    const viewer = makeWindow(makeApp('org.example.Viewer'), {title: 'Photo'});
+    await session(async (ext, daemon) => {
+        await connected(daemon, main);
+        const editorRequest = daemon.lastWindowData().request;
+        await focusAndReport(daemon, viewer);
+        const viewerRequest = daemon.lastWindowData().request;
+
+        daemon.sendTree(TREE, editorRequest);
+        daemon.sendTree([], viewerRequest);
+        await until(() => trees().at(-1) === 'native.setItems ', 'the viewer tree');
+        assert.ok(!trees().includes('native.setItems File'), 'the editor tree is not shown');
+
+        await focusAndReport(daemon, main);
+        const before = trees().length;
+        await focusAndReport(daemon, viewer);
+        assert.ok(!trees().slice(before).includes('native.setItems File'),
+            'the editor tree is not cached for the viewer');
+    });
+});
+
+test('a tree answering the latest window switch is shown and cached for its app', async () => {
+    reset();
+    const {main} = focusedMainWindow();
+    const viewer = makeWindow(makeApp('org.example.Viewer'), {title: 'Photo'});
+    await session(async (ext, daemon) => {
+        await connected(daemon, main);
+        daemon.sendTree(TREE, daemon.lastWindowData().request);
+        await until(() => trees().at(-1) === 'native.setItems File', 'the editor tree');
+        await focusAndReport(daemon, viewer);
         focus(main);
         // Straight from the cache, before the daemon answers
         assert.equal(trees().at(-1), 'native.setItems File');
