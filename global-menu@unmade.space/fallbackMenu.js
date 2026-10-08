@@ -319,8 +319,17 @@ function actionSpec(label, action) {
 	return {label: _(label), accel: ACTION_SHORTCUTS[action], onActivate: () => executeFallbackAction(action)};
 }
 
+// An item with a `requires` is greyed out while that SystemActions property is
+// false, since activating it would only throw.
 function toSpecs(items) {
-	return items.map(item => item.separator ? {separator: true} : actionSpec(item.label, item.action));
+	return items.map(item => {
+		if (item.separator)
+			return {separator: true};
+		const spec = actionSpec(item.label, item.action);
+		if (item.requires && !SystemActions.getDefault()[item.requires])
+			spec.enabled = false;
+		return spec;
+	});
 }
 
 // What the shell can do for any focused app, under the app's name. The app's
@@ -404,6 +413,8 @@ const MENU_DATA = [
 	},
 	{
 		label: N_('System'),
+		// Which of its items are available is read on every open
+		live: true,
 		items: [
 			{label: N_('Show Applications'), action: 'show-applications'},
 			{label: N_('Show Notifications'), action: 'show-notifications'},
@@ -413,12 +424,12 @@ const MENU_DATA = [
 			{separator: true},
 			{label: N_('Empty Trash…'), action: 'empty-trash'},
 			{separator: true},
-			{label: N_('Lock Screen'), action: 'lock-screen'},
-			{label: N_('Suspend'), action: 'suspend'},
+			{label: N_('Lock Screen'), action: 'lock-screen', requires: 'canLockScreen'},
+			{label: N_('Suspend'), action: 'suspend', requires: 'canSuspend'},
 			{label: N_('Hibernate'), action: 'hibernate'},
 			{separator: true},
-			{label: N_('Log Out'), action: 'log-out'},
-			{label: N_('Power Off / Restart'), action: 'power-off'},
+			{label: N_('Log Out'), action: 'log-out', requires: 'canLogout'},
+			{label: N_('Power Off / Restart'), action: 'power-off', requires: 'canPowerOff'},
 		],
 	},
 ];
@@ -439,8 +450,12 @@ export class FallbackMenu {
 			const btn = new MenuBarButton(_(entry.label), entry.appName ? {appName: true} : {});
 			if (entry.appName)
 				btn.setItems(() => appMenuSpecs(this._appMenuSource));
+			else if (entry.windowActions)
+				btn.setItems(windowMenuSpecs);
+			else if (entry.live)
+				btn.setItems(() => toSpecs(entry.items));
 			else
-				btn.setItems(entry.windowActions ? windowMenuSpecs : toSpecs(entry.items));
+				btn.setItems(toSpecs(entry.items));
 			// MENU_DATA[0] is the app name, so the index doubles as the rank
 			addBarButton(`${uuid}-fallback-${index}`, btn, index);
 			this._buttons.push(btn);

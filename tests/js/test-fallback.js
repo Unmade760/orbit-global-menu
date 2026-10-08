@@ -33,7 +33,14 @@ const WINDOW_ACTIONS_STUB = `
 export class WindowActions { getActions() { return []; } doAction() {} }
 export const actionLabel = action => action;
 `;
-const SYSTEM_ACTIONS_STUB = 'export const getDefault = () => ({});\n';
+const SYSTEM_ACTIONS_STUB = `
+export const getDefault = () => ({
+    get canLockScreen() { return globalThis.gmTest.can.lock; },
+    get canSuspend() { return globalThis.gmTest.can.suspend; },
+    get canLogout() { return globalThis.gmTest.can.logout; },
+    get canPowerOff() { return globalThis.gmTest.can.powerOff; },
+});
+`;
 const SCREENSHOT_STUB = 'export function showScreenshotUI() { globalThis.gmTest.screenshotUI++; }\n';
 const MODAL_DIALOG_STUB = `
 export class ModalDialog {
@@ -90,7 +97,8 @@ const {FallbackMenu} = await importWithStubs('fallbackMenu.js', {
 const {acceleratorLabel} = await importWithStubs('accelerator.js');
 
 function reset(focusApp = null) {
-    globalThis.gmTest = {buttons: [], added: [], dialogs: [], focusApp, panel: null, sent: [], screenshotUI: 0};
+    globalThis.gmTest = {buttons: [], added: [], dialogs: [], focusApp, panel: null, sent: [], screenshotUI: 0,
+        can: {lock: true, suspend: true, logout: true, powerOff: true}};
     return globalThis.gmTest;
 }
 
@@ -221,6 +229,27 @@ test('fallbackMenu.js makes no synchronous file call', () => {
 });
 
 const systemItem = (t, label) => specsOf(t.buttons.find(b => b.label === 'System')).find(s => s.label === label);
+
+test('System items the shell reports unavailable are greyed out, and only those', () => {
+    const t = reset();
+    new FallbackMenu('uuid');
+    const enabled = label => systemItem(t, label).enabled !== false;
+    assert.ok(enabled('Log Out') && enabled('Lock Screen') && enabled('Suspend') && enabled('Power Off / Restart'));
+    t.can.logout = false;
+    t.can.suspend = false;
+    assert.ok(!enabled('Log Out'));
+    assert.ok(!enabled('Suspend'));
+    assert.ok(enabled('Lock Screen'));
+    assert.ok(enabled('Power Off / Restart'));
+    assert.ok(enabled('Hibernate'));
+    assert.ok(enabled('Settings'));
+    t.can.lock = false;
+    t.can.powerOff = false;
+    assert.ok(!enabled('Lock Screen'));
+    assert.ok(!enabled('Power Off / Restart'));
+    t.can.logout = true;
+    assert.ok(enabled('Log Out'), 'availability is read again on each open');
+});
 
 test('Empty Trash asks first and does not touch the trash until it is confirmed', () => {
     const t = reset();
