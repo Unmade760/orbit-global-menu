@@ -422,6 +422,15 @@ export class FallbackMenu {
 		this._appButton?.setLabel(app?.get_name() ?? 'Desktop');
 	}
 
+	/**
+	 * Fill the app-name menu with the app's own GTK app menu.
+	 *
+	 * @param {Function|null} source - returns the menu's specs, or null to empty it
+	 */
+	setAppItems(source) {
+		this._appButton?.setItems(source ?? []);
+	}
+
 	setNativeMenusPresent(present) {
 		this._cancelPendingShow();
 		if (present) {

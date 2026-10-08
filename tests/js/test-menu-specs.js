@@ -197,6 +197,23 @@ test('NativeMenu: a top-level app menu node gets no bar button', () => {
     assert.deepEqual(rec.added, [{id: 'uuid-native-0', label: 'File', position: 1}]);
 });
 
+test('NativeMenu: the app menu node goes to the app-name button, and clears with the tree', () => {
+    reset();
+    const sources = [];
+    const native = new NativeMenu(makeProxy(), 'uuid', source => sources.push(source));
+    native.setItems([
+        {label: 'Application', key: 'app', appMenu: true, children: [{label: 'About', key: 'app  »  About'}]},
+        {label: '_File', key: 'File', children: [{label: '_New', key: 'File  »  New'}]},
+    ]);
+    const source = sources.at(-1);
+    assert.equal(typeof source, 'function');
+    assert.equal(native.appMenuSource(), source);
+    assert.deepEqual(source().map(s => s.label), ['About']);
+    native.setItems([{label: '_File', key: 'File', children: [{label: '_New', key: 'File  »  New'}]}]);
+    assert.equal(sources.at(-1), null);
+    assert.equal(native.appMenuSource(), null);
+});
+
 test('NativeMenu: mnemonics are stripped the way GTK and dbusmenu draw them', () => {
     const cases = [
         ['文件(_F)', '文件'],

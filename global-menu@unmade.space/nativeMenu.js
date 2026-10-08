@@ -28,9 +28,17 @@ function toOrnament(toggleType, toggleState) {
 }
 
 export class NativeMenu {
-	constructor(proxy, uuid) {
+	/**
+	 * @param {object} proxy - the daemon's D-Bus proxy
+	 * @param {string} uuid - the extension's uuid, for panel button names
+	 * @param {Function} onAppMenu - called with a spec source for the GTK app
+	 *   menu, or null when the app has none
+	 */
+	constructor(proxy, uuid, onAppMenu) {
 		this._proxy = proxy;
 		this._uuid = uuid;
+		this._onAppMenu = onAppMenu;
+		this._appMenuSource = null;
 		this._buttons = [];
 		this._shownJson = null;
 		this._pendingNodes = null;
@@ -64,11 +72,17 @@ export class NativeMenu {
 		this._buttons.forEach(btn => btn.menu.close());
 	}
 
+	/** The GTK app menu's spec source, or null when the app has none. */
+	appMenuSource() {
+		return this._appMenuSource;
+	}
+
 	clear() {
 		this._shownJson = null;
 		this._pendingNodes = null;
 		this._buttons.forEach(btn => btn.destroy());
 		this._buttons = [];
+		this._setAppMenu(null);
 	}
 
 	destroy() {
@@ -100,7 +114,16 @@ export class NativeMenu {
 			addBarButton(`${this._uuid}-native-${index}`, btn, 1 + index);
 			this._buttons.push(btn);
 		});
+		const appNode = nodes.find(n => n.appMenu);
+		this._setAppMenu(appNode ? () => this._toSpecs(appNode.children ?? []) : null);
 		this._shownJson = json;
+	}
+
+	_setAppMenu(source) {
+		if (source === this._appMenuSource)
+			return;
+		this._appMenuSource = source;
+		this._onAppMenu?.(source);
 	}
 
 	_toSpecs(nodes) {

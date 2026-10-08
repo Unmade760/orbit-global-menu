@@ -87,7 +87,7 @@ class MenuBar {
 			// crash, has not been told which window is focused
 			onDaemonAppeared: () => this.refresh(),
 		});
-		this._native = new NativeMenu(this._proxy, uuid);
+		this._native = new NativeMenu(this._proxy, uuid, source => this._fallback?.setAppItems(source));
 		this._shortcuts = new ShortcutMenu(uuid);
 
 		this._shellHandlers = [
@@ -106,6 +106,7 @@ class MenuBar {
 
 	setFallback(fallbackMenu) {
 		this._fallback = fallbackMenu;
+		this._fallback?.setAppItems(this._native.appMenuSource());
 		this._fallback?.setNativeMenusPresent(this._native.hasMenus() || this._shortcuts.hasMenus());
 	}
 
