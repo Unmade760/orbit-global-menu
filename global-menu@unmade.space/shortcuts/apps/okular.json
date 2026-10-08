@@ -11,55 +11,384 @@
     {
       "label": "File",
       "items": [
-        {"label": "Open Document", "shortcut": "<Ctrl>O"},
-        {"label": "Save", "shortcut": "<Ctrl>S"},
-        {"label": "Save As", "shortcut": "<Ctrl><Shift>S"},
-        {"label": "Print", "shortcut": "<Ctrl>P"},
-        {"label": "Print Preview", "shortcut": "<Ctrl><Shift>P"},
-        {"label": "Close Document", "shortcut": "<Ctrl>W"},
-        {"label": "Quit", "shortcut": "<Ctrl>Q"}
-      ]
-    },
-    {
-      "label": "Edit",
-      "items": [
-        {"label": "Undo", "shortcut": "<Ctrl>Z"},
-        {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"},
-        {"label": "Cut", "shortcut": "<Ctrl>X"},
-        {"label": "Copy", "shortcut": "<Ctrl>C"},
-        {"label": "Copy Without Line Breaks", "shortcut": "<Ctrl><Shift>C"},
-        {"label": "Paste", "shortcut": "<Ctrl>V"},
-        {"label": "Select All", "shortcut": "<Ctrl>A"},
-        {"label": "Find", "shortcut": "<Ctrl>F"},
-        {"label": "Configure Okular / Preferences", "shortcut": "<Ctrl><Shift>,"},
-        {"label": "Configure Shortcuts", "shortcut": "<Ctrl><Alt>,"}
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Open Recent"
+        },
+        {
+          "label": "Import PostScript as PDF…"
+        },
+        {
+          "label": "Undo close tab",
+          "shortcut": "<Ctrl><Shift>T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Reload",
+          "shortcut": "F5"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "label": "Print Preview"
+        },
+        {
+          "label": "Open Containing Folder"
+        },
+        {
+          "label": "Properties",
+          "shortcut": "<Alt>Return"
+        },
+        {
+          "label": "Embedded Files"
+        },
+        {
+          "label": "Export As"
+        },
+        {
+          "label": "Share"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
       ]
     },
     {
       "label": "View",
       "items": [
-        {"label": "Show/Hide Annotation Toolbar (Review)", "shortcut": "F6"},
-        {"label": "Show/Hide Left Panel (Sidebar)", "shortcut": "F7"},
-        {"label": "Full Screen Mode", "shortcut": "<Ctrl><Shift>F"},
-        {"label": "Presentation Mode", "shortcut": "<Ctrl><Shift>P"},
-        {"label": "Toggle Menubar", "shortcut": "<Ctrl>M"},
-        {"label": "Zoom In", "shortcut": "<Ctrl>+"},
-        {"label": "Zoom Out", "shortcut": "<Ctrl>-"},
-        {"label": "Reload / Refresh", "shortcut": "F5"}
+        {
+          "label": "Full Screen Mode",
+          "shortcut": "<Ctrl><Shift>F"
+        },
+        {
+          "label": "Presentation",
+          "shortcut": "<Ctrl><Shift>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Zoom Out",
+          "shortcut": "<Ctrl>minus"
+        },
+        {
+          "label": "Zoom In",
+          "shortcut": "<Ctrl>plus"
+        },
+        {
+          "label": "Zoom to 100%",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Fit Width"
+        },
+        {
+          "label": "Fit Page"
+        },
+        {
+          "label": "Auto Fit"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "View Mode"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Orientation"
+        },
+        {
+          "label": "Trim View"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Show Forms"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl><Shift>Z"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Copy Text (Without line breaks)",
+          "shortcut": "<Ctrl><Shift>C"
+        },
+        {
+          "label": "Paste Annotation",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "label": "Select All Text on Current Page"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find…",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "F3"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Shift>F3"
+        }
       ]
     },
     {
       "label": "Go",
       "items": [
-        {"label": "Find Next", "shortcut": "F3"},
-        {"label": "Find Previous", "shortcut": "<Shift>F3"},
-        {"label": "Go to Page", "shortcut": "<Ctrl>G"},
-        {"label": "Beginning of Document", "shortcut": "<Ctrl>Home"},
-        {"label": "End of Document", "shortcut": "<Ctrl>End"},
-        {"label": "History Back", "shortcut": "<Alt>Left"},
-        {"label": "History Forward", "shortcut": "<Alt>Right"},
-        {"label": "Next Tab", "shortcut": "<Ctrl>."},
-        {"label": "Previous Tab", "shortcut": "<Ctrl>,"}
+        {
+          "label": "Previous Page"
+        },
+        {
+          "label": "Next Page"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Beginning of the document",
+          "shortcut": "<Ctrl>Home"
+        },
+        {
+          "label": "End of the document",
+          "shortcut": "<Ctrl>End"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Back",
+          "shortcut": "<Shift><Alt>Left"
+        },
+        {
+          "label": "Forward",
+          "shortcut": "<Shift><Alt>Right"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Go to Page…",
+          "shortcut": "<Ctrl>G"
+        }
+      ]
+    },
+    {
+      "label": "Bookmarks",
+      "items": [
+        {
+          "label": "Add Bookmark",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Rename Bookmark"
+        },
+        {
+          "label": "Previous Bookmark"
+        },
+        {
+          "label": "Next Bookmark"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {
+          "label": "Browse",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Zoom",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Area Selection",
+          "shortcut": "<Ctrl>3"
+        },
+        {
+          "label": "Text Selection",
+          "shortcut": "<Ctrl>4"
+        },
+        {
+          "label": "Table Selection",
+          "shortcut": "<Ctrl>5"
+        },
+        {
+          "label": "Magnifier",
+          "shortcut": "<Ctrl>6"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Annotations",
+          "shortcut": "F6"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Digitally Sign…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Speak Whole Document"
+        },
+        {
+          "label": "Speak From Current Page"
+        },
+        {
+          "label": "Speak Current Page"
+        },
+        {
+          "label": "Stop Speaking"
+        },
+        {
+          "label": "Pause/Resume Speaking"
+        }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "label": "Show Menubar",
+          "shortcut": "<Ctrl>M"
+        },
+        {
+          "label": "Toolbars Shown"
+        },
+        {
+          "label": "Color Scheme"
+        },
+        {
+          "label": "Show Sidebar",
+          "shortcut": "F7"
+        },
+        {
+          "label": "Show Page Bar"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Configure Language…"
+        },
+        {
+          "label": "Configure Keyboard Shortcuts…",
+          "shortcut": "<Ctrl><Alt>comma"
+        },
+        {
+          "label": "Configure Toolbars…"
+        },
+        {
+          "label": "Configure Okular…",
+          "shortcut": "<Ctrl><Shift>comma"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Okular Handbook",
+          "shortcut": "F1"
+        },
+        {
+          "label": "What's This?",
+          "shortcut": "<Shift>F1"
+        },
+        {
+          "label": "Find Action…",
+          "shortcut": "<Ctrl><Alt>I"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Report Bug…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Donate"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "About Backend"
+        },
+        {
+          "label": "About Okular"
+        },
+        {
+          "label": "About KDE"
+        }
       ]
     }
   ]

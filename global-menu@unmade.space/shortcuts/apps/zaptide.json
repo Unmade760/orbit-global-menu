@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "app": "zaptide",
+  "name": "ZapTide",
+  "identifiers": [
+    "dev.luminusos.ZapTide.desktop",
+    "dev.luminusos.ZapTide",
+    "zaptide",
+    "ZapTide"
+  ],
+  "menus": [
+    {
+      "label": "Chat List",
+      "items": [
+        {
+          "label": "Previous chat",
+          "shortcut": "Up"
+        },
+        {
+          "label": "Next chat",
+          "shortcut": "Down"
+        },
+        {
+          "label": "Open chat",
+          "shortcut": "Return"
+        }
+      ]
+    },
+    {
+      "label": "Composer",
+      "items": [
+        {
+          "label": "Send message",
+          "shortcut": "Return"
+        },
+        {
+          "label": "New line",
+          "shortcut": "<Shift>Return"
+        }
+      ]
+    },
+    {
+      "label": "Messages",
+      "items": [
+        {
+          "label": "Open message menu",
+          "shortcut": "<Shift>F10"
+        },
+        {
+          "label": "Copy selected text",
+          "shortcut": "<Ctrl>C"
+        }
+      ]
+    }
+  ]
+}

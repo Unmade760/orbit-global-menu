@@ -1,0 +1,842 @@
+{
+ "format": 1,
+ "app": "okular",
+ "repos": {
+  "okular": {
+   "url": "https://invent.kde.org/graphics/okular.git",
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4"
+  },
+  "kconfig": {
+   "url": "https://invent.kde.org/frameworks/kconfig.git",
+   "commit": "975405122decec19e7952a304cd7c19d60f59e62"
+  },
+  "kxmlgui": {
+   "url": "https://invent.kde.org/frameworks/kxmlgui.git",
+   "commit": "226848f014f9c7181dda9f77f2abc487ff0abd8c"
+  }
+ },
+ "items": [
+  {
+   "path": [
+    "File",
+    "Open\u2026"
+   ],
+   "shortcut": "<Ctrl>O",
+   "repo": "okular",
+   "file": "shell/shell.cpp",
+   "line": 561,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kstandardaction",
+    "source_label": "Open\u2026",
+    "source_action": "file_open",
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "File",
+    "Undo close tab"
+   ],
+   "shortcut": "<Ctrl><Shift>T",
+   "repo": "okular",
+   "file": "shell/shell.cpp",
+   "line": 612,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "qt-shortcut",
+    "source_label": "Undo close tab",
+    "source_action": "undo-close-tab",
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "File",
+    "Save"
+   ],
+   "shortcut": "<Ctrl>S",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 8,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Save",
+    "source_action": "file_save",
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "File",
+    "Save As\u2026"
+   ],
+   "shortcut": "<Ctrl><Shift>S",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 9,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Save As\u2026",
+    "source_action": "file_save_as",
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "File",
+    "Reload"
+   ],
+   "shortcut": "F5",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 1521,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Reload",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "File",
+    "Print\u2026"
+   ],
+   "shortcut": "<Ctrl>P",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 11,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Print\u2026",
+    "source_action": "file_print",
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "File",
+    "Properties"
+   ],
+   "shortcut": "<Alt>Return",
+   "repo": "okular",
+   "file": "part/part.cpp",
+   "line": 752,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "qt-shortcut",
+    "source_label": "Properties",
+    "source_action": "properties",
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "File",
+    "Close"
+   ],
+   "shortcut": "<Ctrl>W",
+   "repo": "okular",
+   "file": "shell/shell.cpp",
+   "line": 571,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kstandardaction",
+    "source_label": "Close",
+    "source_action": "file_close",
+    "label_score": 1.0,
+    "candidates": 1
+   }
+  },
+  {
+   "path": [
+    "File",
+    "Quit"
+   ],
+   "shortcut": "<Ctrl>Q",
+   "repo": "okular",
+   "file": "shell/shell.cpp",
+   "line": 573,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kstandardaction",
+    "source_label": "Quit",
+    "source_action": "file_quit",
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "View",
+    "Full Screen Mode"
+   ],
+   "shortcut": "<Ctrl><Shift>F",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 1781,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Full Screen Mode",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "View",
+    "Presentation"
+   ],
+   "shortcut": "<Ctrl><Shift>P",
+   "repo": "okular",
+   "file": "part/part.cpp",
+   "line": 922,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "qt-shortcut",
+    "source_label": "Presentation",
+    "source_action": "presentation",
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "View",
+    "Zoom Out"
+   ],
+   "shortcut": "<Ctrl>minus",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 37,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Zoom Out",
+    "source_action": "view_zoom_out",
+    "label_score": 1.0,
+    "candidates": 4
+   }
+  },
+  {
+   "path": [
+    "View",
+    "Zoom In"
+   ],
+   "shortcut": "<Ctrl>plus",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 38,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Zoom In",
+    "source_action": "view_zoom_in",
+    "label_score": 1.0,
+    "candidates": 4
+   }
+  },
+  {
+   "path": [
+    "View",
+    "Zoom to 100%"
+   ],
+   "shortcut": "<Ctrl>0",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 39,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "chord-only",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Zoom to Actual Size",
+    "source_action": "view_actual_size",
+    "label_score": 0.25,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "Edit",
+    "Undo"
+   ],
+   "shortcut": "<Ctrl>Z",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 20,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Undo",
+    "source_action": "edit_undo",
+    "label_score": 1.0,
+    "candidates": 14
+   }
+  },
+  {
+   "path": [
+    "Edit",
+    "Redo"
+   ],
+   "shortcut": "<Ctrl><Shift>Z",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 21,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Redo",
+    "source_action": "edit_redo",
+    "label_score": 1.0,
+    "candidates": 14
+   }
+  },
+  {
+   "path": [
+    "Edit",
+    "Copy"
+   ],
+   "shortcut": "<Ctrl>C",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 23,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Copy",
+    "source_action": "edit_copy",
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "Edit",
+    "Copy Text (Without line breaks)"
+   ],
+   "shortcut": "<Ctrl><Shift>C",
+   "repo": "okular",
+   "file": "part/part.cpp",
+   "line": 844,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "qt-shortcut",
+    "source_label": "Copy Text (Without line breaks)",
+    "source_action": "edit_copy_without_line_breaks",
+    "label_score": 1.0,
+    "candidates": 1
+   }
+  },
+  {
+   "path": [
+    "Edit",
+    "Paste Annotation"
+   ],
+   "shortcut": "<Ctrl>V",
+   "repo": "okular",
+   "file": "part/part.cpp",
+   "line": 837,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "qt-shortcut",
+    "source_label": "Paste Annotation",
+    "source_action": "annotation_paste",
+    "label_score": 1.0,
+    "candidates": 1
+   }
+  },
+  {
+   "path": [
+    "Edit",
+    "Select All"
+   ],
+   "shortcut": "<Ctrl>A",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 27,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Select All",
+    "source_action": "edit_select_all",
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "Edit",
+    "Find\u2026"
+   ],
+   "shortcut": "<Ctrl>F",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 30,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Find\u2026",
+    "source_action": "edit_find",
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "Edit",
+    "Find Next"
+   ],
+   "shortcut": "F3",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 31,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Find Next",
+    "source_action": "edit_find_next",
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "Edit",
+    "Find Previous"
+   ],
+   "shortcut": "<Shift>F3",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 32,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Find Previous",
+    "source_action": "edit_find_prev",
+    "label_score": 1.0,
+    "candidates": 4
+   }
+  },
+  {
+   "path": [
+    "Go",
+    "Beginning of the document"
+   ],
+   "shortcut": "<Ctrl>Home",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 1987,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Beginning of the document",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "Go",
+    "End of the document"
+   ],
+   "shortcut": "<Ctrl>End",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 1999,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "End of the document",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "Go",
+    "Back"
+   ],
+   "shortcut": "<Shift><Alt>Left",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 62,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Back",
+    "source_action": "go_document_back",
+    "label_score": 1.0,
+    "candidates": 4
+   }
+  },
+  {
+   "path": [
+    "Go",
+    "Forward"
+   ],
+   "shortcut": "<Shift><Alt>Right",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 63,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Forward",
+    "source_action": "go_document_forward",
+    "label_score": 1.0,
+    "candidates": 4
+   }
+  },
+  {
+   "path": [
+    "Go",
+    "Go to Page\u2026"
+   ],
+   "shortcut": "<Ctrl>G",
+   "repo": "okular",
+   "file": "part/part.cpp",
+   "line": 649,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kstandardshortcut",
+    "source_label": "Go to Page\u2026",
+    "source_action": "go_goto_page",
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "Bookmarks",
+    "Add Bookmark"
+   ],
+   "shortcut": "<Ctrl>B",
+   "repo": "okular",
+   "file": "part/part.rc",
+   "line": 68,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Add Bookmark",
+    "source_action": "bookmark_add",
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "Tools",
+    "Browse"
+   ],
+   "shortcut": "<Ctrl>1",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 2123,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Browse",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "Tools",
+    "Zoom"
+   ],
+   "shortcut": "<Ctrl>2",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 2135,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Zoom",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "Tools",
+    "Area Selection"
+   ],
+   "shortcut": "<Ctrl>3",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 2147,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Area Selection",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "Tools",
+    "Text Selection"
+   ],
+   "shortcut": "<Ctrl>4",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 2159,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Text Selection",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "Tools",
+    "Table Selection"
+   ],
+   "shortcut": "<Ctrl>5",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 2173,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Table Selection",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "Tools",
+    "Magnifier"
+   ],
+   "shortcut": "<Ctrl>6",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 2190,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Magnifier",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 2
+   }
+  },
+  {
+   "path": [
+    "Tools",
+    "Annotations"
+   ],
+   "shortcut": "F6",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 2202,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Annotations",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 1
+   }
+  },
+  {
+   "path": [
+    "Settings",
+    "Show Menubar"
+   ],
+   "shortcut": "<Ctrl>M",
+   "repo": "okular",
+   "file": "shell/shell.cpp",
+   "line": 577,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "kstandardaction",
+    "source_label": "Show Menubar",
+    "source_action": "options_show_menubar",
+    "label_score": 1.0,
+    "candidates": 1
+   }
+  },
+  {
+   "path": [
+    "Settings",
+    "Show Sidebar"
+   ],
+   "shortcut": "F7",
+   "repo": "okular",
+   "file": "doc/index.docbook",
+   "line": 1272,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "label",
+    "kind": "docbook-menuchoice",
+    "source_label": "Show Sidebar",
+    "source_action": null,
+    "label_score": 1.0,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "Settings",
+    "Configure Okular\u2026"
+   ],
+   "shortcut": "<Ctrl><Shift>comma",
+   "repo": "okular",
+   "file": "part/part-viewermode.rc",
+   "line": 12,
+   "commit": "62c5e9433a4854351ceaf6139b9716304f6b6dc4",
+   "match": {
+    "confidence": "chord-only",
+    "kind": "kxmlgui-standard-action",
+    "source_label": "Configure %1\u2026",
+    "source_action": "options_configure",
+    "label_score": 0.333,
+    "candidates": 3
+   }
+  },
+  {
+   "path": [
+    "Settings",
+    "Configure Keyboard Shortcuts\u2026"
+   ],
+   "shortcut": "<Ctrl><Alt>comma",
+   "repo": "kconfig",
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 556,
+   "commit": "975405122decec19e7952a304cd7c19d60f59e62"
+  },
+  {
+   "path": [
+    "Help",
+    "Okular Handbook"
+   ],
+   "shortcut": "F1",
+   "repo": "kconfig",
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 394,
+   "commit": "975405122decec19e7952a304cd7c19d60f59e62"
+  },
+  {
+   "path": [
+    "Help",
+    "What's This?"
+   ],
+   "shortcut": "<Shift>F1",
+   "repo": "kconfig",
+   "file": "src/gui/kstandardshortcut.cpp",
+   "line": 398,
+   "commit": "975405122decec19e7952a304cd7c19d60f59e62"
+  },
+  {
+   "path": [
+    "Help",
+    "Find Action\u2026"
+   ],
+   "shortcut": "<Ctrl><Alt>I",
+   "repo": "kxmlgui",
+   "file": "src/kxmlguiwindow.cpp",
+   "line": 592,
+   "commit": "226848f014f9c7181dda9f77f2abc487ff0abd8c"
+  }
+ ],
+ "unmatched": [
+  {
+   "path": [
+    "Settings",
+    "Configure Keyboard Shortcuts\u2026"
+   ],
+   "shortcut": "<Ctrl><Alt>comma"
+  },
+  {
+   "path": [
+    "Help",
+    "Okular Handbook"
+   ],
+   "shortcut": "F1"
+  },
+  {
+   "path": [
+    "Help",
+    "What's This?"
+   ],
+   "shortcut": "<Shift>F1"
+  },
+  {
+   "path": [
+    "Help",
+    "Find Action\u2026"
+   ],
+   "shortcut": "<Ctrl><Alt>I"
+  }
+ ],
+ "summary": {
+  "with_shortcut": 43,
+  "label_match": 37,
+  "action_match": 0,
+  "chord_only": 2,
+  "unmatched": 4
+ }
+}

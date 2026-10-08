@@ -1,0 +1,89 @@
+{
+ "format": 1,
+ "app": "zaptide",
+ "repos": {
+  "zaptide": {
+   "url": "https://github.com/luminusOS/zaptide.git",
+   "commit": "5f1c6fbdb25c46316b019b0b65133b492a237b03"
+  }
+ },
+ "items": [
+  {
+   "path": [
+    "Chat List",
+    "Previous chat"
+   ],
+   "shortcut": "Up",
+   "repo": "zaptide",
+   "file": "src/application/dispatch.rs",
+   "line": 75,
+   "commit": "5f1c6fbdb25c46316b019b0b65133b492a237b03"
+  },
+  {
+   "path": [
+    "Chat List",
+    "Next chat"
+   ],
+   "shortcut": "Down",
+   "repo": "zaptide",
+   "file": "src/application/dispatch.rs",
+   "line": 76,
+   "commit": "5f1c6fbdb25c46316b019b0b65133b492a237b03"
+  },
+  {
+   "path": [
+    "Chat List",
+    "Open chat"
+   ],
+   "shortcut": "Return",
+   "repo": "zaptide",
+   "file": "src/application/dispatch.rs",
+   "line": 77,
+   "commit": "5f1c6fbdb25c46316b019b0b65133b492a237b03"
+  },
+  {
+   "path": [
+    "Composer",
+    "Send message"
+   ],
+   "shortcut": "Return",
+   "repo": "zaptide",
+   "file": "src/application/dispatch.rs",
+   "line": 66,
+   "commit": "5f1c6fbdb25c46316b019b0b65133b492a237b03"
+  },
+  {
+   "path": [
+    "Composer",
+    "New line"
+   ],
+   "shortcut": "<Shift>Return",
+   "repo": "zaptide",
+   "file": "src/application/dispatch.rs",
+   "line": 66,
+   "commit": "5f1c6fbdb25c46316b019b0b65133b492a237b03"
+  },
+  {
+   "path": [
+    "Messages",
+    "Open message menu"
+   ],
+   "shortcut": "<Shift>F10",
+   "repo": "zaptide",
+   "file": "src/application/dispatch.rs",
+   "line": 87,
+   "commit": "5f1c6fbdb25c46316b019b0b65133b492a237b03"
+  },
+  {
+   "path": [
+    "Messages",
+    "Copy selected text"
+   ],
+   "shortcut": "<Ctrl>C",
+   "repo": "zaptide",
+   "file": "src/application/dispatch.rs",
+   "line": 88,
+   "commit": "5f1c6fbdb25c46316b019b0b65133b492a237b03"
+  }
+ ]
+}

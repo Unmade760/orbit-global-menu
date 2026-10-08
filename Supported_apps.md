@@ -281,6 +281,7 @@
 - XSane
 - Yelp
 - YouTube Music Desktop App
+- ZapTide
 - ZapZap
 - Zathura
 - Zed
