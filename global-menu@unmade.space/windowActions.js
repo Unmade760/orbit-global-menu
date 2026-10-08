@@ -39,7 +39,7 @@ export class WindowActions {
 			this.actions.push('Minimize');
 
 		if (win.can_maximize())
-			this.actions.push(win.is_maximized() ? 'Unmaximize' : 'Maximize');
+			this.actions.push(this._isMaximized() ? 'Unmaximize' : 'Maximize');
 
 		if (win.allows_move())
 			this.actions.push('Move');
@@ -47,14 +47,14 @@ export class WindowActions {
 		if (win.allows_resize())
 			this.actions.push('Resize');
 
-		if (!(win.is_maximized()
-			|| type === Meta.WindowType.DOCK
-			|| type === Meta.WindowType.DESKTOP
-			|| type === Meta.WindowType.SPLASHSCREEN))
+		if (!(this._isMaximized() ||
+			type === Meta.WindowType.DOCK ||
+			type === Meta.WindowType.DESKTOP ||
+			type === Meta.WindowType.SPLASHSCREEN))
 			this.actions.push(`Always on Top${win.is_above() ? ' ✓' : ''}`);
 
-		if (Main.sessionMode.hasWorkspaces
-			&& (!Meta.prefs_get_workspaces_only_on_primary() || win.is_on_primary_monitor())) {
+		if (Main.sessionMode.hasWorkspaces &&
+			(!Meta.prefs_get_workspaces_only_on_primary() || win.is_on_primary_monitor())) {
 			const isSticky = win.is_on_all_workspaces();
 
 			if (!win.is_always_on_all_workspaces())
@@ -96,6 +96,19 @@ export class WindowActions {
 		return this.actions;
 	}
 
+	// mutter 49 dropped the direction argument and added is_maximized()
+	_isMaximized() {
+		const win = this._win;
+		if (typeof win.is_maximized === 'function')
+			return win.is_maximized();
+		return win.get_maximized() === Meta.MaximizeFlags.BOTH;
+	}
+
+	// The argument count gjs enforces: 48 needs the directions, 49 and later take none
+	_maximizeArgs(fn) {
+		return fn.length === 1 ? [Meta.MaximizeFlags.BOTH] : [];
+	}
+
 	doAction(action) {
 		// State-carrying labels arrive with their tick still attached
 		if (action.endsWith(' ✓'))
@@ -106,60 +119,60 @@ export class WindowActions {
 			return;
 
 		switch (action) {
-			case 'Minimize':
-				win.minimize();
-				break;
-			case 'Unmaximize':
-				win.unmaximize();
-				break;
-			case 'Maximize':
-				win.maximize();
-				break;
-			case 'Move':
-				this._beginGrab(Meta.GrabOp.KEYBOARD_MOVING);
-				break;
-			case 'Resize':
-				this._beginGrab(Meta.GrabOp.KEYBOARD_RESIZING_UNKNOWN);
-				break;
-			case 'Always on Top':
-				if (win.is_above())
-					win.unmake_above();
-				else
-					win.make_above();
-				break;
-			case 'Always on Visible Workspace':
-				if (win.is_on_all_workspaces())
-					win.unstick();
-				else
-					win.stick();
-				break;
-			case 'Move to Workspace Left':
-				this._moveToWorkspace(Meta.MotionDirection.LEFT);
-				break;
-			case 'Move to Workspace Right':
-				this._moveToWorkspace(Meta.MotionDirection.RIGHT);
-				break;
-			case 'Move to Workspace Up':
-				this._moveToWorkspace(Meta.MotionDirection.UP);
-				break;
-			case 'Move to Workspace Down':
-				this._moveToWorkspace(Meta.MotionDirection.DOWN);
-				break;
-			case 'Move to Monitor Up':
-				this._moveToMonitor(Meta.DisplayDirection.UP);
-				break;
-			case 'Move to Monitor Down':
-				this._moveToMonitor(Meta.DisplayDirection.DOWN);
-				break;
-			case 'Move to Monitor Left':
-				this._moveToMonitor(Meta.DisplayDirection.LEFT);
-				break;
-			case 'Move to Monitor Right':
-				this._moveToMonitor(Meta.DisplayDirection.RIGHT);
-				break;
-			case 'Close':
-				win.delete(global.get_current_time());
-				break;
+		case 'Minimize':
+			win.minimize();
+			break;
+		case 'Unmaximize':
+			win.unmaximize(...this._maximizeArgs(win.unmaximize));
+			break;
+		case 'Maximize':
+			win.maximize(...this._maximizeArgs(win.maximize));
+			break;
+		case 'Move':
+			this._beginGrab(Meta.GrabOp.KEYBOARD_MOVING);
+			break;
+		case 'Resize':
+			this._beginGrab(Meta.GrabOp.KEYBOARD_RESIZING_UNKNOWN);
+			break;
+		case 'Always on Top':
+			if (win.is_above())
+				win.unmake_above();
+			else
+				win.make_above();
+			break;
+		case 'Always on Visible Workspace':
+			if (win.is_on_all_workspaces())
+				win.unstick();
+			else
+				win.stick();
+			break;
+		case 'Move to Workspace Left':
+			this._moveToWorkspace(Meta.MotionDirection.LEFT);
+			break;
+		case 'Move to Workspace Right':
+			this._moveToWorkspace(Meta.MotionDirection.RIGHT);
+			break;
+		case 'Move to Workspace Up':
+			this._moveToWorkspace(Meta.MotionDirection.UP);
+			break;
+		case 'Move to Workspace Down':
+			this._moveToWorkspace(Meta.MotionDirection.DOWN);
+			break;
+		case 'Move to Monitor Up':
+			this._moveToMonitor(Meta.DisplayDirection.UP);
+			break;
+		case 'Move to Monitor Down':
+			this._moveToMonitor(Meta.DisplayDirection.DOWN);
+			break;
+		case 'Move to Monitor Left':
+			this._moveToMonitor(Meta.DisplayDirection.LEFT);
+			break;
+		case 'Move to Monitor Right':
+			this._moveToMonitor(Meta.DisplayDirection.RIGHT);
+			break;
+		case 'Close':
+			win.delete(global.get_current_time());
+			break;
 		}
 	}
 
