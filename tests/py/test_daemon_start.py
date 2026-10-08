@@ -171,3 +171,46 @@ def test_daemon_starts_without_its_registrar_when_another_owns_it(appmenu_main):
 def test_daemon_does_not_start_twice(appmenu_main):
 	owned = {'com.canonical.AppMenu.Registrar', 'space.unmade.GlobalMenu'}
 	assert appmenu_main(owned) == []
+
+
+@pytest.fixture
+def registrar(monkeypatch):
+	import dbus
+	import dbus.service
+	from globalmenu.utils import service
+
+	class Bus:
+		def __init__(self):
+			self.receivers = []
+
+		def add_signal_receiver(self, handler, signal_name, interface, bus_name, path):
+			self.receivers.append((handler, signal_name, interface, bus_name, path))
+
+	bus = Bus()
+	monkeypatch.setattr(dbus, 'SessionBus', lambda: bus)
+	monkeypatch.setattr(dbus.service, 'BusName', lambda name, bus: None)
+	monkeypatch.setattr(dbus.service.Object, '__init__', lambda self, bus_name, path: None)
+	reg = service.AppMenuService()
+	reg.bus = bus
+	return reg
+
+
+def test_registrar_listens_for_name_owner_changes(registrar):
+	assert [r[1:] for r in registrar.bus.receivers] == [
+		('NameOwnerChanged', 'org.freedesktop.DBus', 'org.freedesktop.DBus', '/org/freedesktop/DBus')]
+
+
+def test_registrar_drops_the_windows_of_a_client_that_exits(registrar):
+	registrar.RegisterWindow(1, '/menu/1', ':1.10')
+	registrar.RegisterWindow(2, '/menu/2', ':1.10')
+	registrar.RegisterWindow(3, '/menu/3', ':1.11')
+	handler = registrar.bus.receivers[0][0]
+	handler(':1.10', ':1.10', '')
+	assert list(registrar.window_dict) == [3]
+
+
+def test_registrar_keeps_windows_while_the_name_still_has_an_owner(registrar):
+	registrar.RegisterWindow(1, '/menu/1', ':1.10')
+	registrar.bus.receivers[0][0](':1.10', ':1.10', ':1.12')
+	registrar.bus.receivers[0][0](':1.99', '', ':1.99')
+	assert list(registrar.window_dict) == [1]

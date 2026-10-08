@@ -22,8 +22,19 @@ class AppMenuService(dbus.service.Object):
 	def __init__(self):
 		self.window_dict = dict()
 
-		bus_name = dbus.service.BusName(BUS_NAME, bus=dbus.SessionBus())
+		bus = dbus.SessionBus()
+		bus.add_signal_receiver(self.name_owner_changed, 'NameOwnerChanged',
+			'org.freedesktop.DBus', 'org.freedesktop.DBus', '/org/freedesktop/DBus')
+
+		bus_name = dbus.service.BusName(BUS_NAME, bus=bus)
 		dbus.service.Object.__init__(self, bus_name, BUS_PATH)
+
+	def name_owner_changed(self, name, old_owner, new_owner):
+		# A client that exits or crashes never calls UnregisterWindow
+		if not new_owner:
+			for window_id, (sender, _) in list(self.window_dict.items()):
+				if sender == name:
+					del self.window_dict[window_id]
 
 	@dbus.service.method(BUS_NAME, in_signature='uo', sender_keyword='sender')
 	def RegisterWindow(self, windowId, menuObjectPath, sender):
