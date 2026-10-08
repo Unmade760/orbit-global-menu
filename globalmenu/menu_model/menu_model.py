@@ -348,10 +348,20 @@ class DbusAppMenu(object):
 		self.actions = {}
 		self.accels = {}
 		self.tree = Tree()
-		results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"))
-		self.collect_entries(results[1], [])
-		action = self.actions[selection]
-		self.interface.Event(action, 'clicked', 0, 0)
+		try:
+			results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"))
+			self.collect_entries(results[1], [])
+			action = self.actions[selection]
+			self.interface.Event(action, 'clicked', 0, 0)
+		except dbus.exceptions.DBusException:
+			# The app is gone
+			self.clear()
+
+	def clear(self):
+		self.actions = {}
+		self.accels = {}
+		self.tree = Tree()
+		self.top_level_menus = []
 
 	def get_interface(self):
 		bus_name = 'com.canonical.AppMenu.Registrar'
@@ -375,8 +385,13 @@ class DbusAppMenu(object):
 
 	def get_results(self):
 		if self.interface:
-			self.results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"))
-			self.collect_entries(self.results[1])
+			try:
+				self.results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"))
+				self.collect_entries(self.results[1])
+			except dbus.exceptions.DBusException:
+				# The app exited or is rebuilding its menu
+				self.clear()
+				return
 
 			if not len(self.tree.children(self.tree[self.tree.root].identifier)):
 				self.tree = Tree()
@@ -446,11 +461,11 @@ class DbusAppMenu(object):
 			self._update_timer = GLib.timeout_add(200, self._update)
 
 	def _update(self):
+		self._update_timer = 0
 		self.actions = {}
 		self.accels = {}
 		self.tree = Tree()
 		self.get_results()
-		self._update_timer = 0
 		self._notify()
 		return False
 
@@ -487,7 +502,11 @@ class MenuModel:
 			self.gtkmenu.top_level_menus = []
 
 		if not len(self.gtkmenu.tree):
-			self.appmenu.get_results()
+			try:
+				self.appmenu.get_results()
+			except Exception:
+				traceback.print_exc()
+				self.appmenu.clear()
 
 	@property
 	def prompt(self):

@@ -6,6 +6,7 @@ globalmenu/utils/menu.py, against a scripted Qt or appmenu-gtk-module style
 exporter reached through the AppMenu registrar.
 """
 
+import dbus
 import pytest
 
 from fakes import DBUSMENU_BUS, DBUSMENU_PATH, FakeSession, FakeWindow, dm, install_dbusmenu_app, pump
@@ -171,3 +172,55 @@ def test_properties_update_reaches_on_changed():
 	model.appmenu.on_actions_changed([(4, {'toggle-state': 0}), (6, {'enabled': True})], [])
 	assert len(changed) == 1
 	assert find(changed[0], '_File', 'Print')['enabled'] is True
+
+
+def vanish(session, *members):
+	"""The dbusmenu client has exited: these calls now fail."""
+	def gone(*args):
+		raise dbus.exceptions.DBusException('gone', name='org.freedesktop.DBus.Error.ServiceUnknown')
+	for member in members:
+		session.on(DBUSMENU_BUS, DBUSMENU_PATH, 'com.canonical.dbusmenu', member, gone)
+
+
+@pytest.mark.parametrize('member', ['GetLayout', 'Event'])
+def test_vanished_client_leaves_an_empty_tree(member):
+	session = FakeSession()
+	window = FakeWindow({})
+	install_dbusmenu_app(session, LAYOUT, window)
+	vanish(session, member)
+	model = MenuModel(session, window)
+	model._update_menus()
+	assert json_tree(model) == []
+	assert list(model.actions) == []
+	assert model.top_level_menus == []
+
+
+def test_failed_refresh_does_not_stop_later_refreshes():
+	session, window, model, changed = changing_app(LAYOUT)
+	vanish(session, 'GetLayout')
+	emit_layout_updated(session)
+	pump(0.5)
+	assert json_tree(model) == []
+	assert model.appmenu._update_timer == 0
+	assert len(changed) == 1
+	install_dbusmenu_app(session, LAYOUT, window)
+	emit_layout_updated(session)
+	pump(0.5)
+	assert [n['label'] for n in json_tree(model)] == ['_File', '_Help']
+
+
+def test_activate_on_a_vanished_client_does_not_raise(app):
+	session, model = app
+	key = find(json_tree(model), '_File', 'Recent', 'a.txt')['key']
+	vanish(session, 'Event', 'GetLayout')
+	model.activate(key)
+
+
+def test_malformed_layout_does_not_stop_the_window_switch():
+	session = FakeSession()
+	window = FakeWindow({})
+	install_dbusmenu_app(session, LAYOUT, window)
+	session.on(DBUSMENU_BUS, DBUSMENU_PATH, 'com.canonical.dbusmenu', 'GetLayout', lambda *args: None)
+	model = MenuModel(session, window)
+	model._update_menus()
+	assert json_tree(model) == []
