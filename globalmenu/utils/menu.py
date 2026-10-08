@@ -3,7 +3,6 @@ import json
 
 from gi.repository import GLib
 
-from globalmenu.utils.global_keybinder import GlobalKeybinder
 from globalmenu.utils.window import WindowManager
 from globalmenu.utils.service import MyService
 
@@ -16,7 +15,6 @@ from globalmenu.menu_model.menu_model import MenuModel
 class DbusMenu:
 
 	def __init__(self):
-		self.keyb = GlobalKeybinder.create(self.on_keybind_activated)
 		self.app = None
 		self.session = dbus.SessionBus()
 		self.window = WindowManager.new_window()
@@ -106,10 +104,6 @@ class DbusMenu:
 		menu = HudMenu(self)
 		menu.run()
 
-	def on_keybind_activated(self, character: str):
-		self.on_app_started()
-		self._start_app(character)
-
 	def _move_menu(self, x: int):
 		if self.app is None:
 			return
@@ -122,9 +116,6 @@ class DbusMenu:
 			self.app.connect('shutdown', self.on_app_shutdown)
 			self.app.run()
 
-	def on_app_started(self):
-		self._echo_onoff(True)
-
 	def on_app_shutdown(self, app):
 		self._echo_onoff(False)
 		self.app = None
@@ -132,15 +123,6 @@ class DbusMenu:
 	def _echo_onoff(self, on: bool):
 		self.proxy = dbus.SessionBus().get_object(MyService.BUS_NAME, MyService.BUS_PATH)
 		self.proxy.EchoMenuOnOff(on)
-
-	def _handle_shortcuts(self, top_level_menus):
-		self.keyb.remove_all_keybindings()
-		for label in top_level_menus:
-			idx = label.find('_')
-			if idx == -1:
-				continue
-			c = label[idx + 1]
-			self.keyb.add_keybinding(c)
 
 	def _retry_init(self):
 		self.retry_timer_id = 0
@@ -157,7 +139,6 @@ class DbusMenu:
 
 	def _update(self):
 		self._update_menus()
-		self._handle_shortcuts(self._menu_model.top_level_menus)
 		self._send_msg(self._menu_model.top_level_menus)
 		self._send_tree()
 

@@ -395,6 +395,37 @@ def daemon_for(session):
 	return menu, sent
 
 
+def test_menu_mnemonics_are_not_grabbed_as_global_keys():
+	# The panel draws the menus. A global Alt+letter grab would take the key
+	# from the focused application.
+	class Recorder:
+		def __init__(self):
+			self.bound = []
+
+		def add_keybinding(self, character):
+			self.bound.append(character)
+
+		def remove_all_keybindings(self):
+			pass
+
+	session = FakeSession()
+	no_registrar(session)
+	install_gtk_app(session, MENUS, ACTIONS)
+	session.on(MyService.BUS_NAME, MyService.BUS_PATH, None, 'EchoSendTopLevelMenus', lambda menus: None)
+	session.on(MyService.BUS_NAME, MyService.BUS_PATH, None, 'EchoSendMenuTree', lambda tree, request: None)
+	menu = DbusMenu.__new__(DbusMenu)
+	menu.session = session
+	menu.keyb = Recorder()
+	menu.tries = 0
+	menu._push_timer = 0
+	menu._sent_json = None
+	menu.window = FakeWindow(GTK_PROPS)
+	menu._menu_model = MenuModel(session, menu.window, menu._on_menu_changed)
+	menu._update()
+	assert menu._menu_model.top_level_menus == ['_File', '_View']
+	assert menu.keyb.bound == []
+
+
 def test_a_tree_carries_the_request_of_the_window_it_was_built_for():
 	session = FakeSession()
 	no_registrar(session)
