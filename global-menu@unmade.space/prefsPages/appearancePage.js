@@ -126,6 +126,13 @@ export class AppearancePage {
 		this._settings.bind('bold-app-name', boldRow, 'active', Gio.SettingsBindFlags.DEFAULT);
 		group.add(boldRow);
 
+		const appNameRow = new Adw.SwitchRow({
+			title: 'Hide App Name',
+			subtitle: 'Removes the focused app\'s name button from the bar',
+		});
+		this._settings.bind('hide-app-name', appNameRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+		group.add(appNameRow);
+
 		const workspaceRow = new Adw.SwitchRow({
 			title: 'Hide workspace indicator',
 			subtitle: 'Hides GNOME\'s Activities and workspace pill at the left of the panel',

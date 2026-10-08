@@ -14,6 +14,7 @@
 // there is no blur and everything else still works.
 
 import Clutter from 'gi://Clutter';
+import St from 'gi://St';
 
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
@@ -26,6 +27,7 @@ const APPEARANCE_KEYS = [
 	'popup-opacity',
 	'popup-corner-radius',
 	'hide-popup-arrow',
+	'hide-app-name',
 	'button-spacing',
 	'menu-font-size',
 	'bold-app-name',
@@ -37,7 +39,11 @@ const APPEARANCE_KEYS = [
 const buttons = new Set();
 let manager = null;
 
-/** Called by MenuBarButton._init. Unregisters itself when the actor dies. */
+/**
+ * Called by MenuBarButton._init. Unregisters itself when the actor dies.
+ *
+ * @param {MenuBarButton} btn - the button to style
+ */
 export function registerButton(btn) {
 	buttons.add(btn);
 	btn.connect('destroy', () => buttons.delete(btn));
@@ -51,9 +57,12 @@ export function registerButton(btn) {
  * creation: buttons are rebuilt on every menu-tree change, and taking an
  * effect out of Blur My Shell's pool for each short-lived button leaks
  * handler connections inside it.
+ *
+ * @param {MenuBarButton} btn - the button whose menu opened
  */
 export function onMenuOpened(btn) {
 	manager?.applyPopupBackground(btn);
+	manager?.alignPopupText(btn);
 	manager?.applyBlur(btn);
 }
 
@@ -190,6 +199,18 @@ export class AppearanceManager {
 		else
 			btn.menu.actor.remove_style_class_name('global-menu-no-arrow');
 
+		// The button is hidden through its container, not itself: panelBar.js
+		// anchors the run of menus on the app-name button's slot, and
+		// fallbackMenu.js shows and hides the button for its own reasons.
+		if (btn._globalMenuAppName) {
+			const hide = s.get_boolean('hide-app-name');
+			if (hide || btn._globalMenuHidden)
+				btn.container.visible = !hide;
+			btn._globalMenuHidden = hide;
+		}
+
+		this._trackDirection(btn);
+		this._alignSource(btn);
 		this.applyPopupBackground(btn);
 		this.applyBlur(btn);
 	}
@@ -209,6 +230,39 @@ export class AppearanceManager {
 			style += ` background-color: rgba(${base.red}, ${base.green}, ${base.blue}, ${alpha});`;
 		}
 		btn.menu.box.set_style(style);
+		this._styleWells(btn, radius);
+	}
+
+	/**
+	 * Slide the popup left (right in RTL) until the first item's text starts
+	 * where the title's text does. The popup's own inset is the box padding
+	 * plus the item padding and the title's is the bar button's padding. The
+	 * popup's is the larger, so the popup has to start before the title.
+	 *
+	 * BoxPointer places the popup at its source point minus half of
+	 * 4 * -arrow-border-radius + -arrow-border-width + -arrow-base, and that
+	 * radius only feeds the pointer outline, which the theme leaves
+	 * transparent. Setting it on our own popup actor is the one lever that
+	 * moves a popup past the edge of its source: translation is reset by the
+	 * open animation. A theme that gives the pointer a base wider than twice
+	 * the shift makes BoxPointer pull the popup back, which leaves it flush
+	 * with the title's edge.
+	 *
+	 * @param {MenuBarButton} btn - the button whose menu is opening
+	 */
+	alignPopupText(btn) {
+		const shift = this._textShift(btn);
+		const actor = btn.menu.actor;
+		if (shift === null)
+			return;
+		if (shift <= 0) {
+			actor.set_style(null);
+			return;
+		}
+		const node = actor.get_theme_node();
+		const fixed = node.get_length('-arrow-border-width') + node.get_length('-arrow-base');
+		const radius = Math.max(0, (2 * shift - fixed) / 4) / this._scale();
+		actor.set_style(`-arrow-border-radius: ${radius.toFixed(2)}px;`);
 	}
 
 	applyBlur(btn) {
@@ -266,6 +320,67 @@ export class AppearanceManager {
 		manager = null;
 	}
 
+	_scale() {
+		return St.ThemeContext.get_for_stage(global.stage).scale_factor;
+	}
+
+	_isRtl(btn) {
+		return btn.get_text_direction() === Clutter.TextDirection.RTL;
+	}
+
+	// BoxPointer mirrors the arrow alignment in RTL but not the source
+	// alignment, so the popup would hang off the title's centre instead of
+	// its right edge.
+	_alignSource(btn) {
+		btn.menu.setSourceAlignment(this._isRtl(btn) ? 1.0 : 0.0);
+	}
+
+	_trackDirection(btn) {
+		if (btn._globalMenuDirectionId)
+			return;
+		btn._globalMenuDirectionId = btn.connect('notify::text-direction',
+			() => this._alignSource(btn));
+	}
+
+	// Pixels between where the first item's text would start and where the
+	// title's text starts, or null while the popup is off stage. Theme node
+	// lengths are in scaled pixels throughout.
+	_textShift(btn) {
+		const box = btn.menu.box;
+		const item = btn.menu.firstMenuItem;
+		if (!item || !box.get_stage())
+			return null;
+
+		const side = this._isRtl(btn) ? St.Side.RIGHT : St.Side.LEFT;
+		const inset = node => node.get_padding(side) + node.get_border_width(side);
+		const bar = btn.get_theme_node();
+		// The source point sits inside the button's border and padding, the
+		// text a button padding further in
+		const title = bar.get_length('-natural-hpadding') - inset(bar);
+		return inset(box.get_theme_node()) + inset(item.get_theme_node()) - title;
+	}
+
+	// The submenu well sits one popup padding and border inside the popup,
+	// so its bottom corners are concentric with the popup's.
+	_styleWells(btn, radius) {
+		const box = btn.menu.box;
+		if (!box.get_stage())
+			return;
+		const node = box.get_theme_node();
+		const inner = (node.get_padding(St.Side.TOP) + node.get_border_width(St.Side.TOP)) / this._scale();
+		const well = Math.max(0, radius - inner);
+		this._eachWell(btn.menu, `border-radius: 0 0 ${well}px ${well}px;`);
+	}
+
+	_eachWell(menu, style) {
+		for (const child of menu.box.get_children()) {
+			if (!child.menu)
+				continue;
+			child.menu.actor.set_style(style);
+			this._eachWell(child.menu, style);
+		}
+	}
+
 	_bmsEffects() {
 		return global.blur_my_shell?._effects_manager ?? null;
 	}
@@ -281,7 +396,7 @@ export class AppearanceManager {
 		try {
 			const color = btn.menu.box.get_theme_node().get_background_color();
 			btn._globalMenuBaseBg = {red: color.red, green: color.green, blue: color.blue};
-		} catch (_e) {
+		} catch {
 			return null;
 		}
 		return btn._globalMenuBaseBg;
@@ -303,11 +418,25 @@ export class AppearanceManager {
 	_resetButton(btn) {
 		btn.set_style(null);
 		btn.menu.actor.remove_style_class_name('global-menu-no-arrow');
+		btn.menu.actor.set_style(null);
 		btn.menu.box.set_style(null);
+		this._eachWell(btn.menu, null);
+		if (btn._globalMenuDirectionId) {
+			btn.disconnect(btn._globalMenuDirectionId);
+			btn._globalMenuDirectionId = 0;
+		}
+		if (btn._globalMenuHidden) {
+			btn.container.visible = true;
+			btn._globalMenuHidden = false;
+		}
 		this._removeBlur(btn);
 	}
 }
 
+/**
+ * @param {Gio.Settings} settings - the extension's settings
+ * @returns {AppearanceManager} the manager now styling every registered button
+ */
 export function createManager(settings) {
 	manager = new AppearanceManager(settings);
 	return manager;

@@ -45,8 +45,14 @@
 			<summary>Popup menu corner radius in pixels</summary>
 		</key>
 		<key type="b" name="hide-popup-arrow">
+			<default>true</default>
+			<summary>Hide the popup pointer arrow</summary>
+			<description>Menus drop straight down from the bar instead of leaving a gap and pointing at the button.</description>
+		</key>
+		<key type="b" name="hide-app-name">
 			<default>false</default>
-			<summary>Hide the popup pointer arrow so menus drop straight down from the bar</summary>
+			<summary>Hide the app name button</summary>
+			<description>Removes the button at the start of the menu bar that shows the focused app's name. The menus after it stay where they are.</description>
 		</key>
 		<key type="i" name="button-spacing">
 			<range min="0" max="16"/>
