@@ -31,6 +31,7 @@ export function addBarButton(id, button, rank) {
 `;
 const WINDOW_ACTIONS_STUB = `
 export class WindowActions { getActions() { return []; } doAction() {} }
+export const actionLabel = action => action;
 `;
 const SYSTEM_ACTIONS_STUB = 'export const getDefault = () => ({});\n';
 const MODAL_DIALOG_STUB = `

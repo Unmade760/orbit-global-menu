@@ -8,6 +8,7 @@ import GLib from 'gi://GLib';
 import Gtk from 'gi://Gtk';
 
 import {parseAccelerator} from '../accelerator.js';
+import {_} from '../i18n.js';
 
 const MODIFIER_KEYVALS = new Set([
 	Gdk.KEY_Control_L, Gdk.KEY_Control_R,
@@ -43,17 +44,17 @@ export function captureShortcut({parentWindow, itemLabel, onCaptured}) {
 	});
 	dialog.set_child(box);
 
-	box.append(new Gtk.Label({label: 'Set Shortcut', css_classes: ['title-2']}));
+	box.append(new Gtk.Label({label: _('Set Shortcut'), css_classes: ['title-2']}));
 
 	box.append(new Gtk.Label({
-		label: `Enter new shortcut to change <b>${GLib.markup_escape_text(itemLabel, -1)}</b>`,
+		label: _('Enter new shortcut to change <b>%s</b>').replace('%s', GLib.markup_escape_text(itemLabel, -1)),
 		use_markup: true,
 		wrap: true,
 		justify: Gtk.Justification.CENTER,
 	}));
 
 	const preview = new Gtk.Label({
-		label: 'Enter a new shortcut…',
+		label: _('Enter a new shortcut…'),
 		css_classes: ['title-1'],
 		margin_top: 12,
 		margin_bottom: 12,
@@ -61,7 +62,7 @@ export function captureShortcut({parentWindow, itemLabel, onCaptured}) {
 	box.append(preview);
 
 	box.append(new Gtk.Label({
-		label: 'Press Esc to cancel or Backspace to disable the keyboard shortcut',
+		label: _('Press Esc to cancel or Backspace to disable the keyboard shortcut'),
 		css_classes: ['dim-label'],
 		wrap: true,
 		justify: Gtk.Justification.CENTER,
@@ -91,7 +92,7 @@ export function captureShortcut({parentWindow, itemLabel, onCaptured}) {
 
 		if (MODIFIER_KEYVALS.has(keyval)) {
 			// Modifiers only so far: preview them and keep listening
-			preview.set_label(Gtk.accelerator_get_label(0, mods) || 'Enter a new shortcut…');
+			preview.set_label(Gtk.accelerator_get_label(0, mods) || _('Enter a new shortcut…'));
 			return true;
 		}
 

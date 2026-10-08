@@ -11,6 +11,8 @@ Usage: pack-audit.py <zip>
   - schemas/<settings-schema>.gschema.xml named in metadata.json
   - shortcuts/index.json and every shortcuts/apps/<name> it lists, which
     shortcutStore.js reads at run time
+  - locale/<lang>/LC_MESSAGES/<gettext-domain>.mo, which gnome-shell binds
+    for the gettext-domain named in metadata.json
 
 Prints one line per problem and a "summary: " line. Exit 0 when the zip
 holds exactly the loaded set, 1 otherwise.
@@ -82,6 +84,14 @@ def main():
         else:
             print(f'missing: {path} (metadata.json settings-schema)')
             problems += 1
+
+    domain = meta.get('gettext-domain')
+    if domain:
+        for path in names:
+            parts = path.split('/')
+            if (len(parts) == 4 and parts[0] == 'locale' and parts[2] == 'LC_MESSAGES' and
+                    parts[3] == f'{domain}.mo'):
+                loaded.add(path)
 
     if 'shortcuts/index.json' in names:
         loaded.add('shortcuts/index.json')

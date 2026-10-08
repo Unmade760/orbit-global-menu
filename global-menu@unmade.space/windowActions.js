@@ -7,6 +7,8 @@ import Meta from 'gi://Meta';
 
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
+import {_, N_} from './i18n.js';
+
 // A move or resize grab cannot start while the shell still holds the input
 // grab from the menu that requested it.
 const GRAB_DELAY_MS = 100;
@@ -17,6 +19,40 @@ const GRAB_DELAY_MS = 100;
 const pendingGrabs = new Set();
 
 /** Called from the extension's disable(). */
+
+// Every action name getActions() can return. The names stay English inside
+// the extension because doAction() and the daemon match on them.
+export const ACTION_NAMES = [
+	N_('Minimize'),
+	N_('Unmaximize'),
+	N_('Maximize'),
+	N_('Move'),
+	N_('Resize'),
+	N_('Always on Top'),
+	N_('Always on Visible Workspace'),
+	N_('Move to Workspace Left'),
+	N_('Move to Workspace Right'),
+	N_('Move to Workspace Up'),
+	N_('Move to Workspace Down'),
+	N_('Move to Monitor Up'),
+	N_('Move to Monitor Down'),
+	N_('Move to Monitor Left'),
+	N_('Move to Monitor Right'),
+	N_('Close'),
+];
+
+/**
+ * The label to show for an action name, translated, with its check mark kept.
+ *
+ * @param {string} action - a name from getActions()
+ * @returns {string}
+ */
+export function actionLabel(action) {
+	const checked = action.endsWith(' ✓');
+	const name = checked ? action.slice(0, -2) : action;
+	return checked ? `${_(name)} ✓` : _(name);
+}
+
 export function cancelPendingActions() {
 	for (const id of pendingGrabs)
 		GLib.source_remove(id);

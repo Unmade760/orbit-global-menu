@@ -16,8 +16,9 @@ import * as ModalDialog from 'resource:///org/gnome/shell/ui/modalDialog.js';
 
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';
-import {WindowActions} from './windowActions.js';
+import {WindowActions, actionLabel} from './windowActions.js';
 import {sendShortcut} from './keySynth.js';
+import {_, N_} from './i18n.js';
 
 // The daemon briefly reports no menus while windows are switching, so wait
 // this long before concluding an app really has none.
@@ -127,7 +128,7 @@ function makeDesktopFolder() {
 function makeNumberedFolder(desktop, cancellable, n) {
 	if (n >= 100)
 		return;
-	const name = n === 0 ? 'Untitled Folder' : `Untitled Folder ${n + 1}`;
+	const name = n === 0 ? _('Untitled Folder') : _('Untitled Folder %d').replace('%d', n + 1);
 	makeDirectory(desktop.get_child(name), cancellable, e => {
 		if (!e)
 			return;
@@ -149,17 +150,17 @@ function emptyTrash() {
 			trashDialog = null;
 	});
 	dialog.contentLayout.add_child(new Dialog.MessageDialogContent({
-		title: 'Empty all items from Trash?',
-		description: 'All items in the Trash will be permanently deleted.',
+		title: _('Empty all items from Trash?'),
+		description: _('All items in the Trash will be permanently deleted.'),
 	}));
 	dialog.setButtons([
 		{
-			label: 'Cancel',
+			label: _('Cancel'),
 			action: () => dialog.close(),
 			key: Clutter.KEY_Escape,
 		},
 		{
-			label: 'Empty Trash',
+			label: _('Empty Trash'),
 			action: () => {
 				dialog.close();
 				deleteTrashItems();
@@ -292,9 +293,9 @@ function windowMenuSpecs() {
 	const windowActions = new WindowActions();
 	const actions = windowActions.getActions();
 	const specs = actions.length === 0
-		? [{label: 'No Window', enabled: false}]
+		? [{label: _('No Window'), enabled: false}]
 		: actions.map(action => ({
-			label: action,
+			label: actionLabel(action),
 			onActivate: () => windowActions.doAction(action),
 		}));
 	specs.push(
@@ -310,8 +311,9 @@ function windowMenuSpecs() {
 	return specs;
 }
 
+// Translates the label, so its callers pass the English msgid
 function actionSpec(label, action) {
-	return {label, accel: ACTION_SHORTCUTS[action], onActivate: () => executeFallbackAction(action)};
+	return {label: _(label), accel: ACTION_SHORTCUTS[action], onActivate: () => executeFallbackAction(action)};
 }
 
 function toSpecs(items) {
@@ -322,74 +324,74 @@ const MENU_DATA = [
 	{
 		// Holds nothing until the app-name menu is built from the focused
 		// app's own actions. An empty menu does not open.
-		label: 'Desktop',
+		label: N_('Desktop'),
 		appName: true,
 		items: [],
 	},
 	{
-		label: 'File',
+		label: N_('File'),
 		items: [
-			{label: 'New Folder on Desktop', action: 'new-folder'},
-			{label: 'New Tab', action: 'new-tab'},
-			{label: 'Open', action: 'virtual-open'},
+			{label: N_('New Folder on Desktop'), action: 'new-folder'},
+			{label: N_('New Tab'), action: 'new-tab'},
+			{label: N_('Open'), action: 'virtual-open'},
 			{separator: true},
-			{label: 'Properties', action: 'properties'},
+			{label: N_('Properties'), action: 'properties'},
 			{separator: true},
-			{label: 'Show Desktop', action: 'show-desktop'},
+			{label: N_('Show Desktop'), action: 'show-desktop'},
 			{separator: true},
-			{label: 'Close Window', action: 'close'},
+			{label: N_('Close Window'), action: 'close'},
 		],
 	},
 	{
-		label: 'Edit',
+		label: N_('Edit'),
 		items: [
-			{label: 'Undo', action: 'undo'},
-			{label: 'Redo', action: 'redo'},
+			{label: N_('Undo'), action: 'undo'},
+			{label: N_('Redo'), action: 'redo'},
 			{separator: true},
-			{label: 'Cut', action: 'cut'},
-			{label: 'Copy', action: 'copy'},
-			{label: 'Paste', action: 'paste'},
-			{label: 'Delete', action: 'delete-item'},
+			{label: N_('Cut'), action: 'cut'},
+			{label: N_('Copy'), action: 'copy'},
+			{label: N_('Paste'), action: 'paste'},
+			{label: N_('Delete'), action: 'delete-item'},
 			{separator: true},
-			{label: 'Select All', action: 'select-all'},
+			{label: N_('Select All'), action: 'select-all'},
 			{separator: true},
-			{label: 'Take Screenshot', action: 'screenshot-full'},
-			{label: 'Screenshot of Window', action: 'screenshot-window'},
-			{label: 'Screenshot of Area', action: 'screenshot-area'},
+			{label: N_('Take Screenshot'), action: 'screenshot-full'},
+			{label: N_('Screenshot of Window'), action: 'screenshot-window'},
+			{label: N_('Screenshot of Area'), action: 'screenshot-area'},
 		],
 	},
 	{
-		label: 'Go',
+		label: N_('Go'),
 		items: [
-			{label: 'Back', action: 'go-back'},
-			{label: 'Forward', action: 'go-forward'},
+			{label: N_('Back'), action: 'go-back'},
+			{label: N_('Forward'), action: 'go-forward'},
 			{separator: true},
-			{label: 'Next Workspace', action: 'next-workspace'},
-			{label: 'Previous Workspace', action: 'previous-workspace'},
-			{label: 'First Workspace', action: 'first-workspace'},
+			{label: N_('Next Workspace'), action: 'next-workspace'},
+			{label: N_('Previous Workspace'), action: 'previous-workspace'},
+			{label: N_('First Workspace'), action: 'first-workspace'},
 		],
 	},
 	{
-		label: 'Window',
+		label: N_('Window'),
 		windowActions: true,
 	},
 	{
-		label: 'System',
+		label: N_('System'),
 		items: [
-			{label: 'Show Applications', action: 'show-applications'},
-			{label: 'Show Notifications', action: 'show-notifications'},
+			{label: N_('Show Applications'), action: 'show-applications'},
+			{label: N_('Show Notifications'), action: 'show-notifications'},
 			{separator: true},
-			{label: 'Open Files', action: 'open-files'},
-			{label: 'Settings', action: 'open-settings'},
+			{label: N_('Open Files'), action: 'open-files'},
+			{label: N_('Settings'), action: 'open-settings'},
 			{separator: true},
-			{label: 'Empty Trash…', action: 'empty-trash'},
+			{label: N_('Empty Trash…'), action: 'empty-trash'},
 			{separator: true},
-			{label: 'Lock Screen', action: 'lock-screen'},
-			{label: 'Suspend', action: 'suspend'},
-			{label: 'Hibernate', action: 'hibernate'},
+			{label: N_('Lock Screen'), action: 'lock-screen'},
+			{label: N_('Suspend'), action: 'suspend'},
+			{label: N_('Hibernate'), action: 'hibernate'},
 			{separator: true},
-			{label: 'Log Out', action: 'log-out'},
-			{label: 'Power Off / Restart', action: 'power-off'},
+			{label: N_('Log Out'), action: 'log-out'},
+			{label: N_('Power Off / Restart'), action: 'power-off'},
 		],
 	},
 ];
@@ -405,7 +407,7 @@ export class FallbackMenu {
 		this._showTimeoutId = 0;
 
 		MENU_DATA.forEach((entry, index) => {
-			const btn = new MenuBarButton(entry.label, entry.appName ? {appName: true} : {});
+			const btn = new MenuBarButton(_(entry.label), entry.appName ? {appName: true} : {});
 			btn.setItems(entry.windowActions ? windowMenuSpecs : toSpecs(entry.items));
 			// MENU_DATA[0] is the app name, so the index doubles as the rank
 			addBarButton(`${uuid}-fallback-${index}`, btn, index);
@@ -419,7 +421,7 @@ export class FallbackMenu {
 
 	updateAppName() {
 		const app = Shell.WindowTracker.get_default().focus_app;
-		this._appButton?.setLabel(app?.get_name() ?? 'Desktop');
+		this._appButton?.setLabel(app?.get_name() ?? _('Desktop'));
 	}
 
 	/**

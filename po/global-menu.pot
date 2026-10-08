@@ -1,0 +1,599 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the global-menu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: global-menu\n"
+"Report-Msgid-Bugs-To: https://github.com/Unmade760/orbit-global-menu/issues\n"
+"POT-Creation-Date: 2026-10-08 21:44+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: global-menu@unmade.space/fallbackMenu.js:131
+msgid "Untitled Folder"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:131
+#, javascript-format
+msgid "Untitled Folder %d"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:153
+msgid "Empty all items from Trash?"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:154
+msgid "All items in the Trash will be permanently deleted."
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:158
+#: global-menu@unmade.space/prefsPages/editorPage.js:245
+msgid "Cancel"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:163
+msgid "Empty Trash"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:296
+msgid "No Window"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:303
+msgid "Snap Window Left"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:304
+msgid "Snap Window Right"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:306
+msgid "Switch Between Windows"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:307
+msgid "Cycle Through Windows"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:308
+msgid "Switch Windows of Same App"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:309
+msgid "Window Menu"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:327
+#: global-menu@unmade.space/fallbackMenu.js:424
+msgid "Desktop"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:332
+msgid "File"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:334
+msgid "New Folder on Desktop"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:335
+msgid "New Tab"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:336
+msgid "Open"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:338
+msgid "Properties"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:340
+msgid "Show Desktop"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:342
+msgid "Close Window"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:346
+msgid "Edit"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:348
+msgid "Undo"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:349
+msgid "Redo"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:351
+msgid "Cut"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:352
+msgid "Copy"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:353
+msgid "Paste"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:354
+msgid "Delete"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:356
+msgid "Select All"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:358
+msgid "Take Screenshot"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:359
+msgid "Screenshot of Window"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:360
+msgid "Screenshot of Area"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:364
+msgid "Go"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:366
+msgid "Back"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:367
+msgid "Forward"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:369
+msgid "Next Workspace"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:370
+msgid "Previous Workspace"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:371
+msgid "First Workspace"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:375
+msgid "Window"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:379
+msgid "System"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:381
+msgid "Show Applications"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:382
+msgid "Show Notifications"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:384
+msgid "Open Files"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:385
+msgid "Settings"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:387
+msgid "Empty Trash…"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:389
+msgid "Lock Screen"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:390
+msgid "Suspend"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:391
+msgid "Hibernate"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:393
+msgid "Log Out"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:394
+msgid "Power Off / Restart"
+msgstr ""
+
+#: global-menu@unmade.space/prefs.js:16
+msgid "General"
+msgstr ""
+
+#: global-menu@unmade.space/prefs.js:17
+#: global-menu@unmade.space/prefsPages/editorPage.js:116
+msgid "Menus"
+msgstr ""
+
+#: global-menu@unmade.space/prefs.js:21
+msgid "Fallback menu"
+msgstr ""
+
+#: global-menu@unmade.space/prefs.js:22
+msgid ""
+"Show a generic app name, File, Edit, Go and Window menu for apps that have "
+"none of their own"
+msgstr ""
+
+#: global-menu@unmade.space/prefs.js:28
+msgid "Shortcut menus"
+msgstr ""
+
+#: global-menu@unmade.space/prefs.js:29
+msgid ""
+"For supported apps without a menu of their own, show curated menus that send "
+"the app's real keyboard shortcuts"
+msgstr ""
+
+#: global-menu@unmade.space/prefs.js:34
+msgid "Development"
+msgstr ""
+
+#: global-menu@unmade.space/prefs.js:38
+msgid "Debug shortcut menus"
+msgstr ""
+
+#: global-menu@unmade.space/prefs.js:39
+msgid "Log shortcut-menu resolution and key synthesis to the journal"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:26
+msgid "Appearance"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:54
+msgid "Popup Blur"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:56
+msgid ""
+"Blurs what is behind popup menus, through Blur My Shell. The panel bar "
+"itself is blurred by Blur My Shell's own \"Panel\" setting."
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:57
+msgid "Blur My Shell is not installed, so these options will have no effect."
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:62
+msgid "Blur behind popup menus"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:63
+msgid "Dynamic blur: re-rendered as the content behind moves"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:69
+msgid "Blur intensity"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:70
+msgid "Sigma of the gaussian blur"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:74
+msgid "Brightness"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:75
+msgid "1.00 = no dimming of the blurred area"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:85
+msgid "Popup Menus"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:89
+msgid "Background opacity"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:90
+msgid "Lower is more translucent. Blur is invisible at 100%."
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:94
+msgid "Corner radius"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:95
+msgid "In pixels"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:100
+msgid "Hide pointer arrow"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:101
+msgid "Menus drop straight down from the bar instead of pointing at the button"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:108
+msgid "Menu Bar"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:112
+msgid "Button spacing"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:113
+msgid "Horizontal button padding in pixels. The GNOME default is 12."
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:117
+msgid "Font size"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:118
+msgid "In points. 0 keeps the theme default."
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:123
+msgid "Bold app name"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:124
+msgid "Show the focused app's name button in bold"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:130
+msgid "Hide App Name"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:131
+msgid "Removes the focused app's name button from the bar"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:137
+msgid "Hide workspace indicator"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:138
+msgid "Hides GNOME's Activities and workspace pill at the left of the panel"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:29
+msgid "Applications"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:34
+msgid "Shortcut Menus"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:35
+msgid ""
+"Per-app curated menus that synthesize the app's real keyboard shortcuts. "
+"Editing a built-in creates a user override; built-in files are never "
+"modified."
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:64
+msgid "Add Application…"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:80
+#, javascript-format
+msgid "Error: %s"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:80
+msgid "failed to load"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:125
+msgid "Add Application"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:134
+msgid "Or type an app id / identifier manually"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:136
+msgid "Create Blank Mapping"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:146
+msgid "Search installed applications"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:80
+msgid "Save"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:87
+msgid "Reset to Built-in Default"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:87
+msgid "Delete This Mapping"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:94
+msgid "Application"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:97
+msgid "Display Name"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:101
+msgid "App ID (file name, fixed)"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:106
+msgid "Identifiers (comma-separated)"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:112
+msgid ""
+"This is a built-in mapping. Saving creates a user override in ~/.config/"
+"global-menu/shortcuts/apps. The built-in file itself is never modified."
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:117
+msgid ""
+"Click the shortcut button on an item to set it, exactly like GNOME Settings' "
+"Keyboard Shortcuts panel."
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:147
+msgid "Add Item"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:149
+msgid "New Item"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:154
+msgid "Add Separator"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:165
+msgid "Add Menu…"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:167
+msgid "New Menu"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:176
+msgid "── Separator ──"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:187
+msgid "Submenu or advanced item. Not editable here, kept as it is on save."
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:196
+msgid "Label"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:205
+msgid "Disabled"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:246
+msgid "Rename"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:289
+#, javascript-format
+msgid "Saved, but %d item had a problem: %s"
+msgid_plural "Saved, but %d items had problems: %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:292
+msgid "Saved"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:301
+#, javascript-format
+msgid "Could not delete: %s"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:47
+msgid "Set Shortcut"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:50
+#, javascript-format
+msgid "Enter new shortcut to change <b>%s</b>"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:57
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:95
+msgid "Enter a new shortcut…"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:65
+msgid "Press Esc to cancel or Backspace to disable the keyboard shortcut"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:26
+msgid "Minimize"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:27
+msgid "Unmaximize"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:28
+msgid "Maximize"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:29
+msgid "Move"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:30
+msgid "Resize"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:31
+msgid "Always on Top"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:32
+msgid "Always on Visible Workspace"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:33
+msgid "Move to Workspace Left"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:34
+msgid "Move to Workspace Right"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:35
+msgid "Move to Workspace Up"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:36
+msgid "Move to Workspace Down"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:37
+msgid "Move to Monitor Up"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:38
+msgid "Move to Monitor Down"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:39
+msgid "Move to Monitor Left"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:40
+msgid "Move to Monitor Right"
+msgstr ""
+
+#: global-menu@unmade.space/windowActions.js:41
+msgid "Close"
+msgstr ""

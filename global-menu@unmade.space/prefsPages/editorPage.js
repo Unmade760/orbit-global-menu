@@ -14,6 +14,7 @@ import Gtk from 'gi://Gtk';
 import {validateMapping} from '../shortcutStore.js';
 import {parseAccelerator} from '../accelerator.js';
 import {captureShortcut} from './shortcutCapture.js';
+import {_, ngettext} from '../i18n.js';
 
 const MODIFIER_LABELS = {
 	0xffe3: 'Ctrl',
@@ -76,46 +77,44 @@ export class EditorPage {
 		const actionsGroup = new Adw.PreferencesGroup();
 		prefsPage.add(actionsGroup);
 
-		const saveRow = new Adw.ButtonRow({title: 'Save'});
+		const saveRow = new Adw.ButtonRow({title: _('Save')});
 		saveRow.add_css_class('suggested-action');
 		saveRow.connect('activated', () => this._save());
 		actionsGroup.add(saveRow);
 
 		if (hasUserFile) {
 			const dangerRow = new Adw.ButtonRow({
-				title: hasBuiltin ? 'Reset to Built-in Default' : 'Delete This Mapping',
+				title: hasBuiltin ? _('Reset to Built-in Default') : _('Delete This Mapping'),
 			});
 			dangerRow.add_css_class('destructive-action');
 			dangerRow.connect('activated', () => this._deleteUserFile());
 			actionsGroup.add(dangerRow);
 		}
 
-		const metaGroup = new Adw.PreferencesGroup({title: 'Application'});
+		const metaGroup = new Adw.PreferencesGroup({title: _('Application')});
 		prefsPage.add(metaGroup);
 
-		this._nameRow = new Adw.EntryRow({title: 'Display Name'});
+		this._nameRow = new Adw.EntryRow({title: _('Display Name')});
 		this._nameRow.set_text(mapping?.name ?? appId);
 		metaGroup.add(this._nameRow);
 
-		const idRow = new Adw.EntryRow({title: 'App ID (file name, fixed)'});
+		const idRow = new Adw.EntryRow({title: _('App ID (file name, fixed)')});
 		idRow.set_text(appId);
 		idRow.set_sensitive(false);
 		metaGroup.add(idRow);
 
-		this._identifiersRow = new Adw.EntryRow({title: 'Identifiers (comma-separated)'});
+		this._identifiersRow = new Adw.EntryRow({title: _('Identifiers (comma-separated)')});
 		this._identifiersRow.set_text((mapping?.identifiers ?? []).join(', '));
 		metaGroup.add(this._identifiersRow);
 
 		if (hasBuiltin && !hasUserFile) {
 			metaGroup.set_description(
-				'This is a built-in mapping. Saving creates a user override in ' +
-				'~/.config/global-menu/shortcuts/apps. The built-in file itself is never modified.');
+				_('This is a built-in mapping. Saving creates a user override in ~/.config/global-menu/shortcuts/apps. The built-in file itself is never modified.'));
 		}
 
 		this._menusGroup = new Adw.PreferencesGroup({
-			title: 'Menus',
-			description: 'Click the shortcut button on an item to set it, exactly like GNOME Settings\' ' +
-				'Keyboard Shortcuts panel.',
+			title: _('Menus'),
+			description: _('Click the shortcut button on an item to set it, exactly like GNOME Settings\' Keyboard Shortcuts panel.'),
 		});
 		prefsPage.add(this._menusGroup);
 
@@ -145,14 +144,14 @@ export class EditorPage {
 				expander.add_row(this._buildItemRow(menu, item, itemIndex));
 			});
 
-			const addItemRow = new Adw.ButtonRow({title: 'Add Item'});
+			const addItemRow = new Adw.ButtonRow({title: _('Add Item')});
 			addItemRow.connect('activated', () => {
-				menu.items.push({label: 'New Item'});
+				menu.items.push({label: _('New Item')});
 				this._rebuildMenusUI();
 			});
 			expander.add_row(addItemRow);
 
-			const addSeparatorRow = new Adw.ButtonRow({title: 'Add Separator'});
+			const addSeparatorRow = new Adw.ButtonRow({title: _('Add Separator')});
 			addSeparatorRow.connect('activated', () => {
 				menu.items.push({separator: true});
 				this._rebuildMenusUI();
@@ -163,9 +162,9 @@ export class EditorPage {
 			this._menuRows.push(expander);
 		});
 
-		const addMenuRow = new Adw.ButtonRow({title: 'Add Menu…'});
+		const addMenuRow = new Adw.ButtonRow({title: _('Add Menu…')});
 		addMenuRow.connect('activated', () => {
-			this._menus.push({label: 'New Menu', items: []});
+			this._menus.push({label: _('New Menu'), items: []});
 			this._rebuildMenusUI();
 		});
 		this._menusGroup.add(addMenuRow);
@@ -174,7 +173,7 @@ export class EditorPage {
 
 	_buildItemRow(menu, item, itemIndex) {
 		if (item.separator) {
-			const row = new Adw.ActionRow({title: '── Separator ──'});
+			const row = new Adw.ActionRow({title: _('── Separator ──')});
 			row.add_suffix(this._buildRemoveButton(() => {
 				menu.items.splice(itemIndex, 1);
 				this._rebuildMenusUI();
@@ -185,7 +184,7 @@ export class EditorPage {
 		if (!isSimpleLeaf(item)) {
 			const row = new Adw.ActionRow({
 				title: item.label ?? '(complex item)',
-				subtitle: 'Submenu or advanced item. Not editable here, kept as it is on save.',
+				subtitle: _('Submenu or advanced item. Not editable here, kept as it is on save.'),
 			});
 			row.add_suffix(this._buildRemoveButton(() => {
 				menu.items.splice(itemIndex, 1);
@@ -194,7 +193,7 @@ export class EditorPage {
 			return row;
 		}
 
-		const row = new Adw.EntryRow({title: 'Label'});
+		const row = new Adw.EntryRow({title: _('Label')});
 		row.set_text(item.label ?? '');
 		row.connect('changed', () => {
 			item.label = row.get_text();
@@ -203,7 +202,7 @@ export class EditorPage {
 		const shortcutButton = new Gtk.Button({valign: Gtk.Align.CENTER, css_classes: ['flat']});
 		const refreshShortcutButton = () => {
 			const content = new Gtk.Box({spacing: 6});
-			content.append(new Gtk.Label({label: item.shortcut ? prettyAccel(item.shortcut) : 'Disabled'}));
+			content.append(new Gtk.Label({label: item.shortcut ? prettyAccel(item.shortcut) : _('Disabled')}));
 			content.append(new Gtk.Image({icon_name: 'document-edit-symbolic'}));
 			shortcutButton.set_child(content);
 		};
@@ -243,8 +242,8 @@ export class EditorPage {
 		const dialog = new Adw.AlertDialog({heading: 'Rename Menu'});
 		const entry = new Gtk.Entry({text: menu.label});
 		dialog.set_extra_child(entry);
-		dialog.add_response('cancel', 'Cancel');
-		dialog.add_response('rename', 'Rename');
+		dialog.add_response('cancel', _('Cancel'));
+		dialog.add_response('rename', _('Rename'));
 		dialog.set_response_appearance('rename', Adw.ResponseAppearance.SUGGESTED);
 		dialog.set_default_response('rename');
 		dialog.connect('response', (_d, response) => {
@@ -286,10 +285,12 @@ export class EditorPage {
 		this._bumpRevision();
 		this._onChanged?.();
 
-		if (warnings.length > 0)
-			this._toast(`Saved, but ${warnings.length} item(s) had problems: ${warnings[0].message}`);
-		else
-			this._toast('Saved');
+		if (warnings.length > 0) {
+			const text = ngettext('Saved, but %d item had a problem: %s', 'Saved, but %d items had problems: %s', warnings.length);
+			this._toast(text.replace('%d', warnings.length).replace('%s', warnings[0].message));
+		} else {
+			this._toast(_('Saved'));
+		}
 	}
 
 	_deleteUserFile() {
@@ -297,7 +298,7 @@ export class EditorPage {
 		try {
 			file.delete(null);
 		} catch (e) {
-			this._toast(`Could not delete: ${e.message}`);
+			this._toast(_('Could not delete: %s').replace('%s', e.message));
 			return;
 		}
 		this._bumpRevision();

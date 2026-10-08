@@ -144,6 +144,17 @@ also blur what is behind a popup, which needs
 [Blur My Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 installed and does nothing without it.
 
+## Translations
+
+The preferences window, the fallback menu and the window menu are translated
+through gettext. Simplified Chinese (`zh_CN`) is included. Menus an app
+exports arrive in the app's own language. The curated shortcut menus are
+English for now.
+
+To add a language, copy `po/global-menu.pot` to `po/<lang>.po`, translate it,
+and run `tools/i18n.sh`, which compiles it into the extension's `locale/`
+folder.
+
 ## Credits
 
 The daemon and the D-Bus plumbing come from

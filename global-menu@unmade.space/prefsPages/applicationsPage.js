@@ -7,6 +7,7 @@ import Gio from 'gi://Gio';
 import Gtk from 'gi://Gtk';
 
 import {EditorPage} from './editorPage.js';
+import {_} from '../i18n.js';
 
 function sanitizeAppId(text) {
 	return text
@@ -25,14 +26,13 @@ export class ApplicationsPage {
 		this._userAppsDir = userAppsDir;
 
 		this.page = new Adw.PreferencesPage({
-			title: 'Applications',
+			title: _('Applications'),
 			icon_name: 'view-list-symbolic',
 		});
 
 		this._group = new Adw.PreferencesGroup({
-			title: 'Shortcut Menus',
-			description: 'Per-app curated menus that synthesize the app\'s real keyboard shortcuts. ' +
-				'Editing a built-in creates a user override; built-in files are never modified.',
+			title: _('Shortcut Menus'),
+			description: _('Per-app curated menus that synthesize the app\'s real keyboard shortcuts. Editing a built-in creates a user override; built-in files are never modified.'),
 		});
 		this.page.add(this._group);
 		this._rows = [];
@@ -61,7 +61,7 @@ export class ApplicationsPage {
 			this._rows.push(row);
 		}
 
-		const addRow = new Adw.ButtonRow({title: 'Add Application…'});
+		const addRow = new Adw.ButtonRow({title: _('Add Application…')});
 		addRow.connect('activated', () => this._showAddDialog());
 		this._group.add(addRow);
 		this._rows.push(addRow);
@@ -77,7 +77,7 @@ export class ApplicationsPage {
 		if (!mapping) {
 			const warning = this._store.warnings.find(
 				w => w.file === `${entry.app}.json` && w.level !== 'info');
-			row.set_subtitle(`Error: ${warning?.message ?? 'failed to load'}`);
+			row.set_subtitle(_('Error: %s').replace('%s', warning?.message ?? _('failed to load')));
 			row.add_css_class('error');
 		} else if (entry.hasUser && entry.hasBuiltin) {
 			row.set_subtitle(`${entry.app} · Built-in, overridden`);
@@ -122,7 +122,7 @@ export class ApplicationsPage {
 	}
 
 	_showAddDialog() {
-		const dialog = new Adw.Dialog({title: 'Add Application', content_width: 480, content_height: 560});
+		const dialog = new Adw.Dialog({title: _('Add Application'), content_width: 480, content_height: 560});
 
 		const toolbarView = new Adw.ToolbarView();
 		dialog.set_child(toolbarView);
@@ -131,9 +131,9 @@ export class ApplicationsPage {
 		const box = new Gtk.Box({orientation: Gtk.Orientation.VERTICAL, spacing: 8, margin_top: 8, margin_start: 8, margin_end: 8, margin_bottom: 8});
 		toolbarView.set_content(box);
 
-		const manualRow = new Adw.EntryRow({title: 'Or type an app id / identifier manually'});
+		const manualRow = new Adw.EntryRow({title: _('Or type an app id / identifier manually')});
 		box.append(manualRow);
-		const manualButton = new Gtk.Button({label: 'Create Blank Mapping', halign: Gtk.Align.START});
+		const manualButton = new Gtk.Button({label: _('Create Blank Mapping'), halign: Gtk.Align.START});
 		manualButton.connect('clicked', () => {
 			const text = manualRow.get_text().trim();
 			if (text === '')
@@ -143,7 +143,7 @@ export class ApplicationsPage {
 		});
 		box.append(manualButton);
 
-		const search = new Gtk.SearchEntry({placeholder_text: 'Search installed applications'});
+		const search = new Gtk.SearchEntry({placeholder_text: _('Search installed applications')});
 		box.append(search);
 
 		const scrolled = new Gtk.ScrolledWindow({vexpand: true});
