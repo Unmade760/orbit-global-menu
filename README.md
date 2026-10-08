@@ -91,10 +91,11 @@ on Arch.
 Nothing goes in autostart. The extension starts `global-menu` when nobody owns
 its bus name and stops the process it started when it is disabled.
 
-On Xorg only, Bamf improves window matching and Keybinder enables the Alt+Space
-menu search. Both are optional and do nothing on Wayland. The deb recommends
-`gir1.2-bamf-3`, `bamfdaemon` and `gir1.2-keybinder-3.0`; on Fedora the
-packages are `bamf` and `keybinder3`, on Arch `bamf` and `libkeybinder3`.
+On Xorg only, Bamf improves window matching and Keybinder enables the
+Ctrl+Super+Space menu search. Both are optional and do nothing on Wayland. The
+deb recommends `gir1.2-bamf-3`, `bamfdaemon` and `gir1.2-keybinder-3.0`; on
+Fedora the packages are `bamf` and `keybinder3`, on Arch `bamf` and
+`libkeybinder3`.
 Packaging for Arch and Debian is in
 `PKGBUILD` and `debian/`.
 

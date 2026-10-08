@@ -10,7 +10,7 @@ depends=('python-gobject'
          'gtk3'
          'appmenu-gtk-module')
 optdepends=('bamf: window matching on X11'
-            'libkeybinder3: Alt+Space menu search on X11'
+            'libkeybinder3: Ctrl+Super+Space menu search on X11'
             'libdbusmenu-glib: lets Electron and Firefox export their menus')
 makedepends=('git' 'python-setuptools')
 provides=("python-global-menu=$pkgver")
