@@ -146,7 +146,7 @@ const ACTION_SHORTCUTS = {
 	'snap-right': '<Super>Right',
 	'switch-windows': '<Super>Tab',
 	'cycle-windows': '<Alt>Escape',
-	'cycle-app-windows': "<Super>`",
+	'cycle-app-windows': '<Super>`',
 	'window-menu': '<Alt>space',
 	'next-workspace': '<Super>Page_Down',
 	'previous-workspace': '<Super>Page_Up',
@@ -187,40 +187,36 @@ function windowMenuSpecs() {
 		}));
 	specs.push(
 		{separator: true},
-		{label: 'Snap Window Left', onActivate: () => executeFallbackAction('snap-left')},
-		{label: 'Snap Window Right', onActivate: () => executeFallbackAction('snap-right')},
+		actionSpec('Snap Window Left', 'snap-left'),
+		actionSpec('Snap Window Right', 'snap-right'),
 		{separator: true},
-		{label: 'Switch Between Windows', onActivate: () => executeFallbackAction('switch-windows')},
-		{label: 'Cycle Through Windows', onActivate: () => executeFallbackAction('cycle-windows')},
-		{label: 'Switch Windows of Same App', onActivate: () => executeFallbackAction('cycle-app-windows')},
-		{label: 'Window Menu', onActivate: () => executeFallbackAction('window-menu')}
+		actionSpec('Switch Between Windows', 'switch-windows'),
+		actionSpec('Cycle Through Windows', 'cycle-windows'),
+		actionSpec('Switch Windows of Same App', 'cycle-app-windows'),
+		actionSpec('Window Menu', 'window-menu')
 	);
 	return specs;
 }
 
+function actionSpec(label, action) {
+	return {label, accel: ACTION_SHORTCUTS[action], onActivate: () => executeFallbackAction(action)};
+}
+
 function toSpecs(items) {
-	return items.map(item => {
-		if (item.separator)
-			return {separator: true};
-		return {label: item.label, onActivate: () => executeFallbackAction(item.action)};
-	});
+	return items.map(item => item.separator ? {separator: true} : actionSpec(item.label, item.action));
 }
 
 const MENU_DATA = [
 	{
+		// Holds nothing until the app-name menu is built from the focused
+		// app's own actions. An empty menu does not open.
 		label: 'Desktop',
 		appName: true,
-		items: [
-			{label: 'Open Files', action: 'open-files'},
-			{label: 'Settings', action: 'open-settings'},
-			{separator: true},
-			{label: 'Empty Trash', action: 'empty-trash'},
-		],
+		items: [],
 	},
 	{
 		label: 'File',
 		items: [
-			{label: 'New Window', action: 'open-files'},
 			{label: 'New Folder on Desktop', action: 'new-folder'},
 			{label: 'New Tab', action: 'new-tab'},
 			{label: 'Open', action: 'virtual-open'},
@@ -270,6 +266,11 @@ const MENU_DATA = [
 		items: [
 			{label: 'Show Applications', action: 'show-applications'},
 			{label: 'Show Notifications', action: 'show-notifications'},
+			{separator: true},
+			{label: 'Open Files', action: 'open-files'},
+			{label: 'Settings', action: 'open-settings'},
+			{separator: true},
+			{label: 'Empty Trash', action: 'empty-trash'},
 			{separator: true},
 			{label: 'Lock Screen', action: 'lock-screen'},
 			{label: 'Suspend', action: 'suspend'},
