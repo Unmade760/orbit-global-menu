@@ -55,7 +55,7 @@
     {
       "label": "Tools",
       "items": [
-        {"label": "Pan Map", "shortcut": "<Ctrl><Alt>P"},
+        {"label": "Pan Map"},
         {"label": "Zoom to Layer", "shortcut": "<Ctrl>J"},
         {"label": "Toggle Layer Styling Dock", "shortcut": "F7"},
         {"label": "Python Console", "shortcut": "<Ctrl><Alt>P"}

@@ -12,7 +12,7 @@
       "label": "File",
       "items": [
         {"label": "Open Nextcloud Local Folder", "shortcut": "<Ctrl>O"},
-        {"label": "Open Nextcloud in Browser", "shortcut": "<Ctrl>W"},
+        {"label": "Open Nextcloud in Browser"},
         {"label": "Open Log Output Window", "shortcut": "F12"},
         {"label": "Close Window", "shortcut": "<Ctrl>W"},
         {"label": "Quit Nextcloud Client", "shortcut": "<Ctrl>Q"}

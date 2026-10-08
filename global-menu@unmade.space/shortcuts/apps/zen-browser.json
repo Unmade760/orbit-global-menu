@@ -148,7 +148,7 @@
         {"label": "Toggle Style Editor", "shortcut": "<Shift>F7"},
         {"label": "Toggle Performance", "shortcut": "<Shift>F5"},
         {"label": "Toggle Storage", "shortcut": "<Shift>F9"},
-        {"label": "Toggle DOM", "shortcut": "<Ctrl><Shift>W"},
+        {"label": "Toggle DOM"},
         {"label": "Toggle Accessibility", "shortcut": "<Shift>F12"},
         {"label": "Toggle Responsive Design Mode", "shortcut": "<Ctrl><Shift>M"},
         {"separator": true},
