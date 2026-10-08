@@ -1,35 +1,55 @@
 #!/usr/bin/env python3
-"""Fail on any mention of an AI assistant, model or agent in the repo.
+"""Fail on any word from the private deny list kept outside the repo.
 
 Usage: attribution-scan.py   (run from the repo root)
 
+The list is a text file of regular expressions, one per line; blank lines
+and lines starting with # are ignored. It is read from $GM_ATTRIBUTION_WORDS,
+or from /home/ravi/fildem-work/attribution-words.txt when that is unset. A
+list that is missing, empty or does not compile is a failure, never a pass.
+
 Scans:
-  - every tracked file, plus untracked files git does not ignore (so a new
-    file fails before it is committed)
+  - every tracked file, this scanner and its wrapper included, plus
+    untracked files git does not ignore (so a new file fails before it is
+    committed)
   - every commit reachable from HEAD: message, author and committer
 
-Exempt: this scanner and tools/checks/attribution.sh, which have to spell
-the names, and the "label" strings of shortcuts/apps/*.json, which quote an
-application's own menu text (an editor can have a "Toggle Assistant" item).
+Exempt: the "label" strings of shortcuts/apps/*.json, which quote an
+application's own menu text.
 
 Prints one line per hit and a "summary: " line. Exit 1 on any hit.
 """
 
 import json
+import os
 import re
 import subprocess
 import sys
 
-PATTERN = re.compile(
-    r'\b(?:claude|anthropic|openai|chatgpt|gpt-?\d|gemini|antigravity|copilot'
-    r'|codex|llms?|subagents?|large language models?|language models?'
-    r'|ai[- ]generated|ai[- ]assisted|generated (?:with|by) (?:an? )?ai'
-    r'|ai (?:assistant|agent|model)s?)\b'
-    r'|noreply@anthropic',
-    re.IGNORECASE,
-)
-SELF = {'tools/lib/attribution-scan.py', 'tools/checks/attribution.sh'}
+WORDS_ENV = 'GM_ATTRIBUTION_WORDS'
+WORDS_DEFAULT = '/home/ravi/fildem-work/attribution-words.txt'
 MAPPING_DIR = 'global-menu@unmade.space/shortcuts/apps/'
+
+
+def fail(reason):
+    print(f'summary: {reason}')
+    sys.exit(1)
+
+
+def load_pattern():
+    path = os.environ.get(WORDS_ENV) or WORDS_DEFAULT
+    try:
+        with open(path, encoding='utf-8') as f:
+            lines = f.read().splitlines()
+    except OSError as e:
+        fail(f'deny list not readable at {path}: {e.strerror} (set {WORDS_ENV} to move it)')
+    words = [w.strip() for w in lines if w.strip() and not w.lstrip().startswith('#')]
+    if not words:
+        fail(f'deny list at {path} has no entries')
+    try:
+        return re.compile('|'.join(f'(?:{w})' for w in words), re.IGNORECASE)
+    except re.error as e:
+        fail(f'deny list at {path} does not compile: {e}')
 
 
 def git(*args):
@@ -62,18 +82,19 @@ def file_text(path):
 
 
 def main():
+    pattern = load_pattern()
     hits = []
     files = set(git('ls-files', '-z').decode().split('\0'))
     files |= set(git('ls-files', '-z', '--others', '--exclude-standard').decode().split('\0'))
     files.discard('')
     scanned = 0
-    for path in sorted(files - SELF):
+    for path in sorted(files):
         text = file_text(path)
         if text is None:
             continue
         scanned += 1
         for n, line in enumerate(text.splitlines(), 1):
-            m = PATTERN.search(line)
+            m = pattern.search(line)
             if m:
                 hits.append(f'{path}:{n}: {m.group(0)!r}: {line.strip()[:160]}')
 
@@ -82,7 +103,7 @@ def main():
     for entry in commits:
         sha, _, rest = entry.strip('\n').partition('\n')
         for line in rest.splitlines():
-            m = PATTERN.search(line)
+            m = pattern.search(line)
             if m:
                 hits.append(f'commit {sha[:10]}: {m.group(0)!r}: {line.strip()[:160]}')
 

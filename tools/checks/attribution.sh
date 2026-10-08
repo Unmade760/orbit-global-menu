@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-# attribution: no tracked file and no commit names an AI assistant, model or
-# agent (product names, co-author trailers, "generated with" lines).
+# attribution: no tracked file and no commit contains a word from the
+# private deny list kept outside the repo.
 #
-# tools/lib/attribution-scan.py does the work: every tracked file plus
-# untracked files git does not ignore, and every commit reachable from HEAD
-# (message, author, committer). Mapping labels are exempt because they
-# quote an application's own menu text. Run through
-# tools/check.sh attribution.
+# tools/lib/attribution-scan.py does the work: every tracked file (this
+# wrapper and the scanner included) plus untracked files git does not
+# ignore, and every commit reachable from HEAD (message, author, committer).
+# The list is read from $GM_ATTRIBUTION_WORDS, or from
+# /home/ravi/fildem-work/attribution-words.txt; without it the check fails.
+# Mapping labels are exempt because they quote an application's own menu
+# text. Run through tools/check.sh attribution.
 
 set -uo pipefail
 cd "${GM_REPO:?run through tools/check.sh}" || exit 2
