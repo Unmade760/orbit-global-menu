@@ -5,11 +5,14 @@
 // Items act through window operations, the shell's own system actions, or a
 // keyboard shortcut synthesized into the focused app. Nothing here shells out.
 
+import Clutter from 'gi://Clutter';
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
 import Shell from 'gi://Shell';
 
 import * as SystemActions from 'resource:///org/gnome/shell/misc/systemActions.js';
+import * as Dialog from 'resource:///org/gnome/shell/ui/dialog.js';
+import * as ModalDialog from 'resource:///org/gnome/shell/ui/modalDialog.js';
 
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';
@@ -70,51 +73,160 @@ function launchDesktopApp(id, fallbackId) {
 		console.warn(`[global-menu-fallback] ${id} is not installed`);
 }
 
+// File operations run through the async Gio calls, so a slow gvfs mount never
+// holds up the compositor. They share one cancellable, which destroy() cancels.
+let fileCancellable = null;
+let trashDialog = null;
+
+// Items fetched and deleted per round trip
+const TRASH_BATCH_SIZE = 100;
+
+function fileOperations() {
+	fileCancellable ??= new Gio.Cancellable();
+	return fileCancellable;
+}
+
+function cancelFileOperations() {
+	fileCancellable?.cancel();
+	fileCancellable = null;
+	trashDialog?.close();
+	trashDialog = null;
+}
+
+function logFileError(what, e) {
+	if (e.matches?.(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED))
+		return;
+	console.error(`[global-menu-fallback] could not ${what}: ${e.message}`);
+}
+
+// done() gets the error, or nothing once the folder exists
+function makeDirectory(dir, cancellable, done) {
+	dir.make_directory_async(GLib.PRIORITY_DEFAULT, cancellable, (_o, res) => {
+		try {
+			dir.make_directory_finish(res);
+		} catch (e) {
+			done(e);
+			return;
+		}
+		done();
+	});
+}
+
 // A folder on the desktop, numbered if the plain name is taken, the way a
 // file manager would do it.
 function makeDesktopFolder() {
 	const desktop = Gio.File.new_for_path(
 		GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP) ??
 		GLib.build_filenamev([GLib.get_home_dir(), 'Desktop']));
-	for (let n = 0; n < 100; n++) {
-		const name = n === 0 ? 'Untitled Folder' : `Untitled Folder ${n + 1}`;
-		try {
-			desktop.get_child(name).make_directory_with_parents(null);
-			return;
-		} catch (e) {
-			if (!e.matches(Gio.IOErrorEnum, Gio.IOErrorEnum.EXISTS)) {
-				console.error(`[global-menu-fallback] could not create ${name}: ${e.message}`);
-				return;
-			}
-		}
-	}
+	const cancellable = fileOperations();
+	// The desktop folder may not exist yet. If making it fails for a real
+	// reason, making the folder inside it fails too, and logs that.
+	makeDirectory(desktop, cancellable, () => makeNumberedFolder(desktop, cancellable, 0));
 }
 
-// Gio has no empty-the-trash call, so the entries are deleted one by one.
+function makeNumberedFolder(desktop, cancellable, n) {
+	if (n >= 100)
+		return;
+	const name = n === 0 ? 'Untitled Folder' : `Untitled Folder ${n + 1}`;
+	makeDirectory(desktop.get_child(name), cancellable, e => {
+		if (!e)
+			return;
+		if (e.matches?.(Gio.IOErrorEnum, Gio.IOErrorEnum.EXISTS))
+			makeNumberedFolder(desktop, cancellable, n + 1);
+		else
+			logFileError(`create ${name}`, e);
+	});
+}
+
+// Asks first, in the wording Files uses, since nothing brings the items back.
+function emptyTrash() {
+	if (trashDialog)
+		return;
+	const dialog = new ModalDialog.ModalDialog();
+	trashDialog = dialog;
+	dialog.connect('closed', () => {
+		if (trashDialog === dialog)
+			trashDialog = null;
+	});
+	dialog.contentLayout.add_child(new Dialog.MessageDialogContent({
+		title: 'Empty all items from Trash?',
+		description: 'All items in the Trash will be permanently deleted.',
+	}));
+	dialog.setButtons([
+		{
+			label: 'Cancel',
+			action: () => dialog.close(),
+			key: Clutter.KEY_Escape,
+		},
+		{
+			label: 'Empty Trash',
+			action: () => {
+				dialog.close();
+				deleteTrashItems();
+			},
+		},
+	]);
+	dialog.open();
+}
+
+// Gio has no empty-the-trash call, so the entries are deleted in batches.
 // trash:/// hands back the top-level items only, and deleting one takes its
 // contents with it.
-function emptyTrash() {
+function deleteTrashItems() {
 	const trash = Gio.File.new_for_uri('trash:///');
+	const cancellable = fileOperations();
 	trash.enumerate_children_async(Gio.FILE_ATTRIBUTE_STANDARD_NAME,
-		Gio.FileQueryInfoFlags.NOFOLLOW_SYMLINKS, GLib.PRIORITY_DEFAULT, null,
+		Gio.FileQueryInfoFlags.NOFOLLOW_SYMLINKS, GLib.PRIORITY_DEFAULT, cancellable,
 		(_o, res) => {
 			let entries;
 			try {
 				entries = trash.enumerate_children_finish(res);
 			} catch (e) {
-				console.error(`[global-menu-fallback] could not read the trash: ${e.message}`);
+				logFileError('read the trash', e);
 				return;
 			}
-			let info;
-			while ((info = entries.next_file(null)) !== null) {
-				try {
-					entries.get_child(info).delete(null);
-				} catch (e) {
-					console.error(`[global-menu-fallback] could not delete ${info.get_name()}: ${e.message}`);
-				}
-			}
-			entries.close(null);
+			deleteNextBatch(entries, cancellable);
 		});
+}
+
+function deleteNextBatch(entries, cancellable) {
+	entries.next_files_async(TRASH_BATCH_SIZE, GLib.PRIORITY_DEFAULT, cancellable, (_o, res) => {
+		let infos = [];
+		try {
+			infos = entries.next_files_finish(res);
+		} catch (e) {
+			logFileError('read the trash', e);
+		}
+		if (infos.length === 0) {
+			closeEntries(entries);
+			return;
+		}
+		let pending = infos.length;
+		infos.forEach(info => {
+			const child = entries.get_child(info);
+			child.delete_async(GLib.PRIORITY_DEFAULT, cancellable, (_f, deleted) => {
+				try {
+					child.delete_finish(deleted);
+				} catch (e) {
+					logFileError(`delete ${info.get_name()}`, e);
+				}
+				pending--;
+				if (pending === 0)
+					deleteNextBatch(entries, cancellable);
+			});
+		});
+	});
+}
+
+// Not cancellable: a cancelled enumerator still has to be closed
+function closeEntries(entries) {
+	entries.close_async(GLib.PRIORITY_DEFAULT, null, (_o, res) => {
+		try {
+			entries.close_finish(res);
+		} catch (e) {
+			logFileError('close the trash', e);
+		}
+	});
 }
 
 function minimizeEverything() {
@@ -270,7 +382,7 @@ const MENU_DATA = [
 			{label: 'Open Files', action: 'open-files'},
 			{label: 'Settings', action: 'open-settings'},
 			{separator: true},
-			{label: 'Empty Trash', action: 'empty-trash'},
+			{label: 'Empty Trash…', action: 'empty-trash'},
 			{separator: true},
 			{label: 'Lock Screen', action: 'lock-screen'},
 			{label: 'Suspend', action: 'suspend'},
@@ -329,6 +441,7 @@ export class FallbackMenu {
 
 	destroy() {
 		this._cancelPendingShow();
+		cancelFileOperations();
 		this._buttons.forEach(btn => btn.destroy());
 		this._buttons = [];
 		this._appButton = null;
