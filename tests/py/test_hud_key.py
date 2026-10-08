@@ -4,6 +4,8 @@
 
 import logging
 import re
+import time
+from types import SimpleNamespace
 
 import pytest
 
@@ -28,6 +30,7 @@ def normalize_chord(chord):
 
 @pytest.fixture
 def hud_bind(monkeypatch):
+	import dbus
 	from gi.repository import GLib
 	from globalmenu import keybinder
 
@@ -48,6 +51,7 @@ def hud_bind(monkeypatch):
 	monkeypatch.setattr(keybinder, 'Keybinder', FakeKeybinder)
 	monkeypatch.setattr(keybinder, 'DBusGMainLoop', lambda **kw: None)
 	monkeypatch.setattr(keybinder, 'DbusMenu', lambda: None)
+	monkeypatch.setattr(dbus, 'SessionBus', lambda: SimpleNamespace(name_has_owner=lambda name: True))
 	monkeypatch.setattr(GLib, 'MainLoop', Loop)
 
 	def run(bind_result=True):
@@ -74,3 +78,25 @@ def test_successful_hud_bind_logs_nothing(hud_bind, caplog):
 	with caplog.at_level(logging.WARNING):
 		hud_bind()
 	assert caplog.text == ''
+
+
+def test_the_reader_waits_for_the_service_before_reading_menus(hud_bind, monkeypatch):
+	# command.py starts the service and the reader together
+	import dbus
+	from globalmenu import keybinder
+
+	owned = iter([False, False, True])
+	events = []
+
+	class Bus:
+		def name_has_owner(self, name):
+			has = next(owned)
+			events.append(('owner', name, has))
+			return has
+
+	monkeypatch.setattr(dbus, 'SessionBus', Bus)
+	monkeypatch.setattr(time, 'sleep', lambda s: None)
+	monkeypatch.setattr(keybinder, 'DbusMenu', lambda: events.append('reader'))
+	hud_bind()
+	assert events[-1] == 'reader'
+	assert events[-2] == ('owner', 'space.unmade.GlobalMenu', True)
