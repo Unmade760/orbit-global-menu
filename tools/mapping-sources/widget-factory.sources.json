@@ -1,0 +1,111 @@
+{
+  "format": 1,
+  "app": "widget-factory",
+  "repos": {
+    "widget-factory": {
+      "url": "https://gitlab.gnome.org/GNOME/gtk.git",
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Show About Dialog"
+      ],
+      "shortcut": "F1",
+      "repo": "widget-factory",
+      "file": "demos/widget-factory/help-overlay.ui",
+      "line": 10,
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "widget-factory",
+      "file": "demos/widget-factory/help-overlay.ui",
+      "line": 16,
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    },
+    {
+      "path": [
+        "General",
+        "Switch to dark theme"
+      ],
+      "shortcut": "<Ctrl>D",
+      "repo": "widget-factory",
+      "file": "demos/widget-factory/help-overlay.ui",
+      "line": 22,
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    },
+    {
+      "path": [
+        "Traditional",
+        "Search"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "widget-factory",
+      "file": "demos/widget-factory/help-overlay.ui",
+      "line": 34,
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    },
+    {
+      "path": [
+        "Traditional",
+        "Delete"
+      ],
+      "shortcut": "Delete",
+      "repo": "widget-factory",
+      "file": "demos/widget-factory/help-overlay.ui",
+      "line": 40,
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    },
+    {
+      "path": [
+        "Traditional",
+        "Set background"
+      ],
+      "shortcut": "<Ctrl>B",
+      "repo": "widget-factory",
+      "file": "demos/widget-factory/help-overlay.ui",
+      "line": 46,
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    },
+    {
+      "path": [
+        "Modern",
+        "Open a file"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "widget-factory",
+      "file": "demos/widget-factory/help-overlay.ui",
+      "line": 58,
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    },
+    {
+      "path": [
+        "Modern",
+        "Start recording"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "widget-factory",
+      "file": "demos/widget-factory/help-overlay.ui",
+      "line": 64,
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    },
+    {
+      "path": [
+        "Modern",
+        "Lock or unlock"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "widget-factory",
+      "file": "demos/widget-factory/help-overlay.ui",
+      "line": 70,
+      "commit": "bd25f1e2dc2c2fbf3b8864e61afe642910ba359c"
+    }
+  ]
+}

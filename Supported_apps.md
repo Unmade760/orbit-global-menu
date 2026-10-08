@@ -157,6 +157,7 @@
 - Mattermost
 - Meld
 - melonDS
+- Menu Editor
 - mGBA
 - Microsoft Edge
 - Microsoft Teams
@@ -177,6 +178,7 @@
 - Obsidian
 - Okular
 - ONLYOFFICE
+- OpenWhispr
 - Opera
 - OrcaSlicer
 - Papers (Document Viewer)
@@ -270,6 +272,7 @@
 - WebStorm
 - WezTerm
 - Whatsie
+- Widget Factory
 - Wireshark
 - WPS Office
 - Xarchiver
@@ -277,6 +280,7 @@
 - Xournal++
 - XSane
 - Yelp
+- YouTube Music Desktop App
 - ZapZap
 - Zathura
 - Zed

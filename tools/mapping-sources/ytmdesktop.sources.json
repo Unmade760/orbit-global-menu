@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "app": "ytmdesktop",
+  "repos": {
+    "ytmdesktop": {
+      "url": "https://github.com/ytmdesktop/ytmdesktop.git",
+      "commit": "178681e4107aa5b5482c958358f144e5d8f06b80"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "YouTube Music Desktop App",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "ytmdesktop",
+      "file": "src/main/index.ts",
+      "line": 160,
+      "commit": "178681e4107aa5b5482c958358f144e5d8f06b80"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "ytmdesktop",
+      "file": "src/main/index.ts",
+      "line": 160,
+      "commit": "178681e4107aa5b5482c958358f144e5d8f06b80"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "ytmdesktop",
+      "file": "src/main/index.ts",
+      "line": 160,
+      "commit": "178681e4107aa5b5482c958358f144e5d8f06b80"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "ytmdesktop",
+      "file": "src/main/index.ts",
+      "line": 160,
+      "commit": "178681e4107aa5b5482c958358f144e5d8f06b80"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "ytmdesktop",
+      "file": "src/main/index.ts",
+      "line": 160,
+      "commit": "178681e4107aa5b5482c958358f144e5d8f06b80"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "ytmdesktop",
+      "file": "src/main/index.ts",
+      "line": 160,
+      "commit": "178681e4107aa5b5482c958358f144e5d8f06b80"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "ytmdesktop",
+      "file": "src/main/index.ts",
+      "line": 160,
+      "commit": "178681e4107aa5b5482c958358f144e5d8f06b80"
+    }
+  ]
+}

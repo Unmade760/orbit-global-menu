@@ -285,6 +285,10 @@
     "gnumeric.json",
     "lollypop.json",
     "mupdf.json",
-    "yelp.json"
+    "yelp.json",
+    "widget-factory.json",
+    "kmenuedit.json",
+    "openwhispr.json",
+    "ytmdesktop.json"
   ]
 }

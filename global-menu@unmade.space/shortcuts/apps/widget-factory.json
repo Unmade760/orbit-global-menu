@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "app": "widget-factory",
+  "name": "Widget Factory",
+  "identifiers": [
+    "org.gtk.WidgetFactory4.desktop",
+    "org.gtk.WidgetFactory4",
+    "gtk4-widget-factory",
+    "Widget Factory",
+    "GTK Widget Factory"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {
+          "label": "Show About Dialog",
+          "shortcut": "F1"
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        },
+        {
+          "label": "Switch to dark theme",
+          "shortcut": "<Ctrl>D"
+        }
+      ]
+    },
+    {
+      "label": "Traditional",
+      "items": [
+        {
+          "label": "Search",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Delete",
+          "shortcut": "Delete"
+        },
+        {
+          "label": "Set background",
+          "shortcut": "<Ctrl>B"
+        }
+      ]
+    },
+    {
+      "label": "Modern",
+      "items": [
+        {
+          "label": "Open a file",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Start recording",
+          "shortcut": "<Ctrl>R"
+        },
+        {
+          "label": "Lock or unlock",
+          "shortcut": "<Ctrl>L"
+        }
+      ]
+    }
+  ]
+}

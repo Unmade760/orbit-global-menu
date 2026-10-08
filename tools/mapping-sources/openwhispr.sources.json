@@ -1,0 +1,232 @@
+{
+  "format": 1,
+  "app": "openwhispr",
+  "repos": {
+    "openwhispr": {
+      "url": "https://github.com/OpenWhispr/openwhispr.git",
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "menu.appLabel",
+        "menu.settings"
+      ],
+      "shortcut": "<Super>comma",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 15,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "menu.appLabel",
+        "menu.quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 25,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 61,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 62,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 64,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 65,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 66,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste and Match Style"
+      ],
+      "shortcut": "<Ctrl><Shift>V",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 67,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "shortcut": "<Ctrl>A",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 69,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "View",
+        "Reload"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 80,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "View",
+        "Force Reload"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 81,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Developer Tools"
+      ],
+      "shortcut": "<Ctrl><Shift>I",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 82,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "View",
+        "Actual Size"
+      ],
+      "shortcut": "<Ctrl>0",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 84,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom In"
+      ],
+      "shortcut": "<Ctrl>plus",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 85,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom Out"
+      ],
+      "shortcut": "<Ctrl>minus",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 86,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "View",
+        "Toggle Full Screen"
+      ],
+      "shortcut": "F11",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 88,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "Window",
+        "Minimize"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 94,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "Window",
+        "Close"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 95,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "menu.file",
+        "menu.settings"
+      ],
+      "shortcut": "<Ctrl>comma",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 126,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    },
+    {
+      "path": [
+        "menu.file",
+        "menu.closeWindow"
+      ],
+      "shortcut": "<Ctrl>W",
+      "repo": "openwhispr",
+      "file": "src/helpers/menuManager.js",
+      "line": 130,
+      "commit": "8e8102f0834f14e9703fbb565f4c2e4dca6bea42"
+    }
+  ]
+}

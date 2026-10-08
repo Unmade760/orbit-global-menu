@@ -1,0 +1,65 @@
+{
+	"format": 1,
+	"app": "ytmdesktop",
+	"name": "YouTube Music Desktop App",
+	"identifiers": [
+		"youtube-music-desktop-app.desktop",
+		"youtube-music-desktop-app",
+		"YouTube Music Desktop App"
+	],
+	"menus": [
+		{
+			"label": "YouTube Music Desktop App",
+			"items": [
+				{
+					"label": "About"
+				},
+				{
+					"separator": true
+				},
+				{
+					"label": "Quit",
+					"shortcut": "<Ctrl>Q"
+				}
+			]
+		},
+		{
+			"label": "Edit",
+			"items": [
+				{
+					"label": "Undo",
+					"shortcut": "<Ctrl>Z"
+				},
+				{
+					"label": "Redo",
+					"shortcut": "<Ctrl><Shift>Z"
+				},
+				{
+					"separator": true
+				},
+				{
+					"label": "Cut",
+					"shortcut": "<Ctrl>X"
+				},
+				{
+					"label": "Copy",
+					"shortcut": "<Ctrl>C"
+				},
+				{
+					"label": "Paste",
+					"shortcut": "<Ctrl>V"
+				},
+				{
+					"label": "Delete"
+				},
+				{
+					"separator": true
+				},
+				{
+					"label": "Select All",
+					"shortcut": "<Ctrl>A"
+				}
+			]
+		}
+	]
+}

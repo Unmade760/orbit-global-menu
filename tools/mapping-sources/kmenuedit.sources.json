@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "app": "kmenuedit",
+  "repos": {
+    "kmenuedit": {
+      "url": "https://invent.kde.org/plasma/kmenuedit.git",
+      "commit": "8b1289b5394f716ec5d21193df3b074f7ca9b51a"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "kmenuedit",
+      "file": "kmenueditui.rc",
+      "line": 12,
+      "commit": "8b1289b5394f716ec5d21193df3b074f7ca9b51a"
+    },
+    {
+      "path": [
+        "File",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "kmenuedit",
+      "file": "kmenueditui.rc",
+      "line": 21,
+      "commit": "8b1289b5394f716ec5d21193df3b074f7ca9b51a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "shortcut": "<Ctrl>X",
+      "repo": "kmenuedit",
+      "file": "kmenueditui.rc",
+      "line": 29,
+      "commit": "8b1289b5394f716ec5d21193df3b074f7ca9b51a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "shortcut": "<Ctrl>C",
+      "repo": "kmenuedit",
+      "file": "kmenueditui.rc",
+      "line": 30,
+      "commit": "8b1289b5394f716ec5d21193df3b074f7ca9b51a"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "shortcut": "<Ctrl>V",
+      "repo": "kmenuedit",
+      "file": "kmenueditui.rc",
+      "line": 31,
+      "commit": "8b1289b5394f716ec5d21193df3b074f7ca9b51a"
+    }
+  ]
+}

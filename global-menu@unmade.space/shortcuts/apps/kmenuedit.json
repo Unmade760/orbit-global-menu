@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "app": "kmenuedit",
+  "name": "Menu Editor",
+  "identifiers": [
+    "org.kde.kmenuedit.desktop",
+    "org.kde.kmenuedit",
+    "kmenuedit",
+    "Menu Editor"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Quit",
+          "shortcut": "<Ctrl>Q"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Restore to System Menu"
+        }
+      ]
+    }
+  ]
+}
