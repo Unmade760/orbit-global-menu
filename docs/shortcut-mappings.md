@@ -42,6 +42,14 @@ file id (with and without `.desktop`), its WM class, its WM class instance,
 and the application name. The first mapping claiming an identifier wins, and a
 conflict is reported in the journal.
 
+A mapping with `"blank": true` and `"menus": []` gives the app no menu at all:
+no app name, no fallback menus, and an exported menu is ignored. It is for
+apps whose window is not a document window, such as a launcher's search box.
+
+```json
+{"format": 1, "app": "vicinae", "name": "Vicinae", "identifiers": ["vicinae.desktop", "vicinae"], "blank": true, "menus": []}
+```
+
 ## Items
 
 | Shape | Result |

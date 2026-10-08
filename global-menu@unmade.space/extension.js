@@ -116,6 +116,8 @@ class MenuBar {
 	 * @param {object[]} items - the daemon's tree, empty when the app has none
 	 */
 	setMenuTree(items) {
+		if (this._blank)
+			return;
 		this._native.setItems(items);
 		if (items.length > 0) {
 			this._shortcuts.setMapping(null);
@@ -133,10 +135,12 @@ class MenuBar {
 	refresh() {
 		this._fallback?.updateAppName();
 		this._shortcutMapping = null;
+		this._blank = false;
 
 		const focusApp = this._winTracker.focus_app;
 		const win = focusApp ? this._menuWindow(focusApp) : null;
 		if (!win) {
+			this._fallback?.setBlank(false);
 			this._showNothing();
 			return;
 		}
@@ -144,6 +148,15 @@ class MenuBar {
 		const candidates = this._shortcutCandidates(focusApp, win);
 		const mapping = this._store.resolveMapping(candidates);
 		this._shortcutMapping = mapping && this._shortcutsEnabledForApp(mapping) ? mapping : null;
+		// A blank mapping marks an app that should get no menu at all, such
+		// as a launcher whose window is only a search box
+		this._blank = mapping?.blank === true;
+		this._fallback?.setBlank(this._blank);
+		if (this._blank) {
+			this._native.clear();
+			this._shortcuts.setMapping(null);
+			return;
+		}
 		if (this._settings.get_boolean('debug-shortcut-menus')) {
 			console.log(`[global-menu-shortcuts] resolution: candidates=[${candidates}] ` +
 				`matched ${this._shortcutMapping?.app ?? 'nothing'}`);

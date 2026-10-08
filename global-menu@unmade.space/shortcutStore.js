@@ -78,6 +78,8 @@ export function validateMapping(raw, stem, warnings) {
 		name: typeof raw.name === 'string' && raw.name !== '' ? raw.name : raw.app,
 		identifiers,
 		menus,
+		// The app gets no menu at all, not even the app name
+		blank: raw.blank === true,
 	};
 }
 

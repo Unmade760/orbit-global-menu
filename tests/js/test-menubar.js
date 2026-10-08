@@ -114,6 +114,7 @@ export class FallbackMenu {
     constructor() { globalThis.gmTest.event('fallback.new'); }
     updateAppName() { globalThis.gmTest.event('fallback.updateAppName'); }
     setNativeMenusPresent(present) { globalThis.gmTest.event('fallback.present ' + present); }
+    setBlank(blank) { if (blank) globalThis.gmTest.event('fallback.blank'); }
     closeAllMenus() {}
     destroy() { globalThis.gmTest.event('fallback.destroy'); }
 }
@@ -399,6 +400,21 @@ async function connected(daemon, win) {
     await focusAndReport(daemon, win);
 }
 const TREE = [{label: 'File', key: 'File', children: []}];
+
+test('a blank mapping shows nothing and ignores a tree from the daemon', async () => {
+    reset();
+    focusedMainWindow();
+    t.mapping = {app: 'launcher', identifiers: ['org.example.editor'], menus: [], blank: true};
+    await session(async (ext, daemon) => {
+        await wait(150);
+        focus(t.display.focus_window);
+        assert.ok(t.events.includes('fallback.blank'), 'fallback hidden, app name included');
+        daemon.sendTree(TREE);
+        await wait(150);
+        assert.deepEqual(trees(), [], 'no native menu');
+        assert.equal(daemon.count('WindowSwitched'), 0, 'the daemon is not asked');
+    });
+});
 
 // R1-43: the proxy's lifecycle, kept the same through the rewrite
 

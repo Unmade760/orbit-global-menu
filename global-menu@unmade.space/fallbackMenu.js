@@ -405,6 +405,7 @@ export class FallbackMenu {
 		this._buttons = [];
 		this._appButton = null;
 		this._showTimeoutId = 0;
+		this._blank = false;
 
 		MENU_DATA.forEach((entry, index) => {
 			const btn = new MenuBarButton(_(entry.label), entry.appName ? {appName: true} : {});
@@ -433,7 +434,26 @@ export class FallbackMenu {
 		this._appButton?.setItems(source ?? []);
 	}
 
+	/**
+	 * Hide every button, the app name included, while the focused app's
+	 * mapping is blank.
+	 *
+	 * @param {boolean} blank
+	 */
+	setBlank(blank) {
+		if (blank === this._blank)
+			return;
+		this._blank = blank;
+		this._cancelPendingShow();
+		if (blank)
+			this._buttons.forEach(btn => btn.hide());
+		else
+			this._appButton?.show();
+	}
+
 	setNativeMenusPresent(present) {
+		if (this._blank)
+			return;
 		this._cancelPendingShow();
 		if (present) {
 			this._genericButtons().forEach(btn => btn.hide());

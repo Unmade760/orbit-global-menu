@@ -1,0 +1,12 @@
+{
+  "format": 1,
+  "app": "vicinae",
+  "name": "Vicinae",
+  "identifiers": [
+    "vicinae.desktop",
+    "vicinae",
+    "Vicinae"
+  ],
+  "blank": true,
+  "menus": []
+}

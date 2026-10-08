@@ -152,7 +152,7 @@ function checkFile(name) {
         report('top level is not a JSON object');
         return null;
     }
-    const extra = exactKeys(raw, ['format', 'app', 'name', 'identifiers', 'menus']);
+    const extra = exactKeys(raw, ['format', 'app', 'name', 'identifiers', 'menus', 'blank']);
     if (extra)
         report(`top level has ${extra}`);
     if (raw.format !== 1)
@@ -171,7 +171,12 @@ function checkFile(name) {
         });
         entry.identifiers = raw.identifiers.filter(nonEmptyString);
     }
-    if (!Array.isArray(raw.menus) || raw.menus.length === 0) {
+    if (raw.blank !== undefined && raw.blank !== true)
+        report('"blank" may only be true');
+    if (raw.blank === true) {
+        if (!Array.isArray(raw.menus) || raw.menus.length !== 0)
+            report('a blank mapping needs "menus": []');
+    } else if (!Array.isArray(raw.menus) || raw.menus.length === 0) {
         report('"menus" missing or empty');
     } else {
         raw.menus.forEach((menu, i) => {

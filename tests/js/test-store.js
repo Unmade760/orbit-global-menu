@@ -137,4 +137,12 @@ test('validateMapping rejects a wrong format, app id or empty identifiers', () =
     }
 });
 
+test('validateMapping keeps a blank mapping with no menus', () => {
+    const warnings = [];
+    const out = validateMapping({...mapping('x', ['X'], []), blank: true}, 'x', warnings);
+    assert.equal(out.blank, true);
+    assert.deepEqual(out.menus, []);
+    assert.equal(validateMapping(mapping('x', ['X']), 'x', []).blank, false);
+});
+
 await run();
