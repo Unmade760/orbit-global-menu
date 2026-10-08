@@ -214,3 +214,17 @@ def test_registrar_keeps_windows_while_the_name_still_has_an_owner(registrar):
 	registrar.bus.receivers[0][0](':1.10', ':1.10', ':1.12')
 	registrar.bus.receivers[0][0](':1.99', '', ':1.99')
 	assert list(registrar.window_dict) == [1]
+
+
+@pytest.mark.parametrize('session', ['wayland', 'x11'])
+def test_launcher_does_not_force_the_gdk_backend(monkeypatch, session):
+	# GDK_BACKEND=x11 on Wayland made mutter start Xwayland for the reader
+	from globalmenu import run
+
+	monkeypatch.chdir(ROOT)
+	monkeypatch.setenv('XDG_SESSION_TYPE', session)
+	monkeypatch.delenv('GDK_BACKEND', raising=False)
+	monkeypatch.setenv('UBUNTU_MENUPROXY', '1')
+	monkeypatch.setattr(run, 'command_main', lambda: None)
+	run.main()
+	assert 'GDK_BACKEND' not in os.environ
