@@ -155,7 +155,7 @@ class MenuBar {
 		this._shortcutMapping = mapping && this._shortcutsEnabledForApp(mapping) ? mapping : null;
 		// A blank mapping marks an app that should get no menu at all, such
 		// as a launcher whose window is only a search box
-		this._blank = mapping?.blank === true;
+		this._blank = this._shortcutMapping?.blank === true;
 		this._fallback?.setBlank(this._blank);
 		if (this._blank) {
 			this._native.clear();

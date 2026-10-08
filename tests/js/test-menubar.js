@@ -420,6 +420,22 @@ test('a blank mapping shows nothing and ignores a tree from the daemon', async (
     });
 });
 
+test('a blank mapping switched off in the preferences no longer hides the app', async () => {
+    reset();
+    focusedMainWindow();
+    t.mapping = {app: 'launcher', identifiers: ['org.example.editor'], menus: [], blank: true};
+    t.settings.values['shortcut-disabled-apps'] = ['launcher'];
+    try {
+        await session(async (ext, daemon) => {
+            await connected(daemon, t.display.focus_window);
+            assert.ok(!t.events.includes('fallback.blank'), 'the app is not blanked');
+            assert.ok(daemon.count('WindowSwitched') > 0, 'the daemon is asked');
+        });
+    } finally {
+        t.settings.values['shortcut-disabled-apps'] = [];
+    }
+});
+
 // R1-43: the proxy's lifecycle, kept the same through the rewrite
 
 test('a tree the daemon sends reaches the native menu', async () => {
