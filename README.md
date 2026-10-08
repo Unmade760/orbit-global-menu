@@ -63,8 +63,9 @@ sudo apt install ./global-menu_*.deb
 
 `make build` writes `global-menu_<version>_all.deb` into the repository.
 `apt install` then pulls in `python3-gi`, `python3-dbus`, `gir1.2-gtk-3.0` and
-`appmenu-gtk3-module`. Once it is installed, `make clean` removes the
-build files and the `.deb`.
+`appmenu-gtk3-module`, and the package loads that module into GTK 3 apps
+from the next login, which moves their in-window menubar to the panel. Once
+it is installed, `make clean` removes the build files and the `.deb`.
 
 ### Fedora
 

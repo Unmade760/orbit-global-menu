@@ -30,4 +30,5 @@ build() {
 package() {
     cd "$srcdir/global-menu"
     python3 setup.py install --skip-build --root=$pkgdir --optimize=1
+    install -Dm644 data/60-global-menu-gtk-module.conf "$pkgdir/usr/lib/environment.d/60-global-menu-gtk-module.conf"
 }

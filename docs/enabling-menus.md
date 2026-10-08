@@ -34,7 +34,13 @@ An app that sets a menubar with `gtk_application_set_menubar()` publishes it ove
 An app that draws its own `GtkMenuBar` publishes nothing until `appmenu-gtk3-module` converts the bar.
 
 - Package: `appmenu-gtk3-module` on Debian 13 (25.04-1), Ubuntu 26.04 (25.04-1build1) and Arch (`appmenu-gtk-module`, 25.04). Fedora 43, 44 and 45 have no package.
-- Switch: start the app with `GTK_MODULES=appmenu-gtk-module`.
+- Switch: the Debian and Arch packages of the daemon install `/usr/lib/environment.d/60-global-menu-gtk-module.conf`, which adds `appmenu-gtk-module` to `GTK_MODULES` for every app started after the next login. With a pip install, put the same line in `~/.config/environment.d/60-global-menu-gtk-module.conf`:
+
+	```
+	GTK_MODULES=${GTK_MODULES:+$GTK_MODULES:}appmenu-gtk-module
+	```
+
+	For one app only, start it with `GTK_MODULES=appmenu-gtk-module`.
 - On Wayland the module's code path is gated by the GSettings key `org.appmenu.gtk-module run-on-wayland`, which defaults to true. The module also hides the in-window bar when a registrar is on the bus.
 - Debian ships a systemd user unit in `appmenu-gtk-module-common` that adds the module to `GTK_MODULES` for the whole session. Whether the package enables it by default has not been checked.
 - Not tested end to end. The module is read from source, not run on a Wayland session in this project.

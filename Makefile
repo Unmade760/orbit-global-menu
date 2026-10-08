@@ -4,6 +4,7 @@ version = `python3 -c "import globalmenu; print(globalmenu.__version__)"`
 
 build:
 	python3 setup.py install --root=debian --install-layout=deb --no-compile
+	install -Dm644 data/60-global-menu-gtk-module.conf debian/usr/lib/environment.d/60-global-menu-gtk-module.conf
 	cd debian && find . -type f ! -regex '.*.hg.*' ! -regex '.*?debian-binary.*' ! -regex '.*?DEBIAN.*' -printf '%P ' | xargs md5sum > DEBIAN/md5sums && cd -
 	sed -i "s/Version: .*/Version: $(version)/" "debian/DEBIAN/control"
 	dpkg -b debian/ global-menu_$(version)_all.deb
