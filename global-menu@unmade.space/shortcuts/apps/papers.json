@@ -5,8 +5,7 @@
   "identifiers": [
     "org.gnome.Papers.desktop",
     "org.gnome.Papers",
-    "papers",
-    "Document Viewer"
+    "papers"
   ],
   "menus": [
     {

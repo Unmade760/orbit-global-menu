@@ -5,8 +5,7 @@
   "identifiers": [
     "org.gnome.Ptyxis.desktop",
     "org.gnome.Ptyxis",
-    "ptyxis",
-    "Terminal"
+    "ptyxis"
   ],
   "menus": [
     {
