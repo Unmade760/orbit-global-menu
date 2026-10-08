@@ -11,6 +11,10 @@ from ..treelib import Tree
 
 from globalmenu.menu_model.menu_item import DbusGtkMenuItem, DbusAppMenuItem
 
+# Seconds to wait for a client app on the main loop; a frozen app would
+# otherwise hold the daemon for libdbus' 25 second default
+CLIENT_TIMEOUT = 2
+
 
 class DbusGtkMenu(object):
 
@@ -65,7 +69,7 @@ class DbusGtkMenu(object):
 		# The target keeps the D-Bus type it came with, which must match the
 		# action's parameter type
 		parameter = dbus.Array([] if target is None else [target], signature='v')
-		interface.Activate(name.replace(prefix, ''), parameter, dbus.Dictionary({}, signature='sv'))
+		interface.Activate(name.replace(prefix, ''), parameter, dbus.Dictionary({}, signature='sv'), timeout=CLIENT_TIMEOUT)
 
 	def get_results(self):
 		for path in filter(None, (self.menubar_path, self.appmenu_path)):
@@ -102,7 +106,7 @@ class DbusGtkMenu(object):
 			if not new:
 				break
 			groups.update(new)
-			for group, menu, items in interface.Start(dbus.Array(new, signature='u')):
+			for group, menu, items in interface.Start(dbus.Array(new, signature='u'), timeout=CLIENT_TIMEOUT):
 				menus[(int(group), int(menu))] = list(items)
 
 		dead = sorted(groups - linked)
@@ -251,7 +255,7 @@ class DbusGtkMenu(object):
 	def _describe_all(self, path):
 		obj = self.session.get_object(self.bus_name, path)
 		# a{s(bgav)}: name -> (enabled, parameter type, [state])
-		described = dbus.Interface(obj, dbus_interface='org.gtk.Actions').DescribeAll()
+		described = dbus.Interface(obj, dbus_interface='org.gtk.Actions').DescribeAll(timeout=CLIENT_TIMEOUT)
 		return {str(name): (desc[0], list(desc[2])) for name, desc in described.items()}
 
 	def _apply_action(self, item):
@@ -339,7 +343,7 @@ class DbusAppMenu(object):
 	def activate(self, selection):
 		action = self.actions[selection]
 		try:
-			self.interface.Event(action, 'clicked', 0, 0)
+			self.interface.Event(action, 'clicked', 0, 0, timeout=CLIENT_TIMEOUT)
 		except Exception:
 			self.retry_activate(selection)
 
@@ -349,10 +353,10 @@ class DbusAppMenu(object):
 		self.accels = {}
 		self.tree = Tree()
 		try:
-			results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"))
+			results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"), timeout=CLIENT_TIMEOUT)
 			self.collect_entries(results[1], [])
 			action = self.actions[selection]
-			self.interface.Event(action, 'clicked', 0, 0)
+			self.interface.Event(action, 'clicked', 0, 0, timeout=CLIENT_TIMEOUT)
 		except dbus.exceptions.DBusException:
 			# The app is gone
 			self.clear()
@@ -370,7 +374,7 @@ class DbusAppMenu(object):
 		try:
 			obj        = self.session.get_object(bus_name, bus_path)
 			interface  = dbus.Interface(obj, bus_name)
-			name, path = interface.GetMenuForWindow(self.window.get_xid())
+			name, path = interface.GetMenuForWindow(self.window.get_xid(), timeout=CLIENT_TIMEOUT)
 			obj        = self.session.get_object(name, path)
 			interface  = dbus.Interface(obj, 'com.canonical.dbusmenu')
 
@@ -386,7 +390,7 @@ class DbusAppMenu(object):
 	def get_results(self):
 		if self.interface:
 			try:
-				self.results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"))
+				self.results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"), timeout=CLIENT_TIMEOUT)
 				self.collect_entries(self.results[1])
 			except dbus.exceptions.DBusException:
 				# The app exited or is rebuilding its menu
@@ -409,15 +413,15 @@ class DbusAppMenu(object):
 		if 'children-display' in item[1]:
 			item_id = item[0]
 			try:
-				self.interface.AboutToShow(item_id)
+				self.interface.AboutToShow(item_id, timeout=CLIENT_TIMEOUT)
 			except Exception:
 				pass
-			self.interface.Event(item_id, 'opened', 'not used', dbus.UInt32(time.time()))
-			item = self.interface.GetLayout(item_id, -1, dbus.Array(signature="s"))[1]
+			self.interface.Event(item_id, 'opened', 'not used', dbus.UInt32(time.time()), timeout=CLIENT_TIMEOUT)
+			item = self.interface.GetLayout(item_id, -1, dbus.Array(signature="s"), timeout=CLIENT_TIMEOUT)[1]
 			try:
 				# Qt apps (e.g. DaVinci Resolve) stay in "menu open" state and
 				# stop accepting keyboard input unless the menu is closed again
-				self.interface.Event(item_id, 'closed', 'not used', dbus.UInt32(time.time()))
+				self.interface.Event(item_id, 'closed', 'not used', dbus.UInt32(time.time()), timeout=CLIENT_TIMEOUT)
 			except Exception:
 				pass
 

@@ -5,7 +5,8 @@ obj.get_dbus_method(member, iface) and signal hookups to
 obj.connect_to_signal(...), so a FakeSession whose get_object() returns
 FakeObject gives the daemon a scripted bus without any bus at all. Handlers
 are registered per (bus name, object path, interface, member) and every call
-is recorded in FakeSession.calls.
+is recorded in FakeSession.calls as (bus name, path, interface, member,
+args, keyword arguments).
 """
 
 import time
@@ -48,7 +49,7 @@ class FakeObject:
 		key = (self.bus_name, self.object_path, dbus_interface, member)
 
 		def call(*args, **kwargs):
-			self.session.calls.append(key + (args,))
+			self.session.calls.append(key + (args, kwargs))
 			handler = self.session.handlers.get(key)
 			if handler is None:
 				raise dbus.exceptions.DBusException(
@@ -83,6 +84,11 @@ class FakeSession:
 
 	def calls_to(self, member):
 		return [c for c in self.calls if c[3] == member]
+
+	def untimed_calls(self, timeout):
+		"""Calls that neither ignore the reply nor give up on it after
+		`timeout` seconds."""
+		return [c for c in self.calls if not c[5].get('ignore_reply') and c[5].get('timeout') != timeout]
 
 	def emit(self, bus_name, path, iface, member, *args):
 		"""Deliver a signal to every handler still subscribed to it."""

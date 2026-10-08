@@ -12,7 +12,7 @@ import pytest
 from fakes import DBUSMENU_BUS, DBUSMENU_PATH, FakeSession, FakeWindow, dm, install_dbusmenu_app, pump
 
 from globalmenu.menu_model.menu_item import DbusAppMenuItem
-from globalmenu.menu_model.menu_model import MenuModel
+from globalmenu.menu_model.menu_model import CLIENT_TIMEOUT, MenuModel
 from globalmenu.utils.menu import DbusMenu
 
 
@@ -224,3 +224,19 @@ def test_malformed_layout_does_not_stop_the_window_switch():
 	model = MenuModel(session, window)
 	model._update_menus()
 	assert json_tree(model) == []
+
+
+def test_every_call_to_the_app_has_a_timeout(app):
+	# A frozen app must not hold the main loop for libdbus' 25 second default
+	session, model = app
+	refused = []
+
+	def refuse_once(item_id, kind, *rest):
+		if kind == 'clicked' and not refused:
+			refused.append(item_id)
+			raise dbus.exceptions.DBusException('rebuilding', name='org.freedesktop.DBus.Error.NoReply')
+	session.on(DBUSMENU_BUS, DBUSMENU_PATH, 'com.canonical.dbusmenu', 'Event', refuse_once)
+	model.activate(find(json_tree(model), '_File', 'Recent', 'a.txt')['key'])
+	assert refused
+	assert {c[3] for c in session.calls} >= {'GetMenuForWindow', 'GetLayout', 'AboutToShow', 'Event'}
+	assert session.untimed_calls(CLIENT_TIMEOUT) == []

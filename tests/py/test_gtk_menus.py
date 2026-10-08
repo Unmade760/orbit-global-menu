@@ -14,7 +14,7 @@ import pytest
 from fakes import (FakeSession, FakeWindow, GTK_APP_MENU_PROPS, GTK_BUS, GTK_PROPS, gtk_item,
 	gtk_describe, install_gtk_app, no_registrar, pump)
 
-from globalmenu.menu_model.menu_model import MenuModel
+from globalmenu.menu_model.menu_model import CLIENT_TIMEOUT, MenuModel
 from globalmenu.utils.menu import DbusMenu
 from globalmenu.utils.service import MyService
 
@@ -290,6 +290,16 @@ def test_activate_sends_the_action_to_the_right_object(app):
 	sent = [(c[1], c[4][0]) for c in session.calls_to('Activate')]
 	assert sent == [(GTK_PROPS['_GTK_APPLICATION_OBJECT_PATH'], 'new'), (GTK_PROPS['_GTK_WINDOW_OBJECT_PATH'], 'grid')]
 	assert all(c[0] == GTK_BUS for c in session.calls_to('Activate'))
+
+
+def test_every_call_to_the_app_has_a_timeout():
+	# A frozen app must not hold the main loop for libdbus' 25 second default
+	session, model = load(MENUS, ACTIONS, props=GTK_APP_MENU_PROPS, app_menus={
+		(0, 0): [gtk_item(label='About', action='app.about')],
+	})
+	model.activate('_File  »  _New')
+	assert {c[3] for c in session.calls} >= {'Start', 'DescribeAll', 'Activate'}
+	assert session.untimed_calls(CLIENT_TIMEOUT) == []
 
 
 def test_activating_a_radio_item_passes_its_target(app):
