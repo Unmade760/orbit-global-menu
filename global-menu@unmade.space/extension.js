@@ -265,6 +265,10 @@ class MenuBar {
 			if (win[prop] != null)
 				data[prop] = win[prop];
 		}
+		// The daemon names the app in its log; Bamf is gone on Wayland
+		const appName = this._winTracker.get_window_app(win)?.get_name();
+		if (appName)
+			data.appName = appName;
 		return data;
 	}
 }

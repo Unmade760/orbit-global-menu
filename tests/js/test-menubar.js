@@ -574,7 +574,7 @@ test('a parent window of another app is not used', async () => {
     await session(async (ext, daemon) => {
         await connected(daemon, main);
         await focusAndReport(daemon, makeWindow(portal, {title: 'Open', transientFor: main}));
-        assert.deepEqual(daemon.lastWindowData(), {xid: '0'});
+        assert.deepEqual(daemon.lastWindowData(), {xid: '0', appName: 'org.example.Portal'});
     });
 });
 
