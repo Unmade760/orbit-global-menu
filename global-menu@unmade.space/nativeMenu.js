@@ -19,6 +19,17 @@ function stripMnemonic(label) {
 		.replace(/_(.?)/gu, '$1');
 }
 
+// The GTK app menu belongs under the app name, not in the bar
+const barNodes = nodes => nodes.filter(n => !n.separator && !n.appMenu && stripMnemonic(n.label));
+
+/**
+ * @param {object[]} nodes - a tree from the daemon
+ * @returns {boolean} whether the tree gives the bar at least one button
+ */
+export function hasBarMenus(nodes) {
+	return barNodes(nodes).length > 0;
+}
+
 function toOrnament(toggleType, toggleState) {
 	if (toggleType === 'checkmark')
 		return toggleState ? PopupMenu.Ornament.CHECK : PopupMenu.Ornament.NONE;
@@ -99,8 +110,7 @@ export class NativeMenu {
 
 	_rebuild(nodes, json = JSON.stringify(nodes)) {
 		this._pendingNodes = null;
-		// The GTK app menu belongs under the app name, not in the bar
-		const topLevel = nodes.filter(n => !n.separator && !n.appMenu && stripMnemonic(n.label));
+		const topLevel = barNodes(nodes);
 		// Buttons already in the panel are relabelled, and only the
 		// difference is added or removed. Each panel insert or removal
 		// emits child-added or child-removed on the panel box, and other

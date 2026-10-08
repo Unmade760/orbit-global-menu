@@ -36,7 +36,7 @@ const stubs = {
     locals: {'menuBarButton.js': MENU_BAR_BUTTON_STUB, 'panelBar.js': PANEL_BAR_STUB},
 };
 const {ShortcutMenu} = await importWithStubs('shortcutMenu.js', stubs);
-const {NativeMenu} = await importWithStubs('nativeMenu.js', stubs);
+const {NativeMenu, hasBarMenus} = await importWithStubs('nativeMenu.js', stubs);
 
 function reset() {
     globalThis.gmTest = {buttons: [], added: []};
@@ -196,6 +196,11 @@ test('NativeMenu: a top-level app menu node gets no bar button', () => {
         {label: '_File', key: 'File', children: [{label: '_New', key: 'File  »  New'}]},
     ]);
     assert.deepEqual(rec.added, [{id: 'uuid-native-0', label: 'File', position: 1}]);
+});
+
+test('NativeMenu: hasBarMenus is false for a tree holding only the app menu or separators', () => {
+    assert.equal(hasBarMenus([{label: 'App', appMenu: true, children: []}, {separator: true}]), false);
+    assert.equal(hasBarMenus([{label: '_File', children: []}]), true);
 });
 
 test('NativeMenu: the app menu node goes to the app-name button, and clears with the tree', () => {

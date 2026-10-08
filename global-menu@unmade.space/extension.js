@@ -17,7 +17,7 @@ import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 import {createManager as createAppearanceManager} from './appearance.js';
 import {DaemonManager} from './daemon.js';
 import {FallbackMenu} from './fallbackMenu.js';
-import {NativeMenu} from './nativeMenu.js';
+import {NativeMenu, hasBarMenus} from './nativeMenu.js';
 import {ShortcutMenu} from './shortcutMenu.js';
 import {ShortcutStore} from './shortcutStore.js';
 import {WindowActions, cancelPendingActions} from './windowActions.js';
@@ -121,7 +121,8 @@ class MenuBar {
 		if (this._blank)
 			return;
 		this._native.setItems(items);
-		if (items.length > 0) {
+		// A tree holding only the GTK app menu adds nothing to the bar
+		if (hasBarMenus(items)) {
 			this._shortcuts.setMapping(null);
 			this._fallback?.setNativeMenusPresent(true);
 		} else if (this._shortcutMapping) {

@@ -136,6 +136,7 @@ export class NativeMenu {
     closeAllMenus() {}
     destroy() { globalThis.gmTest.event('native.destroy'); }
 }
+export const hasBarMenus = nodes => nodes.some(n => !n.appMenu);
 `;
 const SHORTCUT_STUB = `
 export class ShortcutMenu {
@@ -434,6 +435,19 @@ test('a blank mapping switched off in the preferences no longer hides the app', 
     } finally {
         t.settings.values['shortcut-disabled-apps'] = [];
     }
+});
+
+test('a tree with only the GTK app menu leaves the shortcut mapping in place', async () => {
+    reset();
+    focusedMainWindow();
+    t.mapping = {app: 'editor', identifiers: ['org.example.editor'], menus: [{label: 'File', items: []}]};
+    await session(async (ext, daemon) => {
+        await connected(daemon, t.display.focus_window);
+        daemon.sendTree([{label: 'Editor', appMenu: true, children: []}], daemon.lastWindowData().request);
+        await until(() => trees().length > 0, 'the tree');
+        assert.equal(t.events.filter(e => e.startsWith('shortcuts.setMapping')).at(-1),
+            'shortcuts.setMapping editor');
+    });
 });
 
 // R1-43: the proxy's lifecycle, kept the same through the rewrite
