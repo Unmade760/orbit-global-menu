@@ -103,12 +103,15 @@ def test_x11_listens_for_window_switched_signal():
 @pytest.mark.parametrize('env, want', [
 	({'XDG_SESSION_TYPE': 'wayland', 'WAYLAND_DISPLAY': 'gm-check-1'}, True),
 	({'XDG_SESSION_TYPE': 'wayland'}, True),
-	({'XDG_SESSION_TYPE': 'x11', 'WAYLAND_DISPLAY': 'wayland-0'}, False),
+	# an X11 session type inherited by a nested Wayland session
+	({'XDG_SESSION_TYPE': 'x11', 'WAYLAND_DISPLAY': 'wayland-0'}, True),
+	({'XDG_SESSION_TYPE': 'wayland', 'WAYLAND_DISPLAY': ''}, True),
+	({'XDG_SESSION_TYPE': 'x11', 'WAYLAND_DISPLAY': ''}, False),
 	({'XDG_SESSION_TYPE': 'x11'}, False),
 	({'WAYLAND_DISPLAY': 'gm-check-1'}, True),
 	({}, False),
 ])
-def test_is_wayland_reads_the_session_type_first(monkeypatch, env, want):
+def test_is_wayland_prefers_a_live_wayland_socket(monkeypatch, env, want):
 	from globalmenu.utils.wayland import is_wayland
 	monkeypatch.delenv('XDG_SESSION_TYPE', raising=False)
 	monkeypatch.delenv('WAYLAND_DISPLAY', raising=False)
