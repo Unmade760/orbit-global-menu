@@ -66,6 +66,22 @@ def test_x11_window_comes_from_the_extension_data():
 	assert out.returncode == 0, out.stderr
 
 
+def test_first_window_does_not_touch_bamf_when_its_daemon_is_absent():
+	out = run_child('''
+		import dbus
+		class Bus:
+			def name_has_owner(self, name):
+				return False
+		dbus.SessionBus = lambda: Bus()
+		from globalmenu.utils import window
+		window.Bamf = object()
+		win = window.WindowManager.new_window()
+		assert win.bamf_window is None
+		assert win.get_xid() == 0
+		''', XDG_SESSION_TYPE='x11')
+	assert out.returncode == 0, out.stderr
+
+
 def test_x11_listens_for_window_switched_signal():
 	out = run_child('''
 		import dbus

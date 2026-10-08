@@ -113,6 +113,10 @@ class WindowManager(object):
 		proxy.connect_to_signal("WindowSwitchedSignal", cls._window_switched)
 
 	@classmethod
+	def _bamf_running(cls):
+		return dbus.SessionBus().name_has_owner('org.ayatana.bamf')
+
+	@classmethod
 	def _get_matcher(cls):
 		if cls.matcher == None:
 			cls.matcher = Bamf.Matcher.get_default()
@@ -120,7 +124,9 @@ class WindowManager(object):
 
 	@classmethod
 	def new_window(cls, win_data={}):
-		if not win_data and Bamf is not None:
+		# The installed typelib alone is not enough: without the bamf daemon
+		# the matcher is null and GLib prints criticals
+		if not win_data and Bamf is not None and cls._bamf_running():
 			return Window(cls._get_matcher().get_active_window())
 
 		win = Window()
