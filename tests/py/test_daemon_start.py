@@ -99,3 +99,56 @@ def test_is_wayland_reads_the_session_type_first(monkeypatch, env, want):
 	for key, value in env.items():
 		monkeypatch.setenv(key, value)
 	assert is_wayland() is want
+
+
+class FakeBus:
+	def __init__(self, owned):
+		self.owned = owned
+
+	def name_has_owner(self, name):
+		return name in self.owned
+
+
+@pytest.fixture
+def appmenu_main(monkeypatch):
+	import dbus
+	from gi.repository import GLib
+	from globalmenu import appmenu
+
+	started = []
+	monkeypatch.setattr(appmenu, 'DBusGMainLoop', lambda **kw: None)
+	monkeypatch.setattr(appmenu, 'AppMenuService', lambda: started.append('registrar'))
+
+	class FakeMenuService:
+		BUS_NAME = 'space.unmade.GlobalMenu'
+
+		def __init__(self):
+			started.append('menu service')
+
+	monkeypatch.setattr(appmenu, 'MyService', FakeMenuService)
+
+	class Loop:
+		def run(self):
+			started.append('loop')
+
+	monkeypatch.setattr(GLib, 'MainLoop', Loop)
+
+	def run(owned):
+		monkeypatch.setattr(dbus, 'SessionBus', lambda: FakeBus(owned))
+		appmenu.main()
+		return started
+
+	return run
+
+
+def test_daemon_starts_both_services_when_the_registrar_is_free(appmenu_main):
+	assert appmenu_main(set()) == ['registrar', 'menu service', 'loop']
+
+
+def test_daemon_starts_without_its_registrar_when_another_owns_it(appmenu_main):
+	assert appmenu_main({'com.canonical.AppMenu.Registrar'}) == ['menu service', 'loop']
+
+
+def test_daemon_does_not_start_twice(appmenu_main):
+	owned = {'com.canonical.AppMenu.Registrar', 'space.unmade.GlobalMenu'}
+	assert appmenu_main(owned) == []
