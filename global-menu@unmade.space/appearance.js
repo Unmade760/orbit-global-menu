@@ -32,7 +32,18 @@ const APPEARANCE_KEYS = [
 	'menu-font-size',
 	'bold-app-name',
 	'hide-workspace-indicator',
+	'shortcut-labels',
+	'shortcut-hold-key',
 ];
+
+// Keys that can reveal shortcut labels, with the modifier bit that says the
+// key is already down when a menu opens
+const HOLD_KEYS = {
+	alt: {keyvals: [Clutter.KEY_Alt_L, Clutter.KEY_Alt_R], mask: Clutter.ModifierType.MOD1_MASK},
+	ctrl: {keyvals: [Clutter.KEY_Control_L, Clutter.KEY_Control_R], mask: Clutter.ModifierType.CONTROL_MASK},
+	shift: {keyvals: [Clutter.KEY_Shift_L, Clutter.KEY_Shift_R], mask: Clutter.ModifierType.SHIFT_MASK},
+	super: {keyvals: [Clutter.KEY_Super_L, Clutter.KEY_Super_R], mask: Clutter.ModifierType.MOD4_MASK},
+};
 
 // Buttons register even while no manager exists, so a manager created later
 // can still style them.
@@ -47,6 +58,15 @@ let manager = null;
 export function registerButton(btn) {
 	buttons.add(btn);
 	btn.connect('destroy', () => buttons.delete(btn));
+	// The open popup has key focus, so the hold key arrives here
+	btn.menu.actor.connect('key-press-event', (_actor, event) => {
+		manager?.onHoldKey(btn, event.get_key_symbol(), true);
+		return Clutter.EVENT_PROPAGATE;
+	});
+	btn.menu.actor.connect('key-release-event', (_actor, event) => {
+		manager?.onHoldKey(btn, event.get_key_symbol(), false);
+		return Clutter.EVENT_PROPAGATE;
+	});
 	manager?.applyToButton(btn);
 }
 
@@ -61,6 +81,7 @@ export function registerButton(btn) {
  * @param {MenuBarButton} btn - the button whose menu opened
  */
 export function onMenuOpened(btn) {
+	manager?.applyShortcutLabels(btn);
 	manager?.applyPopupBackground(btn);
 	manager?.alignPopupText(btn);
 	manager?.applyBlur(btn);
@@ -209,10 +230,42 @@ export class AppearanceManager {
 			btn._globalMenuHidden = hide;
 		}
 
+		this.applyShortcutLabels(btn);
 		this._trackDirection(btn);
 		this._alignSource(btn);
 		this.applyPopupBackground(btn);
 		this.applyBlur(btn);
+	}
+
+	/**
+	 * Show, hide or hold back the popup's shortcut labels. Runs when the
+	 * menu opens, after its items are built.
+	 *
+	 * @param {MenuBarButton} btn - the button whose menu opened
+	 * @param {boolean} [held] - whether the hold key is down; read from the
+	 *   pointer's modifier state when not given
+	 */
+	applyShortcutLabels(btn, held) {
+		const mode = this._settings.get_string('shortcut-labels');
+		const hold = HOLD_KEYS[this._settings.get_string('shortcut-hold-key')] ?? HOLD_KEYS.alt;
+		if (held === undefined)
+			held = (global.get_pointer()[2] & hold.mask) !== 0;
+
+		const show = mode !== 'never';
+		for (const label of accelLabels(btn.menu.box))
+			label.visible = show;
+		if (mode === 'hold' && !held)
+			btn.menu.actor.add_style_class_name('global-menu-accels-held');
+		else
+			btn.menu.actor.remove_style_class_name('global-menu-accels-held');
+	}
+
+	onHoldKey(btn, keyval, pressed) {
+		if (!btn.menu.isOpen || this._settings.get_string('shortcut-labels') !== 'hold')
+			return;
+		const hold = HOLD_KEYS[this._settings.get_string('shortcut-hold-key')] ?? HOLD_KEYS.alt;
+		if (hold.keyvals.includes(keyval))
+			this.applyShortcutLabels(btn, pressed);
 	}
 
 	applyPopupBackground(btn) {
@@ -418,6 +471,7 @@ export class AppearanceManager {
 	_resetButton(btn) {
 		btn.set_style(null);
 		btn.menu.actor.remove_style_class_name('global-menu-no-arrow');
+		btn.menu.actor.remove_style_class_name('global-menu-accels-held');
 		btn.menu.actor.set_style(null);
 		btn.menu.box.set_style(null);
 		this._eachWell(btn.menu, null);
@@ -430,6 +484,21 @@ export class AppearanceManager {
 			btn._globalMenuHidden = false;
 		}
 		this._removeBlur(btn);
+	}
+}
+
+/**
+ * Every shortcut label menuBarButton.js put under `actor`, submenus included.
+ *
+ * @param {Clutter.Actor} actor - a popup's box
+ * @yields {St.Label}
+ */
+function* accelLabels(actor) {
+	for (const child of actor.get_children()) {
+		if (child.has_style_class_name?.('global-menu-accel'))
+			yield child;
+		else
+			yield* accelLabels(child);
 	}
 }
 

@@ -68,6 +68,26 @@
 			<default>true</default>
 			<summary>Show the app-name button in bold</summary>
 		</key>
+		<key type="s" name="shortcut-labels">
+			<choices>
+				<choice value="always"/>
+				<choice value="hold"/>
+				<choice value="never"/>
+			</choices>
+			<default>'always'</default>
+			<summary>When menu items show their keyboard shortcuts</summary>
+			<description>always shows them, hold shows them only while shortcut-hold-key is held down with a menu open, never hides them.</description>
+		</key>
+		<key type="s" name="shortcut-hold-key">
+			<choices>
+				<choice value="alt"/>
+				<choice value="ctrl"/>
+				<choice value="shift"/>
+				<choice value="super"/>
+			</choices>
+			<default>'alt'</default>
+			<summary>Key that reveals shortcuts when shortcut-labels is hold</summary>
+		</key>
 		<key type="b" name="hide-workspace-indicator">
 			<default>true</default>
 			<summary>Hide GNOME's Activities and workspace pill indicator at the left of the panel</summary>

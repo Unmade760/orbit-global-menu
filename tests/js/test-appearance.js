@@ -19,6 +19,10 @@ const CLUTTER_STUB = `
 export default {
     TextDirection: {LTR: 1, RTL: 2},
     OffscreenRedirect: {ALWAYS: 0, AUTOMATIC_FOR_OPACITY: 1},
+    EVENT_PROPAGATE: false,
+    KEY_Alt_L: 0xffe9, KEY_Alt_R: 0xffea, KEY_Control_L: 0xffe3, KEY_Control_R: 0xffe4,
+    KEY_Shift_L: 0xffe1, KEY_Shift_R: 0xffe2, KEY_Super_L: 0xffeb, KEY_Super_R: 0xffec,
+    ModifierType: {SHIFT_MASK: 1, CONTROL_MASK: 4, MOD1_MASK: 8, MOD4_MASK: 64},
 };
 `;
 const ST_STUB = `
@@ -32,7 +36,7 @@ const decoder = new TextDecoder();
 const readSource = name => decoder.decode(GLib.file_get_contents(`${EXT_DIR}/${name}`)[1]);
 
 globalThis.gmTest = {scale: 1};
-globalThis.global = {stage: {}};
+globalThis.global = {stage: {}, get_pointer: () => [0, 0, globalThis.gmTest.mods ?? 0]};
 
 const {createManager, registerButton, onMenuOpened} = await importWithStubs('appearance.js', {
     resources: {
@@ -54,13 +58,15 @@ function fakeSettings(values = {}) {
         'blur-popups': false, 'popup-blur-sigma': 30, 'popup-blur-brightness': 1.0,
         'popup-opacity': 65, 'popup-corner-radius': 12, 'hide-popup-arrow': true,
         'button-spacing': 8, 'menu-font-size': 10, 'bold-app-name': true,
-        'hide-workspace-indicator': false, 'hide-app-name': false, ...values,
+        'hide-workspace-indicator': false, 'hide-app-name': false,
+        'shortcut-labels': 'always', 'shortcut-hold-key': 'alt', ...values,
     };
     return {
         values: v,
         get_boolean: k => v[k],
         get_int: k => v[k],
         get_double: k => v[k],
+        get_string: k => v[k],
         connect: () => 1,
         disconnect() {},
     };
@@ -80,6 +86,8 @@ function fakeButton({appName = false, rtl = false, firstItem = true, nodes = {}}
     const handlers = new Map();
     let nextId = 1;
     const sub = {
+        has_style_class_name: () => false,
+        get_children: () => [],
         menu: {
             actor: {
                 style: undefined, set_style(s) {
@@ -123,6 +131,11 @@ function fakeButton({appName = false, rtl = false, firstItem = true, nodes = {}}
             actor: {
                 style: undefined,
                 classes: new Set(),
+                keyHandlers: {},
+                connect(signal, fn) {
+                    this.keyHandlers[signal] = fn;
+                    return 1;
+                },
                 set_style(s) {
                     this.style = s;
                 },
@@ -142,7 +155,7 @@ function fakeButton({appName = false, rtl = false, firstItem = true, nodes = {}}
                 },
                 get_stage: () => ({}),
                 get_theme_node: () => nodes.box ?? node({padding: 6, border: 1}),
-                get_children: () => [sub],
+                get_children: () => [sub, ...(btn.items ?? [])],
             },
         },
     };
@@ -316,6 +329,54 @@ test('hide-app-name is a boolean off by default in the schema', () => {
     const xml = readSource('schemas/org.gnome.shell.extensions.global-menu.gschema.xml');
     const key = /<key type="b" name="hide-app-name">\s*<default>(\w+)<\/default>/.exec(xml);
     assert.equal(key?.[1], 'false');
+});
+
+// An accel label inside a menu item, as menuBarButton.js adds it
+function accelItem() {
+    const label = {visible: true, has_style_class_name: c => c === 'global-menu-accel', get_children: () => []};
+    return {label, has_style_class_name: () => false, get_children: () => [label]};
+}
+
+function keyEvent(btn, signal, keyval) {
+    btn.menu.actor.keyHandlers[signal](null, {get_key_symbol: () => keyval});
+}
+
+test('shortcut labels: always shown, never hidden', () => {
+    const {settings, btn} = setup({'shortcut-labels': 'always'});
+    btn.items = [accelItem()];
+    onMenuOpened(btn);
+    assert.equal(btn.items[0].label.visible, true);
+    assert.ok(!btn.menu.actor.classes.has('global-menu-accels-held'));
+    settings.values['shortcut-labels'] = 'never';
+    onMenuOpened(btn);
+    assert.equal(btn.items[0].label.visible, false);
+});
+
+test('shortcut labels: hold mode reveals them while the chosen key is down', () => {
+    globalThis.gmTest.mods = 0;
+    const {btn} = setup({'shortcut-labels': 'hold', 'shortcut-hold-key': 'ctrl'});
+    btn.items = [accelItem()];
+    btn.menu.isOpen = true;
+    onMenuOpened(btn);
+    assert.ok(btn.menu.actor.classes.has('global-menu-accels-held'), 'held back on open');
+    keyEvent(btn, 'key-press-event', 0xffe9);
+    assert.ok(btn.menu.actor.classes.has('global-menu-accels-held'), 'Alt is not the chosen key');
+    keyEvent(btn, 'key-press-event', 0xffe3);
+    assert.ok(!btn.menu.actor.classes.has('global-menu-accels-held'), 'Ctrl reveals');
+    keyEvent(btn, 'key-release-event', 0xffe3);
+    assert.ok(btn.menu.actor.classes.has('global-menu-accels-held'), 'release hides again');
+});
+
+test('shortcut labels: a key already down when the menu opens shows them', () => {
+    globalThis.gmTest.mods = 8;
+    try {
+        const {btn} = setup({'shortcut-labels': 'hold', 'shortcut-hold-key': 'alt'});
+        btn.items = [accelItem()];
+        onMenuOpened(btn);
+        assert.ok(!btn.menu.actor.classes.has('global-menu-accels-held'));
+    } finally {
+        globalThis.gmTest.mods = 0;
+    }
 });
 
 await run();

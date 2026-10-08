@@ -6,6 +6,7 @@ import Adw from 'gi://Adw';
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
 import Gtk from 'gi://Gtk';
+
 import {_} from '../i18n.js';
 
 const BMS_UUID = 'blur-my-shell@aunetx';
@@ -29,7 +30,69 @@ export class AppearancePage {
 
 		this._buildBlurGroup();
 		this._buildPopupGroup();
+		this._buildShortcutGroup();
 		this._buildBarGroup();
+	}
+
+	/**
+	 * A combo row bound to a string key with a fixed set of choices.
+	 *
+	 * @param {object} params
+	 * @param {string} params.title - row title
+	 * @param {string} params.key - settings key
+	 * @param {Array<Array<string>>} params.choices - [value, label] pairs
+	 */
+	_choiceRow({title, key, choices}) {
+		const row = new Adw.ComboRow({
+			title,
+			model: Gtk.StringList.new(choices.map(([, label]) => label)),
+		});
+		const values = choices.map(([value]) => value);
+		const sync = () => {
+			row.selected = Math.max(values.indexOf(this._settings.get_string(key)), 0);
+		};
+		sync();
+		const id = this._settings.connect(`changed::${key}`, sync);
+		row.connect('destroy', () => this._settings.disconnect(id));
+		row.connect('notify::selected', () => {
+			const value = values[row.selected];
+			if (value !== undefined && value !== this._settings.get_string(key))
+				this._settings.set_string(key, value);
+		});
+		return row;
+	}
+
+	_buildShortcutGroup() {
+		const group = new Adw.PreferencesGroup({title: _('Keyboard Shortcuts')});
+		this.page.add(group);
+
+		group.add(this._choiceRow({
+			title: _('Show shortcuts'),
+			key: 'shortcut-labels',
+			choices: [
+				['always', _('Always')],
+				['hold', _('While holding a key')],
+				['never', _('Never')],
+			],
+		}));
+
+		const keyRow = this._choiceRow({
+			title: _('Key to hold'),
+			key: 'shortcut-hold-key',
+			choices: [
+				['alt', _('Alt')],
+				['ctrl', _('Ctrl')],
+				['shift', _('Shift')],
+				['super', _('Super')],
+			],
+		});
+		const syncKeyRow = () => {
+			keyRow.sensitive = this._settings.get_string('shortcut-labels') === 'hold';
+		};
+		syncKeyRow();
+		const id = this._settings.connect('changed::shortcut-labels', syncKeyRow);
+		keyRow.connect('destroy', () => this._settings.disconnect(id));
+		group.add(keyRow);
 	}
 
 	_spinRow({title, subtitle, key, lower, upper, step = 1, digits = 0}) {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: global-menu\n"
 "Report-Msgid-Bugs-To: https://github.com/Unmade760/orbit-global-menu/issues\n"
-"POT-Creation-Date: 2026-10-08 21:44+0530\n"
+"POT-Creation-Date: 2026-10-08 21:51+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,117 +262,157 @@ msgstr ""
 msgid "Log shortcut-menu resolution and key synthesis to the journal"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:26
+#: global-menu@unmade.space/prefsPages/appearancePage.js:27
 msgid "Appearance"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:54
+#: global-menu@unmade.space/prefsPages/appearancePage.js:66
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:70
+msgid "Show shortcuts"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:73
+msgid "Always"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:74
+msgid "While holding a key"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:75
+msgid "Never"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:80
+msgid "Key to hold"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:83
+msgid "Alt"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:84
+msgid "Ctrl"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:85
+msgid "Shift"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:86
+msgid "Super"
+msgstr ""
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:117
 msgid "Popup Blur"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:56
+#: global-menu@unmade.space/prefsPages/appearancePage.js:119
 msgid ""
 "Blurs what is behind popup menus, through Blur My Shell. The panel bar "
 "itself is blurred by Blur My Shell's own \"Panel\" setting."
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:57
+#: global-menu@unmade.space/prefsPages/appearancePage.js:120
 msgid "Blur My Shell is not installed, so these options will have no effect."
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:62
+#: global-menu@unmade.space/prefsPages/appearancePage.js:125
 msgid "Blur behind popup menus"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:63
+#: global-menu@unmade.space/prefsPages/appearancePage.js:126
 msgid "Dynamic blur: re-rendered as the content behind moves"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:69
+#: global-menu@unmade.space/prefsPages/appearancePage.js:132
 msgid "Blur intensity"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:70
+#: global-menu@unmade.space/prefsPages/appearancePage.js:133
 msgid "Sigma of the gaussian blur"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:74
+#: global-menu@unmade.space/prefsPages/appearancePage.js:137
 msgid "Brightness"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:75
+#: global-menu@unmade.space/prefsPages/appearancePage.js:138
 msgid "1.00 = no dimming of the blurred area"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:85
+#: global-menu@unmade.space/prefsPages/appearancePage.js:148
 msgid "Popup Menus"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:89
+#: global-menu@unmade.space/prefsPages/appearancePage.js:152
 msgid "Background opacity"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:90
+#: global-menu@unmade.space/prefsPages/appearancePage.js:153
 msgid "Lower is more translucent. Blur is invisible at 100%."
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:94
+#: global-menu@unmade.space/prefsPages/appearancePage.js:157
 msgid "Corner radius"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:95
+#: global-menu@unmade.space/prefsPages/appearancePage.js:158
 msgid "In pixels"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:100
+#: global-menu@unmade.space/prefsPages/appearancePage.js:163
 msgid "Hide pointer arrow"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:101
+#: global-menu@unmade.space/prefsPages/appearancePage.js:164
 msgid "Menus drop straight down from the bar instead of pointing at the button"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:108
+#: global-menu@unmade.space/prefsPages/appearancePage.js:171
 msgid "Menu Bar"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:112
+#: global-menu@unmade.space/prefsPages/appearancePage.js:175
 msgid "Button spacing"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:113
+#: global-menu@unmade.space/prefsPages/appearancePage.js:176
 msgid "Horizontal button padding in pixels. The GNOME default is 12."
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:117
+#: global-menu@unmade.space/prefsPages/appearancePage.js:180
 msgid "Font size"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:118
+#: global-menu@unmade.space/prefsPages/appearancePage.js:181
 msgid "In points. 0 keeps the theme default."
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:123
+#: global-menu@unmade.space/prefsPages/appearancePage.js:186
 msgid "Bold app name"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:124
+#: global-menu@unmade.space/prefsPages/appearancePage.js:187
 msgid "Show the focused app's name button in bold"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:130
+#: global-menu@unmade.space/prefsPages/appearancePage.js:193
 msgid "Hide App Name"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:131
+#: global-menu@unmade.space/prefsPages/appearancePage.js:194
 msgid "Removes the focused app's name button from the bar"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:137
+#: global-menu@unmade.space/prefsPages/appearancePage.js:200
 msgid "Hide workspace indicator"
 msgstr ""
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:138
+#: global-menu@unmade.space/prefsPages/appearancePage.js:201
 msgid "Hides GNOME's Activities and workspace pill at the left of the panel"
 msgstr ""
 

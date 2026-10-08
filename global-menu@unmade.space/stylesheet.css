@@ -25,3 +25,9 @@
 	margin-left: 0;
 	margin-right: 24px;
 }
+
+/* Hidden until the hold key is pressed. Transparent, not removed, so the
+ * popup keeps its width when the labels appear */
+.global-menu-accels-held .global-menu-accel {
+	color: transparent;
+}

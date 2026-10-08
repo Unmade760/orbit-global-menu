@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: global-menu\n"
 "Report-Msgid-Bugs-To: https://github.com/Unmade760/orbit-global-menu/issues\n"
-"POT-Creation-Date: 2026-10-08 21:44+0530\n"
+"POT-Creation-Date: 2026-10-08 21:50+0530\n"
 "PO-Revision-Date: 2026-10-08 21:50+0530\n"
 "Last-Translator: Unmade\n"
 "Language-Team: Chinese (China)\n"
@@ -246,7 +246,8 @@ msgstr "快捷键菜单"
 msgid ""
 "For supported apps without a menu of their own, show curated menus that send "
 "the app's real keyboard shortcuts"
-msgstr "为没有自带菜单的受支持应用显示精选菜单，菜单项会发送该应用真实的键盘快捷键"
+msgstr ""
+"为没有自带菜单的受支持应用显示精选菜单，菜单项会发送该应用真实的键盘快捷键"
 
 #: global-menu@unmade.space/prefs.js:34
 msgid "Development"
@@ -260,117 +261,159 @@ msgstr "调试快捷键菜单"
 msgid "Log shortcut-menu resolution and key synthesis to the journal"
 msgstr "将快捷键菜单的匹配和按键合成记录到系统日志"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:26
+#: global-menu@unmade.space/prefsPages/appearancePage.js:27
 msgid "Appearance"
 msgstr "外观"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:54
+#: global-menu@unmade.space/prefsPages/appearancePage.js:66
+msgid "Keyboard Shortcuts"
+msgstr "键盘快捷键"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:70
+msgid "Show shortcuts"
+msgstr "显示快捷键"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:73
+msgid "Always"
+msgstr "总是"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:74
+msgid "While holding a key"
+msgstr "按住某个键时"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:75
+msgid "Never"
+msgstr "从不"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:80
+msgid "Key to hold"
+msgstr "要按住的键"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:83
+msgid "Alt"
+msgstr "Alt"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:84
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:85
+msgid "Shift"
+msgstr "Shift"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:86
+msgid "Super"
+msgstr "Super"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:117
 msgid "Popup Blur"
 msgstr "弹出菜单模糊"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:56
+#: global-menu@unmade.space/prefsPages/appearancePage.js:119
 msgid ""
 "Blurs what is behind popup menus, through Blur My Shell. The panel bar "
 "itself is blurred by Blur My Shell's own \"Panel\" setting."
-msgstr "通过 Blur My Shell 模糊弹出菜单后方的内容。面板栏本身的模糊由 Blur My Shell 自己的“面板”设置控制。"
+msgstr ""
+"通过 Blur My Shell 模糊弹出菜单后方的内容。面板栏本身的模糊由 Blur My Shell "
+"自己的“面板”设置控制。"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:57
+#: global-menu@unmade.space/prefsPages/appearancePage.js:120
 msgid "Blur My Shell is not installed, so these options will have no effect."
 msgstr "未安装 Blur My Shell，因此这些选项不会生效。"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:62
+#: global-menu@unmade.space/prefsPages/appearancePage.js:125
 msgid "Blur behind popup menus"
 msgstr "模糊弹出菜单后方"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:63
+#: global-menu@unmade.space/prefsPages/appearancePage.js:126
 msgid "Dynamic blur: re-rendered as the content behind moves"
 msgstr "动态模糊：后方内容移动时重新渲染"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:69
+#: global-menu@unmade.space/prefsPages/appearancePage.js:132
 msgid "Blur intensity"
 msgstr "模糊强度"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:70
+#: global-menu@unmade.space/prefsPages/appearancePage.js:133
 msgid "Sigma of the gaussian blur"
 msgstr "高斯模糊的 Sigma 值"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:74
+#: global-menu@unmade.space/prefsPages/appearancePage.js:137
 msgid "Brightness"
 msgstr "亮度"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:75
+#: global-menu@unmade.space/prefsPages/appearancePage.js:138
 msgid "1.00 = no dimming of the blurred area"
 msgstr "1.00 表示不调暗模糊区域"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:85
+#: global-menu@unmade.space/prefsPages/appearancePage.js:148
 msgid "Popup Menus"
 msgstr "弹出菜单"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:89
+#: global-menu@unmade.space/prefsPages/appearancePage.js:152
 msgid "Background opacity"
 msgstr "背景不透明度"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:90
+#: global-menu@unmade.space/prefsPages/appearancePage.js:153
 msgid "Lower is more translucent. Blur is invisible at 100%."
 msgstr "数值越低越透明。为 100% 时看不到模糊效果。"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:94
+#: global-menu@unmade.space/prefsPages/appearancePage.js:157
 msgid "Corner radius"
 msgstr "圆角半径"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:95
+#: global-menu@unmade.space/prefsPages/appearancePage.js:158
 msgid "In pixels"
 msgstr "单位为像素"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:100
+#: global-menu@unmade.space/prefsPages/appearancePage.js:163
 msgid "Hide pointer arrow"
 msgstr "隐藏指示箭头"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:101
+#: global-menu@unmade.space/prefsPages/appearancePage.js:164
 msgid "Menus drop straight down from the bar instead of pointing at the button"
 msgstr "菜单从面板栏直接向下展开，不再指向按钮"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:108
+#: global-menu@unmade.space/prefsPages/appearancePage.js:171
 msgid "Menu Bar"
 msgstr "菜单栏"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:112
+#: global-menu@unmade.space/prefsPages/appearancePage.js:175
 msgid "Button spacing"
 msgstr "按钮间距"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:113
+#: global-menu@unmade.space/prefsPages/appearancePage.js:176
 msgid "Horizontal button padding in pixels. The GNOME default is 12."
 msgstr "按钮的水平内边距，单位为像素。GNOME 默认值为 12。"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:117
+#: global-menu@unmade.space/prefsPages/appearancePage.js:180
 msgid "Font size"
 msgstr "字体大小"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:118
+#: global-menu@unmade.space/prefsPages/appearancePage.js:181
 msgid "In points. 0 keeps the theme default."
 msgstr "单位为磅。0 表示使用主题默认值。"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:123
+#: global-menu@unmade.space/prefsPages/appearancePage.js:186
 msgid "Bold app name"
 msgstr "应用名称加粗"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:124
+#: global-menu@unmade.space/prefsPages/appearancePage.js:187
 msgid "Show the focused app's name button in bold"
 msgstr "以粗体显示当前应用的名称按钮"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:130
+#: global-menu@unmade.space/prefsPages/appearancePage.js:193
 msgid "Hide App Name"
 msgstr "隐藏应用名称"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:131
+#: global-menu@unmade.space/prefsPages/appearancePage.js:194
 msgid "Removes the focused app's name button from the bar"
 msgstr "从面板栏移除当前应用的名称按钮"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:137
+#: global-menu@unmade.space/prefsPages/appearancePage.js:200
 msgid "Hide workspace indicator"
 msgstr "隐藏工作区指示器"
 
-#: global-menu@unmade.space/prefsPages/appearancePage.js:138
+#: global-menu@unmade.space/prefsPages/appearancePage.js:201
 msgid "Hides GNOME's Activities and workspace pill at the left of the panel"
 msgstr "隐藏面板左侧 GNOME 的活动按钮和工作区指示条"
 
@@ -387,7 +430,9 @@ msgid ""
 "Per-app curated menus that synthesize the app's real keyboard shortcuts. "
 "Editing a built-in creates a user override; built-in files are never "
 "modified."
-msgstr "按应用精选的菜单，菜单项会合成该应用真实的键盘快捷键。编辑内置菜单会创建用户覆盖文件，内置文件永远不会被修改。"
+msgstr ""
+"按应用精选的菜单，菜单项会合成该应用真实的键盘快捷键。编辑内置菜单会创建用户"
+"覆盖文件，内置文件永远不会被修改。"
 
 #: global-menu@unmade.space/prefsPages/applicationsPage.js:64
 msgid "Add Application…"
@@ -450,13 +495,17 @@ msgstr "标识符（以逗号分隔）"
 msgid ""
 "This is a built-in mapping. Saving creates a user override in ~/.config/"
 "global-menu/shortcuts/apps. The built-in file itself is never modified."
-msgstr "这是内置映射。保存后会在 ~/.config/global-menu/shortcuts/apps 中创建用户覆盖文件，内置文件本身永远不会被修改。"
+msgstr ""
+"这是内置映射。保存后会在 ~/.config/global-menu/shortcuts/apps 中创建用户覆盖"
+"文件，内置文件本身永远不会被修改。"
 
 #: global-menu@unmade.space/prefsPages/editorPage.js:117
 msgid ""
 "Click the shortcut button on an item to set it, exactly like GNOME Settings' "
 "Keyboard Shortcuts panel."
-msgstr "点击菜单项上的快捷键按钮即可设置，操作方式与 GNOME 设置中的“键盘快捷键”面板相同。"
+msgstr ""
+"点击菜单项上的快捷键按钮即可设置，操作方式与 GNOME 设置中的“键盘快捷键”面板相"
+"同。"
 
 #: global-menu@unmade.space/prefsPages/editorPage.js:147
 msgid "Add Item"
