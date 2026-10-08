@@ -654,6 +654,20 @@ test('a tree answering the latest window switch is shown and cached for its app'
     });
 });
 
+test('with no window focused, a tree for the last window is not shown', async () => {
+    reset();
+    const {main} = focusedMainWindow();
+    await session(async (ext, daemon) => {
+        await connected(daemon, main);
+        const request = daemon.lastWindowData().request;
+        focus(null);
+        const before = trees().length;
+        daemon.sendTree(TREE, request);
+        await wait(150);
+        assert.deepEqual(trees().slice(before), [], 'nothing is drawn');
+    });
+});
+
 // R1-45: the X11 window id
 
 test('a Wayland window with a hex number in its title is sent with xid 0', async () => {

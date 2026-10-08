@@ -142,6 +142,9 @@ class MenuBar {
 		const focusApp = this._winTracker.focus_app;
 		const win = focusApp ? this._menuWindow(focusApp) : null;
 		if (!win) {
+			// Supersedes the last request: the daemon still holds that window
+			// and may send its tree again, such as after a Quit item
+			this._request++;
 			this._fallback?.setBlank(false);
 			this._showNothing();
 			return;
