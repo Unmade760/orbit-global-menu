@@ -37,6 +37,24 @@ function prettyAccel(shortcut) {
 	}).join(' ');
 }
 
+/**
+ * The mapping file the editor writes.
+ *
+ * @param {object} parts
+ * @param {string} parts.appId
+ * @param {string} parts.name
+ * @param {string[]} parts.identifiers
+ * @param {object[]} parts.menus
+ * @param {boolean} parts.blank - the loaded mapping was blank, which stays so
+ * @returns {object} the raw mapping
+ */
+export function buildRawMapping({appId, name, identifiers, menus, blank}) {
+	const raw = {format: 1, app: appId, name, identifiers, menus};
+	if (blank)
+		raw.blank = true;
+	return raw;
+}
+
 function isSimpleLeaf(item) {
 	return !item.separator && !item.items && !item.gsettings;
 }
@@ -60,6 +78,7 @@ export class EditorPage {
 		this._userAppsDir = userAppsDir;
 		this._bumpRevision = bumpRevision;
 		this._onChanged = onChanged;
+		this._blank = mapping?.blank === true;
 		// Deep-clone so edits never mutate the live store's data until Save
 		this._menus = JSON.parse(JSON.stringify(mapping?.menus ?? []));
 		this._menuRows = [];
@@ -264,7 +283,7 @@ export class EditorPage {
 		const identifiers = this._identifiersRow.get_text()
 			.split(',').map(s => s.trim()).filter(s => s !== '');
 
-		const raw = {format: 1, app: this._appId, name, identifiers, menus: this._menus};
+		const raw = buildRawMapping({appId: this._appId, name, identifiers, menus: this._menus, blank: this._blank});
 
 		// Validated with the same logic the running extension loads with, but
 		// only to surface warnings. Saving is never refused: the menu tree
