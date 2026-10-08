@@ -98,15 +98,46 @@ test('the app-name button is Desktop with no window focused and holds no items',
     assert.deepEqual(specsOf(t.buttons[0]), []);
 });
 
-test('the app-name button shows the focused app and still holds no items', () => {
-    const t = reset({get_name: () => 'Text Editor'});
+function fakeApp({newWindow = true} = {}) {
+    const calls = [];
+    const win = {minimized: false, can_minimize: () => true, minimize() {
+        this.minimized = true;
+    }};
+    return {
+        calls, win,
+        get_name: () => 'Text Editor',
+        can_open_new_window: () => newWindow,
+        open_new_window: ws => calls.push(`new ${ws}`),
+        get_windows: () => [win],
+        request_quit: () => calls.push('quit'),
+    };
+}
+
+test('the app-name menu offers New Window, Hide and Quit for the focused app', () => {
+    const app = fakeApp();
+    const t = reset(app);
     new FallbackMenu('uuid');
     assert.equal(t.buttons[0].label, 'Text Editor');
-    assert.deepEqual(specsOf(t.buttons[0]), []);
+    const specs = specsOf(t.buttons[0]);
+    assert.deepEqual(specs.map(s => s.separator ? '---' : s.label),
+        ['New Window', 'Hide Text Editor', '---', 'Quit Text Editor']);
+    specs[0].onActivate();
+    specs[1].onActivate();
+    specs[3].onActivate();
+    assert.deepEqual(app.calls, ['new -1', 'quit']);
+    assert.ok(app.win.minimized, 'Hide minimizes the app window');
+});
+
+test('the app-name menu has no New Window for an app that cannot open one, and the GTK app menu goes first', () => {
+    const t = reset(fakeApp({newWindow: false}));
+    const menu = new FallbackMenu('uuid');
+    menu.setAppItems(() => [{label: 'About'}]);
+    assert.deepEqual(specsOf(t.buttons[0]).map(s => s.separator ? '---' : s.label),
+        ['About', '---', 'Hide Text Editor', '---', 'Quit Text Editor']);
 });
 
 test('Open Files, Settings and Empty Trash are in the System menu, nowhere else', () => {
-    const t = reset({get_name: () => 'Text Editor'});
+    const t = reset(fakeApp());
     new FallbackMenu('uuid');
     const desktopItems = ['Open Files', 'Settings', 'Empty Trash'];
     const system = t.buttons.find(b => b.label === 'System');

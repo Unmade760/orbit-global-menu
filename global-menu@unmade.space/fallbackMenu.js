@@ -320,10 +320,34 @@ function toSpecs(items) {
 	return items.map(item => item.separator ? {separator: true} : actionSpec(item.label, item.action));
 }
 
+// What the shell can do for any focused app, under the app's name. The app's
+// own GTK app menu, when it exports one, goes above.
+function appMenuSpecs(appMenuSource) {
+	const app = Shell.WindowTracker.get_default().focus_app;
+	const specs = appMenuSource ? appMenuSource() : [];
+	if (!app)
+		return specs;
+	if (specs.length > 0)
+		specs.push({separator: true});
+	if (app.can_open_new_window())
+		specs.push({label: _('New Window'), onActivate: () => app.open_new_window(-1)});
+	const name = app.get_name();
+	specs.push(
+		{
+			label: _('Hide %s').replace('%s', name),
+			onActivate: () => app.get_windows()
+				.filter(w => w.can_minimize() && !w.minimized)
+				.forEach(w => w.minimize()),
+		},
+		{separator: true},
+		{label: _('Quit %s').replace('%s', name), onActivate: () => app.request_quit()}
+	);
+	return specs;
+}
+
 const MENU_DATA = [
 	{
-		// Holds nothing until the app-name menu is built from the focused
-		// app's own actions. An empty menu does not open.
+		// Built on open by appMenuSpecs() from the focused app
 		label: N_('Desktop'),
 		appName: true,
 		items: [],
@@ -406,10 +430,14 @@ export class FallbackMenu {
 		this._appButton = null;
 		this._showTimeoutId = 0;
 		this._blank = false;
+		this._appMenuSource = null;
 
 		MENU_DATA.forEach((entry, index) => {
 			const btn = new MenuBarButton(_(entry.label), entry.appName ? {appName: true} : {});
-			btn.setItems(entry.windowActions ? windowMenuSpecs : toSpecs(entry.items));
+			if (entry.appName)
+				btn.setItems(() => appMenuSpecs(this._appMenuSource));
+			else
+				btn.setItems(entry.windowActions ? windowMenuSpecs : toSpecs(entry.items));
 			// MENU_DATA[0] is the app name, so the index doubles as the rank
 			addBarButton(`${uuid}-fallback-${index}`, btn, index);
 			this._buttons.push(btn);
@@ -431,7 +459,7 @@ export class FallbackMenu {
 	 * @param {Function|null} source - returns the menu's specs, or null to empty it
 	 */
 	setAppItems(source) {
-		this._appButton?.setItems(source ?? []);
+		this._appMenuSource = source;
 	}
 
 	/**

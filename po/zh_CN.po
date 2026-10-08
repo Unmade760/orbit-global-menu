@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: global-menu\n"
 "Report-Msgid-Bugs-To: https://github.com/Unmade760/orbit-global-menu/issues\n"
-"POT-Creation-Date: 2026-10-08 21:50+0530\n"
+"POT-Creation-Date: 2026-10-08 23:29+0530\n"
 "PO-Revision-Date: 2026-10-08 21:50+0530\n"
 "Last-Translator: Unmade\n"
 "Language-Team: Chinese (China)\n"
@@ -70,152 +70,166 @@ msgstr "切换同一应用的窗口"
 msgid "Window Menu"
 msgstr "窗口菜单"
 
-#: global-menu@unmade.space/fallbackMenu.js:327
-#: global-menu@unmade.space/fallbackMenu.js:424
+#: global-menu@unmade.space/fallbackMenu.js:333
+msgid "New Window"
+msgstr "新建窗口"
+
+#: global-menu@unmade.space/fallbackMenu.js:337
+#, javascript-format
+msgid "Hide %s"
+msgstr "隐藏 %s"
+
+#: global-menu@unmade.space/fallbackMenu.js:343
+#, javascript-format
+msgid "Quit %s"
+msgstr "退出 %s"
+
+#: global-menu@unmade.space/fallbackMenu.js:351
+#: global-menu@unmade.space/fallbackMenu.js:453
 msgid "Desktop"
 msgstr "桌面"
 
-#: global-menu@unmade.space/fallbackMenu.js:332
+#: global-menu@unmade.space/fallbackMenu.js:356
 msgid "File"
 msgstr "文件"
 
-#: global-menu@unmade.space/fallbackMenu.js:334
+#: global-menu@unmade.space/fallbackMenu.js:358
 msgid "New Folder on Desktop"
 msgstr "在桌面新建文件夹"
 
-#: global-menu@unmade.space/fallbackMenu.js:335
+#: global-menu@unmade.space/fallbackMenu.js:359
 msgid "New Tab"
 msgstr "新建标签页"
 
-#: global-menu@unmade.space/fallbackMenu.js:336
+#: global-menu@unmade.space/fallbackMenu.js:360
 msgid "Open"
 msgstr "打开"
 
-#: global-menu@unmade.space/fallbackMenu.js:338
+#: global-menu@unmade.space/fallbackMenu.js:362
 msgid "Properties"
 msgstr "属性"
 
-#: global-menu@unmade.space/fallbackMenu.js:340
+#: global-menu@unmade.space/fallbackMenu.js:364
 msgid "Show Desktop"
 msgstr "显示桌面"
 
-#: global-menu@unmade.space/fallbackMenu.js:342
+#: global-menu@unmade.space/fallbackMenu.js:366
 msgid "Close Window"
 msgstr "关闭窗口"
 
-#: global-menu@unmade.space/fallbackMenu.js:346
+#: global-menu@unmade.space/fallbackMenu.js:370
 msgid "Edit"
 msgstr "编辑"
 
-#: global-menu@unmade.space/fallbackMenu.js:348
+#: global-menu@unmade.space/fallbackMenu.js:372
 msgid "Undo"
 msgstr "撤销"
 
-#: global-menu@unmade.space/fallbackMenu.js:349
+#: global-menu@unmade.space/fallbackMenu.js:373
 msgid "Redo"
 msgstr "重做"
 
-#: global-menu@unmade.space/fallbackMenu.js:351
+#: global-menu@unmade.space/fallbackMenu.js:375
 msgid "Cut"
 msgstr "剪切"
 
-#: global-menu@unmade.space/fallbackMenu.js:352
+#: global-menu@unmade.space/fallbackMenu.js:376
 msgid "Copy"
 msgstr "复制"
 
-#: global-menu@unmade.space/fallbackMenu.js:353
+#: global-menu@unmade.space/fallbackMenu.js:377
 msgid "Paste"
 msgstr "粘贴"
 
-#: global-menu@unmade.space/fallbackMenu.js:354
+#: global-menu@unmade.space/fallbackMenu.js:378
 msgid "Delete"
 msgstr "删除"
 
-#: global-menu@unmade.space/fallbackMenu.js:356
+#: global-menu@unmade.space/fallbackMenu.js:380
 msgid "Select All"
 msgstr "全选"
 
-#: global-menu@unmade.space/fallbackMenu.js:358
+#: global-menu@unmade.space/fallbackMenu.js:382
 msgid "Take Screenshot"
 msgstr "截图"
 
-#: global-menu@unmade.space/fallbackMenu.js:359
+#: global-menu@unmade.space/fallbackMenu.js:383
 msgid "Screenshot of Window"
 msgstr "窗口截图"
 
-#: global-menu@unmade.space/fallbackMenu.js:360
+#: global-menu@unmade.space/fallbackMenu.js:384
 msgid "Screenshot of Area"
 msgstr "区域截图"
 
-#: global-menu@unmade.space/fallbackMenu.js:364
+#: global-menu@unmade.space/fallbackMenu.js:388
 msgid "Go"
 msgstr "前往"
 
-#: global-menu@unmade.space/fallbackMenu.js:366
+#: global-menu@unmade.space/fallbackMenu.js:390
 msgid "Back"
 msgstr "后退"
 
-#: global-menu@unmade.space/fallbackMenu.js:367
+#: global-menu@unmade.space/fallbackMenu.js:391
 msgid "Forward"
 msgstr "前进"
 
-#: global-menu@unmade.space/fallbackMenu.js:369
+#: global-menu@unmade.space/fallbackMenu.js:393
 msgid "Next Workspace"
 msgstr "下一个工作区"
 
-#: global-menu@unmade.space/fallbackMenu.js:370
+#: global-menu@unmade.space/fallbackMenu.js:394
 msgid "Previous Workspace"
 msgstr "上一个工作区"
 
-#: global-menu@unmade.space/fallbackMenu.js:371
+#: global-menu@unmade.space/fallbackMenu.js:395
 msgid "First Workspace"
 msgstr "第一个工作区"
 
-#: global-menu@unmade.space/fallbackMenu.js:375
+#: global-menu@unmade.space/fallbackMenu.js:399
 msgid "Window"
 msgstr "窗口"
 
-#: global-menu@unmade.space/fallbackMenu.js:379
+#: global-menu@unmade.space/fallbackMenu.js:403
 msgid "System"
 msgstr "系统"
 
-#: global-menu@unmade.space/fallbackMenu.js:381
+#: global-menu@unmade.space/fallbackMenu.js:405
 msgid "Show Applications"
 msgstr "显示应用程序"
 
-#: global-menu@unmade.space/fallbackMenu.js:382
+#: global-menu@unmade.space/fallbackMenu.js:406
 msgid "Show Notifications"
 msgstr "显示通知"
 
-#: global-menu@unmade.space/fallbackMenu.js:384
+#: global-menu@unmade.space/fallbackMenu.js:408
 msgid "Open Files"
 msgstr "打开文件管理器"
 
-#: global-menu@unmade.space/fallbackMenu.js:385
+#: global-menu@unmade.space/fallbackMenu.js:409
 msgid "Settings"
 msgstr "设置"
 
-#: global-menu@unmade.space/fallbackMenu.js:387
+#: global-menu@unmade.space/fallbackMenu.js:411
 msgid "Empty Trash…"
 msgstr "清空回收站…"
 
-#: global-menu@unmade.space/fallbackMenu.js:389
+#: global-menu@unmade.space/fallbackMenu.js:413
 msgid "Lock Screen"
 msgstr "锁屏"
 
-#: global-menu@unmade.space/fallbackMenu.js:390
+#: global-menu@unmade.space/fallbackMenu.js:414
 msgid "Suspend"
 msgstr "挂起"
 
-#: global-menu@unmade.space/fallbackMenu.js:391
+#: global-menu@unmade.space/fallbackMenu.js:415
 msgid "Hibernate"
 msgstr "休眠"
 
-#: global-menu@unmade.space/fallbackMenu.js:393
+#: global-menu@unmade.space/fallbackMenu.js:417
 msgid "Log Out"
 msgstr "注销"
 
-#: global-menu@unmade.space/fallbackMenu.js:394
+#: global-menu@unmade.space/fallbackMenu.js:418
 msgid "Power Off / Restart"
 msgstr "关机 / 重启"
 

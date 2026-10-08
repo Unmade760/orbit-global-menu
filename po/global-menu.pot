@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: global-menu\n"
 "Report-Msgid-Bugs-To: https://github.com/Unmade760/orbit-global-menu/issues\n"
-"POT-Creation-Date: 2026-10-08 21:51+0530\n"
+"POT-Creation-Date: 2026-10-08 23:29+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,152 +72,166 @@ msgstr ""
 msgid "Window Menu"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:327
-#: global-menu@unmade.space/fallbackMenu.js:424
-msgid "Desktop"
+#: global-menu@unmade.space/fallbackMenu.js:333
+msgid "New Window"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:332
-msgid "File"
+#: global-menu@unmade.space/fallbackMenu.js:337
+#, javascript-format
+msgid "Hide %s"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:334
-msgid "New Folder on Desktop"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:335
-msgid "New Tab"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:336
-msgid "Open"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:338
-msgid "Properties"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:340
-msgid "Show Desktop"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:342
-msgid "Close Window"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:346
-msgid "Edit"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:348
-msgid "Undo"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:349
-msgid "Redo"
+#: global-menu@unmade.space/fallbackMenu.js:343
+#, javascript-format
+msgid "Quit %s"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:351
-msgid "Cut"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:352
-msgid "Copy"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:353
-msgid "Paste"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:354
-msgid "Delete"
+#: global-menu@unmade.space/fallbackMenu.js:453
+msgid "Desktop"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:356
-msgid "Select All"
+msgid "File"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:358
-msgid "Take Screenshot"
+msgid "New Folder on Desktop"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:359
-msgid "Screenshot of Window"
+msgid "New Tab"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:360
-msgid "Screenshot of Area"
+msgid "Open"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:362
+msgid "Properties"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:364
-msgid "Go"
+msgid "Show Desktop"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:366
-msgid "Back"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:367
-msgid "Forward"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:369
-msgid "Next Workspace"
+msgid "Close Window"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:370
-msgid "Previous Workspace"
+msgid "Edit"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:371
-msgid "First Workspace"
+#: global-menu@unmade.space/fallbackMenu.js:372
+msgid "Undo"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:373
+msgid "Redo"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:375
-msgid "Window"
+msgid "Cut"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:379
-msgid "System"
+#: global-menu@unmade.space/fallbackMenu.js:376
+msgid "Copy"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:381
-msgid "Show Applications"
+#: global-menu@unmade.space/fallbackMenu.js:377
+msgid "Paste"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:378
+msgid "Delete"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:380
+msgid "Select All"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:382
-msgid "Show Notifications"
+msgid "Take Screenshot"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:383
+msgid "Screenshot of Window"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:384
-msgid "Open Files"
+msgid "Screenshot of Area"
 msgstr ""
 
-#: global-menu@unmade.space/fallbackMenu.js:385
-msgid "Settings"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:387
-msgid "Empty Trash…"
-msgstr ""
-
-#: global-menu@unmade.space/fallbackMenu.js:389
-msgid "Lock Screen"
+#: global-menu@unmade.space/fallbackMenu.js:388
+msgid "Go"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:390
-msgid "Suspend"
+msgid "Back"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:391
-msgid "Hibernate"
+msgid "Forward"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:393
-msgid "Log Out"
+msgid "Next Workspace"
 msgstr ""
 
 #: global-menu@unmade.space/fallbackMenu.js:394
+msgid "Previous Workspace"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:395
+msgid "First Workspace"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:399
+msgid "Window"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:403
+msgid "System"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:405
+msgid "Show Applications"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:406
+msgid "Show Notifications"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:408
+msgid "Open Files"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:409
+msgid "Settings"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:411
+msgid "Empty Trash…"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:413
+msgid "Lock Screen"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:414
+msgid "Suspend"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:415
+msgid "Hibernate"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:417
+msgid "Log Out"
+msgstr ""
+
+#: global-menu@unmade.space/fallbackMenu.js:418
 msgid "Power Off / Restart"
 msgstr ""
 
