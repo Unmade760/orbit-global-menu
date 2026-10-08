@@ -427,6 +427,7 @@ class HudMenu(Gtk.Application):
 		self.window.show()
 
 	def on_hide_window(self, *args):
+		self.window_actions.close()
 		self.window.set_dark_variation(False)
 		self.window.destroy()
 		self.quit()

@@ -69,7 +69,10 @@ class WindowActions(object):
 		session = dbus.SessionBus()
 		self.proxy = session.get_object(MyService.BUS_NAME, MyService.BUS_PATH)
 		self.actions = []
-		self.proxy.connect_to_signal("ListWindowActionsSignal", self.on_actions_receive)
+		self.signal_match = self.proxy.connect_to_signal("ListWindowActionsSignal", self.on_actions_receive)
+
+	def close(self):
+		self.signal_match.remove()
 
 	def request_window_actions(self):
 		self.proxy.RequestWindowActions()
