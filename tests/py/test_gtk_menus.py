@@ -326,6 +326,23 @@ def test_activating_any_targeted_item_passes_its_target():
 	assert sent == [('go-tab', ['2']), ('home', [])]
 
 
+def test_same_named_items_each_activate_their_own_target():
+	# Two recent files with one name, in different folders
+	session, model = load({
+		(0, 0): [gtk_item(label='_File', submenu=(1, 0))],
+		(1, 0): [
+			gtk_item(label='notes.txt', action='app.open-recent', target='/a/notes.txt'),
+			gtk_item(label='notes.txt', action='app.open-recent', target='/b/notes.txt'),
+		],
+	}, {'app.open-recent': gtk_describe(True)})
+	keys = [n['key'] for n in find(json_tree(model), '_File')['children']]
+	assert len(set(keys)) == 2
+	for key in keys:
+		model.activate(key)
+	sent = [[str(v) for v in c[4][1]] for c in session.calls_to('Activate')]
+	assert sent == [['/a/notes.txt'], ['/b/notes.txt']]
+
+
 def test_starts_only_the_groups_the_menus_link_and_keeps_them(app):
 	# GMenuExporter reports changes only in groups somebody has started, and
 	# a Start for a group that does not exist yet makes a placeholder that a

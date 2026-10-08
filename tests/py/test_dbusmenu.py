@@ -101,6 +101,25 @@ def test_every_opened_submenu_is_closed_again(app):
 		assert events.index((item_id, 'opened')) < events.index((item_id, 'closed'))
 
 
+def test_same_named_items_each_activate_their_own_id():
+	session = FakeSession()
+	window = FakeWindow({})
+	install_dbusmenu_app(session, dm(0, SUB, [
+		dm(1, {'label': '_Window', **SUB}, [
+			dm(2, {'label': 'Untitled'}),
+			dm(3, {'label': 'Untitled'}),
+		]),
+	]), window)
+	model = MenuModel(session, window)
+	model._update_menus()
+	keys = [n['key'] for n in find(json_tree(model), '_Window')['children']]
+	assert len(set(keys)) == 2
+	for key in keys:
+		model.activate(key)
+	clicked = [int(c[4][0]) for c in session.calls_to('Event') if c[4][1] == 'clicked']
+	assert clicked == [2, 3]
+
+
 def test_activate_sends_clicked_for_the_item_id(app):
 	session, model = app
 	key = find(json_tree(model), '_File', 'Recent', 'a.txt')['key']

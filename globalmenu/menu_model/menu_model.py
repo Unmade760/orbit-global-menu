@@ -16,6 +16,18 @@ from globalmenu.menu_model.menu_item import DbusGtkMenuItem, DbusAppMenuItem
 CLIENT_TIMEOUT = 2
 
 
+def claim_key(item, actions):
+	"""The item's key, its label path, made unique among `actions`. Two
+	items with one label in one menu, such as two recent files called
+	notes.txt, would otherwise both activate the second."""
+	key, n = item.text, 2
+	while key in actions:
+		key = '%s  #%d' % (item.text, n)
+		n += 1
+	item.text = key
+	return key
+
+
 class DbusGtkMenu(object):
 
 	def __init__(self, session, window, on_changed=None):
@@ -223,9 +235,10 @@ class DbusGtkMenu(object):
 				if ':submenu' in menu:
 					self.collect_entries(menus, menu_path, node_id, menu[':submenu'])
 				elif 'action' in menu:
-					self.actions[menu_item.text] = menu_item.action
+					key = claim_key(menu_item, self.actions)
+					self.actions[key] = menu_item.action
 					if menu_item.target is not None:
-						self.targets[menu_item.text] = menu_item.target
+						self.targets[key] = menu_item.target
 
 	def _new_node_id(self):
 		self._node_seq += 1
@@ -437,7 +450,7 @@ class DbusAppMenu(object):
 				self.collect_entries(child, menu_path, menu_item.action)
 
 		elif bool(menu_item.label) or menu_item.separator:
-			self.actions[menu_item.text] = menu_item.action
+			self.actions[claim_key(menu_item, self.actions)] = menu_item.action
 
 	def on_actions_changed(self, updated, removed):
 		touched = False
