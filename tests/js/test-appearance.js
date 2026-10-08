@@ -82,6 +82,34 @@ function node({padding = 0, border = 0, lengths = {}} = {}) {
     };
 }
 
+// An actor whose visible property emits notify::visible when it changes
+function fakeContainer() {
+    const handlers = new Map();
+    let nextId = 1;
+    let visible = true;
+    return {
+        get visible() {
+            return visible;
+        },
+        set visible(value) {
+            if (value === visible)
+                return;
+            visible = value;
+            for (const fn of [...handlers.values()])
+                fn();
+        },
+        connect(signal, fn) {
+            assert.equal(signal, 'notify::visible');
+            handlers.set(nextId, fn);
+            return nextId++;
+        },
+        disconnect(id) {
+            handlers.delete(id);
+        },
+        handlerCount: () => handlers.size,
+    };
+}
+
 function fakeButton({appName = false, rtl = false, firstItem = true, nodes = {}} = {}) {
     const handlers = new Map();
     let nextId = 1;
@@ -98,7 +126,7 @@ function fakeButton({appName = false, rtl = false, firstItem = true, nodes = {}}
     };
     const btn = {
         _globalMenuAppName: appName,
-        container: {visible: true},
+        container: fakeContainer(),
         rtl,
         style: undefined,
         sourceAlignments: [],
@@ -237,6 +265,28 @@ test('hide-app-name hides only the app-name button container', () => {
     manager.applyAll();
     manager.destroy();
     assert.equal(app.container.visible, true, 'disable restores the button');
+});
+
+test('a hidden app-name button stays hidden when the panel shows its container', () => {
+    const {manager, btn} = setup({'hide-app-name': true}, {appName: true});
+    assert.equal(btn.container.visible, false);
+    // Panel.addToStatusArea() calls container.show() once the button is added
+    btn.container.visible = true;
+    assert.equal(btn.container.visible, false, 'shown by the panel');
+    manager.destroy();
+    assert.equal(btn.container.visible, true, 'disable restores the button');
+    assert.equal(btn.container.handlerCount(), 0);
+});
+
+test('turning hide-app-name off lets the panel show the container', () => {
+    const {settings, manager, btn} = setup({'hide-app-name': true}, {appName: true});
+    settings.values['hide-app-name'] = false;
+    manager.applyAll();
+    assert.equal(btn.container.visible, true);
+    btn.container.visible = false;
+    btn.container.visible = true;
+    assert.equal(btn.container.visible, true);
+    manager.destroy();
 });
 
 test('a visible app-name button is left alone', () => {

@@ -225,9 +225,11 @@ export class AppearanceManager {
 		// fallbackMenu.js shows and hides the button for its own reasons.
 		if (btn._globalMenuAppName) {
 			const hide = s.get_boolean('hide-app-name');
-			if (hide || btn._globalMenuHidden)
-				btn.container.visible = !hide;
+			const wasHidden = btn._globalMenuHidden;
 			btn._globalMenuHidden = hide;
+			if (hide || wasHidden)
+				btn.container.visible = !hide;
+			this._trackContainer(btn);
 		}
 
 		this.applyShortcutLabels(btn);
@@ -395,6 +397,18 @@ export class AppearanceManager {
 			() => this._alignSource(btn));
 	}
 
+	// Panel.addToStatusArea() shows the container once the button is in the
+	// panel, so a button created while hide-app-name is on has to be hidden
+	// again then.
+	_trackContainer(btn) {
+		if (btn._globalMenuVisibleId)
+			return;
+		btn._globalMenuVisibleId = btn.container.connect('notify::visible', () => {
+			if (btn._globalMenuHidden && btn.container.visible)
+				btn.container.visible = false;
+		});
+	}
+
 	// Pixels between where the first item's text would start and where the
 	// title's text starts, or null while the popup is off stage. Theme node
 	// lengths are in scaled pixels throughout.
@@ -478,6 +492,10 @@ export class AppearanceManager {
 		if (btn._globalMenuDirectionId) {
 			btn.disconnect(btn._globalMenuDirectionId);
 			btn._globalMenuDirectionId = 0;
+		}
+		if (btn._globalMenuVisibleId) {
+			btn.container.disconnect(btn._globalMenuVisibleId);
+			btn._globalMenuVisibleId = 0;
 		}
 		if (btn._globalMenuHidden) {
 			btn.container.visible = true;
