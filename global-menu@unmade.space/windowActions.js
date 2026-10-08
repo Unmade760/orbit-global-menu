@@ -18,8 +18,6 @@ const GRAB_DELAY_MS = 100;
 // disable.
 const pendingGrabs = new Set();
 
-/** Called from the extension's disable(). */
-
 // Every action name getActions() can return. The names stay English inside
 // the extension because doAction() and the daemon match on them.
 export const ACTION_NAMES = [
@@ -53,6 +51,7 @@ export function actionLabel(action) {
 	return checked ? `${_(name)} ✓` : _(name);
 }
 
+/** Called from the extension's disable(). */
 export function cancelPendingActions() {
 	for (const id of pendingGrabs)
 		GLib.source_remove(id);
