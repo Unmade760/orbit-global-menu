@@ -1,6 +1,5 @@
 import dbus
 import gi
-import os
 
 from gi.repository import Gio
 
@@ -8,18 +7,20 @@ from globalmenu.utils.service import MyService
 from globalmenu.utils.wayland import is_wayland
 
 '''
-Bamf is X11 only, so everything here exists to keep the daemon working on
-Wayland, where the extension reports window data over D-Bus instead. This is
-the only module that may import Bamf.
+The extension reports every window switch over D-Bus on Wayland and on X11
+alike. Bamf is X11 only and optional: it supplies the window the daemon
+starts with when the standalone HUD runs without the extension. This is the
+only module that may import Bamf.
 '''
 # If the session type looks wrong:
 # loginctl show-session $(loginctl | grep $(whoami) | awk '{print $1}') -p Type
-# The string 'Wayland' is not the point; whether it is x11 is
-wayland = is_wayland()
-
-if not wayland:
-	gi.require_version('Bamf', '3')
-	from gi.repository import Bamf
+Bamf = None
+if not is_wayland():
+	try:
+		gi.require_version('Bamf', '3')
+		from gi.repository import Bamf
+	except (ValueError, ImportError):
+		Bamf = None
 
 
 class Window(object):
@@ -48,11 +49,11 @@ class Window(object):
 		self.props[key] = value
 
 	def get_app_name(self):
-		if not wayland:
-			return WindowManager.get_app_name()
-		elif 'appName' in self.props:
+		if 'appName' in self.props:
 			return self.props['appName']
-		
+		if self.bamf_window != None:
+			return WindowManager.get_app_name()
+
 		return ''
 
 
@@ -68,7 +69,7 @@ class WindowActions(object):
 		session = dbus.SessionBus()
 		self.proxy = session.get_object(MyService.BUS_NAME, MyService.BUS_PATH)
 		self.actions = []
-		signal = self.proxy.connect_to_signal("ListWindowActionsSignal", self.on_actions_receive)
+		self.proxy.connect_to_signal("ListWindowActionsSignal", self.on_actions_receive)
 
 	def request_window_actions(self):
 		self.proxy.RequestWindowActions()
@@ -107,12 +108,9 @@ class WindowManager(object):
 
 	@classmethod
 	def _start_listener(cls):
-		if not wayland:
-			cls._get_matcher().connect('active-window-changed', cls._window_switched_bamf)
-		else:
-			session = dbus.SessionBus()
-			proxy  = session.get_object('space.unmade.GlobalMenu', '/space/unmade/GlobalMenu')
-			signal = proxy.connect_to_signal("WindowSwitchedSignal", cls._window_switched)
+		session = dbus.SessionBus()
+		proxy  = session.get_object('space.unmade.GlobalMenu', '/space/unmade/GlobalMenu')
+		proxy.connect_to_signal("WindowSwitchedSignal", cls._window_switched)
 
 	@classmethod
 	def _get_matcher(cls):
@@ -122,10 +120,9 @@ class WindowManager(object):
 
 	@classmethod
 	def new_window(cls, win_data={}):
-		if not wayland:
+		if not win_data and Bamf is not None:
 			return Window(cls._get_matcher().get_active_window())
 
-		# Wayland
 		win = Window()
 		for p in win_data:
 			if p == 'xid':
@@ -134,19 +131,6 @@ class WindowManager(object):
 				win.set_utf8_prop('_' + p.upper(), win_data[p])
 
 		return win
-
-	@classmethod
-	def _window_switched_bamf(cls, matcher, object, p0):
-		# I think the argumets are last and current window respectevely
-		# https://git.launchpad.net/bamf/tree/src/bamf-matcher.c
-		if p0 == None:
-			return
-		bamf_win = p0
-		if bamf_win == None:
-			win = cls.new_window()
-		else:
-			win = Window(bamf_win)
-		cls._call_all_listeners(win)
 
 	@classmethod
 	def _window_switched(cls, win_data):

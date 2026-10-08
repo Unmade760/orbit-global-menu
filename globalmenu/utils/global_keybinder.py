@@ -1,12 +1,16 @@
 import gi
-import os
 
 from globalmenu.utils.wayland import is_wayland
 
-# Keybinder is X11 only, so it must not be required on Wayland
+# Keybinder is X11 only and optional: without it the daemon runs with no
+# global key bindings. This is the only module that may import it.
+Keybinder = None
 if not is_wayland():
-	gi.require_version('Keybinder', '3.0')
-	from gi.repository import Keybinder
+	try:
+		gi.require_version('Keybinder', '3.0')
+		from gi.repository import Keybinder
+	except (ValueError, ImportError):
+		Keybinder = None
 
 
 class GlobalKeybinder:
@@ -20,7 +24,7 @@ class GlobalKeybinder:
 
 	@classmethod
 	def create(cls, callback=None):
-		if not is_wayland():
+		if Keybinder is not None:
 			return cls(callback)
 		else:
 			return DummyKeybinder()
