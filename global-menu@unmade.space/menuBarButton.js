@@ -12,6 +12,7 @@ import Clutter from 'gi://Clutter';
 import GObject from 'gi://GObject';
 import St from 'gi://St';
 
+import {ensureActorVisibleInScrollView} from 'resource:///org/gnome/shell/misc/animationUtils.js';
 import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
@@ -58,6 +59,23 @@ class MenuBarButton extends PanelMenu.Button {
 		this._globalMenuAppName = !!params.appName;
 		this.menu.actor.add_style_class_name('global-menu-popup');
 
+		// The popup box is a plain BoxLayout, so past the shell's max-height
+		// cap its items are clipped with no way to reach them. The items
+		// live in a section inside a scroll view instead, the way a
+		// PopupSubMenu holds its own. The section's actor is the scroll
+		// view so the menu treats the pair as one child.
+		this._itemsScroll = new St.ScrollView({
+			hscrollbar_policy: St.PolicyType.NEVER,
+			vscrollbar_policy: St.PolicyType.AUTOMATIC,
+			overlay_scrollbars: true,
+			clip_to_allocation: true,
+		});
+		this.itemsMenu = new PopupMenu.PopupMenuSection();
+		this._itemsScroll.add_child(this.itemsMenu.box);
+		this._itemsScroll._delegate = this.itemsMenu;
+		this.itemsMenu.actor = this._itemsScroll;
+		this.menu.addMenuItem(this.itemsMenu);
+
 		this._itemsSource = null;
 		this.menu.connect('open-state-changed', (menu, open) => {
 			if (open) {
@@ -87,16 +105,16 @@ class MenuBarButton extends PanelMenu.Button {
 			// open-state-changed where the real items get built, so keep a
 			// placeholder in it. The rebuild replaces it in the same frame,
 			// before anything is painted.
-			this.menu.removeAll();
-			this.menu.addMenuItem(new PopupMenu.PopupMenuItem(''));
+			this.itemsMenu.removeAll();
+			this.itemsMenu.addMenuItem(new PopupMenu.PopupMenuItem(''));
 		} else {
 			this._rebuild(items);
 		}
 	}
 
 	_rebuild(specs) {
-		this.menu.removeAll();
-		this._buildInto(specs, this.menu);
+		this.itemsMenu.removeAll();
+		this._buildInto(specs, this.itemsMenu);
 	}
 
 	_buildInto(specs, parentMenu) {
@@ -110,6 +128,13 @@ class MenuBarButton extends PanelMenu.Button {
 				if (spec.key)
 					subMenu._globalMenuKey = spec.key;
 				this._buildInto(spec.children, subMenu.menu);
+				subMenu.connect('key-focus-in', () => this._scrollTo(subMenu));
+				// An inline submenu grows downward, possibly past the
+				// visible part of the scroll view
+				subMenu.menu.actor.connect('notify::height', () => {
+					if (subMenu.menu.isOpen)
+						this._scrollTo(subMenu.menu.actor);
+				});
 				parentMenu.addMenuItem(subMenu);
 			} else {
 				const item = new PopupMenu.PopupMenuItem(spec.label);
@@ -124,8 +149,15 @@ class MenuBarButton extends PanelMenu.Button {
 					item._globalMenuKey = spec.key;
 				if (spec.onActivate)
 					item.connect('activate', spec.onActivate);
+				// Arrow keys move the focus; bring the item into view
+				item.connect('key-focus-in', () => this._scrollTo(item));
 				parentMenu.addMenuItem(item);
 			}
 		}
+	}
+
+	_scrollTo(actor) {
+		if (actor.get_stage())
+			ensureActorVisibleInScrollView(this._itemsScroll, actor);
 	}
 });

@@ -207,7 +207,7 @@ export class NativeMenu {
 		collect(nodes);
 
 		for (const btn of this._buttons)
-			this._applyToMenu(btn.menu, stateByKey);
+			this._applyToMenu(btn.itemsMenu, stateByKey);
 	}
 
 	_applyToMenu(menu, stateByKey) {

@@ -17,7 +17,8 @@ export class MenuBarButton {
         this.params = params;
         this.items = null;
         this.destroyed = false;
-        this.menu = {isOpen: false, close() {}, _getMenuItems: () => []};
+        this.menu = {isOpen: false, close() {}};
+        this.itemsMenu = {_getMenuItems: () => []};
         globalThis.gmTest.buttons.push(this);
     }
     setItems(items) { this.items = items; }
@@ -310,7 +311,7 @@ test('NativeMenu: an open menu goes back to the shown state when the tree change
             this.ornament = o;
         },
     };
-    rec.buttons[0].menu._getMenuItems = () => [item];
+    rec.buttons[0].itemsMenu._getMenuItems = () => [item];
     rec.buttons[0].menu.isOpen = true;
     menu.setItems(tree(true));
     assert.equal(item.ornament, Ornament.CHECK, 'the pending state is applied in place');

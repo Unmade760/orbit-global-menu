@@ -21,15 +21,32 @@ globalThis.gmGi = {
                 this.opacity = 255;
             }
         },
+        ScrollView: class {
+            constructor(params) {
+                Object.assign(this, params);
+                this.children = [];
+            }
+            add_child(child) { this.children.push(child); }
+        },
+        PolicyType: {NEVER: 0, AUTOMATIC: 1},
     },
 };
 
 const POPUP_MENU_STUB = `
 export const Ornament = {NONE: 0, DOT: 1, CHECK: 2, HIDDEN: 3, NO_DOT: 4};
 class Menu {
-    constructor() { this.items = []; }
+    constructor() {
+        this.items = [];
+        this.actor = {connect() {}};
+    }
     addMenuItem(item) { this.items.push(item); }
     removeAll() { this.items = []; }
+}
+export class PopupMenuSection extends Menu {
+    constructor() {
+        super();
+        this.box = {};
+    }
 }
 class Item {
     constructor(text) {
@@ -97,6 +114,8 @@ const {MenuBarButton} = await importWithStubs('menuBarButton.js', {
     resources: {
         'resource:///org/gnome/shell/ui/panelMenu.js': PANEL_MENU_STUB,
         'resource:///org/gnome/shell/ui/popupMenu.js': POPUP_MENU_STUB,
+        'resource:///org/gnome/shell/misc/animationUtils.js':
+            'export function ensureActorVisibleInScrollView() {}',
     },
     locals: {
         'menuBarButton.js': menuBarButtonSource,
@@ -107,7 +126,7 @@ const {MenuBarButton} = await importWithStubs('menuBarButton.js', {
 function build(specs) {
     const btn = new MenuBarButton('File');
     btn.setItems(specs);
-    return btn.menu.items;
+    return btn.itemsMenu.items;
 }
 
 const accelLabels = item => item.children.filter(c => c.style_class === 'global-menu-accel');
@@ -146,6 +165,19 @@ test('the shortcut is faint on a sensitive item and left to the theme on an inse
     off.setSensitive(true);
     assert.equal(accelLabels(on)[0].opacity, 255, 'made insensitive later');
     assert.equal(accelLabels(off)[0].opacity, 140, 'made sensitive later');
+});
+
+test('items go into the scrolled section and a rebuild clears it', () => {
+    const btn = new MenuBarButton('File');
+    assert.equal(btn.menu.items[0], btn.itemsMenu, 'the section is the menu\'s one child');
+    assert.equal(btn.itemsMenu.actor.vscrollbar_policy, 1, 'the scroll view scrolls vertically');
+    btn.setItems([{label: 'A'}, {label: 'B'}]);
+    assert.equal(btn.itemsMenu.items.length, 2);
+    btn.setItems(() => [{label: 'C'}]);
+    assert.equal(btn.itemsMenu.items.length, 1, 'a function source leaves a placeholder');
+    btn._rebuild([{label: 'D'}, {label: 'E'}, {label: 'F'}]);
+    assert.equal(btn.itemsMenu.items.length, 3);
+    assert.equal(btn.menu.items.length, 1, 'nothing lands outside the section');
 });
 
 await run();

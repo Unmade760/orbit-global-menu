@@ -310,14 +310,31 @@ export class AppearanceManager {
 		const actor = btn.menu.actor;
 		if (shift === null)
 			return;
-		if (shift <= 0) {
-			actor.set_style(null);
-			return;
+		// This style replaces the one the shell set when the menu opened,
+		// so it has to carry the shell's height cap too. Without the cap a
+		// long menu runs off the screen with no scrollbar.
+		let style = this._maxHeightStyle(btn);
+		if (shift > 0) {
+			const node = actor.get_theme_node();
+			const fixed = node.get_length('-arrow-border-width') + node.get_length('-arrow-base');
+			const radius = Math.max(0, (2 * shift - fixed) / 4) / this._scale();
+			style += ` -arrow-border-radius: ${radius.toFixed(2)}px;`;
 		}
-		const node = actor.get_theme_node();
-		const fixed = node.get_length('-arrow-border-width') + node.get_length('-arrow-base');
-		const radius = Math.max(0, (2 * shift - fixed) / 4) / this._scale();
-		actor.set_style(`-arrow-border-radius: ${radius.toFixed(2)}px;`);
+		actor.set_style(style);
+	}
+
+	// What PanelMenu.Button caps the popup at each time it opens: the work
+	// area, less the popup's margins, in CSS pixels. The cap is taken from
+	// the monitor the button is on, where the shell uses the primary one.
+	_maxHeightStyle(btn) {
+		const layout = Main.layoutManager;
+		let monitor = layout.findIndexForActor(btn);
+		if (monitor < 0)
+			monitor = layout.primaryIndex;
+		const workArea = layout.getWorkAreaForMonitor(monitor);
+		const actor = btn.menu.actor;
+		const margins = actor.margin_top + actor.margin_bottom;
+		return `max-height: ${Math.round((workArea.height - margins) / this._scale())}px;`;
 	}
 
 	applyBlur(btn) {
@@ -414,7 +431,7 @@ export class AppearanceManager {
 	// lengths are in scaled pixels throughout.
 	_textShift(btn) {
 		const box = btn.menu.box;
-		const item = btn.menu.firstMenuItem;
+		const item = btn.itemsMenu.firstMenuItem;
 		if (!item || !box.get_stage())
 			return null;
 
@@ -436,7 +453,7 @@ export class AppearanceManager {
 		const node = box.get_theme_node();
 		const inner = (node.get_padding(St.Side.TOP) + node.get_border_width(St.Side.TOP)) / this._scale();
 		const well = Math.max(0, radius - inner);
-		this._eachWell(btn.menu, `border-radius: 0 0 ${well}px ${well}px;`);
+		this._eachWell(btn.itemsMenu, `border-radius: 0 0 ${well}px ${well}px;`);
 	}
 
 	_eachWell(menu, style) {
@@ -488,7 +505,7 @@ export class AppearanceManager {
 		btn.menu.actor.remove_style_class_name('global-menu-accels-held');
 		btn.menu.actor.set_style(null);
 		btn.menu.box.set_style(null);
-		this._eachWell(btn.menu, null);
+		this._eachWell(btn.itemsMenu, null);
 		if (btn._globalMenuDirectionId) {
 			btn.disconnect(btn._globalMenuDirectionId);
 			btn._globalMenuDirectionId = 0;

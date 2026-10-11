@@ -14,6 +14,11 @@ const MAIN_STUB = `
 export const sessionMode = {connect: () => 1, disconnect() {}};
 export const extensionManager = {connect: () => 1, disconnect() {}};
 export const panel = {statusArea: {}};
+export const layoutManager = {
+    primaryIndex: 0,
+    findIndexForActor: () => 0,
+    getWorkAreaForMonitor: () => ({height: globalThis.gmTest.workAreaHeight}),
+};
 `;
 const CLUTTER_STUB = `
 export default {
@@ -35,7 +40,7 @@ export default {
 const decoder = new TextDecoder();
 const readSource = name => decoder.decode(GLib.file_get_contents(`${EXT_DIR}/${name}`)[1]);
 
-globalThis.gmTest = {scale: 1};
+globalThis.gmTest = {scale: 1, workAreaHeight: 1000};
 globalThis.global = {stage: {}, get_pointer: () => [0, 0, globalThis.gmTest.mods ?? 0]};
 
 const {createManager, registerButton, onMenuOpened} = await importWithStubs('appearance.js', {
@@ -150,13 +155,18 @@ function fakeButton({appName = false, rtl = false, firstItem = true, nodes = {}}
             for (const h of [...handlers.values()].filter(x => x.signal === signal))
                 h.fn();
         },
+        itemsMenu: {
+            firstMenuItem: firstItem ? {get_theme_node: () => nodes.item ?? node({padding: 12})} : null,
+            box: {get_children: () => [sub]},
+        },
         menu: {
             isOpen: false,
             setSourceAlignment(a) {
                 btn.sourceAlignments.push(a);
             },
-            firstMenuItem: firstItem ? {get_theme_node: () => nodes.item ?? node({padding: 12})} : null,
             actor: {
+                margin_top: 0,
+                margin_bottom: 0,
                 style: undefined,
                 classes: new Set(),
                 keyHandlers: {},
@@ -335,8 +345,22 @@ test('no shift when the item inset is not larger than the title inset', () => {
     const nodes = {bar: node({border: 0, lengths: {'-natural-hpadding': 30}})};
     const {manager, btn} = setup({}, {nodes});
     onMenuOpened(btn);
-    assert.equal(btn.menu.actor.style, null);
+    assert.equal(btn.menu.actor.style, 'max-height: 1000px;');
     manager.destroy();
+});
+
+test('the shell height cap survives the shift, in CSS pixels on the button\'s monitor', () => {
+    globalThis.gmTest.scale = 2;
+    globalThis.gmTest.workAreaHeight = 1200;
+    const {manager, btn} = setup();
+    btn.menu.actor.margin_top = 4;
+    btn.menu.actor.margin_bottom = 8;
+    onMenuOpened(btn);
+    assert.ok(btn.menu.actor.style.startsWith('max-height: 594px;'), btn.menu.actor.style);
+    assert.ok(/-arrow-border-radius/.test(btn.menu.actor.style), btn.menu.actor.style);
+    manager.destroy();
+    globalThis.gmTest.scale = 1;
+    globalThis.gmTest.workAreaHeight = 1000;
 });
 
 test('an empty menu gets no shift', () => {

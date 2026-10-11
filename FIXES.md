@@ -115,3 +115,15 @@ the daemon installed from this branch.
   item is a placeholder.
 - Moving the HUD key from Alt+Space to Ctrl+Super+Space changes a
   documented shortcut on X11.
+
+## Issue #11: long menus cut off on small screens
+
+| ID | Status | Commit | What changed |
+|----|--------|--------|--------------|
+| #11 | fixed | see git log | The popup keeps the shell's max-height when text alignment rewrites its style, and its items sit in a scroll view, so a long menu scrolls and a submenu near the bottom scrolls into view. |
+
+By-eye check: set the display scale to 200 % on a 1280x1024 monitor, or use a
+small work area. Open a menu with 40 or more items (a long Window menu). Wheel
+and arrow keys must scroll it, the last item must be reachable, and a submenu
+opened near the bottom must scroll into view. With the shortcut labels, blur
+and text alignment settings on, the popup must look as before.
