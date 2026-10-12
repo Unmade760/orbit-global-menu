@@ -1,4 +1,4 @@
-<schemalist gettext-domain="gnome-shell-extensions">
+<schemalist gettext-domain="global-menu">
 	<schema id="org.gnome.shell.extensions.global-menu" path="/org/gnome/shell/extensions/global-menu/">
 		<key type="b" name="enable-fallback-menu">
 			<default>true</default>

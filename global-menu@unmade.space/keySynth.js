@@ -79,11 +79,20 @@ export function cancelPendingShortcuts() {
 	for (const id of pendingSends)
 		GLib.source_remove(id);
 	pendingSends.clear();
+	device?.run_dispose();
+	device = null;
 }
 
+// One device serves every shortcut, created on first use and released by
+// cancelPendingShortcuts() when the extension is disabled.
+let device = null;
+
 function synthesize(chords) {
-	const seat = global.stage.context.get_backend().get_default_seat();
-	const dev = seat.create_virtual_device(Clutter.InputDeviceType.KEYBOARD_DEVICE);
+	if (!device) {
+		const seat = global.stage.context.get_backend().get_default_seat();
+		device = seat.create_virtual_device(Clutter.InputDeviceType.KEYBOARD_DEVICE);
+	}
+	const dev = device;
 	let t = GLib.get_monotonic_time();
 	for (const {modifiers, keyval} of chords) {
 		for (const mod of modifiers)

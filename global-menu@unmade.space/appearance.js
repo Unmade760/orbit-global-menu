@@ -58,7 +58,8 @@ let manager = null;
 export function registerButton(btn) {
 	buttons.add(btn);
 	btn.connect('destroy', () => buttons.delete(btn));
-	// The open popup has key focus, so the hold key arrives here
+	// The open popup has key focus, so the hold key arrives here. These
+	// handlers live on the popup actor, which the button destroys with itself.
 	btn.menu.actor.connect('key-press-event', (_actor, event) => {
 		manager?.onHoldKey(btn, event.get_key_symbol(), true);
 		return Clutter.EVENT_PROPAGATE;
@@ -388,6 +389,7 @@ export class AppearanceManager {
 		this._workspaceIndicator = null;
 		for (const btn of buttons)
 			this._resetButton(btn);
+		buttons.clear();
 		this._settings = null;
 		manager = null;
 	}
