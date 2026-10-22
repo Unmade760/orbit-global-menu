@@ -1,6 +1,5 @@
-// Renders a curated shortcut mapping from shortcutStore.js. Same
-// presentation as the other two menu sources, but activating an item
-// synthesizes the application's real keyboard shortcut through keySynth.js.
+// Renders a curated shortcut mapping from shortcutStore.js; items synthesize
+// the app's real shortcut through keySynth.js.
 
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';

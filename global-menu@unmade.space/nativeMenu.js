@@ -1,6 +1,5 @@
-// Renders an application's own exported menu, received from the daemon as a
-// JSON tree. Same presentation as the fallback menu, but activating an item
-// goes back through the daemon to the app's real action.
+// Renders an app's own exported menu, received from the daemon as a JSON tree.
+// Same look as the fallback menu, but items activate through the daemon.
 
 import GLib from 'gi://GLib';
 
@@ -9,10 +8,10 @@ import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';
 
-// CJK translations append the mnemonic as "(_F)" or "(&F)". It only names the
-// key the underline marks, and the bar draws no underline, so it goes. Then
-// the dbusmenu label rule: "__" is a literal underscore and any other
-// underscore is not drawn.
+// CJK labels append the mnemonic as "(_F)" or "(&F)"; strip it, since the bar
+// draws no underline.
+// Then apply the dbusmenu rule: "__" is a literal underscore and any other
+// underscore is dropped.
 function stripMnemonic(label) {
 	return (label ?? '')
 		.replace(/\s*\([_&][^_&)]\)(…|\.\.\.)?$/u, '$1')
@@ -62,8 +61,7 @@ export class NativeMenu {
 
 	setItems(nodes) {
 		// The daemon re-sends the tree on every menu open and window switch,
-		// almost always unchanged, and rebuilding on that churns panel actors
-		// and popup contents for nothing
+		// mostly unchanged; skip the rebuild then.
 		const json = JSON.stringify(nodes);
 		if (json === this._shownJson) {
 			// The open menu may show the state of a pending tree, applied in
@@ -115,11 +113,10 @@ export class NativeMenu {
 	_rebuild(nodes, json = JSON.stringify(nodes)) {
 		this._pendingNodes = null;
 		const topLevel = barNodes(nodes);
-		// Buttons already in the panel are relabelled, and only the
-		// difference is added or removed. Each panel insert or removal
-		// emits child-added or child-removed on the panel box, and other
-		// extensions that place panel items, such as one that moves the date
-		// menu (issue #3), react to every one of them.
+		// Relabel existing buttons and add or remove only the difference: each
+		// panel insert or removal
+		// makes other extensions that place panel items (such as one that moves
+		// the date menu) react.
 		while (this._buttons.length > topLevel.length)
 			this._buttons.pop().destroy();
 		topLevel.forEach((node, index) => {
@@ -135,9 +132,8 @@ export class NativeMenu {
 				addBarButton(`${this._uuid}-native-${index}`, btn, 1 + index);
 				this._buttons.push(btn);
 			}
-			// A function source builds the popup's items when it opens, not
-			// here. Large apps export thousands of nodes, and building them
-			// all on every tree change is what made the shell stutter.
+			// A function source builds the popup's items when it opens; large
+			// apps export thousands of nodes.
 			btn.setItems(() => this._toSpecs(node.children ?? []));
 		});
 		const appNode = nodes.find(n => n.appMenu);

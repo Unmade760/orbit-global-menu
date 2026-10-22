@@ -1,12 +1,7 @@
-// A top-level menu-bar button in the panel with a shell PopupMenu, shared by
-// all three menu sources so they render and behave identically.
-//
-// Menus are described by item specs:
-//   {separator: true}
-// | {label, enabled?, ornament?, key?, accel?, onActivate?, children?: spec[]}
-// accel is a GTK accelerator string ("<Primary>s"), shown as the shortcut.
-// setItems() also accepts a function returning specs, re-evaluated every time
-// the menu opens. The dynamic Window menu uses that.
+// A top-level menu-bar button with a shell PopupMenu, shared by all three menu
+// sources.
+// Item spec: {separator: true} | {label, enabled?, ornament?, key?, accel?,
+// onActivate?, children?}; setItems() also takes a function returning specs.
 
 import Clutter from 'gi://Clutter';
 import GObject from 'gi://GObject';
@@ -19,8 +14,8 @@ import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 import {acceleratorLabel} from './accelerator.js';
 import * as Appearance from './appearance.js';
 
-// The item's own text colour at 55 %, as GTK 4 draws accelerators in its
-// popover menus. St has no CSS opacity, so it is the actor's.
+// The item's text colour at 55 %, as GTK 4 draws accelerators. St has no CSS
+// opacity, so it is set on the actor.
 const ACCEL_OPACITY = 140;
 
 function addAccelLabel(item, text) {
@@ -59,11 +54,8 @@ class MenuBarButton extends PanelMenu.Button {
 		this._globalMenuAppName = !!params.appName;
 		this.menu.actor.add_style_class_name('global-menu-popup');
 
-		// The popup box is a plain BoxLayout, so past the shell's max-height
-		// cap its items are clipped with no way to reach them. The items
-		// live in a section inside a scroll view instead, the way a
-		// PopupSubMenu holds its own. The section's actor is the scroll
-		// view so the menu treats the pair as one child.
+		// The popup box clips items past the shell's max-height cap, so items
+		// live in a section inside a scroll view, as PopupSubMenu does.
 		this._itemsScroll = new St.ScrollView({
 			hscrollbar_policy: St.PolicyType.NEVER,
 			vscrollbar_policy: St.PolicyType.AUTOMATIC,
@@ -99,12 +91,10 @@ class MenuBarButton extends PanelMenu.Button {
 	setItems(items) {
 		this._itemsSource = items;
 		if (typeof items === 'function') {
-			// Building now would pay for a menu that may never open, since
-			// it is rebuilt on open anyway. But PopupMenu.open() refuses to
-			// open an empty menu, and it refuses before emitting
-			// open-state-changed where the real items get built, so keep a
-			// placeholder in it. The rebuild replaces it in the same frame,
-			// before anything is painted.
+			// Building now would pay for a menu that may never open.
+			// PopupMenu.open() refuses an empty menu before
+			// open-state-changed fires, so keep a placeholder; the rebuild
+			// replaces it before paint.
 			this.itemsMenu.removeAll();
 			this.itemsMenu.addMenuItem(new PopupMenu.PopupMenuItem(''));
 		} else {

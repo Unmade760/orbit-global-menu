@@ -1,8 +1,6 @@
 // Parsing and labelling of GTK-style accelerator strings ("<Ctrl><Shift>N").
-// Shared by the shell process (keySynth.js) and the preferences process
-// (shortcutStore.js, shortcutCapture.js), so it imports no library at all.
-// The keyvals are numeric literals, the same values as Clutter.KEY_*, which
-// are X11 keysyms.
+// Shared by the shell and preferences processes, so it imports nothing; keyvals
+// are the numeric X11 keysyms behind Clutter.KEY_*.
 
 // Modifier token (lowercased, without <>) to left-modifier keyval. <Meta> is
 // deliberately not accepted: it means different things on different setups.
@@ -76,13 +74,9 @@ const NAMED_KEYVALS = {
 };
 
 /**
- * "<Ctrl><Shift>N" to [{modifiers: [keyval, ...], keyval}], or null if the
- * string is not a valid accelerator.
- *
- * Space-separated chords are a sequence: "<Ctrl>x s" is Emacs' C-x s and
- * ": w Return" is Vim's :w, for apps whose menus live behind a prefix key
- * rather than a single accelerator. The usual one-chord accelerator is just a
- * one-element sequence.
+ * "<Ctrl><Shift>N" to [{modifiers: [keyval, ...], keyval}], or null if invalid.
+ * Space-separated chords form a sequence ("<Ctrl>x s" is Emacs C-x s), for
+ * apps with a prefix key.
  *
  * @param {string} accel
  * @returns {object[]|null}
@@ -119,8 +113,8 @@ function parseChord(accel) {
 
 	let keyval;
 	if (rest.length === 1) {
-		// Shift is expressed by the <Shift> modifier, never by an uppercase
-		// keyval, so a printable character is always lowercased here
+		// Shift is expressed by <Shift>, never an uppercase keyval, so
+		// printable characters are lowercased.
 		const code = rest.toLowerCase().charCodeAt(0);
 		if (code < 0x21 || code > 0x7e)
 			return null;
@@ -165,10 +159,9 @@ function chordLabel({modifiers, keyval}) {
 }
 
 /**
- * "<Ctrl><Shift>S" to "Shift+Ctrl+S", the way GTK 4 labels an accelerator
- * (Design Language, Type rule 4). A chord sequence is joined with a space
- * ("Ctrl+K Ctrl+S"). Returns null if the string is not a valid accelerator.
- * The words come from the tables above, so the result does not depend on the
+ * "<Ctrl><Shift>S" to "Shift+Ctrl+S", as GTK 4 labels it; chords are joined
+ * with a space. Returns null if invalid.
+ * Words come from the tables above, so the result does not depend on the
  * locale.
  *
  * @param {string} accel

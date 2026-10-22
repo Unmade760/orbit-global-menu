@@ -1,15 +1,7 @@
-// Lifecycle for global-menu, the companion process that reads an app's
-// exported menu off the bus and hands it back as a JSON tree.
-//
-// The daemon ships separately from the extension, so this only ever launches
-// a program that is already installed and bundles nothing. Nothing installs a
-// D-Bus activation file yet, so enable() is the only thing that starts it. If
-// something else already owns the name, nothing is spawned here.
-//
-// The program that gets spawned owns no bus name itself: it starts the menu
-// service as a child, which takes space.unmade.GlobalMenu, and exits when
-// that child does. A crash therefore shows up twice, as the name vanishing
-// and as the process exiting, and either one can arrive first.
+// Lifecycle for the global-menu daemon, which reads an app's exported menu off
+// the bus and returns a JSON tree.
+// It ships separately and is only launched, never bundled. enable() is the only
+// starter; if another process owns the name, nothing is spawned.
 
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
@@ -39,8 +31,8 @@ export class DaemonManager {
 			return;
 
 		this._cancellable = new Gio.Cancellable();
-		// Fires vanished() straight away when nobody owns the name, which
-		// covers both the initial start and a crash after it
+		// Fires vanished() at once when nobody owns the name, covering both the
+		// first start and a later crash.
 		this._nameWatchId = Gio.bus_watch_name(
 			Gio.BusType.SESSION,
 			BUS_NAME,
@@ -69,9 +61,8 @@ export class DaemonManager {
 		this._nameOwned = false;
 		this._starts = [];
 
-		// SIGTERM rather than force_exit, because the daemon traps it to take
-		// its own children down with it. Only ever our own process: a daemon
-		// the user started themselves is left alone.
+		// SIGTERM, not force_exit: the daemon traps it to take its children
+		// down. Only our own process; a daemon the user started is left alone.
 		this._proc?.send_signal(15);
 		this._proc = null;
 	}

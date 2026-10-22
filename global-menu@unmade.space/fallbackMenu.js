@@ -1,9 +1,5 @@
-// Generic menu for applications that export no menu of their own and have no
-// curated shortcut mapping either. Adapted from Global Menu for GNOME
-// (globalmenu@ShiroOSL.github.io).
-//
-// Items act through window operations, the shell's own system actions, or a
-// keyboard shortcut synthesized into the focused app. Nothing here shells out.
+// Generic menu for apps with no exported menu and no curated shortcut mapping.
+// Adapted from Global Menu for GNOME (globalmenu@ShiroOSL.github.io).
 
 import Clutter from 'gi://Clutter';
 import Gio from 'gi://Gio';
@@ -21,12 +17,12 @@ import {WindowActions, actionLabel} from './windowActions.js';
 import {sendShortcutAfterMenu} from './keySynth.js';
 import {_, N_} from './i18n.js';
 
-// The daemon briefly reports no menus while windows are switching, so wait
-// this long before concluding an app really has none.
+// The daemon briefly reports no menus while windows switch; wait this long
+// before concluding an app has none.
 const SHOW_FALLBACK_DELAY_MS = 400;
 
-// Actions with a real API behind them. Everything else in the menu is a
-// keystroke, which is a guess; these are not.
+// Actions with a real API behind them; everything else in the menu is a
+// keystroke guess.
 const DIRECT_ACTIONS = {
 	'open-files': () => openUri(`file://${GLib.get_home_dir()}`),
 	'open-settings': () => launchDesktopApp('org.gnome.Settings.desktop', 'gnome-control-center.desktop'),
@@ -42,8 +38,8 @@ const DIRECT_ACTIONS = {
 	'hibernate': () => hibernate(),
 };
 
-// login1 is where the shell's own suspend ends up; it has no hibernate call
-// of its own, so this is the same route with a different method name.
+// login1 is where the shell's suspend ends up; the shell has no hibernate call,
+// so use the same route.
 function hibernate() {
 	Gio.DBus.system.call('org.freedesktop.login1', '/org/freedesktop/login1',
 		'org.freedesktop.login1.Manager', 'Hibernate',
@@ -76,8 +72,8 @@ function launchDesktopApp(id, fallbackId) {
 		console.warn(`[global-menu-fallback] ${id} is not installed`);
 }
 
-// File operations run through the async Gio calls, so a slow gvfs mount never
-// holds up the compositor. They share one cancellable, which destroy() cancels.
+// File operations use async Gio calls so a slow gvfs mount never blocks the
+// compositor; destroy() cancels them.
 let fileCancellable = null;
 let trashDialog = null;
 
@@ -115,15 +111,15 @@ function makeDirectory(dir, cancellable, done) {
 	});
 }
 
-// A folder on the desktop, numbered if the plain name is taken, the way a
-// file manager would do it.
+// A folder on the desktop, numbered when the plain name is taken, like a file
+// manager.
 function makeDesktopFolder() {
 	const desktop = Gio.File.new_for_path(
 		GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP) ??
 		GLib.build_filenamev([GLib.get_home_dir(), 'Desktop']));
 	const cancellable = fileOperations();
-	// The desktop folder may not exist yet. If making it fails for a real
-	// reason, making the folder inside it fails too, and logs that.
+	// The desktop folder may not exist yet. If making it fails, making the
+	// folder inside it fails too and logs that.
 	makeDirectory(desktop, cancellable, () => makeNumberedFolder(desktop, cancellable, 0));
 }
 
@@ -172,9 +168,8 @@ function emptyTrash() {
 	dialog.open();
 }
 
-// Gio has no empty-the-trash call, so the entries are deleted in batches.
-// trash:/// hands back the top-level items only, and deleting one takes its
-// contents with it.
+// Gio has no empty-trash call. trash:/// lists top-level items only, and
+// deleting one deletes its contents.
 function deleteTrashItems() {
 	const trash = Gio.File.new_for_uri('trash:///');
 	const cancellable = fileOperations();
@@ -238,9 +233,8 @@ function minimizeEverything() {
 		.forEach(w => w.minimize());
 }
 
-// Actions sent to the focused app as keystrokes. These are the stock GNOME
-// and application defaults, so a user who has rebound one gets a stale guess.
-// There is no way to ask an app what its shortcut for Copy is.
+// Stock GNOME and application default shortcuts, sent as keystrokes. A user who
+// rebound one gets a stale guess.
 const ACTION_SHORTCUTS = {
 	'copy': '<Ctrl>C',
 	'paste': '<Ctrl>V',
@@ -288,9 +282,8 @@ function executeFallbackAction(action) {
 	return false;
 }
 
-// Mirrors gnome-shell's own window menu, so it is rebuilt on every open from
-// the live window state, plus a static block of window-switching and tiling
-// shortcuts that do not depend on the focused window.
+// Mirrors gnome-shell's window menu, rebuilt on each open from live window
+// state, plus static switching and tiling shortcuts.
 function windowMenuSpecs() {
 	const windowActions = new WindowActions();
 	const actions = windowActions.getActions();
@@ -317,8 +310,8 @@ function actionSpec(label, action) {
 	return {label: _(label), accel: ACTION_SHORTCUTS[action], onActivate: () => executeFallbackAction(action)};
 }
 
-// An item with a `requires` is greyed out while that SystemActions property is
-// false, since activating it would only throw.
+// An item with `requires` is greyed out while that SystemActions property is
+// false.
 function toSpecs(items) {
 	return items.map(item => {
 		if (item.separator)
@@ -432,10 +425,7 @@ const MENU_DATA = [
 	},
 ];
 
-/**
- * The first button always shows the focused app's name. The generic ones are
- * hidden by MenuBar whenever the app has a menu of its own.
- */
+/** The first button shows the focused app's name; MenuBar hides the generic ones when the app has its own menu. */
 export class FallbackMenu {
 	constructor(uuid) {
 		this._buttons = [];

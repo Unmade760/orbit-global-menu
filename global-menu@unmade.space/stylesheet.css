@@ -1,7 +1,5 @@
-/* Every selector here is scoped to a global-menu-* class that only this
- * extension's own actors carry, so nothing can match unrelated shell UI.
- * Spacing, radius and translucency are inline styles set by appearance.js;
- * this file holds the on/off classes and the shortcut label. */
+/* Every selector is scoped to a global-menu-* class carried only by our own actors.
+ * Spacing, radius and translucency are inline styles from appearance.js. */
 
 /* Menus drop straight down from the bar instead of pointing at the button */
 .global-menu-no-arrow {

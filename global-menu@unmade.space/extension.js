@@ -1,10 +1,6 @@
-// Global Menu
-//
-// Menus are rendered as shell PopupMenus in the panel. The menu data comes
-// from three sources, in priority order: the menu the app exports itself,
-// delivered as a JSON tree by the global-menu daemon (nativeMenu.js); a
-// curated per-app mapping whose items fire the app's real keyboard shortcuts
-// (shortcutMenu.js); or a generic window and system menu (fallbackMenu.js).
+// Global Menu: renders app menus as shell PopupMenus in the panel.
+// Sources in priority order: the app's exported menu (nativeMenu.js), a curated
+// shortcut mapping (shortcutMenu.js), a generic fallback (fallbackMenu.js).
 
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
@@ -26,8 +22,8 @@ import * as KeySynth from './keySynth.js';
 const BUS_NAME = 'space.unmade.GlobalMenu';
 const BUS_PATH = '/space/unmade/GlobalMenu';
 
-// Mutter refuses transient-for loops; this only bounds the walk up from a
-// dialog to the window that holds the menu
+// Mutter refuses transient-for loops; this only bounds the walk up to the
+// parent window.
 const MAX_TRANSIENT_STEPS = 8;
 
 // Menu trees are large and the daemon takes a moment to answer, so the last
@@ -67,10 +63,9 @@ class MenuBar {
 		this._settings = settings;
 		this._shortcutMapping = null;
 		this._cache = new MenuTreeCache();
-		// Each WindowSwitched carries a new request id and the daemon sends
-		// it back with every tree, so a tree built for a window that has
-		// since lost focus is recognised. A daemon too old to send one
-		// passes undefined.
+		// Each tree carries the request id of its WindowSwitched, so a tree for
+		// a window that lost focus is dropped.
+		// An older daemon sends none (undefined).
 		this._request = 0;
 		this._requestApp = null;
 
@@ -78,15 +73,14 @@ class MenuBar {
 			onMenuTree: (items, request) => {
 				if (request !== undefined && request !== String(this._request))
 					return;
-				// A window without a menubar gets an empty tree. Cached under
-				// the app id, it would stand in for the app's own menu the
-				// next time the app is focused.
+				// A window without a menubar gets an empty tree; caching it
+				// would replace the app's own menu on the next focus.
 				if (items.length > 0)
 					this._cache.store(this._requestApp, items);
 				this.setMenuTree(items);
 			},
-			// A daemon that started after enable(), or restarted after a
-			// crash, has not been told which window is focused
+			// A daemon started after enable(), or restarted after a crash, does
+			// not know the focused window.
 			onDaemonAppeared: () => this.refresh(),
 		});
 		this._native = new NativeMenu(this._proxy, uuid, source => this._fallback?.setAppItems(source));
@@ -95,14 +89,12 @@ class MenuBar {
 		this._shellHandlers = [
 			[global.display, global.display.connect('notify::focus-window', () => this.refresh())],
 			[Main.overview, Main.overview.connect('showing', () => this._closeAllMenus())],
-			// At shell shutdown the extension stays enabled while the shell
-			// destroys the panel, our buttons with it, and windows are still
-			// closing. This handler runs before the panel's children go.
+			// At shell shutdown the panel is destroyed while windows still
+			// close; run before its children go.
 			[Main.panel, Main.panel.connect('destroy', () => this._disconnectInputs())],
 		];
 
-		// Enabling starts with a window already focused, and so does every
-		// unlock, since the extension is disabled on the lock screen
+		// Enabling and every unlock start with a window already focused.
 		this.refresh();
 	}
 
@@ -143,8 +135,8 @@ class MenuBar {
 		const focusApp = this._winTracker.focus_app;
 		const win = focusApp ? this._menuWindow(focusApp) : null;
 		if (!win) {
-			// Supersedes the last request: the daemon still holds that window
-			// and may send its tree again, such as after a Quit item
+			// Supersedes the last request; the daemon may resend that window's
+			// tree, e.g. after a Quit item.
 			this._request++;
 			this._fallback?.setBlank(false);
 			this._showNothing();
@@ -171,8 +163,8 @@ class MenuBar {
 		const appId = focusApp.get_id();
 		const cached = this._cache.get(appId);
 		if (cached) {
-			// The buttons are not torn down first: NativeMenu.setItems is a
-			// no-op when the cached tree is the one already on the panel
+			// Buttons are kept: NativeMenu.setItems does nothing when the
+			// cached tree is already shown.
 			this.setMenuTree(cached);
 		} else if (this._shortcutMapping) {
 			// Whether the app has a menu of its own is still unknown, so show
@@ -204,8 +196,8 @@ class MenuBar {
 		this._winTracker = null;
 	}
 
-	// Everything outside that calls into the menus. Runs from destroy() and
-	// from the panel's destroy, so a second run must do nothing.
+	// Everything that calls into the menus. Runs from destroy() and the panel's
+	// destroy, so it must be idempotent.
 	_disconnectInputs() {
 		for (const [source, id] of this._shellHandlers)
 			source.disconnect(id);
@@ -225,10 +217,8 @@ class MenuBar {
 		this._fallback?.setNativeMenusPresent(false);
 	}
 
-	// A dialog (file chooser, About) has none of the gtk_* properties that
-	// lead the daemon to a menu, so the menu comes from the window it is
-	// transient for. Attached dialogs are transient too. A parent that
-	// belongs to another app is not used: its menu is not the focused app's.
+	// A dialog has no gtk_* properties for the daemon to find a menu, so use
+	// the window it is transient for (same app only).
 	_menuWindow(app) {
 		let win = global.display.focus_window;
 		for (let step = 0; win && step < MAX_TRANSIENT_STEPS; step++) {
@@ -261,11 +251,10 @@ class MenuBar {
 		return [...candidates];
 	}
 
-	// What the daemon needs to find the window's exported menu. The X11 id is
-	// read from the description, which mutter starts with "0x<id> (" for an
-	// X11 window; a Wayland window has none, and its description holds only
-	// a counter and the title. The gtk_* properties are only set on windows
-	// that export a GMenu.
+	// What the daemon needs to find the window's exported menu. The X11 id
+	// comes from the "0x<id> (" prefix of
+	// mutter's description; Wayland windows have none. The gtk_* properties
+	// exist only on windows that export a GMenu.
 	_windowData(win) {
 		const data = {xid: '0'};
 		if (win.get_client_type() === Meta.WindowClientType.X11) {
@@ -344,8 +333,8 @@ class DaemonProxy {
 		this._signalIds = [];
 		this._ownerChangedId = 0;
 		this._currentWindow = null;
-		// The request id announced for the next tree. A daemon from before
-		// request ids never announces one.
+		// Request id announced for the next tree; an older daemon never
+		// announces one.
 		this._treeRequest = undefined;
 		this._cancellable = new Gio.Cancellable();
 		this._proxy = new MenuProxy(Gio.DBus.session, BUS_NAME, BUS_PATH,
@@ -389,8 +378,8 @@ class DaemonProxy {
 	}
 
 	_onProxyReady(error) {
-		// The wrapper constructor is async, and destroy() cancels it. A proxy
-		// that comes up afterwards would leave signals nobody disconnects.
+		// destroy() cancels the async constructor; a late proxy would leave
+		// signals connected.
 		if (this._cancellable.is_cancelled())
 			return;
 		// A missing daemon is not one of these errors: the proxy comes up
@@ -408,9 +397,8 @@ class DaemonProxy {
 			this._proxy.connectSignal('RequestWindowActionsSignal', this._onRequestWindowActions.bind(this)),
 			this._proxy.connectSignal('ActivateWindowActionSignal', this._onActivateWindowAction.bind(this))
 		);
-		// The daemon that enable() spawned, and every restart. One that
-		// owned the name before this point is never notified, so it is
-		// announced here.
+		// The daemon enable() spawned, and every restart. One already on the
+		// bus is announced here.
 		this._ownerChangedId = this._proxy.connect('notify::g-name-owner', () => {
 			if (this._proxy.g_name_owner)
 				this._onDaemonAppeared();
@@ -480,10 +468,8 @@ export default class GlobalMenuExtension extends Extension {
 		this._settingsHandlerIds = [];
 		cancelPendingActions();
 		KeySynth.cancelPendingShortcuts();
-		// Reverse order of enable(). The appearance manager goes while the
-		// buttons are still alive: styling is undone per button, and a blur
-		// effect has to go back to Blur My Shell rather than vanish with the
-		// actor it was attached to.
+		// Reverse of enable(). The appearance manager goes first so Blur My
+		// Shell gets its effects back before the actors die.
 		this._appearance?.destroy();
 		this._appearance = null;
 		this._menubar?.destroy();
@@ -503,9 +489,8 @@ export default class GlobalMenuExtension extends Extension {
 		this._settingsHandlerIds.push(this._settings.connect(`changed::${key}`, callback));
 	}
 
-	// Reading the mapping files must not stall the shell, so the menu bar
-	// shows what it has until the files are in, then refreshes. A newer
-	// reload, or disable(), cancels the one in flight.
+	// Reading mapping files must not stall the shell: show what we have, then
+	// refresh. A newer reload or disable() cancels this one.
 	_reloadStore() {
 		this._storeLoad?.cancel();
 		const cancellable = new Gio.Cancellable();
@@ -519,8 +504,8 @@ export default class GlobalMenuExtension extends Extension {
 		});
 	}
 
-	// Informational findings (duplicate shortcuts, mostly) would put dozens
-	// of lines in the journal on every enable, so they need debugging on.
+	// Informational findings (mostly duplicate shortcuts) flood the journal, so
+	// log them only when debugging.
 	_logStoreWarnings() {
 		const debug = this._settings.get_boolean('debug-shortcut-menus');
 		for (const {file, message, level} of this._store.warnings) {

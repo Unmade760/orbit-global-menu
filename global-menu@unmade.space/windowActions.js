@@ -1,6 +1,6 @@
 // Window management actions for the focused window, mirroring gnome-shell's
-// own window menu. Used by the fallback Window menu and by the daemon, which
-// asks for the same list over D-Bus.
+// window menu.
+// Used by the fallback Window menu and by the daemon over D-Bus.
 
 import GLib from 'gi://GLib';
 import Meta from 'gi://Meta';
@@ -13,9 +13,8 @@ import {_, N_} from './i18n.js';
 // grab from the menu that requested it.
 const GRAB_DELAY_MS = 100;
 
-// Pending grab timeouts. WindowActions instances are created ad hoc and never
-// held onto, so the module owns their sources and extension.js clears them on
-// disable.
+// Pending grab timeouts. Instances are short-lived, so the module owns the
+// sources and extension.js clears them on disable.
 const pendingGrabs = new Set();
 
 // Every action name getActions() can return. The names stay English inside
@@ -40,7 +39,7 @@ export const ACTION_NAMES = [
 ];
 
 /**
- * The label to show for an action name, translated, with its check mark kept.
+ * The translated label for an action name, with its check mark kept.
  *
  * @param {string} action - a name from getActions()
  * @returns {string}
@@ -141,7 +140,8 @@ export class WindowActions {
 		return false;
 	}
 
-	// The argument count gjs enforces: 48 needs the directions, 49 and later take none
+	// The argument count gjs enforces: 48 needs the directions, 49 and later
+	// take none
 	_maximizeArgs(fn) {
 		return fn.length === 1 ? [Meta.MaximizeFlags.BOTH] : [];
 	}
@@ -220,7 +220,8 @@ export class WindowActions {
 			const backend = global.stage.context.get_backend();
 			const seat = backend.get_default_seat();
 			const time = global.get_current_time();
-			// mutter 48 takes the pointer device and an event sequence, 49 and later a sprite
+			// mutter 48 takes the pointer device and an event sequence, 49 and
+			// later a sprite
 			if (typeof seat.get_pointer === 'function' && win.begin_grab_op.length === 5)
 				win.begin_grab_op(op, seat.get_pointer(), null, time, null);
 			if (typeof backend.get_pointer_sprite === 'function' && win.begin_grab_op.length === 4)

@@ -1,8 +1,7 @@
-// Sends GTK-style accelerator strings ("<Ctrl><Shift>N") to the focused
-// window through a Clutter virtual keyboard device. Keyvals, not raw evdev
-// scancodes, so a shortcut lands on the right key whatever the keyboard
-// layout is. Shell process only: the preferences process uses
-// accelerator.js, which has no Clutter.
+// Sends GTK-style accelerator strings ("<Ctrl><Shift>N") to the focused window
+// through a Clutter virtual keyboard.
+// Uses keyvals, not scancodes, so the layout does not matter. Shell process
+// only; preferences use accelerator.js.
 
 import Clutter from 'gi://Clutter';
 import GLib from 'gi://GLib';
@@ -29,9 +28,8 @@ function logDebug(msg) {
 // cannot tell them apart.
 const CHORD_GAP_US = 1000;
 
-// When a menu item activates the shell still holds the input grab, and the
-// target window may not have keyboard focus back yet, so synthesizing
-// immediately delivers the keystroke to the shell instead of the app.
+// On activation the shell still holds the input grab and the target may lack
+// focus, so an immediate keystroke goes to the shell.
 const AFTER_MENU_DELAY_MS = 100;
 
 // Keystrokes waiting for their menu to let go. The extension's disable()
@@ -39,8 +37,8 @@ const AFTER_MENU_DELAY_MS = 100;
 const pendingSends = new Set();
 
 /**
- * Parse and synthesize an accelerator. Returns false and logs a warning if
- * the accelerator is unparseable, true if synthesis was dispatched.
+ * Parse and synthesize an accelerator. Returns false and logs a warning if it
+ * is unparseable.
  *
  * @param {string} accel
  * @returns {boolean}
@@ -61,8 +59,8 @@ export function sendShortcut(accel) {
 }
 
 /**
- * sendShortcut() for a menu item's activate handler: the keystroke goes
- * out once the menu has released its grab.
+ * sendShortcut() for a menu item's activate handler: sent once the menu has
+ * released its grab.
  *
  * @param {string} accel
  */
@@ -79,8 +77,8 @@ export function cancelPendingShortcuts() {
 	for (const id of pendingSends)
 		GLib.source_remove(id);
 	pendingSends.clear();
-	// Releases the device and any key it still holds now, not at the next
-	// garbage collection. The shell's keyboard.js does the same.
+	// Release the device and any held keys now, not at garbage collection, as
+	// the shell's keyboard.js does.
 	device?.run_dispose();
 	device = null;
 }

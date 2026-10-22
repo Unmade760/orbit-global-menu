@@ -1,12 +1,7 @@
-// Loads, validates and indexes the shortcut-menu mapping files. Built-ins
-// come from <extension>/shortcuts and must be listed in its index.json; user
-// mappings are whatever is in ~/.config/global-menu/shortcuts/apps. A
-// user file whose "app" id matches a built-in replaces it entirely.
-//
-// Imported by both the shell process and the preferences process, so this
-// module sticks to GLib and Gio.
-
-// Mapping file format: docs/shortcut-mappings.md
+// Loads, validates and indexes the shortcut mapping files. A user file
+// overrides a built-in with the same "app" id.
+// Imported by the shell and the preferences process, so it sticks to GLib and
+// Gio. Format: docs/shortcut-mappings.md
 
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
@@ -31,8 +26,8 @@ function readJson(file, warnings) {
 	}
 }
 
-// The Gio async calls, as promises. A cancelled call rejects with a
-// G_IO_ERROR_CANCELLED error.
+// The Gio async calls as promises; a cancelled call rejects with
+// G_IO_ERROR_CANCELLED.
 function loadBytes(file, cancellable) {
 	return new Promise((resolve, reject) => {
 		file.load_contents_async(cancellable, (_o, res) => {
@@ -98,12 +93,9 @@ function collectNames(enumerator, names, cancellable, resolve, reject) {
 const jsonNames = names => names.filter(name => name.endsWith('.json')).sort();
 
 /**
- * Validate a raw parsed mapping. Returns a sanitized mapping, or null if it
- * is unusable. A bad item or an unparseable shortcut only drops that item and
- * adds a warning.
- *
- * Exported so the preferences editor can check a mapping before writing it,
- * against the same rules the running extension loads with.
+ * Validate a raw parsed mapping and return a sanitized copy, or null if
+ * unusable. Bad items are dropped with a warning.
+ * Exported so the preferences editor can apply the same rules.
  *
  * @param {object} raw - the parsed JSON
  * @param {string} stem - the file name without .json
@@ -187,9 +179,8 @@ function sanitizeItems(items, path, warn) {
 	return out;
 }
 
-// Duplicates within one mapping are worth reporting but are not an error: an
-// app can legitimately reach one action from two menus. Reported at info
-// level so a built-in's dozens of them stay out of the journal.
+// Duplicates in one mapping are not an error: an app can reach one action from
+// two menus. Logged at info level.
 function collectDuplicateShortcuts(mapping, warnings) {
 	const byAccel = new Map();
 	const walk = (items, path) => {
@@ -266,8 +257,8 @@ export class ShortcutStore {
 	}
 
 	/**
-	 * load() without blocking the caller: every file is read with the async
-	 * Gio calls. The store keeps what it had until the new data is complete.
+	 * load() without blocking: files are read with async Gio calls and the
+	 * store keeps its old data until the new set is complete.
 	 *
 	 * @param {Gio.Cancellable|null} cancellable - a cancelled load rejects with
 	 *     G_IO_ERROR_CANCELLED and leaves the store as it was
@@ -308,8 +299,7 @@ export class ShortcutStore {
 	}
 
 	_commit(builtins, users, warnings) {
-		// A user file with the same "app" id replaces the built-in outright,
-		// rather than merging into it
+		// A user file with the same "app" id replaces the built-in outright
 		const mappings = new Map();
 		for (const mapping of builtins)
 			mappings.set(mapping.app, mapping);
@@ -348,17 +338,14 @@ export class ShortcutStore {
 		return this._mappings;
 	}
 
-	/**
-	 * Findings from the last load(), as [{file, message, level}]. Level is
-	 * 'info' for things that are only worth knowing, absent for problems.
-	 */
+	/** Findings from the last load(), as [{file, message, level}]; level is 'info' for notes, absent for problems. */
 	get warnings() {
 		return this._warnings;
 	}
 
 	/**
-	 * candidates: lowercased identifier candidates for the focused app
-	 * (desktop id, WM class, app name). Returns the matching mapping or null.
+	 * Match lowercased identifier candidates (desktop id, WM class, app name)
+	 * to a mapping, or null.
 	 *
 	 * @param {string[]} candidates
 	 * @returns {object|null}
@@ -372,10 +359,9 @@ export class ShortcutStore {
 	}
 
 	/**
-	 * Every app id on disk, whether or not it currently validates, as
-	 * [{app, hasBuiltin, hasUser}] sorted by app id. The preferences list
-	 * needs the broken ones too, so it can show an error instead of letting
-	 * them vanish.
+	 * Every app id on disk, valid or not, as [{app, hasBuiltin, hasUser}]
+	 * sorted by app id.
+	 * Broken ones are included so preferences can show an error for them.
 	 */
 	listKnownAppIds() {
 		const builtinIds = new Set();

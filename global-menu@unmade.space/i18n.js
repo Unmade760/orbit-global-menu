@@ -1,7 +1,7 @@
-// Translation helpers for the shell and the preferences window alike. Both
-// processes bind the "global-menu" domain from metadata.json at startup, so
-// strings are translated where they are shown, never at import time. Plain
-// GLib keeps this module loadable outside the shell, in the unit tests.
+// Translation helpers shared by the shell and preferences, which both bind the
+// "global-menu" domain at startup.
+// Strings are translated where shown, never at import time; plain GLib keeps
+// this loadable in unit tests.
 
 import GLib from 'gi://GLib';
 
