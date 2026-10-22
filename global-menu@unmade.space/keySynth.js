@@ -79,6 +79,8 @@ export function cancelPendingShortcuts() {
 	for (const id of pendingSends)
 		GLib.source_remove(id);
 	pendingSends.clear();
+	// Releases the device and any key it still holds now, not at the next
+	// garbage collection. The shell's keyboard.js does the same.
 	device?.run_dispose();
 	device = null;
 }
