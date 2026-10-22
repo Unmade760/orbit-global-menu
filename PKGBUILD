@@ -1,5 +1,5 @@
 pkgname=python-global-menu
-pkgver=1.0.0
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="Companion daemon for the Global Menu GNOME Shell extension"
 arch=('i686' 'x86_64')
