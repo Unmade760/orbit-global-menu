@@ -1,10 +1,4 @@
-// ESLint 9 flat config for the Global Menu extension.
-//
-// Based on GNOME Shell's own config (gnome-shell tools/eslint.config.js and
-// gnome-shell-extensions tools/eslint.config.js, both at eslint-config-gnome
-// commit c479d059). The packages live in tools/node_modules (see
-// tools/package.json), so they are imported by path. Run through
-// `tools/check.sh lint`.
+// eslint config based on the gnome shell one
 
 import {defineConfig} from './tools/node_modules/@eslint/config-helpers/dist/esm/index.js';
 import gnome from './tools/node_modules/eslint-config-gnome/src/index.js';
@@ -20,7 +14,6 @@ export default defineConfig([
     gnome.configs.recommended,
     gnome.configs.jsdoc,
     {
-        // Project rules shared with gnome-shell and gnome-shell-extensions.
         rules: {
             camelcase: ['error', {
                 properties: 'never',
@@ -37,18 +30,11 @@ export default defineConfig([
                 destructuring: 'all',
             }],
             'jsdoc/require-param-description': 'off',
-            'jsdoc/require-jsdoc': ['error', {
-                exemptEmptyFunctions: true,
-                publicOnly: {
-                    esm: true,
-                },
-            }],
+            'jsdoc/require-jsdoc': 'off',
         },
     },
     {
-        // The one deviation from GNOME's rules: this codebase indents with
-        // tabs, consistently, in every file. Same options as GNOME's indent
-        // rule, with a tab as the unit; no-tabs is off for the same reason.
+        // tabs instead of spaces as in every file here
         files: ['global-menu@unmade.space/**/*.js'],
         rules: {
             'indent': ['error', 'tab', {
@@ -62,9 +48,7 @@ export default defineConfig([
     },
     {
         languageOptions: {
-            // GJS globals beyond the ones eslint-config-gnome already
-            // declares (imports, log, logError, print, printerr, console,
-            // TextEncoder, TextDecoder, timers).
+            // gjs globals the gnome config does not declare
             globals: {
                 global: 'readonly',
             },

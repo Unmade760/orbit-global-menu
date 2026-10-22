@@ -1,7 +1,3 @@
-// A top-level menu-bar button with a shell PopupMenu, shared by all three menu
-// sources.
-// Item spec: {separator: true} | {label, enabled?, ornament?, key?, accel?,
-// onActivate?, children?}; setItems() also takes a function returning specs.
 
 import Clutter from 'gi://Clutter';
 import GObject from 'gi://GObject';
@@ -14,8 +10,8 @@ import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 import {acceleratorLabel} from './accelerator.js';
 import * as Appearance from './appearance.js';
 
-// The item's text colour at 55 %, as GTK 4 draws accelerators. St has no CSS
-// opacity, so it is set on the actor.
+// st has no css opacity so set the 55 percent colour
+// on the actor
 const ACCEL_OPACITY = 140;
 
 function addAccelLabel(item, text) {
@@ -27,8 +23,8 @@ function addAccelLabel(item, text) {
 		y_align: Clutter.ActorAlign.CENTER,
 	});
 	item.add_child(label);
-	// St gives an item that is not reactive the theme's :insensitive style,
-	// which greys its label and shortcut together
+	// a non reactive item gets the insensitive style
+	// which greys label and shortcut together
 	const sync = () => {
 		label.opacity = item.reactive ? ACCEL_OPACITY : 255;
 	};
@@ -48,14 +44,10 @@ class MenuBarButton extends PanelMenu.Button {
 		});
 		this.add_child(this._titleLabel);
 
-		// Marks our buttons for panelBar.js and, among them, the app-name
-		// button for appearance.js
 		this._globalMenuButton = true;
 		this._globalMenuAppName = !!params.appName;
 		this.menu.actor.add_style_class_name('global-menu-popup');
 
-		// The popup box clips items past the shell's max-height cap, so items
-		// live in a section inside a scroll view, as PopupSubMenu does.
 		this._itemsScroll = new St.ScrollView({
 			hscrollbar_policy: St.PolicyType.NEVER,
 			vscrollbar_policy: St.PolicyType.AUTOMATIC,
@@ -91,10 +83,8 @@ class MenuBarButton extends PanelMenu.Button {
 	setItems(items) {
 		this._itemsSource = items;
 		if (typeof items === 'function') {
-			// Building now would pay for a menu that may never open.
-			// PopupMenu.open() refuses an empty menu before
-			// open-state-changed fires, so keep a placeholder; the rebuild
-			// replaces it before paint.
+			// popupmenu open refuses an empty menu
+			// so keep a placeholder until the rebuild
 			this.itemsMenu.removeAll();
 			this.itemsMenu.addMenuItem(new PopupMenu.PopupMenuItem(''));
 		} else {
@@ -119,8 +109,6 @@ class MenuBarButton extends PanelMenu.Button {
 					subMenu._globalMenuKey = spec.key;
 				this._buildInto(spec.children, subMenu.menu);
 				subMenu.connect('key-focus-in', () => this._scrollTo(subMenu));
-				// An inline submenu grows downward, possibly past the
-				// visible part of the scroll view
 				subMenu.menu.actor.connect('notify::height', () => {
 					if (subMenu.menu.isOpen)
 						this._scrollTo(subMenu.menu.actor);
@@ -139,7 +127,6 @@ class MenuBarButton extends PanelMenu.Button {
 					item._globalMenuKey = spec.key;
 				if (spec.onActivate)
 					item.connect('activate', spec.onActivate);
-				// Arrow keys move the focus; bring the item into view
 				item.connect('key-focus-in', () => this._scrollTo(item));
 				parentMenu.addMenuItem(item);
 			}

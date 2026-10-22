@@ -8,17 +8,6 @@ BUS_PATH = '/com/canonical/AppMenu/Registrar'
 
 
 class AppMenuService(dbus.service.Object):
-	"""
-		Types:
-			- u: int
-			- a: array
-			- y: byte
-			- s: string
-			- o: DBus object path
-			- g: DBus type signature
-
-		https://people.gnome.org/~ryanl/glib-docs/gvariant-format-strings.html
-	"""
 	def __init__(self):
 		self.window_dict = dict()
 
@@ -30,7 +19,6 @@ class AppMenuService(dbus.service.Object):
 		dbus.service.Object.__init__(self, bus_name, BUS_PATH)
 
 	def name_owner_changed(self, name, old_owner, new_owner):
-		# A client that exits or crashes never calls UnregisterWindow
 		if not new_owner:
 			for window_id, (sender, _) in list(self.window_dict.items()):
 				if sender == name:
@@ -88,10 +76,8 @@ class MyService(dbus.service.Object):
 	def EchoSendTopLevelMenus(self, top_level_menus):
 		self.SendTopLevelMenus(top_level_menus)
 
-	# Full menu tree as JSON, rendered by the shell extension. It is
-	# preceded by the request id of the WindowSwitched it describes, in a
-	# signal of its own so that SendMenuTree keeps the type every extension
-	# version declares.
+	# the tree carries its request id in its own signal
+	# so SendMenuTree keeps its signature for old extensions
 	@dbus.service.method(BUS_NAME, in_signature='ss')
 	def EchoSendMenuTree(self, tree_json, request):
 		self.MenuTreeRequest(request)
@@ -105,7 +91,6 @@ class MyService(dbus.service.Object):
 	def SendMenuTree(self, tree_json):
 		pass
 
-	# The extension activates a menu item by its full path key
 	@dbus.service.method(BUS_NAME, in_signature='s')
 	def ActivateMenuItem(self, item_path):
 		self.ActivateMenuItemSignal(item_path)
@@ -114,7 +99,6 @@ class MyService(dbus.service.Object):
 	def ActivateMenuItemSignal(self, item_path):
 		pass
 
-	# The extension asks for a fresh tree (e.g. when a menu is opened)
 	@dbus.service.method(BUS_NAME)
 	def RequestMenuTree(self):
 		self.RequestMenuTreeSignal()
@@ -135,7 +119,6 @@ class MyService(dbus.service.Object):
 	def MenuOnOff(self, on):
 		pass
 
-	# Window action stuff (the menu on alt-space)
 	@dbus.service.method(BUS_NAME)
 	def RequestWindowActions(self):
 		self.RequestWindowActionsSignal()
@@ -160,7 +143,6 @@ class MyService(dbus.service.Object):
 	def ActivateWindowActionSignal(self, action):
 		pass
 
-	# Needed to activate the hud on wayland
 	@dbus.service.method(BUS_NAME)
 	def EmitHudActivated(self):
 		self.HudActivated()

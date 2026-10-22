@@ -1,7 +1,3 @@
-// Styling for the menu bar and its popups: translucency, rounding, spacing,
-// font size and blur.
-// Blur comes from Blur My Shell (global.blur_my_shell); without it only the
-// blur is missing.
 
 import Clutter from 'gi://Clutter';
 import St from 'gi://St';
@@ -26,8 +22,6 @@ const APPEARANCE_KEYS = [
 	'shortcut-hold-key',
 ];
 
-// Keys that reveal shortcut labels, with the modifier bit that is set while the
-// key is down.
 const HOLD_KEYS = {
 	alt: {keyvals: [Clutter.KEY_Alt_L, Clutter.KEY_Alt_R], mask: Clutter.ModifierType.MOD1_MASK},
 	ctrl: {keyvals: [Clutter.KEY_Control_L, Clutter.KEY_Control_R], mask: Clutter.ModifierType.CONTROL_MASK},
@@ -35,20 +29,12 @@ const HOLD_KEYS = {
 	super: {keyvals: [Clutter.KEY_Super_L, Clutter.KEY_Super_R], mask: Clutter.ModifierType.MOD4_MASK},
 };
 
-// Buttons register before any manager exists, so a later manager can still
-// style them.
 const buttons = new Set();
 let manager = null;
 
-/**
- * Called by MenuBarButton._init. Unregisters itself when the actor dies.
- *
- * @param {MenuBarButton} btn - the button to style
- */
 export function registerButton(btn) {
 	buttons.add(btn);
 	btn.connect('destroy', () => buttons.delete(btn));
-	// The open popup has key focus, so the hold key arrives here.
 	btn.menu.actor.connect('key-press-event', (_actor, event) => {
 		manager?.onHoldKey(btn, event.get_key_symbol(), true);
 		return Clutter.EVENT_PROPAGATE;
@@ -60,14 +46,6 @@ export function registerButton(btn) {
 	manager?.applyToButton(btn);
 }
 
-/**
- * Called when a button's menu opens: the theme background is readable only on
- * stage, so translucency is reapplied here.
- * The blur effect is created here too; taking one per short-lived button leaks
- * handlers inside Blur My Shell.
- *
- * @param {MenuBarButton} btn - the button whose menu opened
- */
 export function onMenuOpened(btn) {
 	manager?.applyShortcutLabels(btn);
 	manager?.applyPopupBackground(btn);
@@ -75,7 +53,6 @@ export function onMenuOpened(btn) {
 	manager?.applyBlur(btn);
 }
 
-/** Hides the Activities workspace pill. Panel._updatePanel() shows it again, so its visibility is tracked. */
 class WorkspaceIndicator {
 	constructor(settings) {
 		this._settings = settings;
@@ -108,8 +85,8 @@ class WorkspaceIndicator {
 
 		const container = this._indicator?.container;
 		const restore = this._hiddenByUs;
-		// show() emits notify::visible; disconnect first so the handler does
-		// not hide it again.
+		// show emits notify visible so disconnect first
+		// or the handler hides it again
 		this._untrack();
 		if (restore)
 			container?.show();
@@ -127,7 +104,6 @@ class WorkspaceIndicator {
 			return;
 
 		const container = indicator.container;
-		// A panel rebuild re-shows the container; hide it again.
 		this._visibleId = container.connect('notify::visible', () => {
 			if (container.visible && this._settings.get_boolean('hide-workspace-indicator'))
 				container.hide();
@@ -155,8 +131,8 @@ export class AppearanceManager {
 		this._settingsIds = APPEARANCE_KEYS.map(key =>
 			settings.connect(`changed::${key}`, () => this.applyAll()));
 
-		// Blur My Shell does not detach effects it made for foreign actors,
-		// so follow its enabled state and detach them ourselves.
+		// blur my shell leaves effects on foreign actors
+		// so detach them here
 		this._extStateId = Main.extensionManager.connect(
 			'extension-state-changed', (_mgr, extension) => {
 				if (extension.uuid === BMS_UUID)
@@ -176,10 +152,6 @@ export class AppearanceManager {
 	applyToButton(btn) {
 		const s = this._settings;
 
-		// panelMenu reads hpadding from the theme node and the label inherits
-		// the font, so set both inline.
-		// The theme bolds every panel button; force normal and bold only the
-		// app-name button.
 		const spacing = s.get_int('button-spacing');
 		const fontSize = s.get_int('menu-font-size');
 		const bold = btn._globalMenuAppName && s.get_boolean('bold-app-name');
@@ -195,9 +167,7 @@ export class AppearanceManager {
 		else
 			btn.menu.actor.remove_style_class_name('global-menu-no-arrow');
 
-		// The button is hidden through its container, not itself: panelBar.js
-		// anchors the run of menus on the app-name button's slot, and
-		// fallbackMenu.js shows and hides the button for its own reasons.
+		// hide the container because panelBar.js anchors on its slot
 		if (btn._globalMenuAppName) {
 			const hide = s.get_boolean('hide-app-name');
 			const wasHidden = btn._globalMenuHidden;
@@ -214,12 +184,6 @@ export class AppearanceManager {
 		this.applyBlur(btn);
 	}
 
-	/**
-	 * Show, hide or hold back the popup's shortcut labels when the menu opens.
-	 *
-	 * @param {MenuBarButton} btn - the button whose menu opened
-	 * @param {boolean} [held] - whether the hold key is down; defaults to the pointer's modifier state
-	 */
 	applyShortcutLabels(btn, held) {
 		const mode = this._settings.get_string('shortcut-labels');
 		const hold = HOLD_KEYS[this._settings.get_string('shortcut-hold-key')] ?? HOLD_KEYS.alt;
@@ -261,21 +225,11 @@ export class AppearanceManager {
 		this._styleWells(btn, radius);
 	}
 
-	/**
-	 * Slide the popup left (right in RTL) so the first item's text starts
-	 * under the title's text.
-	 * -arrow-border-radius is the one lever that moves a popup past its
-	 * source's edge.
-	 *
-	 * @param {MenuBarButton} btn - the button whose menu is opening
-	 */
 	alignPopupText(btn) {
 		const shift = this._textShift(btn);
 		const actor = btn.menu.actor;
 		if (shift === null)
 			return;
-		// Replaces the shell's style, so it must carry the height cap too or
-		// long menus lose their scrollbar.
 		let style = this._maxHeightStyle(btn);
 		if (shift > 0) {
 			const node = actor.get_theme_node();
@@ -286,8 +240,6 @@ export class AppearanceManager {
 		actor.set_style(style);
 	}
 
-	// The cap PanelMenu.Button applies at each open: the work area less popup
-	// margins, from the button's monitor.
 	_maxHeightStyle(btn) {
 		const layout = Main.layoutManager;
 		let monitor = layout.findIndexForActor(btn);
@@ -321,7 +273,6 @@ export class AppearanceManager {
 			return;
 		}
 
-		// Deferred to the first open, see onMenuOpened
 		if (!btn.menu.isOpen)
 			return;
 
@@ -332,9 +283,8 @@ export class AppearanceManager {
 		});
 		btn.menu.box.add_effect(btn._globalMenuBlur);
 
-		// BoxPointer forces offscreen redirect, so a BACKGROUND blur samples an
-		// empty buffer.
-		// Relaxing it only flattens the popup during its open/close fade.
+		// boxpointer forces offscreen redirect so a background blur
+		// samples an empty buffer
 		btn.menu.actor.set_offscreen_redirect(Clutter.OffscreenRedirect.AUTOMATIC_FOR_OPACITY);
 	}
 
@@ -361,8 +311,7 @@ export class AppearanceManager {
 		return btn.get_text_direction() === Clutter.TextDirection.RTL;
 	}
 
-	// BoxPointer does not mirror the source alignment in RTL; set it so the
-	// popup hangs off the right edge.
+	// boxpointer does not mirror alignment in rtl
 	_alignSource(btn) {
 		btn.menu.setSourceAlignment(this._isRtl(btn) ? 1.0 : 0.0);
 	}
@@ -374,8 +323,6 @@ export class AppearanceManager {
 			() => this._alignSource(btn));
 	}
 
-	// addToStatusArea() shows the container, so hide it again when hide-app-
-	// name is on.
 	_trackContainer(btn) {
 		if (btn._globalMenuVisibleId)
 			return;
@@ -385,8 +332,6 @@ export class AppearanceManager {
 		});
 	}
 
-	// Offset in scaled pixels from the first item's text to the title's text,
-	// or null while off stage.
 	_textShift(btn) {
 		const box = btn.menu.box;
 		const item = btn.itemsMenu.firstMenuItem;
@@ -396,14 +341,10 @@ export class AppearanceManager {
 		const side = this._isRtl(btn) ? St.Side.RIGHT : St.Side.LEFT;
 		const inset = node => node.get_padding(side) + node.get_border_width(side);
 		const bar = btn.get_theme_node();
-		// The source point sits inside the button's border and padding, the
-		// text a button padding further in
 		const title = bar.get_length('-natural-hpadding') - inset(bar);
 		return inset(box.get_theme_node()) + inset(item.get_theme_node()) - title;
 	}
 
-	// The submenu well sits one popup padding and border inside the popup,
-	// so its bottom corners are concentric with the popup's.
 	_styleWells(btn, radius) {
 		const box = btn.menu.box;
 		if (!box.get_stage())
@@ -427,10 +368,8 @@ export class AppearanceManager {
 		return global.blur_my_shell?._effects_manager ?? null;
 	}
 
-	// The popup's theme background, captured before our inline style overrides
-	// it.
-	// Off stage it reads as a bogus color, so return null and retry on the next
-	// open.
+	// off stage the theme background reads as bogus
+	// so retry on the next open
 	_popupBaseColor(btn) {
 		if (btn._globalMenuBaseBg !== undefined)
 			return btn._globalMenuBaseBg;
@@ -481,12 +420,6 @@ export class AppearanceManager {
 	}
 }
 
-/**
- * Every shortcut label menuBarButton.js put under `actor`, submenus included.
- *
- * @param {Clutter.Actor} actor - a popup's box
- * @yields {St.Label}
- */
 function* accelLabels(actor) {
 	for (const child of actor.get_children()) {
 		if (child.has_style_class_name?.('global-menu-accel'))
@@ -496,10 +429,6 @@ function* accelLabels(actor) {
 	}
 }
 
-/**
- * @param {Gio.Settings} settings - the extension's settings
- * @returns {AppearanceManager} the manager now styling every registered button
- */
 export function createManager(settings) {
 	manager = new AppearanceManager(settings);
 	return manager;

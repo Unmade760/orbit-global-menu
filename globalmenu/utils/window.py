@@ -12,8 +12,6 @@ alike. Bamf is X11 only and optional: it supplies the window the daemon
 starts with when the standalone HUD runs without the extension. This is the
 only module that may import Bamf.
 '''
-# If the session type looks wrong:
-# loginctl show-session $(loginctl | grep $(whoami) | awk '{print $1}') -p Type
 Bamf = None
 if not is_wayland():
 	try:
@@ -58,7 +56,6 @@ class Window(object):
 
 
 class WindowActions(object):
-	"""Window actions from the shell from the alt-space menu"""
 	def __init__(self, callback=None):
 		super(WindowActions, self).__init__()
 
@@ -87,25 +84,6 @@ class WindowActions(object):
 
 
 class WindowManager(object):
-	"""
-	Used as a class rather than an instance. There is only ever one window
-	manager, so the class itself is the singleton.
-
-	Attributes
-	----------
-	listers: List[Callable[Window]]
-		list of callback functions to be called. There will be only
-		one anyways.
-	matcher: Bamf.Matcher
-		Bamf matcher.
-		https://lazka.github.io/pgi-docs/Bamf-3/classes/Matcher.html
- 
-	Methods
-	-------
-	new_window(win_data={})
-		Returns a window object. To be used when initializing and
-		on window switching. `win_data` is the info from the extension.
-	"""
 	listeners = []
 	matcher = None
 
@@ -127,8 +105,7 @@ class WindowManager(object):
 
 	@classmethod
 	def new_window(cls, win_data={}):
-		# The installed typelib alone is not enough: without the bamf daemon
-		# the matcher is null and GLib prints criticals
+		# without the bamf daemon the matcher is null
 		if not win_data and Bamf is not None and cls._bamf_running():
 			return Window(cls._get_matcher().get_active_window())
 

@@ -28,7 +28,6 @@ def parse_accel(accel: str):
 	if accel == '':
 		return None
 	elif accel.lower() == 'del':
-		# So hardcoded that it hurts (blame qbittorrent)
 		return 65535, Gdk.ModifierType(0)
 	else:
 		return Gtk.accelerator_parse(accel)
@@ -37,13 +36,6 @@ def parse_accel(accel: str):
 class Menu(Gtk.Menu):
 
 	def __init__(self, tree, node, accel_group, activate_callback=None, *args, **kwargs):
-		"""
-		tree: Tree
-		node: Node
-		accel_group: Gtk.AccelGroup
-		activate_callback: Callable[[str], None]
-			If None the action `'app.' + item.action` is used on the MenuItem
-		"""
 		super(Gtk.Menu, self).__init__(*args, **kwargs)
 		self.accel_group = accel_group
 		self.callback = activate_callback
@@ -55,7 +47,6 @@ class Menu(Gtk.Menu):
 	def add_items(self, tree, node):
 		current_section = None
 		for c in tree.children(node.identifier):
-			# Separator for Gtk apps
 			if current_section is not None and c.data.section != current_section:
 				self.append(Gtk.SeparatorMenuItem())
 			current_section = c.data.section
@@ -76,15 +67,6 @@ class Menu(Gtk.Menu):
 		return menu_item
 
 	def _create_item(self, item):
-		"""
-		Parameters
-		----------
-		item: Union[DbusGtkMenuItem, DbusAppMenuItem]
-
-		Returns
-		-------
-		Gtk.MenuItem
-		"""
 		if item.separator:
 			return Gtk.SeparatorMenuItem()
 		elif item.toggle_type == 'radio':
@@ -153,7 +135,7 @@ class CommandWindow(Gtk.ApplicationWindow):
 	def open_menu_shortcut(self, menu):
 		self.make_opaque()
 		self.grab_keyboard(self.get_window())
-		self.my_menu_bar.select_item(menu) # activate_item(menu)
+		self.my_menu_bar.select_item(menu)
 
 	def open_menu_by_name(self, name):
 		name = name.replace('_', '')
@@ -178,7 +160,7 @@ class CommandWindow(Gtk.ApplicationWindow):
 			button = Gtk.MenuItem()
 			button.set_label(c.tag)
 			button.set_use_underline(True)
-			button.set_submenu(menu) # set_popup(menu)
+			button.set_submenu(menu)
 			button.show_all()
 			button.set_can_focus(True)
 			self.my_menu_bar.append(button)
@@ -314,10 +296,6 @@ class GlobalMenu(Gtk.Application):
 		self.window.show_all()
 
 	def add_menu_action(self, item):
-		"""
-		Adds an action of the foreign app. Do not add actions
-		of the app here
-		"""
 		name = str(item.action)
 		path = item.path
 		self.actions.append(name)
@@ -348,9 +326,7 @@ class GlobalMenu(Gtk.Application):
 	def move_window(self, x: int):
 		primary_mon = Gdk.Display.get_default().get_primary_monitor()
 		if primary_mon == None:
-			# Sometimes Wayland returns None
-			# It seems to be no way of knowing the primary monitor,
-			# we just grab the first one
+			# wayland can return none for the primary monitor
 			primary_mon = Gdk.Display.get_default().get_monitor(0)
 
 		x = primary_mon.get_geometry().x + x / primary_mon.get_scale_factor()

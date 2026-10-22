@@ -23,18 +23,13 @@ from warnings import warn, simplefilter
 
 def deprecated(alias):
     def real_deco(func):
-        """This is a decorator which can be used to mark functions
-        as deprecated. It will result in a warning being emmitted
-        when the function is used.
-        Derived from answer by Leando: https://stackoverflow.com/a/30253848
-        """
 
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
-            simplefilter('always', DeprecationWarning)  # turn off filter
+            simplefilter('always', DeprecationWarning)
             warn('Call to deprecated function "{}"; use "{}" instead.'.format(func.__name__, alias),
                  category=DeprecationWarning, stacklevel=2)
-            simplefilter('default', DeprecationWarning)  # reset filter
+            simplefilter('default', DeprecationWarning)
             return func(*args, **kwargs)
 
         return wrapper

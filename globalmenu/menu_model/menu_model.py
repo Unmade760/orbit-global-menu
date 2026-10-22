@@ -11,15 +11,12 @@ from ..treelib import Tree
 
 from globalmenu.menu_model.menu_item import DbusGtkMenuItem, DbusAppMenuItem
 
-# Seconds to wait for a client app on the main loop; a frozen app would
-# otherwise hold the daemon for libdbus' 25 second default
+# a frozen app would hold the daemon for 25 seconds
+# so time out client calls early
 CLIENT_TIMEOUT = 2
 
 
 def claim_key(item, actions):
-	"""The item's key, its label path, made unique among `actions`. Two
-	items with one label in one menu, such as two recent files called
-	notes.txt, would otherwise both activate the second."""
 	key, n = item.text, 2
 	while key in actions:
 		key = '%s  #%d' % (item.text, n)
@@ -31,7 +28,6 @@ def claim_key(item, actions):
 class DbusGtkMenu(object):
 
 	def __init__(self, session, window, on_changed=None):
-		# object path -> {(group, menu): [items]}, and the groups started there
 		self.results      = {}
 		self.groups       = {}
 		self.menu_interfaces = {}
@@ -39,28 +35,19 @@ class DbusGtkMenu(object):
 		self.targets      = {}
 		self.accels       = {}
 		self.tree         = Tree()
-		# Gtk action names are not unique node ids: submenu entries carry no
-		# action at all, and the same action can appear in several menus
 		self.nodes_by_action = {}
-		# 'app.', 'win.', 'unity.' -> {action name: (enabled, [state])} from
-		# DescribeAll, kept current by org.gtk.Actions.Changed; None when
-		# nothing answers for that prefix
 		self.action_groups = {}
 		self._node_seq    = 0
 		self._rebuild_id = 0
 		self.session      = session
 		self.bus_name     = window.get_utf8_prop('_GTK_UNIQUE_BUS_NAME')
-		# with app. prefix
 		self.app_path     = window.get_utf8_prop('_GTK_APPLICATION_OBJECT_PATH')
-		# with win. prefix
 		self.win_path     = window.get_utf8_prop('_GTK_WINDOW_OBJECT_PATH')
-		# with unity. prefix
 		self.menubar_path = window.get_utf8_prop('_GTK_MENUBAR_OBJECT_PATH')
 		self.appmenu_path = window.get_utf8_prop('_GTK_APP_MENU_OBJECT_PATH')
 
 		self.top_level_menus = []
 		self.signal_matcher = []
-		# Called after the tree changed without being asked for
 		self.on_changed = on_changed
 
 	def activate(self, selection):
@@ -78,8 +65,7 @@ class DbusGtkMenu(object):
 		obj       = self.session.get_object(self.bus_name, path)
 		interface = dbus.Interface(obj, dbus_interface='org.gtk.Actions')
 
-		# The target keeps the D-Bus type it came with, which must match the
-		# action's parameter type
+		# target keeps its dbus type which must match the action parameter type
 		parameter = dbus.Array([] if target is None else [target], signature='v')
 		interface.Activate(name.replace(prefix, ''), parameter, dbus.Dictionary({}, signature='sv'), timeout=CLIENT_TIMEOUT)
 
@@ -87,11 +73,10 @@ class DbusGtkMenu(object):
 		for path in filter(None, (self.menubar_path, self.appmenu_path)):
 			obj       = self.session.get_object(self.bus_name, path)
 			interface = dbus.Interface(obj, dbus_interface='org.gtk.Menus')
-			# Listen first, so no change falls between Start and the match
+			# listen before start so no change is missed
 			s = interface.connect_to_signal('Changed', functools.partial(self.on_menus_changed, path))
 			self.signal_matcher.append(s)
 			self.menu_interfaces[path] = interface
-			# Each exported model numbers its own groups from (0, 0)
 			self.results[path] = {}
 			self.groups[path] = set()
 			try:
@@ -104,11 +89,6 @@ class DbusGtkMenu(object):
 		self.build_tree()
 
 	def _sync_groups(self, path):
-		"""Start every group the menus at path link to and End the ones
-		nothing links to any more. GMenuExporter reports changes only in
-		started groups, and treats a Start for an id it has not created as a
-		placeholder that a later submenu replaces, so only linked ids are
-		started. A group id is never reused once its submenu is gone."""
 		menus = self.results[path]
 		groups = self.groups[path]
 		interface = self.menu_interfaces[path]
@@ -130,7 +110,6 @@ class DbusGtkMenu(object):
 
 	@staticmethod
 	def _linked_groups(menus):
-		"""Groups reachable from the root menu through sections and submenus."""
 		groups = set()
 		seen = set()
 		todo = [(0, 0)]
@@ -147,21 +126,17 @@ class DbusGtkMenu(object):
 		return groups
 
 	def on_menus_changed(self, path, changes):
-		"""org.gtk.Menus.Changed: a(uuuuaa{sv}), each change being group,
-		menu, position, number of items removed there, items added there."""
 		menus = self.results.get(path)
 		if menus is None:
 			return
 		changed = False
 		for group, menu, position, removed, added in changes:
-			# The signal reaches every listener; a group not started here
-			# belongs to some other client
 			if group not in self.groups.get(path, ()):
 				continue
 			items = menus.setdefault((int(group), int(menu)), [])
 			items[position:position + removed] = list(added)
 			changed = True
-		# One rebuild for a burst: GTK sends one signal per changed menu
+		# gtk sends one signal per changed menu so rebuild once per burst
 		if changed and not self._rebuild_id:
 			self._rebuild_id = GLib.idle_add(self._rebuild)
 
@@ -171,7 +146,6 @@ class DbusGtkMenu(object):
 			for path in self.results:
 				self._sync_groups(path)
 		except dbus.exceptions.DBusException:
-			# The app is going away; show what was read
 			pass
 		self.build_tree()
 		self._notify()
@@ -194,8 +168,6 @@ class DbusGtkMenu(object):
 		if menubar:
 			self.collect_entries(menubar, [], 'Root')
 
-		# The app menu goes after the menubar as one unlabelled node; its item
-		# keys start with an empty label, so they never collide with the bar's
 		app_menu = self.results.get(self.appmenu_path)
 		if app_menu:
 			menu_item = DbusGtkMenuItem({'label': ''})
@@ -210,10 +182,8 @@ class DbusGtkMenu(object):
 			self.tree = Tree()
 
 	def collect_entries(self, menus, labels, treelib_parent, link=(0, 0)):
-		# link: the (group, menu) pair of a :section or :submenu
 		section = (link[0], link[1])
 		for menu in menus.get(section, []):
-			# A section may carry a label as a heading; its items still belong here
 			if ':section' in menu:
 				self.collect_entries(menus, labels, treelib_parent, menu[':section'])
 
@@ -245,8 +215,8 @@ class DbusGtkMenu(object):
 		return 'n%d' % self._node_seq
 
 	def _actions_path(self, prefix):
-		# GTK exports org.gtk.Actions at the application and window paths,
-		# not at the menubar path; unity-gtk-module serves unity.* there
+		# gtk exports actions at application and window paths
+		# unity gtk module serves unity there
 		return {'app.': self.app_path, 'win.': self.win_path, 'unity.': self.menubar_path}.get(prefix)
 
 	def _action_group(self, prefix):
@@ -259,25 +229,20 @@ class DbusGtkMenu(object):
 		try:
 			group = self._describe_all(path)
 		except dbus.exceptions.DBusException:
-			# A freshly started app may not answer yet. Not cached, so the
-			# next lookup asks again.
 			return None
 		self.action_groups[prefix] = group
 		return group
 
 	def _describe_all(self, path):
 		obj = self.session.get_object(self.bus_name, path)
-		# a{s(bgav)}: name -> (enabled, parameter type, [state])
 		described = dbus.Interface(obj, dbus_interface='org.gtk.Actions').DescribeAll(timeout=CLIENT_TIMEOUT)
 		return {str(name): (desc[0], list(desc[2])) for name, desc in described.items()}
 
 	def _apply_action(self, item):
-		"""Set the item's enabled flag and check or radio state from its action."""
 		prefix, dot, name = item.action.partition('.')
 		group = self._action_group(prefix + dot)
 		if group is None:
 			return
-		# gtkmenutrackeritem.c: an item is insensitive while its action is missing
 		enabled, state = group.get(name, (False, []))
 		item.enabled = bool(enabled)
 		item.toggle_type = ''
@@ -295,8 +260,6 @@ class DbusGtkMenu(object):
 			self.signal_matcher.append(s)
 
 	def on_gtk_actions_changed(self, prefix, removed, enabled_changed, state_changed, added):
-		"""org.gtk.Actions.Changed from the path that exports the prefix.* actions.
-		Action names in the signal carry no prefix."""
 		group = self.action_groups.get(prefix)
 		if group is not None:
 			for name in removed:
@@ -310,7 +273,6 @@ class DbusGtkMenu(object):
 
 		touched = False
 		for name in {*removed, *enabled_changed, *state_changed, *added}:
-			# One action can back several menu entries; update all of them
 			for node_id in self.nodes_by_action.get(prefix + name, []):
 				node = self.tree.get_node(node_id)
 				if node is not None:
@@ -332,7 +294,6 @@ class DbusGtkMenu(object):
 			try:
 				self.menu_interfaces[path].End(dbus.Array(sorted(groups), signature='u'), ignore_reply=True)
 			except dbus.exceptions.DBusException:
-				# Gone already; the app drops our groups when our name vanishes
 				pass
 		self.groups = {}
 
@@ -347,7 +308,6 @@ class DbusAppMenu(object):
 		self.window    = window
 		self._update_timer = 0
 		self.signal_matcher = []
-		# Called after the tree changed without being asked for
 		self.on_changed = on_changed
 		self.interface = self.get_interface()
 		self.top_level_menus = []
@@ -361,7 +321,6 @@ class DbusAppMenu(object):
 			self.retry_activate(selection)
 
 	def retry_activate(self, selection):
-		# Electron apps change a lot their menus, we have to update to retry
 		self.actions = {}
 		self.accels = {}
 		self.tree = Tree()
@@ -371,7 +330,6 @@ class DbusAppMenu(object):
 			action = self.actions[selection]
 			self.interface.Event(action, 'clicked', 0, 0, timeout=CLIENT_TIMEOUT)
 		except dbus.exceptions.DBusException:
-			# The app is gone
 			self.clear()
 
 	def clear(self):
@@ -406,7 +364,6 @@ class DbusAppMenu(object):
 				self.results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"), timeout=CLIENT_TIMEOUT)
 				self.collect_entries(self.results[1])
 			except dbus.exceptions.DBusException:
-				# The app exited or is rebuilding its menu
 				self.clear()
 				return
 
@@ -432,8 +389,8 @@ class DbusAppMenu(object):
 			self.interface.Event(item_id, 'opened', 'not used', dbus.UInt32(time.time()), timeout=CLIENT_TIMEOUT)
 			item = self.interface.GetLayout(item_id, -1, dbus.Array(signature="s"), timeout=CLIENT_TIMEOUT)[1]
 			try:
-				# Qt apps (e.g. DaVinci Resolve) stay in "menu open" state and
-				# stop accepting keyboard input unless the menu is closed again
+				# qt apps stay in menu open state and stop taking keys
+				# unless the menu is closed again
 				self.interface.Event(item_id, 'closed', 'not used', dbus.UInt32(time.time()), timeout=CLIENT_TIMEOUT)
 			except Exception:
 				pass
@@ -459,7 +416,6 @@ class DbusAppMenu(object):
 			if item is not None:
 				item.data.update_props(upd[1])
 				if 'children-display' in upd[1]:
-					# Just update everything
 					self.add_timer()
 					break
 				touched = True
@@ -495,7 +451,6 @@ class DbusAppMenu(object):
 
 
 class MenuModel:
-	# The menubars have to be reused so they are cleanup
 	def __init__(self, session, window, on_changed=None):
 		self.appmenu = None
 		self.gtkmenu = None
@@ -511,8 +466,7 @@ class MenuModel:
 		try:
 			self.gtkmenu.get_results()
 		except Exception:
-			# A malformed Gtk menu must not cost us the dbusmenu (Qt,
-			# appmenu-gtk-module) path, which is the fallback for this window
+			# a malformed gtk menu must not cost the dbusmenu path
 			traceback.print_exc()
 			self.gtkmenu.tree = Tree()
 			self.gtkmenu.actions = {}

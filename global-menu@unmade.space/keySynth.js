@@ -1,7 +1,3 @@
-// Sends GTK-style accelerator strings ("<Ctrl><Shift>N") to the focused window
-// through a Clutter virtual keyboard.
-// Uses keyvals, not scancodes, so the layout does not matter. Shell process
-// only; preferences use accelerator.js.
 
 import Clutter from 'gi://Clutter';
 import GLib from 'gi://GLib';
@@ -10,11 +6,6 @@ import {parseAccelerator} from './accelerator.js';
 
 let debug = false;
 
-/**
- * Turn debug logging on or off.
- *
- * @param {boolean} enabled
- */
 export function setDebug(enabled) {
 	debug = enabled;
 }
@@ -24,25 +15,16 @@ function logDebug(msg) {
 		console.log(`[global-menu-keysynth] ${msg}`);
 }
 
-// Chords land as one burst otherwise, and an app waiting on a prefix key
-// cannot tell them apart.
+// space chords out or apps waiting on a prefix key
+// cannot tell them apart
 const CHORD_GAP_US = 1000;
 
-// On activation the shell still holds the input grab and the target may lack
-// focus, so an immediate keystroke goes to the shell.
+// wait for the menu to release its grab
+// or the shell gets the keystroke
 const AFTER_MENU_DELAY_MS = 100;
 
-// Keystrokes waiting for their menu to let go. The extension's disable()
-// removes them.
 const pendingSends = new Set();
 
-/**
- * Parse and synthesize an accelerator. Returns false and logs a warning if it
- * is unparseable.
- *
- * @param {string} accel
- * @returns {boolean}
- */
 export function sendShortcut(accel) {
 	const chords = parseAccelerator(accel);
 	if (!chords) {
@@ -58,12 +40,6 @@ export function sendShortcut(accel) {
 	return true;
 }
 
-/**
- * sendShortcut() for a menu item's activate handler: sent once the menu has
- * released its grab.
- *
- * @param {string} accel
- */
 export function sendShortcutAfterMenu(accel) {
 	const id = GLib.timeout_add(GLib.PRIORITY_DEFAULT, AFTER_MENU_DELAY_MS, () => {
 		pendingSends.delete(id);
@@ -77,14 +53,12 @@ export function cancelPendingShortcuts() {
 	for (const id of pendingSends)
 		GLib.source_remove(id);
 	pendingSends.clear();
-	// Release the device and any held keys now, not at garbage collection, as
-	// the shell's keyboard.js does.
+	// run_dispose frees the virtual keyboard and any held key now
+	// instead of at garbage collection like keyboard.js does
 	device?.run_dispose();
 	device = null;
 }
 
-// One device serves every shortcut, created on first use and released by
-// cancelPendingShortcuts() when the extension is disabled.
 let device = null;
 
 function synthesize(chords) {

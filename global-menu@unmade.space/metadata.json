@@ -11,5 +11,5 @@
   "url": "https://github.com/Unmade760/orbit-global-menu",
   "settings-schema": "org.gnome.shell.extensions.global-menu",
   "gettext-domain": "global-menu",
-  "version-name": "1.1.0"
+  "version-name": "1.1.1"
 }

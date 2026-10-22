@@ -1,7 +1,3 @@
-// Loads, validates and indexes the shortcut mapping files. A user file
-// overrides a built-in with the same "app" id.
-// Imported by the shell and the preferences process, so it sticks to GLib and
-// Gio. Format: docs/shortcut-mappings.md
 
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
@@ -26,8 +22,6 @@ function readJson(file, warnings) {
 	}
 }
 
-// The Gio async calls as promises; a cancelled call rejects with
-// G_IO_ERROR_CANCELLED.
 function loadBytes(file, cancellable) {
 	return new Promise((resolve, reject) => {
 		file.load_contents_async(cancellable, (_o, res) => {
@@ -51,7 +45,6 @@ async function readJsonAsync(file, warnings, cancellable) {
 	}
 }
 
-// Directory entries read per round trip
 const ENUMERATE_BATCH_SIZE = 100;
 
 function listNamesAsync(dir, cancellable) {
@@ -92,16 +85,6 @@ function collectNames(enumerator, names, cancellable, resolve, reject) {
 
 const jsonNames = names => names.filter(name => name.endsWith('.json')).sort();
 
-/**
- * Validate a raw parsed mapping and return a sanitized copy, or null if
- * unusable. Bad items are dropped with a warning.
- * Exported so the preferences editor can apply the same rules.
- *
- * @param {object} raw - the parsed JSON
- * @param {string} stem - the file name without .json
- * @param {object[]} warnings - collects what was dropped
- * @returns {object|null}
- */
 export function validateMapping(raw, stem, warnings) {
 	const file = `${stem}.json`;
 	const warn = message => warnings.push({file, message});
@@ -143,7 +126,6 @@ export function validateMapping(raw, stem, warnings) {
 		name: typeof raw.name === 'string' && raw.name !== '' ? raw.name : raw.app,
 		identifiers,
 		menus,
-		// The app gets no menu at all, not even the app name
 		blank: raw.blank === true,
 	};
 }
@@ -172,15 +154,12 @@ function sanitizeItems(items, path, warn) {
 			}
 			out.push({label: item.label, shortcut: item.shortcut});
 		} else {
-			// No shortcut and no children: a placeholder, rendered greyed out
 			out.push({label: item.label});
 		}
 	}
 	return out;
 }
 
-// Duplicates in one mapping are not an error: an app can reach one action from
-// two menus. Logged at info level.
 function collectDuplicateShortcuts(mapping, warnings) {
 	const byAccel = new Map();
 	const walk = (items, path) => {
@@ -213,7 +192,6 @@ function collectDuplicateShortcuts(mapping, warnings) {
 	}
 }
 
-// The file names listed by a parsed index.json, or none if it is unusable
 function builtinNames(index, warnings) {
 	if (!index)
 		return [];
@@ -239,8 +217,8 @@ function buildMapping(raw, name, builtin, warnings) {
 }
 
 export class ShortcutStore {
-	constructor(builtinDir /* Gio.File: <ext>/shortcuts */,
-	            userDir /* Gio.File: ~/.config/global-menu/shortcuts */) {
+	constructor(builtinDir,
+	            userDir) {
 		this._builtinDir = builtinDir;
 		this._userDir = userDir;
 		this._mappings = new Map();
@@ -248,7 +226,6 @@ export class ShortcutStore {
 		this._warnings = [];
 	}
 
-	/** (Re)reads everything; safe to call repeatedly. */
 	load() {
 		const warnings = [];
 		const builtins = this._loadBuiltins(warnings);
@@ -256,21 +233,13 @@ export class ShortcutStore {
 		this._commit(builtins, users, warnings);
 	}
 
-	/**
-	 * load() without blocking: files are read with async Gio calls and the
-	 * store keeps its old data until the new set is complete.
-	 *
-	 * @param {Gio.Cancellable|null} cancellable - a cancelled load rejects with
-	 *     G_IO_ERROR_CANCELLED and leaves the store as it was
-	 * @returns {Promise<void>}
-	 */
 	async loadAsync(cancellable = null) {
 		const warnings = [];
 		const builtins = [];
 		const index = await readJsonAsync(this._builtinDir.get_child('index.json'), warnings, cancellable);
 		const builtinApps = this._builtinDir.get_child('apps');
 		for (const name of builtinNames(index, warnings)) {
-			// One file at a time keeps the warnings in file order
+			// one file at a time keeps warnings in file order
 			// eslint-disable-next-line no-await-in-loop
 			const raw = await readJsonAsync(builtinApps.get_child(name), warnings, cancellable);
 			const mapping = buildMapping(raw, name, true, warnings);
@@ -284,7 +253,6 @@ export class ShortcutStore {
 		try {
 			names = jsonNames(await listNamesAsync(userApps, cancellable));
 		} catch (e) {
-			// No user directory, which is the normal case
 			if (cancellable?.is_cancelled())
 				throw e;
 		}
@@ -299,17 +267,14 @@ export class ShortcutStore {
 	}
 
 	_commit(builtins, users, warnings) {
-		// A user file with the same "app" id replaces the built-in outright
 		const mappings = new Map();
 		for (const mapping of builtins)
 			mappings.set(mapping.app, mapping);
 		for (const mapping of users)
 			mappings.set(mapping.app, mapping);
 
-		// User tier beats built-in tier; within a tier, first listed wins
 		const ordered = [...users, ...builtins.filter(m => mappings.get(m.app) === m)];
 
-		// Identifier claimed by two different apps: first listed wins
 		const identifierIndex = new Map();
 		for (const mapping of ordered) {
 			for (const id of mapping.identifiers) {
@@ -333,23 +298,14 @@ export class ShortcutStore {
 		this._warnings = warnings;
 	}
 
-	/** Map of app id to mapping, with user overrides already applied. */
 	get mappings() {
 		return this._mappings;
 	}
 
-	/** Findings from the last load(), as [{file, message, level}]; level is 'info' for notes, absent for problems. */
 	get warnings() {
 		return this._warnings;
 	}
 
-	/**
-	 * Match lowercased identifier candidates (desktop id, WM class, app name)
-	 * to a mapping, or null.
-	 *
-	 * @param {string[]} candidates
-	 * @returns {object|null}
-	 */
 	resolveMapping(candidates) {
 		for (const mapping of this._ordered) {
 			if (mapping.identifiers.some(id => candidates.includes(id)))
@@ -358,11 +314,6 @@ export class ShortcutStore {
 		return null;
 	}
 
-	/**
-	 * Every app id on disk, valid or not, as [{app, hasBuiltin, hasUser}]
-	 * sorted by app id.
-	 * Broken ones are included so preferences can show an error for them.
-	 */
 	listKnownAppIds() {
 		const builtinIds = new Set();
 		try {
@@ -374,7 +325,7 @@ export class ShortcutStore {
 						builtinIds.add(name.slice(0, -'.json'.length));
 				}
 			}
-		} catch { /* index missing or unreadable; load() already warns */ }
+		} catch { }
 
 		const userIds = new Set();
 		try {
@@ -387,7 +338,7 @@ export class ShortcutStore {
 					userIds.add(name.slice(0, -'.json'.length));
 			}
 			enumerator.close(null);
-		} catch { /* no user directory, which is the normal case */ }
+		} catch { }
 
 		return [...new Set([...builtinIds, ...userIds])]
 			.map(app => ({app, hasBuiltin: builtinIds.has(app), hasUser: userIds.has(app)}))
@@ -413,7 +364,6 @@ export class ShortcutStore {
 		try {
 			enumerator = appsDir.enumerate_children('standard::name', Gio.FileQueryInfoFlags.NONE, null);
 		} catch {
-			// No user directory, which is the normal case
 			return out;
 		}
 		const names = [];

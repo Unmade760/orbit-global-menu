@@ -23,7 +23,6 @@ class DbusMenu:
 		self.collect_timer = 0
 		self._menu_model = None
 		self._push_timer = 0
-		# The JSON last sent for the focused window
 		self._sent_json = None
 
 		self._init_window()
@@ -37,7 +36,6 @@ class DbusMenu:
 		self._update()
 
 	def _on_menu_changed(self):
-		# One push for a burst of changes
 		if not self._push_timer:
 			self._push_timer = GLib.timeout_add(100, self._push_tree)
 
@@ -79,8 +77,8 @@ class DbusMenu:
 
 	def on_activate_menu_item(self, item_path):
 		self._menu_model.activate(str(item_path))
-		# The activation likely changed some state (checkboxes, enabled
-		# items); give the app a moment and re-send the tree
+		# an activation may change state
+		# so resend the tree after a moment
 		GLib.timeout_add(300, self._send_tree_once)
 
 	def on_request_menu_tree(self):
@@ -157,8 +155,6 @@ class DbusMenu:
 			'toggleType': str(getattr(data, 'toggle_type', '')),
 			'toggleState': bool(getattr(data, 'toggle_state', False)),
 		}
-		# GTK's accel attribute as exported ('<Primary>n'), or the dbusmenu
-		# shortcut in the same form ('<Control>n')
 		accel = str(getattr(data, 'accel', '') or '')
 		if accel:
 			d['accel'] = accel
@@ -170,8 +166,6 @@ class DbusMenu:
 		return d
 
 	def _children_list(self, tree, node):
-		# Mirrors handlers.global_menu.Menu.add_items: a section change
-		# between Gtk items becomes a separator
 		out = []
 		current_section = None
 		for c in tree.children(node.identifier):
@@ -206,11 +200,9 @@ class DbusMenu:
 			return
 		try:
 			proxy = self.session.get_object(MyService.BUS_NAME, MyService.BUS_PATH)
-			# The extension drops a tree whose request is not its latest
+			# the extension drops a tree whose request is not the latest
 			proxy.EchoSendMenuTree(tree_json, self.window.get_utf8_prop('_REQUEST') or '')
 		except dbus.exceptions.DBusException:
-			# The service may not be up yet (startup race); the tree is
-			# re-sent on every window switch anyway
 			pass
 		else:
 			self._sent_json = tree_json

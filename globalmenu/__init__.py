@@ -4,4 +4,4 @@
 # of gnomehud. Licensed GPL-3.0-or-later; see LICENSE.txt.
 
 name = 'globalmenu'
-__version__ = '1.1.0'
+__version__ = '1.1.1'

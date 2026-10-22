@@ -1,5 +1,3 @@
-// Renders a curated shortcut mapping from shortcutStore.js; items synthesize
-// the app's real shortcut through keySynth.js.
 
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';
@@ -12,20 +10,13 @@ export class ShortcutMenu {
 		this._mapping = null;
 	}
 
-	/**
-	 * Build buttons for the mapping, or clear with null.
-	 *
-	 * @param {object|null} mapping
-	 */
 	setMapping(mapping) {
-		// The daemon re-sends empty trees periodically. Rebuilding for the
-		// mapping already shown would close a menu the user is navigating.
+		// the daemon resends empty trees so rebuilding the same
+		// mapping would close an open menu
 		if (mapping === this._mapping && (mapping === null || this._buttons.length > 0))
 			return;
 		this._mapping = mapping;
 		const menus = mapping?.menus ?? [];
-		// Relabel the buttons already in the panel and add or remove only the
-		// difference, for the reason given in NativeMenu._rebuild()
 		while (this._buttons.length > menus.length)
 			this._buttons.pop().destroy();
 		menus.forEach((menu, index) => {
@@ -67,8 +58,6 @@ export class ShortcutMenu {
 				return {label: item.label, children: this._toSpecs(item.items)};
 			if (item.shortcut)
 				return {label: item.label, accel: item.shortcut, onActivate: () => sendShortcutAfterMenu(item.shortcut)};
-			// Placeholder: the mapping records the item but no usable
-			// accelerator for it, so show it greyed out rather than lie
 			return {label: item.label, enabled: false};
 		});
 	}

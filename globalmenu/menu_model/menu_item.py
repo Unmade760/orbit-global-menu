@@ -15,24 +15,17 @@ class DbusGtkMenuItem(object):
 		self.separator = False
 		self.action = str(item.get('action', ''))
 		self.target = item.get('target')
-		self.accel = str(item.get('accel', '')) # <Primary><Shift><Alt>p
+		self.accel = str(item.get('accel', ''))
 		self.shortcut = str(item.get('shortcut', ''))
 		self.label = item.get('label', '')
 		self.text = format_label(self.path + [self.label])
 		self.enabled = enabled
 		self.toggle_type = ''
 		self.toggle_state = False
-		# The node that holds the GTK app menu, sent as {"appMenu": true}
 		self.app_menu = False
-		# :submenu
-		# two index that indicate the group
-		# dbus.String(':submenu'): dbus.Struct((dbus.UInt32(11), dbus.UInt32(0))
-		# used for separators and radio button groups
 		self.section = None
 
 	def set_toggle(self, state):
-		# The rule of gtkmenutrackeritem.c: an item with a target is a radio
-		# item, selected while the action's state equals that target
 		if not len(state):
 			return
 		state = state[0]
@@ -56,9 +49,8 @@ class DbusAppMenuItem(object):
 		self.enabled = item[1].get('enabled', True)
 		self.visible = item[1].get('visible', True)
 		self.toggle_state = item[1].get('toggle-state', 0) == 1
-		self.toggle_type = item[1].get('toggle-type', '') # 'radio' or 'checkmark'
+		self.toggle_type = item[1].get('toggle-type', '')
 		self.icon_data = item[1].get('icon_data', bytearray())
-		# Only used on Gtkapps
 		self.section = None
 		self.children = []
 
@@ -70,7 +62,6 @@ class DbusAppMenuItem(object):
 		shortcut = shortcut[0]
 		ret = ''
 		for i, v in enumerate(shortcut):
-			# The last one should be on caps?
 			ret += '<' + v + '>' if (i != len(shortcut) - 1) else v
 		return ret
 

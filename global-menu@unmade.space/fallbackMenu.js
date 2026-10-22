@@ -1,5 +1,3 @@
-// Generic menu for apps with no exported menu and no curated shortcut mapping.
-// Adapted from Global Menu for GNOME (globalmenu@ShiroOSL.github.io).
 
 import Clutter from 'gi://Clutter';
 import Gio from 'gi://Gio';
@@ -17,12 +15,10 @@ import {WindowActions, actionLabel} from './windowActions.js';
 import {sendShortcutAfterMenu} from './keySynth.js';
 import {_, N_} from './i18n.js';
 
-// The daemon briefly reports no menus while windows switch; wait this long
-// before concluding an app has none.
+// daemon reports no menus briefly while windows switch
+// so wait before concluding an app has none
 const SHOW_FALLBACK_DELAY_MS = 400;
 
-// Actions with a real API behind them; everything else in the menu is a
-// keystroke guess.
 const DIRECT_ACTIONS = {
 	'open-files': () => openUri(`file://${GLib.get_home_dir()}`),
 	'open-settings': () => launchDesktopApp('org.gnome.Settings.desktop', 'gnome-control-center.desktop'),
@@ -38,8 +34,7 @@ const DIRECT_ACTIONS = {
 	'hibernate': () => hibernate(),
 };
 
-// login1 is where the shell's suspend ends up; the shell has no hibernate call,
-// so use the same route.
+// the shell has no hibernate call so use login1 like suspend
 function hibernate() {
 	Gio.DBus.system.call('org.freedesktop.login1', '/org/freedesktop/login1',
 		'org.freedesktop.login1.Manager', 'Hibernate',
@@ -72,12 +67,9 @@ function launchDesktopApp(id, fallbackId) {
 		console.warn(`[global-menu-fallback] ${id} is not installed`);
 }
 
-// File operations use async Gio calls so a slow gvfs mount never blocks the
-// compositor; destroy() cancels them.
 let fileCancellable = null;
 let trashDialog = null;
 
-// Items fetched and deleted per round trip
 const TRASH_BATCH_SIZE = 100;
 
 function fileOperations() {
@@ -98,7 +90,6 @@ function logFileError(what, e) {
 	console.error(`[global-menu-fallback] could not ${what}: ${e.message}`);
 }
 
-// done() gets the error, or nothing once the folder exists
 function makeDirectory(dir, cancellable, done) {
 	dir.make_directory_async(GLib.PRIORITY_DEFAULT, cancellable, (_o, res) => {
 		try {
@@ -111,15 +102,11 @@ function makeDirectory(dir, cancellable, done) {
 	});
 }
 
-// A folder on the desktop, numbered when the plain name is taken, like a file
-// manager.
 function makeDesktopFolder() {
 	const desktop = Gio.File.new_for_path(
 		GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP) ??
 		GLib.build_filenamev([GLib.get_home_dir(), 'Desktop']));
 	const cancellable = fileOperations();
-	// The desktop folder may not exist yet. If making it fails, making the
-	// folder inside it fails too and logs that.
 	makeDirectory(desktop, cancellable, () => makeNumberedFolder(desktop, cancellable, 0));
 }
 
@@ -137,7 +124,6 @@ function makeNumberedFolder(desktop, cancellable, n) {
 	});
 }
 
-// Asks first, in the wording Files uses, since nothing brings the items back.
 function emptyTrash() {
 	if (trashDialog)
 		return;
@@ -168,8 +154,8 @@ function emptyTrash() {
 	dialog.open();
 }
 
-// Gio has no empty-trash call. trash:/// lists top-level items only, and
-// deleting one deletes its contents.
+// gio has no empty trash call and deleting a top level
+// trash item deletes its contents
 function deleteTrashItems() {
 	const trash = Gio.File.new_for_uri('trash:///');
 	const cancellable = fileOperations();
@@ -216,7 +202,8 @@ function deleteNextBatch(entries, cancellable) {
 	});
 }
 
-// Not cancellable: a cancelled enumerator still has to be closed
+// not cancellable because a cancelled enumerator
+// must still be closed
 function closeEntries(entries) {
 	entries.close_async(GLib.PRIORITY_DEFAULT, null, (_o, res) => {
 		try {
@@ -233,8 +220,6 @@ function minimizeEverything() {
 		.forEach(w => w.minimize());
 }
 
-// Stock GNOME and application default shortcuts, sent as keystrokes. A user who
-// rebound one gets a stale guess.
 const ACTION_SHORTCUTS = {
 	'copy': '<Ctrl>C',
 	'paste': '<Ctrl>V',
@@ -282,8 +267,6 @@ function executeFallbackAction(action) {
 	return false;
 }
 
-// Mirrors gnome-shell's window menu, rebuilt on each open from live window
-// state, plus static switching and tiling shortcuts.
 function windowMenuSpecs() {
 	const windowActions = new WindowActions();
 	const actions = windowActions.getActions();
@@ -305,13 +288,10 @@ function windowMenuSpecs() {
 	return specs;
 }
 
-// Translates the label, so its callers pass the English msgid
 function actionSpec(label, action) {
 	return {label: _(label), accel: ACTION_SHORTCUTS[action], onActivate: () => executeFallbackAction(action)};
 }
 
-// An item with `requires` is greyed out while that SystemActions property is
-// false.
 function toSpecs(items) {
 	return items.map(item => {
 		if (item.separator)
@@ -323,8 +303,6 @@ function toSpecs(items) {
 	});
 }
 
-// What the shell can do for any focused app, under the app's name. The app's
-// own GTK app menu, when it exports one, goes above.
 function appMenuSpecs(appMenuSource) {
 	const app = Shell.WindowTracker.get_default().focus_app;
 	const specs = appMenuSource ? appMenuSource() : [];
@@ -350,7 +328,6 @@ function appMenuSpecs(appMenuSource) {
 
 const MENU_DATA = [
 	{
-		// Built on open by appMenuSpecs() from the focused app
 		label: N_('Desktop'),
 		appName: true,
 		items: [],
@@ -404,7 +381,6 @@ const MENU_DATA = [
 	},
 	{
 		label: N_('System'),
-		// Which of its items are available is read on every open
 		live: true,
 		items: [
 			{label: N_('Show Applications'), action: 'show-applications'},
@@ -425,7 +401,6 @@ const MENU_DATA = [
 	},
 ];
 
-/** The first button shows the focused app's name; MenuBar hides the generic ones when the app has its own menu. */
 export class FallbackMenu {
 	constructor(uuid) {
 		this._buttons = [];
@@ -444,7 +419,6 @@ export class FallbackMenu {
 				btn.setItems(() => toSpecs(entry.items));
 			else
 				btn.setItems(toSpecs(entry.items));
-			// MENU_DATA[0] is the app name, so the index doubles as the rank
 			addBarButton(`${uuid}-fallback-${index}`, btn, index);
 			this._buttons.push(btn);
 			if (entry.appName)
@@ -459,21 +433,10 @@ export class FallbackMenu {
 		this._appButton?.setLabel(app?.get_name() ?? _('Desktop'));
 	}
 
-	/**
-	 * Fill the app-name menu with the app's own GTK app menu.
-	 *
-	 * @param {Function|null} source - returns the menu's specs, or null to empty it
-	 */
 	setAppItems(source) {
 		this._appMenuSource = source;
 	}
 
-	/**
-	 * Hide every button, the app name included, while the focused app's
-	 * mapping is blank.
-	 *
-	 * @param {boolean} blank
-	 */
 	setBlank(blank) {
 		if (blank === this._blank)
 			return;

@@ -1,6 +1,3 @@
-// Shortcut capture dialog, behaving like the one in GNOME Settings' Keyboard
-// panel: press a combination, see it echoed live, Escape cancels, Backspace
-// disables.
 
 import Adw from 'gi://Adw';
 import Gdk from 'gi://Gdk';
@@ -18,18 +15,6 @@ const MODIFIER_KEYVALS = new Set([
 	Gdk.KEY_Meta_L, Gdk.KEY_Meta_R,
 ]);
 
-/**
- * Presents the capture dialog over parentWindow. onCaptured is called with:
- *   a string    the captured accelerator, already validated against
- *               accelerator.parseAccelerator and so known to be synthesizable
- *   null        Backspace was pressed: clear the shortcut
- *   undefined   cancelled with Escape or by dismissing the dialog
- *
- * @param {object} options
- * @param {Adw.Window} options.parentWindow
- * @param {string} options.itemLabel
- * @param {Function} options.onCaptured
- */
 export function captureShortcut({parentWindow, itemLabel, onCaptured}) {
 	const dialog = new Adw.Dialog({content_width: 420, can_close: true});
 
@@ -91,7 +76,6 @@ export function captureShortcut({parentWindow, itemLabel, onCaptured}) {
 		const mods = state & Gtk.accelerator_get_default_mod_mask();
 
 		if (MODIFIER_KEYVALS.has(keyval)) {
-			// Modifiers only so far: preview them and keep listening
 			preview.set_label(Gtk.accelerator_get_label(0, mods) || _('Enter a new shortcut…'));
 			return true;
 		}

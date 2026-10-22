@@ -1,5 +1,3 @@
-// Renders an app's own exported menu, received from the daemon as a JSON tree.
-// Same look as the fallback menu, but items activate through the daemon.
 
 import GLib from 'gi://GLib';
 
@@ -8,23 +6,15 @@ import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';
 
-// CJK labels append the mnemonic as "(_F)" or "(&F)"; strip it, since the bar
-// draws no underline.
-// Then apply the dbusmenu rule: "__" is a literal underscore and any other
-// underscore is dropped.
+// cjk labels append the mnemonic in brackets so strip it
 function stripMnemonic(label) {
 	return (label ?? '')
 		.replace(/\s*\([_&][^_&)]\)(…|\.\.\.)?$/u, '$1')
 		.replace(/_(.?)/gu, '$1');
 }
 
-// The GTK app menu belongs under the app name, not in the bar
 const barNodes = nodes => nodes.filter(n => !n.separator && !n.appMenu && stripMnemonic(n.label));
 
-/**
- * @param {object[]} nodes - a tree from the daemon
- * @returns {boolean} whether the tree gives the bar at least one button
- */
 export function hasBarMenus(nodes) {
 	return barNodes(nodes).length > 0;
 }
@@ -38,12 +28,6 @@ function toOrnament(toggleType, toggleState) {
 }
 
 export class NativeMenu {
-	/**
-	 * @param {object} proxy - the daemon's D-Bus proxy
-	 * @param {string} uuid - the extension's uuid, for panel button names
-	 * @param {Function} onAppMenu - called with a spec source for the GTK app
-	 *   menu, or null when the app has none
-	 */
 	constructor(proxy, uuid, onAppMenu) {
 		this._proxy = proxy;
 		this._uuid = uuid;
@@ -60,19 +44,15 @@ export class NativeMenu {
 	}
 
 	setItems(nodes) {
-		// The daemon re-sends the tree on every menu open and window switch,
-		// mostly unchanged; skip the rebuild then.
 		const json = JSON.stringify(nodes);
 		if (json === this._shownJson) {
-			// The open menu may show the state of a pending tree, applied in
-			// place, which this one replaces
 			if (this._pendingNodes)
 				this._applyState(nodes);
 			this._pendingNodes = null;
 			return;
 		}
-		// Rebuilding would destroy a menu the user is navigating, so apply
-		// state updates in place and rebuild once everything is closed
+		// rebuilding would destroy a menu the user is navigating
+		// so wait until all menus are closed
 		if (this._anyOpen()) {
 			this._pendingNodes = nodes;
 			this._applyState(nodes);
@@ -85,7 +65,6 @@ export class NativeMenu {
 		this._buttons.forEach(btn => btn.menu.close());
 	}
 
-	/** The GTK app menu's spec source, or null when the app has none. */
 	appMenuSource() {
 		return this._appMenuSource;
 	}
@@ -113,10 +92,6 @@ export class NativeMenu {
 	_rebuild(nodes, json = JSON.stringify(nodes)) {
 		this._pendingNodes = null;
 		const topLevel = barNodes(nodes);
-		// Relabel existing buttons and add or remove only the difference: each
-		// panel insert or removal
-		// makes other extensions that place panel items (such as one that moves
-		// the date menu) react.
 		while (this._buttons.length > topLevel.length)
 			this._buttons.pop().destroy();
 		topLevel.forEach((node, index) => {
@@ -125,15 +100,12 @@ export class NativeMenu {
 				btn.setLabel(stripMnemonic(node.label));
 			} else {
 				btn = new MenuBarButton(stripMnemonic(node.label), {
-					// Ask the daemon for fresh toggle/enabled state on open
 					onOpen: () => this._proxy.RequestMenuTree(),
 					onClose: () => this._scheduleRebuildIfPending(),
 				});
 				addBarButton(`${this._uuid}-native-${index}`, btn, 1 + index);
 				this._buttons.push(btn);
 			}
-			// A function source builds the popup's items when it opens; large
-			// apps export thousands of nodes.
 			btn.setItems(() => this._toSpecs(node.children ?? []));
 		});
 		const appNode = nodes.find(n => n.appMenu);
@@ -174,8 +146,8 @@ export class NativeMenu {
 	_scheduleRebuildIfPending() {
 		if (!this._pendingNodes || this._rebuildIdleId)
 			return;
-		// Deferred because we get here from the menu's own close signal, and
-		// the button must not be destroyed mid-emission
+		// deferred because this runs from the close signal
+		// and the button must not die mid emission
 		this._rebuildIdleId = GLib.idle_add(GLib.PRIORITY_DEFAULT, () => {
 			this._rebuildIdleId = 0;
 			if (this._pendingNodes && !this._anyOpen())

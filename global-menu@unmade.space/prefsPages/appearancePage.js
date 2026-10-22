@@ -1,6 +1,3 @@
-// Styling options for the menu bar and its popups, plus the Blur My Shell
-// integration. Every row binds straight to GSettings and appearance.js
-// applies the change live, with no logout.
 
 import Adw from 'gi://Adw';
 import Gio from 'gi://Gio';
@@ -34,14 +31,6 @@ export class AppearancePage {
 		this._buildBarGroup();
 	}
 
-	/**
-	 * A combo row bound to a string key with a fixed set of choices.
-	 *
-	 * @param {object} params
-	 * @param {string} params.title - row title
-	 * @param {string} params.key - settings key
-	 * @param {Array<Array<string>>} params.choices - [value, label] pairs
-	 */
 	_choiceRow({title, key, choices}) {
 		const row = new Adw.ComboRow({
 			title,

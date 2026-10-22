@@ -1,6 +1,3 @@
-// Lists every shortcut-menu mapping, built-in and user alike. Each can be
-// turned off on its own, a new application can be added, and a row leads into
-// the editor subpage.
 
 import Adw from 'gi://Adw';
 import Gio from 'gi://Gio';
@@ -47,10 +44,8 @@ export class ApplicationsPage {
 	_refresh() {
 		this._store.load();
 
-		// AdwPreferencesGroup manages its rows internally: get_first_child()
-		// walks the real widget tree, starting at its own wrapper box rather
-		// than the rows added to it. So removal has to go through the rows we
-		// tracked at add() time, not through tree traversal.
+		// preferences group hides added rows from get_first_child
+		// so track and remove them by hand
 		for (const row of this._rows)
 			this._group.remove(row);
 		this._rows = [];

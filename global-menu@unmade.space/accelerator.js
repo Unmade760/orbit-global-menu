@@ -1,16 +1,13 @@
-// Parsing and labelling of GTK-style accelerator strings ("<Ctrl><Shift>N").
-// Shared by the shell and preferences processes, so it imports nothing; keyvals
-// are the numeric X11 keysyms behind Clutter.KEY_*.
 
-// Modifier token (lowercased, without <>) to left-modifier keyval. <Meta> is
-// deliberately not accepted: it means different things on different setups.
+// meta is not accepted because it means different things
+// on different setups
 const MODIFIER_KEYVALS = {
-	'ctrl': 0xffe3,    // Control_L
+	'ctrl': 0xffe3,
 	'control': 0xffe3,
 	'primary': 0xffe3,
-	'shift': 0xffe1,   // Shift_L
-	'alt': 0xffe9,     // Alt_L
-	'super': 0xffeb,   // Super_L
+	'shift': 0xffe1,
+	'alt': 0xffe9,
+	'super': 0xffeb,
 };
 
 const NAMED_KEYVALS = {
@@ -73,14 +70,6 @@ const NAMED_KEYVALS = {
 	'kp_multiply': 0xffaa, 'kp_divide': 0xffaf, 'kp_enter': 0xff8d,
 };
 
-/**
- * "<Ctrl><Shift>N" to [{modifiers: [keyval, ...], keyval}], or null if invalid.
- * Space-separated chords form a sequence ("<Ctrl>x s" is Emacs C-x s), for
- * apps with a prefix key.
- *
- * @param {string} accel
- * @returns {object[]|null}
- */
 export function parseAccelerator(accel) {
 	if (typeof accel !== 'string' || accel === '')
 		return null;
@@ -113,8 +102,8 @@ function parseChord(accel) {
 
 	let keyval;
 	if (rest.length === 1) {
-		// Shift is expressed by <Shift>, never an uppercase keyval, so
-		// printable characters are lowercased.
+		// shift is written as a modifier so printable keyvals
+		// are lowercased
 		const code = rest.toLowerCase().charCodeAt(0);
 		if (code < 0x21 || code > 0x7e)
 			return null;
@@ -127,9 +116,7 @@ function parseChord(accel) {
 	return {modifiers, keyval};
 }
 
-// Key labels as GTK 4 writes them in English. Printable ASCII keys are their
-// own character, upper case for letters; these are the exceptions. GTK 4
-// puts a thin space (U+2009) after "KP".
+// gtk 4 puts a thin space after kp in key labels
 const KEY_LABELS = new Map(Object.entries({
 	'return': 'Return', 'escape': 'Escape', 'tab': 'Tab', 'backspace': 'Backspace',
 	'delete': 'Delete', 'home': 'Home', 'end': 'End', 'page_up': 'Page Up',
@@ -144,7 +131,6 @@ for (let i = 1; i <= 12; i++)
 for (let i = 0; i <= 9; i++)
 	KEY_LABELS.set(NAMED_KEYVALS[`kp_${i}`], `KP\u2009${i}`);
 
-// GTK 4 writes modifiers in this order whatever order the string had.
 const MODIFIER_LABELS = [
 	[MODIFIER_KEYVALS['shift'], 'Shift'],
 	[MODIFIER_KEYVALS['ctrl'], 'Ctrl'],
@@ -158,15 +144,6 @@ function chordLabel({modifiers, keyval}) {
 	return parts.join('+');
 }
 
-/**
- * "<Ctrl><Shift>S" to "Shift+Ctrl+S", as GTK 4 labels it; chords are joined
- * with a space. Returns null if invalid.
- * Words come from the tables above, so the result does not depend on the
- * locale.
- *
- * @param {string} accel
- * @returns {string|null}
- */
 export function acceleratorLabel(accel) {
 	const chords = parseAccelerator(accel);
 	return chords ? chords.map(chordLabel).join(' ') : null;

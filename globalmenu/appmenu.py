@@ -24,8 +24,8 @@ def main():
 	DBusGMainLoop(set_as_default=True)
 	session_bus = dbus.SessionBus()
 
-	# With another program's registrar on the bus (vala-panel-appmenu, Plasma)
-	# the menus are read through that one, and only the menu service is ours
+	# another registrar may own the bus name
+	# so only our menu service starts
 	if not session_bus.name_has_owner(MyService.BUS_NAME):
 		run_service(not session_bus.name_has_owner(BUS_NAME))
 

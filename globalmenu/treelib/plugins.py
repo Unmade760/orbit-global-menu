@@ -18,12 +18,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""
-This is a public location to maintain contributed
-utilities to extend the basic Tree class.
-
-Deprecated! We prefer a unified processing of Tree object.
-"""
 from __future__ import unicode_literals
 
 from .misc import deprecated
@@ -31,5 +25,4 @@ from .misc import deprecated
 
 @deprecated(alias='tree.to_graphviz()')
 def export_to_dot(tree, filename=None, shape='circle', graph='digraph'):
-    """Exports the tree in the dot format of the graphviz software"""
     tree.to_graphviz(filename=filename, shape=shape, graph=graph)

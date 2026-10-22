@@ -1,6 +1,3 @@
-// Window management actions for the focused window, mirroring gnome-shell's
-// window menu.
-// Used by the fallback Window menu and by the daemon over D-Bus.
 
 import GLib from 'gi://GLib';
 import Meta from 'gi://Meta';
@@ -9,16 +6,12 @@ import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
 import {_, N_} from './i18n.js';
 
-// A move or resize grab cannot start while the shell still holds the input
-// grab from the menu that requested it.
+// a move or resize grab cannot start while the shell
+// still holds the input grab from the menu
 const GRAB_DELAY_MS = 100;
 
-// Pending grab timeouts. Instances are short-lived, so the module owns the
-// sources and extension.js clears them on disable.
 const pendingGrabs = new Set();
 
-// Every action name getActions() can return. The names stay English inside
-// the extension because doAction() and the daemon match on them.
 export const ACTION_NAMES = [
 	N_('Minimize'),
 	N_('Unmaximize'),
@@ -38,19 +31,12 @@ export const ACTION_NAMES = [
 	N_('Close'),
 ];
 
-/**
- * The translated label for an action name, with its check mark kept.
- *
- * @param {string} action - a name from getActions()
- * @returns {string}
- */
 export function actionLabel(action) {
 	const checked = action.endsWith(' ✓');
 	const name = checked ? action.slice(0, -2) : action;
 	return checked ? `${_(name)} ✓` : _(name);
 }
 
-/** Called from the extension's disable(). */
 export function cancelPendingActions() {
 	for (const id of pendingGrabs)
 		GLib.source_remove(id);
@@ -130,7 +116,7 @@ export class WindowActions {
 		return this.actions;
 	}
 
-	// mutter 49 dropped the direction argument and added is_maximized()
+	// mutter 49 dropped the direction argument and added is_maximized
 	_isMaximized() {
 		const win = this._win;
 		if (typeof win.is_maximized === 'function')
@@ -140,14 +126,13 @@ export class WindowActions {
 		return false;
 	}
 
-	// The argument count gjs enforces: 48 needs the directions, 49 and later
-	// take none
+	// gjs enforces the argument count so 48 needs directions
+	// and 49 takes none
 	_maximizeArgs(fn) {
 		return fn.length === 1 ? [Meta.MaximizeFlags.BOTH] : [];
 	}
 
 	doAction(action) {
-		// State-carrying labels arrive with their tick still attached
 		if (action.endsWith(' ✓'))
 			action = action.slice(0, -2);
 
@@ -220,8 +205,8 @@ export class WindowActions {
 			const backend = global.stage.context.get_backend();
 			const seat = backend.get_default_seat();
 			const time = global.get_current_time();
-			// mutter 48 takes the pointer device and an event sequence, 49 and
-			// later a sprite
+			// mutter 48 takes the pointer device and an event sequence
+			// and 49 takes a sprite
 			if (typeof seat.get_pointer === 'function' && win.begin_grab_op.length === 5)
 				win.begin_grab_op(op, seat.get_pointer(), null, time, null);
 			if (typeof backend.get_pointer_sprite === 'function' && win.begin_grab_op.length === 4)

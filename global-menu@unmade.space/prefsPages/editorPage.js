@@ -1,11 +1,3 @@
-// Edits one shortcut-menu mapping. Name and identifiers get form rows; the
-// menu tree gets one ExpanderRow per top-level menu and one EntryRow per
-// item, with the same shortcut capture GNOME Settings uses.
-//
-// Fully editable item shapes: {label, shortcut}, {label} on its own, and
-// {separator: true}. Anything else, such as a real submenu, is shown
-// read-only and written back untouched rather than dropped for want of a
-// widget to edit it with.
 
 import Adw from 'gi://Adw';
 import Gio from 'gi://Gio';
@@ -27,7 +19,6 @@ function prettyAccel(shortcut) {
 	const chords = parseAccelerator(shortcut);
 	if (!chords)
 		return shortcut;
-	// A chord sequence such as Emacs' C-x s reads as its chords, spaced
 	return chords.map(chord => {
 		const parts = chord.modifiers.map(m => MODIFIER_LABELS[m] ?? '?');
 		const keyLabel = Gtk.accelerator_get_label(chord.keyval, 0) ||
@@ -37,17 +28,6 @@ function prettyAccel(shortcut) {
 	}).join(' ');
 }
 
-/**
- * The mapping file the editor writes.
- *
- * @param {object} parts
- * @param {string} parts.appId
- * @param {string} parts.name
- * @param {string[]} parts.identifiers
- * @param {object[]} parts.menus
- * @param {boolean} parts.blank - the loaded mapping was blank, which stays so
- * @returns {object} the raw mapping
- */
 export function buildRawMapping({appId, name, identifiers, menus, blank}) {
 	const raw = {format: 1, app: appId, name, identifiers, menus};
 	if (blank)
@@ -60,17 +40,6 @@ function isSimpleLeaf(item) {
 }
 
 export class EditorPage {
-	/**
-	 * @param {object} opts
-	 * @param {Adw.PreferencesWindow} opts.window - parent window (for pushing/popping and dialog presentation)
-	 * @param {string} opts.appId - filename stem; immutable once created
-	 * @param {object|null} opts.mapping - current effective mapping, or a draft for a brand-new app
-	 * @param {boolean} opts.hasBuiltin - a built-in with this id exists
-	 * @param {boolean} opts.hasUserFile - a user override/mapping file already exists on disk
-	 * @param {Gio.File} opts.userAppsDir - ~/.config/global-menu/shortcuts/apps
-	 * @param {() => void} opts.bumpRevision
-	 * @param {() => void} opts.onChanged - called after a successful save or delete
-	 */
 	constructor({window, appId, mapping, hasBuiltin, hasUserFile, userAppsDir, bumpRevision, onChanged}) {
 		this._window = window;
 		this._appId = appId;
@@ -79,7 +48,6 @@ export class EditorPage {
 		this._bumpRevision = bumpRevision;
 		this._onChanged = onChanged;
 		this._blank = mapping?.blank === true;
-		// Deep-clone so edits never mutate the live store's data until Save
 		this._menus = JSON.parse(JSON.stringify(mapping?.menus ?? []));
 		this._menuRows = [];
 
@@ -232,9 +200,9 @@ export class EditorPage {
 				itemLabel: item.label || _('(unnamed item)'),
 				onCaptured: result => {
 					if (result === undefined)
-						return; // cancelled, so no change
+						return;
 					if (result === null)
-						delete item.shortcut; // Backspace, so it becomes a placeholder
+						delete item.shortcut;
 					else
 						item.shortcut = result;
 					refreshShortcutButton();
@@ -285,9 +253,6 @@ export class EditorPage {
 
 		const raw = buildRawMapping({appId: this._appId, name, identifiers, menus: this._menus, blank: this._blank});
 
-		// Validated with the same logic the running extension loads with, but
-		// only to surface warnings. Saving is never refused: the menu tree
-		// comes from live widgets, so it cannot be malformed JSON.
 		const warnings = [];
 		validateMapping(raw, this._appId, warnings);
 

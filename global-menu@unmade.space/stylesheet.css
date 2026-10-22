@@ -1,19 +1,12 @@
-/* Every selector is scoped to a global-menu-* class carried only by our own actors.
- * Spacing, radius and translucency are inline styles from appearance.js. */
-
-/* Menus drop straight down from the bar instead of pointing at the button */
 .global-menu-no-arrow {
 	-arrow-rise: 0px;
 }
 
-/* Without this a submenu paints the theme's opaque block, punching a solid
- * rectangle into a translucent popup */
+/* without this a submenu paints an opaque block in a translucent popup */
 .global-menu-popup .popup-sub-menu {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Shortcut labels: right-aligned, 24px clear of the item text. RTL moves
- * them to the left, so the gap moves to their right */
 .global-menu-accel {
 	margin-left: 24px;
 	font-feature-settings: "tnum";
@@ -24,8 +17,7 @@
 	margin-right: 24px;
 }
 
-/* Hidden until the hold key is pressed. Transparent, not removed, so the
- * popup keeps its width when the labels appear */
+/* transparent keeps the popup width when labels appear */
 .global-menu-accels-held .global-menu-accel {
 	color: transparent;
 }

@@ -2,8 +2,8 @@ import os
 
 
 def is_wayland():
-	# A set WAYLAND_DISPLAY wins: it names a live compositor socket, while
-	# XDG_SESSION_TYPE can be inherited from an X11 login (a nested session)
+	# session type can be inherited from an x11 login
+	# so a wayland display wins
 	if os.environ.get('WAYLAND_DISPLAY'):
 		return True
 

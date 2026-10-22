@@ -11,14 +11,13 @@ from globalmenu.handlers.default import HudMenu
 from globalmenu.handlers.global_menu import GlobalMenu
 from globalmenu.handlers.rofi import RofiMenu
 
-# The service and the menu reader have to stay in separate processes: the
-# reader makes blocking calls to the service over the bus, and on one
-# connection those would wait on a main loop that is itself blocked.
+# reader and service run in separate processes
+# or blocking calls deadlock one main loop
 _children = []
 
 
 def _die_with_parent():
-	# PR_SET_PDEATHSIG, so a SIGKILLed parent still takes these with it
+	# pdeathsig makes children die with a killed parent
 	try:
 		ctypes.CDLL('libc.so.6', use_errno=True).prctl(1, signal.SIGTERM)
 	except Exception:
@@ -61,7 +60,6 @@ def run_hud_menu(menu):
 	run_command('appmenu', 'main')
 	run_command('keybinder', menu)
 
-	# Either one exiting means the pair is no longer useful
 	try:
 		os.wait()
 	except (ChildProcessError, InterruptedError):

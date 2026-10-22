@@ -2,8 +2,7 @@ import gi
 
 from globalmenu.utils.wayland import is_wayland
 
-# Keybinder is X11 only and optional: without it the daemon runs with no
-# global key bindings. This is the only module that may import it.
+# keybinder is x11 only and optional
 Keybinder = None
 if not is_wayland():
 	try:
@@ -14,9 +13,6 @@ if not is_wayland():
 
 
 class GlobalKeybinder:
-	"""
-	Global keybinder for mnemonic, like Alt+F for files, etc.
-	"""
 	def __init__(self, callback=None):
 		Keybinder.init()
 		self.keybinding_strings = []
