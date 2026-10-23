@@ -59,7 +59,7 @@ export class WindowActions {
 			this.actions.push('Minimize');
 
 		if (win.can_maximize())
-			this.actions.push(this._isMaximized() ? 'Unmaximize' : 'Maximize');
+			this.actions.push(this._isMaximized(true) ? 'Unmaximize' : 'Maximize');
 
 		if (win.allows_move())
 			this.actions.push('Move');
@@ -116,14 +116,14 @@ export class WindowActions {
 		return this.actions;
 	}
 
-	// mutter 49 dropped the direction argument and added is_maximized
-	_isMaximized() {
+	// mutter 49 added is_maximized
+	// on 48 the shell offers restore when either axis is maximized
+	_isMaximized(eitherAxis = false) {
 		const win = this._win;
 		if (typeof win.is_maximized === 'function')
 			return win.is_maximized();
-		if (typeof win.get_maximized === 'function')
-			return win.get_maximized() === Meta.MaximizeFlags.BOTH;
-		return false;
+		const flags = win.get_maximized?.() ?? 0;
+		return eitherAxis ? flags !== 0 : flags === Meta.MaximizeFlags.BOTH;
 	}
 
 	// gjs enforces the argument count so 48 needs directions

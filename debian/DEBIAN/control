@@ -1,6 +1,6 @@
 Package: global-menu
 Source: global-menu
-Version: 1.1.2
+Version: 1.1.3
 Architecture: all
 Maintainer: unmade.space <https://github.com/Unmade760>
 Depends: python3-gi, python3-dbus, gir1.2-gtk-3.0, appmenu-gtk3-module, python3:any

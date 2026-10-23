@@ -67,7 +67,7 @@ function window48(t, maximized) {
         is_above: () => false,
         is_on_all_workspaces: () => false,
         get_monitor: () => 0,
-        get_maximized: () => maximized ? BOTH : 0,
+        get_maximized: () => maximized === true ? BOTH : maximized || 0,
         maximize(flags) {
             if (flags !== BOTH)
                 throw new TypeError('At least 1 argument required');
@@ -151,6 +151,14 @@ test('48: a maximized window offers Unmaximize and no Always on Top', () => {
     const actions = new WindowActions().getActions();
     assert.ok(actions.includes('Unmaximize'), actions.join(', '));
     assert.ok(!actions.includes('Always on Top'), actions.join(', '));
+});
+
+test('48: a window maximized on one axis offers Unmaximize, as the shell menu does', () => {
+    const VERTICAL = 2;
+    setup(window48, backend48, VERTICAL);
+    const actions = new WindowActions().getActions();
+    assert.ok(actions.includes('Unmaximize'), actions.join(', '));
+    assert.ok(actions.includes('Always on Top'), actions.join(', '));
 });
 
 test('49: a maximized window offers Unmaximize and no Always on Top', () => {
