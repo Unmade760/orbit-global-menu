@@ -216,6 +216,8 @@ export class AppearanceManager {
 		let style = `border-radius: ${radius}px;`;
 		if (fontSize > 0)
 			style += ` font-size: ${fontSize}pt;`;
+		// the theme node reports our own style back unless it is cleared first
+		btn.menu.box.set_style(null);
 		const base = this._popupBaseColor(btn);
 		if (base !== null) {
 			const alpha = (opacity / 100).toFixed(2);
@@ -368,14 +370,12 @@ export class AppearanceManager {
 		return global.blur_my_shell?._effects_manager ?? null;
 	}
 
-	// the theme can change after login so this reads it on every open
-	// with our own style cleared or it would report our colour back
+	// the theme can change after login so this is read on every open
 	// off stage the theme background reads as bogus
 	_popupBaseColor(btn) {
 		const box = btn.menu.box;
 		if (!box.get_stage())
 			return null;
-		box.set_style(null);
 		try {
 			const color = box.get_theme_node().get_background_color();
 			return {red: color.red, green: color.green, blue: color.blue};
