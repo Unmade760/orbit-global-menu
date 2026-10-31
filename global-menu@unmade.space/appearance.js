@@ -368,20 +368,20 @@ export class AppearanceManager {
 		return global.blur_my_shell?._effects_manager ?? null;
 	}
 
+	// the theme can change after login so this reads it on every open
+	// with our own style cleared or it would report our colour back
 	// off stage the theme background reads as bogus
-	// so retry on the next open
 	_popupBaseColor(btn) {
-		if (btn._globalMenuBaseBg !== undefined)
-			return btn._globalMenuBaseBg;
-		if (!btn.menu.box.get_stage())
+		const box = btn.menu.box;
+		if (!box.get_stage())
 			return null;
+		box.set_style(null);
 		try {
-			const color = btn.menu.box.get_theme_node().get_background_color();
-			btn._globalMenuBaseBg = {red: color.red, green: color.green, blue: color.blue};
+			const color = box.get_theme_node().get_background_color();
+			return {red: color.red, green: color.green, blue: color.blue};
 		} catch {
 			return null;
 		}
-		return btn._globalMenuBaseBg;
 	}
 
 	_removeBlur(btn) {

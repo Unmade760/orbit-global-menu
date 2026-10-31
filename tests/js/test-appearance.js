@@ -363,6 +363,22 @@ test('the shell height cap survives the shift, in CSS pixels on the button\'s mo
     globalThis.gmTest.workAreaHeight = 1000;
 });
 
+test('the popup colour follows the theme when it changes between opens', () => {
+    const {manager, btn} = setup({'popup-opacity': 100});
+    let themeBg = {red: 40, green: 40, blue: 40};
+    const box = btn.menu.box;
+    box.get_theme_node = () => ({
+        ...node({padding: 6, border: 1}),
+        get_background_color: () => /background-color/.test(box.style ?? '') ? {red: 1, green: 2, blue: 3} : themeBg,
+    });
+    onMenuOpened(btn);
+    assert.ok(box.style.includes('rgba(40, 40, 40, 1.00)'), box.style);
+    themeBg = {red: 245, green: 245, blue: 245};
+    onMenuOpened(btn);
+    assert.ok(box.style.includes('rgba(245, 245, 245, 1.00)'), box.style);
+    manager.destroy();
+});
+
 test('an empty menu gets no shift', () => {
     const {manager, btn} = setup({}, {firstItem: false});
     onMenuOpened(btn);
