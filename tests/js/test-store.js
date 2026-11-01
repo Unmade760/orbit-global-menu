@@ -26,7 +26,7 @@ function mapping(app, identifiers, menus = [{label: 'File', items: [{label: 'Qui
  * @param {Array} builtins - [[fileName, content]] in index order
  * @param {Array} users - [[fileName, content]], any order
  * @param {object|null} index - index.json content, default lists builtins
- * @param {boolean} load - read the files with loadAsync(); false leaves the store empty
+ * @param {boolean} load - read the files with loadAsync() or leave the store empty when false
  * @returns {Promise<ShortcutStore>} the store
  */
 async function makeStore(builtins, users = [], index = null, load = true) {

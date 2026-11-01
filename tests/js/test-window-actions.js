@@ -1,10 +1,9 @@
-// The Window menu's actions on the Meta API of GNOME 48 and of 49 and later
-// (windowActions.js). The doubles follow the signatures in mutter 48.8 and
-// 51.0 src/meta/window.h: 48 has the maximized-horizontally and
-// maximized-vertically properties, maximize(flags),
-// unmaximize(flags) and begin_grab_op(op, device, sequence, time, hint); 49 and
-// later have is_maximized(), maximize(), unmaximize() and
-// begin_grab_op(op, sprite, time, hint) with the sprite from the backend.
+// window menu actions from windowActions.js on gnome 48 and on 49 and later
+// the doubles follow mutter 48.8 and 51.0 src/meta/window.h
+// 48 has the maximized-horizontally and maximized-vertically properties
+// plus maximize(flags) unmaximize(flags) and begin_grab_op(op, device, sequence, time, hint)
+// 49 and later have is_maximized() maximize() unmaximize()
+// and begin_grab_op(op, sprite, time, hint) with the sprite from the backend
 
 import GLib from 'gi://GLib';
 

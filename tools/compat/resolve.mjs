@@ -87,9 +87,9 @@ function sameType(a, b) {
 // Methods gjs's imports.signals.addSignalMethods() puts on a prototype
 const SIGNAL_METHODS = ['connect', 'connectAfter', 'disconnect', 'emit', 'signalHandlerIsConnected', 'disconnectAll'];
 
-// gnome-shell js/ui/environment.js puts these on GObject.Object.prototype
-// in 48 to 51, so no GIR has them and a plain gjs probe misses them. They
-// are not there in the preferences window; this check does not catch that.
+// gnome-shell js/ui/environment.js adds these to GObject.Object.prototype in 48 to 51
+// no gir has them and a plain gjs probe misses them
+// the prefs window lacks them and this check does not catch that
 const SHELL_OBJECT_METHODS = ['connectObject', 'disconnectObject'];
 
 // Namespaces each process may load, per the EGO review guidelines: GTK,
