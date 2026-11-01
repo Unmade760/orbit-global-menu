@@ -53,6 +53,19 @@ class Emitter {
             throw new Error(`no handler with id ${id}`);
     }
 
+    // the shell adds these to every gobject and one signal per call is enough here
+    connectObject(signal, fn, owner) {
+        const id = this.connect(signal, fn);
+        this._handlers.get(id).owner = owner;
+    }
+
+    disconnectObject(owner) {
+        for (const [id, {owner: o}] of this._handlers) {
+            if (o === owner)
+                this._handlers.delete(id);
+        }
+    }
+
     emit(signal, ...args) {
         for (const {signal: s, fn} of [...this._handlers.values()]) {
             if (s === signal)

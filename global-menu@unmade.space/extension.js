@@ -374,7 +374,6 @@ class DaemonProxy {
 export default class GlobalMenuExtension extends Extension {
 	enable() {
 		this._settings = this.getSettings();
-		this._settingsHandlerIds = [];
 
 		// start before the menu bar proxy so the name is claimed
 		// when the proxy binds
@@ -403,9 +402,7 @@ export default class GlobalMenuExtension extends Extension {
 	}
 
 	disable() {
-		for (const id of this._settingsHandlerIds ?? [])
-			this._settings.disconnect(id);
-		this._settingsHandlerIds = [];
+		this._settings.disconnectObject(this);
 		cancelPendingActions();
 		KeySynth.cancelPendingShortcuts();
 		// appearance manager goes first so blur my shell
@@ -426,7 +423,7 @@ export default class GlobalMenuExtension extends Extension {
 	}
 
 	_watch(key, callback) {
-		this._settingsHandlerIds.push(this._settings.connect(`changed::${key}`, callback));
+		this._settings.connectObject(`changed::${key}`, callback, this);
 	}
 
 	_reloadStore() {
