@@ -10,18 +10,6 @@ function unreadable(file, e, warnings) {
 	warnings.push({file: file.get_basename(), message: `Cannot read/parse: ${e.message}`});
 }
 
-function readJson(file, warnings) {
-	try {
-		const [ok, bytes] = file.load_contents(null);
-		if (!ok)
-			return null;
-		return decodeJson(bytes);
-	} catch (e) {
-		unreadable(file, e, warnings);
-		return null;
-	}
-}
-
 function loadBytes(file, cancellable) {
 	return new Promise((resolve, reject) => {
 		file.load_contents_async(cancellable, (_o, res) => {
@@ -216,6 +204,15 @@ function buildMapping(raw, name, builtin, warnings) {
 	return mapping;
 }
 
+function knownApps(builtinFiles, userFiles) {
+	const stem = name => name.slice(0, -'.json'.length);
+	const builtinIds = new Set(builtinFiles.map(stem));
+	const userIds = new Set(userFiles.map(stem));
+	return [...new Set([...builtinIds, ...userIds])]
+		.map(app => ({app, hasBuiltin: builtinIds.has(app), hasUser: userIds.has(app)}))
+		.sort((a, b) => a.app.localeCompare(b.app));
+}
+
 export class ShortcutStore {
 	constructor(builtinDir,
 	            userDir) {
@@ -224,13 +221,7 @@ export class ShortcutStore {
 		this._mappings = new Map();
 		this._ordered = [];
 		this._warnings = [];
-	}
-
-	load() {
-		const warnings = [];
-		const builtins = this._loadBuiltins(warnings);
-		const users = this._loadUserMappings(warnings);
-		this._commit(builtins, users, warnings);
+		this._known = [];
 	}
 
 	async loadAsync(cancellable = null) {
@@ -238,7 +229,8 @@ export class ShortcutStore {
 		const builtins = [];
 		const index = await readJsonAsync(this._builtinDir.get_child('index.json'), warnings, cancellable);
 		const builtinApps = this._builtinDir.get_child('apps');
-		for (const name of builtinNames(index, warnings)) {
+		const builtinFiles = builtinNames(index, warnings);
+		for (const name of builtinFiles) {
 			// one file at a time keeps warnings in file order
 			// eslint-disable-next-line no-await-in-loop
 			const raw = await readJsonAsync(builtinApps.get_child(name), warnings, cancellable);
@@ -263,10 +255,10 @@ export class ShortcutStore {
 			if (mapping)
 				users.push(mapping);
 		}
-		this._commit(builtins, users, warnings);
+		this._commit(builtins, users, warnings, knownApps(builtinFiles, names));
 	}
 
-	_commit(builtins, users, warnings) {
+	_commit(builtins, users, warnings, known) {
 		const mappings = new Map();
 		for (const mapping of builtins)
 			mappings.set(mapping.app, mapping);
@@ -296,6 +288,7 @@ export class ShortcutStore {
 		this._mappings = mappings;
 		this._ordered = ordered;
 		this._warnings = warnings;
+		this._known = known;
 	}
 
 	get mappings() {
@@ -315,67 +308,6 @@ export class ShortcutStore {
 	}
 
 	listKnownAppIds() {
-		const builtinIds = new Set();
-		try {
-			const [ok, bytes] = this._builtinDir.get_child('index.json').load_contents(null);
-			if (ok) {
-				const index = JSON.parse(new TextDecoder().decode(bytes));
-				for (const name of index.apps ?? []) {
-					if (typeof name === 'string' && name.endsWith('.json'))
-						builtinIds.add(name.slice(0, -'.json'.length));
-				}
-			}
-		} catch { }
-
-		const userIds = new Set();
-		try {
-			const enumerator = this._userDir.get_child('apps')
-				.enumerate_children('standard::name', Gio.FileQueryInfoFlags.NONE, null);
-			let info;
-			while ((info = enumerator.next_file(null))) {
-				const name = info.get_name();
-				if (name.endsWith('.json'))
-					userIds.add(name.slice(0, -'.json'.length));
-			}
-			enumerator.close(null);
-		} catch { }
-
-		return [...new Set([...builtinIds, ...userIds])]
-			.map(app => ({app, hasBuiltin: builtinIds.has(app), hasUser: userIds.has(app)}))
-			.sort((a, b) => a.app.localeCompare(b.app));
-	}
-
-	_loadBuiltins(warnings) {
-		const out = [];
-		const index = readJson(this._builtinDir.get_child('index.json'), warnings);
-		const appsDir = this._builtinDir.get_child('apps');
-		for (const name of builtinNames(index, warnings)) {
-			const mapping = buildMapping(readJson(appsDir.get_child(name), warnings), name, true, warnings);
-			if (mapping)
-				out.push(mapping);
-		}
-		return out;
-	}
-
-	_loadUserMappings(warnings) {
-		const out = [];
-		const appsDir = this._userDir.get_child('apps');
-		let enumerator;
-		try {
-			enumerator = appsDir.enumerate_children('standard::name', Gio.FileQueryInfoFlags.NONE, null);
-		} catch {
-			return out;
-		}
-		const names = [];
-		let info;
-		while ((info = enumerator.next_file(null)))
-			names.push(info.get_name());
-		enumerator.close(null);
-		for (const name of jsonNames(names)) {
-			const mapping = buildMapping(readJson(appsDir.get_child(name), warnings), name, false, warnings);
-			if (mapping)
-				out.push(mapping);
-		}
-		return out;
+		return this._known;
 	}
 }

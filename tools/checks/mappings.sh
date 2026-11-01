@@ -5,7 +5,7 @@
 # extension's own accelerator.js and shortcutStore.js (both load outside the
 # shell, see tools/checks/imports.sh). It checks strict JSON and the format
 # in docs/shortcut-mappings.md, parses every shortcut with the extension's
-# parseAccelerator, runs validateMapping and ShortcutStore.load on the real
+# parseAccelerator, runs validateMapping and ShortcutStore.loadAsync on the real
 # tree, checks identifier collisions between files and that index.json lists
 # exactly the files present. Per-file counts go to the log and to
 # $GM_LOG_DIR/mappings.json for the coverage auditors.

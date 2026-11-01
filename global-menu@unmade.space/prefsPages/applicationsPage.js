@@ -41,8 +41,8 @@ export class ApplicationsPage {
 		this._settings.set_int('shortcuts-revision', this._settings.get_int('shortcuts-revision') + 1);
 	}
 
-	_refresh() {
-		this._store.load();
+	async _refresh() {
+		await this._store.loadAsync();
 
 		// preferences group hides added rows from get_first_child
 		// so track and remove them by hand
@@ -178,8 +178,8 @@ export class ApplicationsPage {
 		dialog.present(this._window);
 	}
 
-	_createOrOpen(appId, suggestedIdentifiers) {
-		this._store.load();
+	async _createOrOpen(appId, suggestedIdentifiers) {
+		await this._store.loadAsync();
 		const existing = this._store.mappings.get(appId);
 		if (existing) {
 			const known = this._store.listKnownAppIds().find(e => e.app === appId);

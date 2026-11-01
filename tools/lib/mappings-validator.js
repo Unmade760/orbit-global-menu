@@ -8,7 +8,7 @@
 //   - parseAccelerator() from accelerator.js decides whether a shortcut parses
 //   - validateMapping() from shortcutStore.js must accept the file without
 //     dropping anything
-//   - ShortcutStore.load() must load every file with no warning, and
+//   - ShortcutStore.loadAsync() must load every file with no warning, and
 //     resolveMapping() must send each identifier back to its own file
 // On top of that it checks what the extension does not: strict JSON, the
 // exact key set of each object, identifiers claimed by two files, and
@@ -262,7 +262,7 @@ for (const [id, stems] of owners) {
 // The real store, end to end, with an empty user directory
 const emptyUserDir = GLib.dir_make_tmp('gm-mappings-XXXXXX');
 const store = new ShortcutStore(Gio.File.new_for_path(shortcutsDir), Gio.File.new_for_path(emptyUserDir));
-store.load();
+await store.loadAsync();
 GLib.rmdir(emptyUserDir);
 for (const w of store.warnings) {
     if (w.level === 'info') {
@@ -271,7 +271,7 @@ for (const w of store.warnings) {
             files[stem].duplicateShortcuts++;
         continue;
     }
-    error(w.file, `ShortcutStore.load: ${w.message}`);
+    error(w.file, `ShortcutStore.loadAsync: ${w.message}`);
 }
 if (store.mappings.size !== onDisk.length)
     error('index.json', `ShortcutStore loaded ${store.mappings.size} mappings, ${onDisk.length} files are on disk`);

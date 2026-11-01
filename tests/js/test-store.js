@@ -26,10 +26,10 @@ function mapping(app, identifiers, menus = [{label: 'File', items: [{label: 'Qui
  * @param {Array} builtins - [[fileName, content]] in index order
  * @param {Array} users - [[fileName, content]], any order
  * @param {object|null} index - index.json content, default lists builtins
- * @param {boolean} load - read the files with load(); false leaves the store empty
- * @returns {ShortcutStore} the store
+ * @param {boolean} load - read the files with loadAsync(); false leaves the store empty
+ * @returns {Promise<ShortcutStore>} the store
  */
-function makeStore(builtins, users = [], index = null, load = true) {
+async function makeStore(builtins, users = [], index = null, load = true) {
     const root = GLib.dir_make_tmp('gm-store-XXXXXX');
     for (const [name, content] of builtins)
         writeJson(`${root}/builtin/apps/${name}`, content);
@@ -38,14 +38,14 @@ function makeStore(builtins, users = [], index = null, load = true) {
         writeJson(`${root}/user/apps/${name}`, content);
     const store = new ShortcutStore(Gio.File.new_for_path(`${root}/builtin`), Gio.File.new_for_path(`${root}/user`));
     if (load)
-        store.load();
+        await store.loadAsync();
     return store;
 }
 
 const problems = store => store.warnings.filter(w => w.level !== 'info');
 
-test('resolves by any identifier, lowercased', () => {
-    const store = makeStore([['text.json', mapping('text', ['org.gnome.TextEditor.desktop', 'org.gnome.TextEditor', 'Text Editor'])]]);
+test('resolves by any identifier, lowercased', async () => {
+    const store = await makeStore([['text.json', mapping('text', ['org.gnome.TextEditor.desktop', 'org.gnome.TextEditor', 'Text Editor'])]]);
     assert.deepEqual(problems(store), []);
     assert.equal(store.resolveMapping(['org.gnome.texteditor'])?.app, 'text');
     assert.equal(store.resolveMapping(['org.gnome.texteditor.desktop'])?.app, 'text');
@@ -53,13 +53,13 @@ test('resolves by any identifier, lowercased', () => {
     assert.equal(store.resolveMapping(['nothing', 'else']), null);
 });
 
-test('matches when any candidate matches', () => {
-    const store = makeStore([['a.json', mapping('a', ['a-class'])]]);
+test('matches when any candidate matches', async () => {
+    const store = await makeStore([['a.json', mapping('a', ['a-class'])]]);
     assert.equal(store.resolveMapping(['a.desktop', 'a-class', 'A'])?.app, 'a');
 });
 
-test('identifier claimed twice: first in index order wins, with a warning', () => {
-    const store = makeStore([['one.json', mapping('one', ['shared', 'one'])], ['two.json', mapping('two', ['SHARED', 'two'])]]);
+test('identifier claimed twice: first in index order wins, with a warning', async () => {
+    const store = await makeStore([['one.json', mapping('one', ['shared', 'one'])], ['two.json', mapping('two', ['SHARED', 'two'])]]);
     assert.equal(store.resolveMapping(['shared'])?.app, 'one');
     assert.equal(store.resolveMapping(['two'])?.app, 'two');
     const w = problems(store);
@@ -67,34 +67,34 @@ test('identifier claimed twice: first in index order wins, with a warning', () =
     assert.ok(w[0].message.includes('"shared" already claimed by "one"'), w[0].message);
 });
 
-test('a user file replaces the built-in with the same app id', () => {
+test('a user file replaces the built-in with the same app id', async () => {
     const user = mapping('ed', ['ed'], [{label: 'Mine', items: [{label: 'Save', shortcut: '<Ctrl>S'}]}]);
-    const store = makeStore([['ed.json', mapping('ed', ['ed'])]], [['ed.json', user]]);
+    const store = await makeStore([['ed.json', mapping('ed', ['ed'])]], [['ed.json', user]]);
     const hit = store.resolveMapping(['ed']);
     assert.equal(hit.builtin, false);
     assert.equal(hit.menus[0].label, 'Mine');
     assert.equal(store.mappings.size, 1);
 });
 
-test('a user file beats a built-in that claims the same identifier', () => {
-    const store = makeStore([['a.json', mapping('a', ['shared'])]], [['b.json', mapping('b', ['shared'])]]);
+test('a user file beats a built-in that claims the same identifier', async () => {
+    const store = await makeStore([['a.json', mapping('a', ['shared'])]], [['b.json', mapping('b', ['shared'])]]);
     assert.equal(store.resolveMapping(['shared'])?.app, 'b');
 });
 
-test('a file missing from index.json is not loaded', () => {
-    const store = makeStore([['a.json', mapping('a', ['a'])], ['b.json', mapping('b', ['b'])]], [], {format: 1, apps: ['a.json']});
+test('a file missing from index.json is not loaded', async () => {
+    const store = await makeStore([['a.json', mapping('a', ['a'])], ['b.json', mapping('b', ['b'])]], [], {format: 1, apps: ['a.json']});
     assert.equal(store.resolveMapping(['b']), null);
     assert.equal(store.mappings.size, 1);
 });
 
-test('a broken built-in is reported and the rest still load', () => {
-    const store = makeStore([['bad.json', '{"format": 1,'], ['good.json', mapping('good', ['good'])]]);
+test('a broken built-in is reported and the rest still load', async () => {
+    const store = await makeStore([['bad.json', '{"format": 1,'], ['good.json', mapping('good', ['good'])]]);
     assert.equal(store.resolveMapping(['good'])?.app, 'good');
     assert.ok(problems(store).some(w => w.file === 'bad.json'), 'warning for bad.json');
 });
 
-test('listKnownAppIds lists built-ins and user files, sorted', () => {
-    const store = makeStore([['b.json', mapping('b', ['b'])], ['a.json', mapping('a', ['a'])]], [['c.json', mapping('c', ['c'])]]);
+test('listKnownAppIds lists built-ins and user files, sorted', async () => {
+    const store = await makeStore([['b.json', mapping('b', ['b'])], ['a.json', mapping('a', ['a'])]], [['c.json', mapping('c', ['c'])]]);
     assert.deepEqual(store.listKnownAppIds(), [
         {app: 'a', hasBuiltin: true, hasUser: false},
         {app: 'b', hasBuiltin: true, hasUser: false},
@@ -171,19 +171,22 @@ function mixedFixture(load) {
     ], {format: 1, apps: ['a.json', 'b.json', 'broken.json', 'c.json', 'd.json', 5, 'gone.json']}, load);
 }
 
-test('loadAsync() yields the mappings, order and warnings load() does', async () => {
-    const sync = mixedFixture(true);
-    const async_ = mixedFixture(false);
-    assert.equal(async_.mappings.size, 0, 'nothing is read before loadAsync');
-    await async_.loadAsync();
-    assert.ok(async_.mappings.size >= 4, `${async_.mappings.size} mappings`);
-    assert.ok(async_.warnings.length >= 5, `${async_.warnings.length} warnings`);
-    assert.equal(snapshot(async_), snapshot(sync));
+test('loadAsync() keeps good files, reports bad ones and lists every known app', async () => {
+    const store = await mixedFixture(false);
+    assert.equal(store.mappings.size, 0, 'nothing is read before loadAsync');
+    await store.loadAsync();
+    assert.deepEqual([...store.mappings.keys()].sort(), ['a', 'b', 'd', 'u']);
+    assert.equal(store.mappings.get('d').builtin, false, 'user d.json replaces the built-in');
+    assert.equal(store.resolveMapping(['shared'])?.app, 'a');
+    for (const file of ['broken.json', 'c.json', 'gone.json', 'bad.json', 'index.json'])
+        assert.ok(problems(store).some(w => w.file === file), `warning for ${file}`);
+    assert.deepEqual(store.listKnownAppIds().map(e => e.app),
+        ['a', 'b', 'bad', 'broken', 'c', 'd', 'gone', 'u']);
 });
 
 test('loadAsync() reads a user directory larger than one enumeration batch', async () => {
     const users = Array.from({length: 230}, (_v, i) => [`app${i}.json`, mapping(`app${i}`, [`id${i}`])]);
-    const store = makeStore([], users, null, false);
+    const store = await makeStore([], users, null, false);
     await store.loadAsync();
     assert.equal(store.mappings.size, 230);
     assert.equal(store.resolveMapping(['id229'])?.app, 'app229');
@@ -200,7 +203,7 @@ test('loadAsync() with no user directory loads the built-ins', async () => {
 });
 
 test('a cancelled loadAsync() rejects as cancelled and keeps what the store had', async () => {
-    const store = makeStore([['a.json', mapping('a', ['a'])]]);
+    const store = await makeStore([['a.json', mapping('a', ['a'])]]);
     const before = snapshot(store);
     const cancellable = new Gio.Cancellable();
     const done = store.loadAsync(cancellable);
