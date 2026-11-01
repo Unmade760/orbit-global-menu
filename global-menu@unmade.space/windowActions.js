@@ -122,8 +122,9 @@ export class WindowActions {
 		const win = this._win;
 		if (typeof win.is_maximized === 'function')
 			return win.is_maximized();
-		const flags = win.get_maximized?.() ?? 0;
-		return eitherAxis ? flags !== 0 : flags === Meta.MaximizeFlags.BOTH;
+		const h = win.maximized_horizontally;
+		const v = win.maximized_vertically;
+		return eitherAxis ? h || v : h && v;
 	}
 
 	// gjs enforces the argument count so 48 needs directions

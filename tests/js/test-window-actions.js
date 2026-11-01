@@ -1,6 +1,7 @@
 // The Window menu's actions on the Meta API of GNOME 48 and of 49 and later
 // (windowActions.js). The doubles follow the signatures in mutter 48.8 and
-// 51.0 src/meta/window.h: 48 has get_maximized(), maximize(flags),
+// 51.0 src/meta/window.h: 48 has the maximized-horizontally and
+// maximized-vertically properties, maximize(flags),
 // unmaximize(flags) and begin_grab_op(op, device, sequence, time, hint); 49 and
 // later have is_maximized(), maximize(), unmaximize() and
 // begin_grab_op(op, sprite, time, hint) with the sprite from the backend.
@@ -67,7 +68,8 @@ function window48(t, maximized) {
         is_above: () => false,
         is_on_all_workspaces: () => false,
         get_monitor: () => 0,
-        get_maximized: () => maximized === true ? BOTH : maximized || 0,
+        maximized_horizontally: maximized === true || (maximized & 1) !== 0,
+        maximized_vertically: maximized === true || (maximized & 2) !== 0,
         maximize(flags) {
             if (flags !== BOTH)
                 throw new TypeError('At least 1 argument required');
@@ -90,7 +92,6 @@ function window48(t, maximized) {
 // A window as mutter 49 and later expose it
 function window49(t, maximized) {
     const win = window48(t, maximized);
-    delete win.get_maximized;
     win.is_maximized = () => maximized;
     win.maximize = function () {
         if (arguments.length !== 0)
