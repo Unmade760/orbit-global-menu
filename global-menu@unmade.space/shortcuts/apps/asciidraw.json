@@ -1,0 +1,42 @@
+{
+  "format": 1,
+  "app": "asciidraw",
+  "name": "ASCII Draw",
+  "identifiers": [
+    "io.github.nokse22.asciidraw.desktop",
+    "io.github.nokse22.asciidraw",
+    "ascii-draw",
+    "ASCII Draw"
+  ],
+  "menus": [
+    {
+      "label": "General",
+      "items": [
+        {"label": "Show Shortcuts", "shortcut": "<Ctrl>question"},
+        {"label": "Quit", "shortcut": "<Ctrl>Q"},
+        {"label": "Save", "shortcut": "<Ctrl>S"},
+        {"label": "Save As", "shortcut": "<Ctrl><Shift>S"},
+        {"label": "Open", "shortcut": "<Ctrl>O"},
+        {"label": "New Canvas", "shortcut": "<Ctrl>N"},
+        {"label": "Undo", "shortcut": "<Ctrl>Z"},
+        {"label": "Redo", "shortcut": "<Ctrl><Shift>Z"}
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        {"label": "Rectangle", "shortcut": "<Ctrl>R"},
+        {"label": "Filled Rectangle", "shortcut": "<Ctrl><Shift>R"},
+        {"label": "Line", "shortcut": "<Ctrl>L"},
+        {"label": "Freehand Brush", "shortcut": "<Ctrl>F"},
+        {"label": "Text", "shortcut": "<Ctrl>T"},
+        {"label": "Table", "shortcut": "<Ctrl><Shift>T"},
+        {"label": "Tree View", "shortcut": "<Ctrl>U"},
+        {"label": "Eraser", "shortcut": "<Ctrl>E"},
+        {"label": "Picker", "shortcut": "<Ctrl>P"},
+        {"label": "Move", "shortcut": "<Ctrl>M"},
+        {"label": "Fill", "shortcut": "<Ctrl><Shift>F"}
+      ]
+    }
+  ]
+}

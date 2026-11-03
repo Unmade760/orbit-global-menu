@@ -7,6 +7,7 @@
 - Apostrophe
 - Ardour
 - Ark
+- ASCII Draw
 - Atril Document Viewer
 - Authenticator
 - Audacity

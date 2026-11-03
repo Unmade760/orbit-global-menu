@@ -1,0 +1,385 @@
+{
+  "format": 1,
+  "app": "asciidraw",
+  "repos": {
+    "asciidraw": {
+      "url": "https://github.com/Nokse22/ascii-draw",
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf"
+    },
+    "libadwaita": {
+      "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
+      "commit": "dfc1d654639d3160c3689597274cb537f164c25d"
+    }
+  },
+  "items": [
+    {
+      "path": [
+        "General",
+        "Show Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question",
+      "repo": "libadwaita",
+      "file": "src/adw-application.c",
+      "line": 316,
+      "commit": "dfc1d654639d3160c3689597274cb537f164c25d"
+    },
+    {
+      "path": [
+        "General",
+        "Quit"
+      ],
+      "shortcut": "<Ctrl>Q",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 36,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Quit",
+        "source_action": "app.quit",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "General",
+        "Save"
+      ],
+      "shortcut": "<Ctrl>S",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 44,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Save",
+        "source_action": "app.save",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "General",
+        "Save As"
+      ],
+      "shortcut": "<Ctrl><Shift>S",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 46,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Save As",
+        "source_action": "app.save-as",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "General",
+        "Open"
+      ],
+      "shortcut": "<Ctrl>O",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 50,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Open",
+        "source_action": "app.open",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "General",
+        "New Canvas"
+      ],
+      "shortcut": "<Ctrl>N",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 52,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "New Canvas",
+        "source_action": "app.new-canvas",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "General",
+        "Undo"
+      ],
+      "shortcut": "<Ctrl>Z",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 55,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Undo",
+        "source_action": "app.undo",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "General",
+        "Redo"
+      ],
+      "shortcut": "<Ctrl><Shift>Z",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 58,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Redo",
+        "source_action": "app.redo",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Rectangle"
+      ],
+      "shortcut": "<Ctrl>R",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 61,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Rectangle",
+        "source_action": "app.rectangle-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Filled Rectangle"
+      ],
+      "shortcut": "<Ctrl><Shift>R",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 64,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Filled Rectangle",
+        "source_action": "app.filled-rectangle-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Line"
+      ],
+      "shortcut": "<Ctrl>L",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 66,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Line",
+        "source_action": "app.line-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Freehand Brush"
+      ],
+      "shortcut": "<Ctrl>F",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 74,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Freehand Brush",
+        "source_action": "app.free-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Text"
+      ],
+      "shortcut": "<Ctrl>T",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 68,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Text",
+        "source_action": "app.text-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Table"
+      ],
+      "shortcut": "<Ctrl><Shift>T",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 70,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Table",
+        "source_action": "app.table-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Tree View"
+      ],
+      "shortcut": "<Ctrl>U",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 72,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Tree View",
+        "source_action": "app.tree-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Eraser"
+      ],
+      "shortcut": "<Ctrl>E",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 76,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Eraser",
+        "source_action": "app.eraser-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Picker"
+      ],
+      "shortcut": "<Ctrl>P",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 78,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Picker",
+        "source_action": "app.picker-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Move"
+      ],
+      "shortcut": "<Ctrl>M",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 80,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Move",
+        "source_action": "app.move-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    },
+    {
+      "path": [
+        "Tools",
+        "Fill"
+      ],
+      "shortcut": "<Ctrl><Shift>F",
+      "repo": "asciidraw",
+      "file": "src/main.py",
+      "line": 82,
+      "commit": "d2e9a352dfa610db7a56c3c54e2657ee6cba83cf",
+      "match": {
+        "confidence": "label",
+        "kind": "gtk-set-accels",
+        "source_label": "Fill",
+        "source_action": "app.fill-tool",
+        "label_score": 1.0,
+        "candidates": 1
+      }
+    }
+  ],
+  "unmatched": [
+    {
+      "path": [
+        "General",
+        "Show Shortcuts"
+      ],
+      "shortcut": "<Ctrl>question"
+    }
+  ],
+  "summary": {
+    "with_shortcut": 19,
+    "label_match": 18,
+    "action_match": 0,
+    "chord_only": 0,
+    "unmatched": 1
+  }
+}
