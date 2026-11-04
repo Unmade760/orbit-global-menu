@@ -69,6 +69,7 @@
 - Extension Manager
 - Eye of GNOME
 - Eye of MATE Image Viewer
+- Fade In
 - Falkon
 - Ferdium
 - File Roller

@@ -1,0 +1,1220 @@
+{
+  "format": 1,
+  "app": "fadein",
+  "repos": {},
+  "items": [
+    {
+      "path": [
+        "File",
+        "New"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Create a new document Ctrl+N",
+      "shortcut": "<Ctrl>N"
+    },
+    {
+      "path": [
+        "File",
+        "Open…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Open an existing document Ctrl+O",
+      "shortcut": "<Ctrl>O"
+    },
+    {
+      "path": [
+        "File",
+        "Open from Disk…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Open a document from disk Shift+Ctrl+O",
+      "shortcut": "<Ctrl><Shift>O"
+    },
+    {
+      "path": [
+        "File",
+        "Close"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Close current document Ctrl+W",
+      "shortcut": "<Ctrl>W"
+    },
+    {
+      "path": [
+        "File",
+        "Templates",
+        "New from Template…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "New from template Shift+Ctrl+N",
+      "shortcut": "<Ctrl><Shift>N"
+    },
+    {
+      "path": [
+        "File",
+        "Save"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Save current document Ctrl+S",
+      "shortcut": "<Ctrl>S"
+    },
+    {
+      "path": [
+        "File",
+        "Save As…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Save as Ctrl+Shift+S",
+      "shortcut": "<Ctrl><Shift>S"
+    },
+    {
+      "path": [
+        "File",
+        "Save All"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Save all Ctrl+Alt+S",
+      "shortcut": "<Ctrl><Alt>S"
+    },
+    {
+      "path": [
+        "File",
+        "Print…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Print current document Ctrl+P",
+      "shortcut": "<Ctrl>P"
+    },
+    {
+      "path": [
+        "File",
+        "This Session…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "This session Ctrl+Shift+I",
+      "shortcut": "<Ctrl><Shift>I"
+    },
+    {
+      "path": [
+        "File",
+        "Exit"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Exit application Alt+F4",
+      "shortcut": "<Alt>F4"
+    },
+    {
+      "path": [
+        "Edit",
+        "Undo"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Undo Ctrl+Z",
+      "shortcut": "<Ctrl>Z"
+    },
+    {
+      "path": [
+        "Edit",
+        "Redo"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Redo Ctrl+Y Shift+Ctrl+Z",
+      "shortcut": "<Ctrl>Y"
+    },
+    {
+      "path": [
+        "Edit",
+        "Cut"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Cut Ctrl+X",
+      "shortcut": "<Ctrl>X"
+    },
+    {
+      "path": [
+        "Edit",
+        "Copy"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Copy Ctrl+C",
+      "shortcut": "<Ctrl>C"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Paste Ctrl+V",
+      "shortcut": "<Ctrl>V"
+    },
+    {
+      "path": [
+        "Edit",
+        "Paste Unformatted"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Paste Unformatted Shift+Ctrl+Alt+V",
+      "shortcut": "<Ctrl><Shift><Alt>V"
+    },
+    {
+      "path": [
+        "Edit",
+        "Fountain",
+        "Copy as Fountain"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Copy as Fountain (if enabled) Ctrl+Shift+C",
+      "shortcut": "<Ctrl><Shift>C"
+    },
+    {
+      "path": [
+        "Edit",
+        "Fountain",
+        "Paste as Fountain"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Paste as Fountain (if enabled) Ctrl+Shift+V",
+      "shortcut": "<Ctrl><Shift>V"
+    },
+    {
+      "path": [
+        "Edit",
+        "Fountain",
+        "Edit as Fountain…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Edit as Fountain (if enabled) Ctrl+Alt+Shift+F",
+      "shortcut": "<Ctrl><Shift><Alt>F"
+    },
+    {
+      "path": [
+        "Edit",
+        "Typing",
+        "Non-breaking Space"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Non-breaking space Ctrl+Shift+space",
+      "shortcut": "<Ctrl><Shift>space"
+    },
+    {
+      "path": [
+        "Edit",
+        "Select All"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Select All Ctrl+A",
+      "shortcut": "<Ctrl>A"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find Ctrl+F",
+      "shortcut": "<Ctrl>F"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find and Replace…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find and Replace Ctrl+Shift+F",
+      "shortcut": "<Ctrl><Shift>F"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Next"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find Next Ctrl+G",
+      "shortcut": "<Ctrl>G"
+    },
+    {
+      "path": [
+        "Edit",
+        "Find Previous"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find Previous Ctrl+Shift+G",
+      "shortcut": "<Ctrl><Shift>G"
+    },
+    {
+      "path": [
+        "Edit",
+        "Go To…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Go To Ctrl+T",
+      "shortcut": "<Ctrl>T"
+    },
+    {
+      "path": [
+        "View",
+        "Format/Roster",
+        "Format"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Format tab Ctrl+Alt+F",
+      "shortcut": "<Ctrl><Alt>F"
+    },
+    {
+      "path": [
+        "View",
+        "Format/Roster",
+        "Characters"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Character tab Ctrl+Alt+C",
+      "shortcut": "<Ctrl><Alt>C"
+    },
+    {
+      "path": [
+        "View",
+        "Format/Roster",
+        "Locations"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Location tab Ctrl+Alt+L",
+      "shortcut": "<Ctrl><Alt>L"
+    },
+    {
+      "path": [
+        "View",
+        "Format/Roster",
+        "Other Lists"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Other lists Ctrl+Alt+O",
+      "shortcut": "<Ctrl><Alt>O"
+    },
+    {
+      "path": [
+        "View",
+        "Format/Roster",
+        "Rebuild Characters"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Rebuild Characters Shift+Ctrl+Alt+C",
+      "shortcut": "<Ctrl><Shift><Alt>C"
+    },
+    {
+      "path": [
+        "View",
+        "Format/Roster",
+        "Rebuild Locations"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Rebuild Locations Shift+Ctrl+Alt+L",
+      "shortcut": "<Ctrl><Shift><Alt>L"
+    },
+    {
+      "path": [
+        "View",
+        "Navigator"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Navigator Ctrl+Alt+G",
+      "shortcut": "<Ctrl><Alt>G"
+    },
+    {
+      "path": [
+        "View",
+        "Document List"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Document List Alt+Shift+\\",
+      "shortcut": "<Shift><Alt>backslash"
+    },
+    {
+      "path": [
+        "View",
+        "Next Document"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Next document tab Alt+Shift+] Ctrl+F6",
+      "shortcut": "<Shift><Alt>bracketright"
+    },
+    {
+      "path": [
+        "View",
+        "Previous Document"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Previous document tab Alt+Shift+[",
+      "shortcut": "<Shift><Alt>bracketleft"
+    },
+    {
+      "path": [
+        "View",
+        "Custom View Colors"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Custom View Colors Ctrl+Alt+R",
+      "shortcut": "<Ctrl><Alt>R"
+    },
+    {
+      "path": [
+        "View",
+        "Focus Current Text"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Focus Current Text Ctrl+Alt+U",
+      "shortcut": "<Ctrl><Alt>U"
+    },
+    {
+      "path": [
+        "View",
+        "Show Invisibles"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Show invisibles Ctrl+Alt+V",
+      "shortcut": "<Ctrl><Alt>V"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom In"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Zoom in Ctrl+plus",
+      "shortcut": "<Ctrl>plus"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "Zoom Out"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Zoom out Ctrl+minus",
+      "shortcut": "<Ctrl>minus"
+    },
+    {
+      "path": [
+        "View",
+        "Zoom",
+        "100%"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Zoom 100% Ctrl+Alt+Shift+0",
+      "shortcut": "<Ctrl><Shift><Alt>0"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Full screen Alt+Enter",
+      "shortcut": "<Alt>Return"
+    },
+    {
+      "path": [
+        "View",
+        "Full Screen Minimal"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Full screen minimal Alt+Shift+Enter",
+      "shortcut": "<Shift><Alt>Return"
+    },
+    {
+      "path": [
+        "Format",
+        "Scene Heading"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Scene Heading Ctrl+1 Alt+1 (Ctrl+Enter)",
+      "shortcut": "<Ctrl>1"
+    },
+    {
+      "path": [
+        "Format",
+        "Action"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Action Ctrl+2 Alt+2",
+      "shortcut": "<Ctrl>2"
+    },
+    {
+      "path": [
+        "Format",
+        "Character"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Character Ctrl+3 Alt+3",
+      "shortcut": "<Ctrl>3"
+    },
+    {
+      "path": [
+        "Format",
+        "Parenthetical"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Parenthetical Ctrl+4 Alt+4",
+      "shortcut": "<Ctrl>4"
+    },
+    {
+      "path": [
+        "Format",
+        "Dialogue"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Dialogue Ctrl+5 Alt+5",
+      "shortcut": "<Ctrl>5"
+    },
+    {
+      "path": [
+        "Format",
+        "Transition"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Transition Ctrl+6 Alt+6",
+      "shortcut": "<Ctrl>6"
+    },
+    {
+      "path": [
+        "Format",
+        "Shot"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Shot Ctrl+7 Alt+7",
+      "shortcut": "<Ctrl>7"
+    },
+    {
+      "path": [
+        "Format",
+        "Unformatted Text"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Unformatted Text Ctrl+0 Alt+0",
+      "shortcut": "<Ctrl>0"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat",
+        "Scene Heading"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat element as above Ctrl+Alt+0 to 7",
+      "shortcut": "<Ctrl><Alt>1"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat",
+        "Action"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat element as above Ctrl+Alt+0 to 7",
+      "shortcut": "<Ctrl><Alt>2"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat",
+        "Character"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat element as above Ctrl+Alt+0 to 7",
+      "shortcut": "<Ctrl><Alt>3"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat",
+        "Parenthetical"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat element as above Ctrl+Alt+0 to 7",
+      "shortcut": "<Ctrl><Alt>4"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat",
+        "Dialogue"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat element as above Ctrl+Alt+0 to 7",
+      "shortcut": "<Ctrl><Alt>5"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat",
+        "Transition"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat element as above Ctrl+Alt+0 to 7",
+      "shortcut": "<Ctrl><Alt>6"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat",
+        "Shot"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat element as above Ctrl+Alt+0 to 7",
+      "shortcut": "<Ctrl><Alt>7"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat",
+        "Unformatted Text"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat element as above Ctrl+Alt+0 to 7",
+      "shortcut": "<Ctrl><Alt>0"
+    },
+    {
+      "path": [
+        "Format",
+        "Custom Element",
+        "Custom Element 1"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Custom Element Ctrl+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift>1"
+    },
+    {
+      "path": [
+        "Format",
+        "Custom Element",
+        "Custom Element 2"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Custom Element Ctrl+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift>2"
+    },
+    {
+      "path": [
+        "Format",
+        "Custom Element",
+        "Custom Element 3"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Custom Element Ctrl+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift>3"
+    },
+    {
+      "path": [
+        "Format",
+        "Custom Element",
+        "Custom Element 4"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Custom Element Ctrl+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift>4"
+    },
+    {
+      "path": [
+        "Format",
+        "Custom Element",
+        "Custom Element 5"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Custom Element Ctrl+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift>5"
+    },
+    {
+      "path": [
+        "Format",
+        "Custom Element",
+        "Custom Element 6"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Custom Element Ctrl+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift>6"
+    },
+    {
+      "path": [
+        "Format",
+        "Custom Element",
+        "Custom Element 7"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Custom Element Ctrl+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift>7"
+    },
+    {
+      "path": [
+        "Format",
+        "Custom Element",
+        "Custom Element 8"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Custom Element Ctrl+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift>8"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat as Custom Element",
+        "Custom Element 1"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat as Custom Element Ctrl+Alt+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift><Alt>1"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat as Custom Element",
+        "Custom Element 2"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat as Custom Element Ctrl+Alt+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift><Alt>2"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat as Custom Element",
+        "Custom Element 3"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat as Custom Element Ctrl+Alt+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift><Alt>3"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat as Custom Element",
+        "Custom Element 4"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat as Custom Element Ctrl+Alt+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift><Alt>4"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat as Custom Element",
+        "Custom Element 5"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat as Custom Element Ctrl+Alt+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift><Alt>5"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat as Custom Element",
+        "Custom Element 6"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat as Custom Element Ctrl+Alt+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift><Alt>6"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat as Custom Element",
+        "Custom Element 7"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat as Custom Element Ctrl+Alt+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift><Alt>7"
+    },
+    {
+      "path": [
+        "Format",
+        "Reformat as Custom Element",
+        "Custom Element 8"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Reformat as Custom Element Ctrl+Alt+Shift+1 to 8",
+      "shortcut": "<Ctrl><Shift><Alt>8"
+    },
+    {
+      "path": [
+        "Format",
+        "Element Styles",
+        "Quick Reformat…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Quick Reformat Ctrl+Shift+T",
+      "shortcut": "<Ctrl><Shift>T"
+    },
+    {
+      "path": [
+        "Format",
+        "Element Styles",
+        "Modify Element Style…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Modify Element Style Ctrl+Alt+E",
+      "shortcut": "<Ctrl><Alt>E"
+    },
+    {
+      "path": [
+        "Format",
+        "Element Styles",
+        "Apply Element…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Apply Element Ctrl+Shift+E",
+      "shortcut": "<Ctrl><Shift>E"
+    },
+    {
+      "path": [
+        "Format",
+        "Element Styles",
+        "Insert Element…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Insert Element Ctrl+Shift+Enter",
+      "shortcut": "<Ctrl><Shift>Return"
+    },
+    {
+      "path": [
+        "Format",
+        "Bold"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Bold Ctrl+B",
+      "shortcut": "<Ctrl>B"
+    },
+    {
+      "path": [
+        "Format",
+        "Italic"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Italic Ctrl+I",
+      "shortcut": "<Ctrl>I"
+    },
+    {
+      "path": [
+        "Format",
+        "Underline"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Underline Ctrl+U",
+      "shortcut": "<Ctrl>U"
+    },
+    {
+      "path": [
+        "Format",
+        "Strikethrough"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Strikethrough Ctrl+Shift+X",
+      "shortcut": "<Ctrl><Shift>X"
+    },
+    {
+      "path": [
+        "Format",
+        "Alignment",
+        "Left Align"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Align left Ctrl+L",
+      "shortcut": "<Ctrl>L"
+    },
+    {
+      "path": [
+        "Format",
+        "Alignment",
+        "Center"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Center Ctrl+E",
+      "shortcut": "<Ctrl>E"
+    },
+    {
+      "path": [
+        "Format",
+        "Alignment",
+        "Right Align"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Align right Ctrl+R",
+      "shortcut": "<Ctrl>R"
+    },
+    {
+      "path": [
+        "Format",
+        "Highlighting",
+        "Highlight"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Highlight Ctrl+Shift+H",
+      "shortcut": "<Ctrl><Shift>H"
+    },
+    {
+      "path": [
+        "Format",
+        "Highlighting",
+        "Find Next"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find next highlight Ctrl+Shift+.",
+      "shortcut": "<Ctrl><Shift>period"
+    },
+    {
+      "path": [
+        "Format",
+        "Highlighting",
+        "Find Previous"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find previous highlight Ctrl+Shift+,",
+      "shortcut": "<Ctrl><Shift>comma"
+    },
+    {
+      "path": [
+        "Format",
+        "Upper/Lower Case"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Upper/Lower Case Ctrl+K",
+      "shortcut": "<Ctrl>K"
+    },
+    {
+      "path": [
+        "Format",
+        "Upper/Lower/Title Case"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Upper/Lower/Title Case Ctrl+Shift+K",
+      "shortcut": "<Ctrl><Shift>K"
+    },
+    {
+      "path": [
+        "Format",
+        "Adjust Line Length",
+        "Adjust Current Line"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Adjust Line Length Ctrl+J",
+      "shortcut": "<Ctrl>J"
+    },
+    {
+      "path": [
+        "Format",
+        "Adjust Line Length",
+        "Increase Line Length"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Increase Line Length Ctrl+Shift+J",
+      "shortcut": "<Ctrl><Shift>J"
+    },
+    {
+      "path": [
+        "Format",
+        "Dual Dialogue"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Dual Dialogue Ctrl+D",
+      "shortcut": "<Ctrl>D"
+    },
+    {
+      "path": [
+        "Document",
+        "Title Page",
+        "Show Title Page"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Show Title Page Ctrl+Alt+T",
+      "shortcut": "<Ctrl><Alt>T"
+    },
+    {
+      "path": [
+        "Document",
+        "Index Cards"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Index Cards Ctrl+Alt+I",
+      "shortcut": "<Ctrl><Alt>I"
+    },
+    {
+      "path": [
+        "Document",
+        "In Index Card View",
+        "Go To Scene"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Go To Scene Enter",
+      "shortcut": "Return"
+    },
+    {
+      "path": [
+        "Document",
+        "In Index Card View",
+        "Append Index Card"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Append Index Card Ctrl+Enter",
+      "shortcut": "<Ctrl>Return"
+    },
+    {
+      "path": [
+        "Document",
+        "In Index Card View",
+        "Insert Index Card"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Insert Index Card Ctrl+Alt+Enter",
+      "shortcut": "<Ctrl><Alt>Return"
+    },
+    {
+      "path": [
+        "Document",
+        "In Index Card View",
+        "Edit Scene Heading"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Edit Scene Heading Shift+Enter",
+      "shortcut": "<Shift>Return"
+    },
+    {
+      "path": [
+        "Document",
+        "In Index Card View",
+        "Show Synopsis/Scene Text"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Show Synopsis/Scene Text Ctrl+Alt+Shift+I",
+      "shortcut": "<Ctrl><Shift><Alt>I"
+    },
+    {
+      "path": [
+        "Document",
+        "Notes",
+        "Create/Edit Note…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Create/Edit Note Ctrl+Alt+N",
+      "shortcut": "<Ctrl><Alt>N"
+    },
+    {
+      "path": [
+        "Document",
+        "Notes",
+        "Find Next"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find Next Note Ctrl+Alt+.",
+      "shortcut": "<Ctrl><Alt>period"
+    },
+    {
+      "path": [
+        "Document",
+        "Notes",
+        "Find Previous"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find Previous Note Ctrl+Alt+,",
+      "shortcut": "<Ctrl><Alt>comma"
+    },
+    {
+      "path": [
+        "Document",
+        "Synopsis",
+        "Add/Edit Synopsis…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Create/Edit Synopsis Ctrl+Alt+Y",
+      "shortcut": "<Ctrl><Alt>Y"
+    },
+    {
+      "path": [
+        "Document",
+        "Bookmarks and Links",
+        "Create/Edit Bookmark…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Create/Edit Bookmark Ctrl+Alt+B",
+      "shortcut": "<Ctrl><Alt>B"
+    },
+    {
+      "path": [
+        "Document",
+        "Bookmarks and Links",
+        "Find Next Bookmark"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find Next Bookmark Ctrl+Alt+'",
+      "shortcut": "<Ctrl><Alt>apostrophe"
+    },
+    {
+      "path": [
+        "Document",
+        "Bookmarks and Links",
+        "Find Previous Bookmark"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find Previous Bookmark Ctrl+Alt+;",
+      "shortcut": "<Ctrl><Alt>semicolon"
+    },
+    {
+      "path": [
+        "Document",
+        "Spell Checking…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Spell Checking Ctrl+Alt+K",
+      "shortcut": "<Ctrl><Alt>K"
+    },
+    {
+      "path": [
+        "Document",
+        "Online Tools",
+        "Use Last Lookup"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Use Last Lookup Ctrl+Alt+Shift+K",
+      "shortcut": "<Ctrl><Shift><Alt>K"
+    },
+    {
+      "path": [
+        "Document",
+        "Find Errors",
+        "Find Next Error"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find Next Error Ctrl+Alt+Shift+.",
+      "shortcut": "<Ctrl><Shift><Alt>period"
+    },
+    {
+      "path": [
+        "Document",
+        "Find Errors",
+        "Find Previous Error"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Find Previous Error Ctrl+Alt+Shift+,",
+      "shortcut": "<Ctrl><Shift><Alt>comma"
+    },
+    {
+      "path": [
+        "Document",
+        "Table Read…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Table Read Ctrl+Shift+R",
+      "shortcut": "<Ctrl><Shift>R"
+    },
+    {
+      "path": [
+        "Production",
+        "Revisions…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Revisions Ctrl+Alt+Shift+M",
+      "shortcut": "<Ctrl><Shift><Alt>M"
+    },
+    {
+      "path": [
+        "Production",
+        "Revision Mode"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Revision Mode Ctrl+Shift+M",
+      "shortcut": "<Ctrl><Shift>M"
+    },
+    {
+      "path": [
+        "Production",
+        "Mark Revision"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Mark Revision Ctrl+]",
+      "shortcut": "<Ctrl>bracketright"
+    },
+    {
+      "path": [
+        "Production",
+        "Unmark Revision"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Unmark Revision Ctrl+[",
+      "shortcut": "<Ctrl>bracketleft"
+    },
+    {
+      "path": [
+        "Production",
+        "Next Revision"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Next Revision Ctrl+Alt+]",
+      "shortcut": "<Ctrl><Alt>bracketright"
+    },
+    {
+      "path": [
+        "Production",
+        "Previous Revision"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Previous Revision Ctrl+Alt+[",
+      "shortcut": "<Ctrl><Alt>bracketleft"
+    },
+    {
+      "path": [
+        "Production",
+        "Alternates",
+        "Add Alt for Element"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Add Alt Ctrl+Alt+Shift+=",
+      "shortcut": "<Ctrl><Shift><Alt>equal"
+    },
+    {
+      "path": [
+        "Production",
+        "Alternates",
+        "Delete Alt"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Delete Alt Ctrl+Alt+Shift+-",
+      "shortcut": "<Ctrl><Shift><Alt>minus"
+    },
+    {
+      "path": [
+        "Production",
+        "Alternates",
+        "Next Alt"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Next Alt Ctrl+Alt+=",
+      "shortcut": "<Ctrl><Alt>equal"
+    },
+    {
+      "path": [
+        "Production",
+        "Alternates",
+        "Previous Alt"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Previous Alt Ctrl+Alt+-",
+      "shortcut": "<Ctrl><Alt>minus"
+    },
+    {
+      "path": [
+        "Production",
+        "Tagging Window…"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Tagging Window Ctrl+Shift+A",
+      "shortcut": "<Ctrl><Shift>A"
+    },
+    {
+      "path": [
+        "Help",
+        "Fade In Help"
+      ],
+      "url": "https://www.fadeinpro.com/help/en_US/shortcuts.html",
+      "quote": "Help F1 Ctrl+H",
+      "shortcut": "<Ctrl>H"
+    }
+  ]
+}

@@ -1,0 +1,1033 @@
+{
+  "format": 1,
+  "app": "fadein",
+  "name": "Fade In",
+  "identifiers": [
+    "fadein.desktop",
+    "fadein",
+    "Fade In",
+    "Fade In Professional Screenwriting Software"
+  ],
+  "menus": [
+    {
+      "label": "File",
+      "items": [
+        {
+          "label": "New",
+          "shortcut": "<Ctrl>N"
+        },
+        {
+          "label": "Open…",
+          "shortcut": "<Ctrl>O"
+        },
+        {
+          "label": "Open from Disk…",
+          "shortcut": "<Ctrl><Shift>O"
+        },
+        {
+          "label": "Open Recent"
+        },
+        {
+          "label": "Close",
+          "shortcut": "<Ctrl>W"
+        },
+        {
+          "label": "Templates",
+          "items": [
+            {
+              "label": "New from Template…",
+              "shortcut": "<Ctrl><Shift>N"
+            },
+            {
+              "label": "Manage Templates…"
+            },
+            {
+              "label": "Apply Template…"
+            },
+            {
+              "label": "Save as Template…"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Save",
+          "shortcut": "<Ctrl>S"
+        },
+        {
+          "label": "Save As…",
+          "shortcut": "<Ctrl><Shift>S"
+        },
+        {
+          "label": "Save All",
+          "shortcut": "<Ctrl><Alt>S"
+        },
+        {
+          "label": "Revert to Saved"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Import"
+        },
+        {
+          "label": "Export"
+        },
+        {
+          "label": "Extract and Join"
+        },
+        {
+          "label": "Find File"
+        },
+        {
+          "label": "Recover Backup…"
+        },
+        {
+          "label": "Password…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Create PDF…"
+        },
+        {
+          "label": "Batch Watermark…"
+        },
+        {
+          "label": "Print Setup…"
+        },
+        {
+          "label": "Print Preview"
+        },
+        {
+          "label": "Print…",
+          "shortcut": "<Ctrl>P"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "This Session…",
+          "shortcut": "<Ctrl><Shift>I"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Exit",
+          "shortcut": "<Alt>F4"
+        }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        {
+          "label": "Undo",
+          "shortcut": "<Ctrl>Z"
+        },
+        {
+          "label": "Redo",
+          "shortcut": "<Ctrl>Y"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Cut",
+          "shortcut": "<Ctrl>X"
+        },
+        {
+          "label": "Copy",
+          "shortcut": "<Ctrl>C"
+        },
+        {
+          "label": "Paste",
+          "shortcut": "<Ctrl>V"
+        },
+        {
+          "label": "Paste Unformatted",
+          "shortcut": "<Ctrl><Shift><Alt>V"
+        },
+        {
+          "label": "Delete"
+        },
+        {
+          "label": "Fountain",
+          "items": [
+            {
+              "label": "Copy as Fountain",
+              "shortcut": "<Ctrl><Shift>C"
+            },
+            {
+              "label": "Paste as Fountain",
+              "shortcut": "<Ctrl><Shift>V"
+            },
+            {
+              "label": "Edit as Fountain…",
+              "shortcut": "<Ctrl><Shift><Alt>F"
+            }
+          ]
+        },
+        {
+          "label": "Typing",
+          "items": [
+            {
+              "label": "Non-breaking Space",
+              "shortcut": "<Ctrl><Shift>space"
+            },
+            {
+              "label": "Non-breaking Hyphen"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Select All",
+          "shortcut": "<Ctrl>A"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Find…",
+          "shortcut": "<Ctrl>F"
+        },
+        {
+          "label": "Find and Replace…",
+          "shortcut": "<Ctrl><Shift>F"
+        },
+        {
+          "label": "Find Next",
+          "shortcut": "<Ctrl>G"
+        },
+        {
+          "label": "Find Previous",
+          "shortcut": "<Ctrl><Shift>G"
+        },
+        {
+          "label": "Go To…",
+          "shortcut": "<Ctrl>T"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Extensions"
+        },
+        {
+          "label": "Preferences…"
+        }
+      ]
+    },
+    {
+      "label": "View",
+      "items": [
+        {
+          "label": "Normal"
+        },
+        {
+          "label": "Page View"
+        },
+        {
+          "label": "Continuous"
+        },
+        {
+          "label": "Side by Side"
+        },
+        {
+          "label": "Cycle View Mode"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Layout"
+        },
+        {
+          "label": "Split Tab"
+        },
+        {
+          "label": "Join Tabs"
+        },
+        {
+          "label": "Format/Roster",
+          "items": [
+            {
+              "label": "Format",
+              "shortcut": "<Ctrl><Alt>F"
+            },
+            {
+              "label": "Characters",
+              "shortcut": "<Ctrl><Alt>C"
+            },
+            {
+              "label": "Locations",
+              "shortcut": "<Ctrl><Alt>L"
+            },
+            {
+              "label": "Other Lists",
+              "shortcut": "<Ctrl><Alt>O"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Rebuild Characters",
+              "shortcut": "<Ctrl><Shift><Alt>C"
+            },
+            {
+              "label": "Rebuild Locations",
+              "shortcut": "<Ctrl><Shift><Alt>L"
+            }
+          ]
+        },
+        {
+          "label": "Navigator",
+          "shortcut": "<Ctrl><Alt>G"
+        },
+        {
+          "label": "Toolbar"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Document List",
+          "shortcut": "<Shift><Alt>backslash"
+        },
+        {
+          "label": "Next Document",
+          "shortcut": "<Shift><Alt>bracketright"
+        },
+        {
+          "label": "Previous Document",
+          "shortcut": "<Shift><Alt>bracketleft"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Custom View Colors",
+          "shortcut": "<Ctrl><Alt>R"
+        },
+        {
+          "label": "Focus Current Text",
+          "shortcut": "<Ctrl><Alt>U"
+        },
+        {
+          "label": "Show Invisibles",
+          "shortcut": "<Ctrl><Alt>V"
+        },
+        {
+          "label": "Zoom",
+          "items": [
+            {
+              "label": "Zoom In",
+              "shortcut": "<Ctrl>plus"
+            },
+            {
+              "label": "Zoom Out",
+              "shortcut": "<Ctrl>minus"
+            },
+            {
+              "label": "Zoom to Fit"
+            },
+            {
+              "label": "100%",
+              "shortcut": "<Ctrl><Shift><Alt>0"
+            }
+          ]
+        },
+        {
+          "label": "Full Screen",
+          "shortcut": "<Alt>Return"
+        },
+        {
+          "label": "Full Screen Minimal",
+          "shortcut": "<Shift><Alt>Return"
+        }
+      ]
+    },
+    {
+      "label": "Format",
+      "items": [
+        {
+          "label": "Scene Heading",
+          "shortcut": "<Ctrl>1"
+        },
+        {
+          "label": "Action",
+          "shortcut": "<Ctrl>2"
+        },
+        {
+          "label": "Character",
+          "shortcut": "<Ctrl>3"
+        },
+        {
+          "label": "Parenthetical",
+          "shortcut": "<Ctrl>4"
+        },
+        {
+          "label": "Dialogue",
+          "shortcut": "<Ctrl>5"
+        },
+        {
+          "label": "Transition",
+          "shortcut": "<Ctrl>6"
+        },
+        {
+          "label": "Shot",
+          "shortcut": "<Ctrl>7"
+        },
+        {
+          "label": "Unformatted Text",
+          "shortcut": "<Ctrl>0"
+        },
+        {
+          "label": "Reformat",
+          "items": [
+            {
+              "label": "Scene Heading",
+              "shortcut": "<Ctrl><Alt>1"
+            },
+            {
+              "label": "Action",
+              "shortcut": "<Ctrl><Alt>2"
+            },
+            {
+              "label": "Character",
+              "shortcut": "<Ctrl><Alt>3"
+            },
+            {
+              "label": "Parenthetical",
+              "shortcut": "<Ctrl><Alt>4"
+            },
+            {
+              "label": "Dialogue",
+              "shortcut": "<Ctrl><Alt>5"
+            },
+            {
+              "label": "Transition",
+              "shortcut": "<Ctrl><Alt>6"
+            },
+            {
+              "label": "Shot",
+              "shortcut": "<Ctrl><Alt>7"
+            },
+            {
+              "label": "Unformatted Text",
+              "shortcut": "<Ctrl><Alt>0"
+            }
+          ]
+        },
+        {
+          "label": "Custom Element",
+          "items": [
+            {
+              "label": "Custom Element 1",
+              "shortcut": "<Ctrl><Shift>1"
+            },
+            {
+              "label": "Custom Element 2",
+              "shortcut": "<Ctrl><Shift>2"
+            },
+            {
+              "label": "Custom Element 3",
+              "shortcut": "<Ctrl><Shift>3"
+            },
+            {
+              "label": "Custom Element 4",
+              "shortcut": "<Ctrl><Shift>4"
+            },
+            {
+              "label": "Custom Element 5",
+              "shortcut": "<Ctrl><Shift>5"
+            },
+            {
+              "label": "Custom Element 6",
+              "shortcut": "<Ctrl><Shift>6"
+            },
+            {
+              "label": "Custom Element 7",
+              "shortcut": "<Ctrl><Shift>7"
+            },
+            {
+              "label": "Custom Element 8",
+              "shortcut": "<Ctrl><Shift>8"
+            }
+          ]
+        },
+        {
+          "label": "Reformat as Custom Element",
+          "items": [
+            {
+              "label": "Custom Element 1",
+              "shortcut": "<Ctrl><Shift><Alt>1"
+            },
+            {
+              "label": "Custom Element 2",
+              "shortcut": "<Ctrl><Shift><Alt>2"
+            },
+            {
+              "label": "Custom Element 3",
+              "shortcut": "<Ctrl><Shift><Alt>3"
+            },
+            {
+              "label": "Custom Element 4",
+              "shortcut": "<Ctrl><Shift><Alt>4"
+            },
+            {
+              "label": "Custom Element 5",
+              "shortcut": "<Ctrl><Shift><Alt>5"
+            },
+            {
+              "label": "Custom Element 6",
+              "shortcut": "<Ctrl><Shift><Alt>6"
+            },
+            {
+              "label": "Custom Element 7",
+              "shortcut": "<Ctrl><Shift><Alt>7"
+            },
+            {
+              "label": "Custom Element 8",
+              "shortcut": "<Ctrl><Shift><Alt>8"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Element Styles",
+          "items": [
+            {
+              "label": "Quick Reformat…",
+              "shortcut": "<Ctrl><Shift>T"
+            },
+            {
+              "label": "Modify Element Style…",
+              "shortcut": "<Ctrl><Alt>E"
+            },
+            {
+              "label": "Create New Element…"
+            },
+            {
+              "label": "Delete Element…"
+            },
+            {
+              "label": "Apply Element…",
+              "shortcut": "<Ctrl><Shift>E"
+            },
+            {
+              "label": "Insert Element…",
+              "shortcut": "<Ctrl><Shift>Return"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Bold",
+          "shortcut": "<Ctrl>B"
+        },
+        {
+          "label": "Italic",
+          "shortcut": "<Ctrl>I"
+        },
+        {
+          "label": "Underline",
+          "shortcut": "<Ctrl>U"
+        },
+        {
+          "label": "Strikethrough",
+          "shortcut": "<Ctrl><Shift>X"
+        },
+        {
+          "label": "Remove Formatting"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Alignment",
+          "items": [
+            {
+              "label": "Left Align",
+              "shortcut": "<Ctrl>L"
+            },
+            {
+              "label": "Center",
+              "shortcut": "<Ctrl>E"
+            },
+            {
+              "label": "Right Align",
+              "shortcut": "<Ctrl>R"
+            },
+            {
+              "label": "Justify"
+            }
+          ]
+        },
+        {
+          "label": "Highlighting",
+          "items": [
+            {
+              "label": "Highlight",
+              "shortcut": "<Ctrl><Shift>H"
+            },
+            {
+              "label": "Find Next",
+              "shortcut": "<Ctrl><Shift>period"
+            },
+            {
+              "label": "Find Previous",
+              "shortcut": "<Ctrl><Shift>comma"
+            }
+          ]
+        },
+        {
+          "label": "Format Font…"
+        },
+        {
+          "label": "Upper/Lower Case",
+          "shortcut": "<Ctrl>K"
+        },
+        {
+          "label": "Upper/Lower/Title Case",
+          "shortcut": "<Ctrl><Shift>K"
+        },
+        {
+          "label": "Adjust Line Length",
+          "items": [
+            {
+              "label": "Adjust Current Line",
+              "shortcut": "<Ctrl>J"
+            },
+            {
+              "label": "Increase Line Length",
+              "shortcut": "<Ctrl><Shift>J"
+            },
+            {
+              "label": "Decrease Line Length"
+            },
+            {
+              "label": "Auto Adjust Lines…"
+            },
+            {
+              "label": "Reset Line Adjustment"
+            },
+            {
+              "label": "Find Next"
+            },
+            {
+              "label": "Find Previous"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Dual Dialogue",
+          "shortcut": "<Ctrl>D"
+        },
+        {
+          "label": "Keep With Next"
+        },
+        {
+          "label": "Page Break Before"
+        }
+      ]
+    },
+    {
+      "label": "Document",
+      "items": [
+        {
+          "label": "Title Page",
+          "items": [
+            {
+              "label": "Show Title Page",
+              "shortcut": "<Ctrl><Alt>T"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Title Bookmark"
+            },
+            {
+              "label": "Subtitle Bookmark"
+            },
+            {
+              "label": "Author Bookmark"
+            },
+            {
+              "label": "Copyright Bookmark"
+            },
+            {
+              "label": "Contact Bookmark"
+            },
+            {
+              "label": "Draft Bookmark"
+            }
+          ]
+        },
+        {
+          "label": "Index Cards",
+          "shortcut": "<Ctrl><Alt>I"
+        },
+        {
+          "label": "In Index Card View",
+          "items": [
+            {
+              "label": "Go To Scene",
+              "shortcut": "Return"
+            },
+            {
+              "label": "Append Index Card",
+              "shortcut": "<Ctrl>Return"
+            },
+            {
+              "label": "Insert Index Card",
+              "shortcut": "<Ctrl><Alt>Return"
+            },
+            {
+              "label": "Edit Scene Heading",
+              "shortcut": "<Shift>Return"
+            },
+            {
+              "label": "Show Synopsis/Scene Text",
+              "shortcut": "<Ctrl><Shift><Alt>I"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Page Layout…"
+        },
+        {
+          "label": "Header and Footer…"
+        },
+        {
+          "label": "More and Continued…"
+        },
+        {
+          "label": "Change Document Font…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Notes",
+          "items": [
+            {
+              "label": "Create/Edit Note…",
+              "shortcut": "<Ctrl><Alt>N"
+            },
+            {
+              "label": "Delete Note"
+            },
+            {
+              "label": "Hide Notes"
+            },
+            {
+              "label": "Find Next",
+              "shortcut": "<Ctrl><Alt>period"
+            },
+            {
+              "label": "Find Previous",
+              "shortcut": "<Ctrl><Alt>comma"
+            }
+          ]
+        },
+        {
+          "label": "Synopsis",
+          "items": [
+            {
+              "label": "Add/Edit Synopsis…",
+              "shortcut": "<Ctrl><Alt>Y"
+            },
+            {
+              "label": "Delete Synopsis"
+            },
+            {
+              "label": "Hide Synopsis Icons"
+            }
+          ]
+        },
+        {
+          "label": "Bookmarks and Links",
+          "items": [
+            {
+              "label": "Follow Link"
+            },
+            {
+              "label": "Create/Edit Link…"
+            },
+            {
+              "label": "Remove Link"
+            },
+            {
+              "separator": true
+            },
+            {
+              "label": "Create/Edit Bookmark…",
+              "shortcut": "<Ctrl><Alt>B"
+            },
+            {
+              "label": "Delete Bookmark"
+            },
+            {
+              "label": "Hide Bookmarks"
+            },
+            {
+              "label": "Find Next Bookmark",
+              "shortcut": "<Ctrl><Alt>apostrophe"
+            },
+            {
+              "label": "Find Previous Bookmark",
+              "shortcut": "<Ctrl><Alt>semicolon"
+            }
+          ]
+        },
+        {
+          "label": "Images",
+          "items": [
+            {
+              "label": "Insert Image…"
+            },
+            {
+              "label": "Image Size…"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Manage Lists"
+        },
+        {
+          "label": "Change Character Name…"
+        },
+        {
+          "label": "Dialogue Tuner…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Spell Checking…",
+          "shortcut": "<Ctrl><Alt>K"
+        },
+        {
+          "label": "Online Tools",
+          "items": [
+            {
+              "label": "Dictionary"
+            },
+            {
+              "label": "Thesaurus"
+            },
+            {
+              "label": "Custom Tool"
+            },
+            {
+              "label": "Use Last Lookup",
+              "shortcut": "<Ctrl><Shift><Alt>K"
+            }
+          ]
+        },
+        {
+          "label": "Compare to Previous…"
+        },
+        {
+          "label": "Find Errors",
+          "items": [
+            {
+              "label": "Find Next Error",
+              "shortcut": "<Ctrl><Shift><Alt>period"
+            },
+            {
+              "label": "Find Previous Error",
+              "shortcut": "<Ctrl><Shift><Alt>comma"
+            }
+          ]
+        },
+        {
+          "label": "Table Read…",
+          "shortcut": "<Ctrl><Shift>R"
+        }
+      ]
+    },
+    {
+      "label": "Production",
+      "items": [
+        {
+          "label": "Page Numbering…"
+        },
+        {
+          "label": "Lock Page Numbers"
+        },
+        {
+          "label": "Unlock Current Page"
+        },
+        {
+          "label": "Edit Page Number…"
+        },
+        {
+          "label": "Renumber Pages…"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Scene Numbering…"
+        },
+        {
+          "label": "Lock Scene Numbers"
+        },
+        {
+          "label": "Edit Scene Number…"
+        },
+        {
+          "label": "Renumber Scenes…"
+        },
+        {
+          "label": "Other Numbering"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Revisions…",
+          "shortcut": "<Ctrl><Shift><Alt>M"
+        },
+        {
+          "label": "Revision Mode",
+          "shortcut": "<Ctrl><Shift>M"
+        },
+        {
+          "label": "Modify Revisions…"
+        },
+        {
+          "label": "Mark Revision",
+          "shortcut": "<Ctrl>bracketright"
+        },
+        {
+          "label": "Unmark Revision",
+          "shortcut": "<Ctrl>bracketleft"
+        },
+        {
+          "label": "Next Revision",
+          "shortcut": "<Ctrl><Alt>bracketright"
+        },
+        {
+          "label": "Previous Revision",
+          "shortcut": "<Ctrl><Alt>bracketleft"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Omit Scene"
+        },
+        {
+          "label": "Scene Versions…"
+        },
+        {
+          "label": "Alternates",
+          "items": [
+            {
+              "label": "Add Alt for Element",
+              "shortcut": "<Ctrl><Shift><Alt>equal"
+            },
+            {
+              "label": "Delete Alt",
+              "shortcut": "<Ctrl><Shift><Alt>minus"
+            },
+            {
+              "label": "Next Alt",
+              "shortcut": "<Ctrl><Alt>equal"
+            },
+            {
+              "label": "Previous Alt",
+              "shortcut": "<Ctrl><Alt>minus"
+            },
+            {
+              "label": "Show All Alts for Element"
+            },
+            {
+              "label": "Separate Alts"
+            },
+            {
+              "label": "Edit Alts…"
+            }
+          ]
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Tagging Window…",
+          "shortcut": "<Ctrl><Shift>A"
+        },
+        {
+          "label": "Reports"
+        }
+      ]
+    },
+    {
+      "label": "Help",
+      "items": [
+        {
+          "label": "Fade In Help",
+          "shortcut": "<Ctrl>H"
+        },
+        {
+          "label": "Start Page"
+        },
+        {
+          "label": "Shortcut Keys"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "Website"
+        },
+        {
+          "label": "Support Page"
+        },
+        {
+          "label": "Knowledge Base"
+        },
+        {
+          "label": "Release Notes"
+        },
+        {
+          "label": "Check for Updates"
+        },
+        {
+          "label": "Register"
+        },
+        {
+          "separator": true
+        },
+        {
+          "label": "About Fade In"
+        }
+      ]
+    }
+  ]
+}
