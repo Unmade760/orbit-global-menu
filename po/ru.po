@@ -1,0 +1,705 @@
+# Russian translations for Global Menu
+# Copyright (C) 2026 umenyanetprav
+# This file is distributed under the same license as the global-menu package.
+msgid ""
+msgstr ""
+"Project-Id-Version: global-menu\n"
+"Report-Msgid-Bugs-To: https://github.com/Unmade760/orbit-global-menu/issues\n"
+"POT-Creation-Date: 2026-11-01 22:44+0500\n"
+"PO-Revision-Date: 2026-11-05 01:33+0500\n"
+"Last-Translator: Mikhail Trusov\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#: global-menu@unmade.space/fallbackMenu.js:116
+msgid "Untitled Folder"
+msgstr "Папка без названия"
+
+#: global-menu@unmade.space/fallbackMenu.js:116
+#, javascript-format
+msgid "Untitled Folder %d"
+msgstr "Папка без названия %d"
+
+#: global-menu@unmade.space/fallbackMenu.js:137
+msgid "Empty all items from Trash?"
+msgstr "Удалить все элементы из корзины?"
+
+#: global-menu@unmade.space/fallbackMenu.js:138
+msgid "All items in the Trash will be permanently deleted."
+msgstr "Все элементы в корзине будут удалены без возможности восстановления."
+
+#: global-menu@unmade.space/fallbackMenu.js:142
+#: global-menu@unmade.space/prefsPages/editorPage.js:232
+msgid "Cancel"
+msgstr "Отмена"
+
+#: global-menu@unmade.space/fallbackMenu.js:147
+msgid "Empty Trash"
+msgstr "Очистить корзину"
+
+#: global-menu@unmade.space/fallbackMenu.js:274
+msgid "No Window"
+msgstr "Нет окна"
+
+#: global-menu@unmade.space/fallbackMenu.js:281
+msgid "Snap Window Left"
+msgstr "Прикрепить окно слева"
+
+#: global-menu@unmade.space/fallbackMenu.js:282
+msgid "Snap Window Right"
+msgstr "Прикрепить окно справа"
+
+#: global-menu@unmade.space/fallbackMenu.js:284
+msgid "Switch Between Applications"
+msgstr "Переключение между приложениями"
+
+#: global-menu@unmade.space/fallbackMenu.js:285
+msgid "Cycle Through Windows"
+msgstr "Переключение между окнами"
+
+#: global-menu@unmade.space/fallbackMenu.js:286
+msgid "Window Menu"
+msgstr "Меню окна"
+
+#: global-menu@unmade.space/fallbackMenu.js:314
+msgid "New Window"
+msgstr "Новое окно"
+
+#: global-menu@unmade.space/fallbackMenu.js:318
+#, javascript-format
+msgid "Hide %s"
+msgstr "Скрыть %s"
+
+#: global-menu@unmade.space/fallbackMenu.js:324
+#, javascript-format
+msgid "Quit %s"
+msgstr "Завершить %s"
+
+#: global-menu@unmade.space/fallbackMenu.js:331
+#: global-menu@unmade.space/fallbackMenu.js:433
+msgid "Desktop"
+msgstr "Рабочий стол"
+
+#: global-menu@unmade.space/fallbackMenu.js:336
+msgid "File"
+msgstr "Файл"
+
+#: global-menu@unmade.space/fallbackMenu.js:338
+msgid "New Folder on Desktop"
+msgstr "Создать папку на рабочем столе"
+
+#: global-menu@unmade.space/fallbackMenu.js:339
+msgid "New Tab"
+msgstr "Новая вкладка"
+
+#: global-menu@unmade.space/fallbackMenu.js:340
+msgid "Open"
+msgstr "Открыть"
+
+#: global-menu@unmade.space/fallbackMenu.js:342
+msgid "Properties"
+msgstr "Свойства"
+
+#: global-menu@unmade.space/fallbackMenu.js:344
+msgid "Show Desktop"
+msgstr "Показать рабочий стол"
+
+#: global-menu@unmade.space/fallbackMenu.js:346
+msgid "Close Window"
+msgstr "Закрыть окно"
+
+#: global-menu@unmade.space/fallbackMenu.js:350
+msgid "Edit"
+msgstr "Правка"
+
+#: global-menu@unmade.space/fallbackMenu.js:352
+msgid "Undo"
+msgstr "Отменить"
+
+#: global-menu@unmade.space/fallbackMenu.js:353
+msgid "Redo"
+msgstr "Повторить"
+
+#: global-menu@unmade.space/fallbackMenu.js:355
+msgid "Cut"
+msgstr "Вырезать"
+
+#: global-menu@unmade.space/fallbackMenu.js:356
+msgid "Copy"
+msgstr "Копировать"
+
+#: global-menu@unmade.space/fallbackMenu.js:357
+msgid "Paste"
+msgstr "Вставить"
+
+#: global-menu@unmade.space/fallbackMenu.js:358
+msgid "Delete"
+msgstr "Удалить"
+
+#: global-menu@unmade.space/fallbackMenu.js:360
+msgid "Select All"
+msgstr "Выделить всё"
+
+#: global-menu@unmade.space/fallbackMenu.js:362
+msgid "Take Screenshot"
+msgstr "Сделать снимок экрана"
+
+#: global-menu@unmade.space/fallbackMenu.js:363
+msgid "Screenshot of Window"
+msgstr "Снимок окна"
+
+#: global-menu@unmade.space/fallbackMenu.js:364
+msgid "Screenshot of Area"
+msgstr "Снимок области экрана"
+
+#: global-menu@unmade.space/fallbackMenu.js:368
+msgid "Go"
+msgstr "Переход"
+
+#: global-menu@unmade.space/fallbackMenu.js:370
+msgid "Back"
+msgstr "Назад"
+
+#: global-menu@unmade.space/fallbackMenu.js:371
+msgid "Forward"
+msgstr "Вперёд"
+
+#: global-menu@unmade.space/fallbackMenu.js:373
+msgid "Next Workspace"
+msgstr "Следующая рабочая область"
+
+#: global-menu@unmade.space/fallbackMenu.js:374
+msgid "Previous Workspace"
+msgstr "Предыдущая рабочая область"
+
+#: global-menu@unmade.space/fallbackMenu.js:375
+msgid "First Workspace"
+msgstr "Первая рабочая область"
+
+#: global-menu@unmade.space/fallbackMenu.js:379
+msgid "Window"
+msgstr "Окно"
+
+#: global-menu@unmade.space/fallbackMenu.js:383
+msgid "System"
+msgstr "Система"
+
+#: global-menu@unmade.space/fallbackMenu.js:386
+msgid "Show Applications"
+msgstr "Показать приложения"
+
+#: global-menu@unmade.space/fallbackMenu.js:387
+msgid "Show Notifications"
+msgstr "Показать уведомления"
+
+#: global-menu@unmade.space/fallbackMenu.js:389
+msgid "Open Files"
+msgstr "Открыть файлы"
+
+#: global-menu@unmade.space/fallbackMenu.js:390
+msgid "Settings"
+msgstr "Параметры"
+
+#: global-menu@unmade.space/fallbackMenu.js:392
+msgid "Empty Trash…"
+msgstr "Очистить корзину…"
+
+#: global-menu@unmade.space/fallbackMenu.js:394
+msgid "Lock Screen"
+msgstr "Заблокировать экран"
+
+#: global-menu@unmade.space/fallbackMenu.js:395
+msgid "Suspend"
+msgstr "Режим ожидания"
+
+#: global-menu@unmade.space/fallbackMenu.js:396
+msgid "Hibernate"
+msgstr "Режим гибернации"
+
+#: global-menu@unmade.space/fallbackMenu.js:398
+msgid "Log Out"
+msgstr "Выйти из системы"
+
+#: global-menu@unmade.space/fallbackMenu.js:399
+msgid "Power Off / Restart"
+msgstr "Выключить / перезагрузить"
+
+#: global-menu@unmade.space/prefs.js:16
+msgid "General"
+msgstr "Общие"
+
+#: global-menu@unmade.space/prefs.js:17
+#: global-menu@unmade.space/prefsPages/editorPage.js:103
+msgid "Menus"
+msgstr "Меню"
+
+#: global-menu@unmade.space/prefs.js:21
+msgid "Fallback menu"
+msgstr "Запасное меню"
+
+#: global-menu@unmade.space/prefs.js:22
+msgid ""
+"Show a generic app name, File, Edit, Go and Window menu for apps that have "
+"none of their own"
+msgstr ""
+"Показывать общее название приложения и меню «Файл», «Правка», «Переход» и "
+"«Окно» для приложений без собственных меню"
+
+#: global-menu@unmade.space/prefs.js:28
+msgid "Shortcut menus"
+msgstr "Меню сочетаний клавиш"
+
+#: global-menu@unmade.space/prefs.js:29
+msgid ""
+"For supported apps without a menu of their own, show curated menus that send "
+"the app's real keyboard shortcuts"
+msgstr ""
+"Для поддерживаемых приложений без собственных меню показывать подготовленные "
+"меню, использующие настоящие сочетания клавиш приложения"
+
+#: global-menu@unmade.space/prefs.js:34
+msgid "Development"
+msgstr "Разработка"
+
+#: global-menu@unmade.space/prefs.js:38
+msgid "Debug shortcut menus"
+msgstr "Отладка меню сочетаний клавиш"
+
+#: global-menu@unmade.space/prefs.js:39
+msgid "Log shortcut-menu resolution and key synthesis to the journal"
+msgstr ""
+"Записывать выбор меню сочетаний клавиш и эмуляцию нажатий клавиш в системный "
+"журнал"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:24
+msgid "Appearance"
+msgstr "Внешний вид"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:55
+msgid "Keyboard Shortcuts"
+msgstr "Сочетания клавиш"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:59
+msgid "Show shortcuts"
+msgstr "Показывать сочетания клавиш"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:62
+msgid "Always"
+msgstr "Всегда"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:63
+msgid "While holding a key"
+msgstr "При удержании клавиши"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:64
+msgid "Never"
+msgstr "Никогда"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:69
+msgid "Key to hold"
+msgstr "Удерживаемая клавиша"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:72
+msgid "Alt"
+msgstr "Alt"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:73
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:74
+msgid "Shift"
+msgstr "Shift"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:75
+msgid "Super"
+msgstr "Super"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:106
+msgid "Popup Blur"
+msgstr "Размытие всплывающих меню"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:108
+msgid ""
+"Blurs what is behind popup menus, through Blur My Shell. The panel bar "
+"itself is blurred by Blur My Shell's own \"Panel\" setting."
+msgstr ""
+"Размывает содержимое за всплывающими меню с помощью Blur My Shell. Размытие "
+"самой панели настраивается параметром «Панель» в Blur My Shell."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:109
+msgid "Blur My Shell is not installed, so these options will have no effect."
+msgstr ""
+"Расширение Blur My Shell не установлено, поэтому эти параметры не будут "
+"действовать."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:114
+msgid "Blur behind popup menus"
+msgstr "Размывать фон всплывающих меню"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:115
+msgid "Dynamic blur: re-rendered as the content behind moves"
+msgstr ""
+"Динамическое размытие: перерисовывается при перемещении содержимого на фоне"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:121
+msgid "Blur intensity"
+msgstr "Интенсивность размытия"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:122
+msgid "Sigma of the gaussian blur"
+msgstr "Сигма размытия по Гауссу"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:126
+msgid "Brightness"
+msgstr "Яркость"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:127
+msgid "1.00 = no dimming of the blurred area"
+msgstr "1,00 — без затемнения размытой области"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:137
+msgid "Popup Menus"
+msgstr "Всплывающие меню"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:141
+msgid "Background opacity"
+msgstr "Непрозрачность фона"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:142
+msgid "Lower is more translucent. Blur is invisible at 100%."
+msgstr "Чем ниже значение, тем прозрачнее фон. При 100% размытие не видно."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:146
+msgid "Corner radius"
+msgstr "Радиус углов"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:147
+msgid "In pixels"
+msgstr "В пикселях"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:152
+msgid "Hide pointer arrow"
+msgstr "Скрыть стрелку меню"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:153
+msgid "Menus drop straight down from the bar instead of pointing at the button"
+msgstr "Меню раскрываются прямо вниз от панели, а не указывают на кнопку"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:160
+msgid "Menu Bar"
+msgstr "Строка меню"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:164
+msgid "Button spacing"
+msgstr "Интервал между кнопками"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:165
+msgid "Horizontal button padding in pixels. The GNOME default is 12."
+msgstr ""
+"Горизонтальный отступ кнопок в пикселях. Значение GNOME по умолчанию — 12."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:169
+msgid "Font size"
+msgstr "Размер шрифта"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:170
+msgid "In points. 0 keeps the theme default."
+msgstr "В пунктах. 0 — размер по умолчанию для темы."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:175
+msgid "Bold app name"
+msgstr "Название приложения полужирным"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:176
+msgid "Show the focused app's name button in bold"
+msgstr "Показывать кнопку с названием активного приложения полужирным"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:182
+msgid "Hide App Name"
+msgstr "Скрыть название приложения"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:183
+msgid "Removes the focused app's name button from the bar"
+msgstr "Убирает кнопку с названием активного приложения с панели"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:189
+msgid "Hide workspace indicator"
+msgstr "Скрыть индикатор рабочих областей"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:190
+msgid "Hides GNOME's Activities and workspace pill at the left of the panel"
+msgstr ""
+"Скрывает кнопку «Обзор» GNOME и индикатор рабочих областей слева на панели"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:26
+msgid "Applications"
+msgstr "Приложения"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:31
+msgid "Shortcut Menus"
+msgstr "Меню сочетаний клавиш"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:32
+msgid ""
+"Per-app curated menus that synthesize the app's real keyboard shortcuts. "
+"Editing a built-in creates a user override; built-in files are never "
+"modified."
+msgstr ""
+"Подготовленные для каждого приложения меню, использующие его настоящие "
+"сочетания клавиш. При изменении встроенного меню создаётся пользовательская "
+"версия; встроенные файлы не изменяются."
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:59
+msgid "Add Application…"
+msgstr "Добавить приложение…"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:75
+#, javascript-format
+msgid "Error: %s"
+msgstr "Ошибка: %s"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:75
+msgid "failed to load"
+msgstr "не удалось загрузить"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:78
+msgid "Built-in, overridden"
+msgstr "Встроенное, переопределено"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:80
+msgid "Custom"
+msgstr "Пользовательское"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:82
+msgid "Built-in"
+msgstr "Встроенное"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:120
+msgid "Add Application"
+msgstr "Добавить приложение"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:129
+msgid "Or type an app id / identifier manually"
+msgstr "Или введите ID / идентификатор приложения вручную"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:131
+msgid "Create Blank Mapping"
+msgstr "Создать пустое сопоставление"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:141
+msgid "Search installed applications"
+msgstr "Найти установленные приложения"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:67
+msgid "Save"
+msgstr "Сохранить"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:74
+msgid "Reset to Built-in Default"
+msgstr "Восстановить встроенные значения"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:74
+msgid "Delete This Mapping"
+msgstr "Удалить это сопоставление"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:81
+msgid "Application"
+msgstr "Приложение"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:84
+msgid "Display Name"
+msgstr "Отображаемое название"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:88
+msgid "App ID (file name, fixed)"
+msgstr "ID приложения (имя файла, нельзя изменить)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:93
+msgid "Identifiers (comma-separated)"
+msgstr "Идентификаторы (через запятую)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:99
+msgid ""
+"This is a built-in mapping. Saving creates a user override in ~/.config/"
+"global-menu/shortcuts/apps. The built-in file itself is never modified."
+msgstr ""
+"Это встроенное сопоставление. При сохранении пользовательская версия будет "
+"создана в ~/.config/global-menu/shortcuts/apps. Сам встроенный файл не "
+"изменяется."
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:104
+msgid ""
+"Click the shortcut button on an item to set it, exactly like GNOME Settings' "
+"Keyboard Shortcuts panel."
+msgstr ""
+"Нажмите кнопку сочетания клавиш у пункта, чтобы задать его, как на панели "
+"«Сочетания клавиш» в настройках GNOME."
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:117
+msgid "(untitled menu)"
+msgstr "(меню без названия)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:134
+msgid "Add Item"
+msgstr "Добавить пункт"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:136
+msgid "New Item"
+msgstr "Новый пункт"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:141
+msgid "Add Separator"
+msgstr "Добавить разделитель"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:152
+msgid "Add Menu…"
+msgstr "Добавить меню…"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:154
+msgid "New Menu"
+msgstr "Новое меню"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:163
+msgid "── Separator ──"
+msgstr "── Разделитель ──"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:173
+msgid "(complex item)"
+msgstr "(сложный пункт)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:174
+msgid "Submenu or advanced item. Not editable here, kept as it is on save."
+msgstr ""
+"Подменю или расширенный пункт. Здесь его нельзя изменить; при сохранении он "
+"останется без изменений."
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:183
+msgid "Label"
+msgstr "Название"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:192
+msgid "Disabled"
+msgstr "Отключено"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:200
+msgid "(unnamed item)"
+msgstr "(пункт без названия)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:229
+msgid "Rename Menu"
+msgstr "Переименовать меню"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:233
+msgid "Rename"
+msgstr "Переименовать"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:273
+#, javascript-format
+msgid "Saved, but %d item had a problem: %s"
+msgid_plural "Saved, but %d items had problems: %s"
+msgstr[0] "Сохранено, но у %d пункта возникла проблема: %s"
+msgstr[1] "Сохранено, но у %d пунктов возникли проблемы: %s"
+msgstr[2] "Сохранено, но у %d пунктов возникли проблемы: %s"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:276
+msgid "Saved"
+msgstr "Сохранено"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:285
+#, javascript-format
+msgid "Could not delete: %s"
+msgstr "Не удалось удалить: %s"
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:32
+msgid "Set Shortcut"
+msgstr "Задать сочетание клавиш"
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:35
+#, javascript-format
+msgid "Enter new shortcut to change <b>%s</b>"
+msgstr "Введите новое сочетание клавиш для изменения <b>%s</b>"
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:42
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:79
+msgid "Enter a new shortcut…"
+msgstr "Введите новое сочетание клавиш…"
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:50
+msgid "Press Esc to cancel or Backspace to disable the keyboard shortcut"
+msgstr "Нажмите Esc для отмены или Backspace, чтобы отключить сочетание клавиш"
+
+#. Translators: %s is a key combination such as "Ctrl+Shift+F"
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:86
+#, javascript-format
+msgid "\"%s\" is not supported, try another"
+msgstr "Сочетание «%s» не поддерживается, попробуйте другое"
+
+#: global-menu@unmade.space/windowActions.js:16
+msgid "Minimize"
+msgstr "Свернуть"
+
+#: global-menu@unmade.space/windowActions.js:17
+msgid "Unmaximize"
+msgstr "Восстановить"
+
+#: global-menu@unmade.space/windowActions.js:18
+msgid "Maximize"
+msgstr "Развернуть"
+
+#: global-menu@unmade.space/windowActions.js:19
+msgid "Move"
+msgstr "Переместить"
+
+#: global-menu@unmade.space/windowActions.js:20
+msgid "Resize"
+msgstr "Изменить размер"
+
+#: global-menu@unmade.space/windowActions.js:21
+msgid "Always on Top"
+msgstr "Всегда поверх остальных"
+
+#: global-menu@unmade.space/windowActions.js:22
+msgid "Always on Visible Workspace"
+msgstr "Всегда на видимой рабочей области"
+
+#: global-menu@unmade.space/windowActions.js:23
+msgid "Move to Workspace Left"
+msgstr "Переместить на рабочую область слева"
+
+#: global-menu@unmade.space/windowActions.js:24
+msgid "Move to Workspace Right"
+msgstr "Переместить на рабочую область справа"
+
+#: global-menu@unmade.space/windowActions.js:25
+msgid "Move to Workspace Up"
+msgstr "Переместить на рабочую область выше"
+
+#: global-menu@unmade.space/windowActions.js:26
+msgid "Move to Workspace Down"
+msgstr "Переместить на рабочую область ниже"
+
+#: global-menu@unmade.space/windowActions.js:27
+msgid "Move to Monitor Up"
+msgstr "Переместить на монитор выше"
+
+#: global-menu@unmade.space/windowActions.js:28
+msgid "Move to Monitor Down"
+msgstr "Переместить на монитор ниже"
+
+#: global-menu@unmade.space/windowActions.js:29
+msgid "Move to Monitor Left"
+msgstr "Переместить на монитор слева"
+
+#: global-menu@unmade.space/windowActions.js:30
+msgid "Move to Monitor Right"
+msgstr "Переместить на монитор справа"
+
+#: global-menu@unmade.space/windowActions.js:31
+msgid "Close"
+msgstr "Закрыть"
