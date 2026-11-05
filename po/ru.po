@@ -8,8 +8,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-01 22:44+0500\n"
 "PO-Revision-Date: 2026-11-05 01:33+0500\n"
 "Last-Translator: Mikhail Trusov\n"
-"Language-Team: Russian(Russia)\n"
-"Language: ru_RU\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -215,11 +215,11 @@ msgstr "Заблокировать экран"
 
 #: global-menu@unmade.space/fallbackMenu.js:395
 msgid "Suspend"
-msgstr "Ждущий режим"
+msgstr "Режим ожидания"
 
 #: global-menu@unmade.space/fallbackMenu.js:396
 msgid "Hibernate"
-msgstr "Спящий режим"
+msgstr "Режим гибернации"
 
 #: global-menu@unmade.space/fallbackMenu.js:398
 msgid "Log Out"
@@ -385,7 +385,7 @@ msgstr "В пикселях"
 
 #: global-menu@unmade.space/prefsPages/appearancePage.js:152
 msgid "Hide pointer arrow"
-msgstr "Скрыть указатель"
+msgstr "Скрыть стрелку меню"
 
 #: global-menu@unmade.space/prefsPages/appearancePage.js:153
 msgid "Menus drop straight down from the bar instead of pointing at the button"
@@ -666,7 +666,7 @@ msgstr "Всегда поверх остальных"
 
 #: global-menu@unmade.space/windowActions.js:22
 msgid "Always on Visible Workspace"
-msgstr "На всех видимых рабочих областях"
+msgstr "Всегда на видимой рабочей области"
 
 #: global-menu@unmade.space/windowActions.js:23
 msgid "Move to Workspace Left"

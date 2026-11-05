@@ -148,9 +148,9 @@ installed and does nothing without it.
 ## Translations
 
 The preferences window, the fallback menu and the window menu are translated
-through gettext. Simplified Chinese (`zh_CN`) is included. Menus an app
-exports arrive in the app's own language. The curated shortcut menus are
-English for now.
+through gettext. Simplified Chinese (`zh_CN`) and Russian (`ru`) are
+included. Menus an app exports arrive in the app's own language. The curated
+shortcut menus are English for now.
 
 To add a language, copy `po/global-menu.pot` to `po/<lang>.po`, translate it,
 and run `tools/i18n.sh`, which compiles it into the extension's `locale/`
