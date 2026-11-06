@@ -29,6 +29,7 @@ export const EXT_DIR = GLib.build_filenamev([
 const KEY_SYNTH_STUB = `
 export function sendShortcut() { return true; }
 export function sendShortcutAfterMenu() {}
+export function activateActionAfterMenu() {}
 export function cancelPendingShortcuts() {}
 export function setDebug() {}
 `;

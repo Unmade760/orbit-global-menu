@@ -71,7 +71,7 @@ function exactKeys(obj, allowed) {
     return extra.length ? `unknown key(s) ${extra.map(k => JSON.stringify(k)).join(', ')}` : null;
 }
 
-// The four item shapes of docs/shortcut-mappings.md, and nothing else.
+// The five item shapes of docs/shortcut-mappings.md, and nothing else.
 function checkItems(items, path, counts, report) {
     if (!Array.isArray(items)) {
         report(`${path}: "items" is not an array`);
@@ -107,12 +107,17 @@ function checkItems(items, path, counts, report) {
             checkItems(item.items, itemPath, counts, report);
             return;
         }
-        const extra = exactKeys(item, ['label', 'shortcut']);
+        const extra = exactKeys(item, ['label', 'shortcut', 'action', 'target']);
         if (extra)
             report(`${itemPath}: ${extra}`);
+        if ('action' in item && !nonEmptyString(item.action))
+            report(`${itemPath}: "action" is not a non-empty string`);
+        if ('target' in item && !('action' in item))
+            report(`${itemPath}: "target" without "action"`);
         counts.items++;
         if (!('shortcut' in item)) {
-            counts.placeholders++;
+            if (!('action' in item))
+                counts.placeholders++;
             return;
         }
         if (typeof item.shortcut !== 'string') {

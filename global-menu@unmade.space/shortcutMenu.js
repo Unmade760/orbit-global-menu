@@ -1,7 +1,7 @@
 
 import {MenuBarButton} from './menuBarButton.js';
 import {addBarButton} from './panelBar.js';
-import {sendShortcutAfterMenu} from './keySynth.js';
+import {activateActionAfterMenu, sendShortcutAfterMenu} from './keySynth.js';
 
 export class ShortcutMenu {
 	constructor(uuid) {
@@ -28,7 +28,8 @@ export class ShortcutMenu {
 				addBarButton(`${this._uuid}-shortcut-${index}`, btn, 1 + index);
 				this._buttons.push(btn);
 			}
-			btn.setItems(this._toSpecs(menu.items));
+			// a large mapping costs too many actors to build on every focus change
+			btn.setItems(() => this._toSpecs(menu.items));
 		});
 	}
 
@@ -56,6 +57,8 @@ export class ShortcutMenu {
 				return {separator: true};
 			if (item.items)
 				return {label: item.label, children: this._toSpecs(item.items)};
+			if (item.action)
+				return {label: item.label, accel: item.shortcut, onActivate: () => activateActionAfterMenu(item.action, item.target, item.shortcut)};
 			if (item.shortcut)
 				return {label: item.label, accel: item.shortcut, onActivate: () => sendShortcutAfterMenu(item.shortcut)};
 			return {label: item.label, enabled: false};

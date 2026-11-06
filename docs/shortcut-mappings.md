@@ -55,9 +55,16 @@ apps whose window is not a document window, such as a launcher's search box.
 | Shape | Result |
 | --- | --- |
 | `{"label": "...", "shortcut": "..."}` | Sends the shortcut |
+| `{"label": "...", "action": "...", "shortcut": "..."}` | Activates the GTK action, sends the shortcut if that fails |
 | `{"label": "..."}` | Greyed out, for actions with no usable shortcut |
 | `{"separator": true}` | A separator line |
 | `{"label": "...", "items": [...]}` | A submenu |
+
+`action` is a name from the window's `org.gtk.Actions` (`gdbus call --session
+-d BUS -o PATH -m org.gtk.Actions.DescribeAll`). It reaches items that have no
+shortcut in apps that export actions but no menu, such as GIMP. `shortcut` is
+then optional and also labels the item. An action that takes an integer needs
+`"target": N`.
 
 A placeholder is the honest thing to write when the application reaches an
 action only through a menu of its own or a mouse gesture. Do not invent a

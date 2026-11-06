@@ -125,6 +125,22 @@ test('validateMapping keeps separators, placeholders and submenus, drops bad sho
     assert.ok(warnings[0].message.includes('unparseable shortcut "<Meta>Z"'), warnings[0].message);
 });
 
+test('validateMapping keeps action items and drops bad targets', () => {
+    const warnings = [];
+    const result = validateMapping(mapping('ed', ['ed'], [{
+        label: 'Filters', items: [
+            {label: 'Blur', action: 'filters-blur'},
+            {label: 'Radio', action: 'mode-rgb', target: 0, shortcut: '<Ctrl>R'},
+            {label: 'Bad', action: 'mode-x', target: 'zero'},
+        ],
+    }]), 'ed', warnings);
+    assert.deepEqual(result.menus[0].items, [
+        {label: 'Blur', action: 'filters-blur'},
+        {label: 'Radio', action: 'mode-rgb', shortcut: '<Ctrl>R', target: 0},
+    ]);
+    assert.equal(warnings.length, 1);
+});
+
 test('validateMapping rejects a wrong format, app id or empty identifiers', () => {
     for (const [raw, why] of [
         [{...mapping('x', ['x']), format: 2}, 'format'],

@@ -189,7 +189,7 @@ export class EditorPage {
 		const shortcutButton = new Gtk.Button({valign: Gtk.Align.CENTER, css_classes: ['flat']});
 		const refreshShortcutButton = () => {
 			const content = new Gtk.Box({spacing: 6});
-			content.append(new Gtk.Label({label: item.shortcut ? prettyAccel(item.shortcut) : _('Disabled')}));
+			content.append(new Gtk.Label({label: item.shortcut ? prettyAccel(item.shortcut) : item.action ?? _('Disabled')}));
 			content.append(new Gtk.Image({icon_name: 'document-edit-symbolic'}));
 			shortcutButton.set_child(content);
 		};
@@ -201,6 +201,9 @@ export class EditorPage {
 				onCaptured: result => {
 					if (result === undefined)
 						return;
+					// the action would win over a shortcut set here
+					delete item.action;
+					delete item.target;
 					if (result === null)
 						delete item.shortcut;
 					else

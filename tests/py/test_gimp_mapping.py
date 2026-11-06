@@ -1,7 +1,7 @@
-# The built-in GIMP mapping follows GIMP 3.2's own menu bar (File, Edit, Select, View, Image,
-# Layer, Tools, Filters, Windows, Help) and the accelerators in app/actions/*-actions.c and
-# app/tools/*.c at GIMP_3_2_6. verify-mapping proves each chord against those files; this checks
-# that the mapping and its records agree and that the audited mistakes stay fixed.
+# The built-in GIMP mapping is built by tools/gimp-menu.py from GIMP 3.2's own menu bar and the
+# accelerators in app/actions/*-actions.c and app/tools/*.c at GIMP_3_2_6. verify-mapping proves
+# each chord against those files; this checks that the mapping and its records agree, that every
+# item reaches a GIMP action, and that the audited mistakes stay fixed.
 
 import json
 import os
@@ -29,6 +29,14 @@ def walk(items, path=()):
             yield here, item.get('shortcut')
 
 
+def leaves(items):
+    for item in items:
+        if 'items' in item:
+            yield from leaves(item['items'])
+        elif not item.get('separator'):
+            yield item
+
+
 @pytest.fixture(scope='module')
 def mapping():
     return load(MAPPING)
@@ -41,19 +49,41 @@ def by_path(mapping):
 
 def test_menu_bar_is_gimps_own(mapping):
     labels = [m['label'] for m in mapping['menus']]
-    assert labels == ['File', 'Edit', 'Select', 'View', 'Image', 'Layer', 'Tools', 'Filters',
-                      'Windows', 'Help']
+    assert labels == ['File', 'Edit', 'Select', 'View', 'Image', 'Layer', 'Colors', 'Tools',
+                      'Filters', 'Windows', 'Help']
+
+
+def test_every_item_activates_an_action(mapping):
+    # issue 19 filters and colors have no chords so only actions can reach them
+    for menu in mapping['menus']:
+        for item in leaves(menu['items']):
+            assert item.get('action'), item['label']
+
+
+def test_filters_and_colors_are_whole(mapping, by_path):
+    menus = {m['label']: m['items'] for m in mapping['menus']}
+    submenus = [i['label'] for i in menus['Filters'] if 'items' in i]
+    assert submenus == ['Blur', 'Enhance', 'Distorts', 'Light and Shadow', 'Noise', 'Edge-Detect',
+                        'Generic', 'Combine', 'Artistic', 'Decor', 'Map', 'Render', 'Web',
+                        'Animation', 'Development']
+    assert ('Filters', 'Blur', 'Gaussian Blur…') in by_path
+    assert sum(1 for _ in leaves(menus['Colors'])) > 40
+
+
+def test_no_recent_files_or_other_session_state(mapping):
+    text = json.dumps(mapping)
+    assert 'icns' not in text and 'wayland-0' not in text
 
 
 def test_merge_down_has_no_chord(by_path):
     # layers-actions.c gives layers-merge-down no accelerator; Ctrl+M is Merge Visible Layers.
-    assert ('Layer', 'Merge Down') not in by_path
+    assert by_path[('Layer', 'Merge Down')] is None
     assert by_path[('Image', 'Merge Visible Layers…')] == '<Ctrl>M'
 
 
 def test_navigation_window_has_no_chord(by_path):
     # dialogs-actions.c gives it none; Ctrl+Shift+N is Layer > New Layer.
-    assert not [p for p in by_path if p[-1] == 'Navigation Window']
+    assert by_path[('View', 'Navigation Window')] is None
     assert by_path[('Layer', 'New Layer…')] == '<Ctrl><Shift>N'
     assert list(by_path.values()).count('<Ctrl><Shift>N') == 1
 
@@ -77,7 +107,6 @@ def test_tool_keys_sit_under_the_tool_groups(by_path):
     assert by_path[('Tools', 'Transform Tools', 'Crop')] == '<Shift>C'
     assert by_path[('Tools', 'Paths')] == 'B'
     assert by_path[('Tools', 'Color Picker')] == 'O'
-    assert not {p[0] for p in by_path} & {'Colors'}
 
 
 def test_menu_chords_that_were_missing(by_path):

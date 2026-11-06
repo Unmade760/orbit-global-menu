@@ -55,6 +55,7 @@ const MAPPING = {
                 {label: 'Save', shortcut: '<Ctrl>S'},
                 {separator: true},
                 {label: 'Only by Mouse'},
+                {label: 'Blur', action: 'filters-blur', shortcut: '<Ctrl>B'},
             ],
         },
         {
@@ -79,12 +80,13 @@ test('ShortcutMenu: one bar button per menu, after the app-name button', () => {
 test('ShortcutMenu: shortcut, separator, placeholder and submenu specs; the shortcut is the accel', () => {
     const rec = reset();
     new ShortcutMenu('uuid').setMapping(MAPPING);
-    assert.deepEqual(plain(rec.buttons[0].items), [
+    assert.deepEqual(plain(rec.buttons[0].items()), [
         {label: 'Save', accel: '<Ctrl>S', onActivate: 'fn:onActivate'},
         {separator: true},
         {label: 'Only by Mouse', enabled: false},
+        {label: 'Blur', accel: '<Ctrl>B', onActivate: 'fn:onActivate'},
     ]);
-    assert.deepEqual(plain(rec.buttons[1].items), [
+    assert.deepEqual(plain(rec.buttons[1].items()), [
         {label: 'Zoom', children: [{label: 'Zoom In', accel: '<Ctrl>plus', onActivate: 'fn:onActivate'}]},
     ]);
 });

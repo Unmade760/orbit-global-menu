@@ -135,6 +135,21 @@ function sanitizeItems(items, path, warn) {
 		}
 		if (Array.isArray(item.items)) {
 			out.push({label: item.label, items: sanitizeItems(item.items, `${path} » ${item.label}`, warn)});
+		} else if (typeof item.action === 'string' && item.action !== '') {
+			if (item.shortcut !== undefined && (typeof item.shortcut !== 'string' || !parseAccelerator(item.shortcut))) {
+				warn(`${path} » ${item.label}: unparseable shortcut ${JSON.stringify(item.shortcut)}, item dropped`);
+				continue;
+			}
+			if (item.target !== undefined && !Number.isInteger(item.target)) {
+				warn(`${path} » ${item.label}: target must be an integer, item dropped`);
+				continue;
+			}
+			const leaf = {label: item.label, action: item.action};
+			if (item.shortcut !== undefined)
+				leaf.shortcut = item.shortcut;
+			if (item.target !== undefined)
+				leaf.target = item.target;
+			out.push(leaf);
 		} else if (item.shortcut !== undefined) {
 			if (typeof item.shortcut !== 'string' || !parseAccelerator(item.shortcut)) {
 				warn(`${path} » ${item.label}: unparseable shortcut ${JSON.stringify(item.shortcut)}, item dropped`);
