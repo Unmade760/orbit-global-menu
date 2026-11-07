@@ -187,6 +187,18 @@ class DbusMenu:
 			if not d['label'] and 'children' not in d:
 				continue
 			out.append(d)
+		return self._trim_separators(out)
+
+	# vlc piles up a separator each time it rebuilds a menu
+	@staticmethod
+	def _trim_separators(items):
+		out = []
+		for d in items:
+			if d.get('separator') and (not out or out[-1].get('separator')):
+				continue
+			out.append(d)
+		while out and out[-1].get('separator'):
+			out.pop()
 		return out
 
 	def _send_tree(self, only_if_changed=False):

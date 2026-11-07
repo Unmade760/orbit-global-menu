@@ -259,3 +259,74 @@ def test_every_call_to_the_app_has_a_timeout(app):
 	assert refused
 	assert {c[3] for c in session.calls} >= {'GetMenuForWindow', 'GetLayout', 'AboutToShow', 'Event'}
 	assert session.untimed_calls(CLIENT_TIMEOUT) == []
+
+
+def test_qt_submenu_layout_is_read_from_the_root():
+	# Qt answers GetLayout on a submenu id with an empty or unrelated menu
+	session = FakeSession()
+	window = FakeWindow({})
+	install_dbusmenu_app(session, LAYOUT, window)
+	full = session.handlers[(DBUSMENU_BUS, DBUSMENU_PATH, 'com.canonical.dbusmenu', 'GetLayout')]
+
+	def qt_get_layout(parent, depth, props):
+		if int(parent) == 0:
+			return full(parent, depth, props)
+		return full(12, depth, props)
+	session.on(DBUSMENU_BUS, DBUSMENU_PATH, 'com.canonical.dbusmenu', 'GetLayout', qt_get_layout)
+	model = MenuModel(session, window)
+	model._update_menus()
+	tree = json_tree(model)
+	assert [c['label'] for c in find(tree, '_File', 'Recent')['children']] == ['a.txt']
+	assert [c['label'] for c in find(tree, '_Help')['children']] == ['About']
+
+
+def test_submenu_filled_on_about_to_show():
+	layout = dm(0, SUB, [dm(1, {'label': '_View', **SUB}, [])])
+	session = FakeSession()
+	window = FakeWindow({})
+	install_dbusmenu_app(session, layout, window)
+
+	def fill(item_id):
+		if int(item_id) == 1 and not layout[2][0][2]:
+			layout[2][0][2].append(dm(2, {'label': 'Zoom', **SUB}, []))
+		if int(item_id) == 2 and not layout[2][0][2][0][2]:
+			layout[2][0][2][0][2].append(dm(3, {'label': 'In'}))
+		return dbus.Boolean(True)
+	session.on(DBUSMENU_BUS, DBUSMENU_PATH, 'com.canonical.dbusmenu', 'AboutToShow', fill)
+	model = MenuModel(session, window)
+	model._update_menus()
+	assert find(json_tree(model), '_View', 'Zoom', 'In') is not None
+
+
+def test_piled_up_separators_collapse():
+	sep = {'type': 'separator'}
+	session = FakeSession()
+	window = FakeWindow({})
+	install_dbusmenu_app(session, dm(0, SUB, [
+		dm(1, {'label': '_Playback', **SUB}, [
+			dm(2, sep), dm(3, sep), dm(4, {'label': 'Play'}),
+			dm(5, sep), dm(6, sep), dm(7, sep), dm(8, {'label': 'Stop'}), dm(9, sep),
+		]),
+	]), window)
+	model = MenuModel(session, window)
+	model._update_menus()
+	shape = ['---' if n.get('separator') else n['label'] for n in find(json_tree(model), '_Playback')['children']]
+	assert shape == ['Play', '---', 'Stop']
+
+
+def test_one_id_at_two_places_keeps_both():
+	# vlc through qt exports some ids twice in one layout
+	session = FakeSession()
+	window = FakeWindow({})
+	install_dbusmenu_app(session, dm(0, SUB, [
+		dm(1, {'label': '_Media', **SUB}, [dm(5, {'label': 'Quit'})]),
+		dm(2, {'label': '_Video', **SUB}, [dm(5, {'label': '5:3'})]),
+	]), window)
+	model = MenuModel(session, window)
+	model._update_menus()
+	tree = json_tree(model)
+	assert find(tree, '_Media', 'Quit') and find(tree, '_Video', '5:3')
+	model.appmenu.on_actions_changed([(5, {'enabled': False})], [])
+	tree = json_tree(model)
+	assert find(tree, '_Media', 'Quit')['enabled'] is False
+	assert find(tree, '_Video', '5:3')['enabled'] is False
