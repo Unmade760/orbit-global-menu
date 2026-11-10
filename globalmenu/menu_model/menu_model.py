@@ -312,6 +312,7 @@ class DbusAppMenu(object):
 		self.interface = self.get_interface()
 		self.top_level_menus = []
 		self.results = None
+		self.nodes_by_id = {}
 
 	def activate(self, selection):
 		action = self.actions[selection]
@@ -324,9 +325,10 @@ class DbusAppMenu(object):
 		self.actions = {}
 		self.accels = {}
 		self.tree = Tree()
+		self.nodes_by_id = {}
 		try:
-			results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"), timeout=CLIENT_TIMEOUT)
-			self.collect_entries(results[1], [])
+			self.results = self._get_root_layout()
+			self.collect_entries(self.results[1], [])
 			action = self.actions[selection]
 			self.interface.Event(action, 'clicked', 0, 0, timeout=CLIENT_TIMEOUT)
 		except dbus.exceptions.DBusException:
@@ -336,6 +338,7 @@ class DbusAppMenu(object):
 		self.actions = {}
 		self.accels = {}
 		self.tree = Tree()
+		self.nodes_by_id = {}
 		self.top_level_menus = []
 
 	def get_interface(self):
@@ -361,7 +364,7 @@ class DbusAppMenu(object):
 	def get_results(self):
 		if self.interface:
 			try:
-				self.results = self.interface.GetLayout(0, -1, dbus.Array(signature="s"), timeout=CLIENT_TIMEOUT)
+				self.results = self._prepared_layout()
 				self.collect_entries(self.results[1])
 			except dbus.exceptions.DBusException:
 				self.clear()
@@ -369,6 +372,48 @@ class DbusAppMenu(object):
 
 			if not len(self.tree.children(self.tree[self.tree.root].identifier)):
 				self.tree = Tree()
+
+	def _get_root_layout(self):
+		return self.interface.GetLayout(0, -1, dbus.Array(signature="s"), timeout=CLIENT_TIMEOUT)
+
+	# qt answers GetLayout on a submenu id with the wrong menu or none
+	# so submenus are only read from the root layout
+	def _prepared_layout(self, max_passes=3):
+		results = self._get_root_layout()
+		prepared = set()
+		for _ in range(max_passes):
+			pending = [i for i in self._submenu_ids(results[1]) if i not in prepared]
+			if not pending:
+				break
+			for item_id in pending:
+				prepared.add(item_id)
+				self._prepare_submenu(item_id)
+			results = self._get_root_layout()
+		return results
+
+	@staticmethod
+	def _submenu_ids(item):
+		ids = []
+		todo = [item]
+		while todo:
+			node = todo.pop()
+			if 'children-display' in node[1]:
+				ids.append(int(node[0]))
+			todo.extend(node[2])
+		return ids
+
+	def _prepare_submenu(self, item_id):
+		try:
+			self.interface.AboutToShow(item_id, timeout=CLIENT_TIMEOUT)
+		except Exception:
+			pass
+		self.interface.Event(item_id, 'opened', 'not used', dbus.UInt32(time.time()), timeout=CLIENT_TIMEOUT)
+		try:
+			# qt apps stay in menu open state and stop taking keys
+			# unless the menu is closed again
+			self.interface.Event(item_id, 'closed', 'not used', dbus.UInt32(time.time()), timeout=CLIENT_TIMEOUT)
+		except Exception:
+			pass
 
 	def collect_entries(self, item=None, labels=None, treelib_parent=None):
 		if self.results is None:
@@ -380,31 +425,19 @@ class DbusAppMenu(object):
 		menu_item = DbusAppMenuItem(item, labels)
 		menu_path = labels
 
-		if 'children-display' in item[1]:
-			item_id = item[0]
-			try:
-				self.interface.AboutToShow(item_id, timeout=CLIENT_TIMEOUT)
-			except Exception:
-				pass
-			self.interface.Event(item_id, 'opened', 'not used', dbus.UInt32(time.time()), timeout=CLIENT_TIMEOUT)
-			item = self.interface.GetLayout(item_id, -1, dbus.Array(signature="s"), timeout=CLIENT_TIMEOUT)[1]
-			try:
-				# qt apps stay in menu open state and stop taking keys
-				# unless the menu is closed again
-				self.interface.Event(item_id, 'closed', 'not used', dbus.UInt32(time.time()), timeout=CLIENT_TIMEOUT)
-			except Exception:
-				pass
-
 		if bool(menu_item.label) and menu_item.label != 'Root' and menu_item.label != 'DBusMenuRoot':
 			menu_path = labels + [menu_item.label]
 
-		self.tree.create_node(menu_item.label, menu_item.action, treelib_parent, data=menu_item)
+		# qt can export one id at several places so nodes get their own ids
+		node_id = len(self.tree)
+		self.tree.create_node(menu_item.label, node_id, treelib_parent, data=menu_item)
+		self.nodes_by_id.setdefault(menu_item.action, []).append(node_id)
 		if len(item[2]):
 			if not self.top_level_menus:
 				self.top_level_menus = list(map(lambda c: c[1].get('label', ''), item[2]))
 
 			for child in item[2]:
-				self.collect_entries(child, menu_path, menu_item.action)
+				self.collect_entries(child, menu_path, node_id)
 
 		elif bool(menu_item.label) or menu_item.separator:
 			self.actions[claim_key(menu_item, self.actions)] = menu_item.action
@@ -412,13 +445,15 @@ class DbusAppMenu(object):
 	def on_actions_changed(self, updated, removed):
 		touched = False
 		for upd in updated:
-			item = self.tree.get_node(int(upd[0]))
-			if item is not None:
-				item.data.update_props(upd[1])
-				if 'children-display' in upd[1]:
-					self.add_timer()
-					break
-				touched = True
+			node_ids = self.nodes_by_id.get(int(upd[0]), [])
+			if node_ids and 'children-display' in upd[1]:
+				self.add_timer()
+				break
+			for node_id in node_ids:
+				item = self.tree.get_node(node_id)
+				if item is not None:
+					item.data.update_props(upd[1])
+					touched = True
 		if touched:
 			self._notify()
 
@@ -438,6 +473,7 @@ class DbusAppMenu(object):
 		self.actions = {}
 		self.accels = {}
 		self.tree = Tree()
+		self.nodes_by_id = {}
 		self.get_results()
 		self._notify()
 		return False
