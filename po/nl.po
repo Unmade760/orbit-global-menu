@@ -1,0 +1,701 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the global-menu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: global-menu\n"
+"Report-Msgid-Bugs-To: https://github.com/Unmade760/orbit-global-menu/issues\n"
+"POT-Creation-Date: 2026-11-06 17:47+0530\n"
+"PO-Revision-Date: 2026-11-10 10:36+0100\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.10\n"
+
+#: global-menu@unmade.space/fallbackMenu.js:116
+msgid "Untitled Folder"
+msgstr "Naamloze map"
+
+#: global-menu@unmade.space/fallbackMenu.js:116
+#, javascript-format
+msgid "Untitled Folder %d"
+msgstr "Naamloze map %d"
+
+#: global-menu@unmade.space/fallbackMenu.js:137
+msgid "Empty all items from Trash?"
+msgstr "Wilt u alle items uit de prullenbak verwijderen?"
+
+#: global-menu@unmade.space/fallbackMenu.js:138
+msgid "All items in the Trash will be permanently deleted."
+msgstr "Alle items worden permanent verwijderd."
+
+#: global-menu@unmade.space/fallbackMenu.js:142
+#: global-menu@unmade.space/prefsPages/editorPage.js:235
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: global-menu@unmade.space/fallbackMenu.js:147
+msgid "Empty Trash"
+msgstr "Prullenbak legen"
+
+#: global-menu@unmade.space/fallbackMenu.js:274
+msgid "No Window"
+msgstr "Geen venster"
+
+#: global-menu@unmade.space/fallbackMenu.js:281
+msgid "Snap Window Left"
+msgstr "Vastmaken aan linkerzijde"
+
+#: global-menu@unmade.space/fallbackMenu.js:282
+msgid "Snap Window Right"
+msgstr "Vastmaken aan rechterzijde"
+
+#: global-menu@unmade.space/fallbackMenu.js:284
+msgid "Switch Between Applications"
+msgstr "Wisselen tussen toepassingen"
+
+#: global-menu@unmade.space/fallbackMenu.js:285
+msgid "Cycle Through Windows"
+msgstr "Wisselen van venster"
+
+#: global-menu@unmade.space/fallbackMenu.js:286
+msgid "Window Menu"
+msgstr "Venstermenu"
+
+#: global-menu@unmade.space/fallbackMenu.js:314
+msgid "New Window"
+msgstr "Nieuw venster"
+
+#: global-menu@unmade.space/fallbackMenu.js:318
+#, javascript-format
+msgid "Hide %s"
+msgstr "%s verbergen"
+
+#: global-menu@unmade.space/fallbackMenu.js:324
+#, javascript-format
+msgid "Quit %s"
+msgstr "%s afsluiten"
+
+#: global-menu@unmade.space/fallbackMenu.js:331
+#: global-menu@unmade.space/fallbackMenu.js:433
+msgid "Desktop"
+msgstr "Bureaublad"
+
+#: global-menu@unmade.space/fallbackMenu.js:336
+msgid "File"
+msgstr "Bestand"
+
+#: global-menu@unmade.space/fallbackMenu.js:338
+msgid "New Folder on Desktop"
+msgstr "Nieuwe map op bureaublad"
+
+#: global-menu@unmade.space/fallbackMenu.js:339
+msgid "New Tab"
+msgstr "Nieuw tabblad"
+
+#: global-menu@unmade.space/fallbackMenu.js:340
+msgid "Open"
+msgstr "Openen"
+
+#: global-menu@unmade.space/fallbackMenu.js:342
+msgid "Properties"
+msgstr "Eigenschappen"
+
+#: global-menu@unmade.space/fallbackMenu.js:344
+msgid "Show Desktop"
+msgstr "Bureaublad tonen"
+
+#: global-menu@unmade.space/fallbackMenu.js:346
+msgid "Close Window"
+msgstr "Venster sluiten"
+
+#: global-menu@unmade.space/fallbackMenu.js:350
+msgid "Edit"
+msgstr "Bewerken"
+
+#: global-menu@unmade.space/fallbackMenu.js:352
+msgid "Undo"
+msgstr "Ongedaan maken"
+
+#: global-menu@unmade.space/fallbackMenu.js:353
+msgid "Redo"
+msgstr "Opnieuw uitvoeren"
+
+#: global-menu@unmade.space/fallbackMenu.js:355
+msgid "Cut"
+msgstr "Knippen"
+
+#: global-menu@unmade.space/fallbackMenu.js:356
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: global-menu@unmade.space/fallbackMenu.js:357
+msgid "Paste"
+msgstr "Plakken"
+
+#: global-menu@unmade.space/fallbackMenu.js:358
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: global-menu@unmade.space/fallbackMenu.js:360
+msgid "Select All"
+msgstr "Alles selecteren"
+
+#: global-menu@unmade.space/fallbackMenu.js:362
+msgid "Take Screenshot"
+msgstr "Schermfoto maken"
+
+#: global-menu@unmade.space/fallbackMenu.js:363
+msgid "Screenshot of Window"
+msgstr "Schermfoto van venster maken"
+
+#: global-menu@unmade.space/fallbackMenu.js:364
+msgid "Screenshot of Area"
+msgstr "Schermfoto van gebied maken"
+
+#: global-menu@unmade.space/fallbackMenu.js:368
+msgid "Go"
+msgstr "Ga"
+
+#: global-menu@unmade.space/fallbackMenu.js:370
+msgid "Back"
+msgstr "Terug"
+
+#: global-menu@unmade.space/fallbackMenu.js:371
+msgid "Forward"
+msgstr "Vooruit"
+
+#: global-menu@unmade.space/fallbackMenu.js:373
+msgid "Next Workspace"
+msgstr "Volgend werkblad"
+
+#: global-menu@unmade.space/fallbackMenu.js:374
+msgid "Previous Workspace"
+msgstr "Vorig werkblad"
+
+#: global-menu@unmade.space/fallbackMenu.js:375
+msgid "First Workspace"
+msgstr "Eerste werkblad"
+
+#: global-menu@unmade.space/fallbackMenu.js:379
+msgid "Window"
+msgstr "Venster"
+
+#: global-menu@unmade.space/fallbackMenu.js:383
+msgid "System"
+msgstr "Systeem"
+
+#: global-menu@unmade.space/fallbackMenu.js:386
+msgid "Show Applications"
+msgstr "Toepassingen tonen"
+
+#: global-menu@unmade.space/fallbackMenu.js:387
+msgid "Show Notifications"
+msgstr "Meldingen tonen"
+
+#: global-menu@unmade.space/fallbackMenu.js:389
+msgid "Open Files"
+msgstr "Bestanden openen"
+
+#: global-menu@unmade.space/fallbackMenu.js:390
+msgid "Settings"
+msgstr "Voorkeuren"
+
+#: global-menu@unmade.space/fallbackMenu.js:392
+msgid "Empty Trash…"
+msgstr "Prullenbak legen…"
+
+#: global-menu@unmade.space/fallbackMenu.js:394
+msgid "Lock Screen"
+msgstr "Scherm vergrendelen"
+
+#: global-menu@unmade.space/fallbackMenu.js:395
+msgid "Suspend"
+msgstr "Pauzestand"
+
+#: global-menu@unmade.space/fallbackMenu.js:396
+msgid "Hibernate"
+msgstr "Slaapstand"
+
+#: global-menu@unmade.space/fallbackMenu.js:398
+msgid "Log Out"
+msgstr "Afmelden"
+
+#: global-menu@unmade.space/fallbackMenu.js:399
+msgid "Power Off / Restart"
+msgstr "Uitschakelen/Herstarten"
+
+#: global-menu@unmade.space/prefs.js:16
+msgid "General"
+msgstr "Algemeen"
+
+#: global-menu@unmade.space/prefs.js:17
+#: global-menu@unmade.space/prefsPages/editorPage.js:103
+msgid "Menus"
+msgstr "Menu's"
+
+#: global-menu@unmade.space/prefs.js:21
+msgid "Fallback menu"
+msgstr "Terugvalmenu"
+
+#: global-menu@unmade.space/prefs.js:22
+msgid ""
+"Show a generic app name, File, Edit, Go and Window menu for apps that have "
+"none of their own"
+msgstr ""
+"Toon een menu met de toepassingsnaam, ‘Bestand’, ‘Bewerken’, ‘Ga’ en "
+"‘Venster’ voor toepassingen die geen eigen menu aanleveren"
+
+#: global-menu@unmade.space/prefs.js:28
+msgid "Shortcut menus"
+msgstr "Sneltoetsmenu's"
+
+#: global-menu@unmade.space/prefs.js:29
+msgid ""
+"For supported apps without a menu of their own, show curated menus that send "
+"the app's real keyboard shortcuts"
+msgstr ""
+"Toon menu's met de sneltoetsen van een toepassing indien ze geen eigen "
+"sneltoetsmenu hebben"
+
+#: global-menu@unmade.space/prefs.js:34
+msgid "Development"
+msgstr "Ontwikkeling"
+
+#: global-menu@unmade.space/prefs.js:38
+msgid "Debug shortcut menus"
+msgstr "Foutopsporing in sneltoetsmenu's"
+
+#: global-menu@unmade.space/prefs.js:39
+msgid "Log shortcut-menu resolution and key synthesis to the journal"
+msgstr "Leg alles omtrent het sneltoetsmenu vast in het logboek"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:24
+msgid "Appearance"
+msgstr "Vormgeving"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:55
+msgid "Keyboard Shortcuts"
+msgstr "Sneltoetsen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:59
+msgid "Show shortcuts"
+msgstr "Sneltoetsen tonen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:62
+msgid "Always"
+msgstr "Altijd"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:63
+msgid "While holding a key"
+msgstr "Tijdens indrukken van toets"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:64
+msgid "Never"
+msgstr "Nooit"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:69
+msgid "Key to hold"
+msgstr "In te drukken toets"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:72
+msgid "Alt"
+msgstr "Alt"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:73
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:74
+msgid "Shift"
+msgstr "Shift"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:75
+msgid "Super"
+msgstr "Super"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:106
+msgid "Popup Blur"
+msgstr "Pop-upmenu's vervagen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:108
+msgid ""
+"Blurs what is behind popup menus, through Blur My Shell. The panel bar "
+"itself is blurred by Blur My Shell's own \"Panel\" setting."
+msgstr ""
+"Vervaagt de achtergrond van pop-upmenu's met behulp van Blur My Shell. Het "
+"paneel zelf wordt direct door Blur My Shell vervaagd."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:109
+msgid "Blur My Shell is not installed, so these options will have no effect."
+msgstr ""
+"Blur My Shell is niet geïnstalleerd; deze opties zullen daarom niet werken."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:114
+msgid "Blur behind popup menus"
+msgstr "Achtergronden van pop-upmenu's vervagen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:115
+msgid "Dynamic blur: re-rendered as the content behind moves"
+msgstr "Dynamische vervaging: opnieuw vervagen als de inhoud verschuift"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:121
+msgid "Blur intensity"
+msgstr "Vervagingssterkte"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:122
+msgid "Sigma of the gaussian blur"
+msgstr "De sterkte van de gaussiaanse vervaging"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:126
+msgid "Brightness"
+msgstr "Helderheid"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:127
+msgid "1.00 = no dimming of the blurred area"
+msgstr "1.00 = vervagingsgebied niet dimmen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:137
+msgid "Popup Menus"
+msgstr "Pop-upmenu's"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:141
+msgid "Background opacity"
+msgstr "Achtergronddoorzichtigheid"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:142
+msgid "Lower is more translucent. Blur is invisible at 100%."
+msgstr ""
+"Lager betekent doorschijnender. Bij een niveau van 100% is de vervaging "
+"onzichtbaar."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:146
+msgid "Corner radius"
+msgstr "Hoekstraal"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:147
+msgid "In pixels"
+msgstr "In pixels"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:152
+msgid "Hide pointer arrow"
+msgstr "Muisaanwijzer verbergen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:153
+msgid "Menus drop straight down from the bar instead of pointing at the button"
+msgstr "Menu's worden uitgeklapt vanaf het paneel"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:160
+msgid "Menu Bar"
+msgstr "Menubalk"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:164
+msgid "Button spacing"
+msgstr "Afstand tussen knoppen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:165
+msgid "Horizontal button padding in pixels. The GNOME default is 12."
+msgstr "De horizontale opvulling tussen knoppen, in pixels. Standaard: 12."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:169
+msgid "Font size"
+msgstr "Tekstgrootte"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:170
+msgid "In points. 0 keeps the theme default."
+msgstr "In punten. 0 = standaardthema volgen."
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:175
+msgid "Bold app name"
+msgstr "Vetgedrukte toepassingsnamen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:176
+msgid "Show the focused app's name button in bold"
+msgstr "Toon de naam van de gefocuste toepassing met een vet lettertype"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:182
+msgid "Hide App Name"
+msgstr "Toepassingsnaam verbergen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:183
+msgid "Removes the focused app's name button from the bar"
+msgstr "Toon de naam van de gefocuste toepassing niet op de balk"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:189
+msgid "Hide workspace indicator"
+msgstr "Werkbladindicator verbergen"
+
+#: global-menu@unmade.space/prefsPages/appearancePage.js:190
+msgid "Hides GNOME's Activities and workspace pill at the left of the panel"
+msgstr ""
+"Verberg GNOME's activiteiten- en werkbladindicator aan de linkerkant van het "
+"paneel"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:26
+msgid "Applications"
+msgstr "Toepassingen"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:31
+msgid "Shortcut Menus"
+msgstr "Sneltoetsmenu's"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:32
+msgid ""
+"Per-app curated menus that synthesize the app's real keyboard shortcuts. "
+"Editing a built-in creates a user override; built-in files are never "
+"modified."
+msgstr ""
+"Menu's die worden opgevuld met items die overeenkomen met de sneltoetsen van "
+"de toepassing. Eigen aangepaste menu's worden niet overschreven."
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:59
+msgid "Add Application…"
+msgstr "Toepassing toevoegen…"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:75
+#, javascript-format
+msgid "Error: %s"
+msgstr "Foutmelding: %s"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:75
+msgid "failed to load"
+msgstr "laden mislukt"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:78
+msgid "Built-in, overridden"
+msgstr "Meegeleverd, overschreven"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:80
+msgid "Custom"
+msgstr "Aangepast"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:82
+msgid "Built-in"
+msgstr "Meegeleverd"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:120
+msgid "Add Application"
+msgstr "Toepassing toevoegen"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:129
+msgid "Or type an app id / identifier manually"
+msgstr "Of vul een toepassings-id in"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:131
+msgid "Create Blank Mapping"
+msgstr "Blanco toewijzing maken"
+
+#: global-menu@unmade.space/prefsPages/applicationsPage.js:141
+msgid "Search installed applications"
+msgstr "Geïnstalleerde toepassingen doorzoeken"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:67
+msgid "Save"
+msgstr "Opslaan"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:74
+msgid "Reset to Built-in Default"
+msgstr "Standaardwaarden herstellen"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:74
+msgid "Delete This Mapping"
+msgstr "Toewijzing verwijderen"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:81
+msgid "Application"
+msgstr "Toepassing"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:84
+msgid "Display Name"
+msgstr "Getoonde naam"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:88
+msgid "App ID (file name, fixed)"
+msgstr "Toepassings-id (bestandsnaam)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:93
+msgid "Identifiers (comma-separated)"
+msgstr "Identificaties (kommagescheiden)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:99
+msgid ""
+"This is a built-in mapping. Saving creates a user override in ~/.config/"
+"global-menu/shortcuts/apps. The built-in file itself is never modified."
+msgstr ""
+"Dit is een meegeleverd menu. Opslaan zorgt voor een overschrijving ~/.config/"
+"global-menu/shortcuts/apps. Het meegeleverde menu wordt niet aangepast."
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:104
+msgid ""
+"Click the shortcut button on an item to set it, exactly like GNOME Settings' "
+"Keyboard Shortcuts panel."
+msgstr ""
+"Klik op de sneltoetsknop om een item in te stellen, overeenkomstig met "
+"GNOME's sneltoetsenpaneel in de systeemvoorkeuren."
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:117
+msgid "(untitled menu)"
+msgstr "(naamloos menu)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:134
+msgid "Add Item"
+msgstr "Item toevoegen"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:136
+msgid "New Item"
+msgstr "Nieuw item"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:141
+msgid "Add Separator"
+msgstr "Scheidingsteken toevoegen"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:152
+msgid "Add Menu…"
+msgstr "Menu toevoegen…"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:154
+msgid "New Menu"
+msgstr "Nieuw menu"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:163
+msgid "── Separator ──"
+msgstr "── Scheidingsteken ──"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:173
+msgid "(complex item)"
+msgstr "(complex item)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:174
+msgid "Submenu or advanced item. Not editable here, kept as it is on save."
+msgstr "Een onderliggend menu of uitgebreid item. Niet hier te bewerken."
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:183
+msgid "Label"
+msgstr "Label"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:192
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:200
+msgid "(unnamed item)"
+msgstr "(naamloos item)"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:232
+msgid "Rename Menu"
+msgstr "Menunaam wijzigen"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:236
+msgid "Rename"
+msgstr "Naam wijzigen"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:276
+#, javascript-format
+msgid "Saved, but %d item had a problem: %s"
+msgid_plural "Saved, but %d items had problems: %s"
+msgstr[0] "Opgeslagen, maar %d item vertoont een probleem: %s"
+msgstr[1] "Opgeslagen, maar %d items vertonen een probleem: %s"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:279
+msgid "Saved"
+msgstr "Opgeslagen"
+
+#: global-menu@unmade.space/prefsPages/editorPage.js:288
+#, javascript-format
+msgid "Could not delete: %s"
+msgstr "Verwijderen mislukt: %s"
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:32
+msgid "Set Shortcut"
+msgstr "Sneltoets instellen"
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:35
+#, javascript-format
+msgid "Enter new shortcut to change <b>%s</b>"
+msgstr "Druk op een sneltoets om <b>%s</b> te wijzigen"
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:42
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:79
+msgid "Enter a new shortcut…"
+msgstr "Druk op een sneltoets…"
+
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:50
+msgid "Press Esc to cancel or Backspace to disable the keyboard shortcut"
+msgstr "Druk op escape om af te breken of backspace om uit te schakelen"
+
+#. Translators: %s is a key combination such as "Ctrl+Shift+F"
+#: global-menu@unmade.space/prefsPages/shortcutCapture.js:86
+#, javascript-format
+msgid "\"%s\" is not supported, try another"
+msgstr "“%s” wordt niet ondersteund — probeer een andere"
+
+#: global-menu@unmade.space/windowActions.js:16
+msgid "Minimize"
+msgstr "Minimaliseren"
+
+#: global-menu@unmade.space/windowActions.js:17
+msgid "Unmaximize"
+msgstr "Niet meer maximaliseren"
+
+#: global-menu@unmade.space/windowActions.js:18
+msgid "Maximize"
+msgstr "Maximaliseren"
+
+#: global-menu@unmade.space/windowActions.js:19
+msgid "Move"
+msgstr "Verplaatsen"
+
+#: global-menu@unmade.space/windowActions.js:20
+msgid "Resize"
+msgstr "Afmetingen wijzigen"
+
+#: global-menu@unmade.space/windowActions.js:21
+msgid "Always on Top"
+msgstr "Altijd bovenaan"
+
+#: global-menu@unmade.space/windowActions.js:22
+msgid "Always on Visible Workspace"
+msgstr "Altijd op zichtbaar werkblad"
+
+#: global-menu@unmade.space/windowActions.js:23
+msgid "Move to Workspace Left"
+msgstr "Naar linker werkblad verplaatsen"
+
+#: global-menu@unmade.space/windowActions.js:24
+msgid "Move to Workspace Right"
+msgstr "Naar rechter werkblad verplaatsen"
+
+#: global-menu@unmade.space/windowActions.js:25
+msgid "Move to Workspace Up"
+msgstr "Naar werkblad hierboven verplaatsen"
+
+#: global-menu@unmade.space/windowActions.js:26
+msgid "Move to Workspace Down"
+msgstr "Naar werkblad hieronder verplaatsen"
+
+#: global-menu@unmade.space/windowActions.js:27
+msgid "Move to Monitor Up"
+msgstr "Naar beeldscherm hierboven verplaatsen"
+
+#: global-menu@unmade.space/windowActions.js:28
+msgid "Move to Monitor Down"
+msgstr "Naar beeldscherm hieronder verplaatsen"
+
+#: global-menu@unmade.space/windowActions.js:29
+msgid "Move to Monitor Left"
+msgstr "Naar linker beeldscherm verplaatsen"
+
+#: global-menu@unmade.space/windowActions.js:30
+msgid "Move to Monitor Right"
+msgstr "Naar rechter beeldscherm verplaatsen"
+
+#: global-menu@unmade.space/windowActions.js:31
+msgid "Close"
+msgstr "Sluiten"
