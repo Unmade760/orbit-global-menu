@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: global-menu\n"
 "Report-Msgid-Bugs-To: https://github.com/Unmade760/orbit-global-menu/issues\n"
-"POT-Creation-Date: 2026-11-01 22:44+0500\n"
+"POT-Creation-Date: 2026-11-06 17:47+0530\n"
 "PO-Revision-Date: 2026-11-10 10:36+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
@@ -37,7 +37,7 @@ msgid "All items in the Trash will be permanently deleted."
 msgstr "Alle items worden permanent verwijderd."
 
 #: global-menu@unmade.space/fallbackMenu.js:142
-#: global-menu@unmade.space/prefsPages/editorPage.js:232
+#: global-menu@unmade.space/prefsPages/editorPage.js:235
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -323,14 +323,14 @@ msgstr "Super"
 
 #: global-menu@unmade.space/prefsPages/appearancePage.js:106
 msgid "Popup Blur"
-msgstr "Pop-upmenu's vervangen"
+msgstr "Pop-upmenu's vervagen"
 
 #: global-menu@unmade.space/prefsPages/appearancePage.js:108
 msgid ""
 "Blurs what is behind popup menus, through Blur My Shell. The panel bar "
 "itself is blurred by Blur My Shell's own \"Panel\" setting."
 msgstr ""
-"Vervaagt de achtergrond van pop-menu's met behulp van Blur My Shell. Het "
+"Vervaagt de achtergrond van pop-upmenu's met behulp van Blur My Shell. Het "
 "paneel zelf wordt direct door Blur My Shell vervaagd."
 
 #: global-menu@unmade.space/prefsPages/appearancePage.js:109
@@ -340,7 +340,7 @@ msgstr ""
 
 #: global-menu@unmade.space/prefsPages/appearancePage.js:114
 msgid "Blur behind popup menus"
-msgstr "Achtergronden van pop-menu's vervagen"
+msgstr "Achtergronden van pop-upmenu's vervagen"
 
 #: global-menu@unmade.space/prefsPages/appearancePage.js:115
 msgid "Dynamic blur: re-rendered as the content behind moves"
@@ -364,7 +364,7 @@ msgstr "1.00 = vervagingsgebied niet dimmen"
 
 #: global-menu@unmade.space/prefsPages/appearancePage.js:137
 msgid "Popup Menus"
-msgstr "Popmenu's"
+msgstr "Pop-upmenu's"
 
 #: global-menu@unmade.space/prefsPages/appearancePage.js:141
 msgid "Background opacity"
@@ -588,26 +588,26 @@ msgstr "Uitgeschakeld"
 msgid "(unnamed item)"
 msgstr "(naamloos item)"
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:229
+#: global-menu@unmade.space/prefsPages/editorPage.js:232
 msgid "Rename Menu"
-msgstr "Menunaam wĳzigen"
+msgstr "Menunaam wijzigen"
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:233
+#: global-menu@unmade.space/prefsPages/editorPage.js:236
 msgid "Rename"
-msgstr "Naam wĳzigen"
+msgstr "Naam wijzigen"
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:273
+#: global-menu@unmade.space/prefsPages/editorPage.js:276
 #, javascript-format
 msgid "Saved, but %d item had a problem: %s"
 msgid_plural "Saved, but %d items had problems: %s"
 msgstr[0] "Opgeslagen, maar %d item vertoont een probleem: %s"
 msgstr[1] "Opgeslagen, maar %d items vertonen een probleem: %s"
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:276
+#: global-menu@unmade.space/prefsPages/editorPage.js:279
 msgid "Saved"
 msgstr "Opgeslagen"
 
-#: global-menu@unmade.space/prefsPages/editorPage.js:285
+#: global-menu@unmade.space/prefsPages/editorPage.js:288
 #, javascript-format
 msgid "Could not delete: %s"
 msgstr "Verwijderen mislukt: %s"
@@ -619,7 +619,7 @@ msgstr "Sneltoets instellen"
 #: global-menu@unmade.space/prefsPages/shortcutCapture.js:35
 #, javascript-format
 msgid "Enter new shortcut to change <b>%s</b>"
-msgstr "Druk op een sneltoets om <b>%s</b> te wĳzigen"
+msgstr "Druk op een sneltoets om <b>%s</b> te wijzigen"
 
 #: global-menu@unmade.space/prefsPages/shortcutCapture.js:42
 #: global-menu@unmade.space/prefsPages/shortcutCapture.js:79
@@ -654,7 +654,7 @@ msgstr "Verplaatsen"
 
 #: global-menu@unmade.space/windowActions.js:20
 msgid "Resize"
-msgstr "Afmetingen wĳzigen"
+msgstr "Afmetingen wijzigen"
 
 #: global-menu@unmade.space/windowActions.js:21
 msgid "Always on Top"

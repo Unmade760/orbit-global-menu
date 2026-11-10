@@ -148,7 +148,7 @@ installed and does nothing without it.
 ## Translations
 
 The preferences window, the fallback menu and the window menu are translated
-through gettext. Simplified Chinese (`zh_CN`) and Russian (`ru`) are
+through gettext. Simplified Chinese (`zh_CN`), Russian (`ru`) and Dutch (`nl`) are
 included. Menus an app exports arrive in the app's own language. The curated
 shortcut menus are English for now.
 
